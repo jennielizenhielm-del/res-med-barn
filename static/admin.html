@@ -90,9 +90,10 @@ textarea { min-height:64px; }
 <div class="topbar">
   <div class="brand">Res med <span>Barn</span><small>ADMIN</small></div>
   <div class="topbar-actions">
-    <a class="btn" href="https://github.com/jennielizenhielm-del/res-med-barn/edit/main/content.json" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;">Öppna i GitHub</a>
     <button class="btn" onclick="copyJson()">Kopiera JSON</button>
-    <button class="btn btn-primary" onclick="downloadJson()">Ladda ner content.json</button>
+    <button class="btn" onclick="downloadJson()">Ladda ner</button>
+    <button class="btn" onclick="tokenSettings()" title="GitHub-token">⚙</button>
+    <button class="btn btn-primary" id="saveBtn" onclick="saveToGithub()">💾 Spara &amp; publicera</button>
   </div>
 </div>
 <div class="tabs">
@@ -101,7 +102,7 @@ textarea { min-height:64px; }
 </div>
 <div class="wrap">
   <div class="hint">
-    <strong>Så sparar du:</strong> ändra i fälten → klicka <em>Kopiera JSON</em> → klicka <em>Öppna i GitHub</em> → markera allt i filen (Ctrl+A), klistra in (Ctrl+V) → <em>Commit changes</em>. Cloudflare bygger om sajten automatiskt inom en minut. Titlar max <strong>60 tecken</strong>, beskrivningar max <strong>155</strong>.
+    <strong>Så sparar du:</strong> ändra i fälten → klicka <em>💾 Spara &amp; publicera</em>. Ändringarna committas direkt till GitHub och Cloudflare bygger om sajten inom en minut. Första gången behöver du klistra in en GitHub-token (kugghjulet förklarar hur). Titlar max <strong>60 tecken</strong>, beskrivningar max <strong>155</strong>.
   </div>
   <div id="view"></div>
 </div>
@@ -258,6 +259,88 @@ function renderCopy(selIdx) {
       ${targets.map(([name], i) => `<option value="${i}"${i === idx ? ' selected' : ''}>${escapeHtml(name)}</option>`).join('')}
     </select></div>
     <div class="obj-card">${editorFor(obj, 't' + idx)}</div>`;
+}
+
+
+/* ---- GitHub direct save ---- */
+const GH_REPO = 'jennielizenhielm-del/res-med-barn';
+const GH_PATH = 'content.json';
+const TOKEN_KEY = 'rmb-gh-token';
+
+const TOKEN_HELP = 'Skapa en token på github.com:\n\nSettings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.\n\n• Repository access: Only select repositories → res-med-barn\n• Permissions: Contents → Read and write\n• Expiration: t.ex. 1 år\n\nKlistra in token här (sparas bara i din webbläsare):';
+
+function getToken() {
+  let t = localStorage.getItem(TOKEN_KEY);
+  if (!t) {
+    t = prompt(TOKEN_HELP);
+    if (!t) return null;
+    t = t.trim();
+    localStorage.setItem(TOKEN_KEY, t);
+  }
+  return t;
+}
+
+function tokenSettings() {
+  const has = !!localStorage.getItem(TOKEN_KEY);
+  const t = prompt((has ? 'En token finns sparad i din webbläsare. Klistra in en ny för att byta, eller skriv RADERA för att ta bort den.\n\n' : '') + TOKEN_HELP);
+  if (t === null) return;
+  if (t.trim().toUpperCase() === 'RADERA') {
+    localStorage.removeItem(TOKEN_KEY);
+    flash('Token borttagen');
+  } else if (t.trim()) {
+    localStorage.setItem(TOKEN_KEY, t.trim());
+    flash('Token sparad ✓');
+  }
+}
+
+function b64utf8(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  const CH = 0x8000;
+  for (let i = 0; i < bytes.length; i += CH) {
+    bin += String.fromCharCode.apply(null, bytes.subarray(i, i + CH));
+  }
+  return btoa(bin);
+}
+
+async function saveToGithub(retry) {
+  const token = getToken();
+  if (!token) return;
+  const btn = document.getElementById('saveBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sparar…';
+  const api = `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}`;
+  const headers = {
+    'Authorization': 'Bearer ' + token,
+    'Accept': 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
+  try {
+    const cur = await fetch(api + '?ref=main', { headers });
+    if (cur.status === 401 || cur.status === 403) {
+      localStorage.removeItem(TOKEN_KEY);
+      throw new Error('Token ogiltig eller saknar behörighet. Prova igen med en ny token (kugghjulet).');
+    }
+    if (!cur.ok) throw new Error('Kunde inte läsa filen från GitHub (' + cur.status + ').');
+    const { sha } = await cur.json();
+    const res = await fetch(api, {
+      method: 'PUT',
+      headers,
+      body: JSON.stringify({
+        message: 'Uppdatera innehåll via admin',
+        content: b64utf8(JSON.stringify(C, null, 2)),
+        sha, branch: 'main'
+      })
+    });
+    if (res.status === 409 && !retry) { btn.disabled = false; return saveToGithub(true); }
+    if (!res.ok) throw new Error('GitHub sa nej (' + res.status + '). Försök igen.');
+    flash('Publicerad ✓ Sajten byggs om nu');
+  } catch (e) {
+    alert('Kunde inte spara: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '💾 Spara &amp; publicera';
+  }
 }
 
 /* ---- io ---- */
