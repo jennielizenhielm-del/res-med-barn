@@ -13,34 +13,34 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #F8F4EE;
-      --bg-alt: #F0EBE3;
-      --surface: #FFFCF7;
-      --text: #2A2520;
-      --text-secondary: #7A7168;
-      --text-muted: #A09890;
-      --primary: #6B8F71;
-      --primary-hover: #5A7D60;
-      --primary-light: #E8F0E9;
-      --accent: #D4654A;
-      --accent-hover: #C0563D;
-      --accent-light: #FAEAE5;
-      --sand: #D4A574;
-      --sand-light: #F5E8D8;
-      --border: #E8E2DA;
-      --border-light: #F0EBE3;
-      --shadow-sm: 0 1px 3px rgba(42,37,32,0.04);
-      --shadow-md: 0 4px 16px rgba(42,37,32,0.06);
-      --shadow-lg: 0 8px 32px rgba(42,37,32,0.10);
+      --bg: #F5F7FA;
+      --bg-alt: #EAF0F6;
+      --surface: #FFFFFF;
+      --text: #2B3440;
+      --text-secondary: #66748A;
+      --text-muted: #98A5B6;
+      --primary: #5FA382;
+      --primary-hover: #4E9271;
+      --primary-light: #E0F1E8;
+      --accent: #E2836A;
+      --accent-hover: #D5735A;
+      --accent-light: #FBEAE4;
+      --sand: #DDAF82;
+      --sand-light: #F7EDDD;
+      --border: #E2E8F0;
+      --border-light: #EAF0F6;
+      --shadow-sm: 0 1px 3px rgba(43,52,64,0.04);
+      --shadow-md: 0 4px 16px rgba(43,52,64,0.06);
+      --shadow-lg: 0 8px 32px rgba(43,52,64,0.10);
       --radius: 10px;
       --radius-lg: 16px;
       --radius-pill: 100px;
-      --cat-beach: #D4654A;
-      --cat-parks: #8B6BB5;
-      --cat-nature: #4A7A5B;
-      --cat-cities: #5B7B9D;
-      --cat-winter: #6B9DC5;
-      --cat-sweden: #C5A34A;
+      --cat-beach: #E2836A;
+      --cat-parks: #9D8BC7;
+      --cat-nature: #5F9678;
+      --cat-cities: #7C9EC4;
+      --cat-winter: #8AB6D8;
+      --cat-sweden: #CFAC62;
       --font-display: 'Fraunces', Georgia, serif;
       --font-body: 'Outfit', system-ui, sans-serif;
       --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
@@ -53,11 +53,11 @@
       --text: #EDE8E0;
       --text-secondary: #A8A098;
       --text-muted: #787068;
-      --primary: #8FB896;
-      --primary-hover: #A3C8A9;
-      --primary-light: #252E27;
-      --accent: #E8886F;
-      --accent-hover: #F09A84;
+      --primary: #8FC4A8;
+      --primary-hover: #A5D4B9;
+      --primary-light: #243029;
+      --accent: #EDA089;
+      --accent-hover: #F3B09C;
       --accent-light: #352420;
       --sand: #C4956A;
       --sand-light: #2E261E;
@@ -286,7 +286,7 @@
       font-family: var(--font-body);
       font-size: 0.9rem;
       font-weight: 600;
-      color: #FFFCF7;
+      color: #FFFFFF;
       background: var(--accent);
       border: none;
       border-radius: var(--radius-pill);
@@ -515,9 +515,9 @@
       border-radius: var(--radius-pill);
       font-size: 0.76rem;
       font-weight: 600;
-      background: color-mix(in srgb, #FFFCF7 88%, transparent);
+      background: color-mix(in srgb, #FFFFFF 88%, transparent);
       backdrop-filter: blur(6px);
-      color: #2A2520;
+      color: #2B3440;
       z-index: 2;
     }
 
@@ -562,7 +562,7 @@
       display: flex; align-items: center; justify-content: center;
       border: none;
       border-radius: 50%;
-      background: color-mix(in srgb, #FFFCF7 85%, transparent);
+      background: color-mix(in srgb, #FFFFFF 85%, transparent);
       backdrop-filter: blur(6px);
       cursor: pointer;
       font-size: 1.05rem;
@@ -572,8 +572,8 @@
       line-height: 1;
     }
     .fav-heart:hover { transform: scale(1.12); }
-    .fav-heart.faved { color: #D4654A; }
-    .fav-heart.faved .heart-path { fill: #D4654A; }
+    .fav-heart.faved { color: #E2836A; }
+    .fav-heart.faved .heart-path { fill: #E2836A; }
     .fav-heart svg { width: 18px; height: 18px; display: block; }
     .fav-heart .heart-path { fill: transparent; stroke: currentColor; stroke-width: 2; transition: fill var(--transition); }
 
@@ -786,9 +786,9 @@
       display: flex; align-items: center; justify-content: center;
       border: none;
       border-radius: 50%;
-      background: color-mix(in srgb, #FFFCF7 88%, transparent);
+      background: color-mix(in srgb, #FFFFFF 88%, transparent);
       backdrop-filter: blur(8px);
-      color: #2A2520;
+      color: #2B3440;
       font-size: 1.1rem;
       cursor: pointer;
       box-shadow: var(--shadow-md);
@@ -806,9 +806,9 @@
       padding: 0.55rem 1.1rem;
       border: none;
       border-radius: var(--radius-pill);
-      background: color-mix(in srgb, #FFFCF7 88%, transparent);
+      background: color-mix(in srgb, #FFFFFF 88%, transparent);
       backdrop-filter: blur(8px);
-      color: #2A2520;
+      color: #2B3440;
       font-family: var(--font-body);
       font-size: 0.86rem;
       font-weight: 600;
@@ -946,7 +946,7 @@
       transition: all var(--transition);
       text-decoration: none;
     }
-    .btn-primary { background: var(--accent); color: #FFFCF7; }
+    .btn-primary { background: var(--accent); color: #FFFFFF; }
     .btn-primary:hover { background: var(--accent-hover); }
     .btn-ghost { background: transparent; color: var(--text-secondary); border-color: var(--border); }
     .btn-ghost:hover { border-color: var(--text-muted); color: var(--text); }
@@ -1302,6 +1302,15 @@
   <div class="dest-toolbar">
     <div class="dest-count"><strong id="destCountNum">30</strong> resmål</div>
     <div class="toolbar-controls">
+      <div class="select-wrap">
+        <select id="ageFilter" aria-label="Filtrera på ålder">
+          <option value="all">Alla åldrar</option>
+          <option value="2">0–3 år</option>
+          <option value="5">4–7 år</option>
+          <option value="10">8–12 år</option>
+          <option value="14">13+ år</option>
+        </select>
+      </div>
       <div class="select-wrap">
         <select id="budgetFilter" aria-label="Filtrera på budget">
           <option value="all">Alla budgetar</option>
@@ -1720,6 +1729,7 @@ const DESTINATIONS = [
 let activeFilter = 'all';
 let searchQuery = '';
 let budgetMax = 'all';
+let ageSel = 'all';
 let sortBy = 'rec';
 let favs = new Set();
 try { favs = new Set(JSON.parse(localStorage.getItem('rmb-favs') || '[]')); } catch (e) {}
@@ -1817,7 +1827,8 @@ function getFiltered() {
       d.desc.toLowerCase().includes(q) ||
       d.catLabel.toLowerCase().includes(q);
     const matchesBudget = budgetMax === 'all' || d.b <= Number(budgetMax);
-    return matchesCat && matchesSearch && matchesBudget;
+    const matchesAge = ageSel === 'all' || (Number(ageSel) >= d.ageMin && Number(ageSel) <= d.ageMax);
+    return matchesCat && matchesSearch && matchesBudget && matchesAge;
   });
 
   const sorters = {
@@ -1846,6 +1857,7 @@ function renderDestinations() {
     <article class="dest-card reveal" data-cat="${d.cat}" style="transition-delay: ${Math.min(i * 40, 400)}ms" onclick="openDetail('${slug(d.name)}')">
       ${mediaHTML(d)}
       <span class="dest-cat-chip" data-cat="${d.cat}">${d.catLabel}</span>
+      <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
       <button class="fav-heart ${favs.has(d.name) ? 'faved' : ''}" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${heartSVG()}</button>
       <div class="dest-card-body">
         <div class="dest-card-top">
@@ -1855,10 +1867,9 @@ function renderDestinations() {
         <p class="dest-country">${hl(d.country)}</p>
         <p class="dest-desc">${esc(d.desc)}</p>
         <div class="dest-card-meta">
-          <span class="meta-tag">👶 <strong>${d.age}</strong></span>
-          <span class="meta-tag">📅 <strong>${d.season}</strong></span>
-          <span class="meta-tag">✈️ <strong>${d.flight}</strong></span>
-          <span class="meta-tag">⭐ <strong>${d.rating}</strong></span>
+          <span class="meta-chip">✓ Bäst ${d.age}</span>
+          <span class="meta-chip">✈️ ${d.flight}</span>
+          <span class="meta-chip">📅 ${d.season}</span>
         </div>
       </div>
     </article>`).join('');
@@ -1970,6 +1981,10 @@ function filterByCategory(cat) {
   document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
 }
 
+document.getElementById('ageFilter').addEventListener('change', e => {
+  ageSel = e.target.value;
+  renderDestinations();
+});
 document.getElementById('budgetFilter').addEventListener('change', e => {
   budgetMax = e.target.value;
   renderDestinations();

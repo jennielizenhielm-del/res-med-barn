@@ -124,6 +124,26 @@ function media(img, emoji, cls, w) {
   </div>`;
 }
 
+
+/* ---------- FAQ ---------- */
+function faqHtml(faq) {
+  if (!faq || !faq.length) return '';
+  return `
+<h2 class="section-title">Vanliga fr\u00e5gor</h2>
+<div class="faq">
+  ${faq.map(f => `<details class="faq-item"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n  ')}
+</div>`;
+}
+function faqLd(faq) {
+  return {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: faq.map(f => ({
+      '@type': 'Question', name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a }
+    }))
+  };
+}
+
 function page(url, meta, active, inner, extraJsonld) {
   if (extraJsonld) meta = { ...meta, jsonld: extraJsonld };
   return head(meta, url) + nav(active) + `<main class="page">` + inner + `</main>` + footer();
@@ -239,12 +259,13 @@ ${media(g.img, t.emoji, 'page-hero', 1400)}
   <h2>Snabbtips</h2>
   <ul class="checklist">${g.quicktips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
 </div>
+${faqHtml(g.faq)}
 <h2 class="section-title">Fler guider för ${esc(a.name.toLowerCase())}</h2>
 <div class="related-links">
   ${others.map(x => `<a href="/guider/${a.slug}/${x.slug}/">${x.emoji} ${esc(C.guides[a.slug + '/' + x.slug].h1)}</a>`).join('\n  ')}
   <a href="/guider/${a.slug}/">← Alla guider för ${esc(a.name.toLowerCase())}</a>
 </div>`;
-      write(`guider/${key}/index.html`, page(url, g, '/guider/', inner, bc.jsonld));
+      write(`guider/${key}/index.html`, page(url, g, '/guider/', inner, g.faq ? [bc.jsonld, faqLd(g.faq)] : bc.jsonld));
     }
   }
 }
@@ -309,11 +330,12 @@ ${media(l.img, l.emoji, 'page-hero', 1400)}
 <article class="article">
   ${l.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${esc(s.text)}</p>`).join('\n')}
 </article>
+${faqHtml(l.faq)}
 <h2 class="section-title">Fler topplistor</h2>
 <div class="related-links">
   ${C.topplistor.lists.filter(x => x.slug !== l.slug).map(x => `<a href="/topplistor/${x.slug}/">${x.emoji} ${esc(x.h1)}</a>`).join('\n  ')}
 </div>`;
-    write(`topplistor/${l.slug}/index.html`, page(url, l, '/topplistor/', inner, [bc.jsonld, itemList]));
+    write(`topplistor/${l.slug}/index.html`, page(url, l, '/topplistor/', inner, l.faq ? [bc.jsonld, itemList, faqLd(l.faq)] : [bc.jsonld, itemList]));
   }
 }
 

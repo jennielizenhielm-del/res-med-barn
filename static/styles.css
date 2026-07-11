@@ -2,23 +2,23 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg: #F8F4EE;
-  --bg-alt: #F0EBE3;
-  --surface: #FFFCF7;
-  --text: #2A2520;
-  --text-secondary: #7A7168;
-  --text-muted: #A09890;
-  --primary: #6B8F71;
-  --primary-light: #E8F0E9;
-  --accent: #D4654A;
-  --accent-hover: #C0563D;
-  --accent-light: #FAEAE5;
-  --sand: #D4A574;
-  --sand-light: #F5E8D8;
-  --border: #E8E2DA;
-  --border-light: #F0EBE3;
-  --shadow-sm: 0 1px 3px rgba(42,37,32,0.04);
-  --shadow-md: 0 4px 16px rgba(42,37,32,0.06);
+  --bg: #F5F7FA;
+  --bg-alt: #EAF0F6;
+  --surface: #FFFFFF;
+  --text: #2B3440;
+  --text-secondary: #66748A;
+  --text-muted: #98A5B6;
+  --primary: #5FA382;
+  --primary-light: #E0F1E8;
+  --accent: #E2836A;
+  --accent-hover: #D5735A;
+  --accent-light: #FBEAE4;
+  --sand: #DDAF82;
+  --sand-light: #F7EDDD;
+  --border: #E2E8F0;
+  --border-light: #EAF0F6;
+  --shadow-sm: 0 1px 3px rgba(43,52,64,0.04);
+  --shadow-md: 0 4px 16px rgba(43,52,64,0.06);
   --radius: 10px;
   --radius-lg: 16px;
   --radius-pill: 100px;
@@ -386,3 +386,41 @@ h1 {
   gap: 2.5rem;
 }
 .footer-about h3 { font-family: var(--font-display);
+/* ---- FAQ ---- */
+.faq { display: flex; flex-direction: column; gap: 0.6rem; }
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  overflow: hidden;
+}
+.faq-item summary {
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 2.5rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--accent);
+  transition: transform 0.2s;
+}
+.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq-item p {
+  padding: 0 1.25rem 1.1rem;
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 680px;
+}

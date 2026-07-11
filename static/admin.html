@@ -10,10 +10,10 @@
 <style>
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 :root {
-  --bg:#F8F4EE; --surface:#FFFCF7; --text:#2A2520; --text-2:#7A7168; --muted:#A09890;
-  --primary:#6B8F71; --primary-light:#E8F0E9; --accent:#D4654A; --accent-light:#FAEAE5;
-  --border:#E8E2DA; --radius:10px; --radius-lg:16px;
-  --ok:#4A7A5B; --warn:#C5A34A; --bad:#C0392B;
+  --bg:#F5F7FA; --surface:#FFFFFF; --text:#2B3440; --text-2:#66748A; --muted:#98A5B6;
+  --primary:#5FA382; --primary-light:#E0F1E8; --accent:#E2836A; --accent-light:#FBEAE4;
+  --border:#E2E8F0; --radius:10px; --radius-lg:16px;
+  --ok:#4A7A5B; --warn:#CFAC62; --bad:#C0392B;
   --font-d:'Fraunces',Georgia,serif; --font-b:'Outfit',system-ui,sans-serif;
 }
 body { font-family:var(--font-b); background:var(--bg); color:var(--text); line-height:1.5; }
@@ -33,8 +33,8 @@ body { font-family:var(--font-b); background:var(--bg); color:var(--text); line-
   cursor:pointer; color:var(--text-2); transition:all .2s;
 }
 .btn:hover { border-color:var(--muted); color:var(--text); }
-.btn-primary { background:var(--accent); border-color:var(--accent); color:#FFFCF7; }
-.btn-primary:hover { background:#C0563D; }
+.btn-primary { background:var(--accent); border-color:var(--accent); color:#FFFFFF; }
+.btn-primary:hover { background:#D5735A; }
 .tabs { display:flex; gap:0.4rem; padding:1rem clamp(1rem,3vw,2rem) 0; }
 .tab {
   padding:0.55rem 1.2rem; border-radius:100px; border:1.5px solid var(--border);
@@ -90,6 +90,7 @@ textarea { min-height:64px; }
 <div class="topbar">
   <div class="brand">Res med <span>Barn</span><small>ADMIN</small></div>
   <div class="topbar-actions">
+    <a class="btn" href="https://github.com/jennielizenhielm-del/res-med-barn/edit/main/content.json" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;">Öppna i GitHub</a>
     <button class="btn" onclick="copyJson()">Kopiera JSON</button>
     <button class="btn btn-primary" onclick="downloadJson()">Ladda ner content.json</button>
   </div>
@@ -100,13 +101,34 @@ textarea { min-height:64px; }
 </div>
 <div class="wrap">
   <div class="hint">
-    <strong>Så publicerar du:</strong> ändra i fälten nedan → <em>Ladda ner content.json</em> → ersätt filen i GitHub-repot (Add file → Upload files, eller redigera direkt) → Cloudflare Pages bygger om sajten automatiskt inom en minut. Titlar bör vara max <strong>60 tecken</strong>, beskrivningar max <strong>155</strong>.
+    <strong>Så sparar du:</strong> ändra i fälten → klicka <em>Kopiera JSON</em> → klicka <em>Öppna i GitHub</em> → markera allt i filen (Ctrl+A), klistra in (Ctrl+V) → <em>Commit changes</em>. Cloudflare bygger om sajten automatiskt inom en minut. Titlar max <strong>60 tecken</strong>, beskrivningar max <strong>155</strong>.
   </div>
   <div id="view"></div>
 </div>
 <div class="saved-flash" id="flash">Nedladdad ✓</div>
 
 <script>
+/* ---- password gate (client-side deterrent; use Cloudflare Access for real protection) ---- */
+const PW_HASH = '2056d36bcc044427c806d3645d97710c9cc8119fd36245094c5e57160ac7551c';
+async function sha256(s) {
+  const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
+}
+async function gate() {
+  if (sessionStorage.getItem('rmb-admin') === PW_HASH) return true;
+  for (let i = 0; i < 3; i++) {
+    const pw = prompt('Lösenord för admin:');
+    if (pw === null) break;
+    if (await sha256(pw) === PW_HASH) {
+      sessionStorage.setItem('rmb-admin', PW_HASH);
+      return true;
+    }
+    alert('Fel lösenord.');
+  }
+  document.body.innerHTML = '<div style="padding:3rem;font-family:sans-serif;">Åtkomst nekad.</div>';
+  return false;
+}
+
 let C = null;
 let view = 'seo';
 
@@ -267,13 +289,16 @@ function escapeHtml(s) {
 }
 
 /* ---- init ---- */
-fetch('/content.json')
+gate().then(ok => {
+  if (!ok) return;
+  fetch('/content.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(json => { C = json; renderSeo(); })
   .catch(() => {
     document.getElementById('view').innerHTML =
       '<p class="err">Kunde inte läsa /content.json. Kör du admin lokalt? Öppna den via sajten (resmedbarn.se/admin/) eller en lokal server.</p>';
   });
+});
 </script>
 </body>
 </html>
