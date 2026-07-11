@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin – Res med Barn</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg:#F5F7FA; --surface:#FFFFFF; --text:#2B3440; --text-2:#66748A; --muted:#98A5B6;
+  --primary:#5FA382; --primary-light:#E0F1E8; --accent:#E2836A; --accent-light:#FBEAE4;
+  --border:#E2E8F0; --radius:10px; --radius-lg:16px;
+  --ok:#4A7A5B; --warn:#CFAC62; --bad:#C0392B;
+  --font-d:'Fraunces',Georgia,serif; --font-b:'Outfit',system-ui,sans-serif;
+}
+body { font-family:var(--font-b); background:var(--bg); color:var(--text); line-height:1.5; }
+.topbar {
+  position:sticky; top:0; z-index:10;
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:0.85rem clamp(1rem,3vw,2rem);
+  background:var(--surface); border-bottom:1px solid var(--border);
+}
+.brand { font-family:var(--font-d); font-size:1.2rem; font-weight:600; }
+.brand span { color:var(--accent); }
+.brand small { font-family:var(--font-b); font-weight:500; color:var(--muted); margin-left:0.5rem; font-size:0.78rem; }
+.topbar-actions { display:flex; gap:0.5rem; flex-wrap:wrap; }
+.btn {
+  padding:0.6rem 1.2rem; border-radius:100px; border:1.5px solid var(--border);
+  background:var(--surface); font-family:var(--font-b); font-size:0.85rem; font-weight:600;
+  cursor:pointer; color:var(--text-2); transition:all .2s;
+}
+.btn:hover { border-color:var(--muted); color:var(--text); }
+.btn-primary { background:var(--accent); border-color:var(--accent); color:#FFFFFF; }
+.btn-primary:hover { background:#D5735A; }
+.tabs { display:flex; gap:0.4rem; padding:1rem clamp(1rem,3vw,2rem) 0; }
+.tab {
+  padding:0.55rem 1.2rem; border-radius:100px; border:1.5px solid var(--border);
+  background:transparent; font-family:var(--font-b); font-size:0.86rem; font-weight:500;
+  cursor:pointer; color:var(--text-2);
+}
+.tab.active { background:var(--text); color:var(--bg); border-color:var(--text); }
+.wrap { padding:1.25rem clamp(1rem,3vw,2rem) 4rem; max-width:1100px; }
+.hint {
+  background:var(--primary-light); border-radius:var(--radius-lg);
+  padding:1rem 1.25rem; font-size:0.88rem; color:var(--text); margin-bottom:1.5rem;
+}
+.hint strong { color:var(--primary); }
+/* SEO table */
+.seo-row {
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg);
+  padding:1.1rem 1.25rem; margin-bottom:0.85rem;
+}
+.seo-path { font-size:0.78rem; font-weight:600; color:var(--primary); margin-bottom:0.5rem; }
+.field { margin-bottom:0.75rem; }
+.field:last-child { margin-bottom:0; }
+.field-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.25rem; }
+.field label { font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); }
+.counter { font-size:0.75rem; font-weight:700; }
+.counter.ok { color:var(--ok); } .counter.warn { color:var(--warn); } .counter.bad { color:var(--bad); }
+input[type=text], textarea, select {
+  width:100%; padding:0.6rem 0.85rem; font-family:var(--font-b); font-size:0.9rem;
+  color:var(--text); background:var(--bg); border:1.5px solid var(--border);
+  border-radius:var(--radius); outline:none; transition:border-color .2s; resize:vertical;
+}
+input:focus, textarea:focus, select:focus { border-color:var(--primary); }
+textarea { min-height:64px; }
+/* content editor */
+.picker { margin-bottom:1.25rem; max-width:420px; }
+.group-title {
+  font-family:var(--font-d); font-size:1.15rem; font-weight:600;
+  margin:1.5rem 0 0.75rem; padding-bottom:0.4rem; border-bottom:1px solid var(--border);
+}
+.obj-card {
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg);
+  padding:1rem 1.25rem; margin-bottom:0.75rem;
+}
+.saved-flash {
+  position:fixed; bottom:1.5rem; right:1.5rem; padding:0.8rem 1.4rem;
+  background:var(--primary); color:#fff; border-radius:100px; font-weight:600;
+  font-size:0.88rem; opacity:0; transition:opacity .3s; pointer-events:none;
+}
+.saved-flash.show { opacity:1; }
+.err { padding:2rem; color:var(--bad); }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">Res med <span>Barn</span><small>ADMIN</small></div>
+  <div class="topbar-actions">
+    <button class="btn" onclick="copyJson()">Kopiera JSON</button>
+    <button class="btn" onclick="downloadJson()">Ladda ner</button>
+    <button class="btn" onclick="tokenSettings()" title="GitHub-token">⚙</button>
+    <button class="btn btn-primary" id="saveBtn" onclick="saveToGithub()">💾 Spara &amp; publicera</button>
+  </div>
+</div>
+<div class="tabs">
+  <button class="tab active" data-view="seo" onclick="switchView('seo')">SEO – titlar &amp; beskrivningar</button>
+  <button class="tab" data-view="copy" onclick="switchView('copy')">Innehåll &amp; copy</button>
+</div>
+<div class="wrap">
+  <div class="hint">
+    <strong>Så sparar du:</strong> ändra i fälten → klicka <em>💾 Spara &amp; publicera</em>. Ändringarna committas direkt till GitHub och Cloudflare bygger om sajten inom en minut. Första gången behöver du klistra in en GitHub-token (kugghjulet förklarar hur). Titlar max <strong>60 tecken</strong>, beskrivningar max <strong>155</strong>.
+  </div>
+  <div id="view"></div>
+</div>
+<div class="saved-flash" id="flash">Nedladdad ✓</div>
+
+<script>
+/* ---- password gate (client-side deterrent; use Cloudflare Access for real protection) ---- */
+const PW_HASH = '2056d36bcc044427c806d3645d97710c9cc8119fd36245094c5e57160ac7551c';
+async function sha256(s) {
+  const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
+}
+async function gate() {
+  if (sessionStorage.getItem('rmb-admin') === PW_HASH) return true;
+  for (let i = 0; i < 3; i++) {
+    const pw = prompt('Lösenord för admin:');
+    if (pw === null) break;
+    if (await sha256(pw) === PW_HASH) {
+      sessionStorage.setItem('rmb-admin', PW_HASH);
+      return true;
+    }
+    alert('Fel lösenord.');
+  }
+  document.body.innerHTML = '<div style="padding:3rem;font-family:sans-serif;">Åtkomst nekad.</div>';
+  return false;
+}
+
+let C = null;
+let view = 'seo';
+
+/* ---- collect all pages that carry SEO fields ---- */
+function seoEntries() {
+  const rows = [];
+  const p = C.pages;
+  rows.push(['Startsidan · /', p.home]);
+  rows.push(['Guider · /guider/', p.guider]);
+  C.ages.forEach(a => {
+    rows.push([`${a.name} · /guider/${a.slug}/`, a]);
+    C.transports.forEach(t => {
+      rows.push([`${a.name} / ${t.name} · /guider/${a.slug}/${t.slug}/`, C.guides[a.slug + '/' + t.slug]]);
+    });
+  });
+  rows.push(['Topplistor · /topplistor/', p.topplistor]);
+  C.topplistor.lists.forEach(l => rows.push([`${l.name} · /topplistor/${l.slug}/`, l]));
+  rows.push(['Om oss · /om-oss/', p['om-oss']]);
+  rows.push(['Kontakt · /kontakt/', p.kontakt]);
+  return rows;
+}
+
+function counterClass(len, max) {
+  if (len > max) return 'bad';
+  if (len > max - 8) return 'warn';
+  return 'ok';
+}
+
+function seoField(obj, key, label, max) {
+  const id = 'f' + Math.random().toString(36).slice(2, 9);
+  const val = obj[key] || '';
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const cnt = document.getElementById(id + 'c');
+    el.addEventListener('input', () => {
+      obj[key] = el.value;
+      cnt.textContent = el.value.length + ' / ' + max;
+      cnt.className = 'counter ' + counterClass(el.value.length, max);
+    });
+  }, 0);
+  const tag = max > 100
+    ? `<textarea id="${id}">${escapeHtml(val)}</textarea>`
+    : `<input type="text" id="${id}" value="${escapeHtml(val)}">`;
+  return `<div class="field">
+    <div class="field-head"><label>${label}</label>
+    <span class="counter ${counterClass(val.length, max)}" id="${id}c">${val.length} / ${max}</span></div>
+    ${tag}</div>`;
+}
+
+function renderSeo() {
+  document.getElementById('view').innerHTML = seoEntries().map(([path, obj]) => `
+    <div class="seo-row">
+      <div class="seo-path">${escapeHtml(path)}</div>
+      ${seoField(obj, 'title', 'Meta title', 60)}
+      ${seoField(obj, 'description', 'Meta description', 155)}
+    </div>`).join('');
+}
+
+/* ---- copy editor: generic editor for strings & string-arrays ---- */
+const SKIP_KEYS = new Set(['slug', 'title', 'description', 'jsonld']);
+
+function copyTargets() {
+  const t = [
+    ['Sajtinställningar', C.site],
+    ['Startsidan', C.pages.home],
+    ['Guider (hubbsida)', C.pages.guider],
+    ['Topplistor (hubbsida)', C.pages.topplistor],
+    ['Om oss', C.pages['om-oss']],
+    ['Kontakt', C.pages.kontakt]
+  ];
+  C.ages.forEach(a => t.push([`Ålderssida: ${a.name}`, a]));
+  C.ages.forEach(a => C.transports.forEach(tr =>
+    t.push([`Guide: ${a.name} – ${tr.name}`, C.guides[a.slug + '/' + tr.slug]])));
+  C.topplistor.lists.forEach(l => t.push([`Topplista: ${l.name}`, l]));
+  return t;
+}
+
+function editorFor(obj, keyPath) {
+  let html = '';
+  for (const [k, v] of Object.entries(obj)) {
+    if (SKIP_KEYS.has(k)) continue;
+    if (typeof v === 'string') {
+      html += strField(obj, k, v);
+    } else if (Array.isArray(v) && v.every(x => typeof x === 'string')) {
+      html += listField(obj, k, v);
+    } else if (Array.isArray(v) && v.every(x => typeof x === 'object')) {
+      v.forEach((item, i) => {
+        html += `<div class="obj-card"><div class="seo-path">${k} #${i + 1}</div>${editorFor(item, keyPath + '.' + k + i)}</div>`;
+      });
+    }
+  }
+  return html;
+}
+
+function strField(obj, key, val) {
+  const id = 'c' + Math.random().toString(36).slice(2, 9);
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', () => { obj[key] = el.value; });
+  }, 0);
+  const long = val.length > 80;
+  return `<div class="field"><div class="field-head"><label>${key}</label></div>
+    ${long ? `<textarea id="${id}">${escapeHtml(val)}</textarea>` : `<input type="text" id="${id}" value="${escapeHtml(val)}">`}
+  </div>`;
+}
+
+function listField(obj, key, arr) {
+  const id = 'c' + Math.random().toString(36).slice(2, 9);
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', () => {
+      obj[key] = el.value.split('\n').map(s => s.trim()).filter(Boolean);
+    });
+  }, 0);
+  return `<div class="field"><div class="field-head"><label>${key} (en rad per punkt)</label></div>
+    <textarea id="${id}" style="min-height:${Math.min(40 + arr.length * 26, 300)}px">${escapeHtml(arr.join('\n'))}</textarea>
+  </div>`;
+}
+
+function renderCopy(selIdx) {
+  const targets = copyTargets();
+  const idx = selIdx ?? 0;
+  const [, obj] = targets[idx];
+  document.getElementById('view').innerHTML = `
+    <div class="picker"><select onchange="renderCopy(Number(this.value))">
+      ${targets.map(([name], i) => `<option value="${i}"${i === idx ? ' selected' : ''}>${escapeHtml(name)}</option>`).join('')}
+    </select></div>
+    <div class="obj-card">${editorFor(obj, 't' + idx)}</div>`;
+}
+
+
+/* ---- GitHub direct save ---- */
+const GH_REPO = 'jennielizenhielm-del/res-med-barn';
+const GH_PATH = 'content.json';
+const TOKEN_KEY = 'rmb-gh-token';
+
+const TOKEN_HELP = 'Skapa en token på github.com:\n\nSettings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.\n\n• Repository access: Only select repositories → res-med-barn\n• Permissions: Contents → Read and write\n• Expiration: t.ex. 1 år\n\nKlistra in token här (sparas bara i din webbläsare):';
+
+function getToken() {
+  let t = localStorage.getItem(TOKEN_KEY);
+  if (!t) {
+    t = prompt(TOKEN_HELP);
+    if (!t) return null;
+    t = t.trim();
+    localStorage.setItem(TOKEN_KEY, t);
+  }
+  return t;
+}
+
+function tokenSettings() {
+  const has = !!localStorage.getItem(TOKEN_KEY);
+  const t = prompt((has ? 'En token finns sparad i din webbläsare. Klistra in en ny för att byta, eller skriv RADERA för att ta bort den.\n\n' : '') + TOKEN_HELP);
+  if (t === null) return;
+  if (t.trim().toUpperCase() === 'RADERA') {
+    localStorage.removeItem(TOKEN_KEY);
+    flash('Token borttagen');
+  } else if (t.trim()) {
+    localStorage.setItem(TOKEN_KEY, t.trim());
+    flash('Token sparad ✓');
+  }
+}
+
+function b64utf8(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  const CH = 0x8000;
+  for (let i = 0; i < bytes.length; i += CH) {
+    bin += String.fromCharCode.apply(null, bytes.subarray(i, i + CH));
+  }
+  return btoa(bin);
+}
+
+async function saveToGithub(retry) {
+  const token = getToken();
+  if (!token) return;
+  const btn = document.getElementById('saveBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sparar…';
+  const api = `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}`;
+  const headers = {
+    'Authorization': 'Bearer ' + token,
+    'Accept': 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
+  try {
+    const cur = await fetch(api + '?ref=main', { headers });
+    if (cur.status === 401 || cur.status === 403) {
+      localStorage.removeItem(TOKEN_KEY);
+      throw new Error('Token ogiltig eller saknar behörighet. Prova igen med en ny token (kugghjulet).');
+    }
+    if (!cur.ok) throw new Error('Kunde inte läsa filen från GitHub (' + cur.status + ').');
+    const { sha } = await cur.json();
+    const res = await fetch(api, {
+      method: 'PUT',
+      headers,
+      body: JSON.stringify({
+        message: 'Uppdatera innehåll via admin',
+        content: b64utf8(JSON.stringify(C, null, 2)),
+        sha, branch: 'main'
+      })
+    });
+    if (res.status === 409 && !retry) { btn.disabled = false; return saveToGithub(true); }
+    if (!res.ok) throw new Error('GitHub sa nej (' + res.status + '). Försök igen.');
+    flash('Publicerad ✓ Sajten byggs om nu');
+  } catch (e) {
+    alert('Kunde inte spara: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '💾 Spara &amp; publicera';
+  }
+}
+
+/* ---- io ---- */
+function downloadJson() {
+  const blob = new Blob([JSON.stringify(C, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'content.json';
+  a.click();
+  flash('Nedladdad ✓');
+}
+async function copyJson() {
+  await navigator.clipboard.writeText(JSON.stringify(C, null, 2));
+  flash('Kopierad till urklipp ✓');
+}
+function flash(msg) {
+  const f = document.getElementById('flash');
+  f.textContent = msg;
+  f.classList.add('show');
+  setTimeout(() => f.classList.remove('show'), 1800);
+}
+function switchView(v) {
+  view = v;
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.view === v));
+  v === 'seo' ? renderSeo() : renderCopy(0);
+}
+function escapeHtml(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+/* ---- init ---- */
+gate().then(ok => {
+  if (!ok) return;
+  fetch('/content.json')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(json => { C = json; renderSeo(); })
+  .catch(() => {
+    document.getElementById('view').innerHTML =
+      '<p class="err">Kunde inte läsa /content.json. Kör du admin lokalt? Öppna den via sajten (resmedbarn.se/admin/) eller en lokal server.</p>';
+  });
+});
+</script>
+</body>
+</html>
