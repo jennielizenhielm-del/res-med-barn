@@ -114,7 +114,8 @@
         "Solskydd: hatt, tunn långärm och babysolkräm – bebisar under ett år ska helst inte ha direkt sol",
         "Reseförsäkring som täcker hela familjen – kolla att bebisen ingår",
         "Ett par extra tröjor för er själva. Ni kommer behöva dem."
-      ]
+      ],
+      "img": "photo-1519689680058-324335c77eba"
     },
     {
       "slug": "smabarn",
@@ -158,7 +159,8 @@
         "Våtservetter. Fler än så. Ännu fler.",
         "Solkräm, hatt och badblöjor om det är strandresa",
         "Reseapotek: febernedsättande, plåster, termometer"
-      ]
+      ],
+      "img": "photo-1502086223501-7ea6ecd79368"
     },
     {
       "slug": "barn",
@@ -202,7 +204,8 @@
         "Reseapotek plus åksjukemedicin om det är bil- eller bussresa",
         "Kopia på passen i mobilen",
         "En tom väska för allt de kommer samla på sig"
-      ]
+      ],
+      "img": "photo-1472162072942-cd5147eb3902"
     },
     {
       "slug": "tonaringar",
@@ -246,7 +249,8 @@
         "Powerbank – deras mobil är deras karta, kamera och sociala liv",
         "Kolla åldersgränser på aktiviteter i förväg (vattenland, skoter, dykning)",
         "Prata igenom regler för egen tid innan avresa, inte på plats"
-      ]
+      ],
+      "img": "photo-1529333166437-7750a6dd5a70"
     }
   ],
   "guides": {
@@ -282,7 +286,8 @@
         "Amning/flaska/napp vid start och landning – väck bebisen om det behövs",
         "Packa blöjor för dubbla restiden och ombyte även till er",
         "Barnmat och välling går utanför vätskereglerna – säg till i säkerhetskontrollen"
-      ]
+      ],
+      "img": "photo-1436491865332-7a61a109cc05"
     },
     "bebisar/tag": {
       "cardText": "Skötbord, vagnplats och gott om utrymme – tåget är bebisens bästa färdmedel.",
@@ -316,7 +321,8 @@
         "Välj platser nära skötbordstoaletten (kolla vagnskartan)",
         "Tajma avgången med en sovperiod och låt gungandet göra jobbet",
         "Bistron har varmvatten till vällingen"
-      ]
+      ],
+      "img": "photo-1474487548417-781cb71495f3"
     },
     "bebisar/buss": {
       "cardText": "Kortare sträckor funkar fint med bärsele och rätt tajming. Så gör ni det bekvämt.",
@@ -350,7 +356,8 @@
         "Boka platser långt fram och tajma med sovtiderna",
         "Byt blöja direkt före avgång, vikbar skötmatta i väskan",
         "Nattbuss är underskattat med bebis: mörkt och monotont"
-      ]
+      ],
+      "img": "photo-1544620347-c4fd4a3d5957"
     },
     "bebisar/bil": {
       "cardText": "Max två timmar i sträck, res på sovtiderna och packa bilen som ett proffs.",
@@ -384,7 +391,8 @@
         "Kör på natten eller tidiga morgonen – sovtid är körtid",
         "Bebisväska i baksätet, spegel mot babyskyddet, solskydd på rutorna",
         "Ring boendet om spjälsäng – nästan alla har, ingen skyltar med det"
-      ]
+      ],
+      "img": "photo-1469854523086-cc02fe5d8800"
     },
     "smabarn/flyg": {
       "cardText": "Eget säte eller knä? Och hur överlever man fyra timmar med en tvååring? Guiden.",
@@ -418,7 +426,8 @@
         "Boka avgång som krockar med lunchvilan",
         "Ny liten leksak var tjugonde minut – rotation slår allt",
         "Hitta flygplatsens lekrum och töm batterierna före gaten"
-      ]
+      ],
+      "img": "photo-1436491865332-7a61a109cc05"
     },
     "smabarn/tag": {
       "cardText": "Tåget är småbarnens bästa färdmedel: plats att röra sig, saker att titta på och inga bilbälten.",
@@ -452,7 +461,8 @@
         "Se promenaderna genom tåget som en del av konceptet",
         "Packa bordsaktiviteter: klistermärken, magnetbok, kritor",
         "Direkttåg eller minst 20 minuters bytesmarginal"
-      ]
+      ],
+      "img": "photo-1474487548417-781cb71495f3"
     },
     "smabarn/buss": {
       "cardText": "Trångt men billigt – och fullt görbart med rätt platser, rätt tider och åksjukeberedskap.",
@@ -486,7 +496,8 @@
         "Fönsterplats långt fram minskar både tristess och åksjuka",
         "Plastpåse, ombyte och våtservetter inom sekunders räckhåll",
         "Ljudböcker i hörlurar slår skärm vid åksjukerisk"
-      ]
+      ],
+      "img": "photo-1544620347-c4fd4a3d5957"
     },
     "smabarn/bil": {
       "cardText": "Roadtrip-rytmen som funkar med 1–3-åringar: två timmar kör, en timme lever.",
@@ -520,7 +531,8 @@
         "Googla lekplatser längs rutten innan avfärd",
         "Snacks, ombyte och våtservetter i kupén – inte i bagaget",
         "Bakåtvänt till minst 4 år, spegel så ni ser varandra"
-      ]
+      ],
+      "img": "photo-1469854523086-cc02fe5d8800"
     },
     "barn/flyg": {
       "cardText": "Nu blir flyget ett äventyr i sig. Egen ryggsäck, fönsterplats och lite eget ansvar.",
@@ -554,7 +566,8 @@
         "Fönsterplats till barnet, förbered dem på hela flödet",
         "Tuggummi eller dryck vid start och landning",
         "Ny överraskning per tredje flygtimme"
-      ]
+      ],
+      "img": "photo-1436491865332-7a61a109cc05"
     },
     "barn/tag": {
       "cardText": "Tågsemester på riktigt: restaurangvagn, kortspel och Europa genom fönstret.",
@@ -588,7 +601,8 @@
         "Nattåg med egen kupé = höjdpunkt och sparad hotellnatt",
         "Bygg ritualer: choklad i restaurangvagnen, kortspel efter lunch",
         "En väska per person – alla över fyra bär sitt eget"
-      ]
+      ],
+      "img": "photo-1474487548417-781cb71495f3"
     },
     "barn/buss": {
       "cardText": "Långfärdsbuss funkar utmärkt nu – och plånboken älskar den. Så blir resan bekväm.",
@@ -622,7 +636,8 @@
         "Åksjukemedicin 30 min före avgång – testad hemma först",
         "Ljudböcker slår skärm när det kränger",
         "Aktiva pauser: rörelse ger tre timmars sittro"
-      ]
+      ],
+      "img": "photo-1544620347-c4fd4a3d5957"
     },
     "barn/bil": {
       "cardText": "Den klassiska roadtrippen. Spellistor, bilspel och konsten att svara på 'är vi framme snart'.",
@@ -656,7 +671,8 @@
         "Familjespellista + ljudboksserie = halva underhållningen",
         "Skärmfria fönster första timmen – där uppstår bilpratet",
         "Ge barnen milstolpar så de kan mäta väntan själva"
-      ]
+      ],
+      "img": "photo-1469854523086-cc02fe5d8800"
     },
     "tonaringar/flyg": {
       "cardText": "Låt dem sköta sin egen incheckning, ge dem gången ifred – och landa som vänner.",
@@ -690,7 +706,8 @@
         "Boka platser nära men inte klistrade – hörlursavstånd",
         "eSIM installerat före avresa = noll landningsstress",
         "Dagsljus på morgonen första dagarna mot jetlag"
-      ]
+      ],
+      "img": "photo-1436491865332-7a61a109cc05"
     },
     "tonaringar/tag": {
       "cardText": "Interrail med tonåringar är familjeresans slutprov – och kanske dess höjdpunkt.",
@@ -724,7 +741,8 @@
         "Ungdomsrabatt 12–27 på interrail, barn under 12 gratis",
         "Boka platsreservationer tidigt för Frankrike/Spanien",
         "Egen tid i etapper: tre timmar, mobil och mötesplats"
-      ]
+      ],
+      "img": "photo-1474487548417-781cb71495f3"
     },
     "tonaringar/buss": {
       "cardText": "Billigast av allt – och tonåringar klarar nattbussen bättre än ni. Budget-guiden.",
@@ -758,7 +776,8 @@
         "Nattbuss sparar hotellnatt: nackkudde, hoodie, powerbank",
         "Låt tonåringen äga biljettappen och gate-kollen",
         "Packa mat och varm tröja – lita aldrig på AC:n eller kiosken"
-      ]
+      ],
+      "img": "photo-1544620347-c4fd4a3d5957"
     },
     "tonaringar/bil": {
       "cardText": "Roadtrip där tonåringen är co-pilot, DJ och navigatör – inte bara baksätespassagerare.",
@@ -792,7 +811,8 @@
         "Tonåringen lägger in 2–3 egna stopp i rutten",
         "Gemensamt ljud förmiddag, hörlurar eftermiddag",
         "Starta 09–10 och låt dem sova första timmen – välj era strider"
-      ]
+      ],
+      "img": "photo-1469854523086-cc02fe5d8800"
     }
   },
   "topplistor": {
@@ -896,7 +916,8 @@
             "h2": "Duovagn eller syskonvagn?",
             "text": "Väntar ni fler barn tätt kan en vagn med duo-möjlighet (som NXT90 med syskondel) spara er tusenlappar. Men köp inte duo på spekulation – syskondelar går utmärkt att köpa begagnade den dag det blir aktuellt, och marknaden är full av dem."
           }
-        ]
+        ],
+        "img": "photo-1566004100631-35d015d6a491"
       },
       {
         "slug": "resevagnar",
@@ -996,7 +1017,8 @@
             "h2": "Behöver ni ens en resevagn?",
             "text": "Med barn under ett år: kanske inte – bärselen löser det mesta och väger inget. Från ett år och uppåt är svaret nästan alltid ja. Ett småbarn som orkar gå 800 meter orkar inte gå till Colosseum, och en trött förälder som bär en sovande treåring genom en flygplats har köpt resevagn till nästa resa. Alla gör det. Gör det före resan i stället."
           }
-        ]
+        ],
+        "img": "photo-1488085061387-422e29b40080"
       },
       {
         "slug": "bilbarnstol",
@@ -1096,7 +1118,8 @@
             "h2": "Stolen på semesterresan",
             "text": "Hyrbil utomlands? Hyrfirmornas stolar är ett lotteri – slitna, fel storlek, ibland felmonterade. Ta med egen stol om ni kan (de flesta flygbolag tar bilbarnstol gratis som specialbagage) eller boka stol hos hyrfirman långt i förväg och kontrollera monteringen själva innan ni kör. En bältesstol som Kidfix är lätt nog att alltid ta med."
           }
-        ]
+        ],
+        "img": "photo-1449965408869-eaa3f722e40d"
       },
       {
         "slug": "tillbehor",
@@ -1196,7 +1219,8 @@
             "h2": "Resepacket: vad som följer med på semestern",
             "text": "Vår standarduppsättning på resa: myggnätet (alltid), solskyddet (söderut), regnskyddet (norrut och England), organizern (alltid – den blir handväska på resmålet). Åkpåsen stannar hemma utom på vintersemester. Allt utom åkpåsen ryms i vagnkorgen utan att märkas."
           }
-        ]
+        ],
+        "img": "photo-1522771930-78848d9293e8"
       }
     ]
   }

@@ -115,6 +115,15 @@ function breadcrumbs(items) {
 
 const paras = arr => arr.map(p => `<p>${esc(p)}</p>`).join('\n');
 
+/* ---------- images ---------- */
+const IMG = (id, w) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
+function media(img, emoji, cls, w) {
+  if (!img) return '';
+  return `<div class="card-media ${cls}" data-emoji="${emoji || '🌍'}">
+    <img src="${IMG(img, w)}" alt="" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+  </div>`;
+}
+
 function page(url, meta, active, inner, extraJsonld) {
   if (extraJsonld) meta = { ...meta, jsonld: extraJsonld };
   return head(meta, url) + nav(active) + `<main class="page">` + inner + `</main>` + footer();
@@ -154,7 +163,8 @@ function buildGuiderHub() {
 </header>
 <div class="card-grid">
   ${C.ages.map(a => `
-  <a class="hub-card" href="/guider/${a.slug}/">
+  <a class="hub-card has-media" href="/guider/${a.slug}/">
+    ${media(a.img, a.emoji, 'hub-media', 640)}
     <span class="hub-emoji">${a.emoji}</span>
     <h2>${esc(a.name)}</h2>
     <p class="hub-age">${esc(a.ageRange)}</p>
@@ -177,10 +187,12 @@ function buildAgeHubs() {
   <h1>${esc(a.h1)}</h1>
   <div class="page-intro">${paras(a.intro)}</div>
 </header>
+${media(a.img, a.emoji, 'page-hero', 1400)}
 <h2 class="section-title">Välj färdsätt</h2>
 <div class="card-grid transport-grid">
   ${C.transports.map(t => `
-  <a class="hub-card" href="/guider/${a.slug}/${t.slug}/">
+  <a class="hub-card has-media" href="/guider/${a.slug}/${t.slug}/">
+    ${media(C.guides[a.slug + '/' + t.slug].img, t.emoji, 'hub-media', 640)}
     <span class="hub-emoji">${t.emoji}</span>
     <h3>${esc(t.name)}</h3>
     <p>${esc(C.guides[a.slug + '/' + t.slug].cardText)}</p>
@@ -219,6 +231,7 @@ function buildGuides() {
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
+${media(g.img, t.emoji, 'page-hero', 1400)}
 <article class="article">
   ${g.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${esc(s.text)}</p>`).join('\n')}
 </article>
@@ -248,7 +261,8 @@ function buildTopplistor() {
 </header>
 <div class="card-grid">
   ${C.topplistor.lists.map(l => `
-  <a class="hub-card" href="/topplistor/${l.slug}/">
+  <a class="hub-card has-media" href="/topplistor/${l.slug}/">
+    ${media(l.img, l.emoji, 'hub-media', 640)}
     <span class="hub-emoji">${l.emoji}</span>
     <h2>${esc(l.name)}</h2>
     <p>${esc(l.cardText)}</p>
@@ -273,6 +287,7 @@ function buildTopplistor() {
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
+${media(l.img, l.emoji, 'page-hero', 1400)}
 <div class="products">
   ${l.products.map((p, i) => `
   <article class="product-card">
@@ -341,13 +356,13 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${today}</lastmod></url
   fs.copyFileSync(path.join(ROOT, 'static', 'admin.html'), path.join(DIST, 'admin', 'index.html'));
   console.log('  ✓ admin/index.html');
   fs.copyFileSync(path.join(ROOT, 'content.json'), path.join(DIST, 'content.json'));
-  console.log('  ✓ content.json');
+  console.log('  \u2713 content.json');
 }
 
 /* ---------- run ---------- */
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
-console.log('Bygger Res med Barn …');
+console.log('Bygger Res med Barn \u2026');
 buildHome();
 buildGuiderHub();
 buildAgeHubs();
