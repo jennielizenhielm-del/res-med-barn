@@ -354,6 +354,21 @@ h1 {
 }
 .pros li::before { content: '+'; color: var(--primary); font-weight: 700; }
 .cons li::before { content: '–'; color: var(--accent); font-weight: 700; }
+.btn-compare {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.1rem;
+  padding: 0.7rem 1.4rem;
+  background: var(--accent);
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+.btn-compare:hover { background: var(--accent-hover); }
 @media (max-width: 600px) {
   .pros-cons { grid-template-columns: 1fr; }
   .product-card { flex-direction: column; gap: 0.5rem; }
