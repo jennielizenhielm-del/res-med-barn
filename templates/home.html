@@ -691,6 +691,22 @@
     .dest-cat-chip[data-cat="winter"] { background: var(--cat-winter); }
     .dest-cat-chip[data-cat="sweden"] { background: var(--cat-sweden); }
 
+    .rating-badge {
+      position: absolute;
+      bottom: 0.7rem; right: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.22rem 0.65rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: #2B3440;
+      background: color-mix(in srgb, #FFFFFF 88%, transparent);
+      backdrop-filter: blur(6px);
+      z-index: 2;
+    }
+
     .dest-card-body { padding: 1.15rem 1.25rem 1.25rem; display: flex; flex-direction: column; flex: 1; }
     .dest-card-top {
       display: flex;
