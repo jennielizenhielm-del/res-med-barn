@@ -1879,9 +1879,12 @@ function renderDestinations() {
 
   grid.innerHTML = filtered.map((d, i) => `
     <article class="dest-card reveal" data-cat="${d.cat}" style="transition-delay: ${Math.min(i * 40, 400)}ms" onclick="openDetail('${slug(d.name)}')">
-      ${mediaHTML(d)}
-      <span class="dest-cat-chip" data-cat="${d.cat}">${d.catLabel}</span>
-      <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+      <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
+        <img src="${IMG(d.img)}" alt="${esc(d.name)}" loading="lazy"
+          onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+        <span class="dest-cat-chip" data-cat="${d.cat}">${d.catLabel}</span>
+        <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+      </div>
       <button class="fav-heart ${favs.has(d.name) ? 'faved' : ''}" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${heartSVG()}</button>
       <div class="dest-card-body">
         <div class="dest-card-top">
