@@ -324,6 +324,7 @@ ${media(l.img, l.emoji, 'page-hero', 1400)}
         <ul class="pros">${p.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
         <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
       </div>
+      ${p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : ''}
     </div>
   </article>`).join('')}
 </div>
