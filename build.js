@@ -375,6 +375,8 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${today}</lastmod></url
   write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${DOMAIN}/sitemap.xml`);
   fs.copyFileSync(path.join(ROOT, 'static', 'styles.css'), path.join(DIST, 'styles.css'));
   console.log('  ✓ styles.css');
+  fs.copyFileSync(path.join(ROOT, 'static', 'logo.png'), path.join(DIST, 'logo.png'));
+  console.log('  ✓ logo.png');
   fs.mkdirSync(path.join(DIST, 'admin'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'static', 'admin.html'), path.join(DIST, 'admin', 'index.html'));
   console.log('  ✓ admin/index.html');
