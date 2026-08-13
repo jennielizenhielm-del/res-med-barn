@@ -13,8 +13,8 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #F5F7FA;
-      --bg-alt: #EAF0F6;
+      --bg: #EBF5EE;
+      --bg-alt: #DCEDE1;
       --surface: #FFFFFF;
       --text: #2B3440;
       --text-secondary: #66748A;
@@ -22,9 +22,9 @@
       --primary: #5FA382;
       --primary-hover: #4E9271;
       --primary-light: #E0F1E8;
-      --accent: #E2836A;
-      --accent-hover: #D5735A;
-      --accent-light: #FBEAE4;
+      --accent: #F0A8C4;
+      --accent-hover: #E88FB0;
+      --accent-light: #FCE9F1;
       --sand: #DDAF82;
       --sand-light: #F7EDDD;
       --border: #E2E8F0;
@@ -57,9 +57,9 @@
       --primary: #8FC4A8;
       --primary-hover: #A5D4B9;
       --primary-light: #243029;
-      --accent: #EDA089;
-      --accent-hover: #F3B09C;
-      --accent-light: #352420;
+      --accent: #E8A0C0;
+      --accent-hover: #EFB4CE;
+      --accent-light: #3A2530;
       --sand: #C4956A;
       --sand-light: #2E261E;
       --border: #383430;
@@ -114,8 +114,18 @@
       color: var(--text);
       text-decoration: none;
       letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
     .nav-brand span { color: var(--accent); }
+    .nav-logo { height: 36px; width: auto; display: block; flex-shrink: 0; }
+    @media (max-width: 480px) {
+      .nav-brand { font-size: 1.1rem; }
+      .nav-logo { height: 30px; }
+    }
 
     .nav-links {
       display: flex;
@@ -1245,7 +1255,7 @@
 
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Huvudmeny">
-  <a href="#" class="nav-brand">Res med <span>Barn</span></a>
+  <a href="#" class="nav-brand"><img src="/static/img/logo.png" alt="Res med Barn" class="nav-logo">Res med <span>Barn</span></a>
   <ul class="nav-links">
     <li><a href="/guider/">Guider</a></li>
     <li><a href="/topplistor/">Topplistor</a></li>
@@ -1472,6 +1482,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-about">
+      <img src="/static/img/logo.png" alt="Res med Barn" style="height: 90px; width: auto; margin-bottom: 0.75rem; display: block;">
       <h3>Res med <span>Barn</span></h3>
       <p>Guiden för svenska familjer som vill upptäcka världen tillsammans. Vi har rest med barn sedan de var bebisar och delar med oss av våra bästa tips och erfarenheter. Från Gotland till Tokyo — vi har testat så ni slipper.</p>
     </div>
@@ -1532,7 +1543,7 @@ const DESTINATIONS = [
   cat: "beach",
   catLabel: "Strand & Sol",
   emoji: "🏖️",
-  img: "photo-1512753360435-329c4535a9a7",
+  img: "photo-1734639403228-476663647bcf",
   desc: "Glöm partystämpeln. Mallorcas norra del är rent familjemagiskt — stenbyar, turkost vatten och barnmenyer på varje restaurang. Serra de Tramuntana bjuder dessutom på vandringar som funkar med bärstol.",
   age: "0–15 år",
   ageMin: 0,
@@ -1552,7 +1563,7 @@ const DESTINATIONS = [
   cat: "beach",
   catLabel: "Strand & Sol",
   emoji: "🏖️",
-  img: "photo-1596394516093-501ba68a0ba6",
+  img: "photo-1621971913709-377f53807c6a",
   desc: "Enorma sandstränder, grottor att utforska med båt och fish & chips för halva priset mot Sverige. Albufeira har vattenpark, Lagos har charm. Perfekt mix av avkoppling och äventyr.",
   age: "2–14 år",
   ageMin: 2,
@@ -1693,7 +1704,7 @@ const DESTINATIONS = [
   cat: "parks",
   catLabel: "Nöjesparker",
   emoji: "🎢",
-  img: "photo-1533162507191-d3b3b9b3b9b9",
+  img: "photo-1686084915896-5c3035e86d13",
   desc: "Anrik nöjespark mitt i Stockholm, på Djurgården med utsikt över vattnet. Klassiska karuseller för de minsta och riktiga fartåk som Insane för de äldre barnen. Perfekt för en halvdag mellan stadens andra sevärdheter.",
   age: "2–16 år",
   ageMin: 2,
@@ -2154,7 +2165,7 @@ const DESTINATIONS = [
   cat: "cities",
   catLabel: "Storstäder",
   emoji: "🏙️",
-  img: "photo-1533106418989-88406c7cc8ca",
+  img: "photo-1503696967350-ad1874122058",
   desc: "Nice och Cannes bjuder på elegant strandliv, glasspauser vid Promenade des Anglais och närhet till både berg och hav. Mer sofistikerat än de klassiska charterorterna, men gångavstånd och kollektivtrafik gör det förvånansvärt smidigt med barn.",
   age: "3–16 år",
   ageMin: 3,
