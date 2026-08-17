@@ -420,6 +420,52 @@
       margin-bottom: 0.6rem;
     }
     .section-header p { font-size: 1.02rem; color: var(--text-secondary); line-height: 1.6; }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ---- FAQ ---- */
+    .faq { display: flex; flex-direction: column; gap: 0.6rem; max-width: 780px; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 0;
+      overflow: hidden;
+    }
+    .faq-item summary {
+      padding: 1rem 1.25rem;
+      font-weight: 600;
+      font-size: 0.98rem;
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      padding-right: 2.5rem;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      position: absolute;
+      right: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--accent);
+      transition: transform 0.2s;
+    }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-item p {
+      padding: 0 1.25rem 1.1rem;
+      font-size: 0.94rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
 
     /* ---- CATEGORIES ---- */
     .categories {
@@ -1485,6 +1531,11 @@
       <p class="newsletter-success" id="newsletterSuccess">Tack! Första resmålet landar inom kort. 🎉</p>
     </div>
   </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq-section">
+  <!--FAQ_PLACEHOLDER-->
 </section>
 
 <!-- FOOTER -->
