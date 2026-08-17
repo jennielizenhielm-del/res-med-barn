@@ -158,6 +158,7 @@ function buildHome() {
   html = html
     .replace(/<title>.*?<\/title>/, `<title>${esc(m.title)}</title>`)
     .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="${esc(m.description)}">`)
+    .replace('<!--FAQ_PLACEHOLDER-->', m.faq ? faqHtml(m.faq) : '')
     .replace('</head>', `<link rel="canonical" href="${DOMAIN}/">
 <meta property="og:title" content="${esc(m.title)}">
 <meta property="og:description" content="${esc(m.description)}">
@@ -167,6 +168,7 @@ function buildHome() {
       '@context': 'https://schema.org', '@type': 'WebSite',
       name: C.site.name, url: DOMAIN + '/'
     })}</script>
+${m.faq ? `<script type="application/ld+json">${JSON.stringify(faqLd(m.faq))}</script>` : ''}
 </head>`);
   write('index.html', html);
 }
@@ -191,8 +193,9 @@ function buildGuiderHub() {
     <p>${esc(a.cardText)}</p>
     <span class="hub-link">Till guiderna →</span>
   </a>`).join('')}
-</div>`;
-  write('guider/index.html', page('/guider/', m, '/guider/', inner, bc.jsonld));
+</div>
+${faqHtml(m.faq)}`;
+  write('guider/index.html', page('/guider/', m, '/guider/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
 }
 
 /* ---------- AGE HUBS ---------- */
@@ -289,8 +292,9 @@ function buildTopplistor() {
     <p>${esc(l.cardText)}</p>
     <span class="hub-link">Se listan →</span>
   </a>`).join('')}
-</div>`;
-  write('topplistor/index.html', page('/topplistor/', hub, '/topplistor/', hubInner, bcHub.jsonld));
+</div>
+${faqHtml(hub.faq)}`;
+  write('topplistor/index.html', page('/topplistor/', hub, '/topplistor/', hubInner, hub.faq ? [bcHub.jsonld, faqLd(hub.faq)] : bcHub.jsonld));
 
   for (const l of C.topplistor.lists) {
     const url = `/topplistor/${l.slug}/`;

@@ -7,7 +7,13 @@
   "pages": {
     "home": {
       "title": "Resa med barn – guider, resmål & tips | Res med Barn",
-      "description": "Handplockade resmål, ärliga guider och topplistor för familjer som reser med barn. Skrivet av föräldrar som faktiskt varit där – med barnen."
+      "description": "Handplockade resmål, ärliga guider och topplistor för familjer som reser med barn. Skrivet av föräldrar som faktiskt varit där – med barnen.",
+      "faq": [
+        {
+          "q": "Var är det bäst att resa med barn?",
+          "a": "Det beror på barnens ålder och vad familjen gillar. Grekland, Kroatien och Spanien är klassiska val för långgrunda stränder och barnvänliga hotell. Nöjesparker som Legoland eller Gröna Lund passar utmärkt för en kortare resa, och Sverige (Gotland, Stockholms skärgård) är perfekt när ni vill hålla resan enkel. Filtrera bland våra 36 resmål ovan efter ålder, budget och typ av resa för att hitta rätt för just er familj."
+        }
+      ]
     },
     "guider": {
       "title": "Reseguider – från bebis till tonåring | Res med Barn",
@@ -17,6 +23,12 @@
         "Att resa med en femmånaders bebis och att resa med en fjortonåring är två helt olika sporter. Därför är våra guider uppdelade efter ålder – och efter hur ni tar er fram.",
         "Välj barnens ålder nedan, sen färdsätt. Varje guide bygger på egna resor, inte på pressreleaser.",
         "Guiderna täcker de fyra vanligaste färdsätten – flyg, tåg, buss och bil – för varje åldersgrupp. Praktiska råd om priser, säkerhet, packning och de misstag vi redan gjort åt er, så att semestern med barn börjar bra redan på resan dit."
+      ],
+      "faq": [
+        {
+          "q": "Vilken ålder är bäst att resa med barn?",
+          "a": "Det finns inget entydigt svar, men två perioder brukar lyftas fram: 3–12 månader (innan barnet kan gå och kräver eget schema) och 4–7 år (nog gammal för att minnas resan, inte för stor för familjeaktiviteter). Tonåringar kan också vara fantastiska reskamrater om resan anpassas efter deras intressen. Se våra åldersguider nedan för konkreta tips oavsett var era barn befinner sig."
+        }
       ]
     },
     "topplistor": {
@@ -27,6 +39,12 @@
         "Barnprylar är en djungel av sponsrade omdömen och femstjärniga recensioner från folk som ägt produkten i tre dagar. Vi gör det enklare: korta listor, tydliga favoriter och ärliga minus.",
         "Listorna uppdateras löpande när det kommer nya modeller som förtjänar en plats – eller när gamla favoriter börjar kännas omsprungna.",
         "Vi fokuserar på det som spelar roll för resande familjer: vikt, packmått, hållbarhet och hur produkten funkar efter sex månader – inte hur den ser ut i butikshyllan. Varje lista har ett tydligt förstahandsval, ett budgetalternativ och ärliga minus även på favoriterna."
+      ],
+      "faq": [
+        {
+          "q": "Var kan jag hitta en billig resa med barn?",
+          "a": "Res i lågsäsong (maj eller september slår juli på pris utan att tumma mycket på vädret), boka charterresor i god tid, och filtrera våra resmål på budgetnivån € för de mest prisvärda alternativen. Att välja rätt utrustning spelar också roll – våra topplistor nedan hjälper er hitta prylar som håller hela barndomen istället för att köpas om varje år."
+        }
       ]
     },
     "om-oss": {
@@ -314,6 +332,10 @@
         {
           "q": "Behöver bebisen ett eget pass?",
           "a": "Ja. Alla som reser utomlands behöver eget pass, oavsett ålder – även en tre veckor gammal bebis. Räkna med några veckors handläggningstid hos polisen och boka passtid tidigt, gärna innan ni bokar resan."
+        },
+        {
+          "q": "Måste man ha intyg när man reser med barn?",
+          "a": "Reser bara en vårdnadshavare med barnet kan gränskontroll eller flygbolag be om ett skriftligt medgivande från den andra föräldern, även om det sällan är ett formellt krav i sig. Ta med ett undertecknat intyg (finns mallar hos t.ex. Polisen) – det tar fem minuter att fixa hemma och kan spara timmar av krångel vid gränsen."
         }
       ]
     },
