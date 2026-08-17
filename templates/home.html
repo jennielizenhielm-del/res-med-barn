@@ -429,6 +429,63 @@
       margin-bottom: 1.5rem;
     }
 
+    /* ---- GUIDE HUB (startsida) ---- */
+    .guide-hub-row { margin-bottom: 2rem; }
+    .guide-hub-row:last-child { margin-bottom: 0; }
+    .guide-hub-label {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 0.9rem;
+    }
+    .guide-hub-label span:first-child {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .guide-hub-all {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .guide-hub-all:hover { text-decoration: underline; }
+    .guide-hub-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.85rem;
+    }
+    .guide-hub-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.3rem;
+      padding: 1.5rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+    .guide-hub-card:hover {
+      border-color: var(--text-muted);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .guide-hub-card .ghc-emoji { font-size: 1.8rem; margin-bottom: 0.3rem; }
+    .guide-hub-card .ghc-name {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .guide-hub-card .ghc-desc { font-size: 0.8rem; color: var(--text-muted); }
+    @media (max-width: 640px) {
+      .guide-hub-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+
     /* ---- FAQ ---- */
     .faq { display: flex; flex-direction: column; gap: 0.6rem; max-width: 780px; }
     .faq-item {
@@ -1385,6 +1442,72 @@
   <div class="featured-grid" id="featuredGrid"></div>
 </section>
 
+<!-- GUIDER & TOPPLISTOR -->
+<section class="section guide-hub-section" id="guide-teaser">
+  <div class="section-header reveal">
+    <h2>Guider &amp; topplistor</h2>
+    <p>Inte bara vart ni ska — utan hur ni tar er dit, och vad ni packar. Djupdykningar för varje ålder, och prylarna som faktiskt håller.</p>
+  </div>
+
+  <div class="guide-hub-row reveal">
+    <div class="guide-hub-label">
+      <span>📚 Guider per ålder</span>
+      <a href="/guider/" class="guide-hub-all">Alla guider →</a>
+    </div>
+    <div class="guide-hub-cards">
+      <a class="guide-hub-card" href="/guider/bebisar/">
+        <span class="ghc-emoji">🍼</span>
+        <span class="ghc-name">Bebisar</span>
+        <span class="ghc-desc">0–1 år</span>
+      </a>
+      <a class="guide-hub-card" href="/guider/smabarn/">
+        <span class="ghc-emoji">🧸</span>
+        <span class="ghc-name">Småbarn</span>
+        <span class="ghc-desc">1–3 år</span>
+      </a>
+      <a class="guide-hub-card" href="/guider/barn/">
+        <span class="ghc-emoji">🎒</span>
+        <span class="ghc-name">Barn</span>
+        <span class="ghc-desc">4–12 år</span>
+      </a>
+      <a class="guide-hub-card" href="/guider/tonaringar/">
+        <span class="ghc-emoji">🎧</span>
+        <span class="ghc-name">Tonåringar</span>
+        <span class="ghc-desc">13+ år</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="guide-hub-row reveal">
+    <div class="guide-hub-label">
+      <span>🛒 Topplistor</span>
+      <a href="/topplistor/" class="guide-hub-all">Alla topplistor →</a>
+    </div>
+    <div class="guide-hub-cards">
+      <a class="guide-hub-card" href="/topplistor/vagnar/">
+        <span class="ghc-emoji">🛒</span>
+        <span class="ghc-name">Vagnar</span>
+        <span class="ghc-desc">Bäst i test</span>
+      </a>
+      <a class="guide-hub-card" href="/topplistor/resevagnar/">
+        <span class="ghc-emoji">👶</span>
+        <span class="ghc-name">Resevagnar</span>
+        <span class="ghc-desc">Bäst i test</span>
+      </a>
+      <a class="guide-hub-card" href="/topplistor/bilbarnstol/">
+        <span class="ghc-emoji">🚗</span>
+        <span class="ghc-name">Bilbarnstol</span>
+        <span class="ghc-desc">Bäst i test</span>
+      </a>
+      <a class="guide-hub-card" href="/topplistor/tillbehor/">
+        <span class="ghc-emoji">🎒</span>
+        <span class="ghc-name">Tillbehör</span>
+        <span class="ghc-desc">Bäst i test</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ALL DESTINATIONS -->
 <section class="section dest-section" id="destinations">
   <div class="section-header reveal">
@@ -1491,28 +1614,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- GUIDE TEASER -->
-<section class="section" id="guide-teaser">
-  <div class="section-header reveal">
-    <h2>Guider &amp; topplistor</h2>
-    <p>Djupdykningar för varje ålder och färdsätt — och listorna över prylarna som faktiskt håller.</p>
-  </div>
-  <div class="featured-grid">
-    <a class="feat-card reveal" href="/guider/bebisar/" style="text-decoration:none;color:inherit;">
-      <div class="feat-card-inner"><h3>🍼 Resa med bebis</h3><p class="feat-desc">Flyg, tåg, bil och buss med barn under ett år — vad som funkar och vad ni kan skippa.</p><div class="feat-meta"><span class="feat-meta-item"><strong>Till guiden →</strong></span></div></div>
-    </a>
-    <a class="feat-card reveal" href="/topplistor/resevagnar/" style="text-decoration:none;color:inherit;">
-      <div class="feat-card-inner"><h3>👶 Bästa resevagnen 2026</h3><p class="feat-desc">Vagnarna som får plats i handbagaget och överlever en hel semester.</p><div class="feat-meta"><span class="feat-meta-item"><strong>Se listan →</strong></span></div></div>
-    </a>
-    <a class="feat-card reveal" href="/topplistor/bilbarnstol/" style="text-decoration:none;color:inherit;">
-      <div class="feat-card-inner"><h3>🚗 Bilbarnstol bäst i test</h3><p class="feat-desc">Fem stolar vi litar på — bakåtvänt, roterbart och utan krångel.</p><div class="feat-meta"><span class="feat-meta-item"><strong>Se listan →</strong></span></div></div>
-    </a>
-    <a class="feat-card reveal" href="/guider/tonaringar/" style="text-decoration:none;color:inherit;">
-      <div class="feat-card-inner"><h3>🎧 Semester med tonåringar</h3><p class="feat-desc">Så planerar ni en resa som även en fjortonåring erkänner var bra.</p><div class="feat-meta"><span class="feat-meta-item"><strong>Till guiden →</strong></span></div></div>
-    </a>
   </div>
 </section>
 
