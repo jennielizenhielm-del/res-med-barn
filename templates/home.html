@@ -216,6 +216,12 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
     }
+    @media (max-width: 640px) {
+      .theme-toggle-btn { display: none; }
+      .nav-actions { gap: 0.4rem; }
+      .icon-btn, .hamburger { height: 34px; min-width: 34px; width: 34px; }
+    }
+    .mobile-theme-toggle { border-top: 1px solid var(--border-light); margin-top: 0.5rem; padding-top: 1rem; }
 
     /* ---- HERO ---- */
     .hero {
@@ -619,6 +625,8 @@
       cursor: pointer;
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+      color: inherit;
     }
     .feat-card:hover {
       border-color: var(--text-muted);
@@ -794,6 +802,8 @@
       cursor: pointer;
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+      color: inherit;
     }
     .dest-card:hover {
       border-color: var(--text-muted);
@@ -1111,6 +1121,9 @@
       background: var(--surface);
       cursor: pointer;
       transition: all var(--transition);
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     .similar-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--text-muted); }
     .similar-card .card-media { height: 110px; }
@@ -1367,16 +1380,22 @@
     gtag('config', 'G-8F9VYNYZRM');
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Resmål för barnfamiljer","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"TouristDestination","name":"Kreta","description":"Kreta har allt en barnfamilj kan önska sig: grunda, kristallklara vikar som Elafonissi, fantastisk mat och antika ruiner som får till och med treåringar att häpna. Vi åkte hit med barnen första gången och har inte hittat något bättre sedan dess.","image":"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Grekland"},"url":"https://www.ving.se/grekland/kreta"}},{"@type":"ListItem","position":2,"item":{"@type":"TouristDestination","name":"Mallorca","description":"Glöm partystämpeln. Mallorcas norra del är rent familjemagiskt — stenbyar, turkost vatten och barnmenyer på varje restaurang. Serra de Tramuntana bjuder dessutom på vandringar som funkar med bärstol.","image":"https://images.unsplash.com/photo-1512753360435-329c4535a9a7?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Spanien"},"url":"https://www.ving.se/spanien/mallorca"}},{"@type":"ListItem","position":3,"item":{"@type":"TouristDestination","name":"Algarve","description":"Enorma sandstränder, grottor att utforska med båt och fish & chips för halva priset mot Sverige. Albufeira har vattenpark, Lagos har charm. Perfekt mix av avkoppling och äventyr.","image":"https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Portugal"},"url":"https://www.ving.se/portugal/algarve"}},{"@type":"ListItem","position":4,"item":{"@type":"TouristDestination","name":"Sardinien","description":"Karibiskt vatten fast fyra timmar från Arlanda. Costa Smeralda är dyrt men resten av ön är överkomligt. Stranden La Pelosa vid Stintino? Barnen vägrade åka därifrån.","image":"https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Italien"},"url":"https://www.ving.se/italien/sardinien"}},{"@type":"ListItem","position":5,"item":{"@type":"TouristDestination","name":"Koh Lanta","description":"Thailands lugna familjeö. Inga fullmånefester, bara långgrunda stränder, billiga thairätter och barnvänliga resorts. Lång resa dit men varje timme värd det.","image":"https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Thailand"},"url":"https://www.ving.se/thailand/krabi/koh-lanta"}},{"@type":"ListItem","position":6,"item":{"@type":"TouristAttraction","name":"Disneyland Paris","description":"Det magiska som Disney levererar är svårt att matcha. Barnen glömmer att de har jetlag redan vid entrén. Boka hotell i parken om du kan — morgonöppningen före alla andra är guld värd.","image":"https://images.unsplash.com/photo-1597466599360-3b9775841aec?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Frankrike"},"url":"https://www.disneylandparis.com/"}},{"@type":"ListItem","position":7,"item":{"@type":"TouristAttraction","name":"Legoland Billund","description":"Klassikern. Miniland imponerar på alla åldrar och de nya åkattraktionerna har lyft parken rejält. Kombinera med Lalandia bredvid för en komplett vecka med badland och Lego.","image":"https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Danmark"},"url":"https://www.legoland.dk/"}},{"@type":"ListItem","position":8,"item":{"@type":"TouristAttraction","name":"Europa-Park","description":"Europas bästa nöjespark enligt i princip alla rankingar, och efter ett besök förstår man varför. Enormt utbud för alla åldrar, från karuseller till berg-och-dalbanor som slår Liseberg.","image":"https://images.unsplash.com/photo-1560713781-d00f6c18f388?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Tyskland"},"url":"https://www.europapark.de/"}},{"@type":"ListItem","position":9,"item":{"@type":"TouristAttraction","name":"Liseberg","description":"Sverigesvängen. Kaniner för de små, Helix för de stora, och atmosfären slår de flesta europeiska parkerna. Jul på Liseberg är dessutom en helt egen upplevelse.","image":"https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Göteborg, Sverige"},"url":"https://www.liseberg.se/"}},{"@type":"ListItem","position":10,"item":{"@type":"TouristAttraction","name":"Gröna Lund","description":"Anrik nöjespark mitt i Stockholm, på Djurgården med utsikt över vattnet. Klassiska karuseller för de minsta och riktiga fartåk som Insane för de äldre barnen. Perfekt för en halvdag mellan stadens andra sevärdheter.","image":"https://images.unsplash.com/photo-1533162507191-d3b3b9b3b9b9?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Stockholm, Sverige"},"url":"https://www.gronalund.com/"}},{"@type":"ListItem","position":11,"item":{"@type":"TouristAttraction","name":"Tivoli","description":"Världens näst äldsta nöjespark mitt i stan. Charmigt, vackert och perfekt storlek för en dag med barn. Kvällsbelysningen är magisk — stanna tills det mörknar.","image":"https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Köpenhamn, Danmark"},"url":"https://www.tivoli.dk/"}},{"@type":"ListItem","position":12,"item":{"@type":"TouristDestination","name":"London","description":"Natural History Museum ensamt gör resan värd det — och det är gratis. Lägg till Harry Potter-studion, Camden Market och dubbeldäckarbussar. Barnen får sin kulturkick utan att märka det.","image":"https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"England"},"url":"https://www.ving.se/storbritannien/london"}},{"@type":"ListItem","position":13,"item":{"@type":"TouristDestination","name":"Barcelona","description":"Gaudís byggnader är som att kliva in i en saga. Park Güell, Barceloneta-stranden på eftermiddagen, tapas till middag. Staden har en energi som funkar för alla åldrar.","image":"https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Spanien"},"url":"https://www.ving.se/spanien/barcelona"}},{"@type":"ListItem","position":14,"item":{"@type":"TouristDestination","name":"Tokyo","description":"Kulturkrocken som barn älskar. Robotrestauranger, Pokémon Center, Shibuya-korsningen, och den bästa maten i världen. Otroligt rent och säkert. Dyrt men oförglömligt.","image":"https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Japan"},"url":"https://www.ving.se/japan/tokyo"}},{"@type":"ListItem","position":15,"item":{"@type":"TouristDestination","name":"New York","description":"Central Park, Frihetsgudinnan, Broadway-shower och pizza på varje hörn. Intensivt och utmattande men det finns en anledning till att alla vill dit minst en gång.","image":"https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"USA"},"url":"https://www.ving.se/usa/ostra-usa/new-york"}},{"@type":"ListItem","position":16,"item":{"@type":"TouristDestination","name":"Amsterdam","description":"Platt, cykelvänligt och fullt av grachter att upptäcka med båt. NEMO Science Museum är fantastiskt för barn, och pannkakor till lunch varje dag? Inga protester hemifrån.","image":"https://images.unsplash.com/photo-1534351590666-13e3e96b5017?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Nederländerna"},"url":"https://www.ving.se/nederlanderna/amsterdam"}},{"@type":"ListItem","position":17,"item":{"@type":"TouristDestination","name":"Gotland","description":"Sveriges egen semesterö. Visby inom murarna, Fårö med raukarna, och stränderna vid Tofta. Barnen cyklar fritt, alla äter glass och tempot går ner till noll. Sommar som den ska vara.","image":"https://images.unsplash.com/photo-1560089168-6516081f5bf1?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Sverige"},"url":"https://gotland.com/"}},{"@type":"ListItem","position":18,"item":{"@type":"TouristDestination","name":"Astrid Lindgrens Värld","description":"Pippi, Emil och Karlsson — allt kommer till liv. Teatern i parken är förvånansvärt bra och Bullerbyn-stugan gör vuxna tårögda. Obligatoriskt minst en gång för svenska barnfamiljer.","image":"https://images.unsplash.com/photo-1509356843151-3e7d96241e11?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Vimmerby, Sverige"},"url":"https://astridlindgrensvarld.se/"}},{"@type":"ListItem","position":19,"item":{"@type":"TouristDestination","name":"Kolmården","description":"Sveriges bästa djurpark med safari, tropikarium och riktigt bra nyheter varje säsong. Wildfire-berg-och-dalbanan satte en ny standard. Perfekt tvådagarsutflykt från Stockholm.","image":"https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Norrköping, Sverige"},"url":"https://www.kolmarden.com/"}},{"@type":"ListItem","position":20,"item":{"@type":"TouristDestination","name":"Höga Kusten","description":"UNESCO-världsarv med stigar, klippor och Skuleskogen. Höga Kusten-leden har etapper som funkar med barn. Sverige på riktigt, utan folkmassor. Känslan av att vara först på platsen.","image":"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Ångermanland, Sverige"},"url":"https://www.hogakusten.com/"}},{"@type":"ListItem","position":21,"item":{"@type":"TouristDestination","name":"Stockholms skärgård","description":"24 000 öar. Vaxholm på dagstur eller hyr stuga på Sandhamn för en vecka. Barnen badar, fiskar och hoppar från klippor. Funktionell semester utan flygstress.","image":"https://images.unsplash.com/photo-1508189860359-777d945909ef?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Sverige"},"url":"https://visitskargarden.se/"}},{"@type":"ListItem","position":22,"item":{"@type":"TouristAttraction","name":"Tekniska museet","description":"Sveriges största teknik- och vetenskapsmuseum, byggt för att pillas på. Barnen får trycka, klättra och experimentera i egen takt medan de faktiskt lär sig något. Perfekt regndagsutflykt i Stockholm.","image":"https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Stockholm, Sverige"},"url":"https://www.tekniskamuseet.se/"}},{"@type":"ListItem","position":23,"item":{"@type":"TouristAttraction","name":"Vasamuseet","description":"Ett helt, 400 år gammalt skepp mitt i en museihall — barn som annars tycker museer är trist blir svarslösa här. Kombinera med barnverkstaden på helger och lov för extra pyssel kring skeppet och sjöfart.","image":"https://images.unsplash.com/photo-1580795479225-c50ab8c3348d?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Stockholm, Sverige"},"url":"https://www.vasamuseet.se/"}},{"@type":"ListItem","position":24,"item":{"@type":"TouristAttraction","name":"Polismuseet","description":"Litet men engagerande museum om polisarbete förr och nu, med riktiga polisbilar, uniformer och interaktiva stationer där barnen får testa på detektivarbete. Ligger vid Gärdet, granne med Tekniska museet — lätt att kombinera till en museidag.","image":"https://images.unsplash.com/photo-1589391886645-d51941baf7fb?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Stockholm, Sverige"},"url":"https://polismuseet.se/"}},{"@type":"ListItem","position":25,"item":{"@type":"TouristAttraction","name":"Sjöhistoriska museet","description":"Gratis museum om Sveriges sjöfart och örlogshistoria, med skeppsmodeller, dykarutrustning och en hel avdelning med lekhörnor för de yngsta. Mysigt och lugnare tempo än grannen Vasamuseet, med bra café med utsikt över vattnet.","image":"https://images.unsplash.com/photo-1544967082-d9d25d867d66?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Stockholm, Sverige"},"url":"https://sjohistoriska.se/"}},{"@type":"ListItem","position":26,"item":{"@type":"TouristAttraction","name":"Paradox","description":"Interaktivt illusionsmuseum fullt av optiska bländverk, omvända rum och foton som ser omöjliga ut. Mindre \"titta men rör inte\" och mer \"testa, skratta och fota\" — en garanterad hit för barn som tröttnat på traditionella montrar.","image":"https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Stockholm, Sverige"},"url":"https://paradoxmuseum.com/stockholm/"}},{"@type":"ListItem","position":27,"item":{"@type":"TouristDestination","name":"Rhodos","description":"Medeltida stadsmurar att upptäcka till fots, långgrunda familjestränder i Faliraki och vattenland precis vid stranden. Rhodos har historien för de äldre barnen och det grunda vattnet för de yngsta — en av Greklands mest kompletta familjeöar.","image":"https://images.unsplash.com/photo-1601581875039-e899893d520c?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Grekland"},"url":"https://www.ving.se/grekland/rhodos"}},{"@type":"ListItem","position":28,"item":{"@type":"TouristDestination","name":"Korfu","description":"Grönskande grekisk ö med olivlundar, mysiga byar och stränder som passar både lugna dopp och lite större vågor. Dassia och Gouvia är klassiska familjeorter med lagom avstånd till Korfu stad för en dagsutflykt.","image":"https://images.unsplash.com/photo-1601581875309-4f27f3937a3f?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Grekland"},"url":"https://www.ving.se/grekland/korfu"}},{"@type":"ListItem","position":29,"item":{"@type":"TouristDestination","name":"Istrien","description":"Kroatiens mest lättillgängliga kustremsa för barnfamiljer — kort bilresa från flera europeiska flygplatser, klippstränder blandat med sandvikar, och Rovinjs pastellfärgade gamla stad som gör sig fint på varenda familjefoto.","image":"https://images.unsplash.com/photo-1555990538-ceba7abbdba9?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Kroatien"},"url":"https://www.ving.se/kroatien/istrien"}},{"@type":"ListItem","position":30,"item":{"@type":"TouristDestination","name":"Makarska rivieran","description":"Dramatiska berg som reser sig rakt bakom kritvita sandstränder — Makarska rivieran har några av Kroatiens finaste familjestränder i Brela och Tučepi, med tallskog som ger skugga mitt på dagen.","image":"https://images.unsplash.com/photo-1580891349087-9d51c7f6a1d0?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Kroatien"},"url":"https://www.ving.se/kroatien/makarska-rivieran"}},{"@type":"ListItem","position":31,"item":{"@type":"TouristDestination","name":"Costa Blanca","description":"Benidorm och grannorterna är byggda för familjesemester: långa sandstränder, vattenland i världsklass och ett utbud av barnvänliga restauranger som slår det mesta i Medelhavet. Perfekt för familjer som vill ha allt inom promenadavstånd.","image":"https://images.unsplash.com/photo-1583422409516-9a4b0d3f5a1c?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Spanien"},"url":"https://www.ving.se/spanien/costa-blanca"}},{"@type":"ListItem","position":32,"item":{"@type":"TouristDestination","name":"Costa Brava","description":"Klippiga vikar och charmiga fiskebyar en kort bit norr om Barcelona. Lloret de Mar har det stora utbudet av familjehotell och underhållning, medan mindre orter längs kusten bjuder på lugnare stränder om ni vill komma undan.","image":"https://images.unsplash.com/photo-1512753360442-27bc4cd90adc?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Spanien"},"url":"https://www.ving.se/spanien/costa-brava"}},{"@type":"ListItem","position":33,"item":{"@type":"TouristDestination","name":"Franska Rivieran","description":"Nice och Cannes bjuder på elegant strandliv, glasspauser vid Promenade des Anglais och närhet till både berg och hav. Mer sofistikerat än de klassiska charterorterna, men gångavstånd och kollektivtrafik gör det förvånansvärt smidigt med barn.","image":"https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Frankrike"},"url":"https://www.ving.se/frankrike/franska-rivieran"}},{"@type":"ListItem","position":34,"item":{"@type":"TouristDestination","name":"Korsika","description":"Medelhavets kanske vackraste ö, med kristallklart vatten och berg som når nästan ner till stranden. Mindre turisttätt än Mallorca eller Kreta, vilket gör Korsika till ett bra val för familjer som vill ha naturupplevelser utöver bad.","image":"https://images.unsplash.com/photo-1591192867485-56d5c5c0e5f8?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Frankrike"},"url":"https://www.ving.se/frankrike/korsika"}},{"@type":"ListItem","position":35,"item":{"@type":"TouristDestination","name":"Phuket","description":"Thailands största och mest barnvänliga ö, med familjeinriktade stränder i Bangtao och Karon där vattnet är lugnare än på de mer kända partystränderna. Enormt utbud av allt från vattenland till elefantsanktuarier.","image":"https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Thailand"},"url":"https://www.ving.se/thailand/phuket"}},{"@type":"ListItem","position":36,"item":{"@type":"TouristDestination","name":"Ao Nang","description":"Krabis mest lättillgängliga strandort, med dramatiska kalkstensklippor som stiger rakt ur havet. Kortare och billigare båtturer till öarna än från Phuket, och ett tempo som passar familjer som vill varva strand med utflykter.","image":"https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=900&auto=format&fit=crop","address":{"@type":"PostalAddress","addressCountry":"Thailand"},"url":"https://www.ving.se/thailand/krabi/ao-nang"}}]}</script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
 </head>
 <body>
 <a href="#destinations" class="skip-link">Hoppa till resmål</a>
 
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Huvudmeny">
-  <a href="#" class="nav-brand"><img src="/logo.png" alt="Res med Barn" class="nav-logo">Res med <span>Barn</span></a>
+  <a href="/" class="nav-brand"><img src="/logo.png" alt="Res med Barn" class="nav-logo">Res med <span>Barn</span></a>
   <ul class="nav-links">
     <li><a href="/guider/">Guider</a></li>
     <li><a href="/topplistor/">Topplistor</a></li>
+    <li><a href="/stader/">Städer</a></li>
     <li><a href="#destinations">Resmål</a></li>
     <li><a href="#quiz">Hitta er resa</a></li>
     <li><a href="/om-oss/">Om oss</a></li>
@@ -1385,7 +1404,7 @@
     <button class="icon-btn" aria-label="Mina favoriter" onclick="showFavorites()" title="Mina favoriter">
       <span>♥</span><span class="fav-count" id="favCount"></span>
     </button>
-    <button class="icon-btn" aria-label="Byt tema" onclick="toggleTheme()">
+    <button class="icon-btn theme-toggle-btn" aria-label="Byt tema" onclick="toggleTheme()">
       <span class="theme-icon-light">☀️</span>
       <span class="theme-icon-dark">🌙</span>
     </button>
@@ -1398,10 +1417,12 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="/guider/">Guider</a>
   <a href="/topplistor/">Topplistor</a>
+  <a href="/stader/">Städer</a>
   <a href="#destinations" onclick="closeMenu()">Alla resmål</a>
   <a href="#quiz" onclick="closeMenu()">Hitta er resa</a>
   <a href="/om-oss/">Om oss</a>
   <a href="/kontakt/">Kontakt</a>
+  <a href="#" onclick="toggleTheme(); return false;" class="mobile-theme-toggle">☀️ / 🌙 Byt tema</a>
 </div>
 
 <!-- HERO -->
@@ -1445,7 +1466,7 @@
     <h2>Populära resmål</h2>
     <p>De resmål som svenska familjer bokar om och om igen. Testat, godkänt och barngaranterat.</p>
   </div>
-  <div class="featured-grid" id="featuredGrid"></div>
+  <div class="featured-grid" id="featuredGrid"><!--FEATURED_GRID_PLACEHOLDER--></div>
 </section>
 
 <!-- GUIDER & TOPPLISTOR -->
@@ -1557,7 +1578,7 @@
       </div>
     </div>
   </div>
-  <div class="dest-grid" id="destGrid"></div>
+  <div class="dest-grid" id="destGrid"><!--DEST_GRID_PLACEHOLDER--></div>
 </section>
 
 <!-- QUIZ -->
@@ -1667,6 +1688,7 @@
       <h4>Snabblänkar</h4>
       <a href="/guider/">Guider</a>
       <a href="/topplistor/">Topplistor</a>
+      <a href="/stader/">Städer</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
     </div>
@@ -2484,7 +2506,7 @@ function renderCollage() {
 function renderFeatured() {
   const featured = DESTINATIONS.filter(d => d.featured);
   document.getElementById('featuredGrid').innerHTML = featured.map(d => `
-    <article class="feat-card reveal" onclick="openDetail('${slug(d.name)}')">
+    <a class="feat-card reveal" href="/resmal/${slug(d.name)}/" onclick="return handleCardClick(event, '${slug(d.name)}')">
       ${mediaHTML(d)}
       <span class="feat-badge">${d.emoji} ${d.catLabel}</span>
       <button class="fav-heart ${favs.has(d.name) ? 'faved' : ''}" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${heartSVG()}</button>
@@ -2499,7 +2521,7 @@ function renderFeatured() {
           <span class="feat-meta-item">⭐ <strong>${d.rating}</strong></span>
         </div>
       </div>
-    </article>`).join('');
+    </a>`).join('');
 }
 
 /* ============ DESTINATION GRID ============ */
@@ -2540,7 +2562,7 @@ function renderDestinations() {
   }
 
   grid.innerHTML = filtered.map((d, i) => `
-    <article class="dest-card reveal" data-cat="${d.cat}" style="transition-delay: ${Math.min(i * 40, 400)}ms" onclick="openDetail('${slug(d.name)}')">
+    <a class="dest-card reveal" data-cat="${d.cat}" style="transition-delay: ${Math.min(i * 40, 400)}ms" href="/resmal/${slug(d.name)}/" onclick="return handleCardClick(event, '${slug(d.name)}')">
       <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
         <img src="${IMG(d.img)}" alt="${esc(d.name)}" loading="lazy"
           onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
@@ -2561,13 +2583,19 @@ function renderDestinations() {
           <span class="meta-chip">📅 ${d.season}</span>
         </div>
       </div>
-    </article>`).join('');
+    </a>`).join('');
 
   initReveal();
 }
 
 /* ============ DETAIL VIEW ============ */
 let lastScrollY = 0;
+
+function handleCardClick(ev, s) {
+  ev.preventDefault();
+  openDetail(s);
+  return false;
+}
 
 function openDetail(s, pushHash = true) {
   const d = bySlug(s);
@@ -2610,13 +2638,13 @@ function openDetail(s, pushHash = true) {
         <h3 class="detail-section-title">Liknande resmål</h3>
         <div class="similar-grid">
           ${similar.map(x => `
-            <div class="similar-card" onclick="openDetail('${slug(x.name)}')">
+            <a class="similar-card" href="/resmal/${slug(x.name)}/" onclick="return handleCardClick(event, '${slug(x.name)}')">
               ${mediaHTML(x)}
               <div class="sim-body">
                 <h4>${esc(x.name)}</h4>
                 <p class="sim-country">${esc(x.country)} · ${x.budget}</p>
               </div>
-            </div>`).join('')}
+            </a>`).join('')}
         </div>` : ''}
     </div>`;
 
@@ -2625,7 +2653,7 @@ function openDetail(s, pushHash = true) {
   view.scrollTop = 0;
   view.classList.add('open');
   document.body.classList.add('no-scroll');
-  if (pushHash) history.pushState({ detail: s }, '', `#resmal/${s}`);
+  if (pushHash) history.pushState({ detail: s }, '', `/resmal/${s}/`);
 }
 
 function closeDetail(fromPop = false) {
@@ -2633,12 +2661,12 @@ function closeDetail(fromPop = false) {
   if (!view.classList.contains('open')) return;
   view.classList.remove('open');
   document.body.classList.remove('no-scroll');
-  if (!fromPop && location.hash.startsWith('#resmal/')) history.pushState('', '', location.pathname + location.search);
+  if (!fromPop && /^\/resmal\//.test(location.pathname)) history.pushState('', '', '/');
   window.scrollTo(0, lastScrollY);
 }
 
 window.addEventListener('popstate', () => {
-  const m = location.hash.match(/^#resmal\/(.+)$/);
+  const m = location.pathname.match(/^\/resmal\/([^/]+)\/?$/);
   if (m) openDetail(m[1], false);
   else closeDetail(true);
 });
@@ -2814,13 +2842,13 @@ function renderQuizResults() {
     <p class="quiz-result-label">Era tre bästa matchningar</p>
     <div class="quiz-results">
       ${scored.map(({ d }) => `
-        <div class="similar-card" onclick="openDetail('${slug(d.name)}')">
+        <a class="similar-card" href="/resmal/${slug(d.name)}/" onclick="return handleCardClick(event, '${slug(d.name)}')">
           ${mediaHTML(d)}
           <div class="sim-body">
             <h4>${d.emoji} ${esc(d.name)}</h4>
             <p class="sim-country">${esc(d.country)} · ${d.budget} · ⭐ ${d.rating}</p>
           </div>
-        </div>`).join('')}
+        </a>`).join('')}
     </div>
     <button class="quiz-restart" onclick="quizRestart()">Gör om quizet</button>`;
 }
@@ -2879,7 +2907,7 @@ function initReveal() {
   saveFavs();
   initReveal();
 
-  const m = location.hash.match(/^#resmal\/(.+)$/);
+  const m = location.pathname.match(/^\/resmal\/([^/]+)\/?$/);
   if (m) openDetail(m[1], false);
 })();
 </script>
