@@ -67,6 +67,21 @@
         "Har du en fråga om ett resmål, ett tips vi borde känna till eller en produkt du tycker att vi ska testa? Mejla oss. Vi läser allt och svarar på det mesta, oftast inom några dagar.",
         "Företag och PR-byråer: vi tar gärna emot testprodukter, men vi lovar aldrig omdömen i förväg. Hör av er om ni vill diskutera något annat."
       ]
+    },
+    "stader": {
+      "title": "Städer med barn — gratis & betalt | Res med Barn",
+      "description": "Stockholm, Göteborg och Malmö med barn — filtrera på gratis eller betalt, ålder och inomhus/utomhus. Verkliga priser, uppdaterade för 2026.",
+      "h1": "Storstäder i Sverige med barn",
+      "intro": [
+        "Ni behöver inte flyga någonstans för en minnesvärd familjeresa — Sveriges tre största städer har egna stadsguider fyllda med både gratis och betalda aktiviteter.",
+        "Varje stad nedan går att filtrera på pris, ålder och väder, så ni snabbt hittar det som passar just er dag."
+      ],
+      "faq": [
+        {
+          "q": "Är det dyrt att resa med barn i svenska städer?",
+          "a": "Inte nödvändigtvis — alla tre städer har gott om helt gratis aktiviteter, från parker och lekplatser till museer med fri entré för barn. Kombinera en gratis förmiddag med en betald aktivitet på eftermiddagen för att hålla nere kostnaden utan att kompromissa på upplevelsen."
+        }
+      ]
     }
   },
   "transports": [
@@ -1707,6 +1722,328 @@
           {
             "q": "Hur varmt klär man barnet i åkpåse?",
             "a": "Tumregel: ett lager mindre än du tror, plus mössa. Åkpåsen med ull isolerar kraftigt – ett barn i vanliga inneklädar plus overall i en vinteråkpåse blir svettigt. Känn på nacken, inte händerna: varm nacke är lagom, svettig är för mycket."
+          }
+        ]
+      }
+    ]
+  },
+  "stader": {
+    "cities": [
+      {
+        "slug": "stockholm",
+        "name": "Stockholm",
+        "emoji": "🏛️",
+        "img": "photo-1509356843151-3e7d96241e11",
+        "cardText": "Museer med fri entré, Djurgårdens sevärdheter och gott om gratis parker.",
+        "title": "Stockholm med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Stockholm med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Skansen, Junibacken, Vasamuseet, Hagaparken och fler — med verkliga priser.",
+        "h1": "Stockholm med barn",
+        "intro": [
+          "Stockholm kombinerar storstadens utbud med naturens omedelbarhet — skog, hav och park finns bokstavligen runt nästa hörn, och kollektivtrafiken täcker hela länet.",
+          "En stor andel av stadens bästa barnaktiviteter är helt gratis eller väldigt billiga. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+        ],
+        "activities": [
+          {
+            "name": "Hagaparken",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Norra innerstaden",
+            "desc": "Stor kunglig park med öppna gräsytor, Fjärilshuset (kostar extra) och gott om plats att springa av sig."
+          },
+          {
+            "name": "Junibacken",
+            "type": "paid",
+            "price": "Från ca 189 kr",
+            "ageMin": 1,
+            "ageMax": 8,
+            "indoor": true,
+            "area": "Djurgården",
+            "desc": "Sagomuseum byggt kring Astrid Lindgrens värld, med tågresa genom sagorna och stor lekvärld."
+          },
+          {
+            "name": "Skansen",
+            "type": "paid",
+            "price": "Gratis under 15 år, annars ca 260 kr",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Djurgården",
+            "desc": "Friluftsmuseum och djurpark med svenska djur, historiska hus och Lill-Skansen för de minsta."
+          },
+          {
+            "name": "Moderna Museet",
+            "type": "free",
+            "price": "Gratis för barn/unga",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Skeppsholmen",
+            "desc": "Fri entré för barn och unga året runt, med kreativa workshops och familjevänliga visningar."
+          },
+          {
+            "name": "Etnografiska museet",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 2,
+            "ageMax": 14,
+            "indoor": true,
+            "area": "Djurgården",
+            "desc": "Fri entré året runt, med interaktiva utställningar och sagovärldar för de yngsta."
+          },
+          {
+            "name": "Tyresta nationalpark",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 4,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Söder om stan",
+            "desc": "Naturreservat med gammal skog och lättillgängliga leder — perfekt för en heldagsutflykt i naturen."
+          },
+          {
+            "name": "Kulturhuset Stadsteatern (Lava)",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 6,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Sergels torg",
+            "desc": "Gratis ungdomsvåning med spel, skapande och mysiga hörnor — perfekt regndagsalternativ mitt i city."
+          },
+          {
+            "name": "Mulle Meck-parken",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 1,
+            "ageMax": 8,
+            "indoor": false,
+            "area": "Järvastaden, Solna",
+            "desc": "Temalekplats inspirerad av barnboksfiguren Mulle Meck, fylld med kreativa byggstationer."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Vasamuseet gratis för barn?",
+            "a": "Vasamuseet har fri entré för besökare under 19 år året runt. Boka gärna biljett online i förväg under sommaren för att undvika köer."
+          },
+          {
+            "q": "Vilka museer i Stockholm är helt gratis?",
+            "a": "Moderna Museet och Etnografiska museet har fri entré för barn/unga året runt. Flera andra statliga museer, som Historiska museet, har generellt fri entré för alla."
+          }
+        ]
+      },
+      {
+        "slug": "goteborg",
+        "name": "Göteborg",
+        "emoji": "⚓",
+        "img": "photo-1580891349087-9d51c7f6a1d0",
+        "cardText": "Slottsskogens gratis djurpark, Liseberg och massor av gröna parker.",
+        "title": "Göteborg med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Göteborg med barn: filtrera på gratis/betalt, ålder och väder. Slottsskogen, Liseberg, Universeum, Trädgårdsföreningen och fler — med verkliga priser.",
+        "h1": "Göteborg med barn",
+        "intro": [
+          "Göteborg är en påtagligt barnvänlig stad — kompakt, spårvagnsburen och med några av Sveriges bästa gratis familjemål mitt i city.",
+          "Barn och unga upp till 20 år har dessutom fri entré till Göteborgs kommunala museer, vilket gör en museidag betydligt billigare än man tror."
+        ],
+        "activities": [
+          {
+            "name": "Slottsskogen",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Linnéstaden",
+            "desc": "Göteborgs mest besökta gratis-djurpark, med älg, ren, sälar, pingviner och Barnens Zoo att klappa djur i."
+          },
+          {
+            "name": "Liseberg",
+            "type": "paid",
+            "price": "Se aktuellt pris, entré + åkband",
+            "ageMin": 1,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Korsvägen",
+            "desc": "Nöjesparken med Kaninlandet för de minsta och stora åkattraktioner för äldre barn och tonåringar."
+          },
+          {
+            "name": "Universeum",
+            "type": "paid",
+            "price": "Se aktuellt pris",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Korsvägen",
+            "desc": "Sveriges nationella science center med regnskog, akvarium och hajbassäng under samma tak."
+          },
+          {
+            "name": "Trädgårdsföreningen",
+            "type": "free",
+            "price": "Gratis (Palmhuset kostar extra)",
+            "ageMin": 0,
+            "ageMax": 12,
+            "indoor": false,
+            "area": "Centralt",
+            "desc": "Historisk park mitt i stan med stora grönytor, lekplatser och det ikoniska växthuset Palmhuset."
+          },
+          {
+            "name": "Göteborgs botaniska trädgård",
+            "type": "free",
+            "price": "Gratis ute, växthusen 50 kr",
+            "ageMin": 2,
+            "ageMax": 14,
+            "indoor": false,
+            "area": "Änggården",
+            "desc": "Sveriges största botaniska trädgård, med stora ytor att utforska och växthus att kika in i."
+          },
+          {
+            "name": "Naturhistoriska museet",
+            "type": "paid",
+            "price": "245 kr vuxen, 175 kr barn (2026)",
+            "ageMin": 4,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Slottsskogen",
+            "desc": "Sveriges äldsta naturhistoriska museum, med blåval, dinosaurier och massor av utstoppade djur."
+          },
+          {
+            "name": "Jubileumsparken",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 2,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Frihamnen",
+            "desc": "Utomhusbad, lekskulpturer och skateboardramp precis vid vattnet, tvärs över Hisingsbron."
+          },
+          {
+            "name": "Världens lek",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 1,
+            "ageMax": 10,
+            "indoor": false,
+            "area": "Världskulturmuseet",
+            "desc": "Färgsprakande, tillgänglighetsanpassad lekplats precis utanför Världskulturmuseet."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Slottsskogen gratis?",
+            "a": "Ja, hela parken med djurhagar, Barnens Zoo och lekplatser är helt gratis och öppen året runt."
+          },
+          {
+            "q": "Har barn fri entré till museer i Göteborg?",
+            "a": "Barn och unga upp till 20 år, samt studenter, har fri entré till Göteborgs kommunala museer, exempelvis Göteborgs stadsmuseum."
+          }
+        ]
+      },
+      {
+        "slug": "malmo",
+        "name": "Malmö",
+        "emoji": "🌉",
+        "img": "photo-1508189860359-777d945909ef",
+        "cardText": "Kompakt och platt stad — lekplats, bad och museum inom gångavstånd.",
+        "title": "Malmö med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Malmö med barn: filtrera på gratis/betalt, ålder och väder. Folkets Park, Malmö Museer, Ribersborgs strand och fler — med verkliga priser.",
+        "h1": "Malmö med barn",
+        "intro": [
+          "Malmö är kanske det mest praktiska storstadsvalet för barnfamiljer — stadskärnan är helt platt och ryms inom en kvadrat på 2×2 km.",
+          "Det betyder att ni kan ta er från lekplats till bad till museum till glassbar på en enda eftermiddag, utan att stressa fram kollektivtrafik."
+        ],
+        "activities": [
+          {
+            "name": "Folkets Park",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 14,
+            "indoor": false,
+            "area": "Möllevången",
+            "desc": "Malmös familjehjärta med lekplatser för olika åldrar, ponnyridning på sommarhelger och plaskdamm."
+          },
+          {
+            "name": "Bullhuset (Folkets Park)",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 1,
+            "ageMax": 4,
+            "indoor": true,
+            "area": "Möllevången",
+            "desc": "Inomhuslekpark för de allra minsta, en del av Folkets Park — perfekt regndagsalternativ."
+          },
+          {
+            "name": "Malmö Museer (Malmöhus slott)",
+            "type": "paid",
+            "price": "100 kr vuxen, gratis under 19 år (2026)",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Skeppsbron",
+            "desc": "Fyra museer i ett slottskomplex, inklusive akvarium med hajar och pingviner samt Teknikens och sjöfartens hus."
+          },
+          {
+            "name": "Ribersborgs strand",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Ribersborg",
+            "desc": "Malmös mest besökta strand, kallad \"Ribban\" — lång sandstrand med närhet till centrum."
+          },
+          {
+            "name": "Pildammsparken",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 12,
+            "indoor": false,
+            "area": "Centrala Malmö",
+            "desc": "Stora dammar och grönytor, perfekt för att mata änder och leka på den stora lekplatsen."
+          },
+          {
+            "name": "Slottsparken",
+            "type": "free",
+            "price": "Gratis (roddbåt kostar extra)",
+            "ageMin": 2,
+            "ageMax": 12,
+            "indoor": false,
+            "area": "Vid Malmöhus slott",
+            "desc": "Vacker park med kanal där man kan hyra roddbåtar, samt flera lekplatser och stora gräsytor."
+          },
+          {
+            "name": "Bokskogen (Torup)",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Strax utanför Malmö",
+            "desc": "Stort skogsområde med vandringsleder, grillplatser och naturlekplats — bra för en heldagsutflykt."
+          },
+          {
+            "name": "Disgusting Food Museum",
+            "type": "paid",
+            "price": "Se aktuellt pris",
+            "ageMin": 8,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Centrala Malmö",
+            "desc": "Udda och lärorikt museum om världens mest ovanliga maträtter — populärt bland äldre barn."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Malmö Museer gratis för barn?",
+            "a": "Ja, barn och unga under 19 år har fri entré till Malmö Museer (Malmöhus slott), inklusive akvariet."
+          },
+          {
+            "q": "Vad kostar det att bada i Malmö?",
+            "a": "Ribersborgs strand och de flesta av Malmös utomhusbad är helt gratis. Stadens plaskdammar öppnar under sommaren och kostar heller inget."
           }
         ]
       }
