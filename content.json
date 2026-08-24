@@ -352,7 +352,39 @@
           "q": "Måste man ha intyg när man reser med barn?",
           "a": "Reser bara en vårdnadshavare med barnet kan gränskontroll eller flygbolag be om ett skriftligt medgivande från den andra föräldern, även om det sällan är ett formellt krav i sig. Ta med ett undertecknat intyg (finns mallar hos t.ex. Polisen) – det tar fem minuter att fixa hemma och kan spara timmar av krångel vid gränsen."
         }
-      ]
+      ],
+      "packlista": {
+        "title": "Packlista: flyga med bebis",
+        "categories": [
+          {
+            "name": "Mat & dryck",
+            "items": [
+              "Ersättning i portionsförpackningar eller pulver (räkna en extra matning utöver planerat)",
+              "Minst 2–3 rena, tomma flaskor (fylls med vatten efter security)",
+              "Extra nappar — minst 2, barnet tappar dem garanterat",
+              "Snacks till er själva, flygmaten dröjer ofta"
+            ]
+          },
+          {
+            "name": "Förnödenheter",
+            "items": [
+              "Blöjor — räkna generöst, gärna 2–3 extra utöver planerat antal",
+              "Våtservetter och skötunderlägg",
+              "Minst två extra ombyten (till barnet — och gärna ett extra till dig också)",
+              "Nappband så nappen inte trillar ner på golvet var femte minut",
+              "Lätt filt eller pläd, det blir ofta kallt ombord"
+            ]
+          },
+          {
+            "name": "Leksaker & aktiviteter",
+            "items": [
+              "Fönstersugkoppsleksaker (t.ex. en liten fidget spinner som fäster på fönstret)",
+              "Mjuka tygböcker eller crinkle-leksaker",
+              "En helt ny, liten leksak barnet aldrig sett förut — överraskningseffekten köper er ofta 20 lugna minuter"
+            ]
+          }
+        ]
+      }
     },
     "bebisar/tag": {
       "cardText": "Skötbord, vagnplats och gott om utrymme – tåget är bebisens bästa färdmedel.",
@@ -580,7 +612,41 @@
           "q": "Gäller vätskereglerna för barnmat?",
           "a": "Nej, barnmat, mjölk och välling får tas med i de mängder som behövs för resan, utöver den vanliga vätskegränsen. Säg till i säkerhetskontrollen innan väskan röntgas så går det snabbare."
         }
-      ]
+      ],
+      "packlista": {
+        "title": "Packlista: flyga med småbarn",
+        "categories": [
+          {
+            "name": "Mat & dryck",
+            "items": [
+              "Torra snacks i små portionspåsar (bär inte med sig sås eller kladd)",
+              "Tom vattenflaska att fylla efter security",
+              "Favoritmellanmål hemifrån — nytt och okänt funkar sämre i stressiga stunder"
+            ]
+          },
+          {
+            "name": "Förnödenheter",
+            "items": [
+              "Extra ombyte i handbagaget, gärna två",
+              "Blöjor eller tränarbyxor plus våtservetter",
+              "Liten kudde eller filt för tupplur ombord"
+            ]
+          },
+          {
+            "name": "Leksaker & aktiviteter",
+            "items": [
+              "Vässbara pennor i ett pennskrin med små ritblock — vässningen i sig blir underhållning",
+              {
+                "text": "Målarböcker i miniformat — tar minimal plats i packningen",
+                "url": "https://www.akademibokhandeln.se/search?q=m%C3%A5la%20mini"
+              },
+              "Klistermärkesark",
+              "Mini-magnetbyggplattor i en liten låda",
+              "Ett par småpaket, inslagna som presenter, att öppna med jämna mellanrum under flygningen"
+            ]
+          }
+        ]
+      }
     },
     "smabarn/tag": {
       "cardText": "Tåget är småbarnens bästa färdmedel: plats att röra sig, saker att titta på och inga bilbälten.",
@@ -808,7 +874,37 @@
           "q": "Får man ta med snacks genom säkerhetskontrollen?",
           "a": "Ja, fast mat som frukt, mackor och kex går bra genom kontrollen. Drycker över 100 ml stoppas – ta tomma vattenflaskor och fyll dem efter kontrollen i stället."
         }
-      ]
+      ],
+      "packlista": {
+        "title": "Packlista: flyga med barn",
+        "categories": [
+          {
+            "name": "Mat & dryck",
+            "items": [
+              "Egna snacks — flygmaten kommer sällan när magen är som mest sugen",
+              "Tom vattenflaska att fylla efter security"
+            ]
+          },
+          {
+            "name": "Förnödenheter",
+            "items": [
+              "Extra ombyte i handbagaget",
+              "Barnanpassade hörlurar",
+              "Powerbank till surfplatta eller telefon"
+            ]
+          },
+          {
+            "name": "Leksaker & aktiviteter",
+            "items": [
+              "Nedladdade filmer, serier eller spel — flygets wifi går sällan att lita på",
+              "Ritblock eller målarbok",
+              "En vanlig kortlek — funkar utan skärm och tar ingen plats",
+              "Ett litet pysselkit",
+              "En ny bok barnet inte läst än"
+            ]
+          }
+        ]
+      }
     },
     "barn/tag": {
       "cardText": "Tågsemester på riktigt: restaurangvagn, kortspel och Europa genom fönstret.",
@@ -1036,7 +1132,35 @@
           "q": "Kan familjen sitta på olika rader?",
           "a": "Ja, och med tonåringar är det ofta en fördel. Boka rader nära varandra men känn ingen press att sitta ihop – en tonåring med hörlurar två rader bort är en nöjd tonåring. Yngre syskon sitter förstås med förälder."
         }
-      ]
+      ],
+      "packlista": {
+        "title": "Packlista: flyga med tonåringar",
+        "categories": [
+          {
+            "name": "Mat & dryck",
+            "items": [
+              "Egna snacks",
+              "Tom vattenflaska att fylla efter security"
+            ]
+          },
+          {
+            "name": "Förnödenheter",
+            "items": [
+              "Powerbank — flygets uttag räcker sällan till alla",
+              "Bra hörlurar eller hörlursmuffar",
+              "Nackkudde för den som faktiskt vill sova"
+            ]
+          },
+          {
+            "name": "Leksaker & aktiviteter",
+            "items": [
+              "Nedladdat innehåll offline: serier, musik, poddar",
+              "En fysisk bok — ibland skönt med paus från skärmen",
+              "Spel förladdade på mobilen så de funkar utan uppkoppling"
+            ]
+          }
+        ]
+      }
     },
     "tonaringar/tag": {
       "cardText": "Interrail med tonåringar är familjeresans slutprov – och kanske dess höjdpunkt.",

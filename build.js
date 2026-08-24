@@ -327,6 +327,20 @@ ${media(g.img, t.emoji, 'page-hero', 1400)}
   <h2>Snabbtips</h2>
   <ul class="checklist">${g.quicktips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
 </div>
+${g.packlista ? `
+<div class="packlist-box">
+  <h2>${esc(g.packlista.title)}</h2>
+  <div class="packlist-grid">
+    ${g.packlista.categories.map(cat => `
+    <div class="packlist-col">
+      <h3>${esc(cat.name)}</h3>
+      <ul class="checklist">${cat.items.map(x => typeof x === 'string'
+        ? `<li>${esc(x)}</li>`
+        : `<li>${esc(x.text)} — <a href="${esc(x.url)}" target="_blank" rel="noopener nofollow">se exempel →</a></li>`
+      ).join('')}</ul>
+    </div>`).join('')}
+  </div>
+</div>` : ''}
 ${faqHtml(g.faq)}
 <h2 class="section-title">Fler guider för ${esc(a.name.toLowerCase())}</h2>
 <div class="related-links">
