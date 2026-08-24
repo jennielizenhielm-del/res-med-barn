@@ -339,6 +339,24 @@ ${faqHtml(g.faq)}
 }
 
 /* ---------- TOPPLISTOR ---------- */
+const TOPPLISTOR_RELATED = {
+  vagnar: ['resevagnar', 'tillbehor', 'bilbarnstol'],
+  resevagnar: ['vagnar', 'tillbehor', 'barsele'],
+  bilbarnstol: ['vagnar', 'tillbehor', 'babymonitor'],
+  tillbehor: ['vagnar', 'resevagnar', 'bilbarnstol'],
+  barsele: ['barsjal', 'sleep-carrier', 'resevagnar'],
+  amningskudde: ['brostpump', 'nappflaska', 'sleep-carrier'],
+  'sleep-carrier': ['amningskudde', 'barsele', 'barsjal'],
+  nappar: ['nappflaska', 'amningskudde', 'brostpump'],
+  brostpump: ['nappflaska', 'amningskudde', 'nappar'],
+  nappflaska: ['nappar', 'brostpump', 'amningskudde'],
+  babymonitor: ['sleep-carrier', 'bilbarnstol', 'vagnar'],
+  barsjal: ['barsele', 'sleep-carrier', 'amningskudde'],
+  'uv-badklader': ['regnstall', 'vinterskor', 'tillbehor'],
+  regnstall: ['vinterskor', 'uv-badklader', 'tillbehor'],
+  vinterskor: ['regnstall', 'uv-badklader', 'tillbehor']
+};
+
 function buildTopplistor() {
   const hub = C.pages.topplistor;
   const bcHub = breadcrumbs([['Hem', '/'], ['Topplistor', null]]);
@@ -405,7 +423,11 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
 ${faqHtml(l.faq)}
 <h2 class="section-title">Fler topplistor</h2>
 <div class="related-links">
-  ${C.topplistor.lists.filter(x => x.slug !== l.slug).map(x => `<a href="/topplistor/${x.slug}/">${x.emoji} ${esc(x.h1)}</a>`).join('\n  ')}
+  ${(TOPPLISTOR_RELATED[l.slug] || []).map(slug => {
+    const x = C.topplistor.lists.find(t => t.slug === slug);
+    return x ? `<a href="/topplistor/${x.slug}/">${x.emoji} ${esc(x.h1)}</a>` : '';
+  }).join('\n  ')}
+  <a href="/topplistor/" class="related-links-all">Alla topplistor →</a>
 </div>`;
     write(`topplistor/${l.slug}/index.html`, page(url, l, '/topplistor/', inner, l.faq ? [bc.jsonld, itemList, faqLd(l.faq)] : [bc.jsonld, itemList]));
   }
