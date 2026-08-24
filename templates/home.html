@@ -573,9 +573,9 @@
       cursor: pointer;
       white-space: nowrap;
       transition: all var(--transition);
+      text-decoration: none;
     }
     .cat-pill:hover { border-color: var(--text-muted); color: var(--text); }
-    .cat-pill.active { background: var(--text); color: var(--bg); border-color: var(--text); }
     .cat-pill .cat-emoji { font-size: 1rem; }
 
     /* ---- IMAGE + FALLBACK ---- */
@@ -717,6 +717,33 @@
 
     /* ---- DESTINATION GRID ---- */
     .dest-section { background: var(--bg-alt); }
+    .resmal-cta-section { background: var(--bg-alt); }
+    .resmal-cta {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.75rem, 4vw, 2.75rem);
+    }
+    .resmal-cta h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+    }
+    .resmal-cta p { color: var(--text-secondary); font-size: 0.98rem; max-width: 480px; }
+    .resmal-cta-btn { flex-shrink: 0; white-space: nowrap; }
+    @media (max-width: 640px) {
+      .resmal-cta { flex-direction: column; align-items: flex-start; }
+      .resmal-cta-btn { width: 100%; text-align: center; justify-content: center; }
+    }
 
     .dest-toolbar {
       display: flex;
@@ -1387,7 +1414,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
 </head>
 <body>
-<a href="#destinations" class="skip-link">Hoppa till resmål</a>
+<a href="#popular" class="skip-link">Hoppa till resmål</a>
 
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Huvudmeny">
@@ -1396,7 +1423,7 @@
     <li><a href="/guider/">Guider</a></li>
     <li><a href="/topplistor/">Topplistor</a></li>
     <li><a href="/stader/">Städer</a></li>
-    <li><a href="#destinations">Resmål</a></li>
+    <li><a href="/resmal/">Resmål</a></li>
     <li><a href="#quiz">Hitta er resa</a></li>
     <li><a href="/om-oss/">Om oss</a></li>
   </ul>
@@ -1418,7 +1445,7 @@
   <a href="/guider/">Guider</a>
   <a href="/topplistor/">Topplistor</a>
   <a href="/stader/">Städer</a>
-  <a href="#destinations" onclick="closeMenu()">Alla resmål</a>
+  <a href="/resmal/">Alla resmål</a>
   <a href="#quiz" onclick="closeMenu()">Hitta er resa</a>
   <a href="/om-oss/">Om oss</a>
   <a href="/kontakt/">Kontakt</a>
@@ -1449,14 +1476,14 @@
 
 <!-- CATEGORIES -->
 <div class="categories" id="categoriesNav">
-  <div class="cat-scroll" role="tablist" aria-label="Filtrera efter kategori">
-    <button class="cat-pill active" data-filter="all" role="tab" aria-selected="true"><span class="cat-emoji">🌍</span> Alla</button>
-    <button class="cat-pill" data-filter="beach" role="tab" aria-selected="false"><span class="cat-emoji">🏖️</span> Strand &amp; Sol</button>
-    <button class="cat-pill" data-filter="parks" role="tab" aria-selected="false"><span class="cat-emoji">🎢</span> Nöjesparker</button>
-    <button class="cat-pill" data-filter="cities" role="tab" aria-selected="false"><span class="cat-emoji">🏙️</span> Storstäder</button>
-    <button class="cat-pill" data-filter="sweden" role="tab" aria-selected="false"><span class="cat-emoji">🇸🇪</span> Sverige</button>
-    <button class="cat-pill" data-filter="museums" role="tab" aria-selected="false"><span class="cat-emoji">🏛️</span> Museer</button>
-    <button class="cat-pill" data-filter="favs" role="tab" aria-selected="false"><span class="cat-emoji">♥</span> Mina favoriter</button>
+  <div class="cat-scroll" role="tablist" aria-label="Bläddra resmål per kategori">
+    <a class="cat-pill" href="/resmal/"><span class="cat-emoji">🌍</span> Alla resmål</a>
+    <a class="cat-pill" href="/resmal/?cat=beach"><span class="cat-emoji">🏖️</span> Strand &amp; Sol</a>
+    <a class="cat-pill" href="/resmal/?cat=parks"><span class="cat-emoji">🎢</span> Nöjesparker</a>
+    <a class="cat-pill" href="/resmal/?cat=cities"><span class="cat-emoji">🏙️</span> Storstäder</a>
+    <a class="cat-pill" href="/resmal/?cat=sweden"><span class="cat-emoji">🇸🇪</span> Sverige</a>
+    <a class="cat-pill" href="/resmal/?cat=museums"><span class="cat-emoji">🏛️</span> Museer</a>
+    <a class="cat-pill" href="/resmal/?filter=favs"><span class="cat-emoji">♥</span> Mina favoriter</a>
   </div>
 </div>
 
@@ -1537,48 +1564,15 @@
   </div>
 </section>
 
-<!-- ALL DESTINATIONS -->
-<section class="section dest-section" id="destinations">
-  <div class="section-header reveal">
-    <h2>Alla resmål</h2>
-    <p>Filtrera, sök och sortera tills ni hittar rätt. Klicka på ett resmål för hela guiden.</p>
-  </div>
-  <div class="dest-toolbar">
-    <div class="dest-count"><strong id="destCountNum">36</strong> resmål</div>
-    <div class="toolbar-controls">
-      <div class="select-wrap">
-        <select id="ageFilter" aria-label="Filtrera på ålder">
-          <option value="all">Alla åldrar</option>
-          <option value="2">0–3 år</option>
-          <option value="5">4–7 år</option>
-          <option value="10">8–12 år</option>
-          <option value="14">13+ år</option>
-        </select>
-      </div>
-      <div class="select-wrap">
-        <select id="budgetFilter" aria-label="Filtrera på budget">
-          <option value="all">Alla budgetar</option>
-          <option value="1">€ Budget</option>
-          <option value="2">€€ Mellan</option>
-          <option value="3">€€€ Premium</option>
-        </select>
-      </div>
-      <div class="select-wrap">
-        <select id="sortSelect" aria-label="Sortera">
-          <option value="rec">Rekommenderat</option>
-          <option value="rating">Högst betyg</option>
-          <option value="name">Namn A–Ö</option>
-          <option value="budget-asc">Budget: låg → hög</option>
-          <option value="budget-desc">Budget: hög → låg</option>
-        </select>
-      </div>
-      <div class="dest-search">
-        <span class="dest-search-icon">🔍</span>
-        <input type="text" id="destSearch" placeholder="Sök bland resmål..." aria-label="Sök bland resmål">
-      </div>
+<!-- SE ALLA RESMÅL CTA -->
+<section class="section resmal-cta-section" id="destinations">
+  <div class="resmal-cta reveal">
+    <div>
+      <h2>Alla 36 resmål på ett ställe</h2>
+      <p>Filtrera på kategori, sök på namn eller land, och hitta precis det resmål som passar er familj bäst.</p>
     </div>
+    <a href="/resmal/" class="btn btn-primary resmal-cta-btn">Utforska alla resmål →</a>
   </div>
-  <div class="dest-grid" id="destGrid"><!--DEST_GRID_PLACEHOLDER--></div>
 </section>
 
 <!-- QUIZ -->
@@ -1678,11 +1672,11 @@
     </div>
     <div class="footer-col">
       <h4>Kategorier</h4>
-      <a onclick="filterByCategory('beach')">🏖️ Strand &amp; Sol</a>
-      <a onclick="filterByCategory('parks')">🎢 Nöjesparker</a>
-      <a onclick="filterByCategory('cities')">🏙️ Storstäder</a>
-      <a onclick="filterByCategory('sweden')">🇸🇪 Sverige</a>
-      <a onclick="filterByCategory('museums')">🏛️ Museer</a>
+      <a href="/resmal/?cat=beach">🏖️ Strand &amp; Sol</a>
+      <a href="/resmal/?cat=parks">🎢 Nöjesparker</a>
+      <a href="/resmal/?cat=cities">🏙️ Storstäder</a>
+      <a href="/resmal/?cat=sweden">🇸🇪 Sverige</a>
+      <a href="/resmal/?cat=museums">🏛️ Museer</a>
     </div>
     <div class="footer-col">
       <h4>Snabblänkar</h4>
@@ -2434,11 +2428,6 @@ const DESTINATIONS = [
 ];
 
 /* ============ STATE ============ */
-let activeFilter = 'all';
-let searchQuery = '';
-let budgetMax = 'all';
-let ageSel = 'all';
-let sortBy = 'rec';
 let favs = new Set();
 try { favs = new Set(JSON.parse(localStorage.getItem('rmb-favs') || '[]')); } catch (e) {}
 
@@ -2458,13 +2447,6 @@ function heartSVG() {
   return `<svg viewBox="0 0 24 24" aria-hidden="true"><path class="heart-path" d="M12 21s-7.5-4.9-9.8-9.2C.7 8.9 2.2 5.4 5.5 4.6c2-.5 4 .3 5.2 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.5 5.2-2 3.3.8 4.8 4.3 3.3 7.2C18.1 16.1 12 21 12 21z"/></svg>`;
 }
 
-function hl(text) {
-  const q = searchQuery.trim();
-  if (!q) return esc(text);
-  const safe = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return esc(text).replace(new RegExp(`(${safe})`, 'gi'), '<mark>$1</mark>');
-}
-
 function saveFavs() {
   try { localStorage.setItem('rmb-favs', JSON.stringify([...favs])); } catch (e) {}
   const el = document.getElementById('favCount');
@@ -2481,15 +2463,10 @@ function toggleFav(name, ev) {
       btn.querySelector('.fav-label').textContent = favs.has(name) ? 'Sparad som favorit' : 'Spara som favorit';
     }
   });
-  if (activeFilter === 'favs') renderDestinations();
 }
 
 function showFavorites() {
-  setFilterPill('favs');
-  activeFilter = 'favs';
-  renderDestinations();
-  closeMenu();
-  document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
+  window.location.href = '/resmal/?filter=favs';
 }
 
 /* ============ HERO COLLAGE ============ */
@@ -2522,70 +2499,6 @@ function renderFeatured() {
         </div>
       </div>
     </a>`).join('');
-}
-
-/* ============ DESTINATION GRID ============ */
-function getFiltered() {
-  let list = DESTINATIONS.filter(d => {
-    const matchesCat = activeFilter === 'all' || (activeFilter === 'favs' ? favs.has(d.name) : d.cat === activeFilter);
-    const q = searchQuery.toLowerCase();
-    const matchesSearch = !q ||
-      d.name.toLowerCase().includes(q) ||
-      d.country.toLowerCase().includes(q) ||
-      d.desc.toLowerCase().includes(q) ||
-      d.catLabel.toLowerCase().includes(q);
-    const matchesBudget = budgetMax === 'all' || d.b <= Number(budgetMax);
-    const matchesAge = ageSel === 'all' || (Number(ageSel) >= d.ageMin && Number(ageSel) <= d.ageMax);
-    return matchesCat && matchesSearch && matchesBudget && matchesAge;
-  });
-
-  const sorters = {
-    name: (a, b) => a.name.localeCompare(b.name, 'sv'),
-    rating: (a, b) => b.rating - a.rating,
-    'budget-asc': (a, b) => a.b - b.b,
-    'budget-desc': (a, b) => b.b - a.b
-  };
-  if (sorters[sortBy]) list = [...list].sort(sorters[sortBy]);
-  return list;
-}
-
-function renderDestinations() {
-  const grid = document.getElementById('destGrid');
-  const filtered = getFiltered();
-  document.getElementById('destCountNum').textContent = filtered.length;
-
-  if (filtered.length === 0) {
-    grid.innerHTML = activeFilter === 'favs' && favs.size === 0
-      ? `<div class="no-results"><p>Inga favoriter ännu</p><span>Klicka på hjärtat på ett resmål så samlas de här.</span></div>`
-      : `<div class="no-results"><p>Inga resmål hittades</p><span>Prova att ändra filter eller sökord</span></div>`;
-    return;
-  }
-
-  grid.innerHTML = filtered.map((d, i) => `
-    <a class="dest-card reveal" data-cat="${d.cat}" style="transition-delay: ${Math.min(i * 40, 400)}ms" href="/resmal/${slug(d.name)}/" onclick="return handleCardClick(event, '${slug(d.name)}')">
-      <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
-        <img src="${IMG(d.img)}" alt="${esc(d.name)}" loading="lazy"
-          onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
-        <span class="dest-cat-chip" data-cat="${d.cat}">${d.catLabel}</span>
-        <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
-      </div>
-      <button class="fav-heart ${favs.has(d.name) ? 'faved' : ''}" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${heartSVG()}</button>
-      <div class="dest-card-body">
-        <div class="dest-card-top">
-          <h3>${hl(d.name)}</h3>
-          <span class="dest-card-budget">${d.budget}</span>
-        </div>
-        <p class="dest-country">${hl(d.country)}</p>
-        <p class="dest-desc">${esc(d.desc)}</p>
-        <div class="dest-card-meta">
-          <span class="meta-chip">✓ Bäst ${d.age}</span>
-          <span class="meta-chip">✈️ ${d.flight}</span>
-          <span class="meta-chip">📅 ${d.season}</span>
-        </div>
-      </div>
-    </a>`).join('');
-
-  initReveal();
 }
 
 /* ============ DETAIL VIEW ============ */
@@ -2632,7 +2545,7 @@ function openDetail(s, pushHash = true) {
         <button class="btn btn-ghost ${favs.has(d.name) ? 'faved' : ''}" data-fav="${esc(d.name)}" onclick="toggleFav('${esc(d.name)}', event)">
           ♥ <span class="fav-label">${favs.has(d.name) ? 'Sparad som favorit' : 'Spara som favorit'}</span>
         </button>
-        <button class="btn btn-ghost" onclick="closeDetail(); setTimeout(() => filterByCategory('${d.cat}'), 100)">Fler inom ${d.catLabel} →</button>
+        <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${d.catLabel} →</a>
       </div>
       ${similar.length ? `
         <h3 class="detail-section-title">Liknande resmål</h3>
@@ -2675,50 +2588,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { closeDetail(); hideSuggestions(); }
 });
 
-/* ============ FILTERS ============ */
-function setFilterPill(cat) {
-  document.querySelectorAll('.cat-pill').forEach(p => {
-    const on = p.dataset.filter === cat;
-    p.classList.toggle('active', on);
-    p.setAttribute('aria-selected', on);
-  });
-}
-
-document.querySelectorAll('.cat-pill').forEach(pill => {
-  pill.addEventListener('click', () => {
-    activeFilter = pill.dataset.filter;
-    setFilterPill(activeFilter);
-    renderDestinations();
-    document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-function filterByCategory(cat) {
-  activeFilter = cat;
-  setFilterPill(cat);
-  renderDestinations();
-  document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
-}
-
-document.getElementById('ageFilter').addEventListener('change', e => {
-  ageSel = e.target.value;
-  renderDestinations();
-});
-document.getElementById('budgetFilter').addEventListener('change', e => {
-  budgetMax = e.target.value;
-  renderDestinations();
-});
-document.getElementById('sortSelect').addEventListener('change', e => {
-  sortBy = e.target.value;
-  renderDestinations();
-});
-
 /* ============ SEARCH ============ */
-document.getElementById('destSearch').addEventListener('input', e => {
-  searchQuery = e.target.value;
-  renderDestinations();
-});
-
 const heroInput = document.getElementById('heroSearch');
 const sugBox = document.getElementById('suggestions');
 
@@ -2752,12 +2622,7 @@ function heroSearchGo() {
   const val = heroInput.value.trim();
   hideSuggestions();
   if (!val) return;
-  searchQuery = val;
-  document.getElementById('destSearch').value = val;
-  activeFilter = 'all';
-  setFilterPill('all');
-  renderDestinations();
-  document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
+  window.location.href = `/resmal/?q=${encodeURIComponent(val)}`;
 }
 heroInput.addEventListener('keydown', e => { if (e.key === 'Enter') heroSearchGo(); });
 
@@ -2902,7 +2767,6 @@ function initReveal() {
 
   renderCollage();
   renderFeatured();
-  renderDestinations();
   renderQuiz();
   saveFavs();
   initReveal();
