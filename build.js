@@ -56,7 +56,7 @@ ${meta.jsonld ? `<script type="application/ld+json">${JSON.stringify(meta.jsonld
 
 function nav(active) {
   const links = [
-    ['/', 'Hem'], ['/guider/', 'Guider'], ['/topplistor/', 'Topplistor'], ['/stader/', 'Städer'],
+    ['/', 'Hem'], ['/resmal/', 'Resmål'], ['/guider/', 'Guider'], ['/topplistor/', 'Topplistor'], ['/stader/', 'Städer'],
     ['/om-oss/', 'Om oss'], ['/kontakt/', 'Kontakt']
   ];
   return `
@@ -94,6 +94,7 @@ function footer() {
     </div>
     <div class="footer-col">
       <h4>Om sajten</h4>
+      <a href="/resmal/">Alla resmål</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
     </div>
@@ -563,15 +564,122 @@ function loadDestinations() {
   return dests;
 }
 
+const RESMAL_CATS = [
+  ['all', '🌍', 'Alla'], ['beach', '🏖️', 'Strand & Sol'], ['parks', '🎢', 'Nöjesparker'],
+  ['cities', '🏙️', 'Storstäder'], ['sweden', '🇸🇪', 'Sverige'], ['museums', '🏛️', 'Museer']
+];
+
+function buildResmalHub() {
+  const DESTINATIONS = loadDestinations();
+  const bc = breadcrumbs([['Hem', '/'], ['Resmål', null]]);
+  const meta = {
+    title: 'Resmål för barnfamiljer — 36 st, filtrerbara | Res med Barn',
+    description: 'Alla våra 36 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.'
+  };
+  const itemList = {
+    '@context': 'https://schema.org', '@type': 'ItemList',
+    name: 'Resmål för barnfamiljer', itemListElement: DESTINATIONS.map((d, i) => ({
+      '@type': 'ListItem', position: i + 1, name: d.name
+    }))
+  };
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>Resmål för barnfamiljer</h1>
+  <div class="page-intro"><p>Alla våra ${DESTINATIONS.length} resmål på ett ställe. Filtrera på kategori nedan, eller sök på namn eller land.</p></div>
+</header>
+
+<div class="stader-filters" role="group" aria-label="Filtrera resmål">
+  <div class="filter-group">
+    <span class="filter-label">Kategori</span>
+    ${RESMAL_CATS.map(([val, emoji, label], i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-filter="cat" data-value="${val}">${emoji} ${label}</button>`).join('')}
+    <button class="filter-btn" data-filter="cat" data-value="favs">♥ Mina favoriter</button>
+  </div>
+  <div class="filter-group">
+    <input type="text" id="resmalSearch" placeholder="Sök namn eller land…" class="resmal-search-input" aria-label="Sök resmål">
+  </div>
+</div>
+<p class="stader-count" id="staderCount">${DESTINATIONS.length} resmål</p>
+<div class="activity-grid resmal-grid" id="activityGrid">
+  ${DESTINATIONS.map(d => `
+  <a class="resmal-card" data-cat="${d.cat}" data-name="${esc(d.name)}" data-search="${esc((d.name + ' ' + d.country).toLowerCase())}" href="/resmal/${destSlug(d.name)}/">
+    ${cardMediaSSR(d)}
+    <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
+    <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+    <button class="fav-heart" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="event.preventDefault(); event.stopPropagation(); toggleResmalFav('${esc(d.name)}', this);">${HEART_SVG}</button>
+    <div class="resmal-card-body">
+      <h3>${esc(d.name)}</h3>
+      <p class="dest-country">${esc(d.country)}</p>
+      <p class="activity-desc">${esc(d.desc)}</p>
+    </div>
+  </a>`).join('')}
+</div>
+<p class="stader-empty" id="staderEmpty" hidden>Inga resmål matchar just de filtren — testa att ta bort ett filter eller ändra sökningen.</p>
+
+<script>
+(function() {
+  var favs = [];
+  try { favs = JSON.parse(localStorage.getItem('rmb-favs') || '[]'); } catch (e) {}
+  function isFav(name) { return favs.indexOf(name) !== -1; }
+  function paintFavs() {
+    document.querySelectorAll('.fav-heart').forEach(function(btn) {
+      btn.classList.toggle('faved', isFav(btn.dataset.fav));
+    });
+  }
+  window.toggleResmalFav = function(name, btn) {
+    var i = favs.indexOf(name);
+    if (i === -1) favs.push(name); else favs.splice(i, 1);
+    try { localStorage.setItem('rmb-favs', JSON.stringify(favs)); } catch (e) {}
+    btn.classList.toggle('faved', isFav(name));
+    if (activeCatGlobal === 'favs') apply();
+  };
+  paintFavs();
+
+  var activeCatGlobal = new URLSearchParams(location.search).get('cat') || (new URLSearchParams(location.search).get('filter') === 'favs' ? 'favs' : 'all');
+  var query = new URLSearchParams(location.search).get('q') || '';
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.resmal-card'));
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
+  var countEl = document.getElementById('staderCount');
+  var emptyEl = document.getElementById('staderEmpty');
+  var searchInput = document.getElementById('resmalSearch');
+  if (query) searchInput.value = query;
+  buttons.forEach(function(b) { b.classList.toggle('active', b.dataset.value === activeCatGlobal); });
+
+  function apply() {
+    var q = searchInput.value.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(card) {
+      var matchesCat = activeCatGlobal === 'all' || (activeCatGlobal === 'favs' ? isFav(card.dataset.name) : card.dataset.cat === activeCatGlobal);
+      var ok = matchesCat && (!q || card.dataset.search.indexOf(q) !== -1);
+      card.hidden = !ok;
+      if (ok) visible++;
+    });
+    countEl.textContent = visible + ' resmål';
+    emptyEl.hidden = visible !== 0;
+  }
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      activeCatGlobal = btn.dataset.value;
+      buttons.forEach(function(b) { b.classList.toggle('active', b === btn); });
+      apply();
+    });
+  });
+  searchInput.addEventListener('input', apply);
+  apply();
+})();
+</script>`;
+  write('resmal/index.html', page('/resmal/', meta, '/resmal/', inner, [bc.jsonld, itemList]));
+}
+
 function buildResmal() {
   const DESTINATIONS = loadDestinations();
-  const bcHub = [['Hem', '/'], ['Resmål', null]];
 
   for (const d of DESTINATIONS) {
     const slug = destSlug(d.name);
     const url = `/resmal/${slug}/`;
     const isAttraction = d.cat === 'parks' || d.cat === 'museums';
-    const bc = breadcrumbs([['Hem', '/'], ['Resmål', '/#destinations'], [d.name, null]]);
+    const bc = breadcrumbs([['Hem', '/'], ['Resmål', '/resmal/'], [d.name, null]]);
     const similar = DESTINATIONS.filter(x => x.cat === d.cat && x.name !== d.name).slice(0, 4);
 
     const schema = {
@@ -594,7 +702,7 @@ function buildResmal() {
   <div class="card-media" data-emoji="${d.emoji}">
     <img src="${IMG_RESMAL(d.img)}" alt="${esc(d.name)}" loading="eager" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
   </div>
-  <a href="/#destinations" class="detail-back">← Alla resmål</a>
+  <a href="/resmal/" class="detail-back">← Alla resmål</a>
   <div class="detail-title-wrap">
     <span class="d-chip" style="background: var(--cat-${d.cat}, var(--accent))">${d.emoji} ${esc(CAT_LABELS[d.cat] || d.catLabel)}</span>
     <h1>${esc(d.name)}</h1>
@@ -618,7 +726,7 @@ function buildResmal() {
   </div>
   <div class="detail-actions">
     ${d.bookingUrl ? `<a class="btn btn-primary" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">Boka / Läs mer →</a>` : ''}
-    <a class="btn btn-ghost" href="/#destinations">Fler inom ${esc(CAT_LABELS[d.cat] || d.catLabel)} →</a>
+    <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${esc(CAT_LABELS[d.cat] || d.catLabel)} →</a>
   </div>
   ${similar.length ? `
   <h2 class="section-title">Liknande resmål</h2>
@@ -671,6 +779,7 @@ function buildMeta(destinations) {
   for (const l of C.topplistor.lists) urls.push(`/topplistor/${l.slug}/`);
   urls.push('/stader/');
   for (const s of C.stader.cities) urls.push(`/stader/${s.slug}/`);
+  urls.push('/resmal/');
   for (const d of destinations) urls.push(`/resmal/${destSlug(d.name)}/`);
   const today = new Date().toISOString().slice(0, 10);
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
@@ -704,6 +813,7 @@ buildGuides();
 buildTopplistor();
 buildStaderHub();
 buildStader();
+buildResmalHub();
 const RESMAL_DESTS = buildResmal();
 buildSimplePages();
 buildMeta(RESMAL_DESTS);
