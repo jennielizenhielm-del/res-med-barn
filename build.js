@@ -378,6 +378,7 @@ ${faqHtml(hub.faq)}`;
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
 ${media(l.img, l.emoji, 'page-hero', 1400)}
+${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
 <div class="products">
   ${l.products.map((p, i) => `
   <article class="product-card">
@@ -389,6 +390,7 @@ ${media(l.img, l.emoji, 'page-hero', 1400)}
       </div>
       <p class="product-price">${esc(p.price)}</p>
       <p>${esc(p.text)}</p>
+      ${p.handbagage ? `<p class="handbagage-badge">✈️ <strong>Godkänd som handbagage:</strong> ${esc(p.handbagage)}</p>` : ''}
       <div class="pros-cons">
         <ul class="pros">${p.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
         <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>

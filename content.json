@@ -1368,7 +1368,8 @@
               "Liten korg",
               "Premiumpris för små hjul"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/babyzen-yoyo3.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/babyzen-yoyo3.html",
+            "handbagage": "52 × 44 × 18 cm hopfälld — en av de allra minsta, gott om marginal till IATA:s gräns"
           },
           {
             "name": "Bugaboo Butterfly 2",
@@ -1384,7 +1385,8 @@
               "Något stor för de strängaste handbagagereglerna",
               "Solskyddet kunde vara längre"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/bugaboo-butterfly-2.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bugaboo-butterfly-2.html",
+            "handbagage": "55,5 × 44,8 × 24,5 cm hopfälld — ligger nära IATA:s maxgräns, men godkänd"
           },
           {
             "name": "Cybex Libelle",
@@ -1400,7 +1402,8 @@
               "Rangligare körkänsla på ojämnt underlag",
               "Fällningen kräver två händer och lite teknik"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-libelle.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-libelle.html",
+            "handbagage": "48 × 32 × 20 cm hopfälld — marknadens mest kompakta, gott om marginal"
           },
           {
             "name": "Joolz Aer+",
@@ -1416,7 +1419,8 @@
               "Korgen är listans minsta",
               "Tillbehören kostar som en budgetvagn"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/joolz-aer-plus.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/joolz-aer-plus.html",
+            "handbagage": "54 × 45 × 23 cm hopfälld — god marginal till IATA:s gräns"
           },
           {
             "name": "Ergobaby Metro+ Deluxe",
@@ -1432,7 +1436,8 @@
               "För stor för de flesta kabinmått",
               "Tyngre än konkurrenterna (7,8 kg)"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/ergobaby-metro-deluxe.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/ergobaby-metro-deluxe.html",
+            "handbagage": "55 × 44 × 25 cm hopfälld — ligger nära IATA:s maxgräns, men godkänd"
           }
         ],
         "sections": [
@@ -1467,7 +1472,8 @@
             "q": "Tål resevagnar kullersten och grus?",
             "a": "Bättre än ryktet. Små hjul märks på riktigt grov kullersten, men moderna resevagnar med fjädring – Butterfly, Aer+ – rullar förvånansvärt bra i europeiska stadskärnor. För skogsstigar och strand är det fel verktyg; där vinner bärsele."
           }
-        ]
+        ],
+        "handbagageNote": "Alla vagnar i listan uppfyller IATA:s rekommenderade maxmått för handbagage (56 × 45 × 25 cm), men flygbolag kan ha egna, striktare regler — kontrollera alltid med ditt flygbolag innan avresa."
       },
       {
         "slug": "bilbarnstol",
@@ -1722,6 +1728,1172 @@
           {
             "q": "Hur varmt klär man barnet i åkpåse?",
             "a": "Tumregel: ett lager mindre än du tror, plus mössa. Åkpåsen med ull isolerar kraftigt – ett barn i vanliga inneklädar plus overall i en vinteråkpåse blir svettigt. Känn på nacken, inte händerna: varm nacke är lagom, svettig är för mycket."
+          }
+        ]
+      },
+      {
+        "slug": "barsele",
+        "emoji": "🧸",
+        "name": "Bärsele",
+        "cardText": "Ergonomiska bärselar som avlastar ryggen och håller barnet tryggt, från nyfödd till småbarn.",
+        "title": "Bärsele bäst i test 2026 | Res med Barn",
+        "description": "Bärsele bäst i test 2026 — fem ergonomiska bärselar jämförda på M-position, komfort och användningstid. Ergobaby, BabyBjörn, Manduca och fler.",
+        "h1": "Bärsele bäst i test 2026",
+        "intro": [
+          "En bra bärsele håller barnets höfter i rätt M-position och avlastar din rygg samtidigt. Vi har jämfört fem populära modeller på ergonomi, användningstid och hur enkla de är att ta på själv."
+        ],
+        "products": [
+          {
+            "name": "Ergobaby Omni 360",
+            "badge": "Bäst i test",
+            "price": "Från ca 1 356 kr",
+            "text": "Mångsidig bärsele med fyra bärpositioner, HKDSI-certifierad M-position och brett midjebälte. Passar från nyfödd (3,5 kg) till 20 kg utan extra inlägg.",
+            "pros": [
+              "Fyra bärpositioner inklusive framåtvänt",
+              "Inget spädbarnsinlägg behövs",
+              "Brett midjebälte avlastar ryggen bra"
+            ],
+            "cons": [
+              "Något varmare material på sommaren",
+              "I dyrare prisklassen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/ergobaby-omni-360.html"
+          },
+          {
+            "name": "BabyBjörn One Air",
+            "badge": "Bäst för sommaren",
+            "price": "Från ca 1 800 kr",
+            "text": "Luftig 3D-mesh gör den svalare än de flesta konkurrenter. Brett justeringsintervall gör den populär för både mamma och pappa.",
+            "pros": [
+              "Mesh-material andas bra i värme",
+              "Enkel att justera mellan bärare",
+              "Stabil konstruktion"
+            ],
+            "cons": [
+              "Saknar ordentlig förvaringsficka",
+              "Ingen renodlad framåtvänd position"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/babybjorn-one-air.html"
+          },
+          {
+            "name": "Manduca XT",
+            "badge": "Bäst ryggstöd",
+            "price": "Från ca 2 249 kr",
+            "text": "Steglös sittbredd (16–50 cm) ger perfekt M-position från nyfödd till treåring. Ekologisk bomull som känns mer som ett plagg än utrustning.",
+            "pros": [
+              "Steglös justering passar hela barndomen",
+              "Skonsamt ekobomullsmaterial",
+              "Mycket gott ryggstöd för bäraren"
+            ],
+            "cons": [
+              "Ingen framåtvänd position",
+              "Bomull andas sämre i sommarvärme"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/manduca-xt.html"
+          },
+          {
+            "name": "Najell Bärsele Rise",
+            "badge": "Bästa budget",
+            "price": "Från ca 899 kr",
+            "text": "Prisvärt alternativ med mjukt material och enkel påtagning. Räcker till för de flesta vardagsbehov, om än med färre finesser.",
+            "pros": [
+              "Prisvärd",
+              "Mjukt och skönt material",
+              "Enkel att ta på snabbt"
+            ],
+            "cons": [
+              "Bara två bärpositioner",
+              "Mindre ergonomiskt stöd vid längre pass"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-barsele-rise.html"
+          },
+          {
+            "name": "BabyBjörn Mini",
+            "badge": "Bäst för nyfödd",
+            "price": "Från ca 1 000 kr",
+            "text": "Specialiserad för de allra minsta (3,5–11 kg), håller ryggens naturliga C-form. Luftig 3D-mesh och enkel att ta på i halvmörker.",
+            "pros": [
+              "Skonsam mot nyföddas rygg och höfter",
+              "Snabb och enkel påtagning",
+              "Svalt mesh-material"
+            ],
+            "cons": [
+              "Räcker bara till ca 11 kg",
+              "Färre bärpositioner än universalmodeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/babybjorn-mini.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Bärsele eller bärsjal?",
+            "text": "En bärsele är enklare att ta på och ger mer strukturerat stöd, medan en bärsjal är mjukare och särskilt skön för nyfödda. Många familjer har båda och väljer efter humör och ålder på barnet."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Från vilken ålder kan man använda en bärsele?",
+            "a": "De flesta ergonomiska bärselar går att använda från nyfödd, men vissa modeller (som Ergobaby Omni 360) fungerar direkt utan extra inlägg medan andra kräver ett spädbarnsinlägg de första månaderna. Kolla alltid respektive modells lägsta viktgräns."
+          }
+        ]
+      },
+      {
+        "slug": "amningskudde",
+        "emoji": "🌙",
+        "name": "Amningskudde",
+        "cardText": "Avlastar rygg, axlar och armar vid amning eller flaskmatning — fem favoriter jämförda.",
+        "title": "Amningskudde bäst i test 2026 | Res med Barn",
+        "description": "Amningskudde bäst i test 2026 — fem kuddar jämförda på stöd, komfort och tvättvänlighet. Doomoo, Bbhugme, Beemoo och fler.",
+        "h1": "Amningskudde bäst i test 2026",
+        "intro": [
+          "En amningskudde avlastar rygg, nacke och armar oavsett om du ammar eller flaskmatar. Vi har jämfört fem populära kuddar på stöd, form och hur enkla de är att hålla rena."
+        ],
+        "products": [
+          {
+            "name": "Doomoo Amningskudde Softy",
+            "badge": "Bäst i test",
+            "price": "Från ca 500 kr",
+            "text": "Stabil EPS-fyllning som håller formen länge utan att plattas till. U-formen ger stöd från båda sidor och överdraget går att tvätta i maskin.",
+            "pros": [
+              "Håller formen mycket bra över tid",
+              "Tvättbart överdrag",
+              "Ger stöd från båda sidor"
+            ],
+            "cons": [
+              "Något skrymmande att förvara",
+              "EPS-kulor kan låta lite vid rörelse"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/doomoo-amningskudde-softy.html"
+          },
+          {
+            "name": "Bbhugme Amningskudde",
+            "badge": "Bäst ergonomi",
+            "price": "Från ca 900 kr",
+            "text": "Designad av kiropraktor för optimalt stöd åt både förälder och barn. Formstark och skön även vid längre amningspass.",
+            "pros": [
+              "Kiropraktordesignad ergonomi",
+              "Skön även vid långa amningspass",
+              "Stilren design"
+            ],
+            "cons": [
+              "I det högre prissegmentet",
+              "Stor, kräver förvaringsyta"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bbhugme-amningskudde.html"
+          },
+          {
+            "name": "Beemoo CARE Gravid- & Amningskudde",
+            "badge": "Mest mångsidig",
+            "price": "Från ca 400 kr",
+            "text": "Fungerar både som sovstöd under graviditeten och som amningskudde efteråt. Mikropärlorna formar sig efter kroppen.",
+            "pros": [
+              "Användbar både gravid och efter förlossning",
+              "Formar sig skönt efter kroppen",
+              "Bra prisvärde"
+            ],
+            "cons": [
+              "Mindre specialiserad än renodlade amningskuddar",
+              "Kan kännas stor i sängen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/beemoo-care-gravid-amningskudde.html"
+          },
+          {
+            "name": "Candide Amningskudde Stjärnor",
+            "badge": "Bästa budget",
+            "price": "Från ca 300 kr",
+            "text": "Enkel, mjuk och prisvärd kudde för dig som vill testa formatet utan stor investering. Täcker grunderna utan extra finesser.",
+            "pros": [
+              "Lågt pris",
+              "Mjuk och skön",
+              "Bra för den som vill testa"
+            ],
+            "cons": [
+              "Mindre stabilt stöd vid längre pass",
+              "Håller formen sämre över tid"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/candide-amningskudde-stjarnor.html"
+          },
+          {
+            "name": "Vinter & Bloom Nordic Leaf Sovorm",
+            "badge": "Bäst som sovstöd",
+            "price": "Från ca 450 kr",
+            "text": "Formbar sovorm som fungerar både som amningsstöd och sängkudde för sidsömn. Skandinavisk, diskret design.",
+            "pros": [
+              "Dubbelfunktion som sovstöd",
+              "Diskret, snygg design",
+              "Formbar efter behov"
+            ],
+            "cons": [
+              "Mindre riktat stöd vid själva amningen",
+              "Kräver mer plats i sängen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/vinter-bloom-nordic-leaf-sovorm.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Kan man använda amningskudden till annat?",
+            "text": "Ja — många amningskuddar fungerar även som sittstöd när barnet börjar öva sig på att sitta, eller som allmänt stöd- och lekkudde i soffan."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Passar en amningskudde även vid flaskmatning?",
+            "a": "Ja, de flesta amningskuddar fungerar lika bra för flaskmatning som amning — huvudsyftet är att avlasta din kropp och lyfta barnet till en bekväm höjd, oavsett matningssätt."
+          }
+        ]
+      },
+      {
+        "slug": "sleep-carrier",
+        "emoji": "🛏️",
+        "name": "Sleep Carrier",
+        "cardText": "Portabel babynest med handtag — säng, mjuklift och lekfilt i ett. Najell och konkurrenter jämförda.",
+        "title": "Sleep Carrier / Babynest bäst i test 2026 | Res med Barn",
+        "description": "Sleep Carrier bäst i test 2026 — portabla babynest med handtag jämförda. Najell SleepCarrier, Liewood, Filibabba och fler.",
+        "h1": "Sleep Carrier (babynest) bäst i test 2026",
+        "intro": [
+          "En sleep carrier (babynest) är en portabel, stadig \"säng\" med handtag som barnet kan sova, ligga och åka i — hemma, i barnvagnen eller på resande fot. Vi har jämfört de mest populära modellerna på Sverige-marknaden."
+        ],
+        "products": [
+          {
+            "name": "Najell SleepCarrier X",
+            "badge": "Bäst i test",
+            "price": "Från ca 1 249 kr",
+            "text": "Uppdaterad flaggskeppsmodell med andningsbart airmesh runt alla sidor, avtagbar bottenplatta och Oeko-Tex-certifierat material. Fungerar som babynest, mjuklift och lekfilt.",
+            "pros": [
+              "Oeko-Tex-certifierat material",
+              "Tre funktioner i en produkt",
+              "Maskintvättbar i 40 grader"
+            ],
+            "cons": [
+              "Högre pris än en klassisk lift",
+              "Bottenplattan måste tas ut vid tvätt"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-sleepcarrier-x.html"
+          },
+          {
+            "name": "Najell SleepCarrier Volume 3",
+            "badge": "Bäst för syskonvagn",
+            "price": "Från ca 1 199 kr",
+            "text": "Passar i nästan alla barnvagnsliggdelar, även smalare syskonvagnar. Justerbara snören runt om anpassar storleken efter barnets ålder.",
+            "pros": [
+              "Passar smala liggdelar också",
+              "Justerbar storlek med snören",
+              "Går att fälla ut till lekfilt"
+            ],
+            "cons": [
+              "Saknar spänne för att fästa handtaget uppåt",
+              "Något mindre bottenplatta än X-modellen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-sleepcarrier-volume-3.html"
+          },
+          {
+            "name": "Liewood Babynest",
+            "badge": "Snyggast design",
+            "price": "Från ca 900 kr",
+            "text": "Skandinavisk designklassiker med mjukt, luftigt material. Många färgalternativ som matchar barnrummets inredning.",
+            "pros": [
+              "Stort urval av snygga färger",
+              "Mjukt och skönt material",
+              "Kompakt att förvara"
+            ],
+            "cons": [
+              "Färre funktioner än Najells modeller",
+              "Ingen inbyggd bärsele-funktion"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/liewood-babynest.html"
+          },
+          {
+            "name": "Filibabba Babynest",
+            "badge": "Bästa budget",
+            "price": "Från ca 600 kr",
+            "text": "Prisvärt alternativ som täcker grunderna: tryggt, format nest för nyfödda hemma eller på resande fot.",
+            "pros": [
+              "Lågt pris",
+              "Lätt och enkel att bära med sig",
+              "Skönt mot känslig hud"
+            ],
+            "cons": [
+              "Mindre stadiga kanter än premiummodeller",
+              "Ingen lekfilt-funktion"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/filibabba-babynest.html"
+          },
+          {
+            "name": "Sebra Babynest",
+            "badge": "Bäst material",
+            "price": "Från ca 950 kr",
+            "text": "Oeko-Tex-certifierat och tillverkat i en kombination av bomull och polyester för extra mjukhet och slitstyrka.",
+            "pros": [
+              "Oeko-Tex-certifierat",
+              "Slitstarkt material",
+              "Diskret, tidlös design"
+            ],
+            "cons": [
+              "Färre färgval än Liewood",
+              "Saknar bärhandtag på vissa varianter"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/sebra-babynest.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Är en sleep carrier säker att sova i hela natten?",
+            "text": "De flesta modeller är testade enligt standarden för mjuklift (EN-1466) och är avsedda för dagtid, tupplurar och övervakad sömn — kontrollera alltid respektive tillverkares rekommendationer för nattsömn obevakad."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vad är skillnaden mellan en sleep carrier och en vanlig babylift?",
+            "a": "En sleep carrier är oftast mer mångsidig — den fungerar som babynest, kan bäras med handtag som en lift, och går att fälla ut till en lekfilt. En klassisk barnvagnslift är i regel bara avsedd att ligga i vagnens liggdel."
+          }
+        ]
+      },
+      {
+        "slug": "nappar",
+        "emoji": "🍼",
+        "name": "Nappar",
+        "cardText": "Nappar för nyfödda och äldre spädbarn — form, material och storlek jämförda.",
+        "title": "Napp bäst i test 2026 | Res med Barn",
+        "description": "Napp bäst i test 2026 — fem nappar jämförda på material, form och lämplighet för nyfödda. BIBS, MAM, Philips Avent och fler.",
+        "h1": "Napp bäst i test 2026",
+        "intro": [
+          "Rätt napp kan skilja sig mycket mellan barn — material, form och storlek spelar roll för hur väl den accepteras. Vi har samlat fem populära alternativ i olika prisklasser."
+        ],
+        "products": [
+          {
+            "name": "BIBS Colour Latex",
+            "badge": "Bäst i test",
+            "price": "Från ca 90 kr",
+            "text": "Stilren napp med mjuk naturgummidel och skonsam sköld. Finns i storlekar för både nyfödda och äldre spädbarn.",
+            "pros": [
+              "Mjukt, naturligt latexmaterial",
+              "Skonsam sköld med god luftcirkulation",
+              "Stort färgutbud"
+            ],
+            "cons": [
+              "Latex behöver bytas oftare än silikon (var 4–6:e vecka)",
+              "Dyrare än enklare basmodeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bibs-colour-latex.html"
+          },
+          {
+            "name": "MAM Original Napp",
+            "badge": "Bäst allround",
+            "price": "Från ca 80 kr",
+            "text": "Genomtänkt modell med hög acceptans bland barn, bra luftflöde i skölden och medföljande steriliseringsbox.",
+            "pros": [
+              "Hög acceptans bland de flesta barn",
+              "Medföljande steriliseringsbox",
+              "Bra luftflöde, mindre risk för hudirritation"
+            ],
+            "cons": [
+              "Skölden kan kännas något stor för de minsta",
+              "Finns i färre färgvarianter än BIBS"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-original-napp.html"
+          },
+          {
+            "name": "Nanobébé Flexy Napp",
+            "badge": "Bäst för små ansikten",
+            "price": "Från ca 85 kr",
+            "text": "Mjuk och följsam napp som ligger nära ansiktet, utvecklad särskilt för nyfödda och riktigt små spädbarn.",
+            "pros": [
+              "Ligger skönt nära ansiktet",
+              "Mjukt, följsamt material",
+              "Bra för de allra minsta"
+            ],
+            "cons": [
+              "Mindre lämplig som enda napp för äldre barn",
+              "Något dyrare än standardnappar"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nanobebe-flexy-napp.html"
+          },
+          {
+            "name": "Esska Happy Mini Silikon",
+            "badge": "Bästa budget",
+            "price": "Från ca 50 kr",
+            "text": "Enkel och prisvärd napp som gör grunderna rätt utan onödiga tillägg — bra val om du vill ha flera i omlopp.",
+            "pros": [
+              "Lågt pris, bra att köpa flera av",
+              "Silikon tål diskmaskin",
+              "Enkel design utan krångel"
+            ],
+            "cons": [
+              "Saknar extra finesser som glow eller specialform",
+              "Mindre premiumkänsla"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/esska-happy-mini-silikon.html"
+          },
+          {
+            "name": "Philips Avent Ultra Soft",
+            "badge": "Bäst för känslig hud",
+            "price": "Från ca 75 kr",
+            "text": "Mjuk sköld som följer ansiktets form bättre och minskar tryck mot huden — bra val för barn med känslig hy.",
+            "pros": [
+              "Skonsam mot känslig hud",
+              "Följsam sköld minskar tryckmärken",
+              "Välkänt, pålitligt varumärke"
+            ],
+            "cons": [
+              "Något mjukare material kan slitas snabbare",
+              "Finns i begränsat färgutbud"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-ultra-soft.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Latex eller silikon?",
+            "text": "Latex är mjukare och mer naturligt men behöver bytas oftare (var 4–6:e vecka) och kan missfärgas. Silikon håller längre, är luktfritt och lättare att hålla rent, men kan kännas fastare för vissa barn."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Hur ofta bör man byta napp?",
+            "a": "Latexnappar bör bytas var 4–6:e vecka eller så fort du ser sprickbildning. Silikonnappar håller generellt längre, men kolla regelbundet efter slitage oavsett material."
+          }
+        ]
+      },
+      {
+        "slug": "brostpump",
+        "emoji": "🤱",
+        "name": "Bröstpump",
+        "cardText": "Elektriska och manuella bröstpumpar jämförda — från budget till handsfree-premium.",
+        "title": "Bröstpump bäst i test 2026 | Res med Barn",
+        "description": "Bröstpump bäst i test 2026 — fem pumpar jämförda på komfort, ljudnivå och sugkraft. Medela, Elvie, Philips Avent och fler.",
+        "h1": "Bröstpump bäst i test 2026",
+        "intro": [
+          "Från enkla manuella pumpar för sporadiskt bruk till handsfree-modeller du kan bära i BH:n hela dagen — vi har jämfört fem populära bröstpumpar för olika behov och budgetar."
+        ],
+        "products": [
+          {
+            "name": "Medela Swing Maxi",
+            "badge": "Bäst i test",
+            "price": "Från ca 2 023 kr",
+            "text": "Elektrisk dubbelpump med nio förprogrammerade inställningar och tvåstegsteknologi som efterliknar barnets naturliga sugmönster.",
+            "pros": [
+              "Dubbelpumpning halverar tiden",
+              "Efterliknar barnets naturliga sugmönster",
+              "USB-C-laddning med inbyggt batteri"
+            ],
+            "cons": [
+              "Skrymmande att ta med på resa",
+              "Fler delar att hålla rena"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/medela-swing-maxi.html"
+          },
+          {
+            "name": "Elvie Stride",
+            "badge": "Bäst handsfree",
+            "price": "Från ca 3 200 kr",
+            "text": "Lättviktig, handsfree-anpassad pump som placeras diskret i BH:n. Justerbar sugkraft och tystlåten drift.",
+            "pros": [
+              "Handsfree, fungerar under kläder",
+              "Diskret och tystlåten",
+              "App med extra funktioner"
+            ],
+            "cons": [
+              "Hög prislapp",
+              "Kräver viss inpassning för rätt position"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/elvie-stride.html"
+          },
+          {
+            "name": "Elvie Curve",
+            "badge": "Bäst manuell",
+            "price": "Från ca 900 kr",
+            "text": "Manuell, motorfri pump som vilar diskret innanför BH:n. Ingen laddning eller bruksanvisning behövs — funkar via backventil.",
+            "pros": [
+              "Ingen laddning eller montering av motor krävs",
+              "Väldigt diskret och tyst",
+              "Kompakt att ta med"
+            ],
+            "cons": [
+              "Ger mindre volym per pass än elektriska modeller",
+              "Kräver visst tryck manuellt"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/elvie-curve.html"
+          },
+          {
+            "name": "Medela Harmony",
+            "badge": "Bästa budget",
+            "price": "Från ca 400 kr",
+            "text": "Omtyckt manuell pump med tvåfasteknologi, enkel att montera och rengöra. Bra förstaköp eller reservpump.",
+            "pros": [
+              "Prisvärd",
+              "Enkel att montera och rengöra",
+              "Bra för tillfällig eller sporadisk pumpning"
+            ],
+            "cons": [
+              "Kräver handkraft, tröttar armen vid längre pass",
+              "Bara enkelpump"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/medela-harmony.html"
+          },
+          {
+            "name": "Philips Avent Wearable",
+            "badge": "Bäst prisvärd handsfree",
+            "price": "Från ca 1 800 kr",
+            "text": "Handsfree elektrisk pump till lägre pris än premiumalternativen, med modernt och genomtänkt intryck.",
+            "pros": [
+              "Handsfree till lägre pris än Elvie",
+              "Modernt, kompakt format",
+              "Fungerar diskret under kläder"
+            ],
+            "cons": [
+              "Något kortare batteritid än dyrare modeller",
+              "Färre app-funktioner"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-wearable.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Elektrisk eller manuell bröstpump?",
+            "text": "En elektrisk pump passar dig som pumpar ofta eller dagligen, medan en manuell pump är mer prisvärd och smidig för tillfällig eller sporadisk användning, till exempel enstaka pass eller som reserv."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Hur länge bör man pumpa per pass?",
+            "a": "En vanlig rekommendation är att pumpa i cirka 15 minuter per bröst, eller tills mjölkflödet tydligt minskar. Det kan variera från person till person."
+          }
+        ]
+      },
+      {
+        "slug": "nappflaska",
+        "emoji": "🍼",
+        "name": "Nappflaska",
+        "cardText": "Nappflaskor för kombinationsmatning och flaskmatning — bröstvårtans form gör stor skillnad.",
+        "title": "Nappflaska bäst i test 2026 | Res med Barn",
+        "description": "Nappflaska bäst i test 2026 — fem flaskor jämförda på bröstvårtans design, anti-kolik och material. Philips Avent, MAM och fler.",
+        "h1": "Nappflaska bäst i test 2026",
+        "intro": [
+          "För dig som kombinerar amning med flaska spelar bröstvårtans form stor roll för att undvika förvirring. Vi har jämfört fem populära nappflaskor på design, anti-kolikfunktion och material."
+        ],
+        "products": [
+          {
+            "name": "Philips Avent Natural 3.0",
+            "badge": "Bäst i test",
+            "price": "Från ca 130 kr",
+            "text": "Bred bröstvårta som efterliknar bröstets form, vilket minskar risken för nappförvirring vid kombinationsmatning. Anti-kolik-ventilsystem.",
+            "pros": [
+              "Bred, bröstlik design minskar nappförvirring",
+              "Effektivt anti-kolik-system",
+              "Finns i både plast och glas"
+            ],
+            "cons": [
+              "Bredare hals kan kräva anpassade nappar/tillbehör",
+              "Något dyrare än basmodeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-natural-3.html"
+          },
+          {
+            "name": "MAM Easy Start Anti-Colic",
+            "badge": "Bäst mot kolik",
+            "price": "Från ca 100 kr",
+            "text": "Flexibelt anti-koliksystem som minskar luftintaget vid flaskmatning. Populärt val för barn med kolikbesvär.",
+            "pros": [
+              "Effektivt mot kolikbesvär",
+              "Självventilerande botten",
+              "Lätt att rengöra, få delar"
+            ],
+            "cons": [
+              "Bröstvårtans form skiljer sig mer från bröstet",
+              "Kan behöva provas i olika flödesstorlekar"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-easy-start-anti-colic.html"
+          },
+          {
+            "name": "Elodie Nappflaska Glas",
+            "badge": "Bästa glasalternativ",
+            "price": "Från ca 220 kr",
+            "text": "Nappflaska i glas för dig som vill undvika plast. Snygg, minimalistisk design i Elodies karaktäristiska stil.",
+            "pros": [
+              "Glas innehåller inga mikroplaster",
+              "Snygg, tidlös design",
+              "Lätt att rengöra grundligt"
+            ],
+            "cons": [
+              "Tyngre och känsligare än plastflaskor",
+              "Dyrare"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/elodie-nappflaska-glas.html"
+          },
+          {
+            "name": "Nuk First Choice+",
+            "badge": "Bästa budget",
+            "price": "Från ca 90 kr",
+            "text": "Prisvärd flaska med ortodontiskt formad napp och anti-kolikventil. Bra allroundval för vardagen.",
+            "pros": [
+              "Prisvärd",
+              "Ortodontiskt formad napp",
+              "Brett utbud av flödesstorlekar"
+            ],
+            "cons": [
+              "Mindre premiumkänsla",
+              "Bröstvårtan mindre bred än Avent Natural"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-first-choice-plus.html"
+          },
+          {
+            "name": "Difrax S-formad nappflaska",
+            "badge": "Bäst ergonomisk hållning",
+            "price": "Från ca 110 kr",
+            "text": "S-formad design gör flaskan enkel att hålla i rätt vinkel, vilket underlättar en mer naturlig matningsställning.",
+            "pros": [
+              "Ergonomisk S-form underlättar hållning",
+              "Minskar luftintag tack vare vinkeln",
+              "Bra för självmatande äldre spädbarn"
+            ],
+            "cons": [
+              "Ovanligare form kan vara klumpig att diska",
+              "Mindre standardiserade tillbehör"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/difrax-s-formad-nappflaska.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Undviker man nappförvirring med rätt flaska?",
+            "text": "En bredare, mer bröstlik napp minskar risken för att barnet föredrar flaskan framför bröstet, men det är sällan en garanti — långsamt flöde och lugna matningsstunder spelar minst lika stor roll."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vilket flöde ska man välja för en nyfödd?",
+            "a": "För nyfödda gäller alltid det långsammaste flödet (steg 1), oavsett vilken flaska du väljer. Öka flödet stegvis i takt med att barnet växer och blir mer effektivt på att dricka."
+          }
+        ]
+      },
+      {
+        "slug": "babymonitor",
+        "emoji": "📹",
+        "name": "Babymonitor",
+        "cardText": "Babyvakter med och utan video — signalsäkerhet, räckvidd och batteritid jämförda.",
+        "title": "Babymonitor / Babyvakt bäst i test 2026 | Res med Barn",
+        "description": "Babymonitor bäst i test 2026 — fem babyvakter jämförda på signalsäkerhet, räckvidd och funktioner. Motorola, Philips Avent, Owlet och fler.",
+        "h1": "Babymonitor bäst i test 2026",
+        "intro": [
+          "En babymonitor ger trygghet när du inte är i samma rum som barnet. Vi har jämfört fem modeller på signalsäkerhet, räckvidd, batteritid och extrafunktioner som video och temperatur."
+        ],
+        "products": [
+          {
+            "name": "Philips Avent DECT SCD503",
+            "badge": "Bäst i test (ljud)",
+            "price": "Från ca 900 kr",
+            "text": "Sluten DECT-signal som går direkt mellan enheterna, inte via internet — ingen WiFi-risk. Räckvidd upp till 330 meter och 24 timmars batteritid i sparläge.",
+            "pros": [
+              "Säker DECT-signal, ingen internetrisk",
+              "Lång räckvidd (330 m)",
+              "Mycket bra batteritid"
+            ],
+            "cons": [
+              "Ingen videofunktion",
+              "Färre extrafunktioner än premiummodeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-dect-scd503.html"
+          },
+          {
+            "name": "Motorola VM75",
+            "badge": "Bäst med video",
+            "price": "Från ca 1 399 kr",
+            "text": "Videobabyvakt med tydlig färgdisplay, 300 meters räckvidd och tvåvägskommunikation. Bästsäljare med brett funktionsutbud.",
+            "pros": [
+              "Tydlig färgdisplay på föräldraenheten",
+              "Tvåvägskommunikation",
+              "Kan läsa av rummets temperatur"
+            ],
+            "cons": [
+              "Kräver laddning oftare än ren ljudmonitor",
+              "Dyrare än ljudmodeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/motorola-vm75.html"
+          },
+          {
+            "name": "Motorola AM24",
+            "badge": "Bästa budget",
+            "price": "Från ca 519 kr",
+            "text": "Enkel, prisvärd ljudbabyvakt med DECT-teknik och räckvidd upp till 300 meter. Varnar vid lågt batteri eller tappad anslutning.",
+            "pros": [
+              "Lågt pris",
+              "Säker DECT-signal",
+              "Enkel att använda"
+            ],
+            "cons": [
+              "Ingen video eller tvåvägskommunikation",
+              "Färre extrafunktioner"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/motorola-am24.html"
+          },
+          {
+            "name": "Owlet Dream Sock",
+            "badge": "Bäst premiumövervakning",
+            "price": "Från ca 1 800 kr",
+            "text": "Smart sensor som mäter puls och syresättning via en liten sock, kopplad till app. Ger extra trygghet utöver ljud och bild.",
+            "pros": [
+              "Mäter puls och syresättning",
+              "Appstyrd med notiser",
+              "Bra komplement till vanlig monitor"
+            ],
+            "cons": [
+              "WiFi-baserad, kräver stabilt nätverk",
+              "Dyrare än traditionella babyvakter"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/owlet-dream-sock.html"
+          },
+          {
+            "name": "Motorola PIP1710 Connect",
+            "badge": "Premiumval",
+            "price": "Från ca 2 989 kr",
+            "text": "Avancerad videomonitor med appkoppling så flera vårdnadshavare kan se barnet samtidigt, oavsett var de befinner sig.",
+            "pros": [
+              "Flera personer kan följa via app samtidigt",
+              "Hög videokvalitet",
+              "Fjärrstyrd kameravinkel och zoom"
+            ],
+            "cons": [
+              "Högt pris",
+              "WiFi-baserad, kräver säkert nätverk"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/motorola-pip1710-connect.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "DECT eller WiFi-baserad babyvakt?",
+            "text": "En DECT-baserad monitor skickar en krypterad direktsignal mellan enheterna utan att gå via internet, vilket gör den svårare att hacka. WiFi-baserade modeller ger mer flexibilitet (t.ex. fjärråtkomst via app) men kräver att du håller firmware uppdaterad och använder starka lösenord."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Behöver jag video eller räcker ljud?",
+            "a": "Räcker det med att höra när barnet vaknar eller är oroligt kan en ren ljudmonitor räcka gott och väl, och är oftast billigare med bättre batteritid. Vill du kunna se hur barnet sover eller rör sig ger video mer trygghet, särskilt när barnet börjar klättra i sängen."
+          }
+        ]
+      },
+      {
+        "slug": "barsjal",
+        "emoji": "🧣",
+        "name": "Bärsjal",
+        "cardText": "Mjuka, stretchiga bärsjalar för nyfödda och spädbarn — närhet från dag ett.",
+        "title": "Bärsjal bäst i test 2026 | Res med Barn",
+        "description": "Bärsjal bäst i test 2026 — fem bärsjalar jämförda på material, stretch och komfort för nyfödda. Aldoria, Coracor, Ergobaby och fler.",
+        "h1": "Bärsjal bäst i test 2026",
+        "intro": [
+          "En bärsjal ger nära kontakt och är ofta det mjukaste alternativet för nyfödda och små spädbarn. Vi har jämfört fem populära sjalar på material, stretch och hur enkla de är att knyta."
+        ],
+        "products": [
+          {
+            "name": "Aldoria Bambu Soft",
+            "badge": "Bäst i test",
+            "price": "Från ca 700 kr",
+            "text": "Lätt och luftig bärsjal i bambutrikå, silkeslen mot huden och tempererande i både värme och kyla. Rekommenderas särskilt de första sex månaderna.",
+            "pros": [
+              "Silkeslent, luftigt material",
+              "Tempererar bra i både värme och kyla",
+              "GOTS-certifierad ekologisk bomullsmix"
+            ],
+            "cons": [
+              "Kan kännas för stretchig efter ca ett år",
+              "Något dyrare än standardmodeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/aldoria-bambu-soft.html"
+          },
+          {
+            "name": "Coracor Bärsjal",
+            "badge": "Bästa premiumval",
+            "price": "Från ca 900 kr",
+            "text": "Mjuk, hållbar bärsjal i ekologisk bomull med elastan för god stretch. Snygg nog att bli en del av bärarens vardagsgarderob.",
+            "pros": [
+              "Stort utbud av färger och mönster",
+              "Mjuk och hållbar bomullsmix",
+              "Snygg design"
+            ],
+            "cons": [
+              "Högre pris",
+              "Kräver viss övning att knyta första gångerna"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/coracor-barsjal.html"
+          },
+          {
+            "name": "Ergobaby Aura Wrap Mesh",
+            "badge": "Svalast",
+            "price": "Från ca 800 kr",
+            "text": "Tunt, luftigt meshmaterial gör den svalast i jämförelsen — perfekt för varma dagar eller barn som lätt blir överhettade.",
+            "pros": [
+              "Mycket svalt material",
+              "Tydliga markeringar underlättar knytning",
+              "Lätt stretch ger god passform"
+            ],
+            "cons": [
+              "Mindre isolerande på kalla dagar",
+              "Mindre robust än vävda sjalar"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/ergobaby-aura-wrap-mesh.html"
+          },
+          {
+            "name": "Moby Elements",
+            "badge": "Bästa budget",
+            "price": "Från ca 450 kr",
+            "text": "Prispressat alternativ i mjuk polyester/bomullsmix. Lätt och relativt luftig, bra för hemmabruk och kortare promenader.",
+            "pros": [
+              "Lågt pris",
+              "Lätt och smidig",
+              "Bra för kortare bärpass"
+            ],
+            "cons": [
+              "Mindre robust vid längre, dagliga bärpass",
+              "Andas sämre än bambu eller mesh"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/moby-elements.html"
+          },
+          {
+            "name": "Mushie Bärsjal",
+            "badge": "Bäst ergonomi",
+            "price": "Från ca 650 kr",
+            "text": "Ekologisk bomull med lätt stretch ger fint stöd åt barnets naturliga sittställning. Universell passform för olika kroppstyper.",
+            "pros": [
+              "God ergonomisk sittställning för barnet",
+              "Universell passform",
+              "Svalt nog för inomhusbruk"
+            ],
+            "cons": [
+              "Mindre känt varumärke, färre återförsäljare",
+              "Begränsat färgutbud"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/mushie-barsjal.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Elastisk eller vävd bärsjal?",
+            "text": "Elastiska (trikå-)sjalar är mjukast och enklast för nyfödda, men håller i regel bara till 8–10 kg. Vävda sjalar ger bättre stöd över tid och räcker ofta till 15 kg eller mer, men är stelare i början."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är bärsjal eller bärsele bäst för en nyfödd?",
+            "a": "Bärsjalar ger generellt mer närhet och mjukhet, vilket många tycker passar extra bra för nyfödda och den så kallade fjärde trimestern. Bärselar är enklare att ta på och fungerar ofta bättre när barnet blir äldre. Många familjer använder båda beroende på situation."
+          }
+        ]
+      },
+      {
+        "slug": "uv-badklader",
+        "emoji": "☀️",
+        "name": "UV-badkläder",
+        "cardText": "UV-dräkter och simtröjor med UPF 50+ — bättre solskydd än vanliga badkläder.",
+        "title": "UV-badkläder barn bäst i test 2026 | Res med Barn",
+        "description": "UV-badkläder bäst i test 2026 — fem UV-dräkter för barn jämförda på solskydd, passform och material. Geggamoja, Polarn O. Pyret och fler.",
+        "h1": "UV-badkläder för barn bäst i test 2026",
+        "intro": [
+          "UV-kläder ger betydligt bättre och mer heltäckande solskydd än vanliga badkläder eller solkräm ensamt. Vi har jämfört fem populära UV-dräkter på skyddsfaktor, passform och komfort."
+        ],
+        "products": [
+          {
+            "name": "Geggamoja UV-Dräkt",
+            "badge": "Bäst i test",
+            "price": "Från ca 350 kr",
+            "text": "Ekologiskt material med UPF 50+ som blockerar 98% av solens strålar. Heltäckande passform över axlar, rygg och lår.",
+            "pros": [
+              "UPF 50+, blockerar 98% av UV-strålning",
+              "Ekologiskt material",
+              "Heltäckande, bra passform"
+            ],
+            "cons": [
+              "I det högre prissegmentet",
+              "Begränsat mönsterutbud"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/geggamoja-uv-drakt.html"
+          },
+          {
+            "name": "Polarn O. Pyret UV-set",
+            "badge": "Mest hållbart material",
+            "price": "Från ca 400 kr",
+            "text": "Långärmad tröja i återvunnen polyamid från gamla fiskenät, kombineras med byxor eller shorts för anpassningsbart skydd.",
+            "pros": [
+              "Tillverkat av återvunnet material",
+              "Går att kombinera tröja/byxa efter väder",
+              "Slitstarkt, håller flera säsonger"
+            ],
+            "cons": [
+              "Säljs ofta som separata delar (högre totalpris)",
+              "Färre färgval än vissa konkurrenter"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/polarn-o-pyret-uv-set.html"
+          },
+          {
+            "name": "Swimpy UV-dräkt",
+            "badge": "Bäst för aktiv lek",
+            "price": "Från ca 250 kr",
+            "text": "Snabbtorkande material med god rörelsefrihet, populärt bland svenska familjer för både bad och lek i vattnet.",
+            "pros": [
+              "Snabbtorkande material",
+              "Bra rörelsefrihet för aktiv lek",
+              "Prisvärt"
+            ],
+            "cons": [
+              "Något mindre täckande än helkroppsmodeller",
+              "Kräver komplettering med UV-hatt"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/swimpy-uv-drakt.html"
+          },
+          {
+            "name": "Lindex UV-dräkt",
+            "badge": "Bästa budget",
+            "price": "Från ca 200 kr",
+            "text": "UPF 50+-skydd i återvunnen polyester/elastanmix. Finns i flera mönster och som endels- eller tvådelad variant.",
+            "pros": [
+              "Lågt pris",
+              "Bra utbud av mönster och stilar",
+              "Återvunnet material"
+            ],
+            "cons": [
+              "Något mindre robust över flera säsonger",
+              "Kortare ärmar på vissa modeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/lindex-uv-drakt.html"
+          },
+          {
+            "name": "Petite Chérie Atelier Kajsa",
+            "badge": "Snyggast design",
+            "price": "Från ca 450 kr",
+            "text": "Långärmad UV-baddräkt med volanger och mönster som sticker ut. Kombinerar skydd med genomtänkt stil.",
+            "pros": [
+              "Utmärkande, omtyckt design",
+              "Långärmat för maximalt skydd",
+              "Bra kvalitetskänsla"
+            ],
+            "cons": [
+              "Dragkedjan kan irritera vissa barn",
+              "I det högre prissegmentet"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/petite-cherie-atelier-kajsa.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Vad ska man tänka på vid köp av UV-kläder?",
+            "text": "Välj alltid UPF 50+ för bästa skydd, och prioritera modeller som täcker axlar, rygg och lår. Dragkedja framtill underlättar påklädning, och snabbtorkande material håller barnet skönt genom hela baddagen."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Räcker UV-kläder istället för solkräm?",
+            "a": "UV-kläder skyddar effektivt de delar av kroppen de täcker, men barnets ansikte, händer och andra bara hudpartier behöver fortfarande solkräm. Kombinera gärna UV-dräkt med en solhatt och solkräm på synlig hud."
+          }
+        ]
+      },
+      {
+        "slug": "regnstall",
+        "emoji": "☔",
+        "name": "Regnställ",
+        "cardText": "Fodrade och ofodrade regnställ för barn — vattenpelare, sömmar och passform jämförda.",
+        "title": "Regnställ barn bäst i test 2026 | Res med Barn",
+        "description": "Regnställ bäst i test 2026 — fem regnställ för barn jämförda på vattentäthet, foder och passform. Didriksons, Nordbjørn och fler.",
+        "h1": "Regnställ för barn bäst i test 2026",
+        "intro": [
+          "Ett bra regnställ håller barnet torrt och varmt oavsett väder. Vi har jämfört fem populära regnställ på vattenpelare, foder och praktiska detaljer som justerbara fothällor och reflexer."
+        ],
+        "products": [
+          {
+            "name": "Didriksons Boardman",
+            "badge": "Bäst i test (fodrat)",
+            "price": "Från ca 800 kr",
+            "text": "Fodrat regnställ i galon med värmande fleecefoder, svetsade sömmar och avtagbar huva. Vattenpelare 8 000 mm.",
+            "pros": [
+              "Håller värmen bra tack vare fleecefoder",
+              "Vattenpelare 8 000 mm",
+              "Justerbara, avtagbara fothällor"
+            ],
+            "cons": [
+              "Kan bli för varmt på milda dagar",
+              "I den högre prisklassen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-boardman.html"
+          },
+          {
+            "name": "Didriksons Waterman",
+            "badge": "Bäst ofodrat",
+            "price": "Från ca 500 kr",
+            "text": "Populärt ofodrat regnställ med bra passform och hög vattentäthet — perfekt som extra lager över varmare kläder.",
+            "pros": [
+              "Går att lager-på-lager-klä efter väder",
+              "Bra passform",
+              "Hög vattentäthet"
+            ],
+            "cons": [
+              "Kräver eget varmt lager under på kalla dagar",
+              "Inget foder inbyggt"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-waterman.html"
+          },
+          {
+            "name": "Nordbjørn Skagen",
+            "badge": "Bästa budget",
+            "price": "Från ca 450 kr",
+            "text": "Prisvärt fodrat regnställ som täcker det viktigaste. Skillnaden mot dyrare modeller märks mest i detaljer som fickor och justerbarhet.",
+            "pros": [
+              "Lågt pris för fodrat regnställ",
+              "God vattentålighet",
+              "Bra mängd reflexer"
+            ],
+            "cons": [
+              "Inga fickor",
+              "Ingen justerbar huva"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-skagen.html"
+          },
+          {
+            "name": "CeLaVi Regnställ Glitter",
+            "badge": "Roligast design",
+            "price": "Från ca 689 kr",
+            "text": "Glittrigt, uppskattat mönster som gör regniga dagar lite roligare — samtidigt fullt funktionellt med bra vattentäthet.",
+            "pros": [
+              "Populärt, glatt mönster som barn gillar",
+              "Bra vattentäthet",
+              "God passform"
+            ],
+            "cons": [
+              "Dyrare än många konkurrenter i samma klass",
+              "Glittermönster kan blekna med tiden"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/celavi-regnstall-glitter.html"
+          },
+          {
+            "name": "Nordbjörn Koster",
+            "badge": "Bäst helhet",
+            "price": "Från ca 550 kr",
+            "text": "Balanserad kombination av kvalitet, pris och funktion — en trygg allroundmodell för vardagsbruk på förskola och fritid.",
+            "pros": [
+              "Bra balans mellan pris och kvalitet",
+              "Pålitlig för daglig användning",
+              "God passform för de flesta kroppstyper"
+            ],
+            "cons": [
+              "Inga stora särskiljande finesser",
+              "Mellansegmentets utbud av färger"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-koster.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Vad betyder vattenpelaren?",
+            "text": "Vattenpelaren mäter hur mycket vattentryck plagget klarar innan det läcker igenom. Under 2 000 mm räknas som vattenavvisande snarare än vattentätt. För svenska förhållanden rekommenderas minst 5 000 mm för vardagsbruk, och gärna 8 000 mm eller mer för kraftigt regn."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fodrat eller ofodrat regnställ — vad ska jag välja?",
+            "a": "Fodrat regnställ fungerar som ett eget plagg och passar bra på hösten och i mildare vinterväder. Ofodrat regnställ är tänkt att bäras utanpå varmare kläder och ger dig mer flexibilitet att anpassa efter temperaturen."
+          }
+        ]
+      },
+      {
+        "slug": "vinterskor",
+        "emoji": "🥾",
+        "name": "Vinterskor",
+        "cardText": "Varma, vattentäta vinterskor och kängor för barn — isolering och vattentäthet jämförda.",
+        "title": "Vinterskor barn bäst i test 2026 | Res med Barn",
+        "description": "Vinterskor bäst i test 2026 — fem vinterskor för barn jämförda på värme, vattentäthet och passform. Viking, Tretorn, Kavat och fler.",
+        "h1": "Vinterskor för barn bäst i test 2026",
+        "intro": [
+          "Kalla, blöta vintrar ställer höga krav på barnens skor. Vi har jämfört fem populära vinterskor på värmeisolering, vattentäthet och hur väl de håller fötterna torra genom hela säsongen."
+        ],
+        "products": [
+          {
+            "name": "Viking Ultra 2.0",
+            "badge": "Bäst i test",
+            "price": "Från ca 599 kr",
+            "text": "Varm, lätt och vattentät vintersko som toppar flera oberoende tester. Bra balans mellan isolering och rörelsefrihet.",
+            "pros": [
+              "Utmärkt kombination av värme och vattentäthet",
+              "Lätt att gå och springa i",
+              "Håller sig varm även i blött väder"
+            ],
+            "cons": [
+              "I den högre prisklassen",
+              "Kan kännas rymlig, kolla storleksguide noga"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/viking-ultra-2.html"
+          },
+          {
+            "name": "Tretorn Arch Hybrid Jr",
+            "badge": "Bäst för blött klimat",
+            "price": "Från ca 500 kr",
+            "text": "Populär vinterkänga för barn som ofta leker i blöta miljöer, till exempel på förskolegården. Mycket god vattentäthet.",
+            "pros": [
+              "Mycket god vattentäthet",
+              "Bra för slaskiga, blöta dagar",
+              "Prisvärd för kvaliteten"
+            ],
+            "cons": [
+              "Något mindre isolerande än de allra varmaste modellerna",
+              "Bäst för milda till måttliga vintrar"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/tretorn-arch-hybrid-jr.html"
+          },
+          {
+            "name": "Kavat Voxna JR",
+            "badge": "Bäst för större barn",
+            "price": "Från ca 650 kr",
+            "text": "Robust vinterstövel anpassad för äldre barn som behöver mer stöd och slitstyrka under en hel vintersäsong.",
+            "pros": [
+              "Extra stöd och stabilitet för äldre barn",
+              "Slitstark konstruktion",
+              "Bra grepp på halt underlag"
+            ],
+            "cons": [
+              "Något styvare passform för de minsta",
+              "Högre pris"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/kavat-voxna-jr.html"
+          },
+          {
+            "name": "Reima Laplander 2.0",
+            "badge": "Varmast",
+            "price": "Från ca 700 kr",
+            "text": "Extra varmisolerad vinterkänga byggd för riktigt kalla temperaturer, med vattentätt membran och god andningsförmåga.",
+            "pros": [
+              "Bland de varmaste i jämförelsen",
+              "Vattentätt membran som ändå andas",
+              "Bra för minusgrader"
+            ],
+            "cons": [
+              "Kan bli för varm vid plusgrader",
+              "Dyrare än sommarklimat-anpassade modeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/reima-laplander-2.html"
+          },
+          {
+            "name": "Tretorn Kuling Neoprene",
+            "badge": "Bästa budget",
+            "price": "Från ca 304 kr",
+            "text": "Prisvärda vattentäta vinterstövlar, bäst lämpade för milda vintrar och slaskiga dagar snarare än sträng kyla.",
+            "pros": [
+              "Lågt pris",
+              "Vattentät neoprenkonstruktion",
+              "Bra för sydsvenska, milda vintrar"
+            ],
+            "cons": [
+              "Mindre isolerande än Viking eller Kavat",
+              "Kortare skaft ger mindre skydd i djup snö"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/tretorn-kuling-neoprene.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Hur mycket ska man tänka på storlek vid köp av vinterskor?",
+            "text": "Räkna med tjocka strumpor och lämna lite extra tårum (ca 12–15 mm) för god blodcirkulation och värme. För trånga vinterskor kyler faktiskt fötterna snabbare, eftersom blodcirkulationen försämras."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vad innebär Gore-Tex på en vintersko?",
+            "a": "Gore-Tex är ett vattentätt membran som samtidigt släpper igenom fukt och ånga inifrån, vilket ger både vattentäthet och god andningsförmåga. Skor med Gore-Tex håller fötterna torra både utifrån (regn/snö) och inifrån (svett)."
           }
         ]
       }
