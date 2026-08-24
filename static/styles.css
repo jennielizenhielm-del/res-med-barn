@@ -410,6 +410,7 @@ h1 {
   transition: color var(--transition);
 }
 .related-links a:hover { color: var(--accent); }
+.related-links-all { color: var(--accent) !important; font-weight: 700; border-bottom: none !important; padding-top: 1rem !important; }
 
 /* ---- STÄDER: filter + aktivitetskort ---- */
 .stader-filters {
