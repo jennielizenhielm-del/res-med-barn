@@ -301,6 +301,36 @@ h1 {
 }
 .checklist li::before { content: '✓'; color: var(--primary); font-weight: 700; flex-shrink: 0; }
 
+/* ---- PACKLIST ---- */
+.packlist-box {
+  background: var(--accent-light);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  margin: clamp(2rem, 4vw, 3rem) 0;
+}
+.packlist-box h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.packlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.packlist-col h3 {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.packlist-col .checklist li { font-size: 0.9rem; padding: 0.35rem 0; }
+@media (max-width: 720px) {
+  .packlist-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
 /* ---- PRODUCTS ---- */
 .products { display: flex; flex-direction: column; gap: 1.1rem; margin-bottom: 1rem; }
 .product-card {
@@ -738,6 +768,23 @@ h1 {
   margin-bottom: 0.4rem;
 }
 .detail-tip p { font-size: 0.98rem; color: var(--text); line-height: 1.65; }
+.detail-prisinfo {
+  background: var(--accent-light);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.6rem;
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+  max-width: 680px;
+}
+.detail-prisinfo .t-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-hover);
+  margin-bottom: 0.4rem;
+}
+.detail-prisinfo p { font-size: 0.98rem; color: var(--text); line-height: 1.65; }
+.detail-prisinfo .prisinfo-note { font-size: 0.86rem; color: var(--text-secondary); margin-top: 0.6rem; }
 .detail-actions { display: flex; gap: 0.75rem; margin-bottom: clamp(2.5rem, 5vw, 3.5rem); flex-wrap: wrap; }
 .btn {
   display: inline-flex;
