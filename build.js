@@ -762,6 +762,12 @@ function buildResmal() {
     <div class="t-label">Förälder till förälder</div>
     <p>${esc(d.tip)}</p>
   </div>
+  ${d.prisinfo ? `
+  <div class="detail-prisinfo">
+    <div class="t-label">💰 Pris & rabatter</div>
+    <p>${esc(d.prisinfo)}</p>
+    <p class="prisinfo-note">Tips: ICA, Coop och Hyresgästföreningen ger ofta roterande medlemsrabatter på svenska parker och museer — kolla era medlemsförmåner innan besöket, det kan sänka priset rejält.</p>
+  </div>` : ''}
   <div class="detail-actions">
     ${d.bookingUrl ? `<a class="btn btn-primary" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">Boka / Läs mer →</a>` : ''}
     <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${esc(CAT_LABELS[d.cat] || d.catLabel)} →</a>
