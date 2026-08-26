@@ -2273,6 +2273,10 @@
           {
             "h2": "Latex eller silikon?",
             "text": "Latex är mjukare och mer naturligt men behöver bytas oftare (var 4–6:e vecka) och kan missfärgas. Silikon håller längre, är luktfritt och lättare att hålla rent, men kan kännas fastare för vissa barn."
+          },
+          {
+            "h2": "Tips: nappar som lyser i mörkret",
+            "text": "Ett smart litet trick för nattmatningarna — vissa nappar, som BIBS GLOW-serie, har en självlysande sköld. Håll nappen mot en lampa i 5–10 sekunder innan läggdags så lyser den i över 8 timmar. Perfekt när ni famlar i mörkret klockan tre på natten och slipper leta efter den nedfallna nappen i sängen."
           }
         ],
         "faq": [
@@ -2380,6 +2384,10 @@
           {
             "h2": "Elektrisk eller manuell bröstpump?",
             "text": "En elektrisk pump passar dig som pumpar ofta eller dagligen, medan en manuell pump är mer prisvärd och smidig för tillfällig eller sporadisk användning, till exempel enstaka pass eller som reserv."
+          },
+          {
+            "h2": "Tips: samla upp mjölken som annars går förlorad",
+            "text": "Medan du ammar eller pumpar på ena bröstet läcker det ofta mjölk från det andra — mjölk som annars bara rinner bort. Sätt en manuell silikonpump (t.ex. en Haakaa-liknande modell) eller en bröstmjölksuppsamlare (som Medelas silikonmodell) på det bröst du inte använder, så samlas den läckande mjölken upp automatiskt via det naturliga sug som uppstår. Ett enkelt sätt att få mer mjölk i frysen utan extra pumpningspass."
           }
         ],
         "faq": [
@@ -2594,6 +2602,10 @@
           {
             "h2": "DECT eller WiFi-baserad babyvakt?",
             "text": "En DECT-baserad monitor skickar en krypterad direktsignal mellan enheterna utan att gå via internet, vilket gör den svårare att hacka. WiFi-baserade modeller ger mer flexibilitet (t.ex. fjärråtkomst via app) men kräver att du håller firmware uppdaterad och använder starka lösenord."
+          },
+          {
+            "h2": "Tips: använd VOX-läget på natten",
+            "text": "De flesta babymonitorer har ett VOX-läge (ljudaktiverat läge) som håller skärmen släckt och tyst tills det faktiskt händer något i barnets rum. Så fort monitorn fångar upp ljud eller rörelse tänds den och/eller hörs. Perfekt för natten — ni slipper ett ständigt tänt/brummande ljus i sovrummet, men vaknar ändå direkt om barnet är vaket eller oroligt."
           }
         ],
         "faq": [
