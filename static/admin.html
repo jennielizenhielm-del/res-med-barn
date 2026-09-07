@@ -84,6 +84,13 @@ textarea { min-height:64px; }
 }
 .saved-flash.show { opacity:1; }
 .err { padding:2rem; color:var(--bad); }
+/* mail form */
+.mail-form { max-width:560px; }
+.mail-form .field label { text-transform:none; letter-spacing:0; font-size:0.82rem; }
+.mail-status { margin-top:1rem; padding:0.85rem 1rem; border-radius:var(--radius); font-size:0.88rem; display:none; }
+.mail-status.show { display:block; }
+.mail-status.ok { background:var(--primary-light); color:var(--ok); }
+.mail-status.bad { background:var(--accent-light); color:var(--bad); }
 </style>
 </head>
 <body>
@@ -99,6 +106,7 @@ textarea { min-height:64px; }
 <div class="tabs">
   <button class="tab active" data-view="seo" onclick="switchView('seo')">SEO – titlar &amp; beskrivningar</button>
   <button class="tab" data-view="copy" onclick="switchView('copy')">Innehåll &amp; copy</button>
+  <button class="tab" data-view="mail" onclick="switchView('mail')">✉️ Skicka mail</button>
 </div>
 <div class="wrap">
   <div class="hint">
@@ -261,6 +269,103 @@ function renderCopy(selIdx) {
     <div class="obj-card">${editorFor(obj, 't' + idx)}</div>`;
 }
 
+/* ---- mail ---- */
+const MAIL_WORKER_URL = 'https://resmedbarn-mail.jennie-lizenhielm.workers.dev/';
+const MAIL_SECRET_KEY = 'rmb-mail-secret';
+
+function getMailSecret() {
+  let s = localStorage.getItem(MAIL_SECRET_KEY);
+  if (!s) {
+    s = prompt('Klistra in er MAIL_SECRET (samma värde som ligger i Worker-inställningarna hos Cloudflare):');
+    if (!s) return null;
+    s = s.trim();
+    localStorage.setItem(MAIL_SECRET_KEY, s);
+  }
+  return s;
+}
+
+function mailSecretSettings() {
+  const has = !!localStorage.getItem(MAIL_SECRET_KEY);
+  const s = prompt((has ? 'En hemlighet finns redan sparad i din webbläsare. Klistra in en ny för att byta, eller skriv RADERA för att ta bort den.\n\n' : '') + 'Klistra in er MAIL_SECRET:');
+  if (s === null) return;
+  if (s.trim().toUpperCase() === 'RADERA') {
+    localStorage.removeItem(MAIL_SECRET_KEY);
+    flash('Hemlighet borttagen');
+  } else if (s.trim()) {
+    localStorage.setItem(MAIL_SECRET_KEY, s.trim());
+    flash('Hemlighet sparad ✓');
+  }
+}
+
+function renderMail() {
+  document.getElementById('view').innerHTML = `
+    <div class="hint">Mail skickas från <strong>kontakt@resmedbarn.se</strong> via er egen Cloudflare Worker. Hemligheten (MAIL_SECRET) sparas bara i din webbläsare, aldrig i sajtens kod.</div>
+    <div class="mail-form">
+      <div class="field">
+        <div class="field-head"><label>Till</label></div>
+        <input type="text" id="mailTo" placeholder="namn@exempel.se">
+      </div>
+      <div class="field">
+        <div class="field-head"><label>Ämne</label></div>
+        <input type="text" id="mailSubject" placeholder="Ämnesrad">
+      </div>
+      <div class="field">
+        <div class="field-head"><label>Meddelande</label></div>
+        <textarea id="mailMessage" style="min-height:220px" placeholder="Skriv mailet här…"></textarea>
+      </div>
+      <button class="btn btn-primary" id="mailSendBtn" onclick="sendMail()">✉️ Skicka</button>
+      <button class="btn" onclick="mailSecretSettings()" title="Hemlig nyckel">⚙ Hemlighet</button>
+      <div class="mail-status" id="mailStatus"></div>
+    </div>`;
+}
+
+async function sendMail() {
+  const secret = getMailSecret();
+  if (!secret) return;
+
+  const to = document.getElementById('mailTo').value.trim();
+  const subject = document.getElementById('mailSubject').value.trim();
+  const message = document.getElementById('mailMessage').value.trim();
+  const statusEl = document.getElementById('mailStatus');
+  const btn = document.getElementById('mailSendBtn');
+
+  if (!to || !subject || !message) {
+    statusEl.className = 'mail-status show bad';
+    statusEl.textContent = 'Fyll i mottagare, ämne och meddelande.';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Skickar…';
+  statusEl.className = 'mail-status';
+
+  try {
+    const res = await fetch(MAIL_WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Auth-Secret': secret },
+      body: JSON.stringify({ to, subject, message })
+    });
+    const data = await res.json();
+    if (res.status === 401) {
+      localStorage.removeItem(MAIL_SECRET_KEY);
+      throw new Error('Fel hemlighet — sparad nyckel togs bort, försök igen med rätt värde.');
+    }
+    if (!res.ok || !data.ok) throw new Error(data.error || ('Servern svarade ' + res.status));
+
+    statusEl.className = 'mail-status show ok';
+    statusEl.textContent = 'Mail skickat ✓';
+    document.getElementById('mailTo').value = '';
+    document.getElementById('mailSubject').value = '';
+    document.getElementById('mailMessage').value = '';
+  } catch (e) {
+    statusEl.className = 'mail-status show bad';
+    statusEl.textContent = 'Kunde inte skicka: ' + e.message;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '✉️ Skicka';
+  }
+}
+
 
 /* ---- GitHub direct save ---- */
 const GH_REPO = 'jennielizenhielm-del/res-med-barn';
@@ -365,7 +470,9 @@ function flash(msg) {
 function switchView(v) {
   view = v;
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.view === v));
-  v === 'seo' ? renderSeo() : renderCopy(0);
+  if (v === 'seo') renderSeo();
+  else if (v === 'copy') renderCopy(0);
+  else if (v === 'mail') renderMail();
 }
 function escapeHtml(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
