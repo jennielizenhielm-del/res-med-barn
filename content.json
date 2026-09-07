@@ -3367,5 +3367,391 @@
         ]
       }
     ]
+  },
+  "smartPacklista": {
+    "ages": [
+      {
+        "key": "bebisar",
+        "label": "Bebis (0–1 år)",
+        "emoji": "👶"
+      },
+      {
+        "key": "smabarn",
+        "label": "Småbarn (1–3 år)",
+        "emoji": "🧒"
+      },
+      {
+        "key": "barn",
+        "label": "Barn (4–12 år)",
+        "emoji": "🧑"
+      },
+      {
+        "key": "tonaringar",
+        "label": "Tonåring (13+ år)",
+        "emoji": "🧑‍🦱"
+      }
+    ],
+    "tripTypes": [
+      {
+        "key": "sol",
+        "label": "☀️ Solsemester",
+        "emoji": "☀️"
+      },
+      {
+        "key": "ovrigt",
+        "label": "🏙️ Övrig resa",
+        "emoji": "🏙️"
+      }
+    ],
+    "transport": [
+      {
+        "key": "flyg",
+        "label": "✈️ Flyg",
+        "emoji": "✈️"
+      },
+      {
+        "key": "bil",
+        "label": "🚗 Bil",
+        "emoji": "🚗"
+      },
+      {
+        "key": "tag",
+        "label": "🚆 Tåg",
+        "emoji": "🚆"
+      }
+    ],
+    "klader": {
+      "bebisar|sol": [
+        "UV-dräkt eller UV-badkläder (UPF 50+)",
+        "Solhatt med hakband",
+        "Barnanpassad solkräm (minst SPF 30, gärna 50)",
+        "Lätta bomullskläder, långärmat för skydd mitt på dagen",
+        "Extra ombyten (minst 3–4/dag i värme)",
+        "Myggmedel anpassat för spädbarn"
+      ],
+      "bebisar|ovrigt": [
+        "Varma lager-på-lager-kläder",
+        "Mössa (både varm och solskyddande beroende på väder)",
+        "Extra ombyten (minst 3–4/dag)",
+        "Regnställ eller varmare overall vid behov"
+      ],
+      "smabarn|sol": [
+        "UV-dräkt eller UV-badkläder (UPF 50+)",
+        "Solhatt",
+        "Barnanpassad solkräm",
+        "Badskor (skyddar mot het sand/vassa stenar)",
+        "Lätta, luftiga kläder",
+        "Extra ombyten"
+      ],
+      "smabarn|ovrigt": [
+        "Varma lager-på-lager-kläder",
+        "Regnställ och gummistövlar",
+        "Mössa och vantar vid kallare väder",
+        "Extra ombyten"
+      ],
+      "barn|sol": [
+        "UV-badkläder eller vanlig baddräkt + UV-tröja",
+        "Solhatt eller keps",
+        "Solkräm (barnet kan ofta smörja sig själv med guidning)",
+        "Badskor",
+        "Lätta kläder för varmt klimat"
+      ],
+      "barn|ovrigt": [
+        "Kläder efter väder på resmålet",
+        "Regnställ vid behov",
+        "Bekväma skor för att gå mycket",
+        "Varmare lager om det är kallt"
+      ],
+      "tonaringar|sol": [
+        "Baddräkt/badbyxor",
+        "Solkräm (påminn — glöms ofta bort i den åldern)",
+        "Solglasögon",
+        "Lätta, luftiga kläder"
+      ],
+      "tonaringar|ovrigt": [
+        "Kläder efter väder och egen stil",
+        "Bekväma skor",
+        "Ett varmare lager för kvällar"
+      ]
+    },
+    "tillagg": {
+      "bebisar|flyg": {
+        "Mat & dryck": [
+          "Ersättning i portionsförpackningar eller pulver",
+          "Minst 2–3 rena, tomma flaskor",
+          "Extra nappar (minst 2)"
+        ],
+        "Förnödenheter": [
+          "Blöjor — räkna generöst, 2–3 extra utöver planerat",
+          "Våtservetter och skötunderlägg",
+          "Nappband så nappen inte trillar",
+          "Lätt filt eller pläd"
+        ],
+        "Aktiviteter": [
+          "Fönstersugkoppsleksaker",
+          "Mjuka tygböcker eller crinkle-leksaker",
+          "En helt ny liten leksak barnet aldrig sett förut"
+        ]
+      },
+      "bebisar|bil": {
+        "Mat & dryck": [
+          "Ersättning eller mellanmål för bilresan",
+          "Vattenflaska/nappflaska inom räckhåll i baksätet"
+        ],
+        "Förnödenheter": [
+          "Blöjor och våtservetter lättåtkomliga (inte längst ner i väskan)",
+          "Skötunderlägg",
+          "Extra ombyte inom räckhåll",
+          "Solskydd för bilrutan"
+        ],
+        "Aktiviteter": [
+          "Backspegel så ni ser barnet från förarsätet",
+          "Mjuk leksak att hålla i",
+          "Mysig musik/ljudbok för bilen"
+        ]
+      },
+      "bebisar|tag": {
+        "Mat & dryck": [
+          "Ersättning i portionsförpackningar",
+          "Rena flaskor"
+        ],
+        "Förnödenheter": [
+          "Blöjor och våtservetter",
+          "Skötunderlägg (tågtoaletter saknar ofta skötbord)",
+          "Extra ombyte"
+        ],
+        "Aktiviteter": [
+          "Mjuka tygböcker",
+          "Liten leksak som inte låter (hänsyn till medresenärer)"
+        ]
+      },
+      "smabarn|flyg": {
+        "Mat & dryck": [
+          "Torra snacks i portionspåsar",
+          "Tom vattenflaska att fylla efter security"
+        ],
+        "Förnödenheter": [
+          "Extra ombyte, gärna två",
+          "Blöjor eller tränarbyxor",
+          "Liten kudde eller filt"
+        ],
+        "Aktiviteter": [
+          "Vässbara pennor i pennskrin med små ritblock",
+          "Målarböcker i miniformat",
+          "Klistermärkesark",
+          "Mini-magnetbyggplattor",
+          "Inslagna småpresenter att öppna under resan"
+        ]
+      },
+      "smabarn|bil": {
+        "Mat & dryck": [
+          "Snacks som inte kladdar (undvik choklad i värme)",
+          "Pip-mugg med vatten"
+        ],
+        "Förnödenheter": [
+          "Extra ombyte inom räckhåll",
+          "Kudde/filt för tupplur i bilstolen",
+          "Åksjuke-påsar om barnet är känsligt"
+        ],
+        "Aktiviteter": [
+          "Ljudböcker eller barnmusik",
+          "Ritplatta utan lösa delar (undvik tappade pennor under bilfärden)",
+          "Enkla \"jag ser\"-lekar för längre sträckor"
+        ]
+      },
+      "smabarn|tag": {
+        "Mat & dryck": [
+          "Snacks i portionspåsar",
+          "Vattenflaska"
+        ],
+        "Förnödenheter": [
+          "Extra ombyte",
+          "Liten filt"
+        ],
+        "Aktiviteter": [
+          "Klistermärkesark (enkelt att plocka undan)",
+          "Tyst leksak eller bok",
+          "Miniformat-målarbok"
+        ]
+      },
+      "barn|flyg": {
+        "Mat & dryck": [
+          "Egna snacks",
+          "Tom vattenflaska att fylla efter security"
+        ],
+        "Förnödenheter": [
+          "Extra ombyte i handbagaget",
+          "Barnanpassade hörlurar",
+          "Powerbank"
+        ],
+        "Aktiviteter": [
+          "Nedladdade filmer/serier/spel",
+          "Ritblock eller målarbok",
+          "En vanlig kortlek",
+          "Litet pysselkit",
+          "Ny bok"
+        ]
+      },
+      "barn|bil": {
+        "Mat & dryck": [
+          "Snacks och dryck inom räckhåll",
+          "Paus-plan var 1,5–2 timme"
+        ],
+        "Förnödenheter": [
+          "Hörlurar för egen skärm/musik",
+          "Powerbank",
+          "Åksjuke-påsar vid behov"
+        ],
+        "Aktiviteter": [
+          "Nedladdat innehåll offline",
+          "Bilspel/sällskapslekar (\"Jag ser\", skyltjakt)",
+          "Kortlek"
+        ]
+      },
+      "barn|tag": {
+        "Mat & dryck": [
+          "Egna snacks",
+          "Vattenflaska"
+        ],
+        "Förnödenheter": [
+          "Hörlurar",
+          "Powerbank"
+        ],
+        "Aktiviteter": [
+          "Nedladdat innehåll offline",
+          "Bok eller serietidning",
+          "Kortlek eller reseanpassat sällskapsspel"
+        ]
+      },
+      "tonaringar|flyg": {
+        "Mat & dryck": [
+          "Egna snacks",
+          "Tom vattenflaska"
+        ],
+        "Förnödenheter": [
+          "Powerbank",
+          "Bra hörlurar eller hörlursmuffar",
+          "Nackkudde"
+        ],
+        "Aktiviteter": [
+          "Nedladdat innehåll offline: serier, musik, poddar",
+          "En fysisk bok",
+          "Förladdade spel på mobilen"
+        ]
+      },
+      "tonaringar|bil": {
+        "Mat & dryck": [
+          "Egna snacks och dryck"
+        ],
+        "Förnödenheter": [
+          "Powerbank",
+          "Hörlurar",
+          "Nackkudde för den som vill sova"
+        ],
+        "Aktiviteter": [
+          "Egen spellista/podd nedladdad",
+          "Bok eller mobilspel"
+        ]
+      },
+      "tonaringar|tag": {
+        "Mat & dryck": [
+          "Egna snacks"
+        ],
+        "Förnödenheter": [
+          "Powerbank",
+          "Hörlurar"
+        ],
+        "Aktiviteter": [
+          "Nedladdat innehåll offline",
+          "Bok"
+        ]
+      }
+    },
+    "meta": {
+      "title": "Interaktiv packlista för barn | Res med Barn",
+      "description": "Bygg din egen packlista för barn — välj barnets ålder, typ av resa och transportsätt så uppdateras listan direkt. Skriv ut eller spara som PDF.",
+      "h1": "Bygg din egen packlista för barn",
+      "intro": "Anpassa packlistan helt efter er resa — välj barnets ålder, om ni ska på solsemester eller en vanlig resa, och hur ni reser. Listan uppdateras direkt."
+    },
+    "subPages": [
+      {
+        "slug": "resa-med-barn",
+        "title": "Packlista resa med barn 2026 — komplett guide | Res med Barn",
+        "description": "Packlista för resa med barn — komplett guide till vad ni faktiskt behöver, oavsett resmål. Anpassningsbar efter ålder och transportsätt.",
+        "h1": "Packlista för resa med barn",
+        "intro": "Att packa rätt med barn handlar om att förutse behov innan de uppstår — snacks innan hungern slår till, ombyten innan olyckan är framme. Här är grunderna som gäller oavsett vart ni ska, plus en anpassningsbar lista nedan.",
+        "sections": [
+          {
+            "h2": "Det som ofta glöms bort",
+            "text": "Utöver kläder och blöjor är det små sakerna som avgör om resan känns smidig: laddare till allt elektroniskt, en extra napp eller snuttefilt (aldrig bara en — barn tappar bort dem), och ett litet första hjälpen-kit med febernedsättande i rätt dos för barnets vikt."
+          },
+          {
+            "h2": "Packa smart, inte bara mycket",
+            "text": "En vanlig nybörjarmisstag är att packa för mycket \"för säkerhets skull\". Fokusera istället på saker som är svåra att köpa på plats (specifik medicin, favoritnappen) och lita på att vanliga förbrukningsvaror (blöjor, våtservetter) går att komplettera lokalt om ni skulle ta slut."
+          }
+        ],
+        "defaultAge": "smabarn",
+        "defaultTrip": "sol",
+        "defaultTransport": "flyg",
+        "faq": [
+          {
+            "q": "Hur mycket bör man packa för ett barn på en veckas resa?",
+            "a": "En bra tumregel är kläder för 3–4 dagar snarare än hela resans längd — de flesta boenden (även charterresorts) har tvättmöjlighet, och det är lättare att bära en mindre väska."
+          }
+        ]
+      },
+      {
+        "slug": "solsemester-barn",
+        "title": "Packlista solsemester med barn 2026 | Res med Barn",
+        "description": "Packlista för solsemester med barn — solskydd, UV-kläder och praktiska tips för varmt klimat. Anpassad efter barnets ålder.",
+        "h1": "Packlista för solsemester med barn",
+        "intro": "Sol, värme och nya miljöer ställer egna krav när man reser med barn. Solskydd är den absolut viktigaste kategorin — barns hud är betydligt känsligare än vuxnas och bränner sig snabbare, även i molnigt väder.",
+        "sections": [
+          {
+            "h2": "Solskydd är inte förhandlingsbart",
+            "text": "Välj UV-kläder med UPF 50+ istället för att lita på solkräm ensamt — kräm behöver smörjas om var annan timme och missas lätt på ryggen eller öronen. En solhatt med hakband stannar faktiskt på huvudet, till skillnad från en vanlig keps."
+          },
+          {
+            "h2": "Räkna med het asfalt och sand",
+            "text": "Badskor skyddar inte bara mot vassa stenar i vattnet, utan även mot brännhet sand och pool-kant mitt på dagen — något som ofta glöms bort tills barnet skriker till på stranden."
+          }
+        ],
+        "defaultAge": "smabarn",
+        "defaultTrip": "sol",
+        "defaultTransport": "flyg",
+        "faq": [
+          {
+            "q": "Vilken solskyddsfaktor bör barn använda?",
+            "a": "Minst SPF 30, men SPF 50 rekommenderas ofta för barn under 3 år eller för de med ljus hy. Smörj in minst 20–30 minuter innan solexponering och upprepa var annan timme, samt direkt efter bad."
+          }
+        ]
+      },
+      {
+        "slug": "utomlands-med-barn",
+        "title": "Packlista utomlands med barn 2026 | Res med Barn",
+        "description": "Packlista för att resa utomlands med barn — pass, EU-sjukförsäkringskort, försäkring och praktiska detaljer som lätt glöms bort.",
+        "h1": "Packlista för att resa utomlands med barn",
+        "intro": "Utlandsresor med barn kräver lite extra pappersarbete jämfört med en resa i Sverige — här är dokumenten och de praktiska detaljerna som är lätta att glömma bort i packningsstressen.",
+        "sections": [
+          {
+            "h2": "Dokument att kolla i god tid",
+            "text": "Barn behöver eget pass för utlandsresor — kontrollera giltighetstiden minst två månader före avresa, många länder kräver att passet gäller minst 3–6 månader efter hemresedatum. EU-sjukförsäkringskortet (gratis via Försäkringskassan) ger rätt till akutvård inom EU/EES och är värt att beställa i god tid."
+          },
+          {
+            "h2": "Reseförsäkring och medicin",
+            "text": "Kontrollera om er hemförsäkring redan inkluderar reseskydd (många gör det upp till 45 dagar) innan ni köper en separat försäkring. Ta med receptbelagd medicin i originalförpackning med bipacksedel — vissa länder är strikta med vad som får föras in, särskilt utanför EU."
+          }
+        ],
+        "defaultAge": "smabarn",
+        "defaultTrip": "sol",
+        "defaultTransport": "flyg",
+        "faq": [
+          {
+            "q": "Behöver barn eget pass för att resa utomlands?",
+            "a": "Ja, sedan 2005 måste alla svenska medborgare, oavsett ålder, ha ett eget pass för utlandsresor — barnet kan inte längre stå med i förälderns pass."
+          }
+        ]
+      }
+    ]
   }
 }

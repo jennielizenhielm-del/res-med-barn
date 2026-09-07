@@ -95,6 +95,7 @@ function footer() {
     </div>
     <div class="footer-col">
       <h4>Om sajten</h4>
+      <a href="/packlista/">Smart packlista</a>
       <a href="/resmal/">Alla resmål</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
@@ -103,6 +104,7 @@ function footer() {
   <div class="footer-bottom">
     <span>&copy; 2024–${new Date().getFullYear()} ${esc(C.site.name)}</span>
     <span>Gjord med ❤️ för barnfamiljer i Sverige</span>
+    <span>Innehåller annonslänkar från Adtraction</span>
   </div>
 </footer>
 </body>
@@ -341,6 +343,7 @@ ${g.packlista ? `
       ).join('')}</ul>
     </div>`).join('')}
   </div>
+  <p class="packlist-cta"><a href="/packlista/">🧳 Prova vår interaktiva packlista — anpassad efter ålder, resmål och transportsätt →</a></p>
 </div>` : ''}
 ${faqHtml(g.faq)}
 <h2 class="section-title">Fler guider för ${esc(a.name.toLowerCase())}</h2>
@@ -825,6 +828,8 @@ function buildMeta(destinations) {
   urls.push('/stader/');
   for (const s of C.stader.cities) urls.push(`/stader/${s.slug}/`);
   urls.push('/resmal/');
+  urls.push('/packlista/');
+  for (const s of (C.smartPacklista.subPages || [])) urls.push(`/packlista/${s.slug}/`);
   for (const d of destinations) urls.push(`/resmal/${destSlug(d.name)}/`);
   const today = new Date().toISOString().slice(0, 10);
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
@@ -858,7 +863,210 @@ buildGuides();
 buildTopplistor();
 buildStaderHub();
 buildStader();
+function buildSmartPacklista() {
+  const P = C.smartPacklista;
+  const bc = breadcrumbs([['Hem', '/'], ['Packlista', null]]);
+  const faq = [
+    { q: 'Kan jag skriva ut eller spara listan som PDF?', a: 'Ja — klicka på "Skriv ut / Spara som PDF"-knappen. Din webbläsares utskriftsfunktion låter dig välja "Spara som PDF" istället för att skriva ut på papper.' },
+    { q: 'Varför skiljer sig listan åt beroende på transportsätt?', a: 'Flyg, bil och tåg har olika praktiska utmaningar — på flyget vill ni undvika vätska över 100 ml och ha aktiviteter som inte stör medresenärer, i bilen är paus-lekar och åksjuka viktigare, och på tåget är utrymmet ofta mer begränsat.' }
+  ];
+  const itemListLd = { '@context': 'https://schema.org', '@type': 'HowTo', name: P.meta.h1, description: P.meta.description };
+
+  const ageBtns = P.ages.map((a, i) => `<button class="filter-btn${i === 1 ? ' active' : ''}" data-group="age" data-value="${a.key}">${a.emoji} ${esc(a.label)}</button>`).join('');
+  const tripBtns = P.tripTypes.map((t, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-group="trip" data-value="${t.key}">${esc(t.label)}</button>`).join('');
+  const transBtns = P.transport.map((t, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-group="transport" data-value="${t.key}">${esc(t.label)}</button>`).join('');
+
+  // SSR: bygg ALLA kombinationer, dolda via data-attribut, JS växlar synlighet
+  let allBlocks = '';
+  for (const age of P.ages) {
+    for (const trip of P.tripTypes) {
+      const kladerItems = P.klader[`${age.key}|${trip.key}`] || [];
+      for (const trans of P.transport) {
+        const tillagg = P.tillagg[`${age.key}|${trans.key}`] || {};
+        const tripLabel = trip.key === 'sol' ? 'solsemester' : 'en vanlig resa (utomlands eller i Sverige)';
+        const comboH2 = `Packlista: ${age.label.toLowerCase()} på ${tripLabel}, ${trans.label.replace(/^[^\s]+\s/, '').toLowerCase()}`;
+        allBlocks += `
+        <div class="packlist-combo" data-age="${age.key}" data-trip="${trip.key}" data-transport="${trans.key}" hidden>
+          <h2 class="packlist-combo-h2">${esc(comboH2)}</h2>
+          <div class="packlist-grid packlist-grid-4">
+            <div class="packlist-col">
+              <h3>👕 Kläder & hygien</h3>
+              <ul class="checklist">${kladerItems.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+            </div>
+            ${Object.entries(tillagg).map(([cat, items]) => `
+            <div class="packlist-col">
+              <h3>${cat === 'Mat & dryck' ? '🍎' : cat === 'Förnödenheter' ? '🧴' : '🧩'} ${esc(cat)}</h3>
+              <ul class="checklist">${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+            </div>`).join('')}
+          </div>
+        </div>`;
+      }
+    }
+  }
+
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(P.meta.h1)}</h1>
+  <div class="page-intro"><p>${esc(P.meta.intro)}</p></div>
+  <p class="packlist-coverage">Fungerar för: <strong>bebis, småbarn, barn eller tonåring</strong> · <strong>solsemester eller vanlig resa/weekend</strong> · <strong>flyg, bil eller tåg</strong> — 24 färdiga kombinationer.</p>
+</header>
+
+<div class="packlist-subpages-links">
+  <p class="packlist-subpages-label">Läs mer om specifika resetyper:</p>
+  ${(P.subPages || []).map(s => `<a href="/packlista/${s.slug}/">${esc(s.h1)} →</a>`).join('\n  ')}
+</div>
+
+<div class="stader-filters packlist-filters" role="group" aria-label="Anpassa packlistan">
+  <div class="filter-group">
+    <span class="filter-label">Barnets ålder</span>
+    ${ageBtns}
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Resetyp</span>
+    ${tripBtns}
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Transportsätt</span>
+    ${transBtns}
+  </div>
+</div>
+
+<div class="packlist-actions">
+  <button class="btn btn-primary" onclick="window.print()">🖨️ Skriv ut / Spara som PDF</button>
+</div>
+
+<div id="packlistCombos">
+  ${allBlocks}
+</div>
+
+${faqHtml(faq)}
+
+<script>
+(function() {
+  var state = { age: 'smabarn', trip: 'sol', transport: 'flyg' };
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.packlist-filters .filter-btn'));
+  var combos = Array.prototype.slice.call(document.querySelectorAll('.packlist-combo'));
+
+  function apply() {
+    combos.forEach(function(c) {
+      c.hidden = !(c.dataset.age === state.age && c.dataset.trip === state.trip && c.dataset.transport === state.transport);
+    });
+  }
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var group = btn.dataset.group;
+      state[group] = btn.dataset.value;
+      buttons.forEach(function(b) {
+        if (b.dataset.group === group) b.classList.toggle('active', b === btn);
+      });
+      apply();
+    });
+  });
+  apply();
+})();
+</script>`;
+
+  write('packlista/index.html', page('/packlista/', P.meta, '/packlista/', inner, [bc.jsonld, itemListLd]));
+}
+
+function buildPacklistaSubPages() {
+  const P = C.smartPacklista;
+  const results = [];
+
+  for (const sub of P.subPages || []) {
+    const bc = breadcrumbs([['Hem', '/'], ['Packlista', '/packlista/'], [sub.h1, null]]);
+    const meta = { title: sub.title, description: sub.description, h1: sub.h1 };
+
+    // Bygg alla 24 kombinationer (samma data som hubben), men förvalt läge synligt direkt via SSR
+    const ageBtns = P.ages.map(a => `<button class="filter-btn${a.key === sub.defaultAge ? ' active' : ''}" data-group="age" data-value="${a.key}">${a.emoji} ${esc(a.label)}</button>`).join('');
+    const tripBtns = P.tripTypes.map(t => `<button class="filter-btn${t.key === sub.defaultTrip ? ' active' : ''}" data-group="trip" data-value="${t.key}">${esc(t.label)}</button>`).join('');
+    const transBtns = P.transport.map(t => `<button class="filter-btn${t.key === sub.defaultTransport ? ' active' : ''}" data-group="transport" data-value="${t.key}">${esc(t.label)}</button>`).join('');
+
+    let allBlocks = '';
+    for (const age of P.ages) {
+      for (const trip of P.tripTypes) {
+        const kladerItems = P.klader[`${age.key}|${trip.key}`] || [];
+        for (const trans of P.transport) {
+          const tillagg = P.tillagg[`${age.key}|${trans.key}`] || {};
+          const isDefault = age.key === sub.defaultAge && trip.key === sub.defaultTrip && trans.key === sub.defaultTransport;
+          allBlocks += `
+          <div class="packlist-combo" data-age="${age.key}" data-trip="${trip.key}" data-transport="${trans.key}"${isDefault ? '' : ' hidden'}>
+            <div class="packlist-grid packlist-grid-4">
+              <div class="packlist-col">
+                <h3>👕 Kläder & hygien</h3>
+                <ul class="checklist">${kladerItems.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+              </div>
+              ${Object.entries(tillagg).map(([cat, items]) => `
+              <div class="packlist-col">
+                <h3>${cat === 'Mat & dryck' ? '🍎' : cat === 'Förnödenheter' ? '🧴' : '🧩'} ${esc(cat)}</h3>
+                <ul class="checklist">${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+              </div>`).join('')}
+            </div>
+          </div>`;
+        }
+      }
+    }
+
+    const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(sub.h1)}</h1>
+  <div class="page-intro"><p>${esc(sub.intro)}</p></div>
+</header>
+
+${sub.sections.map(s => `<section class="article-section"><h2>${esc(s.h2)}</h2><p>${esc(s.text)}</p></section>`).join('\n')}
+
+<h2 class="section-title">Er anpassade packlista</h2>
+<div class="stader-filters packlist-filters" role="group" aria-label="Anpassa packlistan">
+  <div class="filter-group"><span class="filter-label">Barnets ålder</span>${ageBtns}</div>
+  <div class="filter-group"><span class="filter-label">Resetyp</span>${tripBtns}</div>
+  <div class="filter-group"><span class="filter-label">Transportsätt</span>${transBtns}</div>
+</div>
+<div class="packlist-actions">
+  <button class="btn btn-primary" onclick="window.print()">🖨️ Skriv ut / Spara som PDF</button>
+</div>
+<div id="packlistCombos">
+  ${allBlocks}
+</div>
+
+<p class="packlist-cta"><a href="/packlista/">🧳 Vill du anpassa fler detaljer? Prova hela det interaktiva verktyget →</a></p>
+
+${faqHtml(sub.faq)}
+
+<script>
+(function() {
+  var state = { age: '${sub.defaultAge}', trip: '${sub.defaultTrip}', transport: '${sub.defaultTransport}' };
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.packlist-filters .filter-btn'));
+  var combos = Array.prototype.slice.call(document.querySelectorAll('.packlist-combo'));
+  function apply() {
+    combos.forEach(function(c) {
+      c.hidden = !(c.dataset.age === state.age && c.dataset.trip === state.trip && c.dataset.transport === state.transport);
+    });
+  }
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var group = btn.dataset.group;
+      state[group] = btn.dataset.value;
+      buttons.forEach(function(b) { if (b.dataset.group === group) b.classList.toggle('active', b === btn); });
+      apply();
+    });
+  });
+})();
+</script>`;
+
+    write(`packlista/${sub.slug}/index.html`, page(`/packlista/${sub.slug}/`, meta, '/packlista/', inner, [bc.jsonld, faqLd(sub.faq)]));
+    results.push(sub.slug);
+  }
+  console.log(`  ✓ ${results.length} packlista-undersidor genererade`);
+  return results;
+}
+
+
 buildResmalHub();
+buildSmartPacklista();
+buildPacklistaSubPages();
 const RESMAL_DESTS = buildResmal();
 buildSimplePages();
 buildMeta(RESMAL_DESTS);
