@@ -32,6 +32,7 @@ function head(meta, url) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="p:domain_verify" content="350bdcc610d2337a2f10d885396bd489"/>
 <title>${esc(meta.title)}</title>
 <meta name="description" content="${esc(meta.description)}">
 <link rel="canonical" href="${DOMAIN}${url}">
