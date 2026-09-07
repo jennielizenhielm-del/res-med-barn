@@ -852,3 +852,43 @@ h1 {
 .resmal-card-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--text); margin-bottom: 0.15rem; }
 .resmal-card-body .dest-country { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
 .resmal-card-body .activity-desc { -webkit-line-clamp: 3; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0; }
+
+/* ---- SMART PACKLISTA ---- */
+.packlist-filters { margin-bottom: 1.5rem; }
+.packlist-actions { margin: 1.5rem 0 2.5rem; }
+.packlist-grid-4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 900px) { .packlist-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .packlist-grid-4 { grid-template-columns: 1fr; } }
+
+@media print {
+  .nav, .footer, .packlist-filters, .packlist-actions, .breadcrumbs, .faq { display: none !important; }
+  .packlist-combo[hidden] { display: none !important; }
+  .packlist-combo { display: block !important; }
+  body { background: white; color: black; }
+  .packlist-grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+.packlist-cta { margin-top: 1.25rem; padding-top: 1.1rem; border-top: 1px solid rgba(0,0,0,0.08); }
+.packlist-cta a { color: var(--accent-hover); font-weight: 600; text-decoration: none; }
+.packlist-cta a:hover { text-decoration: underline; }
+.packlist-coverage { font-size: 0.92rem; color: var(--text-secondary); margin-top: 0.75rem; }
+.packlist-coverage strong { color: var(--text); }
+.packlist-combo-h2 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+
+/* ---- ARTICLE SECTIONS (packlista-undersidor) ---- */
+.article-section { max-width: 720px; margin: 0 auto 1.75rem; }
+.article-section h2 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+.article-section p { font-size: 1rem; color: var(--text-secondary); line-height: 1.7; }
+
+.packlist-subpages-links {
+  max-width: 720px;
+  margin: 1.25rem auto 0;
+  padding: 1.1rem 1.3rem;
+  background: var(--accent-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.packlist-subpages-label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.2rem; }
+.packlist-subpages-links a { color: var(--accent-hover); font-weight: 600; text-decoration: none; font-size: 0.95rem; }
+.packlist-subpages-links a:hover { text-decoration: underline; }
