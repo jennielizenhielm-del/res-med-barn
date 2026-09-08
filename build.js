@@ -358,10 +358,11 @@ ${faqHtml(g.faq)}
 
 /* ---------- TOPPLISTOR ---------- */
 const TOPPLISTOR_RELATED = {
-  vagnar: ['resevagnar', 'tillbehor', 'bilbarnstol'],
-  resevagnar: ['vagnar', 'tillbehor', 'barsele'],
+  vagnar: ['resevagnar', 'syskonvagn', 'tillbehor'],
+  resevagnar: ['vagnar', 'syskonvagn', 'barsele'],
   bilbarnstol: ['vagnar', 'tillbehor', 'babymonitor'],
   tillbehor: ['vagnar', 'resevagnar', 'bilbarnstol'],
+  syskonvagn: ['vagnar', 'resevagnar', 'tillbehor'],
   barsele: ['barsjal', 'sleep-carrier', 'resevagnar'],
   amningskudde: ['brostpump', 'nappflaska', 'sleep-carrier'],
   'sleep-carrier': ['amningskudde', 'barsele', 'barsjal'],

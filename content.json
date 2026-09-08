@@ -3043,6 +3043,113 @@
           }
         ],
         "img": "photo-1606946185142-7b30e9a7abcc"
+      },
+      {
+        "slug": "syskonvagn",
+        "emoji": "👯",
+        "name": "Syskonvagn",
+        "img": "photo-1517554558809-9b4971b38f39",
+        "cardText": "Vagnar för två barn i olika åldrar — sida vid sida eller tandem. Bugaboo, Cybex, UPPAbaby och fler jämförda.",
+        "title": "Syskonvagn bäst i test 2026 | Res med Barn",
+        "description": "Syskonvagn bäst i test 2026 — fem vagnar för två barn jämförda på bredd, flexibilitet och pris. Bugaboo Donkey, Cybex Gazelle S, UPPAbaby Vista och fler.",
+        "h1": "Syskonvagn bäst i test 2026",
+        "intro": [
+          "En syskonvagn behöver klara två barn i olika åldrar — en liggdel för den minsta, en sittdel för storasyskon, och möjlighet att bygga om i takt med att de växer. Vi har jämfört fem populära modeller på bredd, flexibilitet och pris."
+        ],
+        "products": [
+          {
+            "name": "Bugaboo Donkey 6 Duo",
+            "badge": "Bäst i test",
+            "price": "Från ca 20 000 kr",
+            "text": "Sida vid sida-vagn som konverteras mellan singel- och syskonläge på tre klick, utan verktyg. Endast 74 cm bred i duoläge trots att barnen sitter jämsides med lika bra sikt.",
+            "pros": [
+              "Konverteras mellan mono och duo på sekunder",
+              "Båda barnen får lika bra sikt (sida vid sida)",
+              "Överlägsen fjädring och körkänsla i klassen"
+            ],
+            "cons": [
+              "Högt pris, över 20 000 kr som syskonvagn",
+              "Maxvikt bakre plats bara 15 kg — kan bli för litet redan vid 2–3 års ålder"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bugaboo-donkey-6-duo.html"
+          },
+          {
+            "name": "Cybex Gazelle S",
+            "badge": "Smalast",
+            "price": "Från ca 10 771 kr",
+            "text": "Tandemformat som är smalast i jämförelsen — bara 62 cm bred, knappt bredare än en vanlig kombivagn. Bra val i trånga hissar och portuppgångar.",
+            "pros": [
+              "Smalast i jämförelsen (62 cm)",
+              "Passar i de flesta hissar och trånga utrymmen",
+              "Bra pris för funktionen"
+            ],
+            "cons": [
+              "Bakre/undre barnet får ofta sämre sikt",
+              "Kan kännas trögstyrd fullastad med två barn"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-gazelle-s.html"
+          },
+          {
+            "name": "UPPAbaby Vista V3",
+            "badge": "Mest flexibel",
+            "price": "Pris varierar med konfiguration — grundpaket plus tillval för syskondel",
+            "text": "Modulärt system med över 30 konfigurationer, från ett till tre barn. Börja med en vagn, bygg på med RumbleSeat eller extra liggdel när syskonet kommer.",
+            "pros": [
+              "Växer med familjen — köp bara det ni behöver just nu",
+              "Vändbar sittdel, kan användas rakt framifrån eller bakifrån",
+              "Kan utökas till tre barn med tillbehör"
+            ],
+            "cons": [
+              "Total kostnad blir hög när alla tillval räknas in",
+              "Fler lösa delar att hålla reda på"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/uppababy-vista-v3.html"
+          },
+          {
+            "name": "Emmaljunga Double Sento",
+            "badge": "Bäst svensk kvalitet",
+            "price": "Pris varierar med utförande — kontakta återförsäljare för aktuellt pris",
+            "text": "Svensktillverkad tandemvagn byggd för nordiskt klimat, med samma robusta känsla som Emmaljungas enkelvagnar. Smalt tandemformat på ca 73,5 cm.",
+            "pros": [
+              "Svensk kvalitet anpassad för vårt klimat",
+              "Robust konstruktion, håller länge",
+              "Gott om reservdelar och service i Sverige"
+            ],
+            "cons": [
+              "Mindre flexibel än de modulära systemen",
+              "Tyngre att lyfta i trappor än smalare alternativ"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/emmaljunga-double-sento.html"
+          },
+          {
+            "name": "Britax B-Agile Double",
+            "badge": "Bästa budget",
+            "price": "Från ca 3 795 kr",
+            "text": "Prisvärt tandemalternativ för den som vill testa formatet utan att investera i ett premiumsystem. Täcker grunderna utan extra finesser.",
+            "pros": [
+              "Betydligt billigare än övriga alternativ",
+              "Lätt att fälla ihop och bära",
+              "Bra förstaköp för kortare period med två barn i vagn"
+            ],
+            "cons": [
+              "Mindre komfort och fjädring än premiumalternativen",
+              "Färre justeringsmöjligheter över tid"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-b-agile-double.html"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Sida vid sida eller tandem?",
+            "text": "Sida vid sida-vagnar (som Bugaboo Donkey) ger båda barnen lika bra sikt och komfort, men blir 70–80 cm breda — mät era hissar och dörröppningar innan köp. Tandemvagnar (som Cybex Gazelle S) är smalare, 60–65 cm, men det bakre eller undre barnet får ofta sämre sikt och vagnen kan kännas mer trögstyrd fullastad."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kan en syskonvagn användas till tvillingar också?",
+            "a": "Ja, de flesta syskonvagnar i den här jämförelsen fungerar även för tvillingar — kolla bara att modellen har två likvärdiga sittdelar/liggdelar och att maxvikten räcker för båda barnens ålder samtidigt."
+          }
+        ]
       }
     ]
   },
