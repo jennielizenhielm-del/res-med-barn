@@ -646,9 +646,11 @@ function buildResmalHub() {
 <div class="activity-grid resmal-grid" id="activityGrid">
   ${DESTINATIONS.map(d => `
   <a class="resmal-card" data-cat="${d.cat}" data-name="${esc(d.name)}" data-search="${esc((d.name + ' ' + d.country).toLowerCase())}" href="/resmal/${destSlug(d.name)}/">
-    ${cardMediaSSR(d)}
-    <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
-    <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+    <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
+      <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+      <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
+      <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+    </div>
     <button class="fav-heart" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="event.preventDefault(); event.stopPropagation(); toggleResmalFav('${esc(d.name)}', this);">${HEART_SVG}</button>
     <div class="resmal-card-body">
       <h3>${esc(d.name)}</h3>
@@ -774,7 +776,8 @@ function buildResmal() {
     <p class="prisinfo-note">Tips: ICA, Coop och Hyresgästföreningen ger ofta roterande medlemsrabatter på svenska parker och museer — kolla era medlemsförmåner innan besöket, det kan sänka priset rejält.</p>
   </div>` : ''}
   <div class="detail-actions">
-    ${d.bookingUrl ? `<a class="btn btn-primary" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">Boka / Läs mer →</a>` : ''}
+    ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">🏨 Boka boende via Sembo →</a>` : ''}
+    ${d.bookingUrl ? `<a class="btn ${d.semboUrl ? 'btn-ghost' : 'btn-primary'}" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">${d.semboUrl ? 'Fler alternativ' : 'Boka / Läs mer'} →</a>` : ''}
     <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${esc(CAT_LABELS[d.cat] || d.catLabel)} →</a>
   </div>
   ${similar.length ? `
