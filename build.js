@@ -776,7 +776,7 @@ function buildResmal() {
     <p class="prisinfo-note">Tips: ICA, Coop och Hyresgästföreningen ger ofta roterande medlemsrabatter på svenska parker och museer — kolla era medlemsförmåner innan besöket, det kan sänka priset rejält.</p>
   </div>` : ''}
   <div class="detail-actions">
-    ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">🏨 Boka boende via Sembo →</a>` : ''}
+    ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">✈️ Boka resa via Sembo →</a>` : ''}
     ${d.bookingUrl ? `<a class="btn ${d.semboUrl ? 'btn-ghost' : 'btn-primary'}" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">${d.semboUrl ? 'Fler alternativ' : 'Boka / Läs mer'} →</a>` : ''}
     <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${esc(CAT_LABELS[d.cat] || d.catLabel)} →</a>
   </div>
