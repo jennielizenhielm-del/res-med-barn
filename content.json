@@ -2202,7 +2202,8 @@
               "Latex behöver bytas oftare än silikon (var 4–6:e vecka)",
               "Dyrare än enklare basmodeller"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/bibs-colour-latex.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bibs-colour-latex.html",
+            "buyUrl": "https://adtr.co/rtc121"
           },
           {
             "name": "MAM Original Napp",
@@ -2218,7 +2219,8 @@
               "Skölden kan kännas något stor för de minsta",
               "Finns i färre färgvarianter än BIBS"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-original-napp.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-original-napp.html",
+            "buyUrl": "https://adtr.co/28ybvk"
           },
           {
             "name": "Nanobébé Flexy Napp",
@@ -2234,23 +2236,25 @@
               "Mindre lämplig som enda napp för äldre barn",
               "Något dyrare än standardnappar"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/nanobebe-flexy-napp.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nanobebe-flexy-napp.html",
+            "buyUrl": "https://adtr.co/erp9or"
           },
           {
-            "name": "Esska Happy Mini Silikon",
-            "badge": "Bästa budget",
-            "price": "Från ca 50 kr",
-            "text": "Enkel och prisvärd napp som gör grunderna rätt utan onödiga tillägg — bra val om du vill ha flera i omlopp.",
+            "name": "NUK Perfect Match Air Night",
+            "badge": "Lyser i mörkret",
+            "price": "Från ca 72 kr (2-pack)",
+            "text": "Självlysande napp med extra stora ventilationshål i skölden för bättre luftflöde och mindre risk för hudirritation. Formen är ortodontiskt utformad och skölden är hjärtformad för att passa under näsan. Kommer med en mikrovågssäker förvarings- och steriliseringsbox.",
             "pros": [
-              "Lågt pris, bra att köpa flera av",
-              "Silikon tål diskmaskin",
-              "Enkel design utan krångel"
+              "Lyser i mörkret — enkel att hitta nattetid utan att tända lampan",
+              "Ventilerad sköld minskar hudirritation och dregglisar",
+              "Medföljande box fungerar både som förvaring och mikrosterilisering"
             ],
             "cons": [
-              "Saknar extra finesser som glow eller specialform",
-              "Mindre premiumkänsla"
+              "Färre färg-/mönstervarianter än BIBS",
+              "Mindre känt varumärke i Sverige jämfört med BIBS/MAM"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/esska-happy-mini-silikon.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-perfect-match-air-night.html",
+            "buyUrl": "https://adtr.co/wqtr2b"
           },
           {
             "name": "Philips Avent Ultra Soft",
@@ -2266,7 +2270,8 @@
               "Något mjukare material kan slitas snabbare",
               "Finns i begränsat färgutbud"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-ultra-soft.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-ultra-soft.html",
+            "buyUrl": "https://adtr.co/7dd3r6"
           }
         ],
         "sections": [
@@ -2276,7 +2281,7 @@
           },
           {
             "h2": "Tips: nappar som lyser i mörkret",
-            "text": "Ett smart litet trick för nattmatningarna — vissa nappar, som BIBS GLOW-serie, har en självlysande sköld. Håll nappen mot en lampa i 5–10 sekunder innan läggdags så lyser den i över 8 timmar. Perfekt när ni famlar i mörkret klockan tre på natten och slipper leta efter den nedfallna nappen i sängen."
+            "text": "Ett smart litet trick för nattmatningarna — flera nappar har en självlysande sköld. BIBS GLOW-serie behöver hållas mot en lampa i 5–10 sekunder innan läggdags och lyser sedan i över 8 timmar, medan NUK Perfect Match Air Night (se listan ovan) laddas på samma sätt men har extra ventilation i skölden också. Perfekt när ni famlar i mörkret klockan tre på natten och slipper leta efter den nedfallna nappen i sängen."
           }
         ],
         "faq": [

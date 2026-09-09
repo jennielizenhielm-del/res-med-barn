@@ -432,7 +432,9 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
         <ul class="pros">${p.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
         <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
       </div>
-      ${p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : ''}
+      ${p.buyUrl
+        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">🛒 Köp hos Meds →</a>`
+        : (p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : '')}
     </div>
   </article>`).join('')}
 </div>
