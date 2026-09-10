@@ -1261,53 +1261,6 @@
     .tip-content h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin-bottom: 0.35rem; }
     .tip-content p { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; }
 
-    /* ---- NEWSLETTER ---- */
-    .newsletter { text-align: left; }
-    .newsletter-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: clamp(2rem, 5vw, 4rem);
-      align-items: center;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: clamp(2rem, 5vw, 3.5rem);
-    }
-    .newsletter h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      margin-bottom: 0.6rem;
-    }
-    .newsletter p { color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; }
-    .newsletter-form { display: flex; gap: 0.6rem; }
-    .newsletter-form input {
-      flex: 1;
-      padding: 0.85rem 1.25rem;
-      font-family: var(--font-body);
-      font-size: 0.92rem;
-      color: var(--text);
-      background: var(--bg);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-pill);
-      outline: none;
-      transition: border-color var(--transition);
-    }
-    .newsletter-form input:focus { border-color: var(--primary); }
-    .newsletter-success {
-      display: none;
-      font-size: 1rem;
-      color: var(--primary);
-      font-weight: 600;
-    }
-    @media (max-width: 768px) {
-      .newsletter-inner { grid-template-columns: 1fr; }
-      .newsletter-form { flex-direction: column; }
-    }
-
     /* ---- FOOTER ---- */
     .footer { padding: clamp(3rem, 6vw, 4rem) clamp(1.25rem, 4vw, 3rem); border-top: 1px solid var(--border); }
     .footer-inner {
@@ -1616,22 +1569,6 @@
   </div>
 </section>
 
-<!-- NEWSLETTER -->
-<section class="section newsletter">
-  <div class="newsletter-inner reveal">
-    <div>
-      <h2>Ett resmål i månaden, rakt i inkorgen</h2>
-      <p>Inga kampanjer, inget spam. Bara ett noggrant utvalt familjeresmål varje månad, med tips ni faktiskt har nytta av. Avsluta när ni vill.</p>
-    </div>
-    <div>
-      <form class="newsletter-form" id="newsletterForm">
-        <input type="email" placeholder="din@mejladress.se" aria-label="E-postadress" required>
-        <button type="submit" class="btn btn-primary">Jag vill ha den</button>
-      </form>
-      <p class="newsletter-success" id="newsletterSuccess">Tack! Första resmålet landar inom kort. 🎉</p>
-    </div>
-  </div>
-</section>
 
 <!-- FAQ -->
 <section class="section" id="faq-section">
@@ -2970,12 +2907,6 @@ function renderQuizResults() {
 }
 
 /* ============ NEWSLETTER ============ */
-document.getElementById('newsletterForm').addEventListener('submit', e => {
-  e.preventDefault();
-  e.target.style.display = 'none';
-  document.getElementById('newsletterSuccess').style.display = 'block';
-});
-
 /* ============ MENU / MISC ============ */
 function toggleMenu() {
   document.querySelector('.hamburger').classList.toggle('open');
