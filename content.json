@@ -1399,20 +1399,20 @@
             "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-priam.html"
           },
           {
-            "name": "Brio Smile 4",
-            "badge": "Bästa budget",
-            "price": "ca 6 000 kr",
-            "text": "Beviset att bra inte måste kosta 13 000. Smile gör allt en familj behöver: vändbar sits, godkänd liggdel, hyfsad terrängförmåga. Ingen wow-faktor, inga svagheter som spelar roll. Lägg mellanskillnaden på en resevagn i stället – det är det smartaste vagnköpet 2026.",
+            "name": "Britax Smile 5Z",
+            "badge": "Bäst i test",
+            "price": "Från ca 8 495 kr (som duo ca 11 000–12 000 kr)",
+            "text": "Smalast i jämförelsen (57 cm) och utsedd till bäst i test av flera oberoende testare. Vändbar sittdel med fullt liggläge, punkteringsfria hjul, central fjädring för mjuk körning, och en stor varukorg åtkomlig från flera håll.",
             "pros": [
-              "Bäst funktion per krona",
-              "Låg vikt och enkel mekanik",
-              "Reservdelar billiga och lätta att få tag på"
+              "Utsedd till bäst i test av flera oberoende källor",
+              "Smalast i klassen (57 cm) — enkel att manövrera i trånga utrymmen",
+              "Prisvärd jämfört med andra premiumduovagnar i samma klass"
             ],
             "cons": [
-              "Skjutkomforten märkbart enklare än premiumvagnarna",
-              "Suffletten kunde vara större"
+              "Mindre hjul gör den sämre lämpad för grövre terräng/oplogad snö",
+              "Liggdel och babyskyddsadaptrar tillkommer som tillval"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/brio-smile-4.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-smile-5z.html"
           },
           {
             "name": "Thule Urban Glide 3",
@@ -1447,6 +1447,10 @@
           {
             "h2": "När ska man köpa vagnen – och var?",
             "text": "Beställ i god tid: populära modeller har haft leveranstider på två–tre månader, och ni vill ha vagnen hemma några veckor före beräknad förlossning. Priserna rör sig under året – mellandagarna, Black Week och modellbyten på våren är klassiska köplägen där förra årets färger säljs ut med rejäla rabatter. Fysisk butik är värd besöket även om ni köper på nätet: skjut vagnen, fäll den, lyft in den i er faktiska bil. En vagn som känns fel i butiken blir inte rätt hemma."
+          },
+          {
+            "h2": "Får vagnen plats i bagaget? Hopfällda mått + vanliga svenska familjebilar",
+            "text": "Hopfällda mått (L × B × H): Bugaboo Fox 5 94 × 60 × 52 cm · UPPAbaby Cruz V2 41,9 × 57,8 × 83,8 cm (B × L × H, står hopfälld — annan fällningsprincip än övriga) · Cybex Priam 94 × 60 × 38 cm · Britax Smile 5Z 102 × 57 × 43 cm · Thule Urban Glide 3 89 × 58,5 × 25 cm. Bagageutrymme i Sveriges vanligaste familjebilar: Volvo XC60 (2018–) ca 505 liter, men bara 105 cm brett på smalaste stället — omkring 8 cm smalare än föregående generation, vilket förvånat många bilägare. Volvo V60 ca 529 liter. Skoda Kodiaq upp till 910 liter i femsitsutförande, en av de rymligaste familjebilarna. Volkswagen Golf/Passat ligger normalt mellan 380–590 liter beroende på modell och kombi- eller sedanutförande. Tänk på: literangivelser mäts enligt en standardiserad metod (VDA) och säger inte alltid hela sanningen — en smal öppning eller ojämn form kan göra att en vagn med rätt volym ändå inte får plats. Mät alltid bilens bagageöppning (bredd och höjd) och jämför med vagnens hopfällda mått innan köp, särskilt om ni redan har en specifik bil."
           }
         ],
         "img": "photo-1566004100631-35d015d6a491",
