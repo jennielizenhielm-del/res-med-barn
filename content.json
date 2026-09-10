@@ -1351,36 +1351,36 @@
         ],
         "products": [
           {
-            "name": "Emmaljunga NXT90",
-            "badge": "Bäst i test",
-            "price": "ca 13 000 kr",
-            "text": "Tåler allt-vagnen. Svensktillverkad, byggd för svenskt klimat och rullar lika fint på grusväg som i galleria. Justerbar fjädring, rejäl liggdel och ett skjutläge som gör långpromenader till nöje. Tung, ja – men det är vikten som ger stabiliteten.",
+            "name": "UPPAbaby Cruz V2",
+            "badge": "Bäst för stadsliv",
+            "price": "Från ca 8 400 kr",
+            "text": "Kompakt, lätt premium-sittvagn (8,5 kg, 52 cm bred) byggd för stadsvardag och kollektivtrafik. Enhandsvikning, vändbar sittdel i fem lägen, och MESA-kompatibel utan adapter om ni redan har eller planerar en UPPAbaby babyskål.",
             "pros": [
-              "Bäst skjutkomfort i klassen",
-              "Klarar vinter, grus och skogsstig",
-              "Hög kvalitet i varje detalj – håller till barn två och tre"
+              "Lättast och smidigast i jämförelsen för stadsbruk",
+              "Enhandsvikning, står stabilt hopfälld",
+              "Lägre pris än Bugaboo/Stokke med jämförbar premiumkänsla"
             ],
             "cons": [
-              "Tung att lyfta in i bil (16 kg)",
-              "Priset svider"
+              "Kan inte byggas ut till duovagn (till skillnad från Vista)",
+              "Kräver tillköpt liggdel för att användas från nyfödd"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/emmaljunga-nxt90.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/uppababy-cruz-v2.html"
           },
           {
-            "name": "Thule Shine",
-            "badge": "Bästa kompakta",
-            "price": "ca 8 500 kr",
-            "text": "Stadsvagnen med sportgener. Smidig i trånga utrymmen, lätt att fälla och snyggast i klungan utanför förskolan. Thules kvalitetsrykte från takboxar och cykelkärror håller även här. Perfekt för stadsfamiljen som vill ha en enda vagn som klarar det mesta.",
+            "name": "Bugaboo Fox 5",
+            "badge": "Testvinnare",
+            "price": "Från ca 14 999 kr",
+            "text": "Allterräng-fokuserad premiumvagn med punkteringsfria hjul och avancerad, justerbar fjädring som anpassar sig efter underlaget. Rymlig ligg- och sittdel, enhandsfällning, och en förlängningsbar sufflett med UPF 50+.",
             "pros": [
-              "Lätt (10,9 kg) och smidig i stan",
-              "Enhandsfällning som faktiskt funkar",
-              "Stor sufflett med ventilation"
+              "Testvinnare i flera oberoende jämförelser",
+              "Klarar terräng långt bortom vanlig stadskörning",
+              "Enhandsfällning och hög andrahandsvärde"
             ],
             "cons": [
-              "Mediokra vinteregenskaper på snö",
-              "Liggdelen köps till separat"
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Något tyngre (12,6 kg) än renodlade stadsvagnar"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/thule-shine.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bugaboo-fox-5.html"
           },
           {
             "name": "Cybex Priam",
