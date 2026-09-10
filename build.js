@@ -28,7 +28,7 @@ function head(meta, url) {
   warnLen(url, 'meta title', meta.title, 60);
   warnLen(url, 'meta description', meta.description, 155);
   return `<!DOCTYPE html>
-<html lang="sv" data-theme="light">
+<html lang="sv">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
