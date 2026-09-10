@@ -2,28 +2,28 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg: #EBF5EE;
-  --bg-alt: #DCEDE1;
-  --surface: #FFFFFF;
-  --text: #2B3440;
-  --text-secondary: #66748A;
-  --text-muted: #98A5B6;
-  --primary: #5FA382;
-  --primary-light: #E0F1E8;
-  --accent: #F0A8C4;
-  --accent-hover: #E88FB0;
-  --accent-light: #FCE9F1;
-  --sand: #DDAF82;
-  --sand-light: #F7EDDD;
+  --bg: #1A1816;
+  --bg-alt: #21201D;
+  --surface: #292724;
+  --text: #EDE8E0;
+  --text-secondary: #A8A098;
+  --text-muted: #787068;
+  --primary: #8FC4A8;
+  --primary-light: #243029;
+  --accent: #E8A0C0;
+  --accent-hover: #EFB4CE;
+  --accent-light: #3A2530;
+  --sand: #C4956A;
+  --sand-light: #2E261E;
   --cat-beach: #E2836A;
   --cat-parks: #9D8BC7;
   --cat-cities: #7C9EC4;
   --cat-sweden: #CFAC62;
   --cat-museums: #9C7A5B;
-  --border: #E2E8F0;
-  --border-light: #EAF0F6;
-  --shadow-sm: 0 1px 3px rgba(43,52,64,0.04);
-  --shadow-md: 0 4px 16px rgba(43,52,64,0.06);
+  --border: #383430;
+  --border-light: #302C28;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.16);
   --radius: 10px;
   --radius-lg: 16px;
   --radius-pill: 100px;
