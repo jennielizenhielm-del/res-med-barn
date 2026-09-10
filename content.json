@@ -2203,7 +2203,7 @@
               "Dyrare än enklare basmodeller"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/bibs-colour-latex.html",
-            "buyUrl": "https://adtr.co/rtc121"
+            "buyUrl": "https://adtr.co/ozetuz"
           },
           {
             "name": "MAM Original Napp",
@@ -2220,7 +2220,7 @@
               "Finns i färre färgvarianter än BIBS"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-original-napp.html",
-            "buyUrl": "https://adtr.co/28ybvk"
+            "buyUrl": "https://adtr.co/m4jx8k"
           },
           {
             "name": "Nanobébé Flexy Napp",
@@ -2237,7 +2237,7 @@
               "Något dyrare än standardnappar"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nanobebe-flexy-napp.html",
-            "buyUrl": "https://adtr.co/erp9or"
+            "buyUrl": "https://adtr.co/1bf3uj"
           },
           {
             "name": "NUK Perfect Match Air Night",
@@ -2254,7 +2254,7 @@
               "Mindre känt varumärke i Sverige jämfört med BIBS/MAM"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-perfect-match-air-night.html",
-            "buyUrl": "https://adtr.co/wqtr2b"
+            "buyUrl": "https://adtr.co/gx0qtn"
           },
           {
             "name": "Philips Avent Ultra Soft",
@@ -2271,7 +2271,7 @@
               "Finns i begränsat färgutbud"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-ultra-soft.html",
-            "buyUrl": "https://adtr.co/7dd3r6"
+            "buyUrl": "https://adtr.co/hkobvs"
           }
         ],
         "sections": [
@@ -2429,7 +2429,8 @@
               "Bredare hals kan kräva anpassade nappar/tillbehör",
               "Något dyrare än basmodeller"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-natural-3.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-natural-3.html",
+            "buyUrl": "https://adtr.co/agcfkt"
           },
           {
             "name": "MAM Easy Start Anti-Colic",
@@ -2445,23 +2446,25 @@
               "Bröstvårtans form skiljer sig mer från bröstet",
               "Kan behöva provas i olika flödesstorlekar"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-easy-start-anti-colic.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-easy-start-anti-colic.html",
+            "buyUrl": "https://adtr.co/6pwjam"
           },
           {
-            "name": "Elodie Nappflaska Glas",
-            "badge": "Bästa glasalternativ",
-            "price": "Från ca 220 kr",
-            "text": "Nappflaska i glas för dig som vill undvika plast. Snygg, minimalistisk design i Elodies karaktäristiska stil.",
+            "name": "Herobility HeroBottle",
+            "badge": "Bäst i test",
+            "price": "Från ca 55–77 kr",
+            "text": "Svenskutvecklad flaska med dubbelt anti-kolik-system och bred öppning som gör den enkel att fylla och diska. En pulverburk för ersättning/välling skruvas fast direkt under flaskan — allt samlat på ett ställe. För varje såld flaska skänker Herobility 5 kr till World Childhood Foundation.",
             "pros": [
-              "Glas innehåller inga mikroplaster",
-              "Snygg, tidlös design",
-              "Lätt att rengöra grundligt"
+              "Utsedd till bäst i test i oberoende jämförelse",
+              "Bred öppning — enkel att fylla, diska och värma i mikro",
+              "Pulverburk fäster direkt på flaskan, praktiskt utomhus"
             ],
             "cons": [
-              "Tyngre och känsligare än plastflaskor",
-              "Dyrare"
+              "Flaskorna går inte att stapla i varandra vid förvaring",
+              "Rekommenderas ibland bara handdisk trots att den tål maskin"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/elodie-nappflaska-glas.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/herobility-herobottle.html",
+            "buyUrl": "https://adtr.co/7jziyj"
           },
           {
             "name": "Nuk First Choice+",
@@ -2477,23 +2480,25 @@
               "Mindre premiumkänsla",
               "Bröstvårtan mindre bred än Avent Natural"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-first-choice-plus.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-first-choice-plus.html",
+            "buyUrl": "https://adtr.co/lsmpun"
           },
           {
-            "name": "Difrax S-formad nappflaska",
-            "badge": "Bäst ergonomisk hållning",
-            "price": "Från ca 110 kr",
-            "text": "S-formad design gör flaskan enkel att hålla i rätt vinkel, vilket underlättar en mer naturlig matningsställning.",
+            "name": "Medela Breast Milk Bottles",
+            "badge": "Bäst för pumpande föräldrar",
+            "price": "Från ca 182 kr (2-pack)",
+            "text": "Flaska byggd för att pumpa, förvara och mata med samma flaska — ingen omhällning behövs. Kompatibel med Medelas övriga sortiment (Calma-dinapp, Harmony-bröstpump), vilket gör den till ett naturligt val om ni redan pumpar med Medela.",
             "pros": [
-              "Ergonomisk S-form underlättar hållning",
-              "Minskar luftintag tack vare vinkeln",
-              "Bra för självmatande äldre spädbarn"
+              "Samma flaska för pumpning, förvaring och matning — färre moment",
+              "Kompatibel med Medelas pump-ekosystem (Calma, Harmony m.fl.)",
+              "Prisvärd för den som behöver flera flaskor i omlopp samtidigt"
             ],
             "cons": [
-              "Ovanligare form kan vara klumpig att diska",
-              "Mindre standardiserade tillbehör"
+              "Mindre nytta om ni inte redan pumpar med Medela-utrustning",
+              "Enklare design, saknar avancerat anti-kolik-system"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/difrax-s-formad-nappflaska.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/medela-breast-milk-bottles.html",
+            "buyUrl": "https://adtr.co/hsni0i"
           }
         ],
         "sections": [
