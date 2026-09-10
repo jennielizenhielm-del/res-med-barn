@@ -551,6 +551,7 @@
     }
     .cat-scroll {
       display: flex;
+      justify-content: center;
       gap: 0.6rem;
       overflow-x: auto;
       scrollbar-width: none;
@@ -558,6 +559,9 @@
       padding-bottom: 0.75rem;
     }
     .cat-scroll::-webkit-scrollbar { display: none; }
+    @media (max-width: 768px) {
+      .cat-scroll { justify-content: flex-start; }
+    }
 
     .cat-pill {
       display: inline-flex;
