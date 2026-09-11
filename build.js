@@ -104,7 +104,7 @@ function footer() {
   <div class="footer-bottom">
     <span>&copy; 2024–${new Date().getFullYear()} ${esc(C.site.name)}</span>
     <span>Gjord med ❤️ för barnfamiljer i Sverige</span>
-    <span>Innehåller annonslänkar från Adtraction</span>
+    <span>Innehåller annonslänkar från Adtraction och TradeDoubler</span>
   </div>
 </footer>
 </body>
@@ -433,13 +433,19 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
         <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
       </div>
       ${p.buyUrl
-        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">🛒 Köp hos Meds →</a>`
+        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">🛒 Köp hos ${esc(p.buyStore || 'butik')} →</a>`
         : (p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : '')}
     </div>
   </article>`).join('')}
 </div>
 <article class="article">
-  ${l.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${esc(s.text)}</p>`).join('\n')}
+  ${l.sections.map(s => {
+    if (s.table) {
+      const tableHtml = `<table class="data-table"><thead><tr>${s.table.headers.map(h => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(row => `<tr>${row.map(cell => `<td>${cell === true ? '<span class="check-yes">✓</span>' : cell === false ? '<span class="check-no">–</span>' : esc(String(cell))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+      return `<h2>${esc(s.h2)}</h2>\n${s.intro ? `<p class="table-intro">${esc(s.intro)}</p>\n` : ''}${tableHtml}${s.note ? `\n<p class="table-note">${esc(s.note)}</p>` : ''}`;
+    }
+    return `<h2>${esc(s.h2)}</h2>\n<p>${esc(s.text)}</p>`;
+  }).join('\n')}
 </article>
 ${faqHtml(l.faq)}
 <h2 class="section-title">Fler topplistor</h2>

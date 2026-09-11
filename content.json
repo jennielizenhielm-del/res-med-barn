@@ -1351,20 +1351,22 @@
         ],
         "products": [
           {
-            "name": "UPPAbaby Cruz V2",
-            "badge": "Bäst för stadsliv",
-            "price": "Från ca 8 400 kr",
-            "text": "Kompakt, lätt premium-sittvagn (8,5 kg, 52 cm bred) byggd för stadsvardag och kollektivtrafik. Enhandsvikning, vändbar sittdel i fem lägen, och MESA-kompatibel utan adapter om ni redan har eller planerar en UPPAbaby babyskål.",
+            "name": "Thule Sleek",
+            "badge": "Bäst för växande familj",
+            "price": "Från ca 9 499 kr",
+            "text": "Thules första klassiska stadsvagn, byggd med samma robusta känsla som deras aktiva sportmodeller. Kan byggas ut till syskonvagn med tillköpt syskonsits, och suffletten går att höja nästan en decimeter — bra för långa barn.",
             "pros": [
-              "Lättast och smidigast i jämförelsen för stadsbruk",
-              "Enhandsvikning, står stabilt hopfälld",
-              "Lägre pris än Bugaboo/Stokke med jämförbar premiumkänsla"
+              "Kan byggas ut till syskonvagn senare — växer med familjen",
+              "Justerbar sufflett-höjd, ovanligt bland konkurrenterna",
+              "Fälls ihop med eller utan sittdel monterad, står stabilt hopfälld"
             ],
             "cons": [
-              "Kan inte byggas ut till duovagn (till skillnad från Vista)",
-              "Kräver tillköpt liggdel för att användas från nyfödd"
+              "Något tyngre (12,7–13,8 kg) än renodlade stadsvagnar",
+              "Färre färgval än de mer etablerade konkurrenterna"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/uppababy-cruz-v2.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/thule-sleek.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fvarumarken%2Fthule%2Fthule-sleek_1",
+            "buyStore": "Pyret & Snäckan"
           },
           {
             "name": "Bugaboo Fox 5",
@@ -1380,7 +1382,9 @@
               "Ett av de dyrare alternativen i jämförelsen",
               "Något tyngre (12,6 kg) än renodlade stadsvagnar"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/bugaboo-fox-5.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bugaboo-fox-5.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fvarumarken%2Fbugaboo%2Fbugaboo-fox-5",
+            "buyStore": "Pyret & Snäckan"
           },
           {
             "name": "Cybex Priam",
@@ -1396,7 +1400,9 @@
               "Dyrast på listan, tillbehören därtill",
               "Känsligare material som kräver omsorg"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-priam.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-priam.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fvarumarken%2Fcybex%2Fcybex-priam-2026",
+            "buyStore": "Pyret & Snäckan"
           },
           {
             "name": "Britax Smile 5Z",
@@ -1412,7 +1418,9 @@
               "Mindre hjul gör den sämre lämpad för grövre terräng/oplogad snö",
               "Liggdel och babyskyddsadaptrar tillkommer som tillval"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-smile-5z.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-smile-5z.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fvarumarken%2Fbritax%2Fbritax-smile-5z",
+            "buyStore": "Pyret & Snäckan"
           },
           {
             "name": "Thule Urban Glide 3",
@@ -1428,7 +1436,9 @@
               "Bred – trång i äldre hissar och butiksgångar",
               "Framhjulet låses vid löpning (som det ska, men kräver vana)"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/thule-urban-glide-3.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/thule-urban-glide-3.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fvarumarken%2Fthule%2Fthule-urban-glide-3",
+            "buyStore": "Pyret & Snäckan"
           }
         ],
         "sections": [
@@ -1465,10 +1475,10 @@
                   "52 cm"
                 ],
                 [
-                  "UPPAbaby Cruz V2*",
-                  "57,8 cm",
-                  "41,9 cm",
-                  "83,8 cm"
+                  "Thule Sleek",
+                  "83 cm",
+                  "60,5 cm",
+                  "42 cm"
                 ],
                 [
                   "Cybex Priam",
@@ -1489,8 +1499,7 @@
                   "25 cm"
                 ]
               ]
-            },
-            "note": "*UPPAbaby Cruz V2 står hopfälld (annan fällningsprincip än övriga) — måtten ovan är bredd × längd × höjd i stående läge."
+            }
           },
           {
             "h2": "Får vagnen plats i bagaget? Fem vagnar mot fem vanliga familjebilar *",
@@ -1514,12 +1523,12 @@
                   true
                 ],
                 [
-                  "UPPAbaby Cruz V2",
-                  "⚠ För hög",
-                  "⚠ För hög",
+                  "Thule Sleek",
                   true,
-                  "– Höjd okänd",
-                  "– Höjd okänd"
+                  true,
+                  true,
+                  true,
+                  true
                 ],
                 [
                   "Cybex Priam",
@@ -1547,7 +1556,7 @@
                 ]
               ]
             },
-            "note": "UPPAbaby Cruz V2 fälls ihop stående (83,8 cm hög) — högre än öppningen på både XC60 (77,6 cm) och V60 (64,4 cm), så den får troligen läggas snett eller ner för att gå in. Britax Smile 5Z (102 cm lång hopfälld) är någon centimeter längre än XC60:s golv (96 cm) men passar precis i V60 (103,3 cm) — det här stämmer även med vad riktiga XC60-ägare beskriver i bilforum (flera vittnar om att längre vagnar är ett genuint problem, en skriver \"marigt att få in en traditionell vagn på längden\"). UPPAbaby-höjdfyndet är en beräkning utifrån uppmätta mått, inte bekräftat av ägare i forum. Kodiaq, Golf Variant och Passat Variant saknar bekräftad öppningshöjd/längd i vår källa, men inget i det vi vet tyder på problem. * Bagageutrymmets exakta mått kan skilja sig mellan årsmodeller, utrustningsnivåer och tillval inom samma bilmodell — betrakta tabellen som en fingervisning, inte en garanti, och mät alltid er egen bils bagageöppning innan köp."
+            "note": "Thule Sleek (83 cm lång hopfälld) får gott om plats i samtliga fem bilar. Britax Smile 5Z (102 cm lång hopfälld) är någon centimeter längre än XC60:s golv (96 cm) men passar precis i V60 (103,3 cm) — bekräftat både matematiskt och av riktiga XC60-ägare i bilforum (flera vittnar om att längre vagnar är ett genuint problem, en skriver \"marigt att få in en traditionell vagn på längden\"). Kodiaq, Golf Variant och Passat Variant saknar bekräftad öppningshöjd/längd i vår källa, men inget i det vi vet tyder på problem. * Bagageutrymmets exakta mått kan skilja sig mellan årsmodeller, utrustningsnivåer och tillval inom samma bilmodell — betrakta tabellen som en fingervisning, inte en garanti, och mät alltid er egen bils bagageöppning innan köp."
           }
         ],
         "img": "photo-1566004100631-35d015d6a491",
@@ -2304,7 +2313,8 @@
               "Dyrare än enklare basmodeller"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/bibs-colour-latex.html",
-            "buyUrl": "https://adtr.co/ozetuz"
+            "buyUrl": "https://adtr.co/ozetuz",
+            "buyStore": "Meds"
           },
           {
             "name": "MAM Original Napp",
@@ -2321,7 +2331,8 @@
               "Finns i färre färgvarianter än BIBS"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-original-napp.html",
-            "buyUrl": "https://adtr.co/m4jx8k"
+            "buyUrl": "https://adtr.co/m4jx8k",
+            "buyStore": "Meds"
           },
           {
             "name": "Nanobébé Flexy Napp",
@@ -2338,7 +2349,8 @@
               "Något dyrare än standardnappar"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nanobebe-flexy-napp.html",
-            "buyUrl": "https://adtr.co/1bf3uj"
+            "buyUrl": "https://adtr.co/1bf3uj",
+            "buyStore": "Meds"
           },
           {
             "name": "NUK Perfect Match Air Night",
@@ -2355,7 +2367,8 @@
               "Mindre känt varumärke i Sverige jämfört med BIBS/MAM"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-perfect-match-air-night.html",
-            "buyUrl": "https://adtr.co/gx0qtn"
+            "buyUrl": "https://adtr.co/gx0qtn",
+            "buyStore": "Meds"
           },
           {
             "name": "Philips Avent Ultra Soft",
@@ -2372,7 +2385,8 @@
               "Finns i begränsat färgutbud"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-ultra-soft.html",
-            "buyUrl": "https://adtr.co/hkobvs"
+            "buyUrl": "https://adtr.co/hkobvs",
+            "buyStore": "Meds"
           }
         ],
         "sections": [
@@ -2531,7 +2545,8 @@
               "Något dyrare än basmodeller"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-natural-3.html",
-            "buyUrl": "https://adtr.co/agcfkt"
+            "buyUrl": "https://adtr.co/agcfkt",
+            "buyStore": "Meds"
           },
           {
             "name": "MAM Easy Start Anti-Colic",
@@ -2548,7 +2563,8 @@
               "Kan behöva provas i olika flödesstorlekar"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-easy-start-anti-colic.html",
-            "buyUrl": "https://adtr.co/6pwjam"
+            "buyUrl": "https://adtr.co/6pwjam",
+            "buyStore": "Meds"
           },
           {
             "name": "Herobility HeroBottle",
@@ -2565,7 +2581,8 @@
               "Rekommenderas ibland bara handdisk trots att den tål maskin"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/herobility-herobottle.html",
-            "buyUrl": "https://adtr.co/7jziyj"
+            "buyUrl": "https://adtr.co/7jziyj",
+            "buyStore": "Meds"
           },
           {
             "name": "Nuk First Choice+",
@@ -2582,7 +2599,8 @@
               "Bröstvårtan mindre bred än Avent Natural"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-first-choice-plus.html",
-            "buyUrl": "https://adtr.co/lsmpun"
+            "buyUrl": "https://adtr.co/lsmpun",
+            "buyStore": "Meds"
           },
           {
             "name": "Medela Breast Milk Bottles",
@@ -2599,7 +2617,8 @@
               "Enklare design, saknar avancerat anti-kolik-system"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/medela-breast-milk-bottles.html",
-            "buyUrl": "https://adtr.co/hsni0i"
+            "buyUrl": "https://adtr.co/hsni0i",
+            "buyStore": "Meds"
           }
         ],
         "sections": [
