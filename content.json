@@ -1504,56 +1504,140 @@
           {
             "h2": "Får vagnen plats i bagaget? Fem vagnar mot fem vanliga familjebilar *",
             "intro": "Baserat på bilarnas golvlängd, golvbredd och öppningshöjd jämfört med varje vagns hopfällda mått.",
-            "table": {
-              "headers": [
-                "Vagn",
+            "statusGrid": {
+              "columns": [
                 "XC60",
                 "V60",
                 "Kodiaq",
-                "Golf Variant",
-                "Passat Variant"
+                "Golf",
+                "Passat"
               ],
               "rows": [
-                [
-                  "Bugaboo Fox 5",
-                  true,
-                  true,
-                  true,
-                  true,
-                  true
-                ],
-                [
-                  "Thule Sleek",
-                  true,
-                  true,
-                  true,
-                  true,
-                  true
-                ],
-                [
-                  "Cybex Priam",
-                  true,
-                  true,
-                  true,
-                  true,
-                  true
-                ],
-                [
-                  "Britax Smile 5Z",
-                  "⚠ 6 cm för lång",
-                  true,
-                  true,
-                  true,
-                  "– Längd okänd"
-                ],
-                [
-                  "Thule Urban Glide 3",
-                  true,
-                  true,
-                  true,
-                  true,
-                  true
-                ]
+                {
+                  "name": "Bugaboo Fox 5",
+                  "statuses": [
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    }
+                  ]
+                },
+                {
+                  "name": "Thule Sleek",
+                  "statuses": [
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cybex Priam",
+                  "statuses": [
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    }
+                  ]
+                },
+                {
+                  "name": "Britax Smile 5Z",
+                  "statuses": [
+                    {
+                      "state": "warn",
+                      "text": "6 cm för lång"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "unknown",
+                      "text": "Längd okänd"
+                    }
+                  ]
+                },
+                {
+                  "name": "Thule Urban Glide 3",
+                  "statuses": [
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    },
+                    {
+                      "state": "yes",
+                      "text": "Passar"
+                    }
+                  ]
+                }
               ]
             },
             "note": "Thule Sleek (83 cm lång hopfälld) får gott om plats i samtliga fem bilar. Britax Smile 5Z (102 cm lång hopfälld) är någon centimeter längre än XC60:s golv (96 cm) men passar precis i V60 (103,3 cm) — bekräftat både matematiskt och av riktiga XC60-ägare i bilforum (flera vittnar om att längre vagnar är ett genuint problem, en skriver \"marigt att få in en traditionell vagn på längden\"). Kodiaq, Golf Variant och Passat Variant saknar bekräftad öppningshöjd/längd i vår källa, men inget i det vi vet tyder på problem. * Bagageutrymmets exakta mått kan skilja sig mellan årsmodeller, utrustningsnivåer och tillval inom samma bilmodell — betrakta tabellen som en fingervisning, inte en garanti, och mät alltid er egen bils bagageöppning innan köp."

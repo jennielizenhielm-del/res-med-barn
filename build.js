@@ -440,8 +440,23 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
 </div>
 <article class="article">
   ${l.sections.map(s => {
+    if (s.statusGrid) {
+      const g = s.statusGrid;
+      const cardsHtml = g.rows.map(row => `
+        <div class="status-card">
+          <div class="status-card-name">${esc(row.name)}</div>
+          <div class="status-card-grid">
+            ${row.statuses.map((st, i) => `
+              <div class="status-chip status-${st.state}">
+                <div class="status-chip-label">${esc(g.columns[i])}</div>
+                <div class="status-chip-value">${esc(st.text)}</div>
+              </div>`).join('')}
+          </div>
+        </div>`).join('');
+      return `<h2>${esc(s.h2)}</h2>\n${s.intro ? `<p class="table-intro">${esc(s.intro)}</p>\n` : ''}<div class="status-grid">${cardsHtml}</div>${s.note ? `\n<p class="table-note">${esc(s.note)}</p>` : ''}`;
+    }
     if (s.table) {
-      const tableHtml = `<table class="data-table"><thead><tr>${s.table.headers.map(h => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(row => `<tr>${row.map(cell => `<td>${cell === true ? '<span class="check-yes">✓</span>' : cell === false ? '<span class="check-no">–</span>' : esc(String(cell))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+      const tableHtml = `<table class="data-table"><thead><tr>${s.table.headers.map((h, i) => `<th${i > 0 ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(row => `<tr>${row.map((cell, i) => `<td${i > 0 ? ' class="num"' : ''}>${cell === true ? '<span class="check-yes">✓</span>' : cell === false ? '<span class="check-no">–</span>' : esc(String(cell))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
       return `<h2>${esc(s.h2)}</h2>\n${s.intro ? `<p class="table-intro">${esc(s.intro)}</p>\n` : ''}${tableHtml}${s.note ? `\n<p class="table-note">${esc(s.note)}</p>` : ''}`;
     }
     return `<h2>${esc(s.h2)}</h2>\n<p>${esc(s.text)}</p>`;
