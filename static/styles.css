@@ -892,3 +892,52 @@ h1 {
 .packlist-subpages-label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.2rem; }
 .packlist-subpages-links a { color: var(--accent-hover); font-weight: 600; text-decoration: none; font-size: 0.95rem; }
 .packlist-subpages-links a:hover { text-decoration: underline; }
+
+/* ---- DATA TABLES (topplistor sections) ---- */
+.table-intro { max-width: 720px; margin: 0 auto 1rem; color: var(--text-secondary); font-size: 0.95rem; }
+.data-table {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 0.5rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.data-table th {
+  text-align: left;
+  padding: 0.75rem 1rem 0.75rem 0;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+.data-table th.num, .data-table td.num { text-align: right; }
+.data-table td {
+  padding: 0.9rem 1rem 0.9rem 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-light);
+}
+.data-table td:first-child { color: var(--text); font-weight: 500; }
+.check-yes { color: var(--primary); font-weight: 700; }
+.check-no { color: var(--text-muted); }
+.table-note { max-width: 720px; margin: 0.75rem auto 1.75rem; color: var(--text-muted); font-size: 0.82rem; line-height: 1.5; }
+
+.status-grid { max-width: 720px; margin: 0 auto 0.5rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.status-card { background: var(--bg-alt); border-radius: var(--radius-lg); padding: 1rem 1.1rem; }
+.status-card-name { font-size: 0.95rem; font-weight: 600; color: var(--text); margin-bottom: 0.65rem; }
+.status-card-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; }
+.status-chip { border-radius: 8px; padding: 0.55rem 0.4rem; text-align: center; }
+.status-chip-label { font-size: 0.68rem; color: var(--text-muted); margin-bottom: 0.2rem; }
+.status-chip-value { font-size: 0.74rem; font-weight: 600; line-height: 1.25; }
+.status-yes { background: var(--primary-light); }
+.status-yes .status-chip-value { color: var(--primary); }
+.status-warn { background: var(--sand-light); }
+.status-warn .status-chip-value { color: var(--sand); }
+.status-unknown { background: var(--border-light); }
+.status-unknown .status-chip-value { color: var(--text-muted); }
+@media (max-width: 640px) {
+  .data-table { font-size: 0.82rem; }
+  .data-table th, .data-table td { padding: 0.6rem 0.5rem 0.6rem 0; }
+  .status-card-grid { grid-template-columns: repeat(2, 1fr); }
+}
