@@ -1797,13 +1797,40 @@
         "slug": "bilbarnstol",
         "name": "Bilbarnstol",
         "emoji": "🚗",
-        "cardText": "Fem stolar vi litar på: bakåtvänt länge, enkel montering och testresultat som håller.",
-        "title": "Bilbarnstol bäst i test 2026 – topp 5 | Res med Barn",
-        "description": "Bilbarnstol bäst i test 2026: fem stolar vi litar på, från babyskydd till bältesstol. Bakåtvänt så länge som möjligt – här är valen som gör det enkelt.",
-        "h1": "Bilbarnstol – bäst i test 2026",
+        "img": "photo-1449965408869-eaa3f722e40d",
+        "cardText": "Bakåtvänd eller framåtvänd? Vi har delat upp det i två listor så du hittar rätt snabbare.",
+        "title": "Bilbarnstol bäst i test 2026 | Res med Barn",
+        "description": "Bilbarnstol bäst i test 2026 — välj bakåtvänd (för de yngsta) eller framåtvänd bältesstol (för äldre barn).",
+        "h1": "Bilbarnstol — bäst i test 2026",
         "intro": [
-          "Bilbarnstolen är familjens viktigaste säkerhetsköp, och den svenska linjen är tydlig: bakåtvänt så länge som möjligt, helst till fyra–fem års ålder. Alla stolar på den här listan följer den principen.",
-          "Vi har valt fem stolar för olika åldrar och budgetar – med fokus på verklig vardagsanvändning: hur lätt stolen är att montera rätt, för en felmonterad stol skyddar sämre än en billig som sitter korrekt."
+          "Vilken typ av bilbarnstol ni behöver beror helt på barnets ålder och storlek. Vi har delat upp vårt urval i två separata listor så att ni snabbare hittar rätt bland de alternativ som faktiskt är relevanta för er."
+        ],
+        "subPages": [
+          {
+            "slug": "bilbarnstol/bakatvand",
+            "label": "Bakåtvänd bilbarnstol",
+            "emoji": "👶",
+            "desc": "För bebisar och småbarn — svensk expertis rekommenderar bakåtvänt så länge som möjligt, helst till 4–5 års ålder."
+          },
+          {
+            "slug": "bilbarnstol/framatvand",
+            "label": "Framåtvänd bilbarnstol / bälteskudde",
+            "emoji": "🧒",
+            "desc": "För äldre barn (ca 3,5–12 år) som vuxit ur den bakåtvända stolen."
+          }
+        ]
+      },
+      {
+        "slug": "bilbarnstol/bakatvand",
+        "name": "Bakåtvänd bilbarnstol",
+        "emoji": "👶",
+        "img": "photo-1449965408869-eaa3f722e40d",
+        "cardText": "Fyra stolar vi litar på för bakåtvänt åkande så länge som möjligt.",
+        "title": "Bakåtvänd bilbarnstol bäst i test 2026 | Res med Barn",
+        "description": "Bakåtvänd bilbarnstol bäst i test 2026 — fyra stolar för bebisar och småbarn, utvalda för bakåtvänt åkande så länge som möjligt.",
+        "h1": "Bakåtvänd bilbarnstol — bäst i test 2026",
+        "intro": [
+          "Den svenska linjen är tydlig: bakåtvänt så länge som möjligt, helst till fyra–fem års ålder. Alla stolar här följer den principen."
         ],
         "products": [
           {
@@ -1820,39 +1847,9 @@
               "Bältesmontering kräver noggrannhet första gången",
               "Ingen rotation – barnet lyfts i och ur"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/axkid-minikid-4.html"
-          },
-          {
-            "name": "BeSafe iZi Turn B i-Size",
-            "badge": "Smidigast vardag",
-            "price": "ca 6 500 kr",
-            "text": "Roterbar stol som vrider sig mot dörren när barnet ska i och ur – ryggarna i familjen skickar tackkort. Bakåtvänd till 105 cm (ca 4 år), Isofix-montering som är nästan omöjlig att göra fel. Den bästa kombon av säkerhet och vardagssmidighet.",
-            "pros": [
-              "360°-rotation skonar ryggen dagligen",
-              "Isofix – rätt monterad på två minuter",
-              "Tydliga indikatorer när allt sitter rätt"
-            ],
-            "cons": [
-              "Bakåtvänt 'bara' till 105 cm",
-              "Tung att flytta mellan bilar"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/besafe-izi-turn-b-i-size.html"
-          },
-          {
-            "name": "Cybex Cloud T i-Size",
-            "badge": "Bästa babyskydd",
-            "price": "ca 3 500 kr",
-            "text": "Babyskyddet med det avgörande extra: helt plant liggläge utanför bilen. Det betyder att en sovande bebis kan rulla vidare på vagnen i planläge i stället för hopsjunken – viktigt för andning och nacke. Klickar på de flesta vagnchassin och har utmärkta krockvärden.",
-            "pros": [
-              "Plant liggläge på vagnen – unikt viktigt",
-              "Lätt att bära (4,9 kg)",
-              "Passar som resesystem på de flesta vagnar"
-            ],
-            "cons": [
-              "Dyrare än standardbabyskydd",
-              "Basen köps separat"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-cloud-t-i-size.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/axkid-minikid-4.html",
+            "buyUrl": "https://adtr.co/2mtsc5",
+            "buyStore": "Babysam"
           },
           {
             "name": "Axkid One 3",
@@ -1868,23 +1865,63 @@
               "Hög prislapp vid köptillfället",
               "Stor – kolla att den ryms i er bil"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/axkid-one-3.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/axkid-one-3.html",
+            "buyUrl": "https://adtr.co/uppev8",
+            "buyStore": "Bonti"
           },
           {
-            "name": "Britax Römer Kidfix i-Size",
-            "badge": "Bästa bältesstol",
-            "price": "ca 2 500 kr",
-            "text": "När barnet vuxit ur bakåtvänt (100+ cm och minst 4–5 år) tar bältesstolen vid. Kidfix leder klassen: styr bilbältet exakt rätt, sidokrockskydd i toppklass och en sittkomfort som klarar semesterns långkörningar utan gnäll.",
+            "name": "Britax Römer Dualfix 5Z",
+            "badge": "Mest prisvärd",
+            "price": "Från ca 3 195 kr",
+            "text": "360°-roterbar bakåtvänd stol som täcker hela spannet från nyfödd till fyra år (61–105 cm) i samma sits. Integrerat sidokrockskydd (SICT) och flera vilolägen. Utsedd till mest prisvärda i flera oberoende jämförelser.",
             "pros": [
-              "Bäst bälteslöpning i klassen",
-              "Växer med barnet till 150 cm",
-              "Isofix-fästen håller stolen stadig även tom"
+              "Täcker nyfödd till 4 år i samma stol — inget stolbyte",
+              "360°-rotation gör i- och urlyft betydligt enklare för ryggen",
+              "Bäst pris i klassen för en roterbar bakåtvänd stol"
             ],
             "cons": [
-              "Endast för barn som är klara med bakåtvänt",
-              "Ryggstödet tar plats i smala baksäten"
+              "Tung (ca 14,8 kg) — tar plats i baksätet, märks i mindre bilar",
+              "Kräver isofixbas, fungerar inte med enbart bilbälte"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-romer-kidfix-i-size.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-romer-dualfix-5z.html",
+            "buyUrl": "https://adtr.co/r8ghty",
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Maxi-Cosi Emerald 360 S",
+            "badge": "Längst användningstid",
+            "price": "Från ca 4 052–4 995 kr",
+            "text": "Växer bokstavligen med barnet — samma stol används från nyfödd hela vägen till cirka 12 års ålder (40–150 cm), och görs om från bakåtvänd bilbarnstol till framåtvänd bälteskudde när barnet är redo. 360°-rotation och G-CELL sidokrockskydd. Populär som extrastol hos mor-/farföräldrar tack vare den långa användningstiden.",
+            "pros": [
+              "En enda stol från nyfödd till ca 12 år — inga fler stolbyten",
+              "360°-rotation gör i-/urlyft enklare",
+              "G-CELL sidokrockskydd testar starkt"
+            ],
+            "cons": [
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Stor och tung — mindre lämpad att flytta mellan bilar"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/maxi-cosi-emerald-360-s.html",
+            "buyUrl": "https://adtr.co/1rnohi",
+            "buyStore": "Bonti"
+          },
+          {
+            "name": "Cybex Sirona T i-Size",
+            "badge": "Bäst premium/sidoskydd",
+            "price": "Från ca 3 516 kr",
+            "text": "Premiumstol med linjärt sidokrockskydd (LSP) och allround-ventilation för jämnare temperatur oavsett årstid. 360°-rotation och möjlighet att växla mellan bakåt- och framåtvänd position i samma stol när barnet är redo. ADAC-betyget \"Bra\".",
+            "pros": [
+              "Linjärt sidokrockskydd (LSP) — stark premiumfunktion för sidokrockar",
+              "Kan användas både bakåt- och framåtvänd i samma stol",
+              "Allround-ventilation ger jämnare temperatur året om"
+            ],
+            "cons": [
+              "Dyrare än Dualfix 5Z inom liknande funktionsklass",
+              "Rotationsmekanismen kan kännas trög enligt vissa användare"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-sirona-t-i-size.html",
+            "buyUrl": "https://adtr.co/dtnb6y",
+            "buyStore": "Bonti"
           }
         ],
         "sections": [
@@ -1905,7 +1942,6 @@
             "text": "Fysiken är enkel: vid en frontalkrock – den vanligaste allvarliga krocktypen – kastas kroppen framåt. Sitter barnet bakåtvänt fångas rörelsen upp av hela ryggen mot stolens skal; sitter det framåtvänt hålls kroppen av selen medan huvudet fortsätter framåt, och all kraft hamnar i nacken. Små barn har stora huvuden och svaga nackar – proportionellt väger en tvåårings huvud dubbelt så mycket som ditt. Det är därför bakåtvänt räknas som omkring fem gånger säkrare för småbarn, och därför Sverige legat före resten av Europa i decennier."
           }
         ],
-        "img": "photo-1449965408869-eaa3f722e40d",
         "faq": [
           {
             "q": "Hur länge ska barn sitta bakåtvänt?",
@@ -1918,6 +1954,230 @@
           {
             "q": "Kan man köpa bilbarnstol begagnat?",
             "a": "Avrådes om du inte vet stolens historia. En stol som varit med i en krock kan ha osynliga skador, och plast åldras – de flesta tillverkare anger cirka tio års livslängd. Köp hellre en billigare stol ny än en premiumstol med okänt förflutet."
+          }
+        ]
+      },
+      {
+        "slug": "bilbarnstol/framatvand",
+        "name": "Framåtvänd bilbarnstol",
+        "emoji": "🧒",
+        "img": "photo-1449965408869-eaa3f722e40d",
+        "cardText": "Fem bälteskuddar/framåtvända stolar för barn som vuxit ur den bakåtvända stolen.",
+        "title": "Framåtvänd bilbarnstol bäst i test 2026 | Res med Barn",
+        "description": "Framåtvänd bilbarnstol och bälteskudde bäst i test 2026 — fem alternativ för barn ca 3,5–12 år, från budget till premium.",
+        "h1": "Framåtvänd bilbarnstol / bälteskudde — bäst i test 2026",
+        "intro": [
+          "När barnet vuxit ur den bakåtvända stolen (oftast runt 4–5 år) är det dags för en bälteskudde/framåtvänd bilbarnstol. Vi har valt fem alternativ för olika budgetar och behov."
+        ],
+        "products": [
+          {
+            "name": "Britax Römer Kidfix i-Size",
+            "badge": "Bästa bältesstol",
+            "price": "ca 2 500 kr",
+            "text": "När barnet vuxit ur bakåtvänt (100+ cm och minst 4–5 år) tar bältesstolen vid. Kidfix leder klassen: styr bilbältet exakt rätt, sidokrockskydd i toppklass och en sittkomfort som klarar semesterns långkörningar utan gnäll.",
+            "pros": [
+              "Bäst bälteslöpning i klassen",
+              "Växer med barnet till 150 cm",
+              "Isofix-fästen håller stolen stadig även tom"
+            ],
+            "cons": [
+              "Endast för barn som är klara med bakåtvänt",
+              "Ryggstödet tar plats i smala baksäten"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-romer-kidfix-i-size.html",
+            "buyUrl": "https://adtr.co/vje29n",
+            "buyStore": "Babysam"
+          },
+          {
+            "name": "BeSafe Flex FIX 2",
+            "badge": "Bästa premium",
+            "price": "Från ca 3 299 kr",
+            "text": "Uppdaterad version av den tidigare testvinnaren iZi Flex Fix. Designad för att få plats med upp till tre stolar i rad genom att bältesguiderna kan tas bort från mittplatsen. Justerbart nack-/ryggstöd som växer med barnet, och en vilofunktion för sovande barn på långresor.",
+            "pros": [
+              "Tre stolar i rad möjligt — bra för familjer med flera barn",
+              "Bältesguider enligt samma teknik som BeSafes graviditetsbälten, förhindrar felaktig placering",
+              "Vilofunktion för långa bilresor"
+            ],
+            "cons": [
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Något klumpig att flytta mellan bilar"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/besafe-flex-fix-2.html",
+            "buyUrl": "https://adtr.co/np4qbr",
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Maxi-Cosi RodiFix Pro 2 i-Size",
+            "badge": "Bästa budget",
+            "price": "Från ca 1 889 kr",
+            "text": "Fullmatad bälteskudde till ett prisvärt pris — höga sidovingar på båda sidor för sidokrockskydd, tre vilolägen, och justerbar i både höjd och bredd så den växer med barnet från 3,5 upp till 12 år. Patenterat AirProtect-sidokollisionsskydd i nackstödet.",
+            "pros": [
+              "Betydligt billigare än premiumalternativen trots fullt utrustad",
+              "Justerbar i både höjd och bredd — ovanligt i den här prisklassen",
+              "AirProtect-sidokollisionsskydd i nackstödet"
+            ],
+            "cons": [
+              "Färre lyxdetaljer (tyg/komfort) än Flex FIX 2/Solution T",
+              "Ingen isofix-bas ingår som standard i alla paket"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/maxi-cosi-rodifix-pro-2-i-size.html",
+            "buyUrl": "https://adtr.co/o7cwh3",
+            "buyStore": "Babysam"
+          },
+          {
+            "name": "Cybex Solution T i-Fix",
+            "badge": "Bredast justerbar",
+            "price": "Från ca 1 600–2 400 kr",
+            "text": "Justerbar både på höjden och bredden, vilket gör den ovanligt anpassningsbar när barnet växer eller om ni har ett barn i mer kraftig kroppsbyggnad. Linjärt sidokrockskydd (L.S.P.) och en energiabsorberande skalkonstruktion.",
+            "pros": [
+              "Justerbar i både höjd och bredd — ovanligt bland konkurrenterna",
+              "Linjärt sidokrockskydd testar starkt i oberoende jämförelser",
+              "Lång användningstid tack vare bred justerbarhet"
+            ],
+            "cons": [
+              "Något osäker prisbild — variera mellan butiker",
+              "Färre år på garantin enligt vissa återförsäljare"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-solution-t-i-fix.html",
+            "buyUrl": "https://adtr.co/kec6ca",
+            "buyStore": "Babysam"
+          },
+          {
+            "name": "Cybex Solution S2 i-Fix",
+            "badge": "Enklare Cybex-alternativ",
+            "price": "Pris varierar — kontrollera hos återförsäljare",
+            "text": "Cybex enklare bältesstol, utan Solution T:s breddjustering men med samma trygga grundkänsla. 12 höjdlägen och ett fällbart nackstöd som håller huvudet kvar i säkerhetszonen om barnet somnar.",
+            "pros": [
+              "Billigare än Solution T inom samma varumärke",
+              "Fällbart nackstöd förhindrar att huvudet faller framåt vid sömn",
+              "12 höjdlägen, enkel enhandsjustering"
+            ],
+            "cons": [
+              "Ingen breddjustering (till skillnad från Solution T)",
+              "Mindre känd modell, svårare att jämföra recensioner"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-solution-s2-i-fix.html",
+            "buyUrl": "https://adtr.co/bem763",
+            "buyStore": "Jollyroom"
+          }
+        ],
+        "sections": [],
+        "faq": [
+          {
+            "q": "Vid vilken ålder ska man byta till framåtvänd bilbarnstol?",
+            "a": "Svenska rekommendationer (NTF m.fl.) säger bakåtvänt så länge som möjligt, gärna till 4–5 års ålder eller tills barnet är för stort för den bakåtvända stolen enligt tillverkarens gränser — vad som än inträffar sist."
+          }
+        ]
+      },
+      {
+        "slug": "babyskydd",
+        "name": "Babyskydd",
+        "emoji": "🍼",
+        "img": "photo-1449965408869-eaa3f722e40d",
+        "cardText": "Fem babyskydd som fungerar från nyfödd, jämförda på vikt, montering och pris.",
+        "title": "Babyskydd bäst i test 2026 | Res med Barn",
+        "description": "Babyskydd bäst i test 2026 — fem alternativ för nyfödda och spädbarn, jämförda på vikt, montering, pris och kompatibilitet med barnvagn.",
+        "h1": "Babyskydd — bäst i test 2026",
+        "intro": [
+          "Babyskyddet är det första bilstolssteget, för nyfödda upp till ungefär ett år (beroende på modell och barnets storlek). Till skillnad från de större bakåtvända stolarna är babyskydd bärbara och klickar ofta direkt på barnvagnen — praktiskt för de första, sömniga månaderna."
+        ],
+        "products": [
+          {
+            "name": "Cybex Cloud T i-Size",
+            "badge": "Bästa babyskydd",
+            "price": "ca 3 500 kr",
+            "text": "Babyskyddet med det avgörande extra: helt plant liggläge utanför bilen. Det betyder att en sovande bebis kan rulla vidare på vagnen i planläge i stället för hopsjunken – viktigt för andning och nacke. Klickar på de flesta vagnchassin och har utmärkta krockvärden.",
+            "pros": [
+              "Plant liggläge på vagnen – unikt viktigt",
+              "Lätt att bära (4,9 kg)",
+              "Passar som resesystem på de flesta vagnar"
+            ],
+            "cons": [
+              "Dyrare än standardbabyskydd",
+              "Basen köps separat"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-cloud-t-i-size.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fbilbarnstolar%2Fbabyskydd-0-13-kg%2Fcybex-cloud-t-i-size-sepia-black",
+            "buyStore": "Pyret & Snäckan"
+          },
+          {
+            "name": "Maxi-Cosi Pebble 360 Pro 2",
+            "badge": "Populärast i Sverige",
+            "price": "Från ca 4 500 kr (med bas)",
+            "text": "Sveriges mest använda babyskydd, med SlideTech-teknik som gör att skyddet kan dras ut en bit genom bildörren innan urlyft — skonsamt för ryggen. 360°-rotationshandtag mot bildörren och automatisk bälteslindning.",
+            "pros": [
+              "SlideTech drar ut skyddet genom dörren — skonar ryggen",
+              "360°-rotation mot bildörren för enklare i-/urlyft",
+              "Bred kompatibilitet med Maxi-Cosis vagnsystem"
+            ],
+            "cons": [
+              "Basen (8,6 kg) väger en hel del utöver själva skyddet",
+              "Kräver Maxi-Cosis egen isofixbas för full funktion"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/maxi-cosi-pebble-360-pro-2.html",
+            "buyUrl": "https://adtr.co/ncc5u9",
+            "buyStore": "Bonti"
+          },
+          {
+            "name": "Doona i",
+            "badge": "Bäst 2-i-1",
+            "price": "Från ca 5 500 kr",
+            "text": "Babyskydd med inbyggda hjul som fälls ut med en knapptryckning — förvandlas direkt till en rullbar barnvagn utan att barnet behöver flyttas. Praktiskt för resor och för föräldrar som vill slippa ett extra vagnsystem helt.",
+            "pros": [
+              "Blir barnvagn på sekunder — inget separat vagnsystem behövs",
+              "Godkänd för flygresor, praktisk vid utlandsresor",
+              "Slipper lyfta ur barnet vid korta ärenden"
+            ],
+            "cons": [
+              "Betydligt dyrare än ett klassiskt babyskydd",
+              "Tyngre än rena babyskydd tack vare de inbyggda hjulen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/doona-i.html",
+            "buyUrl": "https://adtr.co/n63p93",
+            "buyStore": "Babysam"
+          },
+          {
+            "name": "Maxi-Cosi CabrioFix i-Size",
+            "badge": "Bäst i test",
+            "price": "Från ca 2 500 kr",
+            "text": "Lätt och smidigt babyskydd som testat starkt i oberoende jämförelser, med medföljande bas som gör vardagsanvändningen enkel. En pålitlig helhetslösning utan Pebble 360:s mer avancerade (och dyrare) extrafunktioner.",
+            "pros": [
+              "Testat starkt som helhetsval i oberoende jämförelser",
+              "Lättare att bära än många konkurrenter",
+              "Enkel installation med medföljande bas"
+            ],
+            "cons": [
+              "Saknar Pebble 360:s SlideTech-funktion",
+              "Färre rotations-/utdragningsfunktioner än premiumalternativen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/maxi-cosi-cabriofix-i-size.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fbilbarnstolar%2Fbabyskydd-0-13-kg%2Fmaxi-cosi-cabriofix-i-size-babyskydd-essential-black%3Futm_campaign%3D%26utm_content%3D%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_term%3D%26gad_source%3D1%26gad_campaignid%3D18909144857%26gbraid%3D0AAAAAC_chb3uaQ4_83Zd5OR8OFZqUHjww%26gclid%3DCjwKCAjwtp7VBhBjEiwAJfpV-5ILtKsAUSgZCYE5I5jbF8dPhHX8mJMZQLla6eYbzH-OBhSkq6EzKxoChdMQAvD_BwE",
+            "buyStore": "Pyret & Snäckan"
+          },
+          {
+            "name": "Britax Römer Baby-Safe Core",
+            "badge": "Bästa budget",
+            "price": "Från ca 1 800 kr",
+            "text": "Enkelt och tydligt babyskydd utan onödiga extrafunktioner, för den som vill hålla nere kostnaden utan att köpa det allra billigaste på marknaden. Fungerar både med bilens bälte och tillköpt isofixbas.",
+            "pros": [
+              "Betydligt billigare än premiumalternativen",
+              "Fungerar utan isofixbas om ni inte vill investera i det",
+              "Britax Römers välkända säkerhetsrykte till lägre pris"
+            ],
+            "cons": [
+              "Saknar rotationsfunktion och andra bekvämlighetsfunktioner",
+              "Enklare sufflett och tygkvalitet än premiummodellerna"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-romer-baby-safe-core.html",
+            "buyUrl": "https://adtr.co/6pid13",
+            "buyStore": "Babysam"
+          }
+        ],
+        "sections": [],
+        "faq": [
+          {
+            "q": "Hur länge kan man använda ett babyskydd?",
+            "a": "De flesta babyskydd är godkända upp till ca 75–87 cm eller 13 kg beroende på modell, vilket för de flesta barn motsvarar ungefär 12–18 månader. När barnet börjar sitta bra själv eller närmar sig gränsen är det dags att gå vidare till en bakåtvänd bilbarnstol."
           }
         ]
       },

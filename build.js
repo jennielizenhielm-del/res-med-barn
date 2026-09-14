@@ -361,6 +361,9 @@ const TOPPLISTOR_RELATED = {
   vagnar: ['resevagnar', 'syskonvagn', 'tillbehor'],
   resevagnar: ['vagnar', 'syskonvagn', 'barsele'],
   bilbarnstol: ['vagnar', 'tillbehor', 'babymonitor'],
+  'bilbarnstol/bakatvand': ['babyskydd', 'bilbarnstol/framatvand', 'vagnar'],
+  'bilbarnstol/framatvand': ['bilbarnstol/bakatvand', 'vagnar', 'tillbehor'],
+  babyskydd: ['bilbarnstol/bakatvand', 'vagnar', 'resevagnar'],
   tillbehor: ['vagnar', 'resevagnar', 'bilbarnstol'],
   syskonvagn: ['vagnar', 'resevagnar', 'tillbehor'],
   barsele: ['barsjal', 'sleep-carrier', 'resevagnar'],
@@ -399,6 +402,40 @@ ${faqHtml(hub.faq)}`;
   write('topplistor/index.html', page('/topplistor/', hub, '/topplistor/', hubInner, hub.faq ? [bcHub.jsonld, faqLd(hub.faq)] : bcHub.jsonld));
 
   for (const l of C.topplistor.lists) {
+    if (l.subPages) {
+      // Hubb-sida (t.ex. bilbarnstol) — länkar bara vidare till sina undersidor
+      const url = `/topplistor/${l.slug}/`;
+      const bc = breadcrumbs([['Hem', '/'], ['Topplistor', '/topplistor/'], [l.name, null]]);
+      const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(l.h1)}</h1>
+  <div class="page-intro">${paras(l.intro)}</div>
+</header>
+<div class="card-grid">
+  ${l.subPages.map(sp => {
+    const target = C.topplistor.lists.find(t => t.slug === sp.slug);
+    return `
+  <a class="hub-card has-media" href="/topplistor/${sp.slug}/">
+    ${media(target ? target.img : l.img, sp.emoji, 'hub-media', 640)}
+    <span class="hub-emoji">${sp.emoji}</span>
+    <h2>${esc(sp.label)}</h2>
+    <p>${esc(sp.desc)}</p>
+    <span class="hub-link">Se listan →</span>
+  </a>`;
+  }).join('')}
+</div>
+<h2 class="section-title">Fler topplistor</h2>
+<div class="related-links">
+  ${(TOPPLISTOR_RELATED[l.slug] || []).map(slug => {
+    const x = C.topplistor.lists.find(t => t.slug === slug);
+    return x ? `<a href="/topplistor/${x.slug}/">${x.emoji} ${esc(x.h1)}</a>` : '';
+  }).join('\n  ')}
+  <a href="/topplistor/" class="related-links-all">Alla topplistor →</a>
+</div>`;
+      write(`topplistor/${l.slug}/index.html`, page(url, l, '/topplistor/', inner, [bc.jsonld]));
+      continue;
+    }
     const url = `/topplistor/${l.slug}/`;
     const bc = breadcrumbs([['Hem', '/'], ['Topplistor', '/topplistor/'], [l.name, null]]);
     const itemList = {
