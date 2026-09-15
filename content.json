@@ -1673,7 +1673,7 @@
         ],
         "products": [
           {
-            "name": "Babyzen YOYO³",
+            "name": "Stokke YOYO³",
             "badge": "Bäst i test",
             "price": "ca 5 500 kr",
             "text": "Originalet som fortfarande är kungen. Viks med en hand till äkta handbagagemått (52×44×18 cm), väger 6,2 kg och rullar förvånansvärt bra för sina små hjul. Hela flygplatsvärlden är byggd runt den här vagnen, och det märks. Dyr, men andrahandsvärdet är absurt bra.",
@@ -1686,8 +1686,10 @@
               "Liten korg",
               "Premiumpris för små hjul"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/babyzen-yoyo3.html",
-            "handbagage": "52 × 44 × 18 cm hopfälld — en av de allra minsta, gott om marginal till IATA:s gräns"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/stokke-yoyo3.html",
+            "handbagage": "52 × 44 × 18 cm hopfälld — en av de allra minsta, gott om marginal till IATA:s gräns",
+            "buyUrl": "https://adtr.co/5h80pr",
+            "buyStore": "Bonti"
           },
           {
             "name": "Bugaboo Butterfly 2",
@@ -1704,7 +1706,9 @@
               "Solskyddet kunde vara längre"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/bugaboo-butterfly-2.html",
-            "handbagage": "55,5 × 44,8 × 24,5 cm hopfälld — ligger nära IATA:s maxgräns, men godkänd"
+            "handbagage": "55,5 × 44,8 × 24,5 cm hopfälld — ligger nära IATA:s maxgräns, men godkänd",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fbarnvagnar%2Fsulky-resevagn%2Fbugaboo-butterfly-2-dusty-pink_1",
+            "buyStore": "Pyret & Snäckan"
           },
           {
             "name": "Cybex Libelle",
@@ -1721,10 +1725,12 @@
               "Fällningen kräver två händer och lite teknik"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-libelle.html",
-            "handbagage": "48 × 32 × 20 cm hopfälld — marknadens mest kompakta, gott om marginal"
+            "handbagage": "48 × 32 × 20 cm hopfälld — marknadens mest kompakta, gott om marginal",
+            "buyUrl": "https://adtr.co/l77gn6",
+            "buyStore": "Bonti"
           },
           {
-            "name": "Joolz Aer+",
+            "name": "Joolz Aer2",
             "badge": "Bästa premium",
             "price": "ca 5 500 kr",
             "text": "Nederländsk minimalism i kabinformat. Extremt bekväm sits med hög rygg, snygg som få och en fällning som är ren ingenjörskonst. Liggdel finns som tillbehör vilket gör den gångbar från nyfödd. Slåss med Butterfly om komforttronen – Aer+ vinner på design, förlorar på korgstorlek.",
@@ -1738,10 +1744,12 @@
               "Tillbehören kostar som en budgetvagn"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/joolz-aer-plus.html",
-            "handbagage": "54 × 45 × 23 cm hopfälld — god marginal till IATA:s gräns"
+            "handbagage": "54 × 45 × 23 cm hopfälld — god marginal till IATA:s gräns",
+            "buyUrl": "https://adtr.co/h1rt5a",
+            "buyStore": "Bonti"
           },
           {
-            "name": "Ergobaby Metro+ Deluxe",
+            "name": "Ergobaby Metro+",
             "badge": "Bästa budget",
             "price": "ca 2 500 kr",
             "text": "Mest vagn för minst pengar. Vadderad sits som barn somnar i, äkta liggläge och hjul som klarar kullersten. Packmåttet är större än rivalerna – den åker oftare i lastrum än kabin – men för priset av en Libelle får ni komfort som Butterfly. Räknehemläxa: gör den.",
@@ -1755,7 +1763,9 @@
               "Tyngre än konkurrenterna (7,8 kg)"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/ergobaby-metro-deluxe.html",
-            "handbagage": "55 × 44 × 25 cm hopfälld — ligger nära IATA:s maxgräns, men godkänd"
+            "handbagage": "55 × 44 × 25 cm hopfälld — ligger nära IATA:s maxgräns, men godkänd",
+            "buyUrl": "https://adtr.co/q45key",
+            "buyStore": "Bonti"
           }
         ],
         "sections": [
@@ -1784,7 +1794,7 @@
           },
           {
             "q": "Från vilken ålder funkar en resevagn?",
-            "a": "De flesta resevagnar har sittdel från cirka 6 månader. Flera modeller – som Joolz Aer+ och YOYO – har liggdel eller nyföddskit som tillbehör, så vagnen funkar från födseln. Kolla max­vikten också: de flesta klarar till 4–5 års ålder."
+            "a": "De flesta resevagnar har sittdel från cirka 6 månader. Flera modeller – som Joolz Aer2 och YOYO – har liggdel eller nyföddskit som tillbehör, så vagnen funkar från födseln. Kolla max­vikten också: de flesta klarar till 4–5 års ålder."
           },
           {
             "q": "Tål resevagnar kullersten och grus?",
