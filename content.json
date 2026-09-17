@@ -2205,90 +2205,100 @@
         ],
         "products": [
           {
-            "name": "Reer RainSafe universalregnskydd",
-            "badge": "Bästa regnskydd",
-            "price": "ca 250 kr",
-            "text": "Regnskyddet ni köper innan ni behöver det, för när ni behöver det är det för sent. Reers universalmodell passar nästan alla vagnar, har ventilation som hindrar imma och öppning framtill så barnet inte sitter i en påse. Originalskydd till er vagn är snäppet bättre passform – men tre gånger priset.",
+            "name": "Scandia Regnskydd",
+            "badge": "Bäst i test",
+            "price": "Från ca 229 kr",
+            "text": "Regnskydd med bra reflexer längs sidorna för synlighet i mörker, och en dragkedja på ena sidan som gör det enkelt att lyfta upp barnet utan att ta av hela skyddet. Vattentryck på 5000 mm — långt över vad ett vanligt svenskt regnväder kräver.",
             "pros": [
-              "Passar de flesta vagnmodeller",
-              "Ventilerad – ingen bastueffekt",
-              "Packas ihop till näven-storlek"
+              "Dragkedja gör det enkelt att nå barnet utan att ta av hela skyddet",
+              "Bra reflexer för synlighet i mörker",
+              "Passar de flesta vagnar med lång ligglängd"
             ],
             "cons": [
-              "Universalpassform fladdrar i hård vind",
-              "Dragkedjan känns klen"
+              "Bara i en storlek — mät er vagn innan köp",
+              "Reflex-designen är inte lika diskret som en helsvart variant"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/reer-rainsafe-universalregnskydd.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/scandia-regnskydd.html",
+            "buyUrl": "https://adtr.co/egn38b",
+            "buyStore": "Babysam"
           },
           {
-            "name": "SnoozeShade solskydd",
-            "badge": "Bästa solskydd",
-            "price": "ca 400 kr",
-            "text": "Det enda solskydd som faktiskt funkar. Andningsaktivt UV-nät som täcker hela vagnöppningen i stället för de där små parasollerna som skuggar fel yta hela dagen. Barnet får skugga, luft och lugn – många somnar bättre under den. På solsemester är den värd dubbla priset.",
+            "name": "Petite Chérie Myggnät + Solskydd",
+            "badge": "2 i 1 — bäst värde",
+            "price": "Från ca 250 kr",
+            "text": "Löser både sol- och insektsproblemet i ett enda köp istället för två separata produkter. Solskyddet ger UPF 50+ och universalfästen som passar de flesta vagnar, medan myggnätet dras över för kvällspromenader — allt i samma paket, till priset av vad en enskild produkt annars hade kostat.",
             "pros": [
-              "UPF50+ över hela öppningen",
-              "Luftgenomsläpplig – ingen värmefälla",
-              "Fungerar som insynsskydd vid lur på stan"
+              "Två produkter i ett köp — slipper handla separat solskydd och myggnät",
+              "Uttryckligen universellt, passar de flesta vagnmärken",
+              "Bättre värde än att köpa motsvarande två produkter var för sig"
             ],
             "cons": [
-              "Barnet syns sämre – titthål finns men vanan krävs",
-              "Trist design, men den sitter på utsidan av allt"
+              "Något mindre skräddarsytt än renodlade enskilda produkter",
+              "Färre färgval eftersom det är en kombinationsprodukt"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/snoozeshade-solskydd.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/petite-cherie-myggnat-solskydd.html",
+            "buyUrl": "https://adtr.co/vrlppw",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Voksi Move åkpåse",
-            "badge": "Bästa åkpåse",
-            "price": "ca 1 800 kr",
-            "text": "Norsk åkpåse som gör svensk vinter till vagnvänlig årstid. Vind- och vattentät utsida, ull inuti och en konstruktion som växer med barnet i flera säsonger. Dyr? Ja. Men det är den enda vinterprodukt ni behöver till vagnen, och begagnatvärdet är starkt.",
+            "name": "Kids Zone Mugghållare Universal",
+            "badge": "Bäst universell mugghållare",
+            "price": "Från ca 150 kr",
+            "text": "Löser problemet med att aldrig ha någonstans att ställa kaffemuggen, vattenflaskan eller nappflaskan på promenaden. Töjbar gummirem gör att den passar de allra flesta vagnmärken, och den går snabbt att flytta mellan vagn och exempelvis rullstol eller rollator.",
             "pros": [
-              "Klarar riktig vinterkyla",
-              "Växer med barnet 0–3 år",
-              "Maskintvättbar – viktigare än det låter"
+              "Uttryckligen universell — passar de flesta vagnmärken",
+              "Fungerar lika bra till kaffemugg, vattenflaska och nappflaska",
+              "Lågt pris för hur mycket den faktiskt används i vardagen"
             ],
             "cons": [
-              "Rejäl investering",
-              "För varm för höst/vår – kräv öppen ventilation"
+              "Töjbar rem kan kännas mindre stabil än ett fast märkesspecifikt fäste",
+              "Rymmer bara en behållare i taget"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-move-akpase.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/kids-zone-mugghallare-universal.html",
+            "buyUrl": "https://adtr.co/b8pb74",
+            "buyStore": "Baby V"
           },
           {
-            "name": "Easygrow myggnät",
-            "badge": "Bästa myggnät",
-            "price": "ca 150 kr",
-            "text": "Billigaste sinnesron som finns att köpa. Finmaskigt nät med resår som sitter kvar även när treåringen drar i det, mörkt tyg som syns mindre på bild och stör barnets sikt mindre. Sommarstuga, kvällspromenader, södra Europa – alltid i väskan, väger ingenting.",
+            "name": "Elodie Details Skötväska Soft Shell",
+            "badge": "Bästa vagnorganizer",
+            "price": "Från ca 699 kr",
+            "text": "Skötväska med flera fack för blöjor, våtservetter, flaskor och egna saker, med kardborrefästen som gör den enkel att sätta fast och ta loss från vagnen. Rymmer det mesta för en heldagsutflykt utan att kännas överdimensionerad.",
             "pros": [
-              "Sitter kvar tack vare bra resår",
-              "Mörkt nät = bättre sikt ut för barnet",
-              "Kostar mindre än två glassar i Italien"
+              "Flera separata fack håller ordning på innehållet",
+              "Snabbfäste med kardborre — sätts på och tas av på sekunder",
+              "Snygg nog att fungera som handväska också"
             ],
             "cons": [
-              "Finns snarlika för halva priset som funkar nästan lika bra",
-              "Lätt att glömma i förra vagnen vid byte"
+              "Mindre rymd än en klassisk ryggsäcksmodell",
+              "Premiumpris för vad som i grunden är en väska"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/easygrow-myggnat.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/elodie-details-skotvaska-soft-shell.html",
+            "buyUrl": "https://adtr.co/v5myty",
+            "buyStore": "Babysam"
           },
           {
-            "name": "Momcozy vagnorganizer",
-            "badge": "Bästa organizer",
-            "price": "ca 300 kr",
-            "text": "Låter onödig tills ni haft en. Mugghållare för ert kaffe, fack för mobil, nycklar, napp och snacks – allt inom räckhåll i stället för i botten av vagnkorgen under regnskyddet. Isolerade fack håller flaskan varm. Den enda 'lyxprylen' som klarat sig kvar på alla våra vagnar.",
+            "name": "Bumprider Ståbräda",
+            "badge": "Bäst universell ståbräda",
+            "price": "Från ca 1 295 kr",
+            "text": "Prisbelönt svenskutvecklad ståbräda som marknadsförs som den enda i världen garanterat passar alla vagntyper, tack vare ett unikt fästsystem med i princip oändliga inställningsmöjligheter. Balanserad fjädringsteknik ger en jämn, mjuk gång även på ojämnt underlag, och den fästs på några sekunder utan verktyg.",
             "pros": [
-              "Allt viktigt i ögonhöjd",
-              "Isolerade flaskfack",
-              "Flyttar mellan vagnar på en minut"
+              "Garanterat universell passform — fästsystemet anpassar sig till nästan vilken vagn som helst",
+              "Balanserad fjädring ger mjukare gång än många konkurrenter",
+              "Vann både budget- och premiumklassen i en oberoende jämförelse av åtta ståbrädor"
             ],
             "cons": [
-              "Ännu en grej på vagnen",
-              "Bjuder in till att samla skräp"
+              "Tar olika mycket plats bakom vagnen beroende på modell — kan kräva att gå lite vid sidan om på vissa vagnar",
+              "Sits till stå-/sittläge säljs separat"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/momcozy-vagnorganizer.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bumprider-stabrada.html",
+            "buyUrl": "https://adtr.co/ehgulq",
+            "buyStore": "Jollyroom"
           }
         ],
         "sections": [
           {
             "h2": "Tillbehören ni kan skippa",
-            "text": "Vagnhandskar (vantar funkar), styrväska i läder (organizer för en tredjedel av priset), paraplyhållare (nej), hjulupplysning (nej), och vagnfläkt med batteri (SnoozeShade löser värmen bättre och tystare). Regeln: om tillbehöret löser ett problem ni ännu inte haft – vänta tills ni haft det. Butiken finns kvar."
+            "text": "Vagnhandskar (vantar funkar), styrväska i läder (organizer för en tredjedel av priset), paraplyhållare (nej), hjulupplysning (nej), och vagnfläkt med batteri (ett bra solskydd löser värmen bättre och tystare). Regeln: om tillbehöret löser ett problem ni ännu inte haft – vänta tills ni haft det. Butiken finns kvar."
           },
           {
             "h2": "Resepacket: vad som följer med på semestern",
@@ -2316,6 +2326,118 @@
           {
             "q": "Hur varmt klär man barnet i åkpåse?",
             "a": "Tumregel: ett lager mindre än du tror, plus mössa. Åkpåsen med ull isolerar kraftigt – ett barn i vanliga inneklädar plus overall i en vinteråkpåse blir svettigt. Känn på nacken, inte händerna: varm nacke är lagom, svettig är för mycket."
+          }
+        ]
+      },
+      {
+        "slug": "akpase",
+        "name": "Åkpåse",
+        "emoji": "🧣",
+        "img": "photo-1522771930-78848d9293e8",
+        "cardText": "Fem åkpåsar jämförda — från bäst i test till budgetalternativ, för barnvagn och bilbarnstol.",
+        "title": "Åkpåse bäst i test 2026 | Res med Barn",
+        "description": "Åkpåse bäst i test 2026 — fem alternativ för barnvagn och bilbarnstol, jämförda på värme, passform och pris.",
+        "h1": "Åkpåse — bäst i test 2026",
+        "intro": [
+          "En åkpåse håller barnet varmt i vagnen under höst, vinter och tidig vår, och många modeller fungerar även i bilbarnstolen. Vi har jämfört fem populära alternativ på värme, passform och pris."
+        ],
+        "products": [
+          {
+            "name": "Voksi Åkpåse Move",
+            "badge": "Bäst i test",
+            "price": "Från ca 1 495 kr",
+            "text": "Norsk åkpåse med hög värmeisolering och genomtänkt passform, utsedd till bäst i test i flera oberoende jämförelser. Fungerar i både ligg- och sittdel, med selöppningar som passar de flesta vagnmodeller.",
+            "pros": [
+              "Utsedd till bäst i test av flera oberoende testare",
+              "Fungerar i både liggdel och sittdel",
+              "Håller värmen väl även på riktigt kalla dagar"
+            ],
+            "cons": [
+              "Inget att öppna vid fötterna om barnet blir för varmt",
+              "Dyrare än enklare universalmodeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-akpase-move.html",
+            "buyUrl": "https://adtr.co/icpe3j",
+            "buyStore": "Babysam"
+          },
+          {
+            "name": "Voksi Urban",
+            "badge": "Bästa premium",
+            "price": "Från ca 2 999 kr",
+            "text": "Voksis premiummodell med öppning vid fötterna för extra ventilation, napphållare vid huvudöppningen och halkskydd på undersidan. Dubbla dragkedjor gör att överdelen går att ta bort helt när säsongen växlar.",
+            "pros": [
+              "Öppning vid fötterna — kan ventileras om barnet blir för varmt",
+              "Napphållare och halkskydd inbyggt",
+              "Dubbla dragkedjor, överdelen tas bort helt vid varmare väder"
+            ],
+            "cons": [
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Överkvalificerad om ni bara behöver den några månader per år"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-urban.html",
+            "buyUrl": "https://adtr.co/bkvpv2",
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Elodie Details Åkpåse",
+            "badge": "Snyggast design",
+            "price": "Från ca 1 195 kr",
+            "text": "Svenskdesignad åkpåse som uppdateras med nya mönster varje säsong, med öppningsbara hål i ryggen som gör den kompatibel med de flesta 5-punktsbälten. Smart flärp på baksidan förhindrar att åkpåsen glider i sittdelen.",
+            "pros": [
+              "Stort utbud av snygga, säsongsuppdaterade mönster",
+              "Flärp på baksidan förhindrar glidning i sittdelen",
+              "Maskintvättbar i 30 grader"
+            ],
+            "cons": [
+              "Något mindre värmande än Voksi-modellerna enligt jämförelser",
+              "Populära mönster tar ofta slut i mindre storlekar"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/elodie-details-akpase.html",
+            "buyUrl": "https://adtr.co/pb6hs8",
+            "buyStore": "Babysam"
+          },
+          {
+            "name": "Bozz Åkpåse Lammskinn",
+            "badge": "Varmast — äkta lammskinn",
+            "price": "Från ca 1 495 kr",
+            "text": "Fodrad med äkta, långhårigt lammskinn från Nya Zeeland (Woolmark- och ÖKO-Tex-certifierat, helt kromfritt), vilket ger en värme ingen syntetisk fyllning riktigt kommer upp i. Uttag för 5-punktsbälte gör att den fungerar både i vagnens sittdel och i bilbarnstolen. Öppnas helt via dragkedja i mitten och vid fötterna, så den även funkar som lektäcke på golvet.",
+            "pros": [
+              "Äkta lammskinn ger en värme som är svår att matcha syntetiskt",
+              "Fungerar både i vagn och bilbarnstol tack vare 5-punktsbälte-uttag",
+              "Kan öppnas helt och användas som lektäcke"
+            ],
+            "cons": [
+              "Andas sämre än syntetiska alternativ — bäst vid minusgrader, kan bli för varmt vid mildare väder",
+              "Kräver särskild skötsel (ullschampo, handtvätt eller ullprogram, får ej torktumlas)"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bozz-akpase-lammskinn.html",
+            "buyUrl": "https://adtr.co/tzpq90",
+            "buyStore": "Baby V"
+          },
+          {
+            "name": "Petite Chérie Åkpåse Essence",
+            "badge": "Mysigast/roligast design",
+            "price": "Från ca 699–1 100 kr",
+            "text": "Jollyrooms eget märke, känt för lekfulla mönster och färger snarare än de mer avskalade konkurrenterna. Rejält vadderad med tjock stoppning i kanaler och en fuskpälskant runt huvudöppningen som ger en extra mysig känsla. Finns i tolv olika utföranden.",
+            "pros": [
+              "Störst utbud av roliga mönster och färger i jämförelsen",
+              "Rejält vadderad — håller väl runt nollan och nedåt",
+              "Fuskpälskant runt huvudet för extra mysfaktor"
+            ],
+            "cons": [
+              "Säljs uteslutande hos Jollyroom, inga andra butiksalternativ",
+              "Går inte att öppna nedifrån på alla modeller"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/petite-cherie-akpase.html",
+            "buyUrl": "https://adtr.co/ey2vs2",
+            "buyStore": "Jollyroom"
+          }
+        ],
+        "sections": [],
+        "faq": [
+          {
+            "q": "Kan åkpåsen användas i både barnvagn och bilbarnstol?",
+            "a": "De flesta åkpåsar går att använda i båda, men kolla alltid att åkpåsen har selöppningar som matchar er bilbarnstols sele (ofta ett 5-punktsbälte) — annars kan det bli fel passform eller säkerhetsrisk i bilen."
           }
         ]
       },
