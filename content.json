@@ -2561,84 +2561,94 @@
         ],
         "products": [
           {
-            "name": "Doomoo Amningskudde Softy",
-            "badge": "Bäst i test",
-            "price": "Från ca 500 kr",
-            "text": "Stabil EPS-fyllning som håller formen länge utan att plattas till. U-formen ger stöd från båda sidor och överdraget går att tvätta i maskin.",
+            "name": "Najell gravid- & amningskudde",
+            "badge": "Smartast — 3-i-1",
+            "price": "Från ca 1 295 kr",
+            "text": "Unik 3-i-1-lösning: en hel gravidkudde med två mindre amningskuddar inuti överdraget. Efter förlossningen knyts kudden upp och delas i två separata, mindre amningskuddar som går att använda tillsammans eller var för sig. Fyllningen av EPS-pärlor formar sig tyst efter kroppen, och hårdheten justeras genom att dra åt eller lossa knuten.",
             "pros": [
-              "Håller formen mycket bra över tid",
-              "Tvättbart överdrag",
-              "Ger stöd från båda sidor"
+              "Fungerar som gravidkudde OCH amningskudde — samma köp hela vägen",
+              "Justerbar hårdhet genom att knyta åt eller lossa",
+              "Tyst EPS-fyllning stör inte barnets sömn"
             ],
             "cons": [
-              "Något skrymmande att förvara",
-              "EPS-kulor kan låta lite vid rörelse"
+              "Dyrare än renodlade amningskuddar utan gravidfunktion",
+              "Större och mer otymplig när den används i sin helhet"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/doomoo-amningskudde-softy.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-gravid-amningskudde.html",
+            "buyUrl": "https://adtr.co/4qkmx3",
+            "buyStore": "Baby V"
           },
           {
-            "name": "Bbhugme Amningskudde",
-            "badge": "Bäst ergonomi",
-            "price": "Från ca 900 kr",
-            "text": "Designad av kiropraktor för optimalt stöd åt både förälder och barn. Formstark och skön även vid längre amningspass.",
+            "name": "bbhugme Gravid- och Amningskudde",
+            "badge": "Bäst helkroppsstöd",
+            "price": "Från ca 949 kr",
+            "text": "Böjbar kudde som formar sig runt hela kroppen under graviditeten och blir ett stabilt amningsstöd efteråt. Den distinkta böjda formen ger stöd för rygg, mage och ben samtidigt, vilket gör den populär som sömnstöd redan innan barnet är fött.",
             "pros": [
-              "Kiropraktordesignad ergonomi",
-              "Skön även vid långa amningspass",
-              "Stilren design"
+              "Ger stöd åt rygg, mage och ben samtidigt tack vare den böjda formen",
+              "Fungerar väl även bara som sömnstöd under graviditeten",
+              "Välkänt varumärke med gott rykte bland svenska föräldrar"
             ],
             "cons": [
-              "I det högre prissegmentet",
-              "Stor, kräver förvaringsyta"
+              "Tar mer plats i sängen än en renodlad amningskudde",
+              "Något klumpig att ha med sig utanför hemmet"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/bbhugme-amningskudde.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bbhugme-gravid-amningskudde.html",
+            "buyUrl": "https://adtr.co/5wgppl",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Beemoo CARE Gravid- & Amningskudde",
-            "badge": "Mest mångsidig",
-            "price": "Från ca 400 kr",
-            "text": "Fungerar både som sovstöd under graviditeten och som amningskudde efteråt. Mikropärlorna formar sig efter kroppen.",
+            "name": "Sebra Amningskudde",
+            "badge": "Snyggast design",
+            "price": "Från ca 599 kr",
+            "text": "Amningskudde i certifierad ekologisk bomull, fylld med temperaturreglerande kapokfibrer. Fungerar som ryggstöd under graviditeten, magstöd eller stöd mellan knäna för bättre sömn, och blir sedan ett amningsstöd som avlastar nacke och axlar. Praktiska knytband håller kudden på plats runt midjan.",
             "pros": [
-              "Användbar både gravid och efter förlossning",
-              "Formar sig skönt efter kroppen",
-              "Bra prisvärde"
+              "Ekologisk bomull och kapokfyllning — skönt naturmaterial",
+              "Knytband håller kudden säkert på plats runt midjan",
+              "Snygg skandinavisk design som fungerar som prydnadskudde när den inte används"
             ],
             "cons": [
-              "Mindre specialiserad än renodlade amningskuddar",
-              "Kan kännas stor i sängen"
+              "Mindre stödjande än större gravidkuddar för den som vill ha helkroppsstöd",
+              "Kapokfyllning kräver särskild skötsel i torktumlaren (ullbollar rekommenderas)"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/beemoo-care-gravid-amningskudde.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/sebra-amningskudde.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fmamma-pappa%2Famningskudde%2Fsebra-nursing-pillow-organic-cotton-blue-olive_1",
+            "buyStore": "Pyret & Snäckan"
           },
           {
-            "name": "Candide Amningskudde Stjärnor",
+            "name": "Vinter & Bloom Meadow Bumper Buddy",
             "badge": "Bästa budget",
-            "price": "Från ca 300 kr",
-            "text": "Enkel, mjuk och prisvärd kudde för dig som vill testa formatet utan stor investering. Täcker grunderna utan extra finesser.",
+            "price": "Från ca 461 kr",
+            "text": "Prisvärt alternativ för den som vill hålla nere kostnaden utan att offra grundfunktionen. Ger stöd under amning eller flaskmatning och fungerar även som stödkudde när barnet börjar öva på att sitta.",
             "pros": [
-              "Lågt pris",
-              "Mjuk och skön",
-              "Bra för den som vill testa"
+              "Betydligt billigare än premiumalternativen",
+              "Fungerar även som stödkudde när barnet övar sittande",
+              "Lätt att hålla ren"
             ],
             "cons": [
-              "Mindre stabilt stöd vid längre pass",
-              "Håller formen sämre över tid"
+              "Mindre justerbar än Najell/bbhugme",
+              "Fungerar inte som gravidkudde, bara amningsstöd"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/candide-amningskudde-stjarnor.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/vinter-bloom-meadow-bumper-buddy.html",
+            "buyUrl": "https://adtr.co/4csa7n",
+            "buyStore": "Babysam"
           },
           {
-            "name": "Vinter & Bloom Nordic Leaf Sovorm",
-            "badge": "Bäst som sovstöd",
-            "price": "Från ca 450 kr",
-            "text": "Formbar sovorm som fungerar både som amningsstöd och sängkudde för sidsömn. Skandinavisk, diskret design.",
+            "name": "Doomoo Amningskudde",
+            "badge": "Mest etablerad",
+            "price": "Från ca 594–699 kr",
+            "text": "Välkänd amningskudde med lång meterlängd som ger gott om stöd runt hela kroppen. Går även att använda som gravidkudde under graviditeten, och finns i flera mönster och färger.",
             "pros": [
-              "Dubbelfunktion som sovstöd",
-              "Diskret, snygg design",
-              "Formbar efter behov"
+              "Lång, generös form ger stöd runt hela kroppen",
+              "Fungerar både som gravidkudde och amningskudde",
+              "Brett utbud av mönster och färger"
             ],
             "cons": [
-              "Mindre riktat stöd vid själva amningen",
-              "Kräver mer plats i sängen"
+              "Tar mer plats än kompakta amningskuddar",
+              "Kräver större yta i sängen eller soffan för att fungera optimalt"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/vinter-bloom-nordic-leaf-sovorm.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/doomoo-amningskudde.html",
+            "buyUrl": "https://adtr.co/aosvmp",
+            "buyStore": "Babysam"
           }
         ],
         "sections": [
