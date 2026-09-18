@@ -2674,40 +2674,44 @@
         "description": "Sleep Carrier bäst i test 2026 — portabla babynest med handtag jämförda. Najell SleepCarrier, Liewood, Filibabba och fler.",
         "h1": "Sleep Carrier (babynest) bäst i test 2026",
         "intro": [
-          "En sleep carrier (babynest) är en portabel, stadig \"säng\" med handtag som barnet kan sova, ligga och åka i — hemma, i barnvagnen eller på resande fot. Vi har jämfört de mest populära modellerna på Sverige-marknaden."
+          "En sleep carrier — även kallad mjuklift eller babynest med handtag — kombinerar ett tryggt babynest med bärhandtag, så att du kan flytta ett sovande barn mellan rum, barnvagn och besök utan att väcka det. Vi har jämfört fem populära babylift-alternativ på funktion, säkerhet och pris."
         ],
         "products": [
           {
-            "name": "Najell SleepCarrier X",
+            "name": "Najell SleepCarrier Vol. 5",
             "badge": "Bäst i test",
-            "price": "Från ca 1 249 kr",
-            "text": "Uppdaterad flaggskeppsmodell med andningsbart airmesh runt alla sidor, avtagbar bottenplatta och Oeko-Tex-certifierat material. Fungerar som babynest, mjuklift och lekfilt.",
+            "price": "Från ca 1 099–1 799 kr",
+            "text": "Uppdaterad generation av Najells populära babynest, med nytt låssystem (dolda krokar bakom bärhandtagen), stabilare sidor och ny airmesh-design på insidan. Fungerar som babynest, mjuklift och lekmatta i ett — öppnas helt till en rymlig 111 × 66 cm lekyta. Testad och godkänd enligt EN 1466, EN 16890 och ASTM F2050-19.",
             "pros": [
-              "Oeko-Tex-certifierat material",
-              "Tre funktioner i en produkt",
-              "Maskintvättbar i 40 grader"
+              "Tre funktioner i en: babynest, mjuklift och lekmatta",
+              "Nytt låssystem ger extra säkerhet vid bärande",
+              "Tillverkad av återvunna/biobaserade material"
             ],
             "cons": [
-              "Högre pris än en klassisk lift",
-              "Bottenplattan måste tas ut vid tvätt"
+              "Lång torktid, får inte torktumlas — planera tvätten i förväg",
+              "Dyrare än enklare babynest utan lift-funktion"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-sleepcarrier-x.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-sleepcarrier-vol-5.html",
+            "buyUrl": "https://adtr.co/5i80o1",
+            "buyStore": "Babysam"
           },
           {
-            "name": "Najell SleepCarrier Volume 3",
-            "badge": "Bäst för syskonvagn",
-            "price": "Från ca 1 199 kr",
-            "text": "Passar i nästan alla barnvagnsliggdelar, även smalare syskonvagnar. Justerbara snören runt om anpassar storleken efter barnets ålder.",
+            "name": "Voksi Carry Me",
+            "badge": "Skumfri — miljövänligt val",
+            "price": "Från ca 995–1 299 kr",
+            "text": "Norskt babynest byggt för aktiva familjer, med 3D-mesh på hela insidan istället för skum — ett medvetet, mer miljövänligt materialval. Patenterade Soft Release™ gör att bärhandtagen bara går att använda när hörnen är låsta och infällda, vilket automatiskt drar med hörnen uppåt så fort man lyfter. Vind- och vattenavvisande topcover med dragkedja.",
             "pros": [
-              "Passar smala liggdelar också",
-              "Justerbar storlek med snören",
-              "Går att fälla ut till lekfilt"
+              "Soft Release™-låssystem ger extra säkerhet vid bärande",
+              "Skumfri konstruktion — mer miljövänligt materialval",
+              "Kan öppnas helt platt och användas som lekfilt"
             ],
             "cons": [
-              "Saknar spänne för att fästa handtaget uppåt",
-              "Något mindre bottenplatta än X-modellen"
+              "Maxvikt 9 kg — kortare användningstid än vissa konkurrenter (ca 6–7 månader)",
+              "Färre färgval än Najell"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-sleepcarrier-volume-3.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-carry-me.html",
+            "buyUrl": "https://adtr.co/7uoou9",
+            "buyStore": "Bonti"
           },
           {
             "name": "Liewood Babynest",
@@ -2723,39 +2727,45 @@
               "Färre funktioner än Najells modeller",
               "Ingen inbyggd bärsele-funktion"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/liewood-babynest.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/liewood-babynest.html",
+            "buyUrl": "https://adtr.co/uvyzc0",
+            "buyStore": "Meds"
           },
           {
-            "name": "Filibabba Babynest",
-            "badge": "Bästa budget",
-            "price": "Från ca 600 kr",
-            "text": "Prisvärt alternativ som täcker grunderna: tryggt, format nest för nyfödda hemma eller på resande fot.",
+            "name": "Alice & Fox Astrid Babynest med Handtag",
+            "badge": "Bäst med lekbåge",
+            "price": "Från ca 899 kr",
+            "text": "Babynest/mjuklift med handtag på sidorna som gör den enkel att bära mellan rum, barnvagn, spjälsäng eller soffa. Avtagbar aktivitetsbåge för att hänga upp leksaker gör den extra användbar för lek, inte bara vila. Oeko-Tex Standard 100-certifierad.",
             "pros": [
-              "Lågt pris",
-              "Lätt och enkel att bära med sig",
-              "Skönt mot känslig hud"
+              "Avtagbar aktivitetsbåge — fungerar även som lekplats, inte bara babynest",
+              "Handtag gör den enkel att flytta mellan rum utan att väcka barnet",
+              "Hög kant förhindrar att barnet rullar iväg"
             ],
             "cons": [
-              "Mindre stadiga kanter än premiummodeller",
-              "Ingen lekfilt-funktion"
+              "Handtagen kan slitas med tiden — kontrollera regelbundet",
+              "Leksaker till aktivitetsbågen säljs separat"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/filibabba-babynest.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/alice-fox-astrid-babynest-med-handtag.html",
+            "buyUrl": "https://adtr.co/8cj30s",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Sebra Babynest",
-            "badge": "Bäst material",
-            "price": "Från ca 950 kr",
-            "text": "Oeko-Tex-certifierat och tillverkat i en kombination av bomull och polyester för extra mjukhet och slitstyrka.",
+            "name": "Sebra 3-i-1 Babynest",
+            "badge": "Bäst i klassen — komfort",
+            "price": "Från ca 1 495–1 795 kr",
+            "text": "Stilren babynest/mjuklift med kapokfyllning i sidorna som reglerar temperaturen och håller barnet varken för varmt eller kallt. Madrassen är tillverkad i ett naturligt antibakteriellt material. Bärhandtag gör det enkelt att lyfta i och ur barnvagnen, och den går även att öppna till en lekmatta.",
             "pros": [
-              "Oeko-Tex-certifierat",
-              "Slitstarkt material",
-              "Diskret, tidlös design"
+              "Kapokfyllning ger naturlig temperaturreglering",
+              "Antibakteriellt madrassmaterial",
+              "Fungerar som babynest, mjuklift och lekmatta i ett"
             ],
             "cons": [
-              "Färre färgval än Liewood",
-              "Saknar bärhandtag på vissa varianter"
+              "Dyrare än enklare babynest utan lift-funktion",
+              "Kapok kräver särskild skötsel vid tvätt"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/sebra-babynest.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/sebra-3-i-1-babynest.html",
+            "buyUrl": "https://www.babysam.se/sebra-3-i-1-babynest-blue-onesize",
+            "buyStore": "Babysam"
           }
         ],
         "sections": [
@@ -2771,6 +2781,118 @@
           }
         ],
         "img": "photo-1458731909820-5850bdcaee0b"
+      },
+      {
+        "slug": "klassiska-babynest",
+        "name": "Klassiska babynest",
+        "emoji": "🪺",
+        "img": "photo-1458731909820-5850bdcaee0b",
+        "cardText": "Fem klassiska babynest utan bärfunktion — för hemmet, spjälsängen eller soffan.",
+        "title": "Babynest bäst i test 2026 | Res med Barn",
+        "description": "Babynest bäst i test 2026 — fem klassiska babynest för nyfödda, jämförda på material, komfort och pris.",
+        "h1": "Babynest — bäst i test 2026",
+        "intro": [
+          "Ett klassiskt babynest ger nyfödda en trygg, ombonad plats att vila i hemma, i spjälsängen eller i soffan. Till skillnad från en sleep carrier/mjuklift saknar de flesta av de här bärhandtag — perfekt om ni redan har en babylift för transport och bara vill ha ett enkelt nest att ha hemma."
+        ],
+        "products": [
+          {
+            "name": "Vinter & Bloom Meadow Babynest",
+            "badge": "Mest ekologiskt",
+            "price": "Från ca 849–1 189 kr",
+            "text": "Tillverkad av 70 % GOTS-certifierad ekologisk bomull och 30 % lin, med avtagbart överdrag som går att tvätta separat. Går att förlänga i takt med att barnet växer, vilket ger längre användningstid än många konkurrenter.",
+            "pros": [
+              "70 % GOTS-certifierad ekologisk bomull och lin",
+              "Går att förlänga när barnet växer",
+              "Oeko-Tex 100-certifierad, fri från skadliga kemikalier"
+            ],
+            "cons": [
+              "Inga bärhandtag — måste lyftas i sin helhet",
+              "Dyrare än rena budgetalternativ"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/vinter-bloom-meadow-babynest.html",
+            "buyUrl": "https://adtr.co/dpxmcn",
+            "buyStore": "Babysam"
+          },
+          {
+            "name": "Mini Dreams Babynest Cozy",
+            "badge": "Bästa budget",
+            "price": "Från ca 599–699 kr",
+            "text": "Prisvärt babynest i oval form som täcker grundbehovet utan extra finesser. Bomull/polyester-material, maskintvättbart vid 40 grader, finns i flera färger och med eller utan volang.",
+            "pros": [
+              "Betydligt billigare än premiumalternativen",
+              "Enkel att tvätta (maskintvätt 40°)",
+              "Bra förstaköp för den som är osäker på hur mycket babynest används"
+            ],
+            "cons": [
+              "Inga bärhandtag",
+              "Enklare material och känsla än premiumalternativen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/mini-dreams-babynest-cozy.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.babyv.se%2Fsv%2Farticles%2F2.143.24110%2Fmini-dreams-babynest-cozy-beige-med-volang",
+            "buyStore": "Baby V"
+          },
+          {
+            "name": "Done by Deer Babynest Cozy",
+            "badge": "Mest mångsidig",
+            "price": "Från ca 899–1 349 kr",
+            "text": "Mjukt babynest i bomull med fyllning av ekologiska polyesterfibrer och en PU-skummadrass. Dolda YKK-dragkedjor gör att madrassen enkelt kan tas ur för tvätt separat från överdraget. Fungerar lika bra för sömn, magträning och lek.",
+            "pros": [
+              "Dolda YKK-dragkedjor gör tvätt enkel — madrass och överdrag separat",
+              "Fungerar för sömn, magträning och lek",
+              "Oeko-Tex-certifierad"
+            ],
+            "cons": [
+              "Inga bärhandtag",
+              "Skummadrassen kräver handtvätt"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/done-by-deer-babynest-cozy.html",
+            "buyUrl": "https://adtr.co/w8joo7",
+            "buyStore": "Bonti"
+          },
+          {
+            "name": "Filibabba Babynest Kapok Muddly",
+            "badge": "Bäst för allergiker",
+            "price": "Från ca 899 kr",
+            "text": "Fylld med 100 % kapok och med ytterstoff i 100 % ekologisk bomull. Kapokfibrer innehåller ett naturligt bitterämne som gör att varken dammkvalster, bakterier eller mögelsporer kan leva i dem — ett bra val för barn med allergikänslighet. En dragkedja gör att kanten kan lynas av och användas som sängrand när barnet växt ur babynestet, vilket förlänger användningstiden.",
+            "pros": [
+              "Kapokfyllning är naturligt resistent mot dammkvalster och bakterier — bra för allergiker",
+              "Dragkedjefunktion förlänger användningstiden som sängrand",
+              "Från Filibabba, det första danska märket med babynest på marknaden"
+            ],
+            "cons": [
+              "Inga bärhandtag",
+              "Kapokfyllningen kräver särskild skötsel — bara överdraget går att tvätta"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/filibabba-babynest-kapok.html",
+            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fbarnrum-barnmobler%2Fbabynest-polar%2Ffilibabba-babynest-kapok-muddly-bla",
+            "buyStore": "Pyret & Snäckan"
+          },
+          {
+            "name": "Vanilla Copenhagen Babynest",
+            "badge": "Mest hållbart/allergivänligt",
+            "price": "Pris varierar — kontrollera hos återförsäljare",
+            "text": "Dansk design med fokus på hållbara, ekologiska material och allergivänliga textilier. Ett bra val för familjer som prioriterar miljömärkta material framför extra funktioner som bärhandtag eller lekbåge.",
+            "pros": [
+              "Fokus på hållbara, ekologiska material genomgående",
+              "Allergivänlig textil, skonsam mot känslig hud",
+              "Stilren dansk design"
+            ],
+            "cons": [
+              "Inga bärhandtag",
+              "Mindre etablerat i Sverige än Vinter & Bloom/Done by Deer"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/vanilla-copenhagen-babynest.html",
+            "buyUrl": "https://adtr.co/7sm222",
+            "buyStore": "Jollyroom"
+          }
+        ],
+        "sections": [],
+        "faq": [
+          {
+            "q": "Vad är skillnaden mellan ett babynest och en sleep carrier/mjuklift?",
+            "a": "Ett klassiskt babynest är tänkt att stanna på plats (hemma, i spjälsängen), medan en sleep carrier/mjuklift har bärhandtag som gör att ni kan flytta ett sovande barn mellan rum, barnvagn och besök utan att väcka det."
+          }
+        ]
       },
       {
         "slug": "nappar",
@@ -3258,7 +3380,9 @@
               "Kan kännas för stretchig efter ca ett år",
               "Något dyrare än standardmodeller"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/aldoria-bambu-soft.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/aldoria-bambu-soft.html",
+            "buyUrl": "https://adtr.co/rbqlnp",
+            "buyStore": "Jollyroom"
           },
           {
             "name": "Coracor Bärsjal",
@@ -3274,23 +3398,27 @@
               "Högre pris",
               "Kräver viss övning att knyta första gångerna"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/coracor-barsjal.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/coracor-barsjal.html",
+            "buyUrl": "https://adtr.co/socl6t",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Ergobaby Aura Wrap Mesh",
-            "badge": "Svalast",
-            "price": "Från ca 800 kr",
-            "text": "Tunt, luftigt meshmaterial gör den svalast i jämförelsen — perfekt för varma dagar eller barn som lätt blir överhettade.",
+            "name": "Najell Wrap Bärsjal",
+            "badge": "Enklast — som en t-shirt",
+            "price": "Från ca 749 kr",
+            "text": "Färdigknuten bärsjal som träs på precis som en t-shirt — inget knytande, inga spännen. Kombinerar bärselens enkelhet med sjalens mjuka, nära känsla. Prisbelönt med utmärkelsen Årets Barnprodukt. Passar från nyfödd upp till ca 1 år eller 9 kg.",
             "pros": [
-              "Mycket svalt material",
-              "Tydliga markeringar underlättar knytning",
-              "Lätt stretch ger god passform"
+              "Prisbelönt design (Årets Barnprodukt)",
+              "Ingen knytteknik att lära sig — på som en t-shirt",
+              "Fördelar vikten jämnt över axlar och rygg"
             ],
             "cons": [
-              "Mindre isolerande på kalla dagar",
-              "Mindre robust än vävda sjalar"
+              "Fast storlek — går inte att justera lika flexibelt som en traditionell sjal",
+              "Kan ta lite tid att vänja sig vid att få på och placera barnet första gångerna"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/ergobaby-aura-wrap-mesh.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/najell-wrap-barsjal.html",
+            "buyUrl": "https://adtr.co/7crkiv",
+            "buyStore": "Babysam"
           },
           {
             "name": "Moby Elements",
@@ -3306,23 +3434,27 @@
               "Mindre robust vid längre, dagliga bärpass",
               "Andas sämre än bambu eller mesh"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/moby-elements.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/moby-elements.html",
+            "buyUrl": "https://adtr.co/tmabon",
+            "buyStore": "Babysam"
           },
           {
-            "name": "Mushie Bärsjal",
-            "badge": "Bäst ergonomi",
-            "price": "Från ca 650 kr",
-            "text": "Ekologisk bomull med lätt stretch ger fint stöd åt barnets naturliga sittställning. Universell passform för olika kroppstyper.",
+            "name": "Moonboon Bärsjal",
+            "badge": "Smartast — inbyggd ficka",
+            "price": "Från ca 499–559 kr",
+            "text": "Stretchig trikåsjal i 95 % ekologisk bomull och 5 % elastan, med en unik dragkedjeficka i ena änden som rymmer mobilen. Tunt och andningsbart tyg gör den skön även på varma dagar, men kräver att man knyter tight för bra stöd när barnet blir tyngre.",
             "pros": [
-              "God ergonomisk sittställning för barnet",
-              "Universell passform",
-              "Svalt nog för inomhusbruk"
+              "Inbyggd dragkedjeficka för mobil eller nycklar — unikt i klassen",
+              "Tunt, andningsbart tyg fungerar även varma dagar",
+              "Ekologisk bomull, skön mot huden"
             ],
             "cons": [
-              "Mindre känt varumärke, färre återförsäljare",
-              "Begränsat färgutbud"
+              "Rekommenderad maxvikt 10 kg — kortare användningstid",
+              "Måste knytas tight för bra stöd när barnet väger mer"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/mushie-barsjal.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/moonboon-barsjal.html",
+            "buyUrl": "https://adtr.co/f40hk3",
+            "buyStore": "Babysam"
           }
         ],
         "sections": [
@@ -3365,23 +3497,27 @@
               "I det högre prissegmentet",
               "Begränsat mönsterutbud"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/geggamoja-uv-drakt.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/geggamoja-uv-drakt.html",
+            "buyUrl": "https://adtr.co/grvl9g",
+            "buyStore": "Meds"
           },
           {
-            "name": "Polarn O. Pyret UV-set",
+            "name": "Filibabba Villads UV-dräkt",
             "badge": "Mest hållbart material",
-            "price": "Från ca 400 kr",
-            "text": "Långärmad tröja i återvunnen polyamid från gamla fiskenät, kombineras med byxor eller shorts för anpassningsbart skydd.",
+            "price": "Från ca 250–350 kr",
+            "text": "Dansk UV-dräkt från ett av få GOTS-certifierade danska varumärken, med långa ärmar och shorts för heltäckande UPF 50+-skydd. Snabbtorkande stretchmaterial med dragkedja fram, skön mot barnets känsliga hud.",
             "pros": [
-              "Tillverkat av återvunnet material",
-              "Går att kombinera tröja/byxa efter väder",
-              "Slitstarkt, håller flera säsonger"
+              "GOTS-certifierat — ett av få danska varumärken med den certifieringen",
+              "Heltäckande skydd tack vare långa ärmar och shorts",
+              "Snabbtorkande stretchmaterial"
             ],
             "cons": [
-              "Säljs ofta som separata delar (högre totalpris)",
-              "Färre färgval än vissa konkurrenter"
+              "Färre mönster/färgval än svenska konkurrenter",
+              "Något dyrare än enklare UV-dräkter"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/polarn-o-pyret-uv-set.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/filibabba-villads-uv-drakt.html",
+            "buyUrl": "https://adtr.co/teyl62",
+            "buyStore": "Babysam"
           },
           {
             "name": "Swimpy UV-dräkt",
@@ -3397,39 +3533,45 @@
               "Något mindre täckande än helkroppsmodeller",
               "Kräver komplettering med UV-hatt"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/swimpy-uv-drakt.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/swimpy-uv-drakt.html",
+            "buyUrl": "https://adtr.co/uicl9w",
+            "buyStore": "Meds"
           },
           {
-            "name": "Lindex UV-dräkt",
-            "badge": "Bästa budget",
-            "price": "Från ca 200 kr",
-            "text": "UPF 50+-skydd i återvunnen polyester/elastanmix. Finns i flera mönster och som endels- eller tvådelad variant.",
+            "name": "Reima Vesihiisi UV-Dräkt",
+            "badge": "Premiumkvalitet",
+            "price": "Från ca 229–469 kr",
+            "text": "Finsk premiumkvalitet från Reima, kända för funktionella nordiska barnkläder. Halvlånga ben och ärmar, lång dragkedja för enkel på- och avklädning, UPF50+, Oeko-Tex-certifierad med återvunna fibrer. Tål hård lek säsong efter säsong.",
             "pros": [
-              "Lågt pris",
-              "Bra utbud av mönster och stilar",
-              "Återvunnet material"
+              "Premiumkvalitet från etablerat finskt funktionsklädesmärke",
+              "Certifierat återvunna fibrer, Oeko-Tex-certifierad",
+              "Tål hård lek och håller flera säsonger"
             ],
             "cons": [
-              "Något mindre robust över flera säsonger",
-              "Kortare ärmar på vissa modeller"
+              "Halvlånga ärmar/ben ger mindre täckning än helövertäckande modeller",
+              "Dyrare än budgetalternativ"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/lindex-uv-drakt.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/reima-vesihiisi-uv-drakt.html",
+            "buyUrl": "https://adtr.co/ewv1w0",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Petite Chérie Atelier Kajsa",
-            "badge": "Snyggast design",
-            "price": "Från ca 450 kr",
-            "text": "Långärmad UV-baddräkt med volanger och mönster som sticker ut. Kombinerar skydd med genomtänkt stil.",
+            "name": "Petite Chérie Atelier Cecina UV-Set",
+            "badge": "Snyggast mönster",
+            "price": "Från ca 250–350 kr",
+            "text": "UV-set med leopardmönster och UPF 50+ solskydd mot både UVA- och UVB-strålar. Dragkedja i ryggen och resår i midjan ger en säker, bekväm passform både vid poolen och på stranden.",
             "pros": [
-              "Utmärkande, omtyckt design",
-              "Långärmat för maximalt skydd",
-              "Bra kvalitetskänsla"
+              "Iögonfallande mönster som sticker ut bland de mer avskalade konkurrenterna",
+              "Resår i midjan ger bekväm, justerbar passform",
+              "Skyddar mot både UVA och UVB"
             ],
             "cons": [
-              "Dragkedjan kan irritera vissa barn",
-              "I det högre prissegmentet"
+              "Mönstret tilltalar inte alla — mer utmärkande än klassiska enfärgade dräkter",
+              "Färre storlekar tillgängliga jämfört med de största märkena"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/petite-cherie-atelier-kajsa.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/petite-cherie-atelier-cecina-uv-set.html",
+            "buyUrl": "https://adtr.co/71kzsh",
+            "buyStore": "Jollyroom"
           }
         ],
         "sections": [
