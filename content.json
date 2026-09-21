@@ -3607,88 +3607,98 @@
         "description": "Regnställ bäst i test 2026 — fem regnställ för barn jämförda på vattentäthet, foder och passform. Didriksons, Nordbjørn och fler.",
         "h1": "Regnställ för barn bäst i test 2026",
         "intro": [
-          "Ett bra regnställ håller barnet torrt och varmt oavsett väder. Vi har jämfört fem populära regnställ på vattenpelare, foder och praktiska detaljer som justerbara fothällor och reflexer."
+          "Ett regnställ finns i två varianter: fodrat (med värmande fleecefoder, för kyligare höst- och vårdagar) eller ofodrat (bara ett vattentätt skal, för mildare väder över vanliga kläder). Vi har jämfört fem populära regnställ — tre fodrade, två ofodrade — på vattenpelare, foder och praktiska detaljer, tydligt märkta så ni ser direkt vilken typ det är."
         ],
         "products": [
           {
-            "name": "Didriksons Boardman",
+            "name": "Didriksons Boardman Fodrat Regnställ",
             "badge": "Bäst i test (fodrat)",
-            "price": "Från ca 800 kr",
-            "text": "Fodrat regnställ i galon med värmande fleecefoder, svetsade sömmar och avtagbar huva. Vattenpelare 8 000 mm.",
+            "price": "Från ca 699–799 kr",
+            "text": "Tåligt fodrat regnställ med hög vattenpelare, svetsade sömmar och fleecefodrad galon. Den nedersta decimetern av jackan är medvetet ofodrad, så att vatten inte kan krypa in och blöta ner fodret om barnet sätter sig i en djup pöl.",
             "pros": [
-              "Håller värmen bra tack vare fleecefoder",
-              "Vattenpelare 8 000 mm",
-              "Justerbara, avtagbara fothällor"
+              "Genomtänkt design — ofodrad nederkant förhindrar att fodret blir blött",
+              "Justerbara höga byxor med kardborrefästen över axlarna",
+              "Slittåligt, håller flera säsonger"
             ],
             "cons": [
-              "Kan bli för varmt på milda dagar",
-              "I den högre prisklassen"
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Tål inte torktumling"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-boardman.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-boardman-fodrat-regnstall.html",
+            "buyUrl": "https://adtr.co/o47oy4",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Didriksons Waterman",
-            "badge": "Bäst ofodrat",
-            "price": "Från ca 500 kr",
-            "text": "Populärt ofodrat regnställ med bra passform och hög vattentäthet — perfekt som extra lager över varmare kläder.",
+            "name": "Nordbjørn Skagen Fodrat Regnställ",
+            "badge": "Bästa budget (fodrat)",
+            "price": "Från ca 599–699 kr",
+            "text": "Funktionellt fodrat regnställ med svetsade sömmar, mjukt fleecefoder och avtagbar huva. Justerbara hängslen och elastiska fothällor ger en bra passform, och reflexdetaljer ökar synligheten i mörker. Utsedd till Bästa Budgetval av Bäst-i-test.se.",
             "pros": [
-              "Går att lager-på-lager-klä efter väder",
-              "Bra passform",
-              "Hög vattentäthet"
+              "Utsedd till bästa budgetval av Bäst-i-test.se",
+              "Avtagbar huva och elastiska fothällor",
+              "Vattenpelare 8000 mm — klarar rejält regn"
             ],
             "cons": [
-              "Kräver eget varmt lager under på kalla dagar",
-              "Inget foder inbyggt"
+              "Färre detaljer (fickor, justerbar huva) än dyrare alternativ",
+              "Enklare finish än premiummodellerna"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-waterman.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-skagen-fodrat-regnstall.html",
+            "buyUrl": "https://adtr.co/6snxcg",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Nordbjørn Skagen",
-            "badge": "Bästa budget",
-            "price": "Från ca 450 kr",
-            "text": "Prisvärt fodrat regnställ som täcker det viktigaste. Skillnaden mot dyrare modeller märks mest i detaljer som fickor och justerbarhet.",
+            "name": "Mikk-Line Regnkläder Med Fleece",
+            "badge": "Bäst i test (fodrat)",
+            "price": "Från ca 530–650 kr",
+            "text": "Fodrat med mjukt teddyfleece i huvuddelen, med undantag för jackans ärmar och byxornas nederdel där ett tunnare, slätvävt foder används istället — smart lösning som minskar risken att bli genomblöt vid fötterna. Breda, justerbara hängslen med klickspännen och resårmudd runt midjan. Tillverkat i återvunnen polyester/PU, Oeko-Tex 100-certifierat.",
             "pros": [
-              "Lågt pris för fodrat regnställ",
-              "God vattentålighet",
-              "Bra mängd reflexer"
+              "Smart tvådelad fodring — tjockare fleece där det behövs, tunnare vid utsatta partier",
+              "Justerbara hängslen med klickspännen, enkelt att ta på/av",
+              "Återvunnet material, Oeko-Tex-certifierat"
             ],
             "cons": [
-              "Inga fickor",
-              "Ingen justerbar huva"
+              "Från och med storlek 110 (ca 5 år) saknas hängslena, bara resårmudd kvar",
+              "Något dyrare än de enklaste budgetalternativen"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-skagen.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/mikk-line-regnklader-med-fleece.html",
+            "buyUrl": "https://adtr.co/rsetz6",
+            "buyStore": "Babysam"
           },
           {
-            "name": "CeLaVi Regnställ Glitter",
-            "badge": "Roligast design",
-            "price": "Från ca 689 kr",
-            "text": "Glittrigt, uppskattat mönster som gör regniga dagar lite roligare — samtidigt fullt funktionellt med bra vattentäthet.",
+            "name": "Nordbjörn Båtlandet Regnställ",
+            "badge": "Bäst helhet (ofodrat)",
+            "price": "Från ca 469–549 kr",
+            "text": "Vind- och vattentätt ofodrat regnställ med vattenpelare på 8000 mm — klarar både lek i vattenpölar och rejält ruskväder. Avtagbar huva och reflekterande detaljer för bättre synlighet i mörker.",
             "pros": [
-              "Populärt, glatt mönster som barn gillar",
-              "Bra vattentäthet",
-              "God passform"
+              "Vattenpelare 8000 mm trots att den är ofodrad — ovanligt bra skydd i klassen",
+              "Avtagbar huva ger flexibilitet",
+              "Prisvärt för kvaliteten"
             ],
             "cons": [
-              "Dyrare än många konkurrenter i samma klass",
-              "Glittermönster kan blekna med tiden"
+              "Ofodrat — ingen värmande funktion vid kylan",
+              "Färre färgval än vissa konkurrenter"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/celavi-regnstall-glitter.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-batlandet-regnstall.html",
+            "buyUrl": "https://adtr.co/g0i0lq",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Nordbjörn Koster",
-            "badge": "Bäst helhet",
-            "price": "Från ca 550 kr",
-            "text": "Balanserad kombination av kvalitet, pris och funktion — en trygg allroundmodell för vardagsbruk på förskola och fritid.",
+            "name": "MarMar Copenhagen Oddy Regnset",
+            "badge": "Snyggast design (ofodrat)",
+            "price": "Pris varierar — kontrollera hos återförsäljare",
+            "text": "Danskdesignat ofodrat regnset för de minsta, med justerbara hängslen och resår i sidorna för bästa passform. Avtagbar huva, ficka fram på jackan, och stängs med dragkedja och tryckknappar. Oeko-Tex Standard 100-certifierat.",
             "pros": [
-              "Bra balans mellan pris och kvalitet",
-              "Pålitlig för daglig användning",
-              "God passform för de flesta kroppstyper"
+              "Stilren dansk design, snyggare mönster än de flesta konkurrenter",
+              "Avtagbar huva och ficka fram — praktiska detaljer",
+              "Oeko-Tex-certifierat"
             ],
             "cons": [
-              "Inga stora särskiljande finesser",
-              "Mellansegmentets utbud av färger"
+              "Ofodrat — behöver kompletteras med varmare lager under kyligare dagar",
+              "Mindre etablerat i Sverige, svårare att jämföra recensioner"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-koster.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/marmar-copenhagen-oddy-regnset.html",
+            "buyUrl": "https://adtr.co/9puc4v",
+            "buyStore": "Babysam"
           }
         ],
         "sections": [
@@ -3718,84 +3728,94 @@
         ],
         "products": [
           {
-            "name": "Viking Ultra 2.0",
+            "name": "Ecco Snow Mountain WP 1V",
             "badge": "Bäst i test",
-            "price": "Från ca 599 kr",
-            "text": "Varm, lätt och vattentät vintersko som toppar flera oberoende tester. Bra balans mellan isolering och rörelsefrihet.",
+            "price": "Från ca 900–1 100 kr",
+            "text": "Utsedd till bäst i test av Test.se med totalbetyget 8,7 av 10 — högsta betyg i jämförelsen på både vattentäthet, värmeisolering, andningsförmåga och torkförmåga. Kardborreband och dragsko längst upp på skaftet ger stabil passform, och innersulan går enkelt att ta ur för torkning.",
             "pros": [
-              "Utmärkt kombination av värme och vattentäthet",
-              "Lätt att gå och springa i",
-              "Håller sig varm även i blött väder"
+              "Högst betyg i Test.se:s jämförelse (8,7/10) på alla mätpunkter",
+              "Uttagbar innersula gör det enkelt att hålla skorna torra inuti",
+              "Fungerar bra för både yngre och äldre barn (storlek 24–35)"
             ],
             "cons": [
-              "I den högre prisklassen",
-              "Kan kännas rymlig, kolla storleksguide noga"
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Efterfrågad, kan ta slut i populära storlekar/färger"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/viking-ultra-2.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/ecco-snow-mountain-wp-1v.html",
+            "buyUrl": "https://adtr.co/k8irx1",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Tretorn Arch Hybrid Jr",
-            "badge": "Bäst för blött klimat",
-            "price": "Från ca 500 kr",
-            "text": "Populär vinterkänga för barn som ofta leker i blöta miljöer, till exempel på förskolegården. Mycket god vattentäthet.",
+            "name": "Nordbjörn Snowfall",
+            "badge": "Bra andraval",
+            "price": "Från ca 699–899 kr",
+            "text": "Kom på andra plats i Test.se:s jämförelse (7,5/10) — bra vattentäthet och torkar snabbt, men andas något sämre än testvinnaren. Högt skaft och robust yttersula med bra grepp, samt justerbart kardborreband för enkel på- och avtagning.",
             "pros": [
-              "Mycket god vattentäthet",
-              "Bra för slaskiga, blöta dagar",
-              "Prisvärd för kvaliteten"
+              "Stark tvåa i Test.se:s oberoende jämförelse",
+              "Vattentät och snabbtorkande",
+              "Robust yttersula med bra grepp på hala underlag"
             ],
             "cons": [
-              "Något mindre isolerande än de allra varmaste modellerna",
-              "Bäst för milda till måttliga vintrar"
+              "Andas sämre än Ecco Snow Mountain enligt testet",
+              "Färre färgval än vissa konkurrenter"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/tretorn-arch-hybrid-jr.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-snowfall.html",
+            "buyUrl": "https://adtr.co/2ov2p5",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Kavat Voxna JR",
-            "badge": "Bäst för större barn",
-            "price": "Från ca 650 kr",
-            "text": "Robust vinterstövel anpassad för äldre barn som behöver mer stöd och slitstyrka under en hel vintersäsong.",
+            "name": "Viking Ultra Fodrade Gummistövlar",
+            "badge": "Bäst för de minsta",
+            "price": "Från ca 415–649 kr",
+            "text": "Fodrade gummistövlar med fluffigt ullmixfoder som håller fötterna varma ner till -20 grader. Bred läst ger extra utrymme för små tår och gör dem enkla att få på, även för de allra minsta. Utsedd till bäst i test av både Testjakt.se (2023) och Test.se (2025) i kategorin fodrade gummistövlar.",
             "pros": [
-              "Extra stöd och stabilitet för äldre barn",
-              "Slitstark konstruktion",
-              "Bra grepp på halt underlag"
+              "Dubbelt bäst-i-test — både Testjakt.se och Test.se",
+              "Bred läst, extra lätt att få på små fötter",
+              "Håller varmt ner till -20 grader"
             ],
             "cons": [
-              "Något styvare passform för de minsta",
-              "Högre pris"
+              "Gummistövlar andas sämre än textilbaserade vinterkängor vid mildare väder",
+              "PU-material, inte lika slitstarkt som naturgummi i längden"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/kavat-voxna-jr.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/viking-ultra-fodrade-gummistovlar.html",
+            "buyUrl": "https://adtr.co/ac0r1k",
+            "buyStore": "Jollyroom"
           },
           {
-            "name": "Reima Laplander 2.0",
-            "badge": "Varmast",
-            "price": "Från ca 700 kr",
-            "text": "Extra varmisolerad vinterkänga byggd för riktigt kalla temperaturer, med vattentätt membran och god andningsförmåga.",
+            "name": "Viking Equip Glitter Warm WP 2V",
+            "badge": "Roligast design",
+            "price": "Från ca 607–949 kr",
+            "text": "Vattentät vinterkänga i glittrigt tyg för barn som vill ha lite extra glans i snön. Pull on-modell (utan dragkedja/kardborre) gör den snabb att få på, med varmt innerfoder för kalla dagar.",
             "pros": [
-              "Bland de varmaste i jämförelsen",
-              "Vattentätt membran som ändå andas",
-              "Bra för minusgrader"
+              "Glittrig design sticker ut bland de mer avskalade konkurrenterna",
+              "Pull on-modell — supersnabb att få på och av",
+              "Vattentät med varmt innerfoder"
             ],
             "cons": [
-              "Kan bli för varm vid plusgrader",
-              "Dyrare än sommarklimat-anpassade modeller"
+              "Pull on utan justerbart band kan sitta löst på smala fötter",
+              "Mindre stöd runt vristen än kängor med kardborre/dragkedja"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/reima-laplander-2.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/viking-equip-glitter-warm-wp-2v.html",
+            "buyUrl": "https://adtr.co/u91j0h",
+            "buyStore": "Babysam"
           },
           {
-            "name": "Tretorn Kuling Neoprene",
+            "name": "Color Kids Vinterkängor Toadstool",
             "badge": "Bästa budget",
-            "price": "Från ca 304 kr",
-            "text": "Prisvärda vattentäta vinterstövlar, bäst lämpade för milda vintrar och slaskiga dagar snarare än sträng kyla.",
+            "price": "Från ca 734–979 kr",
+            "text": "Högt skaft som går långt över anklarna, med brett kardborreband för säker passform. Fodrad med textil, uttagbar innersula, och en miljövänlig vatten- och smutsavvisande coating (Bionic Finish Eco) utan fluor. Reflexränder på hälarna för bättre synlighet.",
             "pros": [
-              "Lågt pris",
-              "Vattentät neoprenkonstruktion",
-              "Bra för sydsvenska, milda vintrar"
+              "Fluorfri, miljövänlig vattenavvisande behandling",
+              "Högt skaft ger extra skydd mot snö som annars kryper in",
+              "Uttagbar innersula, enkel att hålla torr"
             ],
             "cons": [
-              "Mindre isolerande än Viking eller Kavat",
-              "Kortare skaft ger mindre skydd i djup snö"
+              "Något lägre profil bland testvinnarna jämfört med Ecco/Nordbjörn",
+              "Färre storlekar tillgängliga i populära färger"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/tretorn-kuling-neoprene.html"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/color-kids-vinterkangor-toadstool.html",
+            "buyUrl": "https://adtr.co/etzeea",
+            "buyStore": "Babysam"
           }
         ],
         "sections": [
