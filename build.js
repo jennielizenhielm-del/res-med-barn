@@ -378,7 +378,8 @@ const TOPPLISTOR_RELATED = {
   barsjal: ['barsele', 'sleep-carrier', 'amningskudde'],
   'uv-badklader': ['regnstall', 'vinterskor', 'tillbehor'],
   regnstall: ['vinterskor', 'uv-badklader', 'tillbehor'],
-  vinterskor: ['regnstall', 'uv-badklader', 'tillbehor']
+  vinterskor: ['regnstall', 'uv-badklader', 'tillbehor'],
+  reseunderhallning: ['tillbehor', 'akpase', 'vagnar']
 };
 
 function buildTopplistor() {
