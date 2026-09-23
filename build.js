@@ -1035,7 +1035,7 @@ ${faqHtml(faq)}
 })();
 </script>`;
 
-  write('packlista/index.html', page('/packlista/', P.meta, '/packlista/', inner, [bc.jsonld, itemListLd]));
+  write('packlista/index.html', page('/packlista/', P.meta, '/packlista/', inner, [bc.jsonld, itemListLd, faqLd(faq)]));
 }
 
 function buildPacklistaSubPages() {
