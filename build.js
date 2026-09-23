@@ -345,6 +345,7 @@ ${g.packlista ? `
   </div>
   <p class="packlist-cta"><a href="/packlista/">🧳 Prova vår interaktiva packlista — anpassad efter ålder, resmål och transportsätt →</a></p>
 </div>` : ''}
+${t.slug === 'bil' ? `<p class="packlist-cta"><a href="/branslekalkylator/">⛽ Räkna ut vad bilresan kostar i bränsle — prova vår bränslekalkylator →</a></p>` : ''}
 ${faqHtml(g.faq)}
 <h2 class="section-title">Fler guider för ${esc(a.name.toLowerCase())}</h2>
 <div class="related-links">
@@ -897,6 +898,7 @@ function buildMeta(destinations) {
   urls.push('/resmal/');
   urls.push('/packlista/');
   for (const s of (C.smartPacklista.subPages || [])) urls.push(`/packlista/${s.slug}/`);
+  urls.push('/branslekalkylator/');
   for (const d of destinations) urls.push(`/resmal/${destSlug(d.name)}/`);
   const today = new Date().toISOString().slice(0, 10);
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
@@ -1131,9 +1133,117 @@ ${faqHtml(sub.faq)}
 }
 
 
+
+function buildBranslekalkylator() {
+  const B = C.branslekalkylator;
+  const bc = breadcrumbs([['Hem', '/'], ['Bränslekalkylator', null]]);
+
+  const fuelBtns = B.fuelTypes.map((f, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-fuel="${f.key}" onclick="selectFuel('${f.key}')">${f.label}</button>`).join('');
+
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(B.meta.h1)}</h1>
+  <p class="page-intro">${esc(B.meta.intro)}</p>
+</header>
+
+<div class="fuel-calc">
+  <div class="fuel-calc-field">
+    <label>Drivmedel</label>
+    <div class="filter-group">${fuelBtns}</div>
+  </div>
+
+  <div class="fuel-calc-row">
+    <div class="fuel-calc-field">
+      <label for="fcDistance">Sträcka (km, enkel väg)</label>
+      <input type="number" id="fcDistance" value="50" min="0" step="1">
+    </div>
+    <div class="fuel-calc-field fuel-calc-checkbox">
+      <label><input type="checkbox" id="fcRoundtrip" checked> Tur och retur</label>
+    </div>
+  </div>
+
+  <div class="fuel-calc-row">
+    <div class="fuel-calc-field">
+      <label id="fcConsumptionLabel" for="fcConsumption">Förbrukning</label>
+      <input type="number" id="fcConsumption" step="0.1" min="0">
+    </div>
+    <div class="fuel-calc-field">
+      <label id="fcPriceLabel" for="fcPrice">Pris per enhet (kr)</label>
+      <input type="number" id="fcPrice" step="0.01" min="0">
+    </div>
+  </div>
+
+  <div class="fuel-calc-result" id="fcResult">
+    <span class="fuel-calc-result-label">Uppskattad kostnad</span>
+    <span class="fuel-calc-result-value" id="fcCost">0 kr</span>
+    <span class="fuel-calc-result-sub" id="fcAmount"></span>
+  </div>
+</div>
+
+<script>
+(function() {
+  var FUELS = ${JSON.stringify(B.fuelTypes)};
+  var currentFuel = FUELS[0];
+  var distanceEl = document.getElementById('fcDistance');
+  var roundtripEl = document.getElementById('fcRoundtrip');
+  var consumptionEl = document.getElementById('fcConsumption');
+  var priceEl = document.getElementById('fcPrice');
+  var consumptionLabelEl = document.getElementById('fcConsumptionLabel');
+  var priceLabelEl = document.getElementById('fcPriceLabel');
+  var costEl = document.getElementById('fcCost');
+  var amountEl = document.getElementById('fcAmount');
+
+  window.selectFuel = function(key) {
+    var fuel = FUELS.filter(function(f) { return f.key === key; })[0];
+    if (!fuel) return;
+    currentFuel = fuel;
+    document.querySelectorAll('.filter-btn[data-fuel]').forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.fuel === key);
+    });
+    consumptionEl.value = fuel.defaultConsumption;
+    priceEl.value = fuel.defaultPrice;
+    consumptionLabelEl.textContent = fuel.consumptionLabel;
+    priceLabelEl.textContent = 'Pris per ' + fuel.unitShort + ' (kr)';
+    calculate();
+  };
+
+  function calculate() {
+    var km = parseFloat(distanceEl.value) || 0;
+    var totalKm = roundtripEl.checked ? km * 2 : km;
+    var consumption = parseFloat(consumptionEl.value) || 0;
+    var price = parseFloat(priceEl.value) || 0;
+    var amount = (totalKm / 100) * consumption;
+    var cost = amount * price;
+    costEl.textContent = Math.round(cost).toLocaleString('sv-SE') + ' kr';
+    amountEl.textContent = amount.toFixed(1) + ' ' + currentFuel.unitShort + ' · ' + totalKm + ' km totalt';
+  }
+
+  [distanceEl, roundtripEl, consumptionEl, priceEl].forEach(function(el) {
+    el.addEventListener('input', calculate);
+  });
+
+  selectFuel(FUELS[0].key);
+})();
+</script>
+
+${faqHtml(B.faq)}
+<h2 class="section-title">Fler resurser för bilresan</h2>
+<div class="related-links">
+  <a href="/guider/barn/bil/">🚗 Bilresa med barn</a>
+  <a href="/guider/smabarn/bil/">🚗 Bilresa med småbarn</a>
+  <a href="/packlista/">🧳 Smart packlista</a>
+  <a href="/topplistor/tillbehor/">🎒 Tillbehör för bilresan</a>
+</div>`;
+
+  write('branslekalkylator/index.html', page('/branslekalkylator/', B.meta, '/branslekalkylator/', inner, [bc.jsonld, faqLd(B.faq)]));
+  console.log('  ✓ branslekalkylator/index.html');
+}
+
 buildResmalHub();
 buildSmartPacklista();
 buildPacklistaSubPages();
+buildBranslekalkylator();
 const RESMAL_DESTS = buildResmal();
 buildSimplePages();
 buildMeta(RESMAL_DESTS);

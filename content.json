@@ -4779,5 +4779,56 @@
         ]
       }
     ]
+  },
+  "branslekalkylator": {
+    "meta": {
+      "title": "Bränslekalkylator för bilresan | Res med Barn",
+      "description": "Räkna ut vad bilresan kostar i bensin, diesel eller el. Ange sträcka så får ni en snabb kostnadsuppskattning för hela familjeresan.",
+      "h1": "Bränslekalkylator för bilresan",
+      "intro": "Räkna snabbt ut vad bilresan kommer kosta i drivmedel — ange bara sträckan och välj bensin, diesel eller el. Standardvärdena bygger på ungefärliga svenska snittpriser och förbrukning, men justera gärna efter er egen bil och aktuella priser."
+    },
+    "fuelTypes": [
+      {
+        "key": "bensin",
+        "label": "⛽ Bensin",
+        "unit": "liter",
+        "unitShort": "l",
+        "defaultConsumption": 7.0,
+        "defaultPrice": 17.5,
+        "consumptionLabel": "Förbrukning (l/100 km)"
+      },
+      {
+        "key": "diesel",
+        "label": "⛽ Diesel",
+        "unit": "liter",
+        "unitShort": "l",
+        "defaultConsumption": 6.0,
+        "defaultPrice": 22.5,
+        "consumptionLabel": "Förbrukning (l/100 km)"
+      },
+      {
+        "key": "el",
+        "label": "🔌 El",
+        "unit": "kWh",
+        "unitShort": "kWh",
+        "defaultConsumption": 18.0,
+        "defaultPrice": 3.0,
+        "consumptionLabel": "Förbrukning (kWh/100 km)"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Hur uppdaterade är standardpriserna?",
+        "a": "Standardpriserna är ungefärliga svenska snittpriser och kan skilja sig från det aktuella priset där ni tankar eller laddar. Justera gärna fälten till dagens pris för en mer exakt uppskattning."
+      },
+      {
+        "q": "Varför skiljer sig förbrukningen mellan bilar?",
+        "a": "Faktisk förbrukning beror på bilmodell, körsätt, last (t.ex. en fullpackad bil med hela familjen), vägtyp och väder. Standardvärdena är ungefärliga snitt — kolla er bils deklarerade förbrukning för ett mer exakt resultat."
+      },
+      {
+        "q": "Tar kalkylatorn hänsyn till laddstopp för elbil?",
+        "a": "Nej, kalkylatorn räknar bara på total kostnad för hela sträckan, inte antal laddstopp eller laddtid. Räkna med att en längre bilresa med elbil kan kräva planerade laddstopp längs vägen."
+      }
+    ]
   }
 }
