@@ -57,8 +57,8 @@ ${meta.jsonld ? `<script type="application/ld+json">${JSON.stringify(meta.jsonld
 
 function nav(active) {
   const links = [
-    ['/', 'Hem'], ['/resmal/', 'Resmål'], ['/guider/', 'Guider'], ['/topplistor/', 'Topplistor'], ['/stader/', 'Städer'],
-    ['/om-oss/', 'Om oss'], ['/kontakt/', 'Kontakt']
+    ['/resmal/', 'Resmål'], ['/guider/', 'Guider'], ['/topplistor/', 'Topplistor'], ['/packlista/', 'Packlista'], ['/stader/', 'Städer'],
+    ['/om-oss/', 'Om oss']
   ];
   return `
 <nav class="nav" aria-label="Huvudmeny">
