@@ -4452,13 +4452,13 @@
         "Solhatt med hakband",
         "Barnanpassad solkräm (minst SPF 30, gärna 50)",
         "Lätta bomullskläder, långärmat för skydd mitt på dagen",
-        "Extra ombyten (minst 3–4/dag i värme)",
+        "QTY:ombyte",
         "Myggmedel anpassat för spädbarn"
       ],
       "bebisar|ovrigt": [
         "Varma lager-på-lager-kläder",
         "Mössa (både varm och solskyddande beroende på väder)",
-        "Extra ombyten (minst 3–4/dag)",
+        "QTY:ombyte",
         "Regnställ eller varmare overall vid behov"
       ],
       "smabarn|sol": [
@@ -4467,26 +4467,28 @@
         "Barnanpassad solkräm",
         "Badskor (skyddar mot het sand/vassa stenar)",
         "Lätta, luftiga kläder",
-        "Extra ombyten"
+        "QTY:ombyte"
       ],
       "smabarn|ovrigt": [
         "Varma lager-på-lager-kläder",
         "Regnställ och gummistövlar",
         "Mössa och vantar vid kallare väder",
-        "Extra ombyten"
+        "QTY:ombyte"
       ],
       "barn|sol": [
         "UV-badkläder eller vanlig baddräkt + UV-tröja",
         "Solhatt eller keps",
         "Solkräm (barnet kan ofta smörja sig själv med guidning)",
         "Badskor",
-        "Lätta kläder för varmt klimat"
+        "Lätta kläder för varmt klimat",
+        "QTY:ombyte"
       ],
       "barn|ovrigt": [
         "Kläder efter väder på resmålet",
         "Regnställ vid behov",
         "Bekväma skor för att gå mycket",
-        "Varmare lager om det är kallt"
+        "Varmare lager om det är kallt",
+        "QTY:ombyte"
       ],
       "tonaringar|sol": [
         "Baddräkt/badbyxor",
@@ -4778,7 +4780,33 @@
           }
         ]
       }
-    ]
+    ],
+    "qtyRules": {
+      "bebisar": {
+        "perDay": 3.5,
+        "min": 4,
+        "max": 12,
+        "label": "ombyten"
+      },
+      "smabarn": {
+        "perDay": 1.5,
+        "min": 3,
+        "max": 9,
+        "label": "ombyten"
+      },
+      "barn": {
+        "perDay": 1,
+        "min": 2,
+        "max": 7,
+        "label": "ombyten"
+      },
+      "tonaringar": {
+        "perDay": 1,
+        "min": 2,
+        "max": 6,
+        "label": "ombyten"
+      }
+    }
   },
   "branslekalkylator": {
     "meta": {
@@ -4828,6 +4856,85 @@
       {
         "q": "Tar kalkylatorn hänsyn till laddstopp för elbil?",
         "a": "Nej, kalkylatorn räknar bara på total kostnad för hela sträckan, inte antal laddstopp eller laddtid. Räkna med att en längre bilresa med elbil kan kräva planerade laddstopp längs vägen."
+      }
+    ]
+  },
+  "solkramskalkylator": {
+    "meta": {
+      "title": "Solkrämskalkylator – räkna ut hur mycket ni behöver packa",
+      "description": "Räkna ut exakt hur många ml eller tuber solkräm din familj behöver på resan, baserat på antal personer, åldrar, soldagar och solintensitet.",
+      "h1": "Solkrämskalkylator",
+      "intro": "Slipp packa för lite (eller för mycket) solkräm. Fyll i hur många ni är, hur många soldagar ni har och hur starkt solen är på resmålet, så räknar vi ut hur många milliliter — och tuber — ni bör ha med er."
+    },
+    "ageGroups": [
+      {
+        "key": "vuxen",
+        "label": "Vuxna",
+        "emoji": "🧑",
+        "mlPerApplication": 30
+      },
+      {
+        "key": "tonaring",
+        "label": "Tonåringar",
+        "emoji": "🧑‍🦱",
+        "mlPerApplication": 25
+      },
+      {
+        "key": "barn",
+        "label": "Barn (4–12 år)",
+        "emoji": "🧒",
+        "mlPerApplication": 15
+      },
+      {
+        "key": "smabarn",
+        "label": "Småbarn (1–3 år)",
+        "emoji": "🧒",
+        "mlPerApplication": 10
+      },
+      {
+        "key": "bebis",
+        "label": "Bebisar (0–1 år)",
+        "emoji": "👶",
+        "mlPerApplication": 5
+      }
+    ],
+    "intensities": [
+      {
+        "key": "nordisk",
+        "label": "Nordisk sol",
+        "sub": "Molnigt, svenskt klimat",
+        "timesPerDay": 2
+      },
+      {
+        "key": "medelhav",
+        "label": "Medelhavsklimat",
+        "sub": "T.ex. Grekland, Spanien",
+        "timesPerDay": 3
+      },
+      {
+        "key": "tropiskt",
+        "label": "Tropiskt / hög höjd",
+        "sub": "T.ex. Thailand, berg",
+        "timesPerDay": 4
+      }
+    ],
+    "tubeSizeMl": 200,
+    "faq": [
+      {
+        "q": "Varför skiljer sig mängden mellan åldrar?",
+        "a": "Mängden solkräm som behövs för en helkroppssmörjning beror på kroppsyta. En vuxen behöver ca 30 ml (en kupad hand/shotglas) per smörjning, medan ett mindre barn behöver betydligt mindre."
+      },
+      {
+        "q": "Hur ofta ska man smörja om sig?",
+        "a": "Rekommendationen är varannan timme i solen, samt direkt efter bad eller kraftig svettning. Kalkylatorn använder det som grund för antal smörjningar per dag."
+      },
+      {
+        "q": "Räcker inte en tub för hela resan?",
+        "a": "Ofta inte om ni är flera i familjen och reser mer än några dagar — det är den vanligaste anledningen till att solkräm tar slut mitt i resan. Bättre att packa en extra tub än att behöva köpa dyr solkräm på resmålet."
+      },
+      {
+        "q": "Gäller det här bebisar också?",
+        "a": "Barn under 6 månader bör helst hållas ur direkt sol och skyddas med kläder och skugga snarare än stora mängder solkräm. Siffrorna för bebisar här gäller kompletterande skydd på händer, ansikte och andra utsatta ytor."
       }
     ]
   }

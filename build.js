@@ -96,6 +96,7 @@ function footer() {
     <div class="footer-col">
       <h4>Om sajten</h4>
       <a href="/packlista/">Smart packlista</a>
+      <a href="/solkramskalkylator/">Solkrämskalkylator</a>
       <a href="/resmal/">Alla resmål</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
@@ -155,6 +156,23 @@ function faqLd(faq) {
       acceptedAnswer: { '@type': 'Answer', text: f.a }
     }))
   };
+}
+
+// Renderar ett kläd-listobjekt. Objekt som markerats "QTY:xxx" i content.json
+// blir en <li data-qty="xxx" data-age="..."> vars text räknas ut för DEFAULT_PACKLIST_DAYS
+// vid build, och sedan uppdateras live i webbläsaren när man ändrar "Antal dagar".
+const DEFAULT_PACKLIST_DAYS = 7;
+function qtyText(rule, days) {
+  const n = Math.min(rule.max, Math.max(rule.min, Math.ceil(days * rule.perDay)));
+  return `${n} ${rule.label}`;
+}
+function kladerLi(x, ageKey, qtyRules) {
+  if (typeof x === 'string' && x.startsWith('QTY:')) {
+    const key = x.slice(4);
+    const rule = (qtyRules && qtyRules[ageKey]) || { perDay: 1, min: 1, max: 10, label: key };
+    return `<li data-qty="${key}" data-age="${ageKey}">${esc(qtyText(rule, DEFAULT_PACKLIST_DAYS))}</li>`;
+  }
+  return `<li>${esc(x)}</li>`;
 }
 
 function page(url, meta, active, inner, extraJsonld) {
@@ -899,6 +917,7 @@ function buildMeta(destinations) {
   urls.push('/packlista/');
   for (const s of (C.smartPacklista.subPages || [])) urls.push(`/packlista/${s.slug}/`);
   urls.push('/branslekalkylator/');
+  urls.push('/solkramskalkylator/');
   for (const d of destinations) urls.push(`/resmal/${destSlug(d.name)}/`);
   const today = new Date().toISOString().slice(0, 10);
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
@@ -960,7 +979,7 @@ function buildSmartPacklista() {
           <div class="packlist-grid packlist-grid-4">
             <div class="packlist-col">
               <h3>👕 Kläder & hygien</h3>
-              <ul class="checklist">${kladerItems.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+              <ul class="checklist">${kladerItems.map(x => kladerLi(x, age.key, P.qtyRules)).join('')}</ul>
             </div>
             ${Object.entries(tillagg).map(([cat, items]) => `
             <div class="packlist-col">
@@ -999,7 +1018,13 @@ function buildSmartPacklista() {
     <span class="filter-label">Transportsätt</span>
     ${transBtns}
   </div>
+  <div class="filter-group">
+    <span class="filter-label">Antal dagar</span>
+    <input type="number" id="packlistDays" class="packlist-days-input" min="1" max="30" value="${DEFAULT_PACKLIST_DAYS}" aria-label="Antal dagar">
+  </div>
 </div>
+
+<p class="packlist-solkram-cta">☀️ Ska ni sola mycket? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
 
 <div class="packlist-actions">
   <button class="btn btn-primary" onclick="window.print()">🖨️ Skriv ut / Spara som PDF</button>
@@ -1013,13 +1038,25 @@ ${faqHtml(faq)}
 
 <script>
 (function() {
+  var QTY_RULES = ${JSON.stringify(P.qtyRules)};
   var state = { age: 'smabarn', trip: 'sol', transport: 'flyg' };
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.packlist-filters .filter-btn'));
   var combos = Array.prototype.slice.call(document.querySelectorAll('.packlist-combo'));
+  var daysInput = document.getElementById('packlistDays');
 
   function apply() {
     combos.forEach(function(c) {
       c.hidden = !(c.dataset.age === state.age && c.dataset.trip === state.trip && c.dataset.transport === state.transport);
+    });
+  }
+
+  function updateQty() {
+    var days = parseInt(daysInput.value, 10) || ${DEFAULT_PACKLIST_DAYS};
+    document.querySelectorAll('[data-qty]').forEach(function(el) {
+      var rule = QTY_RULES[el.dataset.age];
+      if (!rule) return;
+      var n = Math.min(rule.max, Math.max(rule.min, Math.ceil(days * rule.perDay)));
+      el.textContent = n + ' ' + rule.label;
     });
   }
 
@@ -1033,6 +1070,7 @@ ${faqHtml(faq)}
       apply();
     });
   });
+  daysInput.addEventListener('input', updateQty);
   apply();
 })();
 </script>`;
@@ -1065,7 +1103,7 @@ function buildPacklistaSubPages() {
             <div class="packlist-grid packlist-grid-4">
               <div class="packlist-col">
                 <h3>👕 Kläder & hygien</h3>
-                <ul class="checklist">${kladerItems.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+                <ul class="checklist">${kladerItems.map(x => kladerLi(x, age.key, P.qtyRules)).join('')}</ul>
               </div>
               ${Object.entries(tillagg).map(([cat, items]) => `
               <div class="packlist-col">
@@ -1092,6 +1130,10 @@ ${sub.sections.map(s => `<section class="article-section"><h2>${esc(s.h2)}</h2><
   <div class="filter-group"><span class="filter-label">Barnets ålder</span>${ageBtns}</div>
   <div class="filter-group"><span class="filter-label">Resetyp</span>${tripBtns}</div>
   <div class="filter-group"><span class="filter-label">Transportsätt</span>${transBtns}</div>
+  <div class="filter-group">
+    <span class="filter-label">Antal dagar</span>
+    <input type="number" id="packlistDays" class="packlist-days-input" min="1" max="30" value="${DEFAULT_PACKLIST_DAYS}" aria-label="Antal dagar">
+  </div>
 </div>
 <div class="packlist-actions">
   <button class="btn btn-primary" onclick="window.print()">🖨️ Skriv ut / Spara som PDF</button>
@@ -1100,18 +1142,31 @@ ${sub.sections.map(s => `<section class="article-section"><h2>${esc(s.h2)}</h2><
   ${allBlocks}
 </div>
 
+<p class="packlist-solkram-cta">☀️ Ska ni sola mycket? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
+
 <p class="packlist-cta"><a href="/packlista/">🧳 Vill du anpassa fler detaljer? Prova hela det interaktiva verktyget →</a></p>
 
 ${faqHtml(sub.faq)}
 
 <script>
 (function() {
+  var QTY_RULES = ${JSON.stringify(P.qtyRules)};
   var state = { age: '${sub.defaultAge}', trip: '${sub.defaultTrip}', transport: '${sub.defaultTransport}' };
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.packlist-filters .filter-btn'));
   var combos = Array.prototype.slice.call(document.querySelectorAll('.packlist-combo'));
+  var daysInput = document.getElementById('packlistDays');
   function apply() {
     combos.forEach(function(c) {
       c.hidden = !(c.dataset.age === state.age && c.dataset.trip === state.trip && c.dataset.transport === state.transport);
+    });
+  }
+  function updateQty() {
+    var days = parseInt(daysInput.value, 10) || ${DEFAULT_PACKLIST_DAYS};
+    document.querySelectorAll('[data-qty]').forEach(function(el) {
+      var rule = QTY_RULES[el.dataset.age];
+      if (!rule) return;
+      var n = Math.min(rule.max, Math.max(rule.min, Math.ceil(days * rule.perDay)));
+      el.textContent = n + ' ' + rule.label;
     });
   }
   buttons.forEach(function(btn) {
@@ -1122,6 +1177,7 @@ ${faqHtml(sub.faq)}
       apply();
     });
   });
+  daysInput.addEventListener('input', updateQty);
 })();
 </script>`;
 
@@ -1240,10 +1296,106 @@ ${faqHtml(B.faq)}
   console.log('  ✓ branslekalkylator/index.html');
 }
 
+function buildSolkramskalkylator() {
+  const S = C.solkramskalkylator;
+  const bc = breadcrumbs([['Hem', '/'], ['Solkrämskalkylator', null]]);
+
+  const ageRows = S.ageGroups.map(a => `
+    <div class="sun-calc-row">
+      <label for="sun-${a.key}">${a.emoji} ${esc(a.label)}</label>
+      <input type="number" id="sun-${a.key}" class="sun-calc-count" min="0" step="1" value="0" data-ml="${a.mlPerApplication}">
+    </div>`).join('');
+
+  const intensityBtns = S.intensities.map((i, idx) => `<button class="filter-btn${idx === 1 ? ' active' : ''}" data-intensity="${i.key}" data-times="${i.timesPerDay}" onclick="selectIntensity('${i.key}')">${esc(i.label)}<br><span class="sun-calc-sub">${esc(i.sub)}</span></button>`).join('');
+
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(S.meta.h1)}</h1>
+  <p class="page-intro">${esc(S.meta.intro)}</p>
+</header>
+
+<div class="fuel-calc sun-calc">
+  <div class="fuel-calc-field">
+    <label>Antal personer per åldersgrupp</label>
+    <div class="sun-calc-rows">${ageRows}</div>
+  </div>
+
+  <div class="fuel-calc-row">
+    <div class="fuel-calc-field">
+      <label for="sunDays">Antal soldagar</label>
+      <input type="number" id="sunDays" value="7" min="1" max="30" step="1">
+    </div>
+  </div>
+
+  <div class="fuel-calc-field">
+    <label>Hur starkt är solen på resmålet?</label>
+    <div class="filter-group sun-calc-intensity">${intensityBtns}</div>
+  </div>
+
+  <div class="fuel-calc-result" id="sunResult">
+    <span class="fuel-calc-result-label">Ni behöver packa ungefär</span>
+    <span class="fuel-calc-result-value" id="sunTubes">0 tuber</span>
+    <span class="fuel-calc-result-sub" id="sunMl"></span>
+  </div>
+</div>
+
+<script>
+(function() {
+  var AGE_KEYS = ${JSON.stringify(S.ageGroups.map(a => a.key))};
+  var TUBE_ML = ${S.tubeSizeMl};
+  var timesPerDay = ${S.intensities[1].timesPerDay};
+  var countEls = AGE_KEYS.map(function(k) { return document.getElementById('sun-' + k); });
+  var daysEl = document.getElementById('sunDays');
+  var tubesEl = document.getElementById('sunTubes');
+  var mlEl = document.getElementById('sunMl');
+
+  window.selectIntensity = function(key) {
+    document.querySelectorAll('[data-intensity]').forEach(function(btn) {
+      var active = btn.dataset.intensity === key;
+      btn.classList.toggle('active', active);
+      if (active) timesPerDay = parseInt(btn.dataset.times, 10);
+    });
+    calculate();
+  };
+
+  function calculate() {
+    var days = parseInt(daysEl.value, 10) || 0;
+    var totalMl = 0;
+    countEls.forEach(function(el) {
+      var count = parseInt(el.value, 10) || 0;
+      var mlPer = parseFloat(el.dataset.ml) || 0;
+      totalMl += count * mlPer * timesPerDay * days;
+    });
+    var tubes = totalMl > 0 ? Math.ceil(totalMl / TUBE_ML) : 0;
+    tubesEl.textContent = tubes + (tubes === 1 ? ' tub' : ' tuber');
+    mlEl.textContent = Math.round(totalMl).toLocaleString('sv-SE') + ' ml totalt · ' + TUBE_ML + ' ml per tub';
+  }
+
+  countEls.concat([daysEl]).forEach(function(el) {
+    el.addEventListener('input', calculate);
+  });
+  calculate();
+})();
+</script>
+
+${faqHtml(S.faq)}
+<h2 class="section-title">Fler resurser för resan</h2>
+<div class="related-links">
+  <a href="/packlista/">🧳 Smart packlista</a>
+  <a href="/packlista/solsemester-barn/">☀️ Packlista för solsemester med barn</a>
+  <a href="/topplistor/">🛒 Alla topplistor</a>
+</div>`;
+
+  write('solkramskalkylator/index.html', page('/solkramskalkylator/', S.meta, '/solkramskalkylator/', inner, [bc.jsonld, faqLd(S.faq)]));
+  console.log('  ✓ solkramskalkylator/index.html');
+}
+
 buildResmalHub();
 buildSmartPacklista();
 buildPacklistaSubPages();
 buildBranslekalkylator();
+buildSolkramskalkylator();
 const RESMAL_DESTS = buildResmal();
 buildSimplePages();
 buildMeta(RESMAL_DESTS);
