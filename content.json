@@ -4452,13 +4452,17 @@
         "Solhatt med hakband",
         "Barnanpassad solkräm (minst SPF 30, gärna 50)",
         "Lätta bomullskläder, långärmat för skydd mitt på dagen",
-        "QTY:ombyte",
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor",
         "Myggmedel anpassat för spädbarn"
       ],
       "bebisar|ovrigt": [
         "Varma lager-på-lager-kläder",
         "Mössa (både varm och solskyddande beroende på väder)",
-        "QTY:ombyte",
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor",
         "Regnställ eller varmare overall vid behov"
       ],
       "smabarn|sol": [
@@ -4467,13 +4471,17 @@
         "Barnanpassad solkräm",
         "Badskor (skyddar mot het sand/vassa stenar)",
         "Lätta, luftiga kläder",
-        "QTY:ombyte"
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor"
       ],
       "smabarn|ovrigt": [
         "Varma lager-på-lager-kläder",
         "Regnställ och gummistövlar",
         "Mössa och vantar vid kallare väder",
-        "QTY:ombyte"
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor"
       ],
       "barn|sol": [
         "UV-badkläder eller vanlig baddräkt + UV-tröja",
@@ -4481,23 +4489,33 @@
         "Solkräm (barnet kan ofta smörja sig själv med guidning)",
         "Badskor",
         "Lätta kläder för varmt klimat",
-        "QTY:ombyte"
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor"
       ],
       "barn|ovrigt": [
         "Kläder efter väder på resmålet",
         "Regnställ vid behov",
         "Bekväma skor för att gå mycket",
         "Varmare lager om det är kallt",
-        "QTY:ombyte"
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor"
       ],
       "tonaringar|sol": [
         "Baddräkt/badbyxor",
         "Solkräm (påminn — glöms ofta bort i den åldern)",
         "Solglasögon",
-        "Lätta, luftiga kläder"
+        "Lätta, luftiga kläder",
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor"
       ],
       "tonaringar|ovrigt": [
         "Kläder efter väder och egen stil",
+        "QTY:overdel",
+        "QTY:underklader",
+        "QTY:byxor",
         "Bekväma skor",
         "Ett varmare lager för kvällar"
       ]
@@ -4783,28 +4801,84 @@
     ],
     "qtyRules": {
       "bebisar": {
-        "perDay": 3.5,
-        "min": 4,
-        "max": 12,
-        "label": "ombyten"
+        "overdel": {
+          "perDay": 1.8,
+          "min": 4,
+          "max": 12,
+          "label": "byten överdel/body"
+        },
+        "underklader": {
+          "perDay": 1.5,
+          "min": 3,
+          "max": 10,
+          "label": "par strumpor"
+        },
+        "byxor": {
+          "perDay": 0.6,
+          "min": 2,
+          "max": 6,
+          "label": "byxor/leggings"
+        }
       },
       "smabarn": {
-        "perDay": 1.5,
-        "min": 3,
-        "max": 9,
-        "label": "ombyten"
+        "overdel": {
+          "perDay": 1,
+          "min": 3,
+          "max": 9,
+          "label": "tröjor"
+        },
+        "underklader": {
+          "perDay": 1.3,
+          "min": 3,
+          "max": 10,
+          "label": "underkläder/strumpor"
+        },
+        "byxor": {
+          "perDay": 0.5,
+          "min": 2,
+          "max": 6,
+          "label": "byxor"
+        }
       },
       "barn": {
-        "perDay": 1,
-        "min": 2,
-        "max": 7,
-        "label": "ombyten"
+        "overdel": {
+          "perDay": 0.8,
+          "min": 2,
+          "max": 7,
+          "label": "tröjor"
+        },
+        "underklader": {
+          "perDay": 1,
+          "min": 2,
+          "max": 8,
+          "label": "underkläder/strumpor"
+        },
+        "byxor": {
+          "perDay": 0.4,
+          "min": 2,
+          "max": 5,
+          "label": "byxor/shorts"
+        }
       },
       "tonaringar": {
-        "perDay": 1,
-        "min": 2,
-        "max": 6,
-        "label": "ombyten"
+        "overdel": {
+          "perDay": 0.7,
+          "min": 2,
+          "max": 6,
+          "label": "tröjor/toppar"
+        },
+        "underklader": {
+          "perDay": 1,
+          "min": 2,
+          "max": 7,
+          "label": "underkläder/strumpor"
+        },
+        "byxor": {
+          "perDay": 0.3,
+          "min": 1,
+          "max": 4,
+          "label": "byxor/shorts"
+        }
       }
     }
   },
@@ -4821,7 +4895,7 @@
         "label": "⛽ Bensin",
         "unit": "liter",
         "unitShort": "l",
-        "defaultConsumption": 7.0,
+        "defaultConsumption": 7,
         "defaultPrice": 17.5,
         "consumptionLabel": "Förbrukning (l/100 km)"
       },
@@ -4830,7 +4904,7 @@
         "label": "⛽ Diesel",
         "unit": "liter",
         "unitShort": "l",
-        "defaultConsumption": 6.0,
+        "defaultConsumption": 6,
         "defaultPrice": 22.5,
         "consumptionLabel": "Förbrukning (l/100 km)"
       },
@@ -4839,8 +4913,8 @@
         "label": "🔌 El",
         "unit": "kWh",
         "unitShort": "kWh",
-        "defaultConsumption": 18.0,
-        "defaultPrice": 3.0,
+        "defaultConsumption": 18,
+        "defaultPrice": 3,
         "consumptionLabel": "Förbrukning (kWh/100 km)"
       }
     ],

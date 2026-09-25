@@ -159,20 +159,119 @@ function faqLd(faq) {
 }
 
 // Renderar ett kläd-listobjekt. Objekt som markerats "QTY:xxx" i content.json
-// blir en <li data-qty="xxx" data-age="..."> vars text räknas ut för DEFAULT_PACKLIST_DAYS
-// vid build, och sedan uppdateras live i webbläsaren när man ändrar "Antal dagar".
+// blir en <li class="qty-item"> med ett redigerbart antal-fält vars startvärde
+// räknas ut för DEFAULT_PACKLIST_DAYS vid build, och som sedan uppdateras live i
+// webbläsaren när man ändrar "Antal dagar" — såvida inte besökaren själv skrivit
+// in ett eget värde (då respekteras det istället, se qty-num/touched i scriptet).
 const DEFAULT_PACKLIST_DAYS = 7;
-function qtyText(rule, days) {
-  const n = Math.min(rule.max, Math.max(rule.min, Math.ceil(days * rule.perDay)));
-  return `${n} ${rule.label}`;
+function qtyCalc(rule, days) {
+  return Math.min(rule.max, Math.max(rule.min, Math.ceil(days * rule.perDay)));
 }
 function kladerLi(x, ageKey, qtyRules) {
   if (typeof x === 'string' && x.startsWith('QTY:')) {
     const key = x.slice(4);
-    const rule = (qtyRules && qtyRules[ageKey]) || { perDay: 1, min: 1, max: 10, label: key };
-    return `<li data-qty="${key}" data-age="${ageKey}">${esc(qtyText(rule, DEFAULT_PACKLIST_DAYS))}</li>`;
+    const rule = (qtyRules && qtyRules[ageKey] && qtyRules[ageKey][key]) || { perDay: 1, min: 1, max: 10, label: key };
+    const n = qtyCalc(rule, DEFAULT_PACKLIST_DAYS);
+    return `<li class="qty-item" data-qty="${key}" data-age="${ageKey}" data-perday="${rule.perDay}" data-min="${rule.min}" data-max="${rule.max}"><input type="number" class="qty-num" min="0" max="30" step="1" value="${n}" aria-label="Antal ${esc(rule.label)}"> <span class="qty-label">${esc(rule.label)}</span></li>`;
   }
   return `<li>${esc(x)}</li>`;
+}
+// Wrappar en kläd-checklista med ett dolt "lägg till eget plagg"-fält längst
+// ned. Listan får ett data-store-attribut (t.ex. "barn|sol") som JS använder
+// för att spara/läsa egna tillägg i localStorage — delat mellan alla sidor
+// och transportvarianter som visar samma åldersgrupp/resetyp.
+function kladerChecklist(items, ageKey, tripKey, qtyRules) {
+  const store = `${ageKey}|${tripKey}`;
+  const li = items.map(x => kladerLi(x, ageKey, qtyRules)).join('');
+  const addRow = `<li class="add-item-row"><input type="text" class="add-item-input" placeholder="Lägg till eget plagg…" aria-label="Lägg till eget plagg"><button type="button" class="add-item-btn" aria-label="Lägg till plagg">+</button></li>`;
+  return `<ul class="checklist" data-store="${store}">${li}${addRow}</ul>`;
+}
+
+// Delad klientlogik för packlist-sidorna: (1) uppdaterar antal-fälten när
+// "Antal dagar" ändras, om inte besökaren själv redan skrivit in ett eget
+// värde i just det fältet, och (2) sköter "lägg till eget plagg" inklusive
+// sparning i localStorage per åldersgrupp/resetyp (data-store), så tillägg
+// syns oavsett vilket transportsätt eller vilken sida man tittar på.
+function packlistDaysAndCustomScript() {
+  return `
+  var daysInput = document.getElementById('packlistDays');
+
+  function updateQty() {
+    var days = parseInt(daysInput.value, 10) || ${DEFAULT_PACKLIST_DAYS};
+    document.querySelectorAll('.qty-item').forEach(function(li) {
+      var input = li.querySelector('.qty-num');
+      if (!input || input.dataset.touched === '1') return;
+      var perDay = parseFloat(li.dataset.perday);
+      var min = parseInt(li.dataset.min, 10);
+      var max = parseInt(li.dataset.max, 10);
+      var n = Math.min(max, Math.max(min, Math.ceil(days * perDay)));
+      input.value = n;
+    });
+  }
+  document.querySelectorAll('.qty-num').forEach(function(input) {
+    input.addEventListener('input', function() { input.dataset.touched = '1'; });
+  });
+  daysInput.addEventListener('input', updateQty);
+
+  function customKey(store) { return 'packlist_custom::' + store; }
+  function getCustom(store) {
+    try { return JSON.parse(localStorage.getItem(customKey(store)) || '[]'); } catch (e) { return []; }
+  }
+  function setCustom(store, items) {
+    try { localStorage.setItem(customKey(store), JSON.stringify(items)); } catch (e) {}
+  }
+  function makeCustomLi(text, store) {
+    var li = document.createElement('li');
+    li.className = 'custom-item';
+    var span = document.createElement('span');
+    span.textContent = text;
+    var rm = document.createElement('button');
+    rm.type = 'button';
+    rm.className = 'remove-item-btn';
+    rm.setAttribute('aria-label', 'Ta bort ' + text);
+    rm.innerHTML = '&times;';
+    rm.addEventListener('click', function() {
+      var items = getCustom(store).filter(function(t) { return t !== text; });
+      setCustom(store, items);
+      renderCustomForStore(store);
+    });
+    li.appendChild(span);
+    li.appendChild(rm);
+    return li;
+  }
+  function renderCustomForStore(store) {
+    var items = getCustom(store);
+    document.querySelectorAll('.checklist[data-store="' + store + '"]').forEach(function(ul) {
+      Array.prototype.slice.call(ul.querySelectorAll('.custom-item')).forEach(function(n) { n.remove(); });
+      var addRow = ul.querySelector('.add-item-row');
+      items.forEach(function(text) {
+        var li = makeCustomLi(text, store);
+        if (addRow) ul.insertBefore(li, addRow); else ul.appendChild(li);
+      });
+    });
+  }
+  var stores = {};
+  document.querySelectorAll('.checklist[data-store]').forEach(function(ul) { stores[ul.dataset.store] = true; });
+  Object.keys(stores).forEach(renderCustomForStore);
+
+  document.querySelectorAll('.add-item-row').forEach(function(row) {
+    var ul = row.parentNode;
+    var store = ul.dataset.store;
+    var input = row.querySelector('.add-item-input');
+    var btn = row.querySelector('.add-item-btn');
+    function addItem() {
+      var val = input.value.trim();
+      if (!val) return;
+      var items = getCustom(store);
+      if (items.indexOf(val) === -1) items.push(val);
+      setCustom(store, items);
+      renderCustomForStore(store);
+      input.value = '';
+    }
+    btn.addEventListener('click', addItem);
+    input.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); addItem(); } });
+  });
+  `;
 }
 
 function page(url, meta, active, inner, extraJsonld) {
@@ -979,7 +1078,7 @@ function buildSmartPacklista() {
           <div class="packlist-grid packlist-grid-4">
             <div class="packlist-col">
               <h3>👕 Kläder & hygien</h3>
-              <ul class="checklist">${kladerItems.map(x => kladerLi(x, age.key, P.qtyRules)).join('')}</ul>
+              ${kladerChecklist(kladerItems, age.key, trip.key, P.qtyRules)}
             </div>
             ${Object.entries(tillagg).map(([cat, items]) => `
             <div class="packlist-col">
@@ -1038,25 +1137,13 @@ ${faqHtml(faq)}
 
 <script>
 (function() {
-  var QTY_RULES = ${JSON.stringify(P.qtyRules)};
   var state = { age: 'smabarn', trip: 'sol', transport: 'flyg' };
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.packlist-filters .filter-btn'));
   var combos = Array.prototype.slice.call(document.querySelectorAll('.packlist-combo'));
-  var daysInput = document.getElementById('packlistDays');
 
   function apply() {
     combos.forEach(function(c) {
       c.hidden = !(c.dataset.age === state.age && c.dataset.trip === state.trip && c.dataset.transport === state.transport);
-    });
-  }
-
-  function updateQty() {
-    var days = parseInt(daysInput.value, 10) || ${DEFAULT_PACKLIST_DAYS};
-    document.querySelectorAll('[data-qty]').forEach(function(el) {
-      var rule = QTY_RULES[el.dataset.age];
-      if (!rule) return;
-      var n = Math.min(rule.max, Math.max(rule.min, Math.ceil(days * rule.perDay)));
-      el.textContent = n + ' ' + rule.label;
     });
   }
 
@@ -1070,8 +1157,8 @@ ${faqHtml(faq)}
       apply();
     });
   });
-  daysInput.addEventListener('input', updateQty);
   apply();
+${packlistDaysAndCustomScript()}
 })();
 </script>`;
 
@@ -1103,7 +1190,7 @@ function buildPacklistaSubPages() {
             <div class="packlist-grid packlist-grid-4">
               <div class="packlist-col">
                 <h3>👕 Kläder & hygien</h3>
-                <ul class="checklist">${kladerItems.map(x => kladerLi(x, age.key, P.qtyRules)).join('')}</ul>
+                ${kladerChecklist(kladerItems, age.key, trip.key, P.qtyRules)}
               </div>
               ${Object.entries(tillagg).map(([cat, items]) => `
               <div class="packlist-col">
@@ -1150,23 +1237,12 @@ ${faqHtml(sub.faq)}
 
 <script>
 (function() {
-  var QTY_RULES = ${JSON.stringify(P.qtyRules)};
   var state = { age: '${sub.defaultAge}', trip: '${sub.defaultTrip}', transport: '${sub.defaultTransport}' };
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.packlist-filters .filter-btn'));
   var combos = Array.prototype.slice.call(document.querySelectorAll('.packlist-combo'));
-  var daysInput = document.getElementById('packlistDays');
   function apply() {
     combos.forEach(function(c) {
       c.hidden = !(c.dataset.age === state.age && c.dataset.trip === state.trip && c.dataset.transport === state.transport);
-    });
-  }
-  function updateQty() {
-    var days = parseInt(daysInput.value, 10) || ${DEFAULT_PACKLIST_DAYS};
-    document.querySelectorAll('[data-qty]').forEach(function(el) {
-      var rule = QTY_RULES[el.dataset.age];
-      if (!rule) return;
-      var n = Math.min(rule.max, Math.max(rule.min, Math.ceil(days * rule.perDay)));
-      el.textContent = n + ' ' + rule.label;
     });
   }
   buttons.forEach(function(btn) {
@@ -1177,7 +1253,7 @@ ${faqHtml(sub.faq)}
       apply();
     });
   });
-  daysInput.addEventListener('input', updateQty);
+${packlistDaysAndCustomScript()}
 })();
 </script>`;
 
