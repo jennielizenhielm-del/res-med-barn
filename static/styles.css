@@ -962,7 +962,7 @@ h1 {
   color: var(--text);
   background: var(--bg);
   border: 1.5px solid var(--border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius);
   outline: none;
   transition: border-color var(--transition);
 }
@@ -975,7 +975,7 @@ h1 {
   text-align: center;
   padding: 1.5rem;
   background: var(--primary-light);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -986,3 +986,55 @@ h1 {
 @media (max-width: 640px) {
   .fuel-calc-row { grid-template-columns: 1fr; }
 }
+
+/* ---- PACKLISTA: antal dagar + solkräm-CTA ---- */
+.packlist-days-input {
+  width: 4.5rem;
+  padding: 0.35rem 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  outline: none;
+  transition: border-color var(--transition);
+}
+.packlist-days-input:focus { border-color: var(--primary); }
+.packlist-solkram-cta {
+  margin: 1rem 0 1.5rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--primary-light);
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.packlist-solkram-cta a { color: var(--accent-hover); font-weight: 600; text-decoration: none; }
+.packlist-solkram-cta a:hover { text-decoration: underline; }
+
+/* ---- SOLKRÄMSKALKYLATOR ---- */
+.sun-calc-rows { display: flex; flex-direction: column; gap: 0.9rem; }
+.sun-calc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.sun-calc-row label { font-size: 0.92rem; color: var(--text); }
+.sun-calc-count {
+  width: 4.5rem;
+  padding: 0.6rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  text-align: center;
+  transition: border-color var(--transition);
+}
+.sun-calc-count:focus { border-color: var(--primary); }
+.sun-calc-intensity { gap: 0.75rem; }
+.sun-calc-intensity .filter-btn { text-align: center; line-height: 1.4; padding: 0.6rem 1rem; }
+.sun-calc-sub { font-size: 0.72rem; font-weight: 400; opacity: 0.75; }
