@@ -109,7 +109,7 @@ function footer() {
     <div class="footer-col">
       <h4>Om sajten</h4>
       <a href="/packlista/">Smart packlista</a>
-      <a href="/solkramskalkylator/">Solkrämskalkylator</a>
+      <a href="/verktyg/">🧰 Alla verktyg</a>
       <a href="/resmal/">Alla resmål</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
@@ -140,7 +140,7 @@ function breadcrumbs(items) {
   return { html, jsonld };
 }
 
-const paras = arr => arr.map(p => `<p>${esc(p)}</p>`).join('\n');
+const paras = arr => arr.map(p => `<p>${escLinks(p)}</p>`).join('\n');
 
 /* ---------- images ---------- */
 const IMG = (id, w) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
@@ -158,7 +158,7 @@ function faqHtml(faq) {
   return `
 <h2 class="section-title">Vanliga fr\u00e5gor</h2>
 <div class="faq">
-  ${faq.map(f => `<details class="faq-item"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n  ')}
+  ${faq.map(f => `<details class="faq-item"><summary>${esc(f.q)}</summary><p>${escLinks(f.a)}</p></details>`).join('\n  ')}
 </div>`;
 }
 function faqLd(faq) {
@@ -476,6 +476,7 @@ ${g.packlista ? `
   <p class="packlist-cta"><a href="/packlista/">🧳 Prova vår interaktiva packlista — anpassad efter ålder, resmål och transportsätt →</a></p>
 </div>` : ''}
 ${t.slug === 'bil' ? `<p class="packlist-cta"><a href="/branslekalkylator/">⛽ Räkna ut vad bilresan kostar i bränsle — prova vår bränslekalkylator →</a></p>` : ''}
+${!g.packlista ? `<p class="packlist-cta"><a href="/packlista/">🧳 Packa rätt för resan — prova vår anpassade packlista →</a></p>` : ''}
 ${faqHtml(g.faq)}
 <h2 class="section-title">Fler guider för ${esc(a.name.toLowerCase())}</h2>
 <div class="related-links">
@@ -1030,6 +1031,7 @@ function buildMeta(destinations) {
   for (const s of (C.smartPacklista.subPages || [])) urls.push(`/packlista/${s.slug}/`);
   urls.push('/branslekalkylator/');
   urls.push('/solkramskalkylator/');
+  urls.push('/verktyg/');
   for (const d of destinations) urls.push(`/resmal/${destSlug(d.name)}/`);
   const today = new Date().toISOString().slice(0, 10);
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
@@ -1480,11 +1482,35 @@ ${faqHtml(S.faq)}
   console.log('  ✓ solkramskalkylator/index.html');
 }
 
+/* ---------- VERKTYG (hubb som samlar alla kalkylatorer/verktyg) ---------- */
+function buildVerktygHub() {
+  const m = C.pages.verktyg;
+  const bc = breadcrumbs([['Hem', '/'], ['Verktyg', null]]);
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(m.h1)}</h1>
+  <div class="page-intro">${paras(m.intro)}</div>
+</header>
+<div class="card-grid">
+  ${C.verktyg.tools.map(t => `
+  <a class="hub-card" href="${t.url}">
+    <span class="hub-emoji">${t.emoji}</span>
+    <h2>${esc(t.name)}</h2>
+    <p>${esc(t.cardText)}</p>
+    <span class="hub-link">Öppna verktyget →</span>
+  </a>`).join('')}
+</div>
+${faqHtml(m.faq)}`;
+  write('verktyg/index.html', page('/verktyg/', m, '/verktyg/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
+}
+
 buildResmalHub();
 buildSmartPacklista();
 buildPacklistaSubPages();
 buildBranslekalkylator();
 buildSolkramskalkylator();
+buildVerktygHub();
 const RESMAL_DESTS = buildResmal();
 buildSimplePages();
 buildMeta(RESMAL_DESTS);

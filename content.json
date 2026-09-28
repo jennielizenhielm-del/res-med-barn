@@ -82,6 +82,21 @@
           "a": "Inte nödvändigtvis — alla tre städer har gott om helt gratis aktiviteter, från parker och lekplatser till museer med fri entré för barn. Kombinera en gratis förmiddag med en betald aktivitet på eftermiddagen för att hålla nere kostnaden utan att kompromissa på upplevelsen."
         }
       ]
+    },
+    "verktyg": {
+      "title": "Verktyg för familjeresan – packlista, kalkylatorer | Res med Barn",
+      "description": "Alla våra gratis verktyg för barnfamiljer på resa samlade på ett ställe: smart packlista, bränslekalkylator och solkrämskalkylator.",
+      "h1": "Verktyg för er resa",
+      "intro": [
+        "Praktiska småverktyg som faktiskt sparar tid när ni planerar och packar – ingen inloggning, inga appar, bara fyll i och få ett svar.",
+        "Fler verktyg tillkommer efterhand som vi stöter på saker som är krångliga att räkna ut för hand."
+      ],
+      "faq": [
+        {
+          "q": "Kostar det något att använda verktygen?",
+          "a": "Nej, alla verktyg på sajten är helt gratis att använda, utan konto eller inloggning."
+        }
+      ]
     }
   },
   "transports": [
@@ -1308,7 +1323,7 @@
         },
         {
           "h2": "Dela på kostnaderna – roadtrippens ekonomiskola",
-          "text": "Gör bilresans ekonomi synlig i stället för osynlig: visa vad bränsle, vägtullar och färjor kostar och låt tonåringen – kassören – föra enkel bok. Inte för att de ska betala, utan för att en resa som kostar synliga pengar värderas annorlunda än en som bara händer. Många familjer kör systemet att den som väljer ett extra stopp också kollar upp vad det kostar och presenterar det. Det låter torrt; i praktiken blir det förhandlingar, prioriteringar och en tonåring som förstår varför ni inte äter på restaurang tre gånger om dagen."
+          "text": "Gör bilresans ekonomi synlig i stället för osynlig: [räkna ut](/branslekalkylator/) vad bränsle, vägtullar och färjor kostar, och låt tonåringen – kassören – föra enkel bok. Inte för att de ska betala, utan för att en resa som kostar synliga pengar värderas annorlunda än en som bara händer. Många familjer kör systemet att den som väljer ett extra stopp också kollar upp vad det kostar och presenterar det. Det låter torrt; i praktiken blir det förhandlingar, prioriteringar och en tonåring som förstår varför ni inte äter på restaurang tre gånger om dagen."
         }
       ],
       "quicktips": [
@@ -3593,7 +3608,7 @@
         "faq": [
           {
             "q": "Räcker UV-kläder istället för solkräm?",
-            "a": "UV-kläder skyddar effektivt de delar av kroppen de täcker, men barnets ansikte, händer och andra bara hudpartier behöver fortfarande solkräm. Kombinera gärna UV-dräkt med en solhatt och solkräm på synlig hud."
+            "a": "UV-kläder skyddar effektivt de delar av kroppen de täcker, men barnets ansikte, händer och andra bara hudpartier behöver fortfarande solkräm. Kombinera gärna UV-dräkt med en solhatt och solkräm på synlig hud — [räkna ut hur mycket ni behöver](/solkramskalkylator/) med vår solkrämskalkylator."
           }
         ],
         "img": "photo-1557469778-0b3269a1cc7a"
@@ -5009,6 +5024,31 @@
       {
         "q": "Gäller det här bebisar också?",
         "a": "Barn under 6 månader bör helst hållas ur direkt sol och skyddas med kläder och skugga snarare än stora mängder solkräm. Siffrorna för bebisar här gäller kompletterande skydd på händer, ansikte och andra utsatta ytor."
+      }
+    ]
+  },
+  "verktyg": {
+    "tools": [
+      {
+        "slug": "packlista",
+        "url": "/packlista/",
+        "name": "Smart packlista",
+        "emoji": "🧳",
+        "cardText": "Anpassad packlista efter barnets ålder, resetyp och transportsätt — med antal som skalar efter hur många dagar ni är borta."
+      },
+      {
+        "slug": "branslekalkylator",
+        "url": "/branslekalkylator/",
+        "name": "Bränslekalkylator",
+        "emoji": "⛽",
+        "cardText": "Räkna ut vad bilsemestern faktiskt kostar i bränsle eller el innan ni ger er av."
+      },
+      {
+        "slug": "solkramskalkylator",
+        "url": "/solkramskalkylator/",
+        "name": "Solkrämskalkylator",
+        "emoji": "☀️",
+        "cardText": "Se hur många tuber solkräm ni behöver packa utifrån antal personer, resans längd och hur starkt solen är på resmålet."
       }
     ]
   }
