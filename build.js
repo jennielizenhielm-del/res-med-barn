@@ -13,6 +13,11 @@ const DOMAIN = C.site.domain.replace(/\/$/, '');
 
 /* ---------- helpers ---------- */
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+// Som esc(), men tillåter enkla Markdown-länkar i brödtext, t.ex.
+// "prova vår [bränslekalkylator](/branslekalkylator/)" — texten escapas
+// först (så inga riktiga HTML-taggar kan smygas in), sedan omvandlas bara
+// den specifika [text](url)-syntaxen till en riktig länk.
+const escLinks = s => esc(s).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
 const write = (rel, html) => {
   const file = path.join(DIST, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -449,7 +454,7 @@ function buildGuides() {
 </header>
 ${media(g.img, t.emoji, 'page-hero', 1400)}
 <article class="article">
-  ${g.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${esc(s.text)}</p>`).join('\n')}
+  ${g.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>`).join('\n')}
 </article>
 <div class="quicktips-box">
   <h2>Snabbtips</h2>
