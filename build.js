@@ -11,6 +11,37 @@ const DIST = path.join(ROOT, 'dist');
 const C = JSON.parse(fs.readFileSync(path.join(ROOT, 'content.json'), 'utf8'));
 const DOMAIN = C.site.domain.replace(/\/$/, '');
 
+// Dagens datum (ISO) — används som sista utväg om en sida saknar eget
+// updated/published-fält i content.json, och för sitemapens fallback-lastmod.
+const TODAY = new Date().toISOString().slice(0, 10);
+// Svensk visningsversion av ett ISO-datum ("2026-09-28" -> "28 september 2026"),
+// för synliga "Uppdaterad"-etiketter på sidan. Strukturerad data behåller ISO.
+const svDate = iso => {
+  try {
+    return new Date(`${iso}T00:00:00`).toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', year: 'numeric' });
+  } catch (e) { return iso; }
+};
+// Samlar in <lastmod> per URL i takt med att sidorna byggs, så sitemapen
+// speglar verkliga per-sidesdatum i stället för ett enda globalt byggdatum.
+const URL_DATES = {};
+// Author-identitet (pseudonym) som återanvänds i strukturerad data på varje sida.
+const personLd = () => ({ '@type': 'Person', name: C.site.author.name, description: C.site.author.bio });
+// Bygger dateModified/datePublished/author-schema för en sida. type styr
+// schema.org-typen (Article för redaktionellt innehåll, annars WebPage/etc).
+function pageLd(meta, url, updated, published, type) {
+  const t = type || 'WebPage';
+  const ld = {
+    '@context': 'https://schema.org', '@type': t,
+    name: meta.h1 || meta.title,
+    url: DOMAIN + url,
+    datePublished: published,
+    dateModified: updated,
+    author: personLd()
+  };
+  if (t === 'Article') ld.headline = meta.h1 || meta.title;
+  return ld;
+}
+
 /* ---------- helpers ---------- */
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 // Som esc(), men tillåter enkla Markdown-länkar i brödtext, t.ex.
@@ -287,8 +318,13 @@ function packlistDaysAndCustomScript() {
   `;
 }
 
-function page(url, meta, active, inner, extraJsonld) {
-  if (extraJsonld) meta = { ...meta, jsonld: extraJsonld };
+function page(url, meta, active, inner, extraJsonld, ldType) {
+  const updated = meta.updated || TODAY;
+  const published = meta.published || updated;
+  URL_DATES[url] = updated;
+  const ld = extraJsonld ? (Array.isArray(extraJsonld) ? extraJsonld.slice() : [extraJsonld]) : [];
+  ld.push(pageLd(meta, url, updated, published, ldType));
+  meta = { ...meta, jsonld: ld };
   return head(meta, url) + nav(active) + `<main class="page">` + inner + `</main>` + footer();
 }
 
@@ -347,6 +383,9 @@ function destCardSSR(d) {
 function buildHome() {
   let html = fs.readFileSync(path.join(ROOT, 'templates', 'home.html'), 'utf8');
   const m = C.pages.home;
+  const updated = m.updated || TODAY;
+  const published = m.published || updated;
+  URL_DATES['/'] = updated;
   const DESTINATIONS = loadDestinations();
   const featured = DESTINATIONS.filter(d => d.featured);
   warnLen('/', 'meta title', m.title, 60);
@@ -364,7 +403,9 @@ function buildHome() {
 <meta property="og:type" content="website">
 <script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org', '@type': 'WebSite',
-      name: C.site.name, url: DOMAIN + '/'
+      name: C.site.name, url: DOMAIN + '/',
+      datePublished: published, dateModified: updated,
+      author: personLd()
     })}</script>
 ${m.faq ? `<script type="application/ld+json">${JSON.stringify(faqLd(m.faq))}</script>` : ''}
 </head>`);
@@ -448,7 +489,7 @@ function buildGuides() {
       const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${t.emoji} ${esc(a.name)} · ${esc(a.ageRange)}</p>
+  <p class="kicker">${t.emoji} ${esc(a.name)} · ${esc(a.ageRange)} · Uppdaterad ${svDate(g.updated)}</p>
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
@@ -483,7 +524,7 @@ ${faqHtml(g.faq)}
   ${others.map(x => `<a href="/guider/${a.slug}/${x.slug}/">${x.emoji} ${esc(C.guides[a.slug + '/' + x.slug].h1)}</a>`).join('\n  ')}
   <a href="/guider/${a.slug}/">← Alla guider för ${esc(a.name.toLowerCase())}</a>
 </div>`;
-      write(`guider/${key}/index.html`, page(url, g, '/guider/', inner, g.faq ? [bc.jsonld, faqLd(g.faq)] : bc.jsonld));
+      write(`guider/${key}/index.html`, page(url, g, '/guider/', inner, g.faq ? [bc.jsonld, faqLd(g.faq)] : bc.jsonld, 'Article'));
     }
   }
 }
@@ -582,7 +623,7 @@ ${faqHtml(hub.faq)}`;
     const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${l.emoji} Uppdaterad ${esc(C.topplistor.updated)}</p>
+  <p class="kicker">${l.emoji} Uppdaterad ${svDate(l.updated)}</p>
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
@@ -643,7 +684,7 @@ ${faqHtml(l.faq)}
   }).join('\n  ')}
   <a href="/topplistor/" class="related-links-all">Alla topplistor →</a>
 </div>`;
-    write(`topplistor/${l.slug}/index.html`, page(url, l, '/topplistor/', inner, l.faq ? [bc.jsonld, itemList, faqLd(l.faq)] : [bc.jsonld, itemList]));
+    write(`topplistor/${l.slug}/index.html`, page(url, l, '/topplistor/', inner, l.faq ? [bc.jsonld, itemList, faqLd(l.faq)] : [bc.jsonld, itemList], 'Article'));
   }
 }
 
@@ -702,7 +743,7 @@ function buildStader() {
     const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${s.emoji} Uppdaterad ${esc(C.topplistor.updated)}</p>
+  <p class="kicker">${s.emoji} Uppdaterad ${svDate(s.updated)}</p>
   <h1>${esc(s.h1)}</h1>
   <div class="page-intro">${paras(s.intro)}</div>
 </header>
@@ -779,7 +820,7 @@ ${faqHtml(s.faq)}
   });
 })();
 </script>`;
-    write(`stader/${s.slug}/index.html`, page(url, s, '/stader/', inner, s.faq ? [bc.jsonld, itemList, faqLd(s.faq)] : [bc.jsonld, itemList]));
+    write(`stader/${s.slug}/index.html`, page(url, s, '/stader/', inner, s.faq ? [bc.jsonld, itemList, faqLd(s.faq)] : [bc.jsonld, itemList], 'Article'));
   }
 }
 
@@ -812,7 +853,8 @@ function buildResmalHub() {
   const bc = breadcrumbs([['Hem', '/'], ['Resmål', null]]);
   const meta = {
     title: 'Resmål för barnfamiljer — 36 st, filtrerbara | Res med Barn',
-    description: 'Alla våra 36 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.'
+    description: 'Alla våra 36 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.',
+    updated: '2026-09-23', published: '2026-09-23'
   };
   const itemList = {
     '@context': 'https://schema.org', '@type': 'ItemList',
@@ -934,7 +976,8 @@ function buildResmal() {
 
     const meta = {
       title: `${d.name} med barn | Res med Barn`,
-      description: d.desc.length > 150 ? d.desc.slice(0, 147) + '…' : d.desc
+      description: d.desc.length > 150 ? d.desc.slice(0, 147) + '…' : d.desc,
+      updated: d.updated, published: d.published
     };
 
     const inner = `
@@ -946,7 +989,7 @@ function buildResmal() {
   <div class="detail-title-wrap">
     <span class="d-chip" style="background: var(--cat-${d.cat}, var(--accent))">${d.emoji} ${esc(CAT_LABELS[d.cat] || d.catLabel)}</span>
     <h1>${esc(d.name)}</h1>
-    <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg</p>
+    <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg · Uppdaterad ${svDate(d.updated)}</p>
   </div>
 </div>
 <div class="detail-body">
@@ -991,7 +1034,7 @@ function buildResmal() {
   </div>` : ''}
 </div>`;
 
-    write(`resmal/${slug}/index.html`, page(url, meta, null, inner, [bc.jsonld, schema]));
+    write(`resmal/${slug}/index.html`, page(url, meta, null, inner, [bc.jsonld, schema], 'Article'));
   }
   console.log(`  ✓ ${DESTINATIONS.length} resmål-sidor genererade`);
   return DESTINATIONS;
@@ -1012,7 +1055,7 @@ function buildSimplePages() {
   ${paras(m.body)}
   ${slug === 'kontakt' ? `<p class="contact-mail">📧 <a href="mailto:${esc(m.email)}">${esc(m.email)}</a></p>` : ''}
 </article>`;
-    write(`${slug}/index.html`, page(url, m, url, inner, bc.jsonld));
+    write(`${slug}/index.html`, page(url, m, url, inner, bc.jsonld, slug === 'om-oss' ? 'AboutPage' : 'ContactPage'));
   }
 }
 
@@ -1033,10 +1076,9 @@ function buildMeta(destinations) {
   urls.push('/solkramskalkylator/');
   urls.push('/verktyg/');
   for (const d of destinations) urls.push(`/resmal/${destSlug(d.name)}/`);
-  const today = new Date().toISOString().slice(0, 10);
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
+${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY}</lastmod></url>`).join('\n')}
 </urlset>`);
   write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${DOMAIN}/sitemap.xml`);
   fs.copyFileSync(path.join(ROOT, 'static', 'styles.css'), path.join(DIST, 'styles.css'));
@@ -1186,7 +1228,7 @@ function buildPacklistaSubPages() {
 
   for (const sub of P.subPages || []) {
     const bc = breadcrumbs([['Hem', '/'], ['Packlista', '/packlista/'], [sub.h1, null]]);
-    const meta = { title: sub.title, description: sub.description, h1: sub.h1 };
+    const meta = { title: sub.title, description: sub.description, h1: sub.h1, updated: sub.updated, published: sub.published };
 
     // Bygg alla 24 kombinationer (samma data som hubben), men förvalt läge synligt direkt via SSR
     const ageBtns = P.ages.map(a => `<button class="filter-btn${a.key === sub.defaultAge ? ' active' : ''}" data-group="age" data-value="${a.key}">${a.emoji} ${esc(a.label)}</button>`).join('');
@@ -1221,6 +1263,7 @@ function buildPacklistaSubPages() {
     const inner = `
 <header class="page-header">
   ${bc.html}
+  <p class="kicker">Uppdaterad ${svDate(sub.updated)}</p>
   <h1>${esc(sub.h1)}</h1>
   <div class="page-intro"><p>${esc(sub.intro)}</p></div>
 </header>
@@ -1272,7 +1315,7 @@ ${packlistDaysAndCustomScript()}
 })();
 </script>`;
 
-    write(`packlista/${sub.slug}/index.html`, page(`/packlista/${sub.slug}/`, meta, '/packlista/', inner, [bc.jsonld, faqLd(sub.faq)]));
+    write(`packlista/${sub.slug}/index.html`, page(`/packlista/${sub.slug}/`, meta, '/packlista/', inner, [bc.jsonld, faqLd(sub.faq)], 'Article'));
     results.push(sub.slug);
   }
   console.log(`  ✓ ${results.length} packlista-undersidor genererade`);

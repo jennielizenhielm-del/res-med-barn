@@ -2,7 +2,11 @@
   "site": {
     "name": "Res med Barn",
     "domain": "https://resmedbarn.se",
-    "footerText": "Guiden för svenska familjer som vill upptäcka världen tillsammans. Vi har rest med barn sedan de var bebisar och delar med oss av våra bästa tips och erfarenheter. Från Gotland till Tokyo — vi har testat så ni slipper."
+    "footerText": "Guiden för svenska familjer som vill upptäcka världen tillsammans. Vi har rest med barn sedan de var bebisar och delar med oss av våra bästa tips och erfarenheter. Från Gotland till Tokyo — vi har testat så ni slipper.",
+    "author": {
+      "name": "Jennie Lundberg",
+      "bio": "Jennie Lundberg har rest i hela sitt vuxna liv och de senaste fem åren med barnen i bagaget. Otaliga timmar har gått åt till att leta reda på det som faktiskt underlättar en resa med barn — vad som är värt att packa, boka i förväg eller strunta i helt — så att ingen i familjen missar något viktigt på vägen."
+    }
   },
   "pages": {
     "home": {
@@ -13,7 +17,9 @@
           "q": "Var är det bäst att resa med barn?",
           "a": "Det beror på barnens ålder och vad familjen gillar. Grekland, Kroatien och Spanien är klassiska val för långgrunda stränder och barnvänliga hotell. Nöjesparker som Legoland eller Gröna Lund passar utmärkt för en kortare resa, och Sverige (Gotland, Stockholms skärgård) är perfekt när ni vill hålla resan enkel. Filtrera bland våra 36 resmål ovan efter ålder, budget och typ av resa för att hitta rätt för just er familj."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "guider": {
       "title": "Reseguider – från bebis till tonåring | Res med Barn",
@@ -29,7 +35,9 @@
           "q": "Vilken ålder är bäst att resa med barn?",
           "a": "Det finns inget entydigt svar, men två perioder brukar lyftas fram: 3–12 månader (innan barnet kan gå och kräver eget schema) och 4–7 år (nog gammal för att minnas resan, inte för stor för familjeaktiviteter). Tonåringar kan också vara fantastiska reskamrater om resan anpassas efter deras intressen. Se våra åldersguider nedan för konkreta tips oavsett var era barn befinner sig."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "topplistor": {
       "title": "Topplistor – bäst i test för barnfamiljer | Res med Barn",
@@ -45,18 +53,22 @@
           "q": "Var kan jag hitta en billig resa med barn?",
           "a": "Res i lågsäsong (maj eller september slår juli på pris utan att tumma mycket på vädret), boka charterresor i god tid, och filtrera våra resmål på budgetnivån € för de mest prisvärda alternativen. Att välja rätt utrustning spelar också roll – våra topplistor nedan hjälper er hitta prylar som håller hela barndomen istället för att köpas om varje år."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "om-oss": {
       "title": "Om oss – föräldrarna bakom Res med Barn",
       "description": "Res med Barn drivs av föräldrar som rest med barnen sedan bebisåren. Ärliga guider, testade resmål och inga sponsrade femmor.",
       "h1": "Om oss",
       "body": [
-        "Res med Barn startade som en anteckningsfil i mobilen. Efter varje resa skrev vi ner vad som funkade, vad som var bortkastade pengar och vad vi önskat att någon berättat innan avgång. Till slut blev filen så lång att det kändes dumt att inte dela den.",
-        "Vi är föräldrar, inte resejournalister. Det betyder att våra omdömen kommer från verkliga resor med verkliga barn – de som får utbrott i säkerhetskontrollen, vägrar äta något grönt söder om Alperna och somnar exakt tre minuter innan man är framme.",
-        "Allt på sajten är skrivet av oss. När vi rekommenderar en vagn eller en bilbarnstol är det för att vi använt den eller lånat den av någon vi litar på – inte för att någon betalat för placeringen. Den dagen vi börjar med affiliatelänkar kommer det stå tydligt.",
-        "Har du ett tips, en rättelse eller ett resmål vi borde testa? Hör av dig via kontaktsidan. Vi läser allt, även om svaret ibland dröjer tills barnen somnat."
-      ]
+        "Jag heter Jennie Lundberg och har rest så länge jag kan minnas — först på egen hand, sedan de senaste fem åren med barnen i bagaget. Den här sajten började som anteckningar i mobilen efter varje resa: vad som funkade, vad som var bortkastade pengar och vad jag önskat att någon berättat innan avgång. Till slut blev filen så lång att det kändes dumt att inte dela den.",
+        "Jag är ingen resejournalist. Det som står här kommer från otaliga timmar av research och verkliga resor med barn som får utbrott i säkerhetskontrollen, vägrar äta något grönt söder om Alperna och somnar exakt tre minuter innan man är framme — inte från pressresor eller sponsrade upplevelser.",
+        "Vissa länkar på sajten är annonslänkar (bland annat via Adtraction och TradeDoubler) — det innebär att jag kan få en liten ersättning om ni bokar eller köper något via dem, helt utan extra kostnad för er. Det styr aldrig vilka resmål, produkter eller tips jag rekommenderar; jag skriver bara om sådant jag själv skulle välja för min egen familj.",
+        "Har du ett tips, en rättelse eller ett resmål jag borde testa? Hör av dig via kontaktsidan. Jag läser allt, även om svaret ibland dröjer tills barnen somnat."
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-29"
     },
     "kontakt": {
       "title": "Kontakt – hör av dig till Res med Barn",
@@ -66,7 +78,9 @@
       "body": [
         "Har du en fråga om ett resmål, ett tips vi borde känna till eller en produkt du tycker att vi ska testa? Mejla oss. Vi läser allt och svarar på det mesta, oftast inom några dagar.",
         "Företag och PR-byråer: vi tar gärna emot testprodukter, men vi lovar aldrig omdömen i förväg. Hör av er om ni vill diskutera något annat."
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "stader": {
       "title": "Städer med barn — gratis & betalt | Res med Barn",
@@ -81,7 +95,9 @@
           "q": "Är det dyrt att resa med barn i svenska städer?",
           "a": "Inte nödvändigtvis — alla tre städer har gott om helt gratis aktiviteter, från parker och lekplatser till museer med fri entré för barn. Kombinera en gratis förmiddag med en betald aktivitet på eftermiddagen för att hålla nere kostnaden utan att kompromissa på upplevelsen."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "verktyg": {
       "title": "Verktyg för familjeresan – packlista, kalkylatorer | Res med Barn",
@@ -96,7 +112,9 @@
           "q": "Kostar det något att använda verktygen?",
           "a": "Nej, alla verktyg på sajten är helt gratis att använda, utan konto eller inloggning."
         }
-      ]
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28"
     }
   },
   "transports": [
@@ -166,7 +184,9 @@
         "Reseförsäkring som täcker hela familjen – kolla att bebisen ingår",
         "Ett par extra tröjor för er själva. Ni kommer behöva dem."
       ],
-      "img": "photo-1519689680058-324335c77eba"
+      "img": "photo-1519689680058-324335c77eba",
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     {
       "slug": "smabarn",
@@ -212,7 +232,9 @@
         "Solkräm, hatt och badblöjor om det är strandresa",
         "Reseapotek: febernedsättande, plåster, termometer"
       ],
-      "img": "photo-1502086223501-7ea6ecd79368"
+      "img": "photo-1502086223501-7ea6ecd79368",
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     {
       "slug": "barn",
@@ -258,7 +280,9 @@
         "Kopia på passen i mobilen",
         "En tom väska för allt de kommer samla på sig"
       ],
-      "img": "photo-1472162072942-cd5147eb3902"
+      "img": "photo-1472162072942-cd5147eb3902",
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     {
       "slug": "tonaringar",
@@ -304,7 +328,9 @@
         "Kolla åldersgränser på aktiviteter i förväg (vattenland, skoter, dykning)",
         "Prata igenom regler för egen tid innan avresa, inte på plats"
       ],
-      "img": "photo-1529333166437-7750a6dd5a70"
+      "img": "photo-1529333166437-7750a6dd5a70",
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     }
   ],
   "guides": {
@@ -399,7 +425,9 @@
             ]
           }
         ]
-      }
+      },
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "bebisar/tag": {
       "cardText": "Skötbord, vagnplats och gott om utrymme – tåget är bebisens bästa färdmedel.",
@@ -456,7 +484,9 @@
           "q": "Var byter man blöja på tåget?",
           "a": "De flesta fjärrtåg har skötbord på minst en av toaletterna. Kolla vagnskartan när du bokar och välj platser i närheten, så slipper du vandra genom halva tåget med en bebis i akut behov."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "bebisar/buss": {
       "cardText": "Kortare sträckor funkar fint med bärsele och rätt tajming. Så gör ni det bekvämt.",
@@ -513,7 +543,9 @@
           "q": "Hur byter man blöja på en bussresa?",
           "a": "Helst vid pauserna – busstoaletter är trånga och saknar oftast skötbord. Byt direkt före avgång, packa en vikbar skötmatta och gör större byten vid rastställena var annan till var tredje timme."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "bebisar/bil": {
       "cardText": "Max två timmar i sträck, res på sovtiderna och packa bilen som ett proffs.",
@@ -570,7 +602,9 @@
           "q": "Kan babyskyddet stå i framsätet?",
           "a": "Bara om krockkudden på passagerarplatsen är avstängd – en aktiv airbag framför ett bakåtvänt babyskydd är livsfarlig. Säkrast står babyskyddet i baksätet, gärna med en spegel så du ser bebisen från förarplatsen."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "smabarn/flyg": {
       "cardText": "Eget säte eller knä? Och hur överlever man fyra timmar med en tvååring? Guiden.",
@@ -661,7 +695,9 @@
             ]
           }
         ]
-      }
+      },
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "smabarn/tag": {
       "cardText": "Tåget är småbarnens bästa färdmedel: plats att röra sig, saker att titta på och inga bilbälten.",
@@ -718,7 +754,9 @@
           "q": "Måste man boka plats för barnvagnen?",
           "a": "På snabbtågen ja – barnvagnsplatsen är gratis men väljs till vid bokningen och antalet är begränsat. På regionaltåg rullar du på i flexutrymmet utan bokning."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "smabarn/buss": {
       "cardText": "Trångt men billigt – och fullt görbart med rätt platser, rätt tider och åksjukeberedskap.",
@@ -775,7 +813,9 @@
           "q": "Vilka platser är bäst med småbarn?",
           "a": "Främre halvan av bussen: mindre krängning, mindre åksjuka och snabbt av och på vid pauser. Undvik längst bak vid toaletten och raderna över hjulen."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "smabarn/bil": {
       "cardText": "Roadtrip-rytmen som funkar med 1–3-åringar: två timmar kör, en timme lever.",
@@ -832,7 +872,9 @@
           "q": "Underhållning i bilen utan skärm?",
           "a": "Ljudböcker och barnvisor genom bilens högtalare, magnetböcker, klistermärken och tittut-lekar via spegeln. Spara skärmen som sista utväg – på kurviga vägar förvärrar den dessutom åksjuka."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "barn/flyg": {
       "cardText": "Nu blir flyget ett äventyr i sig. Egen ryggsäck, fönsterplats och lite eget ansvar.",
@@ -919,7 +961,9 @@
             ]
           }
         ]
-      }
+      },
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "barn/tag": {
       "cardText": "Tågsemester på riktigt: restaurangvagn, kortspel och Europa genom fönstret.",
@@ -976,7 +1020,9 @@
           "q": "Finns det wifi på tågen?",
           "a": "På de flesta snabbtåg och fjärrtåg ja, med varierande kvalitet. Räkna inte med att strömma – ladda ner filmer och spellistor i förväg, och se uppkopplingen som bonus snarare än plan."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "barn/buss": {
       "cardText": "Långfärdsbuss funkar utmärkt nu – och plånboken älskar den. Så blir resan bekväm.",
@@ -1033,7 +1079,9 @@
           "q": "Vilken barnrabatt gäller på buss?",
           "a": "Det varierar per bolag: vanligast är rabatterade barnbiljetter upp till 12–15 år, ibland fasta lågpriser. Småbarn i knä reser ofta gratis. Jämför alltid totalpriset för familjen mellan bolagen – skillnaderna är större än på tåg."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "barn/bil": {
       "cardText": "Den klassiska roadtrippen. Spellistor, bilspel och konsten att svara på 'är vi framme snart'.",
@@ -1090,7 +1138,9 @@
           "q": "Vilka är de bästa bilspelen?",
           "a": "Klassikerna håller: registreringsskyltsbingo, 20 frågor, gissa låten och 'jag ser något du inte ser'. Utse en spelledare som roterar per etapp – det gör spelen rättvisa och ger er förhandlingsläge när ni behöver tyst i bilen."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "tonaringar/flyg": {
       "cardText": "Låt dem sköta sin egen incheckning, ge dem gången ifred – och landa som vänner.",
@@ -1175,7 +1225,9 @@
             ]
           }
         ]
-      }
+      },
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "tonaringar/tag": {
       "cardText": "Interrail med tonåringar är familjeresans slutprov – och kanske dess höjdpunkt.",
@@ -1232,7 +1284,9 @@
           "q": "Kan tonåringen få en egen kupé?",
           "a": "På många nattåg kan man boka enskilda bäddar i delade kupéer, ofta med dam- och herrkupéer som alternativ. För familjer är hel kupé enklast – och tonåringen får översta kojen som kompensation för sällskapet."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "tonaringar/buss": {
       "cardText": "Billigast av allt – och tonåringar klarar nattbussen bättre än ni. Budget-guiden.",
@@ -1289,7 +1343,9 @@
           "q": "När är bussbiljetterna billigast?",
           "a": "Så tidigt som möjligt, och på lågtrafiktider: vardagsförmiddagar kostar ofta hälften mot fredag- och söndagskvällar. Priserna stiger närmare avgång precis som flygets – impulsresor straffas, planering belönas."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     },
     "tonaringar/bil": {
       "cardText": "Roadtrip där tonåringen är co-pilot, DJ och navigatör – inte bara baksätespassagerare.",
@@ -1346,11 +1402,12 @@
           "q": "Vem bestämmer musiken i bilen?",
           "a": "Gemensam spellista där alla lägger låtar är den beprövade freden: den som kör väljer var tredje låt, DJ-rollen roterar dagligen. Och true crime-poddar har en närmast magisk förmåga att ena generationerna på långa etapper."
         }
-      ]
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-28"
     }
   },
   "topplistor": {
-    "updated": "september 2026",
     "lists": [
       {
         "slug": "vagnar",
@@ -1672,7 +1729,9 @@
             "q": "Är det okej att köpa begagnad barnvagn?",
             "a": "Ja, vagnar är bland det bästa att köpa begagnat – de tål flera barn och andrahandsmarknaden är stor. Kolla chassit för rost och sprickor, testa bromsen och räkna med att byta slitdelar som däck och handtag."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "resevagnar",
@@ -1816,7 +1875,9 @@
             "a": "Bättre än ryktet. Små hjul märks på riktigt grov kullersten, men moderna resevagnar med fjädring – Butterfly, Aer+ – rullar förvånansvärt bra i europeiska stadskärnor. För skogsstigar och strand är det fel verktyg; där vinner bärsele."
           }
         ],
-        "handbagageNote": "Alla vagnar i listan uppfyller IATA:s rekommenderade maxmått för handbagage (56 × 45 × 25 cm), men flygbolag kan ha egna, striktare regler — kontrollera alltid med ditt flygbolag innan avresa."
+        "handbagageNote": "Alla vagnar i listan uppfyller IATA:s rekommenderade maxmått för handbagage (56 × 45 × 25 cm), men flygbolag kan ha egna, striktare regler — kontrollera alltid med ditt flygbolag innan avresa.",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "bilbarnstol",
@@ -1843,7 +1904,9 @@
             "emoji": "🧒",
             "desc": "För äldre barn (ca 3,5–12 år) som vuxit ur den bakåtvända stolen."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "bilbarnstol/bakatvand",
@@ -1980,7 +2043,9 @@
             "q": "Kan man köpa bilbarnstol begagnat?",
             "a": "Avrådes om du inte vet stolens historia. En stol som varit med i en krock kan ha osynliga skador, och plast åldras – de flesta tillverkare anger cirka tio års livslängd. Köp hellre en billigare stol ny än en premiumstol med okänt förflutet."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "bilbarnstol/framatvand",
@@ -2092,7 +2157,9 @@
             "q": "Vid vilken ålder ska man byta till framåtvänd bilbarnstol?",
             "a": "Svenska rekommendationer (NTF m.fl.) säger bakåtvänt så länge som möjligt, gärna till 4–5 års ålder eller tills barnet är för stort för den bakåtvända stolen enligt tillverkarens gränser — vad som än inträffar sist."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "babyskydd",
@@ -2204,7 +2271,9 @@
             "q": "Hur länge kan man använda ett babyskydd?",
             "a": "De flesta babyskydd är godkända upp till ca 75–87 cm eller 13 kg beroende på modell, vilket för de flesta barn motsvarar ungefär 12–18 månader. När barnet börjar sitta bra själv eller närmar sig gränsen är det dags att gå vidare till en bakåtvänd bilbarnstol."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "tillbehor",
@@ -2342,7 +2411,9 @@
             "q": "Hur varmt klär man barnet i åkpåse?",
             "a": "Tumregel: ett lager mindre än du tror, plus mössa. Åkpåsen med ull isolerar kraftigt – ett barn i vanliga inneklädar plus overall i en vinteråkpåse blir svettigt. Känn på nacken, inte händerna: varm nacke är lagom, svettig är för mycket."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "akpase",
@@ -2454,7 +2525,9 @@
             "q": "Kan åkpåsen användas i både barnvagn och bilbarnstol?",
             "a": "De flesta åkpåsar går att använda i båda, men kolla alltid att åkpåsen har selöppningar som matchar er bilbarnstols sele (ofta ett 5-punktsbälte) — annars kan det bli fel passform eller säkerhetsrisk i bilen."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "barsele",
@@ -2571,7 +2644,9 @@
             "a": "De flesta ergonomiska bärselar går att använda från nyfödd, men vissa modeller (som Ergobaby Omni 360) fungerar direkt utan extra inlägg medan andra kräver ett spädbarnsinlägg de första månaderna. Kolla alltid respektive modells lägsta viktgräns."
           }
         ],
-        "img": "photo-1564149809912-731909a19d89"
+        "img": "photo-1564149809912-731909a19d89",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "amningskudde",
@@ -2688,7 +2763,9 @@
             "a": "Ja, de flesta amningskuddar fungerar lika bra för flaskmatning som amning — huvudsyftet är att avlasta din kropp och lyfta barnet till en bekväm höjd, oavsett matningssätt."
           }
         ],
-        "img": "photo-1567073931033-07972e6081bd"
+        "img": "photo-1567073931033-07972e6081bd",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "sleep-carrier",
@@ -2805,7 +2882,9 @@
             "a": "En sleep carrier är oftast mer mångsidig — den fungerar som babynest, kan bäras med handtag som en lift, och går att fälla ut till en lekfilt. En klassisk barnvagnslift är i regel bara avsedd att ligga i vagnens liggdel."
           }
         ],
-        "img": "photo-1458731909820-5850bdcaee0b"
+        "img": "photo-1458731909820-5850bdcaee0b",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "klassiska-babynest",
@@ -2917,7 +2996,9 @@
             "q": "Vad är skillnaden mellan ett babynest och en sleep carrier/mjuklift?",
             "a": "Ett klassiskt babynest är tänkt att stanna på plats (hemma, i spjälsängen), medan en sleep carrier/mjuklift har bärhandtag som gör att ni kan flytta ett sovande barn mellan rum, barnvagn och besök utan att väcka det."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "nappar",
@@ -3038,7 +3119,9 @@
             "a": "Latexnappar bör bytas var 4–6:e vecka eller så fort du ser sprickbildning. Silikonnappar håller generellt längre, men kolla regelbundet efter slitage oavsett material."
           }
         ],
-        "img": "photo-1664913911383-b36d045a2e99"
+        "img": "photo-1664913911383-b36d045a2e99",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "brostpump",
@@ -3149,7 +3232,9 @@
             "a": "En vanlig rekommendation är att pumpa i cirka 15 minuter per bröst, eller tills mjölkflödet tydligt minskar. Det kan variera från person till person."
           }
         ],
-        "img": "photo-1542386247-eb6355c537c1"
+        "img": "photo-1542386247-eb6355c537c1",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "nappflaska",
@@ -3266,7 +3351,9 @@
             "a": "För nyfödda gäller alltid det långsammaste flödet (steg 1), oavsett vilken flaska du väljer. Öka flödet stegvis i takt med att barnet växer och blir mer effektivt på att dricka."
           }
         ],
-        "img": "flagged/photo-1570560558077-45ad028193e5"
+        "img": "flagged/photo-1570560558077-45ad028193e5",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "babymonitor",
@@ -3377,7 +3464,9 @@
             "a": "Räcker det med att höra när barnet vaknar eller är oroligt kan en ren ljudmonitor räcka gott och väl, och är oftast billigare med bättre batteritid. Vill du kunna se hur barnet sover eller rör sig ger video mer trygghet, särskilt när barnet börjar klättra i sängen."
           }
         ],
-        "img": "photo-1742233105502-6d0e8d5dac2b"
+        "img": "photo-1742233105502-6d0e8d5dac2b",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "barsjal",
@@ -3494,7 +3583,9 @@
             "a": "Bärsjalar ger generellt mer närhet och mjukhet, vilket många tycker passar extra bra för nyfödda och den så kallade fjärde trimestern. Bärselar är enklare att ta på och fungerar ofta bättre när barnet blir äldre. Många familjer använder båda beroende på situation."
           }
         ],
-        "img": "photo-1772463221461-27d45c11e2bf"
+        "img": "photo-1772463221461-27d45c11e2bf",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "uv-badklader",
@@ -3611,7 +3702,9 @@
             "a": "UV-kläder skyddar effektivt de delar av kroppen de täcker, men barnets ansikte, händer och andra bara hudpartier behöver fortfarande solkräm. Kombinera gärna UV-dräkt med en solhatt och solkräm på synlig hud — [räkna ut hur mycket ni behöver](/solkramskalkylator/) med vår solkrämskalkylator."
           }
         ],
-        "img": "photo-1557469778-0b3269a1cc7a"
+        "img": "photo-1557469778-0b3269a1cc7a",
+        "published": "2026-09-23",
+        "updated": "2026-09-28"
       },
       {
         "slug": "regnstall",
@@ -3728,7 +3821,9 @@
             "a": "Fodrat regnställ fungerar som ett eget plagg och passar bra på hösten och i mildare vinterväder. Ofodrat regnställ är tänkt att bäras utanpå varmare kläder och ger dig mer flexibilitet att anpassa efter temperaturen."
           }
         ],
-        "img": "photo-1477511350923-3986459bdee1"
+        "img": "photo-1477511350923-3986459bdee1",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "vinterskor",
@@ -3845,7 +3940,9 @@
             "a": "Gore-Tex är ett vattentätt membran som samtidigt släpper igenom fukt och ånga inifrån, vilket ger både vattentäthet och god andningsförmåga. Skor med Gore-Tex håller fötterna torra både utifrån (regn/snö) och inifrån (svett)."
           }
         ],
-        "img": "photo-1606946185142-7b30e9a7abcc"
+        "img": "photo-1606946185142-7b30e9a7abcc",
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "reseunderhallning",
@@ -3966,7 +4063,9 @@
             "q": "Vilken ålder passar bäst för reseunderhållning i bilen eller flygplanet?",
             "a": "Det beror mycket på barnet, men som riktlinje: aktivitetsböcker i mjukt material passar redan från ca 1 år, magnetiska rittavlor fungerar bra från ca 3 år, och kortspel som kräver att man känner igen symboler eller kan läsa passar oftast bäst från 5 år och uppåt."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "syskonvagn",
@@ -4083,7 +4182,9 @@
             "q": "Kan en syskonvagn användas till tvillingar också?",
             "a": "Ja, de flesta syskonvagnar i den här jämförelsen fungerar även för tvillingar — kolla bara att modellen har två likvärdiga sittdelar/liggdelar och att maxvikten räcker för båda barnens ålder samtidigt."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       }
     ]
   },
@@ -4193,7 +4294,9 @@
             "q": "Vilka museer i Stockholm är helt gratis?",
             "a": "Moderna Museet och Etnografiska museet har fri entré för barn/unga året runt. Flera andra statliga museer, som Historiska museet, har generellt fri entré för alla."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "goteborg",
@@ -4299,7 +4402,9 @@
             "q": "Har barn fri entré till museer i Göteborg?",
             "a": "Barn och unga upp till 20 år, samt studenter, har fri entré till Göteborgs kommunala museer, exempelvis Göteborgs stadsmuseum."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "malmo",
@@ -4405,7 +4510,9 @@
             "q": "Vad kostar det att bada i Malmö?",
             "a": "Ribersborgs strand och de flesta av Malmös utomhusbad är helt gratis. Stadens plaskdammar öppnar under sommaren och kostar heller inget."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       }
     ]
   },
@@ -4732,7 +4839,9 @@
       "title": "Interaktiv packlista för barn | Res med Barn",
       "description": "Bygg din egen packlista för barn — välj barnets ålder, typ av resa och transportsätt så uppdateras listan direkt. Skriv ut eller spara som PDF.",
       "h1": "Bygg din egen packlista för barn",
-      "intro": "Anpassa packlistan helt efter er resa — välj barnets ålder, om ni ska på solsemester eller en vanlig resa, och hur ni reser. Listan uppdateras direkt."
+      "intro": "Anpassa packlistan helt efter er resa — välj barnets ålder, om ni ska på solsemester eller en vanlig resa, och hur ni reser. Listan uppdateras direkt.",
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "subPages": [
       {
@@ -4759,7 +4868,9 @@
             "q": "Hur mycket bör man packa för ett barn på en veckas resa?",
             "a": "En bra tumregel är kläder för 3–4 dagar snarare än hela resans längd — de flesta boenden (även charterresorts) har tvättmöjlighet, och det är lättare att bära en mindre väska."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "solsemester-barn",
@@ -4785,7 +4896,9 @@
             "q": "Vilken solskyddsfaktor bör barn använda?",
             "a": "Minst SPF 30, men SPF 50 rekommenderas ofta för barn under 3 år eller för de med ljus hy. Smörj in minst 20–30 minuter innan solexponering och upprepa var annan timme, samt direkt efter bad."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       },
       {
         "slug": "utomlands-med-barn",
@@ -4811,7 +4924,9 @@
             "q": "Behöver barn eget pass för att resa utomlands?",
             "a": "Ja, sedan 2005 måste alla svenska medborgare, oavsett ålder, ha ett eget pass för utlandsresor — barnet kan inte längre stå med i förälderns pass."
           }
-        ]
+        ],
+        "published": "2026-09-23",
+        "updated": "2026-09-23"
       }
     ],
     "qtyRules": {
@@ -4902,7 +5017,9 @@
       "title": "Bränslekalkylator för bilresan | Res med Barn",
       "description": "Räkna ut vad bilresan kostar i bensin, diesel eller el. Ange sträcka så får ni en snabb kostnadsuppskattning för hela familjeresan.",
       "h1": "Bränslekalkylator för bilresan",
-      "intro": "Räkna snabbt ut vad bilresan kommer kosta i drivmedel — ange bara sträckan och välj bensin, diesel eller el. Standardvärdena bygger på ungefärliga svenska snittpriser och förbrukning, men justera gärna efter er egen bil och aktuella priser."
+      "intro": "Räkna snabbt ut vad bilresan kommer kosta i drivmedel — ange bara sträckan och välj bensin, diesel eller el. Standardvärdena bygger på ungefärliga svenska snittpriser och förbrukning, men justera gärna efter er egen bil och aktuella priser.",
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "fuelTypes": [
       {
@@ -4953,7 +5070,9 @@
       "title": "Solkrämskalkylator – räkna ut hur mycket ni behöver packa",
       "description": "Räkna ut exakt hur många ml eller tuber solkräm din familj behöver på resan, baserat på antal personer, åldrar, soldagar och solintensitet.",
       "h1": "Solkrämskalkylator",
-      "intro": "Slipp packa för lite (eller för mycket) solkräm. Fyll i hur många ni är, hur många soldagar ni har och hur starkt solen är på resmålet, så räknar vi ut hur många milliliter — och tuber — ni bör ha med er."
+      "intro": "Slipp packa för lite (eller för mycket) solkräm. Fyll i hur många ni är, hur många soldagar ni har och hur starkt solen är på resmålet, så räknar vi ut hur många milliliter — och tuber — ni bör ha med er.",
+      "published": "2026-09-23",
+      "updated": "2026-09-23"
     },
     "ageGroups": [
       {
