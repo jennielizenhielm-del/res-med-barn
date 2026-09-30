@@ -338,7 +338,7 @@ function cardMediaSSR(d) {
 }
 function featCardSSR(d) {
   return `
-    <a class="feat-card reveal visible" href="/resmal/${destSlug(d.name)}/" onclick="return handleCardClick(event, '${destSlug(d.name)}')">
+    <a class="feat-card reveal visible" href="${resmalUrl(d)}" onclick="return handleCardClick(event, '${resmalSlug(d)}')">
       ${cardMediaSSR(d)}
       <span class="feat-badge">${d.emoji} ${esc(d.catLabel)}</span>
       <button class="fav-heart" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${HEART_SVG}</button>
@@ -357,7 +357,7 @@ function featCardSSR(d) {
 }
 function destCardSSR(d) {
   return `
-    <a class="dest-card reveal visible" data-cat="${d.cat}" href="/resmal/${destSlug(d.name)}/" onclick="return handleCardClick(event, '${destSlug(d.name)}')">
+    <a class="dest-card reveal visible" data-cat="${d.cat}" href="${resmalUrl(d)}" onclick="return handleCardClick(event, '${resmalSlug(d)}')">
       <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
         <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
         <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
@@ -827,6 +827,13 @@ ${faqHtml(s.faq)}
 /* ---------- RESMÅL (extraherade från templates/home.html) ---------- */
 const CAT_LABELS = { beach: 'Strand & Sol', parks: 'Nöjesparker', cities: 'Storstäder', sweden: 'Sverige', museums: 'Museer' };
 const destSlug = s => s.toLowerCase().replace(/å|ä/g, 'a').replace(/ö/g, 'o').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+// Länder med 3+ resmål får en egen landshubb och nästlad URL (/resmal/{land}/{resmål}/)
+// i stället för den gamla platta /resmal/{resmål}/ — beslutat 2026-09-30 medan sajten
+// ännu inte rankar på något, så omflyttningen är billig att göra nu. Länder med bara
+// ett resmål (t.ex. Turkiet, Cypern) förblir platta.
+const NESTED_COUNTRIES = { 'Grekland': 'grekland', 'Spanien': 'spanien', 'Frankrike': 'frankrike', 'Thailand': 'thailand' };
+const resmalSlug = d => (NESTED_COUNTRIES[d.country] ? `${NESTED_COUNTRIES[d.country]}/${destSlug(d.name)}` : destSlug(d.name));
+const resmalUrl = d => `/resmal/${resmalSlug(d)}/`;
 const IMG_RESMAL = id => `https://images.unsplash.com/${id}?q=80&w=1400&auto=format&fit=crop`;
 
 function loadDestinations() {
@@ -852,9 +859,9 @@ function buildResmalHub() {
   const DESTINATIONS = loadDestinations();
   const bc = breadcrumbs([['Hem', '/'], ['Resmål', null]]);
   const meta = {
-    title: 'Resmål för barnfamiljer — 36 st, filtrerbara | Res med Barn',
-    description: 'Alla våra 36 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.',
-    updated: '2026-09-23', published: '2026-09-23'
+    title: 'Resmål för barnfamiljer — 50 st, filtrerbara | Res med Barn',
+    description: 'Alla våra 50 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.',
+    updated: '2026-09-30', published: '2026-09-23'
   };
   const itemList = {
     '@context': 'https://schema.org', '@type': 'ItemList',
@@ -879,10 +886,14 @@ function buildResmalHub() {
     <input type="text" id="resmalSearch" placeholder="Sök namn eller land…" class="resmal-search-input" aria-label="Sök resmål">
   </div>
 </div>
+<div class="filter-group" style="margin-top:-0.5rem">
+  <span class="filter-label">Bläddra per land</span>
+  ${Object.entries(NESTED_COUNTRIES).map(([country, slug]) => `<a class="filter-btn" href="/resmal/${slug}/">${esc(country)} →</a>`).join('')}
+</div>
 <p class="stader-count" id="staderCount">${DESTINATIONS.length} resmål</p>
 <div class="activity-grid resmal-grid" id="activityGrid">
   ${DESTINATIONS.map(d => `
-  <a class="resmal-card" data-cat="${d.cat}" data-name="${esc(d.name)}" data-search="${esc((d.name + ' ' + d.country).toLowerCase())}" href="/resmal/${destSlug(d.name)}/">
+  <a class="resmal-card" data-cat="${d.cat}" data-name="${esc(d.name)}" data-search="${esc((d.name + ' ' + d.country).toLowerCase())}" href="${resmalUrl(d)}">
     <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
       <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
       <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
@@ -954,14 +965,65 @@ function buildResmalHub() {
   write('resmal/index.html', page('/resmal/', meta, '/resmal/', inner, [bc.jsonld, itemList]));
 }
 
+// Landshubbar för länder med 3+ resmål (Grekland, Spanien, Frankrike, Thailand) —
+// nya sidor 2026-09-30, se NESTED_COUNTRIES-kommentaren ovan.
+function buildResmalCountryHubs() {
+  const DESTINATIONS = loadDestinations();
+  const COUNTRY_DATE = '2026-09-30';
+  for (const [country, slug] of Object.entries(NESTED_COUNTRIES)) {
+    const inCountry = DESTINATIONS.filter(d => d.country === country);
+    if (!inCountry.length) continue;
+    const url = `/resmal/${slug}/`;
+    const bc = breadcrumbs([['Hem', '/'], ['Resmål', '/resmal/'], [country, null]]);
+    const meta = {
+      title: `${country} med barn — ${inCountry.length} resmål | Res med Barn`,
+      description: `Våra ${inCountry.length} resmål i ${country} för barnfamiljer, samlade på ett ställe — ${inCountry.map(d => d.name).join(', ')}.`,
+      updated: COUNTRY_DATE, published: COUNTRY_DATE
+    };
+    const itemList = {
+      '@context': 'https://schema.org', '@type': 'ItemList',
+      name: `Resmål i ${country} för barnfamiljer`, itemListElement: inCountry.map((d, i) => ({
+        '@type': 'ListItem', position: i + 1, name: d.name
+      }))
+    };
+    const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(country)} med barn</h1>
+  <div class="page-intro"><p>Våra ${inCountry.length} resmål i ${esc(country)} — handplockade och testade med barn.</p></div>
+</header>
+<div class="activity-grid resmal-grid">
+  ${inCountry.map(d => `
+  <a class="resmal-card" data-cat="${d.cat}" href="${resmalUrl(d)}">
+    <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
+      <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+      <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
+      <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+    </div>
+    <div class="resmal-card-body">
+      <h3>${esc(d.name)}</h3>
+      <p class="dest-country">${esc(d.country)}</p>
+      <p class="activity-desc">${esc(d.desc)}</p>
+    </div>
+  </a>`).join('')}
+</div>
+<p><a href="/resmal/">← Alla resmål i alla länder</a></p>`;
+    write(`resmal/${slug}/index.html`, page(url, meta, '/resmal/', inner, [bc.jsonld, itemList]));
+  }
+  console.log(`  ✓ ${Object.keys(NESTED_COUNTRIES).length} landshubbar genererade`);
+}
+
 function buildResmal() {
   const DESTINATIONS = loadDestinations();
 
   for (const d of DESTINATIONS) {
-    const slug = destSlug(d.name);
+    const slug = resmalSlug(d);
     const url = `/resmal/${slug}/`;
     const isAttraction = d.cat === 'parks' || d.cat === 'museums';
-    const bc = breadcrumbs([['Hem', '/'], ['Resmål', '/resmal/'], [d.name, null]]);
+    const countrySlug = NESTED_COUNTRIES[d.country];
+    const bc = breadcrumbs(countrySlug
+      ? [['Hem', '/'], ['Resmål', '/resmal/'], [d.country, `/resmal/${countrySlug}/`], [d.name, null]]
+      : [['Hem', '/'], ['Resmål', '/resmal/'], [d.name, null]]);
     const similar = DESTINATIONS.filter(x => x.cat === d.cat && x.name !== d.name).slice(0, 4);
 
     const schema = {
@@ -1022,7 +1084,7 @@ function buildResmal() {
   <h2 class="section-title">Liknande resmål</h2>
   <div class="similar-grid">
     ${similar.map(x => `
-    <a class="similar-card" href="/resmal/${destSlug(x.name)}/">
+    <a class="similar-card" href="${resmalUrl(x)}">
       <div class="card-media" data-emoji="${x.emoji}">
         <img src="${IMG_RESMAL(x.img)}" alt="${esc(x.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
       </div>
@@ -1070,12 +1132,13 @@ function buildMeta(destinations) {
   urls.push('/stader/');
   for (const s of C.stader.cities) urls.push(`/stader/${s.slug}/`);
   urls.push('/resmal/');
+  for (const slug of Object.values(NESTED_COUNTRIES)) urls.push(`/resmal/${slug}/`);
   urls.push('/packlista/');
   for (const s of (C.smartPacklista.subPages || [])) urls.push(`/packlista/${s.slug}/`);
   urls.push('/branslekalkylator/');
   urls.push('/solkramskalkylator/');
   urls.push('/verktyg/');
-  for (const d of destinations) urls.push(`/resmal/${destSlug(d.name)}/`);
+  for (const d of destinations) urls.push(resmalUrl(d));
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY}</lastmod></url>`).join('\n')}
@@ -1549,6 +1612,7 @@ ${faqHtml(m.faq)}`;
 }
 
 buildResmalHub();
+buildResmalCountryHubs();
 buildSmartPacklista();
 buildPacklistaSubPages();
 buildBranslekalkylator();
