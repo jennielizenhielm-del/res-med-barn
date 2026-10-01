@@ -319,6 +319,17 @@ function packlistDaysAndCustomScript() {
   `;
 }
 
+// Synlig byline som matchar JSON-LD:s author-fält (se personLd()) — annars har
+// Googles structured-data-riktlinjer inget emot att du "markerar upp" ett
+// author-objekt som aldrig syns för en faktisk läsare, men det är ett svagt
+// E-E-A-T-signal om det bara finns i dold markup. Injiceras automatiskt i
+// varje sida med ldType 'Article' som har en vanlig <header class="page-header">
+// (dvs. alla utom resmål-detaljsidorna, som har sin egen bylinerad inline i
+// buildResmal() eftersom de har ett helt annat header-layout).
+function authorByline() {
+  return `<p class="author-byline">✍️ Skrivet av <a href="/om-oss/">${esc(C.site.author.name)}</a></p>`;
+}
+
 function page(url, meta, active, inner, extraJsonld, ldType) {
   const updated = meta.updated || TODAY;
   const published = meta.published || updated;
@@ -326,6 +337,9 @@ function page(url, meta, active, inner, extraJsonld, ldType) {
   const ld = extraJsonld ? (Array.isArray(extraJsonld) ? extraJsonld.slice() : [extraJsonld]) : [];
   ld.push(pageLd(meta, url, updated, published, ldType));
   meta = { ...meta, jsonld: ld };
+  if (ldType === 'Article' && inner.includes('</header>')) {
+    inner = inner.replace('</header>', `  ${authorByline()}\n</header>`);
+  }
   return head(meta, url) + nav(active) + `<main class="page">` + inner + `</main>` + footer();
 }
 
@@ -1055,7 +1069,7 @@ function buildResmal() {
   <div class="detail-title-wrap">
     <span class="d-chip" style="background: var(--cat-${d.cat}, var(--accent))">${d.emoji} ${esc(CAT_LABELS[d.cat] || d.catLabel)}</span>
     <h1>${esc(d.name)}</h1>
-    <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg · Uppdaterad ${svDate(d.updated)}</p>
+    <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg · Uppdaterad ${svDate(d.updated)} · ✍️ <a href="/om-oss/">${esc(C.site.author.name)}</a></p>
   </div>
 </div>
 <div class="detail-body">
