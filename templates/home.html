@@ -1037,6 +1037,8 @@
       line-height: 1.05;
     }
     .detail-title-wrap .d-country { font-size: 1rem; opacity: 0.85; margin-top: 0.3rem; }
+    .detail-title-wrap .d-country a { color: inherit; text-decoration: underline; text-decoration-color: rgba(253,249,243,0.45); }
+    .detail-title-wrap .d-country a:hover { text-decoration-color: #FDF9F3; }
 
     .detail-body {
       max-width: 880px;
@@ -2815,7 +2817,7 @@ function openDetail(s, pushHash = true) {
       <div class="detail-title-wrap">
         <span class="d-chip" style="background: var(--cat-${d.cat})">${d.emoji} ${d.catLabel}</span>
         <h2>${esc(d.name)}</h2>
-        <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg</p>
+        <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg · ✍️ <a href="/om-oss/">Jennie Lundberg</a></p>
       </div>
     </div>
     <div class="detail-body">
