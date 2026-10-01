@@ -132,6 +132,13 @@ body {
   color: var(--primary);
   margin-bottom: 0.6rem;
 }
+.author-byline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+.author-byline a { color: var(--text-secondary); text-decoration: none; border-bottom: 1px solid var(--border); }
+.author-byline a:hover { color: var(--accent); border-color: var(--accent); }
 h1 {
   font-family: var(--font-display);
   font-size: clamp(2.1rem, 5vw, 3.2rem);
@@ -775,6 +782,8 @@ h1 {
   line-height: 1.05;
 }
 .detail-title-wrap .d-country { font-size: 1rem; opacity: 0.85; margin-top: 0.3rem; }
+.detail-title-wrap .d-country a { color: inherit; text-decoration: underline; text-decoration-color: rgba(253,249,243,0.45); }
+.detail-title-wrap .d-country a:hover { text-decoration-color: #FDF9F3; }
 .detail-body {
   max-width: 880px;
   margin: 0 auto;
