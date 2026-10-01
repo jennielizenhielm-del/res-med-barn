@@ -140,6 +140,7 @@ function footer() {
     <div class="footer-col">
       <h4>Om sajten</h4>
       <a href="/packlista/">Smart packlista</a>
+      <a href="/foraldramedgivande/">Föräldramedgivande</a>
       <a href="/verktyg/">🧰 Alla verktyg</a>
       <a href="/resmal/">Alla resmål</a>
       <a href="/om-oss/">Om oss</a>
@@ -832,6 +833,9 @@ const destSlug = s => s.toLowerCase().replace(/å|ä/g, 'a').replace(/ö/g, 'o')
 // ännu inte rankar på något, så omflyttningen är billig att göra nu. Länder med bara
 // ett resmål (t.ex. Turkiet, Cypern) förblir platta.
 const NESTED_COUNTRIES = { 'Grekland': 'grekland', 'Spanien': 'spanien', 'Frankrike': 'frankrike', 'Thailand': 'thailand' };
+// Flaggemoji för landshubbarna (pillren på /resmal/ och H1 på varje landssida) —
+// samma grepp som redan fanns för Sverige-kategorin i filtret ("🇸🇪 Sverige").
+const COUNTRY_FLAGS = { 'Grekland': '🇬🇷', 'Spanien': '🇪🇸', 'Frankrike': '🇫🇷', 'Thailand': '🇹🇭' };
 const resmalSlug = d => (NESTED_COUNTRIES[d.country] ? `${NESTED_COUNTRIES[d.country]}/${destSlug(d.name)}` : destSlug(d.name));
 const resmalUrl = d => `/resmal/${resmalSlug(d)}/`;
 const IMG_RESMAL = id => `https://images.unsplash.com/${id}?q=80&w=1400&auto=format&fit=crop`;
@@ -888,7 +892,7 @@ function buildResmalHub() {
 </div>
 <div class="filter-group" style="margin-top:-0.5rem">
   <span class="filter-label">Bläddra per land</span>
-  ${Object.entries(NESTED_COUNTRIES).map(([country, slug]) => `<a class="filter-btn" href="/resmal/${slug}/">${esc(country)} →</a>`).join('')}
+  ${Object.entries(NESTED_COUNTRIES).map(([country, slug]) => `<a class="filter-btn" href="/resmal/${slug}/">${COUNTRY_FLAGS[country] || ''} ${esc(country)} →</a>`).join('')}
 </div>
 <p class="stader-count" id="staderCount">${DESTINATIONS.length} resmål</p>
 <div class="activity-grid resmal-grid" id="activityGrid">
@@ -989,7 +993,7 @@ function buildResmalCountryHubs() {
     const inner = `
 <header class="page-header">
   ${bc.html}
-  <h1>${esc(country)} med barn</h1>
+  <h1>${COUNTRY_FLAGS[country] || ''} ${esc(country)} med barn</h1>
   <div class="page-intro"><p>Våra ${inCountry.length} resmål i ${esc(country)} — handplockade och testade med barn.</p></div>
 </header>
 <div class="activity-grid resmal-grid">
@@ -1137,6 +1141,8 @@ function buildMeta(destinations) {
   for (const s of (C.smartPacklista.subPages || [])) urls.push(`/packlista/${s.slug}/`);
   urls.push('/branslekalkylator/');
   urls.push('/solkramskalkylator/');
+  urls.push('/foraldramedgivande/');
+  urls.push('/medgivandebrev/');
   urls.push('/verktyg/');
   for (const d of destinations) urls.push(resmalUrl(d));
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
@@ -1588,6 +1594,297 @@ ${faqHtml(S.faq)}
   console.log('  ✓ solkramskalkylator/index.html');
 }
 
+/* ---------- FÖRÄLDRAMEDGIVANDE: guide + generator ----------
+   Beslutad 2026-10-01 efter research i primärkällor för 22 länder (se
+   projektdokument "claude/foraldramedgivande-research.md"). Mönster som går
+   igen: det finns ingen gemensam EU-regel (Your Europe), och flera "krav" i
+   sökresultat gäller faktiskt landets EGNA medborgare som reser UT, inte
+   svenska turistbarn som reser IN — vi har flaggat det tydligt per land i
+   stället för att gissa, eftersom fel info här kan göra att en familj
+   nekas ombordstigning. */
+function resmalLinksForCountry(country, DESTINATIONS) {
+  if (!country) return [];
+  if (NESTED_COUNTRIES[country]) {
+    return [{ label: `Se resmål i ${country} →`, url: `/resmal/${NESTED_COUNTRIES[country]}/` }];
+  }
+  return DESTINATIONS.filter(d => d.country === country).map(d => ({ label: `${d.name} →`, url: resmalUrl(d) }));
+}
+function countryCard(c, DESTINATIONS) {
+  const links = resmalLinksForCountry(c.resmalCountry, DESTINATIONS);
+  return `
+  <div class="country-card">
+    <div class="country-card-head">
+      <span class="country-card-name">${c.flag} ${esc(c.name)}</span>
+      <span class="country-badge status-${c.level}">${esc(c.levelLabel)}</span>
+    </div>
+    <p class="country-card-note">${esc(c.note)}</p>
+    <div class="country-card-links">
+      <a class="source-link" href="${esc(c.sourceUrl)}" target="_blank" rel="noopener nofollow">Källa: ${esc(c.sourceName)} →</a>
+      ${links.map(l => `<a href="${esc(l.url)}">${esc(l.label)}</a>`).join('')}
+    </div>
+  </div>`;
+}
+function buildMedgivande() {
+  const M = C.medgivande;
+  const DESTINATIONS = loadDestinations();
+  const bc = breadcrumbs([['Hem', '/'], ['Föräldramedgivande', null]]);
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <p class="kicker">✍️ Uppdaterad ${svDate(M.meta.updated)}</p>
+  <h1>${esc(M.meta.h1)}</h1>
+  <div class="page-intro">${paras(M.meta.intro)}</div>
+</header>
+<p class="packlist-cta"><a href="/medgivandebrev/">✍️ Skapa ditt medgivandebrev direkt — gratis, klart på två minuter →</a></p>
+<h2 class="section-title">Krav land för land — 22 resmål vi grävt i</h2>
+<p class="table-intro">Vi har prioriterat primärkällor (ambassader, ländernas egna myndigheter, EU:s Your Europe) framför bloggar och mallsajter. Där vi inte kunnat bekräfta ett krav skriver vi det tydligt i stället för att gissa.</p>
+<div class="country-cards">
+  ${M.countries.map(c => countryCard(c, DESTINATIONS)).join('')}
+</div>
+<p class="table-note">Listan uppdateras löpande men regler kan ändras med kort varsel — dubbelkolla alltid med destinationslandets ambassad inför en specifik resa.</p>
+<article class="article">
+  ${M.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>`).join('\n')}
+</article>
+${faqHtml(M.faq)}
+<h2 class="section-title">Mer för resan</h2>
+<div class="related-links">
+  <a href="/medgivandebrev/">✍️ Medgivandebrevgenerator</a>
+  <a href="/verktyg/">🧰 Alla verktyg</a>
+  <a href="/resmal/">🌍 Alla resmål</a>
+</div>`;
+  write('foraldramedgivande/index.html', page('/foraldramedgivande/', M.meta, '/foraldramedgivande/', inner, M.faq ? [bc.jsonld, faqLd(M.faq)] : bc.jsonld, 'Article'));
+  console.log('  ✓ foraldramedgivande/index.html');
+}
+
+function buildMedgivandeGenerator() {
+  const G = C.medgivandebrev;
+  const countryNames = C.medgivande.countries.map(c => `${c.flag} ${c.name}`);
+  const bc = breadcrumbs([['Hem', '/'], ['Medgivandebrevgenerator', null]]);
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(G.meta.h1)}</h1>
+  <p class="page-intro">${esc(G.meta.intro)}</p>
+</header>
+<p class="letter-privacy-note">🔒 Allt du skriver stannar i din webbläsare — inget skickas till oss eller sparas.</p>
+
+<div class="letter-form">
+  <fieldset class="letter-form-fieldset">
+    <legend>Barnet</legend>
+    <div class="letter-form-row">
+      <div class="letter-form-field"><label for="mg-childName">Barnets fullständiga namn</label><input type="text" id="mg-childName" placeholder="T.ex. Alice Andersson"></div>
+      <div class="letter-form-field"><label for="mg-childPnr">Personnummer</label><input type="text" id="mg-childPnr" placeholder="ÅÅÅÅMMDD-XXXX"></div>
+    </div>
+    <div class="letter-form-field"><label for="mg-childPassport">Passnummer (om ni vill ange det)</label><input type="text" id="mg-childPassport"></div>
+  </fieldset>
+
+  <fieldset class="letter-form-fieldset">
+    <legend>Resan</legend>
+    <div class="letter-form-row">
+      <div class="letter-form-field"><label for="mg-country">Resmål</label>
+        <select id="mg-country">
+          <option value="">— Välj land —</option>
+          ${countryNames.map(n => `<option>${esc(n)}</option>`).join('')}
+          <option>Annat land</option>
+        </select>
+      </div>
+      <div class="letter-form-field"><label for="mg-dates">Resans datum</label><input type="text" id="mg-dates" placeholder="T.ex. 12–26 juli 2026"></div>
+    </div>
+    <div class="letter-form-field"><label for="mg-flight">Flightnummer / resrutt (frivilligt)</label><input type="text" id="mg-flight" placeholder="T.ex. SK1234 Stockholm–Antalya"></div>
+  </fieldset>
+
+  <fieldset class="letter-form-fieldset">
+    <legend>Reser med</legend>
+    <div class="letter-form-row">
+      <div class="letter-form-field"><label for="mg-withName">Namn på medresande vuxen</label><input type="text" id="mg-withName"></div>
+      <div class="letter-form-field"><label for="mg-withRelation">Relation till barnet</label><input type="text" id="mg-withRelation" placeholder="T.ex. mamma, mormor, familjevän"></div>
+    </div>
+  </fieldset>
+
+  <fieldset class="letter-form-fieldset">
+    <legend>Vårdnadshavare som INTE reser med</legend>
+    <div class="letter-form-row">
+      <div class="letter-form-field"><label for="mg-g1Name">Namn</label><input type="text" id="mg-g1Name"></div>
+      <div class="letter-form-field"><label for="mg-g1Phone">Telefon</label><input type="text" id="mg-g1Phone"></div>
+    </div>
+    <div class="letter-form-field"><label for="mg-g1Email">E-post</label><input type="text" id="mg-g1Email"></div>
+    <label class="letter-form-check"><input type="checkbox" id="mg-addG2"> Lägg till ytterligare en vårdnadshavare (t.ex. om barnet reser helt ensamt)</label>
+    <div id="mg-g2block" hidden>
+      <div class="letter-form-row">
+        <div class="letter-form-field"><label for="mg-g2Name">Namn</label><input type="text" id="mg-g2Name"></div>
+        <div class="letter-form-field"><label for="mg-g2Phone">Telefon</label><input type="text" id="mg-g2Phone"></div>
+      </div>
+      <div class="letter-form-field"><label for="mg-g2Email">E-post</label><input type="text" id="mg-g2Email"></div>
+    </div>
+  </fieldset>
+
+  <label class="letter-form-check"><input type="checkbox" id="mg-english" checked> Visa brevet på engelska också (rekommenderas — många länder vill ha det på engelska)</label>
+</div>
+
+<div class="letter-preview-wrap">
+  <div class="letter-preview" id="mg-preview"></div>
+</div>
+<div class="letter-actions">
+  <button type="button" class="btn-compare" id="mg-download">⬇️ Ladda ner som PDF</button>
+  <button type="button" class="btn-compare" onclick="window.print()">🖨️ Skriv ut</button>
+  <button type="button" class="btn-compare" id="mg-share" hidden>📤 Dela (mejl, AirDrop, m.m.)</button>
+  <button type="button" class="btn-compare" id="mg-copy">📋 Kopiera texten</button>
+</div>
+<p class="letter-send-status" id="mg-shareStatus"></p>
+
+<p class="letter-privacy-note">Det här är en mall för eget bruk, inte juridisk rådgivning. Vissa länder har egna specifika krav — se vår <a href="/foraldramedgivande/">guide om föräldramedgivande land för land</a>.</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function() {
+  var ids = ['childName','childPnr','childPassport','country','dates','flight','withName','withRelation','g1Name','g1Phone','g1Email','g2Name','g2Phone','g2Email'];
+  var els = {};
+  ids.forEach(function(id) { els[id] = document.getElementById('mg-' + id); });
+  var englishEl = document.getElementById('mg-english');
+  var addG2 = document.getElementById('mg-addG2');
+  var g2block = document.getElementById('mg-g2block');
+  var preview = document.getElementById('mg-preview');
+
+  function val(id) { return (els[id] && els[id].value || '').trim(); }
+  function ph(v, placeholder) { return v || placeholder; }
+
+  function guardianLines(name, phone, email, lang) {
+    if (!name && !phone && !email) return '';
+    var label = lang === 'en' ? 'Non-travelling guardian' : 'Vårdnadshavare som inte reser med';
+    var phoneLabel = lang === 'en' ? 'Phone' : 'Telefon';
+    var emailLabel = lang === 'en' ? 'Email' : 'E-post';
+    return label + ': ' + ph(name, '[NAMN]') + '\\n' + phoneLabel + ': ' + ph(phone, '[TELEFON]') + '\\n' + emailLabel + ': ' + ph(email, '[E-POST]') + '\\n\\n';
+  }
+
+  function buildLetterSv() {
+    var today = new Date().toLocaleDateString('sv-SE');
+    var flightLine = val('flight') ? ', ' + val('flight') : '';
+    var out = 'MEDGIVANDE TILL RESA\\n\\n';
+    out += 'Jag/vi, undertecknad(e) vårdnadshavare, ger härmed mitt/vårt medgivande till att ' + ph(val('childName'), '[BARNETS NAMN]') + ', personnummer ' + ph(val('childPnr'), '[PERSONNUMMER]') + (val('childPassport') ? ', pass nr ' + val('childPassport') : '') + ', reser till ' + ph(val('country'), '[RESMÅL]') + ' under perioden ' + ph(val('dates'), '[RESANS DATUM]') + flightLine + ' tillsammans med ' + ph(val('withName'), '[NAMN PÅ MEDRESANDE]') + ' (' + ph(val('withRelation'), '[RELATION TILL BARNET]') + ').\\n\\n';
+    out += guardianLines(val('g1Name'), val('g1Phone'), val('g1Email'), 'sv');
+    out += guardianLines(val('g2Name'), val('g2Phone'), val('g2Email'), 'sv');
+    out += 'Underskrift vårdnadshavare: _______________________________\\n\\n';
+    out += 'Ort och datum: _______________________________, ' + today;
+    return out;
+  }
+
+  function buildLetterEn() {
+    var today = new Date().toLocaleDateString('en-GB');
+    var flightLine = val('flight') ? ', ' + val('flight') : '';
+    var out = 'TRAVEL CONSENT LETTER\\n\\n';
+    out += 'I/we, the undersigned legal guardian(s), hereby give my/our consent for ' + ph(val('childName'), '[CHILD\\'S NAME]') + ', personal identity number ' + ph(val('childPnr'), '[PERSONAL ID NUMBER]') + (val('childPassport') ? ', passport no. ' + val('childPassport') : '') + ', to travel to ' + ph(val('country'), '[DESTINATION]') + ' during the period ' + ph(val('dates'), '[TRAVEL DATES]') + flightLine + ' together with ' + ph(val('withName'), '[NAME OF ACCOMPANYING ADULT]') + ' (' + ph(val('withRelation'), '[RELATION TO CHILD]') + ').\\n\\n';
+    out += guardianLines(val('g1Name'), val('g1Phone'), val('g1Email'), 'en');
+    out += guardianLines(val('g2Name'), val('g2Phone'), val('g2Email'), 'en');
+    out += 'Signature of guardian: _______________________________\\n\\n';
+    out += 'Place and date: _______________________________, ' + today;
+    return out;
+  }
+
+  function render() {
+    var text = buildLetterSv();
+    if (englishEl.checked) text += '\\n\\n— — — — — — — — — — — — — — — — — —\\n\\n' + buildLetterEn();
+    preview.textContent = text;
+  }
+
+  addG2.addEventListener('change', function() { g2block.hidden = !addG2.checked; render(); });
+  Object.keys(els).forEach(function(id) { if (els[id]) els[id].addEventListener('input', render); });
+  englishEl.addEventListener('change', render);
+  document.getElementById('mg-country').addEventListener('change', render);
+
+  document.getElementById('mg-copy').addEventListener('click', function() {
+    var btn = this;
+    var text = preview.textContent;
+    function done(ok) { btn.textContent = ok ? '✓ Kopierat!' : '📋 Kopiera texten'; if (ok) setTimeout(function() { btn.textContent = '📋 Kopiera texten'; }, 2000); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function() { done(true); }).catch(function() { done(false); });
+    } else {
+      done(false);
+    }
+  });
+
+  // ---- PDF (jsPDF, byggs helt i webbläsaren) ----
+  function buildPdf() {
+    var jsPDFlib = window.jspdf && window.jspdf.jsPDF;
+    if (!jsPDFlib) return null;
+    var doc = new jsPDFlib({ unit: 'pt', format: 'a4' });
+    var margin = 54, maxWidth = 595 - margin * 2, y = margin;
+    var pageH = 842 - margin;
+
+    function ensureSpace(lineHeight) {
+      if (y + lineHeight > pageH) { doc.addPage(); y = margin; }
+    }
+    function writeBlock(text, opts) {
+      opts = opts || {};
+      doc.setFont('helvetica', opts.bold ? 'bold' : 'normal');
+      doc.setFontSize(opts.size || 11);
+      var lines = doc.splitTextToSize(text, maxWidth);
+      var lh = (opts.size || 11) * 1.4;
+      lines.forEach(function(line) {
+        ensureSpace(lh);
+        doc.text(line, margin, y);
+        y += lh;
+      });
+      y += opts.gapAfter || 6;
+    }
+
+    writeBlock('MEDGIVANDE TILL RESA / TRAVEL CONSENT LETTER', { bold: true, size: 14, gapAfter: 14 });
+    buildLetterSv().split('\\n\\n').forEach(function(p) { writeBlock(p, { gapAfter: 10 }); });
+    if (englishEl.checked) {
+      y += 10;
+      doc.setDrawColor(180); doc.line(margin, y, 595 - margin, y); y += 20;
+      buildLetterEn().split('\\n\\n').forEach(function(p) { writeBlock(p, { gapAfter: 10 }); });
+    }
+    return doc;
+  }
+
+  document.getElementById('mg-download').addEventListener('click', function() {
+    var doc = buildPdf();
+    if (!doc) { alert('PDF-funktionen kunde inte laddas. Prova att ladda om sidan.'); return; }
+    doc.save('medgivandebrev.pdf');
+  });
+
+  // ---- Dela (Web Share API — helt klientsidan, inget konto/server behövs) ----
+  var shareBtn = document.getElementById('mg-share');
+  var shareStatus = document.getElementById('mg-shareStatus');
+  function setShareStatus(msg, cls) { shareStatus.textContent = msg; shareStatus.className = 'letter-send-status' + (cls ? ' ' + cls : ''); }
+
+  function canShareFiles() {
+    if (!navigator.canShare || !navigator.share) return false;
+    try {
+      var probe = new File(['x'], 'probe.pdf', { type: 'application/pdf' });
+      return navigator.canShare({ files: [probe] });
+    } catch (e) { return false; }
+  }
+  if (canShareFiles()) shareBtn.hidden = false;
+
+  shareBtn.addEventListener('click', function() {
+    var doc = buildPdf();
+    if (!doc) { setShareStatus('PDF-funktionen kunde inte laddas. Prova att ladda om sidan.', 'err'); return; }
+    var blob = doc.output('blob');
+    var file = new File([blob], 'medgivandebrev.pdf', { type: 'application/pdf' });
+    navigator.share({ files: [file], title: 'Medgivandebrev', text: 'Medgivandebrev från resmedbarn.se' })
+      .then(function() { setShareStatus(''); })
+      .catch(function(e) {
+        if (e && e.name === 'AbortError') { setShareStatus(''); return; } // användaren avbröt, inget fel
+        setShareStatus('Kunde inte dela just nu — ladda ner PDF:en i stället och maila den själv.', 'err');
+      });
+  });
+
+  render();
+})();
+</script>
+
+${faqHtml(G.faq)}
+<h2 class="section-title">Mer för resan</h2>
+<div class="related-links">
+  <a href="/foraldramedgivande/">📋 Guide: föräldramedgivande land för land</a>
+  <a href="/verktyg/">🧰 Alla verktyg</a>
+  <a href="/packlista/">🧳 Smart packlista</a>
+</div>`;
+  write('medgivandebrev/index.html', page('/medgivandebrev/', G.meta, '/medgivandebrev/', inner, G.faq ? [bc.jsonld, faqLd(G.faq)] : bc.jsonld));
+  console.log('  ✓ medgivandebrev/index.html');
+}
+
 /* ---------- VERKTYG (hubb som samlar alla kalkylatorer/verktyg) ---------- */
 function buildVerktygHub() {
   const m = C.pages.verktyg;
@@ -1617,6 +1914,8 @@ buildSmartPacklista();
 buildPacklistaSubPages();
 buildBranslekalkylator();
 buildSolkramskalkylator();
+buildMedgivande();
+buildMedgivandeGenerator();
 buildVerktygHub();
 const RESMAL_DESTS = buildResmal();
 buildSimplePages();

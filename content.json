@@ -5168,6 +5168,249 @@
         "name": "Solkrämskalkylator",
         "emoji": "☀️",
         "cardText": "Se hur många tuber solkräm ni behöver packa utifrån antal personer, resans längd och hur starkt solen är på resmålet."
+      },
+      {
+        "slug": "medgivandebrev",
+        "url": "/medgivandebrev/",
+        "name": "Medgivandebrevgenerator",
+        "emoji": "✍️",
+        "cardText": "Skapa ett utskrivbart medgivandebrev på svenska och engelska när barnet reser utan båda vårdnadshavarna — klart på två minuter, inget sparas."
+      }
+    ]
+  },
+  "medgivandebrev": {
+    "meta": {
+      "title": "Medgivandebrevgenerator – gratis mall | Res med Barn",
+      "description": "Skapa ett utskrivbart medgivandebrev på svenska och engelska när barnet reser utan båda vårdnadshavarna. Gratis och klart på två minuter – inget sparas.",
+      "h1": "Medgivandebrevgenerator",
+      "intro": "Fyll i uppgifterna nedan så skapar vi ett utskrivbart medgivandebrev på svenska och engelska. Allt händer i din webbläsare – vi sparar och skickar ingenting.",
+      "published": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    "faq": [
+      {
+        "q": "Sparas eller skickas mina uppgifter någonstans?",
+        "a": "Nej. Brevet skapas helt i din webbläsare med javascript – ingenting skickas till oss eller till någon server, och ingenting sparas när du stänger eller laddar om sidan. Delar du brevet via mobilens egna delningsknapp går det direkt från din enhet till det du själv väljer (t.ex. din mejlapp) – vi är inte inblandade i det steget."
+      },
+      {
+        "q": "Är det här en juridiskt bindande blankett?",
+        "a": "Nej, det är en mall för eget bruk som täcker de uppgifter som oftast efterfrågas. Vi är inte en myndighet eller notarius publicus. Vissa länder har egna specifika krav – se vår [guide om föräldramedgivande](/foraldramedgivande/) för vad vi har kunnat bekräfta land för land."
+      },
+      {
+        "q": "Räcker ett vanligt utskrivet och undertecknat brev, eller måste det bestyrkas?",
+        "a": "För de allra flesta resmål räcker ett undertecknat brev som frivillig säkerhetsåtgärd. Ett litet antal länder (se guiden) har egna krav på exempelvis Skatteverkets personbevis på engelska. Är ni osäkra, kontakta destinationslandets ambassad direkt."
+      },
+      {
+        "q": "Kan mor- eller farföräldrar använda samma brev om de reser med barnet?",
+        "a": "Ja. Fyll i den medresande personens namn och relation till barnet i stället för en förälders – resten av brevet fungerar likadant."
+      },
+      {
+        "q": "Behöver vi brevet även om båda vårdnadshavarna reser tillsammans med barnet?",
+        "a": "Nej, brevet är till för de fall då barnet reser utan en eller båda vårdnadshavarna – antingen med bara en förälder, med en annan vuxen, eller ensamt."
+      },
+      {
+        "q": "Varför ska jag dela/spara brevet om jag redan kan skriva ut det?",
+        "a": "Som en säkerhetskopia. Tryck på \"Dela\" och skicka PDF:en till din egen mejl, Meddelanden eller en annan app på mobilen – då går den att öppna och visa direkt från telefonen om ni glömt skriva ut brevet hemma eller inte har datorn med er på flygplatsen."
+      }
+    ]
+  },
+  "medgivande": {
+    "meta": {
+      "title": "Föräldramedgivande vid resa med barn | Res med Barn",
+      "description": "Behöver ni medgivandebrev? Vi har grävt i primärkällor för 22 länder och skiljer på vad som krävs av turister och vad som bara gäller egna medborgare.",
+      "h1": "Föräldramedgivande när du reser med barn",
+      "published": "2026-10-01",
+      "updated": "2026-10-01",
+      "intro": [
+        "Många föräldrar oroar sig för att ett barn ska nekas ombordstigning eller fastna i gränskontrollen om det reser utan båda vårdnadshavarna. Det korta svaret: det finns ingen gemensam EU-regel för det här – EU:s egen portal Your Europe slår fast att varje land bestämmer helt själv (europa.eu/youreurope). Det betyder att det inte går att ge ett enkelt svar som gäller alla resmål.",
+        "Vi har gått igenom primärkällor – ambassader, Sveriges utrikesdepartement (swedenabroad.se), ländernas egna myndigheter och EU:s Your Europe – för 22 av de vanligaste resmålen för svenska barnfamiljer. Där vi inte kunnat bekräfta ett krav mot en primärkälla säger vi det rakt ut i stället för att gissa, eftersom fel information i värsta fall kan göra att en familj nekas ombordstigning eller fastnar i en gränskontroll.",
+        "Ett mönster går igen i nästan hälften av länderna: det som ser ut som ett \"krav\" i sökresultat gäller ofta landets EGNA medborgare eller boende som reser UT från landet – inte svenska turistbarn som reser IN. Vi har försökt reda ut den skillnaden för varje land nedan.",
+        "Oavsett vad som formellt krävs: den vanligaste anledningen till att en familj får extra frågor är i praktiken incheckningen eller passkontrollen vid AVRESAN från Sverige eller Schengenområdet – flygbolag och gränspolis där ställer ofta egna frågor om barnet inte reser med båda vårdnadshavarna, oavsett vad destinationslandet själv kräver."
+      ]
+    },
+    "countries": [
+      {
+        "name": "Albanien", "flag": "🇦🇱", "level": "yes", "levelLabel": "Krävs",
+        "note": "Sveriges ambassad i Tirana är tydlig: barn under 16 år som reser ensamma eller med endast en vårdnadshavare ska kunna visa skriftligt samtycke med barnets namn, personnummer och passnummer, vårdnadshavarnas kontaktuppgifter, reserutt, samt Skatteverkets personbevis på engelska som styrker släktskapet. Brevet ska vara på engelska.",
+        "sourceName": "Sveriges ambassad i Tirana (swedenabroad.se)",
+        "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/albanien/reseinformation/ambassadens-reseinformation/in--och-utresebestammelser/"
+      },
+      {
+        "name": "Förenade Arabemiraten (Dubai)", "flag": "🇦🇪", "level": "yes", "levelLabel": "Krävs",
+        "note": "Sedan 1 juni 2018 kräver GDRFA Dubai ett medgivandebrev för barn (18 år och yngre) som reser utan båda föräldrarna – oavsett om det är med en förälder, en annan vuxen eller helt ensamt. Brevet ska innehålla barnets vistelseort i UAE, mottagande kontaktperson samt den icke-medresande förälderns namn, signatur och kontaktuppgifter. Vi har inte kunnat verifiera regeln direkt mot en primär GDRFA-sida, men flygbolag och nyhetskällor bekräftar den samstämmigt.",
+        "sourceName": "Gulf News / Pegasus Airlines",
+        "sourceUrl": "https://gulfnews.com/uae/government/minors-travelling-to-uae-without-parents-need-their-authorisation-1.2230290"
+      },
+      {
+        "name": "Thailand", "flag": "🇹🇭", "level": "warn", "levelLabel": "Rekommenderas",
+        "note": "Inget bekräftat thailändskt inresekrav för utländska turistbarn – TDAC-registreringen nämner inget om medgivande. Risken för en svensk familj ligger snarare vid avresan från Sverige (flygbolagets incheckning eller Schengens utresekontroll), inte vid thailändsk gränskontroll.",
+        "sourceName": "TDAC / thaiembassy.ch",
+        "sourceUrl": "https://tdac.immigration.go.th/manual/en/faq.html",
+        "resmalCountry": "Thailand"
+      },
+      {
+        "name": "Cypern", "flag": "🇨🇾", "level": "warn", "levelLabel": "Rekommenderas",
+        "note": "Cypern har en officiell blankett (\"Minor Travel Consent Form\"), men Sveriges ambassad beskriver den som en rekommendation snarare än ett absolut krav. Cypern är EU-medlem men tillämpar inte fullt Schengen – gränskontroll med dokumentgranskning sker vid inresa, vilket ökar chansen att brevet efterfrågas i praktiken.",
+        "sourceName": "Sveriges ambassad i Cypern / gov.cy",
+        "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/cypern/reseinformation/ambassadens-reseinformation/resa-med-barn/",
+        "resmalCountry": "Cypern"
+      },
+      {
+        "name": "Storbritannien", "flag": "🇬🇧", "level": "warn", "levelLabel": "Rekommenderas starkt",
+        "note": "Inget lagkrav, men UK Border Force skriver uttryckligen att ett medgivandebrev eller bevis på relationen \"may help\" vid inresa. Storbritannien är inte med i Schengen och har fysisk gränskontroll, så gränspolisen kan ställa frågor om barnet inte reser med båda vårdnadshavarna.",
+        "sourceName": "UK Border Force (gov.uk)",
+        "sourceUrl": "https://assets.publishing.service.gov.uk/media/64d36d67667f34000db143f1/Children-Section55-Leaflet_ENGLISH.pdf",
+        "resmalCountry": "England"
+      },
+      {
+        "name": "Tyskland", "flag": "🇩🇪", "level": "warn", "levelLabel": "Rekommenderas starkt",
+        "note": "Tyska myndigheternas egen portal skriver explicit att medgivandebrev \"not required by law\" – men rekommenderar det starkt, tillsammans med en fullmakt med kontaktuppgifter till den frånvarande föräldern, för att undvika förseningar vid gränskontroll.",
+        "sourceName": "verwaltung.bund.de",
+        "sourceUrl": "https://verwaltung.bund.de/leistungsverzeichnis/en/rechte-und-pflichten/102711702",
+        "resmalCountry": "Tyskland"
+      },
+      {
+        "name": "Grekland", "flag": "🇬🇷", "level": "warn", "levelLabel": "Oklart – möjligt krav",
+        "note": "Grekiska UD har en notis som specifikt beskriver ett krav på skriftligt samtycke för EU-barn (inklusive svenska) som reser med en ANNAN VUXEN än sin förälder – men vi kunde inte öppna hela notisen för att bekräfta detaljerna. Oklart om samma krav gäller vid resa med endast en förälder.",
+        "sourceName": "Grekiska utrikesministeriet (mfa.gr)",
+        "sourceUrl": "https://www.mfa.gr/missionsabroad/en/slovenia-en/news/2024-08-27-travel-consent-for-minors-from-eu-travelling-to-greece-with-an-adult-other-than-their-parents-or-legal-guardians-soglasje-za-potovanje-mladoletnih-oseb-ki-so-drzavljani-eu-in-potujej.html",
+        "resmalCountry": "Grekland"
+      },
+      {
+        "name": "Turkiet", "flag": "🇹🇷", "level": "warn", "levelLabel": "Oklart – rekommenderas",
+        "note": "Ingen officiell turkisk gränsmyndighetskälla bekräftar ett formellt krav, men resebloggar beskriver en skönsmässig praxis där turkisk gränskontroll ibland begär notariserat medgivande, särskilt vid resa med en förälder eller annan vuxen. Vi rekommenderar att ha brevet med som säkerhetsåtgärd.",
+        "sourceName": "Branschkälla (ej officiell myndighet)",
+        "sourceUrl": "https://4stogo.com/blog/posts/entry-for-minors-and-family-requirements-in-turkey",
+        "resmalCountry": "Turkiet"
+      },
+      {
+        "name": "Kroatien", "flag": "🇭🇷", "level": "warn", "levelLabel": "Oklart",
+        "note": "Kroatiska UD listar krav på bestyrkt medgivande, men sammanhanget (kopplat till visumansökan) tyder på att det gäller viseringspliktiga barn från tredjeländer – inte EU/Schengen-barn. Kroatien är fullvärdig Schengen-medlem sedan januari 2023 med normalt ingen systematisk dokumentkontroll vid inre gränser.",
+        "sourceName": "Kroatiska utrikesministeriet (mvep.gov.hr)",
+        "sourceUrl": "https://mvep.gov.hr/consular-information-246396/travel-of-minors/247157",
+        "resmalCountry": "Kroatien"
+      },
+      {
+        "name": "Spanien", "flag": "🇪🇸", "level": "unknown", "levelLabel": "Inget krav (för utländska barn)",
+        "note": "Spaniens egna myndigheter kräver medgivande bara för spanska medborgares barn som lämnar Spanien utan förälder. Sidan skriver uttryckligen att utländska barn \"are governed by the provisions of their national laws\" – Spanien ställer inget eget krav på svenska turistbarn.",
+        "sourceName": "administracion.gob.es",
+        "sourceUrl": "https://administracion.gob.es/pag_Home/en/Tu-espacio-europeo/derechos-obligaciones/ciudadanos/viajes/documentos/menores-solos.html",
+        "resmalCountry": "Spanien"
+      },
+      {
+        "name": "Italien", "flag": "🇮🇹", "level": "unknown", "levelLabel": "Inget krav (för utländska barn)",
+        "note": "Det italienska \"atto di assenso\" är en intern mekanism för pass- och ID-utfärdande till italienska minderåriga, inte ett gränskontrolldokument. Vi hittade ingen officiell källa som kräver medgivandeintyg av utländska turistbarn vid inresa.",
+        "sourceName": "Polizia di Stato",
+        "sourceUrl": "https://www.poliziadistato.it/articolo/passaporto-per-i-minori-e-espatrio",
+        "resmalCountry": "Italien"
+      },
+      {
+        "name": "Portugal", "flag": "🇵🇹", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "note": "Den notariserade portugisiska \"autorização de viagem\" gäller portugisiska minderåriga som reser UT ur Portugal. Den officiella SEF/AIMA-sidan gick inte att nå under vår research, så för 100 % säkerhet rekommenderar vi att kontakta Sveriges ambassad i Lissabon direkt.",
+        "sourceName": "DECO Proteste / Your Europe",
+        "sourceUrl": "https://www.deco.proteste.pt/familia-consumo/ferias-lazer/dicas/viajar-menores-conheca-documentos-necessarios",
+        "resmalCountry": "Portugal"
+      },
+      {
+        "name": "Frankrike", "flag": "🇫🇷", "level": "unknown", "levelLabel": "Inget krav (för utländska barn)",
+        "note": "Den franska \"autorisation de sortie du territoire\" (AST) gäller enbart minderåriga som är BOSATTA i Frankrike och som lämnar landet utan förälder – oavsett nationalitet. Ett barn med bara en medresande förälder behöver aldrig AST. Inget krav hittat för svenska turistbarn som reser in.",
+        "sourceName": "demarchesadministratives.fr",
+        "sourceUrl": "https://demarchesadministratives.fr/actualites/votre-enfant-part-en-vacances-sans-vous-autorisation-de-sortie-du-territoire-est-elle-obligatoire",
+        "resmalCountry": "Frankrike"
+      },
+      {
+        "name": "Nederländerna", "flag": "🇳🇱", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "note": "Den nederländska gränspolisens officiella \"consent letter\"-formulär är utformat för barn som är bosatta i Nederländerna och LÄMNAR landet – inte för utländska barn som reser in. Vi hittade inget bekräftat krav för svenska turistbarn.",
+        "sourceName": "government.nl",
+        "sourceUrl": "https://www.government.nl/documents/2016/06/17/consent-letter-for-minors-travelling-abroad",
+        "resmalCountry": "Nederländerna"
+      },
+      {
+        "name": "Danmark", "flag": "🇩🇰", "level": "unknown", "levelLabel": "Ej fastställt",
+        "note": "Danska utrikesministeriet ger bara generell rådgivning om att reglerna beror på destinationslandet – det gäller alltså danska barn som reser ut, inte utländska barn som reser in i Danmark. Vi hittade ingen dansk myndighetskälla som reglerar det specifikt.",
+        "sourceName": "um.dk",
+        "sourceUrl": "https://um.dk/rejse-og-ophold/foer-rejsen/rejse-med-mindreaarige/",
+        "resmalCountry": "Danmark"
+      },
+      {
+        "name": "Japan", "flag": "🇯🇵", "level": "unknown", "levelLabel": "Nej, bekräftat",
+        "note": "Japans utrikesministerium (MOFA) skriver helt uttryckligen: \"A Travel Consent Letter is not required when entering or departing Japan.\" Det gäller oavsett om barnet reser med en förälder, annan vuxen eller ensamt.",
+        "sourceName": "Japans utrikesministerium (mofa.go.jp)",
+        "sourceUrl": "https://www.mofa.go.jp/fp/hr_ha/page22e_000252.html",
+        "resmalCountry": "Japan"
+      },
+      {
+        "name": "USA", "flag": "🇺🇸", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "note": "US State Department skriver att det är ANDRA länder som kan kräva notariserat medgivande – inte ett amerikanskt krav. Vi hittade ingen primär cbp.gov-sida som stödjer det vanliga påståendet att \"CBP rekommenderar\" ett medgivandebrev vid inresa för utländska barn.",
+        "sourceName": "travel.state.gov",
+        "sourceUrl": "https://travel.state.gov/en/international-travel/planning/personal-needs/minors.html",
+        "resmalCountry": "USA"
+      },
+      {
+        "name": "Vietnam", "flag": "🇻🇳", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "note": "Vietnam Airlines anger att den medresande vuxna ska kunna visa släktskap, men det är flygbolagspolicy, inte en bekräftad myndighetsregel. Ingen officiell vietnamesisk källa eller svensk ambassadinfo nämner ett krav för utländska turistbarn.",
+        "sourceName": "Vietnam Airlines",
+        "sourceUrl": "https://www.vietnamairlines.com/us/en/help-desk/common-topics/Check-in-and-Travel-documents/yeu-cau-giay-to-cho-nguoi-di-cung-tre-em"
+      },
+      {
+        "name": "Sri Lanka", "flag": "🇱🇰", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "note": "Sri Lankas immigrationsmyndighets visumsida nämner inga särskilda krav för utländska minderåriga. De \"consent\"-dokument som förekommer online gäller sri-lankesiska medborgares egna barn, inte turistbarn.",
+        "sourceName": "Department of Immigration & Emigration, Sri Lanka",
+        "sourceUrl": "https://www.immigration.gov.lk/pages_e.php?id=14"
+      },
+      {
+        "name": "Egypten", "flag": "🇪🇬", "level": "unknown", "levelLabel": "Nej (för turistbarn)",
+        "note": "Egypten införde i januari 2024 krav på förhandstillstånd – men det gäller uttryckligen egyptiska medborgare under 18 år som reser UT från Egypten ensamma, inte utländska barn som reser in i landet. En vanlig missuppfattning i andra artiklar.",
+        "sourceName": "EgyptAir",
+        "sourceUrl": "https://www.egyptair.com/en/about-egyptair/news-and-press/Pages/IMMIGRATION%20RULES%20FOR%20MINORS%20TRAVELLING%20FROM%20Egypt%20ALONE%20WITHOUT%20THEIR%20PARENTS.aspx"
+      },
+      {
+        "name": "Indonesien (Bali)", "flag": "🇮🇩", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "note": "Indonesiens \"surat izin orang tua\" (föräldratillstånd) gäller indonesiska medborgares egna barn som reser utomlands – inte utländska turistbarn som kommer till Bali. Sveriges ambassads reseinfo nämner bara vaccinationsrekommendationer.",
+        "sourceName": "Sveriges ambassad, Indonesien (swedenabroad.se)",
+        "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/indonesien/reseinformation/ambassadens-reseinformation/in--och-utresebestammelser/"
+      },
+      {
+        "name": "Tanzania (Zanzibar)", "flag": "🇹🇿", "level": "unknown", "levelLabel": "Ej verifierat",
+        "note": "Vi kunde inte nå Tanzanias immigrationsmyndighets officiella sida under vår research (tekniskt fel). Kommersiella e-visumförmedlare nämner att barnets födelsebevis kan behövas vid ansökan, men inget bekräftat krav på medgivandebrev. Dubbelkolla direkt med Tanzania Immigration Department om ni vill vara helt säkra.",
+        "sourceName": "Sveriges ambassad, Tanzania (swedenabroad.se)",
+        "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/tanzania/reseinformation/ambassadens-reseinformation/in--och-utresebestammelser/"
+      }
+    ],
+    "sections": [
+      {
+        "h2": "Vanliga missförstånd – gäller det verkligen dig?",
+        "text": "Flera länder (Egypten, Indonesien, Frankrike, Portugal, Spanien och Nederländerna i vår lista) har riktiga, dokumenterade krav på medgivande – men de gäller landets EGNA medborgare eller boende som reser UT ur landet, inte svenska turistbarn som reser IN. Det är en av de vanligaste missuppfattningarna i artiklar om det här ämnet, och risken är att man läser in ett krav som i praktiken inte gäller en själv. Läs noten för varje land ovan innan du drar slutsatser."
+      },
+      {
+        "h2": "Vad bör ett medgivandebrev innehålla?",
+        "text": "Oavsett om det formellt krävs eller bara är en bra säkerhetsåtgärd, brukar följande uppgifter täcka det som efterfrågas: barnets fullständiga namn, personnummer och passnummer; namn och kontaktuppgifter till båda vårdnadshavarna; vem barnet reser med och relationen till barnet; resans datum och resrutt; samt vårdnadshavarnas underskrifter. För länder som Albanien bör ni även bifoga Skatteverkets personbevis på engelska, som går att beställa digitalt på skatteverket.se. Vår [medgivandebrevgenerator](/medgivandebrev/) samlar alla dessa fält och skapar ett utskrivbart brev på svenska och engelska på två minuter."
+      },
+      {
+        "h2": "Betala inte i onödan",
+        "text": "Det cirkulerar sajter som tar betalt för \"officiella\" medgivandebrevmallar eller certifieringstjänster som i praktiken inte behövs för de allra flesta resmål – ett vanligt undertecknat brev räcker i de flesta fall. Den enda betalande/officiella handlingen som faktiskt efterfrågas av ett land i vår lista är Skatteverkets personbevis (som för övrigt är gratis att beställa digitalt). Är ni osäkra på om ert resmål kräver notarisering eller apostille, kontakta det landets ambassad i Stockholm eller Sveriges ambassad på resmålet direkt – innan ni betalar någon tredje part för det."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Måste vi ha med ett medgivandebrev om vi reser tillsammans som familj?",
+        "a": "Nej, brevet behövs bara när barnet reser utan en eller båda vårdnadshavarna – med bara en förälder, med en annan vuxen (t.ex. mor- eller farförälder), eller helt ensamt."
+      },
+      {
+        "q": "Finns det en gemensam EU-regel för det här?",
+        "a": "Nej. EU:s egen portal Your Europe är tydlig med att det inte finns några gemensamma EU-regler – varje land bestämmer helt själv om det kräver ett medgivande, och kraven skiljer sig därför mycket mellan länder."
+      },
+      {
+        "q": "Var ligger den största risken för att nekas ombordstigning?",
+        "a": "Oftast vid incheckningen eller passkontrollen vid avresan från Sverige eller Schengenområdet, inte vid ankomsten till destinationslandet. Flygbolag och gränspolis där kan ställa egna frågor om barnet inte reser med båda vårdnadshavarna, oavsett vad destinationslandet självt kräver."
+      },
+      {
+        "q": "Måste brevet vara på engelska?",
+        "a": "De länder i vår lista som faktiskt efterfrågar ett brev (Albanien, Förenade Arabemiraten) vill ha det på engelska. Vår medgivandebrevgenerator skapar brevet på både svenska och engelska, så ni har båda till hands."
+      },
+      {
+        "q": "Är den här guiden juridisk rådgivning?",
+        "a": "Nej. Det här är allmän information baserad på de källor vi kunnat hitta och verifiera, inte juridisk rådgivning. Regler ändras, och vi rekommenderar alltid att dubbelkolla med destinationslandets ambassad om ni är osäkra inför en specifik resa."
       }
     ]
   }

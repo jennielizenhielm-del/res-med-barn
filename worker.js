@@ -4,7 +4,14 @@
    a country folder on 2026-09-30 (see NESTED_COUNTRIES in build.js).
    wrangler.jsonc's assets.run_worker_first lists exactly these paths, so
    this script only ever runs for them — every other request is served
-   straight from the ASSETS binding with zero added latency. */
+   straight from the ASSETS binding with zero added latency.
+
+   (2026-10-01: briefly also had a POST /api/skicka-brev endpoint for
+   emailing the medgivandebrev PDF via Resend + Turnstile. Jennie decided
+   the setup (Resend account, domain verification, Cloudflare secrets,
+   Turnstile widget) wasn't worth it and asked for a no-setup share button
+   instead — see buildMedgivandeGenerator() in build.js, which now uses the
+   Web Share API client-side instead. Reverted here accordingly.) */
 
 const REDIRECTS = {
   '/resmal/kreta/': '/resmal/grekland/kreta/',
