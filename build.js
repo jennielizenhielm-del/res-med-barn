@@ -1248,7 +1248,7 @@ function buildSmartPacklista() {
   ${bc.html}
   <h1>${esc(P.meta.h1)}</h1>
   <div class="page-intro"><p>${esc(P.meta.intro)}</p></div>
-  <p class="packlist-coverage">Fungerar för: <strong>bebis, småbarn, barn eller tonåring</strong> · <strong>solsemester eller vanlig resa/weekend</strong> · <strong>flyg, bil eller tåg</strong> — 24 färdiga kombinationer.</p>
+  <p class="packlist-coverage">Fungerar för: bebis, småbarn, barn eller tonåring · solsemester eller vanlig resa/weekend · flyg, bil eller tåg — <strong>24 färdiga kombinationer</strong>.</p>
 </header>
 
 <div class="packlist-subpages-links">
