@@ -878,7 +878,7 @@ function buildResmalHub() {
   const bc = breadcrumbs([['Hem', '/'], ['Resmål', null]]);
   const meta = {
     title: 'Resmål för barnfamiljer — 50 st, filtrerbara | Res med Barn',
-    description: 'Alla våra 50 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.',
+    description: 'Alla våra 54 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.',
     updated: '2026-09-30', published: '2026-09-23'
   };
   const itemList = {
@@ -1031,6 +1031,16 @@ function buildResmalCountryHubs() {
   console.log(`  ✓ ${Object.keys(NESTED_COUNTRIES).length} landshubbar genererade`);
 }
 
+function medgivandeNoteForDestination(d) {
+  const entry = C.medgivande.countries.find(c => c.resmalCountry === d.country && (c.level === 'yes' || c.level === 'warn'));
+  if (!entry) return '';
+  return `
+  <div class="detail-medgivande-note">
+    <div class="t-label">📄 ${entry.flag} Reser ni utan båda vårdnadshavarna?</div>
+    <p>${esc(entry.levelLabel)} — ${esc(d.country)} är ett av länderna där vi rekommenderar att ha ett skriftligt medgivandebrev med er, t.ex. om en förälder reser med barnen själv eller vid delad vårdnad. <a href="/foraldramedgivande/">Läs mer & skapa ett brev gratis →</a></p>
+  </div>`;
+}
+
 function buildResmal() {
   const DESTINATIONS = loadDestinations();
 
@@ -1087,6 +1097,7 @@ function buildResmal() {
     <div class="t-label">Förälder till förälder</div>
     <p>${esc(d.tip)}</p>
   </div>
+  ${medgivandeNoteForDestination(d)}
   ${d.prisinfo ? `
   <div class="detail-prisinfo">
     <div class="t-label">💰 Pris & rabatter</div>
@@ -1096,6 +1107,7 @@ function buildResmal() {
   <div class="detail-actions">
     ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">✈️ Boka resa via Sembo →</a>` : ''}
     ${d.bookingUrl ? `<a class="btn ${d.semboUrl ? 'btn-ghost' : 'btn-primary'}" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">${d.semboUrl ? 'Fler alternativ' : 'Boka / Läs mer'} →</a>` : ''}
+    ${d.altUrl && !d.semboUrl ? `<a class="btn btn-ghost" href="${esc(d.altUrl)}" target="_blank" rel="sponsored noopener">Fler alternativ →</a>` : ''}
     <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${esc(CAT_LABELS[d.cat] || d.catLabel)} →</a>
   </div>
   ${similar.length ? `
