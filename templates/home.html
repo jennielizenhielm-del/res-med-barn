@@ -14,25 +14,27 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #1A1816;
-      --bg-alt: #21201D;
-      --surface: #292724;
-      --text: #EDE8E0;
-      --text-secondary: #A8A098;
-      --text-muted: #787068;
-      --primary: #8FC4A8;
-      --primary-hover: #A5D4B9;
-      --primary-light: #243029;
-      --accent: #E8A0C0;
-      --accent-hover: #EFB4CE;
-      --accent-light: #3A2530;
-      --sand: #C4956A;
-      --sand-light: #2E261E;
-      --border: #383430;
-      --border-light: #302C28;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.16);
-      --shadow-lg: 0 8px 32px rgba(0,0,0,0.25);
+      /* Ljust (beige) läge — standard */
+      --bg: #F7F1E4;
+      --bg-alt: #EFE5D2;
+      --surface: #FFFFFF;
+      --text: #2B241E;
+      --text-secondary: #6B5F50;
+      --text-muted: #7A6D5C;
+      --primary: #357A59;
+      --primary-hover: #2A6349;
+      --primary-light: #DEF0E5;
+      --accent: #B13C67;
+      --accent-hover: #8F2E52;
+      --accent-light: #E8A0C0;
+      --on-accent-light: #2B241E;
+      --sand: #8C5A2E;
+      --sand-light: #F1E1CC;
+      --border: #E3D8C2;
+      --border-light: #ECE2CE;
+      --shadow-sm: 0 1px 3px rgba(43,36,30,0.10);
+      --shadow-md: 0 4px 16px rgba(43,36,30,0.14);
+      --shadow-lg: 0 8px 32px rgba(43,36,30,0.22);
       --radius: 10px;
       --radius-lg: 16px;
       --radius-pill: 100px;
@@ -46,6 +48,32 @@
       --font-display: 'Fraunces', Georgia, serif;
       --font-body: 'Outfit', system-ui, sans-serif;
       --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* Mörkt läge — visas automatiskt om besökarens enhet/webbläsare har mörkt läge påslaget */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1A1816;
+        --bg-alt: #21201D;
+        --surface: #292724;
+        --text: #EDE8E0;
+        --text-secondary: #A8A098;
+        --text-muted: #787068;
+        --primary: #8FC4A8;
+        --primary-hover: #A5D4B9;
+        --primary-light: #243029;
+        --accent: #E8A0C0;
+        --accent-hover: #EFB4CE;
+        --accent-light: #3A2530;
+        --on-accent-light: #E8A0C0;
+        --sand: #C4956A;
+        --sand-light: #2E261E;
+        --border: #383430;
+        --border-light: #302C28;
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+        --shadow-md: 0 4px 16px rgba(0,0,0,0.16);
+        --shadow-lg: 0 8px 32px rgba(0,0,0,0.25);
+      }
     }
 
     html { scroll-behavior: smooth; }
@@ -745,12 +773,12 @@
     .medgivande-banner a {
       flex-shrink: 0;
       white-space: nowrap;
-      color: var(--accent);
+      color: var(--on-accent-light);
       font-weight: 600;
       text-decoration: none;
-      border-bottom: 1.5px solid var(--accent);
+      border-bottom: 1.5px solid var(--on-accent-light);
     }
-    .medgivande-banner a:hover { color: var(--accent-hover); border-color: var(--accent-hover); }
+    .medgivande-banner a:hover { border-color: var(--accent-hover); }
     @media (max-width: 640px) {
       .medgivande-banner { flex-direction: column; align-items: flex-start; }
     }
