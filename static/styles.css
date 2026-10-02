@@ -2,34 +2,60 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg: #1A1816;
-  --bg-alt: #21201D;
-  --surface: #292724;
-  --text: #EDE8E0;
-  --text-secondary: #A8A098;
-  --text-muted: #787068;
-  --primary: #8FC4A8;
-  --primary-light: #243029;
-  --accent: #E8A0C0;
-  --accent-hover: #EFB4CE;
-  --accent-light: #3A2530;
-  --sand: #C4956A;
-  --sand-light: #2E261E;
+  /* Ljust (beige) läge — standard */
+  --bg: #F7F1E4;
+  --bg-alt: #EFE5D2;
+  --surface: #FFFFFF;
+  --text: #2B241E;
+  --text-secondary: #6B5F50;
+  --text-muted: #7A6D5C;
+  --primary: #357A59;
+  --primary-light: #DEF0E5;
+  --accent: #B13C67;
+  --accent-hover: #8F2E52;
+  --accent-light: #E8A0C0;
+  --on-accent-light: #2B241E;
+  --sand: #8C5A2E;
+  --sand-light: #F1E1CC;
   --cat-beach: #E2836A;
   --cat-parks: #9D8BC7;
   --cat-cities: #7C9EC4;
   --cat-sweden: #CFAC62;
   --cat-museums: #9C7A5B;
-  --border: #383430;
-  --border-light: #302C28;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.16);
+  --border: #E3D8C2;
+  --border-light: #ECE2CE;
+  --shadow-sm: 0 1px 3px rgba(43,36,30,0.10);
+  --shadow-md: 0 4px 16px rgba(43,36,30,0.14);
   --radius: 10px;
   --radius-lg: 16px;
   --radius-pill: 100px;
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'Outfit', system-ui, sans-serif;
   --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Mörkt läge — visas automatiskt om besökarens enhet/webbläsare har mörkt läge påslaget */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1A1816;
+    --bg-alt: #21201D;
+    --surface: #292724;
+    --text: #EDE8E0;
+    --text-secondary: #A8A098;
+    --text-muted: #787068;
+    --primary: #8FC4A8;
+    --primary-light: #243029;
+    --accent: #E8A0C0;
+    --accent-hover: #EFB4CE;
+    --accent-light: #3A2530;
+    --on-accent-light: #E8A0C0;
+    --sand: #C4956A;
+    --sand-light: #2E261E;
+    --border: #383430;
+    --border-light: #302C28;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.16);
+  }
 }
 
 html { scroll-behavior: smooth; }
@@ -432,7 +458,7 @@ h1 {
 .product-badge {
   padding: 0.25rem 0.75rem;
   background: var(--accent-light);
-  color: var(--accent);
+  color: var(--on-accent-light);
   border-radius: var(--radius-pill);
   font-size: 0.76rem;
   font-weight: 700;
@@ -565,7 +591,7 @@ h1 {
   white-space: nowrap;
 }
 .activity-badge-free { background: var(--primary-light); color: var(--primary); }
-.activity-badge-paid { background: var(--accent-light); color: var(--accent); }
+.activity-badge-paid { background: var(--accent-light); color: var(--on-accent-light); }
 .activity-price { font-size: 0.82rem; font-weight: 600; color: var(--sand); margin-bottom: 0.5rem; }
 .activity-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem; }
 .activity-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; }
@@ -850,7 +876,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent-hover);
+  color: var(--on-accent-light);
   margin-bottom: 0.4rem;
 }
 .detail-prisinfo p { font-size: 0.98rem; color: var(--text); line-height: 1.65; }
@@ -968,16 +994,14 @@ h1 {
 
 .packlist-subpages-links {
   max-width: 720px;
-  margin: 1.25rem auto 0;
-  padding: 1.1rem 1.3rem;
-  background: var(--accent-light);
-  border-radius: var(--radius-lg);
+  margin: 1rem auto 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1.1rem;
 }
-.packlist-subpages-label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.2rem; }
-.packlist-subpages-links a { color: var(--accent-hover); font-weight: 600; text-decoration: none; font-size: 0.95rem; }
+.packlist-subpages-label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); }
+.packlist-subpages-links a { color: var(--accent-hover); font-weight: 600; text-decoration: none; font-size: 0.9rem; }
 .packlist-subpages-links a:hover { text-decoration: underline; }
 
 /* ---- DATA TABLES (topplistor sections) ---- */
