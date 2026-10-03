@@ -99,21 +99,41 @@ ${meta.jsonld ? `<script type="application/ld+json">${JSON.stringify(meta.jsonld
 <body>`;
 }
 
+// Toppmenyn grupperar Guider/Packlista/Artiklar under en "Resetips"-dropdown
+// på desktop för att hålla nere antalet synliga toppval (5 istället för 7).
+// Mobilmenyn förblir en platt lista — en dropdown ger ingen vinst i en redan
+// vertikal overlay-meny, så där listas alla sidor rakt av.
+const NAV_DROPDOWN = {
+  label: 'Resetips', href: '/guider/',
+  items: [['/guider/', 'Guider'], ['/packlista/', 'Packlista'], ['/artiklar/', 'Artiklar']]
+};
 function nav(active) {
-  const links = [
-    ['/resmal/', 'Resmål'], ['/guider/', 'Guider'], ['/topplistor/', 'Topplistor'], ['/packlista/', 'Packlista'], ['/stader/', 'Städer'], ['/artiklar/', 'Artiklar'],
-    ['/om-oss/', 'Om oss']
-  ];
+  const before = [['/resmal/', 'Resmål']];
+  const after = [['/topplistor/', 'Topplistor'], ['/stader/', 'Städer'], ['/om-oss/', 'Om oss']];
+  const flatLinks = [...before, ...NAV_DROPDOWN.items, ...after];
+  const dropdownActive = NAV_DROPDOWN.items.some(([href]) => href === active);
+  const li = ([href, label]) => `<li><a href="${href}"${href === active ? ' class="active"' : ''}>${label}</a></li>`;
+  const dropdownLi = `
+    <li class="nav-dropdown">
+      <a href="${NAV_DROPDOWN.href}"${dropdownActive ? ' class="active"' : ''}>${NAV_DROPDOWN.label} <span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown-menu">
+        <div class="nav-dropdown-menu-inner">
+          ${NAV_DROPDOWN.items.map(([href, label]) => `<a href="${href}"${href === active ? ' class="active"' : ''}>${label}</a>`).join('\n          ')}
+        </div>
+      </div>
+    </li>`;
   return `
 <nav class="nav" aria-label="Huvudmeny">
   <a href="/" class="nav-brand">Res med <span>Barn</span></a>
   <ul class="nav-links">
-    ${links.map(([href, label]) => `<li><a href="${href}"${href === active ? ' class="active"' : ''}>${label}</a></li>`).join('\n    ')}
+    ${before.map(li).join('\n    ')}
+    ${dropdownLi}
+    ${after.map(li).join('\n    ')}
   </ul>
   <button class="hamburger" aria-label="Meny" onclick="document.getElementById('mm').classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-menu" id="mm">
-  ${links.map(([href, label]) => `<a href="${href}">${label}</a>`).join('\n  ')}
+  ${flatLinks.map(([href, label]) => `<a href="${href}">${label}</a>`).join('\n  ')}
 </div>`;
 }
 
