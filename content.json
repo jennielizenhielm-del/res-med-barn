@@ -115,6 +115,17 @@
       ],
       "published": "2026-09-28",
       "updated": "2026-09-28"
+    },
+    "artiklar": {
+      "title": "Artiklar om resa med barn | Res med Barn",
+      "description": "Personliga och praktiska artiklar om att resa med barn — från hur ni fördriver tiden på vägen till vad ni kommer sakna när de blivit stora.",
+      "h1": "Artiklar om resa med barn",
+      "intro": [
+        "Utöver våra guider och stadsöversikter skriver vi ibland längre, mer personliga texter om det som faktiskt händer när man reser med barn — både det praktiska och det som stannar kvar efteråt.",
+        "Nya artiklar kommer löpande. Allt utgår från samma sak som resten av sajten: resor med barn, skrivet av föräldrar som faktiskt varit där."
+      ],
+      "published": "2026-10-03",
+      "updated": "2026-10-03"
     }
   },
   "transports": [
@@ -4513,6 +4524,114 @@
         ],
         "published": "2026-09-23",
         "updated": "2026-09-23"
+      },
+      {
+        "slug": "uppsala",
+        "name": "Uppsala",
+        "emoji": "🎓",
+        "img": "photo-1565560665357-03c4546f0e69",
+        "cardText": "Universitetsstaden med dinosaurier, en veteranjärnväg och gott om gratis lekplatser.",
+        "title": "Uppsala med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Uppsala med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Evolutionsmuseet, Fyrishov, Lennakatten och fler — med verkliga priser.",
+        "h1": "Uppsala med barn",
+        "intro": [
+          "Uppsala är lagom stort för en familjedag — gångavstånd mellan de flesta sevärdheter, och en skön blandning av universitetshistoria, vikingatid och rena lekplatser.",
+          "Flera av stadens bästa aktiviteter för barn är helt gratis. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+        ],
+        "activities": [
+          {
+            "name": "Pelleparken (Pelle Svanslös-lekplatsen)",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 10,
+            "indoor": false,
+            "area": "Engelska parken, centrala Uppsala",
+            "desc": "Temalekplats i Carolinaparken byggd kring Pelle Svanslös, Uppsalas egen bokkatt. Klätterdomkyrka, rutschkanor och lekytor mitt i stan."
+          },
+          {
+            "name": "Gamla Uppsala högar",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Gamla Uppsala, ca 10 min från centrum",
+            "desc": "Öppet gravfält med kungshögar från 500-talet, perfekt att springa runt på och lätt vikingahistoria för barnen. Museet bredvid kostar extra."
+          },
+          {
+            "name": "Fyrishovs Äventyrsbad",
+            "type": "paid",
+            "price": "75–95 kr barn, 95–115 kr vuxen (beroende på dag)",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Fyrislund",
+            "desc": "Äventyrsbad med rutschkanor, vågmaskin och djungeltema inomhus, plus utomhusbassäng på sommaren. Familjebiljett (1 vuxen + 2 barn) för 275 kr."
+          },
+          {
+            "name": "Evolutionsmuseet",
+            "type": "paid",
+            "price": "70 kr vuxen, gratis för barn",
+            "ageMin": 4,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Norbyvägen",
+            "desc": "Uppsala universitets museum med dinosaurieben och över 5 000 utställda djur. Biljetten gäller både zoologi- och paleontologidelen."
+          },
+          {
+            "name": "Biotopia",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 12,
+            "indoor": true,
+            "area": "Centrala Uppsala, vid slottet",
+            "desc": "Naturmuseum med dioramor över Upplands djurliv, akvarium och en egen barnhörna. Fri entré för alla, bra regndagsalternativ."
+          },
+          {
+            "name": "Lennakatten",
+            "type": "paid",
+            "price": "Från 60 kr barn, 160 kr vuxen tur och retur",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Uppsala Östra station",
+            "desc": "Veterantåg från sent 1800-tal till 1950-tal som kör genom Upplands landskap. Dagskort finns för familjer som vill åka flera gånger samma dag."
+          },
+          {
+            "name": "Turbo Sport & Adventure Zone",
+            "type": "paid",
+            "price": "219–239 kr (4+ år), 99–119 kr (1–3 år)",
+            "ageMin": 1,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Gränbystaden",
+            "desc": "Studsmattepark med 51 studsmattor, ninja warrior-bana, klättring och dunk zone för de minsta. Barn under 10 år måste ha vuxen med sig."
+          },
+          {
+            "name": "Fjällnora friluftsområde",
+            "type": "free",
+            "price": "Gratis entré (uthyrning av kanot/cykel kostar extra)",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Ca 20 min från centrum",
+            "desc": "Badplats och naturområde med fiske, cykelleder och trampbåtsuthyrning på sommaren, skidspår och skridskois på vintern."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Evolutionsmuseet gratis för barn?",
+            "a": "Ja, barn har fri entré till Evolutionsmuseet i Uppsala. Vuxenbiljetten kostar 70 kr och gäller både zoologi- och paleontologidelen."
+          },
+          {
+            "q": "Vilka aktiviteter i Uppsala är helt gratis?",
+            "a": "Pelleparken, Gamla Uppsala högar, Biotopia och Fjällnora friluftsområde (själva entrén) kostar inget. Bra start för en billig familjedag i Uppsala."
+          }
+        ],
+        "published": "2026-10-03",
+        "updated": "2026-10-03"
       }
     ]
   },
@@ -5411,6 +5530,124 @@
       {
         "q": "Är den här guiden juridisk rådgivning?",
         "a": "Nej. Det här är allmän information baserad på de källor vi kunnat hitta och verifiera, inte juridisk rådgivning. Regler ändras, och vi rekommenderar alltid att dubbelkolla med destinationslandets ambassad om ni är osäkra inför en specifik resa."
+      }
+    ]
+  },
+  "artiklar": {
+    "list": [
+      {
+        "slug": "fordriva-tiden-pa-resan",
+        "name": "Fördriva tiden på resan",
+        "emoji": "🎲",
+        "img": "photo-1633111046443-13a0c30033ea",
+        "cardText": "Lekar, prylar och knep som funkar oavsett om ni flyger, kör eller tar tåget.",
+        "title": "Fördriva tiden på resan med barn | Res med Barn",
+        "description": "Praktiska sätt att hålla barnen sysselsatta under resan dit, oavsett transportsätt. Lekar utan prylar, en egen rutinpåse och skärmtid med sunt förnuft.",
+        "h1": "Fördriva tiden på resan med barn",
+        "kicker": "Oavsett flyg, bil eller tåg",
+        "intro": [
+          "Själva resan dit är ofta den delen föräldrar oroar sig mest för — inte stranden eller hotellet. Hur många timmar blir det, hur länge orkar barnet sitta still, och vad gör vi om allt går åt skogen i säkerhetskontrollen eller på E4:an?",
+          "Det här är inte en guide till ett specifikt transportsätt — vi har redan egna [guider för det](/guider/), med konkreta tips för flyg, bil, tåg och buss. Det här är istället det som funkar oavsett hur ni tar er fram: hur ni faktiskt får tiden att gå utan att packa ner halva lekrummet."
+        ],
+        "sections": [
+          {
+            "h2": "En egen påse barnet får ansvar för",
+            "text": "Istället för att du bär allt i din väska, låt barnet ha en liten egen ryggsäck eller necessär med sina saker. Det ger dem något att pyssla med redan innan ni kommit iväg — och känslan av att ha kontroll över något på en dag där mycket annars styrs av vuxna. Fyll den med max 4–5 saker så den inte blir en belastning att bära själv."
+          },
+          {
+            "h2": "Lekar som inte väger något",
+            "text": "De bästa resorna vi haft är de där vi glömt plocka fram något alls. \"Jag ser\" funkar från ungefär tre års ålder och håller i evigheter. 20 frågor funkar för de något äldre. Räkna röda bilar, hitta bokstäver på skyltar, eller gissa vad nästa låt på spellistan blir. Inget av det tar plats i väskan och inget behöver laddas."
+          },
+          {
+            "h2": "Skärmar är okej — med tydliga ramar",
+            "text": "Vi har slutat skämmas för att plocka fram paddan på en lång resa. Det som gör skillnad är att ladda ner innehåll innan ni åker (wifi på flygplatsen och längs vägen är opålitligt), ha hörlurar som faktiskt passar barnets huvud, och bestämma i förväg ungefär när skärmen kommer fram — så det inte blir en förhandling var femte minut."
+          },
+          {
+            "h2": "Små analoga prylar som faktiskt används",
+            "text": "Klistermärkesböcker, en liten magnetisk ritplatta och enkla kortlekar (till exempel Kims lek eller memory i miniformat) har följt med oss på nästan varje resa sedan barnen var tre. De är billiga, går aldrig sönder om de tappas, och behöver aldrig laddas precis när ni landar."
+          },
+          {
+            "h2": "Snacks som räcker längre än godis",
+            "text": "Ett snabbt sockerrus ger en lugn stund på tio minuter och ett sämre humör på resten av resan. Vi packar hellre något som tar tid att äta — en liten påse russin, torkad frukt i bitar, eller riskakor man kan knapra länge på. Håll en snackpaus i bakfickan för när tålamodet börjar ta slut, inte som underhållning hela vägen."
+          },
+          {
+            "h2": "Bryt upp resan med rörelse",
+            "text": "Barn som sitter stilla i tre timmar blir sällan lugnare av det. På flygplatsen: gå en extra sväng innan ni sätter er vid gaten. I bilen: lägg in en paus där barnet får springa runt bilen eller hoppa jämfota tio gånger innan ni kör vidare. På tåget: en kort promenad genom vagnarna gör mer för sinnesstämningen än ännu en skärm."
+          },
+          {
+            "h2": "Låt barnet vara fotografen",
+            "text": "Ge barnet en gammal mobil eller en billig engångskamera och låt dem fota det de tycker är viktigt på resan — oftast inte det ni själva hade fotat. Det håller dem sysselsatta, och ni får efteråt se resan genom deras ögon. Det är också ett bra sätt att börja fånga minnena medan de faktiskt skapas."
+          }
+        ],
+        "quicktipsTitle": "Snabbtips att ta med",
+        "quicktips": [
+          "Packa barnets egna prylar i en liten väska de bär själva",
+          "Ladda ner filmer och appar innan ni åker — lita inte på wifi på vägen",
+          "Ha en snackpaus i bakfickan, inte som underhållning hela resan",
+          "Planera in minst en rörelsepaus om resan är längre än två timmar",
+          "Ge barnet en enkel kamera eller gammal mobil att fota med"
+        ],
+        "faq": [
+          {
+            "q": "Vilken ålder funkar en egen \"rutinpåse\" för?",
+            "a": "De flesta barn klarar att bära och hålla koll på en liten egen väska från runt tre års ålder. Innan det räcker det att de får välja vilka 2–3 saker som ska ligga i den, även om du bär den."
+          },
+          {
+            "q": "Hur mycket skärmtid är rimligt på en lång resa?",
+            "a": "Det finns ingen universell gräns, men många föräldrar landar i att skärmen får ta den tyngsta delen av resan — till exempel mitten av en lång bilresa eller flygningen efter maten — snarare än hela vägen. Det viktigaste är att bestämma ramarna innan ni åker, inte mitt i en gnällig förhandling."
+          }
+        ],
+        "published": "2026-10-03",
+        "updated": "2026-10-03"
+      },
+      {
+        "slug": "vad-ni-kommer-sakna",
+        "name": "Vad ni kommer sakna",
+        "emoji": "🫶",
+        "img": "photo-1783124759360-98353c2faf9c",
+        "cardText": "De små, flyktiga resmomenten med småbarn som blir minnena man saknar mest sen.",
+        "title": "Vad ni kommer sakna med barnens resor | Res med Barn",
+        "description": "De små, flyktiga resmomenten med småbarn som blir de minnen man saknar mest när de är stora — och enkla sätt att fånga dem medan de pågår.",
+        "h1": "Det ni kommer sakna med barnens resor när de är små",
+        "kicker": "En påminnelse mitt i resans stress",
+        "intro": [
+          "Mitt i en försenad avgång, ett bagage som inte kommer, eller ett barn som somnar exakt när ni landar är det lätt att glömma att det här faktiskt är de år man pratar om längtansfullt sen.",
+          "Vi har inte skrivit den här för att få er att känna skuld över att vara trötta på en resa — utan som en liten påminnelse om vad som brukar bli kvar när allt annat är glömt."
+        ],
+        "sections": [
+          {
+            "h2": "Den lilla handen som håller i din på nya platser",
+            "text": "Det finns en ålder där barnet automatiskt tar din hand varje gång ni kliver av ett flygplan, en båt eller en buss på en ny plats — inte för att de blir tillsagda, utan för att hela världen är ny och du är det trygga. Den fasen är kortare än man tror."
+          },
+          {
+            "h2": "Hur de ser allt för första gången",
+            "text": "Den första gången de ser havet, en rulltrappa på en flygplats de inte varit på, eller snö som inte ser ut som hemma — reaktionerna är större än vad resmålet egentligen förtjänar, och det är precis det som gör dem minnesvärda. Som vuxen har man sett det mesta förut; genom ett litet barns ögon blir det nytt igen."
+          },
+          {
+            "h2": "Den påtvingade närheten på själva resan",
+            "text": "Ett långt flyg, en biltur genom natten eller fem timmar på ett tåg utan wifi tvingar fram samtal och lekar som sällan händer hemma, mitt i vardagens skärmar och scheman. Många av de bästa minnena vi har är inte från resmålet, utan från själva resan dit — just därför att det inte fanns något annat att göra än att vara tillsammans."
+          },
+          {
+            "h2": "Utbrotten som blir historier",
+            "text": "Det utbrottet i säkerhetskontrollen känns som en katastrof när det händer. Ett år senare är det en av familjens favorithistorier, berättad om och om igen vid middagsbordet. Nästan ingen av de pinsamma resmomenten känns lika stora i backspegeln."
+          },
+          {
+            "h2": "Hur lite som krävdes för att göra dem lyckliga",
+            "text": "En hotellhiss, en gratis godispåse på flygplanet, eller att få trycka på knappen vid säkerhetsbältet — glädjen satt sällan i det dyra eller planerade. När de blir äldre krävs det ofta mer för samma lycka, eller så vill de helt enkelt inte ha dig lika nära när de hittar det."
+          },
+          {
+            "h2": "Några sätt att fånga det medan det pågår",
+            "text": "Ett foto varje resdag, oavsett om det är \"bra\" eller inte. En kort röstmemo på telefonen av något roligt de sagt. Eller, som vi skrev om i [artikeln om att fördriva tiden på resan](/artiklar/fordriva-tiden-pa-resan/), en billig engångskamera i barnets egna händer — de fångar sällan det ni själva hade valt, och det är precis vad som gör det värt att spara."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Hur sparar man minnen bäst från en resa med små barn?",
+            "a": "De enklaste metoderna är oftast de som håller: ett foto per dag (även vardagliga, inte bara de perfekta), en kort anteckning eller röstmemo om något de sagt eller gjort, och gärna låta barnet själv fota ibland med en enkel kamera eller gammal mobil."
+          }
+        ],
+        "published": "2026-10-03",
+        "updated": "2026-10-03"
       }
     ]
   }

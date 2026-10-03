@@ -101,7 +101,7 @@ ${meta.jsonld ? `<script type="application/ld+json">${JSON.stringify(meta.jsonld
 
 function nav(active) {
   const links = [
-    ['/resmal/', 'Resmål'], ['/guider/', 'Guider'], ['/topplistor/', 'Topplistor'], ['/packlista/', 'Packlista'], ['/stader/', 'Städer'],
+    ['/resmal/', 'Resmål'], ['/guider/', 'Guider'], ['/topplistor/', 'Topplistor'], ['/packlista/', 'Packlista'], ['/stader/', 'Städer'], ['/artiklar/', 'Artiklar'],
     ['/om-oss/', 'Om oss']
   ];
   return `
@@ -143,6 +143,7 @@ function footer() {
       <a href="/foraldramedgivande/">Föräldramedgivande</a>
       <a href="/verktyg/">🧰 Alla verktyg</a>
       <a href="/resmal/">Alla resmål</a>
+      <a href="/artiklar/">📝 Alla artiklar</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
     </div>
@@ -839,6 +840,61 @@ ${faqHtml(s.faq)}
   }
 }
 
+/* ---------- ARTIKLAR ---------- */
+function buildArtiklarHub() {
+  const m = C.pages.artiklar;
+  const bc = breadcrumbs([['Hem', '/'], ['Artiklar', null]]);
+  const inner = `
+<header class="page-header">
+  ${bc.html}
+  <h1>${esc(m.h1)}</h1>
+  <div class="page-intro">${paras(m.intro)}</div>
+</header>
+<div class="card-grid">
+  ${C.artiklar.list.map(a => `
+  <a class="hub-card has-media" href="/artiklar/${a.slug}/">
+    ${media(a.img, a.emoji, 'hub-media', 640)}
+    <span class="hub-emoji">${a.emoji}</span>
+    <h2>${esc(a.name)}</h2>
+    <p>${esc(a.cardText)}</p>
+    <span class="hub-link">Läs artikeln →</span>
+  </a>`).join('')}
+</div>
+${faqHtml(m.faq)}`;
+  write('artiklar/index.html', page('/artiklar/', m, '/artiklar/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
+}
+
+function buildArtiklar() {
+  for (const a of C.artiklar.list) {
+    const url = `/artiklar/${a.slug}/`;
+    const bc = breadcrumbs([['Hem', '/'], ['Artiklar', '/artiklar/'], [a.name, null]]);
+    const others = C.artiklar.list.filter(x => x.slug !== a.slug);
+    const inner = `
+<header class="page-header">
+  ${bc.html}
+  <p class="kicker">${a.emoji} ${esc(a.kicker || '')} · Uppdaterad ${svDate(a.updated)}</p>
+  <h1>${esc(a.h1)}</h1>
+  <div class="page-intro">${paras(a.intro)}</div>
+</header>
+${media(a.img, a.emoji, 'page-hero', 1400)}
+<article class="article">
+  ${a.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>`).join('\n')}
+</article>
+${a.quicktips ? `
+<div class="quicktips-box">
+  <h2>${esc(a.quicktipsTitle || 'Snabbtips')}</h2>
+  <ul class="checklist">${a.quicktips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+</div>` : ''}
+${faqHtml(a.faq)}
+<h2 class="section-title">Fler artiklar</h2>
+<div class="related-links">
+  ${others.map(x => `<a href="/artiklar/${x.slug}/">${x.emoji} ${esc(x.name)}</a>`).join('\n  ')}
+  <a href="/artiklar/">← Alla artiklar</a>
+</div>`;
+    write(`artiklar/${a.slug}/index.html`, page(url, a, '/artiklar/', inner, a.faq ? [bc.jsonld, faqLd(a.faq)] : bc.jsonld, 'Article'));
+  }
+}
+
 /* ---------- RESMÅL (extraherade från templates/home.html) ---------- */
 const CAT_LABELS = { beach: 'Strand & Sol', parks: 'Nöjesparker', cities: 'Storstäder', sweden: 'Sverige', museums: 'Museer' };
 const destSlug = s => s.toLowerCase().replace(/å|ä/g, 'a').replace(/ö/g, 'o').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -1161,6 +1217,8 @@ function buildMeta(destinations) {
   for (const l of C.topplistor.lists) urls.push(`/topplistor/${l.slug}/`);
   urls.push('/stader/');
   for (const s of C.stader.cities) urls.push(`/stader/${s.slug}/`);
+  urls.push('/artiklar/');
+  for (const a of C.artiklar.list) urls.push(`/artiklar/${a.slug}/`);
   urls.push('/resmal/');
   for (const slug of Object.values(NESTED_COUNTRIES)) urls.push(`/resmal/${slug}/`);
   urls.push('/packlista/');
@@ -1202,6 +1260,8 @@ buildGuides();
 buildTopplistor();
 buildStaderHub();
 buildStader();
+buildArtiklarHub();
+buildArtiklar();
 function buildSmartPacklista() {
   const P = C.smartPacklista;
   const bc = breadcrumbs([['Hem', '/'], ['Packlista', null]]);
