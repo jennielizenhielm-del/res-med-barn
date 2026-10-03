@@ -439,12 +439,19 @@
       overflow: hidden;
       position: relative;
       box-shadow: var(--shadow-md);
+      display: block;
+      text-decoration: none;
+      transition: box-shadow var(--transition);
+    }
+    .hero-collage .col-img:hover {
+      box-shadow: var(--shadow-lg);
     }
     .hero-collage .col-img img {
       width: 100%; height: 100%;
       object-fit: cover;
       display: block;
     }
+    .hero-collage .col-img:hover img { transform: scale(1.04); }
     .col-img:nth-child(1) { grid-area: 1 / 1 / 5 / 5; }
     .col-img:nth-child(2) { grid-area: 1 / 5 / 4 / 7; transform: translateY(0.4rem); }
     .col-img:nth-child(3) { grid-area: 5 / 2 / 7 / 5; }
@@ -1519,7 +1526,7 @@
     </div>
     <a href="#quiz" class="hero-quiz-link">🧭 Vet ni inte vart ni ska? Gör vårt 30-sekunders quiz →</a>
   </div>
-  <div class="hero-collage" aria-hidden="true" id="heroCollage"></div>
+  <div class="hero-collage" id="heroCollage"></div>
 </section>
 
 <!-- CATEGORIES -->
@@ -2961,10 +2968,10 @@ function showFavorites() {
 function renderCollage() {
   const picks = ['Kreta', 'Tokyo', 'Rhodos', 'Istrien'].map(n => DESTINATIONS.find(d => d.name === n));
   document.getElementById('heroCollage').innerHTML = picks.map(d => `
-    <div class="col-img card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
+    <a class="col-img card-media" data-cat="${d.cat}" data-emoji="${d.emoji}" href="/resmal/${resmalSlug(d)}/" onclick="return handleCardClick(event, '${resmalSlug(d)}')" aria-label="${esc(d.name)}">
       <img src="${IMG(d.img)}" alt="" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
       <span class="col-tag">${d.emoji} ${d.name}</span>
-    </div>`).join('');
+    </a>`).join('');
 }
 
 /* ============ FEATURED ============ */
