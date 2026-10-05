@@ -301,6 +301,8 @@ h1 {
   text-decoration: none;
   color: inherit;
   transition: all var(--transition);
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 .hub-card:hover {
   border-color: var(--text-muted);
