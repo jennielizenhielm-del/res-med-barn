@@ -527,24 +527,41 @@
         },
         {
           "h2": "Säkerhet ombord – vad gäller egentligen?",
-          "text": "På långfärdsbussar med bälte är grundregeln att bebisen åker tryggast i bärsele mot din kropp, med ditt bälte fäst under selen – aldrig runt er båda. Vissa bussbolag tillåter babyskydd på egen sittplats om du bokat en; fråga vid bokningen. I stadsbussar står vagnen bromsad på vagnplatsen med bebisen fastspänd i vagnens sele, och du står bredvid. Låter det mindre ordnat än bilens bakåtvända stol? Det är det också – därför är korta sträckor och lugna avgångar bussens bästa vänner."
+          "text": "Det skiljer sig åt beroende på bussmodell. På långfärdsbussar med bälte är grundregeln att bebisen åker tryggast i bärsele mot din kropp, med ditt bälte fäst under selen – aldrig runt er båda. Vissa bussbolag tillåter babyskydd på egen sittplats om du bokat en; fråga vid bokningen. På stadsbussar och i lokaltrafiken är det tvärtom bebisen som ska stanna kvar i vagnen: fäst alltid vagnens egna sele ordentligt, bromsa vagnen och spänn fast den med bussens remmar i det avsedda vagnutrymmet – helst i hörnet, där den står stabilast och inte kan rulla vid inbromsning. Att ta upp bebisen i bärsele och lämna vagnen lös är alltså inte rätt väg på en stadsbuss; vagnen är gjord för att spännas fast, inte för att stå fri."
+        },
+        {
+          "h2": "Vad kostar det att ta med barnvagn på bussen?",
+          "text": "I de flesta svenska kommuner är huvudregeln fortfarande att den som reser med barnvagn åker gratis, eller i alla fall att själva vagnen inte kostar extra – men 2026 blev det mer nyanserat i Stockholm. På SL:s bussar 1, 2, 3, 4, 5 och 6 (\"blåbussarna\", med biljettläsare vid alla dörrar) behöver den vuxna nu en giltig biljett för resan, eftersom de busslinjerna infört betalning i alla dörrar. På övriga SL-bussar, där biljettläsaren bara finns vid framdörren, reser ni fortfarande gratis med barnvagn. Värt att veta: SL har själva erkänt att informationen om det nya kravet gått ut dåligt, och kontrollanter påminner i dagsläget snarare än bötfäller – men ta med giltig biljett på blåbussarna för säkerhets skull. Utanför Stockholm gäller i regel samma gamla princip: gratis i mån av plats, men kolla alltid med ert lokala kollektivtrafikbolag innan avresa."
         },
         {
           "h2": "Stadsbuss med bebis – vardagslogistiken",
-          "text": "I många svenska städer reser den som har barnvagn gratis eller går ombord genom mittdörren direkt till vagnplatsen – kolla vad som gäller där ni är. Utomlands varierar det: i vissa städer viker alla undan för vagnen, i andra är trappsteg och trängsel standard. Res utanför rusningstid, ha bebisen i sele i stället för vagn när det går, och välj låggolvsbussar när ni kan se det i tidtabellen. En hopfällbar resevagn gör hela stadsbussekvationen enklare."
+          "text": "I många svenska städer reser den som har barnvagn gratis eller går ombord genom mittdörren direkt till vagnplatsen – men kolla vad som gäller just er linje (se kostnadsavsnittet nedan för Stockholm). Utomlands varierar det: i vissa städer viker alla undan för vagnen, i andra är trappsteg och trängsel standard. Res utanför rusningstid när ni kan och välj låggolvsbussar där det syns i tidtabellen. En hopfällbar resevagn gör hela stadsbussekvationen enklare, särskilt om ni ska byta buss eller gå en bit till och från hållplatsen."
         }
       ],
       "quicktips": [
         "Bärsele ombord – vagnen åker i lastutrymmet",
         "Boka platser långt fram och tajma med sovtiderna",
         "Byt blöja direkt före avgång, vikbar skötmatta i väskan",
-        "Nattbuss är underskattat med bebis: mörkt och monotont"
+        "Nattbuss är underskattat med bebis: mörkt och monotont",
+        "I Stockholm: biljett krävs för barnvagn på blåbussarna (linje 1–6), fri på övriga SL-bussar"
       ],
       "img": "photo-1544620347-c4fd4a3d5957",
       "faq": [
         {
-          "q": "Reser man gratis med barnvagn på bussen?",
-          "a": "I flera svenska städer, ja – den som reser med barnvagn åker gratis eller stiger på genom mittdörren utan att blippa. Reglerna är lokala, så kolla ditt läns kollektivtrafikbolag. På långfärdsbussar gäller vanlig biljett men bebis i knä reser oftast gratis."
+          "q": "Hur åker man buss med bebis?",
+          "a": "Håll sträckorna korta och tajma avresan med en sovperiod. På långfärdsbussar åker bebisen bäst i bärsele mot din kropp medan vagnen står hopfälld i lastutrymmet. På stadsbussar är det tvärtom: bebisen stannar i vagnen, som bromsas och spänns fast med bussens remmar i vagnutrymmet. Boka plats långt fram om ni kan, och planera blöjbyten till paus- eller hållplatsstopp."
+        },
+        {
+          "q": "Får man ta med barnvagn på bussen?",
+          "a": "Ja, barnvagn är tillåtet på praktiskt taget alla svenska bussar, både i stadstrafik och på långfärdslinjer. På stadsbussar finns oftast ett avsett vagnutrymme med bromsremmar; på långfärdsbussar fälls vagnen ihop och åker i lastutrymmet under resan. Är det fullt i vagnutrymmet kan föraren be er vänta på nästa buss, så räkna med lite marginal i tid."
+        },
+        {
+          "q": "Får man åka gratis med barnvagn på SL:s bussar?",
+          "a": "Det beror på vilken buss. På linje 1, 2, 3, 4, 5 och 6 (\"blåbussarna\") behöver den vuxna som följer barnvagnen numera en giltig biljett, eftersom de linjerna har biljettläsare vid alla dörrar. På SL:s övriga bussar, med biljettläsare bara vid framdörren, är det fortfarande gratis. Regeln är relativt ny och har kommunicerats dåligt enligt SL själva, så bli inte förvånad om det känns rörigt ute på linjerna – ta ändå med en giltig biljett på blåbussarna för säkerhets skull."
+        },
+        {
+          "q": "Kan man resa med en 6 månaders bebis?",
+          "a": "Ja, absolut – sex månader är en bra ålder att börja med kortare bussresor, innan barnet blir rörligt och vill ta sig loss. Tajma resan med en sovstund, ha en bärsele redo för långfärdsbussen och planera för ett blöjbyte precis före avgång. Håll första resorna korta tills ni känner er trygga med rutinen."
         },
         {
           "q": "Kan man ha babyskydd på långfärdsbuss?",
@@ -5349,148 +5366,214 @@
     },
     "countries": [
       {
-        "name": "Albanien", "flag": "🇦🇱", "level": "yes", "levelLabel": "Krävs",
+        "name": "Albanien",
+        "flag": "🇦🇱",
+        "level": "yes",
+        "levelLabel": "Krävs",
         "note": "Sveriges ambassad i Tirana är tydlig: barn under 16 år som reser ensamma eller med endast en vårdnadshavare ska kunna visa skriftligt samtycke med barnets namn, personnummer och passnummer, vårdnadshavarnas kontaktuppgifter, reserutt, samt Skatteverkets personbevis på engelska som styrker släktskapet. Brevet ska vara på engelska.",
         "sourceName": "Sveriges ambassad i Tirana (swedenabroad.se)",
         "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/albanien/reseinformation/ambassadens-reseinformation/in--och-utresebestammelser/"
       },
       {
-        "name": "Förenade Arabemiraten (Dubai)", "flag": "🇦🇪", "level": "yes", "levelLabel": "Krävs",
+        "name": "Förenade Arabemiraten (Dubai)",
+        "flag": "🇦🇪",
+        "level": "yes",
+        "levelLabel": "Krävs",
         "note": "Sedan 1 juni 2018 kräver GDRFA Dubai ett medgivandebrev för barn (18 år och yngre) som reser utan båda föräldrarna – oavsett om det är med en förälder, en annan vuxen eller helt ensamt. Brevet ska innehålla barnets vistelseort i UAE, mottagande kontaktperson samt den icke-medresande förälderns namn, signatur och kontaktuppgifter. Vi har inte kunnat verifiera regeln direkt mot en primär GDRFA-sida, men flygbolag och nyhetskällor bekräftar den samstämmigt.",
         "sourceName": "Gulf News / Pegasus Airlines",
         "sourceUrl": "https://gulfnews.com/uae/government/minors-travelling-to-uae-without-parents-need-their-authorisation-1.2230290"
       },
       {
-        "name": "Thailand", "flag": "🇹🇭", "level": "warn", "levelLabel": "Rekommenderas",
+        "name": "Thailand",
+        "flag": "🇹🇭",
+        "level": "warn",
+        "levelLabel": "Rekommenderas",
         "note": "Inget bekräftat thailändskt inresekrav för utländska turistbarn – TDAC-registreringen nämner inget om medgivande. Risken för en svensk familj ligger snarare vid avresan från Sverige (flygbolagets incheckning eller Schengens utresekontroll), inte vid thailändsk gränskontroll.",
         "sourceName": "TDAC / thaiembassy.ch",
         "sourceUrl": "https://tdac.immigration.go.th/manual/en/faq.html",
         "resmalCountry": "Thailand"
       },
       {
-        "name": "Cypern", "flag": "🇨🇾", "level": "warn", "levelLabel": "Rekommenderas",
+        "name": "Cypern",
+        "flag": "🇨🇾",
+        "level": "warn",
+        "levelLabel": "Rekommenderas",
         "note": "Cypern har en officiell blankett (\"Minor Travel Consent Form\"), men Sveriges ambassad beskriver den som en rekommendation snarare än ett absolut krav. Cypern är EU-medlem men tillämpar inte fullt Schengen – gränskontroll med dokumentgranskning sker vid inresa, vilket ökar chansen att brevet efterfrågas i praktiken.",
         "sourceName": "Sveriges ambassad i Cypern / gov.cy",
         "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/cypern/reseinformation/ambassadens-reseinformation/resa-med-barn/",
         "resmalCountry": "Cypern"
       },
       {
-        "name": "Storbritannien", "flag": "🇬🇧", "level": "warn", "levelLabel": "Rekommenderas starkt",
+        "name": "Storbritannien",
+        "flag": "🇬🇧",
+        "level": "warn",
+        "levelLabel": "Rekommenderas starkt",
         "note": "Inget lagkrav, men UK Border Force skriver uttryckligen att ett medgivandebrev eller bevis på relationen \"may help\" vid inresa. Storbritannien är inte med i Schengen och har fysisk gränskontroll, så gränspolisen kan ställa frågor om barnet inte reser med båda vårdnadshavarna.",
         "sourceName": "UK Border Force (gov.uk)",
         "sourceUrl": "https://assets.publishing.service.gov.uk/media/64d36d67667f34000db143f1/Children-Section55-Leaflet_ENGLISH.pdf",
         "resmalCountry": "England"
       },
       {
-        "name": "Tyskland", "flag": "🇩🇪", "level": "warn", "levelLabel": "Rekommenderas starkt",
+        "name": "Tyskland",
+        "flag": "🇩🇪",
+        "level": "warn",
+        "levelLabel": "Rekommenderas starkt",
         "note": "Tyska myndigheternas egen portal skriver explicit att medgivandebrev \"not required by law\" – men rekommenderar det starkt, tillsammans med en fullmakt med kontaktuppgifter till den frånvarande föräldern, för att undvika förseningar vid gränskontroll.",
         "sourceName": "verwaltung.bund.de",
         "sourceUrl": "https://verwaltung.bund.de/leistungsverzeichnis/en/rechte-und-pflichten/102711702",
         "resmalCountry": "Tyskland"
       },
       {
-        "name": "Grekland", "flag": "🇬🇷", "level": "warn", "levelLabel": "Oklart – möjligt krav",
+        "name": "Grekland",
+        "flag": "🇬🇷",
+        "level": "warn",
+        "levelLabel": "Oklart – möjligt krav",
         "note": "Grekiska UD har en notis som specifikt beskriver ett krav på skriftligt samtycke för EU-barn (inklusive svenska) som reser med en ANNAN VUXEN än sin förälder – men vi kunde inte öppna hela notisen för att bekräfta detaljerna. Oklart om samma krav gäller vid resa med endast en förälder.",
         "sourceName": "Grekiska utrikesministeriet (mfa.gr)",
         "sourceUrl": "https://www.mfa.gr/missionsabroad/en/slovenia-en/news/2024-08-27-travel-consent-for-minors-from-eu-travelling-to-greece-with-an-adult-other-than-their-parents-or-legal-guardians-soglasje-za-potovanje-mladoletnih-oseb-ki-so-drzavljani-eu-in-potujej.html",
         "resmalCountry": "Grekland"
       },
       {
-        "name": "Turkiet", "flag": "🇹🇷", "level": "warn", "levelLabel": "Oklart – rekommenderas",
+        "name": "Turkiet",
+        "flag": "🇹🇷",
+        "level": "warn",
+        "levelLabel": "Oklart – rekommenderas",
         "note": "Ingen officiell turkisk gränsmyndighetskälla bekräftar ett formellt krav, men resebloggar beskriver en skönsmässig praxis där turkisk gränskontroll ibland begär notariserat medgivande, särskilt vid resa med en förälder eller annan vuxen. Vi rekommenderar att ha brevet med som säkerhetsåtgärd.",
         "sourceName": "Branschkälla (ej officiell myndighet)",
         "sourceUrl": "https://4stogo.com/blog/posts/entry-for-minors-and-family-requirements-in-turkey",
         "resmalCountry": "Turkiet"
       },
       {
-        "name": "Kroatien", "flag": "🇭🇷", "level": "warn", "levelLabel": "Oklart",
+        "name": "Kroatien",
+        "flag": "🇭🇷",
+        "level": "warn",
+        "levelLabel": "Oklart",
         "note": "Kroatiska UD listar krav på bestyrkt medgivande, men sammanhanget (kopplat till visumansökan) tyder på att det gäller viseringspliktiga barn från tredjeländer – inte EU/Schengen-barn. Kroatien är fullvärdig Schengen-medlem sedan januari 2023 med normalt ingen systematisk dokumentkontroll vid inre gränser.",
         "sourceName": "Kroatiska utrikesministeriet (mvep.gov.hr)",
         "sourceUrl": "https://mvep.gov.hr/consular-information-246396/travel-of-minors/247157",
         "resmalCountry": "Kroatien"
       },
       {
-        "name": "Spanien", "flag": "🇪🇸", "level": "unknown", "levelLabel": "Inget krav (för utländska barn)",
+        "name": "Spanien",
+        "flag": "🇪🇸",
+        "level": "unknown",
+        "levelLabel": "Inget krav (för utländska barn)",
         "note": "Spaniens egna myndigheter kräver medgivande bara för spanska medborgares barn som lämnar Spanien utan förälder. Sidan skriver uttryckligen att utländska barn \"are governed by the provisions of their national laws\" – Spanien ställer inget eget krav på svenska turistbarn.",
         "sourceName": "administracion.gob.es",
         "sourceUrl": "https://administracion.gob.es/pag_Home/en/Tu-espacio-europeo/derechos-obligaciones/ciudadanos/viajes/documentos/menores-solos.html",
         "resmalCountry": "Spanien"
       },
       {
-        "name": "Italien", "flag": "🇮🇹", "level": "unknown", "levelLabel": "Inget krav (för utländska barn)",
+        "name": "Italien",
+        "flag": "🇮🇹",
+        "level": "unknown",
+        "levelLabel": "Inget krav (för utländska barn)",
         "note": "Det italienska \"atto di assenso\" är en intern mekanism för pass- och ID-utfärdande till italienska minderåriga, inte ett gränskontrolldokument. Vi hittade ingen officiell källa som kräver medgivandeintyg av utländska turistbarn vid inresa.",
         "sourceName": "Polizia di Stato",
         "sourceUrl": "https://www.poliziadistato.it/articolo/passaporto-per-i-minori-e-espatrio",
         "resmalCountry": "Italien"
       },
       {
-        "name": "Portugal", "flag": "🇵🇹", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "level": "unknown",
+        "levelLabel": "Inget bekräftat krav",
         "note": "Den notariserade portugisiska \"autorização de viagem\" gäller portugisiska minderåriga som reser UT ur Portugal. Den officiella SEF/AIMA-sidan gick inte att nå under vår research, så för 100 % säkerhet rekommenderar vi att kontakta Sveriges ambassad i Lissabon direkt.",
         "sourceName": "DECO Proteste / Your Europe",
         "sourceUrl": "https://www.deco.proteste.pt/familia-consumo/ferias-lazer/dicas/viajar-menores-conheca-documentos-necessarios",
         "resmalCountry": "Portugal"
       },
       {
-        "name": "Frankrike", "flag": "🇫🇷", "level": "unknown", "levelLabel": "Inget krav (för utländska barn)",
+        "name": "Frankrike",
+        "flag": "🇫🇷",
+        "level": "unknown",
+        "levelLabel": "Inget krav (för utländska barn)",
         "note": "Den franska \"autorisation de sortie du territoire\" (AST) gäller enbart minderåriga som är BOSATTA i Frankrike och som lämnar landet utan förälder – oavsett nationalitet. Ett barn med bara en medresande förälder behöver aldrig AST. Inget krav hittat för svenska turistbarn som reser in.",
         "sourceName": "demarchesadministratives.fr",
         "sourceUrl": "https://demarchesadministratives.fr/actualites/votre-enfant-part-en-vacances-sans-vous-autorisation-de-sortie-du-territoire-est-elle-obligatoire",
         "resmalCountry": "Frankrike"
       },
       {
-        "name": "Nederländerna", "flag": "🇳🇱", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "name": "Nederländerna",
+        "flag": "🇳🇱",
+        "level": "unknown",
+        "levelLabel": "Inget bekräftat krav",
         "note": "Den nederländska gränspolisens officiella \"consent letter\"-formulär är utformat för barn som är bosatta i Nederländerna och LÄMNAR landet – inte för utländska barn som reser in. Vi hittade inget bekräftat krav för svenska turistbarn.",
         "sourceName": "government.nl",
         "sourceUrl": "https://www.government.nl/documents/2016/06/17/consent-letter-for-minors-travelling-abroad",
         "resmalCountry": "Nederländerna"
       },
       {
-        "name": "Danmark", "flag": "🇩🇰", "level": "unknown", "levelLabel": "Ej fastställt",
+        "name": "Danmark",
+        "flag": "🇩🇰",
+        "level": "unknown",
+        "levelLabel": "Ej fastställt",
         "note": "Danska utrikesministeriet ger bara generell rådgivning om att reglerna beror på destinationslandet – det gäller alltså danska barn som reser ut, inte utländska barn som reser in i Danmark. Vi hittade ingen dansk myndighetskälla som reglerar det specifikt.",
         "sourceName": "um.dk",
         "sourceUrl": "https://um.dk/rejse-og-ophold/foer-rejsen/rejse-med-mindreaarige/",
         "resmalCountry": "Danmark"
       },
       {
-        "name": "Japan", "flag": "🇯🇵", "level": "unknown", "levelLabel": "Nej, bekräftat",
+        "name": "Japan",
+        "flag": "🇯🇵",
+        "level": "unknown",
+        "levelLabel": "Nej, bekräftat",
         "note": "Japans utrikesministerium (MOFA) skriver helt uttryckligen: \"A Travel Consent Letter is not required when entering or departing Japan.\" Det gäller oavsett om barnet reser med en förälder, annan vuxen eller ensamt.",
         "sourceName": "Japans utrikesministerium (mofa.go.jp)",
         "sourceUrl": "https://www.mofa.go.jp/fp/hr_ha/page22e_000252.html",
         "resmalCountry": "Japan"
       },
       {
-        "name": "USA", "flag": "🇺🇸", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "name": "USA",
+        "flag": "🇺🇸",
+        "level": "unknown",
+        "levelLabel": "Inget bekräftat krav",
         "note": "US State Department skriver att det är ANDRA länder som kan kräva notariserat medgivande – inte ett amerikanskt krav. Vi hittade ingen primär cbp.gov-sida som stödjer det vanliga påståendet att \"CBP rekommenderar\" ett medgivandebrev vid inresa för utländska barn.",
         "sourceName": "travel.state.gov",
         "sourceUrl": "https://travel.state.gov/en/international-travel/planning/personal-needs/minors.html",
         "resmalCountry": "USA"
       },
       {
-        "name": "Vietnam", "flag": "🇻🇳", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "name": "Vietnam",
+        "flag": "🇻🇳",
+        "level": "unknown",
+        "levelLabel": "Inget bekräftat krav",
         "note": "Vietnam Airlines anger att den medresande vuxna ska kunna visa släktskap, men det är flygbolagspolicy, inte en bekräftad myndighetsregel. Ingen officiell vietnamesisk källa eller svensk ambassadinfo nämner ett krav för utländska turistbarn.",
         "sourceName": "Vietnam Airlines",
         "sourceUrl": "https://www.vietnamairlines.com/us/en/help-desk/common-topics/Check-in-and-Travel-documents/yeu-cau-giay-to-cho-nguoi-di-cung-tre-em"
       },
       {
-        "name": "Sri Lanka", "flag": "🇱🇰", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "name": "Sri Lanka",
+        "flag": "🇱🇰",
+        "level": "unknown",
+        "levelLabel": "Inget bekräftat krav",
         "note": "Sri Lankas immigrationsmyndighets visumsida nämner inga särskilda krav för utländska minderåriga. De \"consent\"-dokument som förekommer online gäller sri-lankesiska medborgares egna barn, inte turistbarn.",
         "sourceName": "Department of Immigration & Emigration, Sri Lanka",
         "sourceUrl": "https://www.immigration.gov.lk/pages_e.php?id=14"
       },
       {
-        "name": "Egypten", "flag": "🇪🇬", "level": "unknown", "levelLabel": "Nej (för turistbarn)",
+        "name": "Egypten",
+        "flag": "🇪🇬",
+        "level": "unknown",
+        "levelLabel": "Nej (för turistbarn)",
         "note": "Egypten införde i januari 2024 krav på förhandstillstånd – men det gäller uttryckligen egyptiska medborgare under 18 år som reser UT från Egypten ensamma, inte utländska barn som reser in i landet. En vanlig missuppfattning i andra artiklar.",
         "sourceName": "EgyptAir",
         "sourceUrl": "https://www.egyptair.com/en/about-egyptair/news-and-press/Pages/IMMIGRATION%20RULES%20FOR%20MINORS%20TRAVELLING%20FROM%20Egypt%20ALONE%20WITHOUT%20THEIR%20PARENTS.aspx"
       },
       {
-        "name": "Indonesien (Bali)", "flag": "🇮🇩", "level": "unknown", "levelLabel": "Inget bekräftat krav",
+        "name": "Indonesien (Bali)",
+        "flag": "🇮🇩",
+        "level": "unknown",
+        "levelLabel": "Inget bekräftat krav",
         "note": "Indonesiens \"surat izin orang tua\" (föräldratillstånd) gäller indonesiska medborgares egna barn som reser utomlands – inte utländska turistbarn som kommer till Bali. Sveriges ambassads reseinfo nämner bara vaccinationsrekommendationer.",
         "sourceName": "Sveriges ambassad, Indonesien (swedenabroad.se)",
         "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/indonesien/reseinformation/ambassadens-reseinformation/in--och-utresebestammelser/"
       },
       {
-        "name": "Tanzania (Zanzibar)", "flag": "🇹🇿", "level": "unknown", "levelLabel": "Ej verifierat",
+        "name": "Tanzania (Zanzibar)",
+        "flag": "🇹🇿",
+        "level": "unknown",
+        "levelLabel": "Ej verifierat",
         "note": "Vi kunde inte nå Tanzanias immigrationsmyndighets officiella sida under vår research (tekniskt fel). Kommersiella e-visumförmedlare nämner att barnets födelsebevis kan behövas vid ansökan, men inget bekräftat krav på medgivandebrev. Dubbelkolla direkt med Tanzania Immigration Department om ni vill vara helt säkra.",
         "sourceName": "Sveriges ambassad, Tanzania (swedenabroad.se)",
         "sourceUrl": "https://www.swedenabroad.se/sv/om-utlandet-for-svenska-medborgare/tanzania/reseinformation/ambassadens-reseinformation/in--och-utresebestammelser/"
