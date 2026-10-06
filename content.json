@@ -500,15 +500,27 @@
       "updated": "2026-09-28"
     },
     "bebisar/buss": {
-      "cardText": "Kortare sträckor funkar fint med bärsele och rätt tajming. Så gör ni det bekvämt.",
-      "title": "Åka buss med bebis – tips som funkar | Res med Barn",
-      "description": "Buss med bebis funkar bäst på korta sträckor och med bärsele. Så planerar ni resan, hanterar matning ombord och väljer rätt avgång.",
-      "h1": "Åka buss med bebis",
+      "cardText": "Långfärd eller stadsbuss i vardagen — säkerhet, kostnad för barnvagn och praktiska tips för båda.",
+      "title": "Åka buss med barnvagn & bebis – långfärd och stadsbuss | Res med Barn",
+      "description": "Buss med bebis och barnvagn — så funkar det på både långfärdsbussen och stadsbussen i vardagen. Säkerhet, kostnad och praktiska tips.",
+      "h1": "Åka buss med bebis och barnvagn",
       "intro": [
-        "Buss är sällan förstahandsvalet med bebis, men ibland är det bussen som går dit ni ska. Goda nyheter: med rätt förberedelser funkar det bättre än ryktet.",
-        "Grundregeln är att hålla sträckorna korta och händerna fria. Bärselen är er bästa vän här – mer än på någon annan resa."
+        "Buss med bebis handlar om två ganska olika saker: den enstaka längre resan med långfärdsbuss, och den betydligt vanligare vardagsturen med stadsbussen och barnvagnen. Reglerna, säkerheten och till och med kostnaden skiljer sig åt mellan de två — här går vi igenom båda.",
+        "Grundregeln oavsett buss: ha koll på var bebisen ska sitta (bärsele eller fastspänd vagn, aldrig löst), och planera blöjbyten kring stoppen."
       ],
       "sections": [
+        {
+          "h2": "Säkerhet ombord – vad gäller egentligen?",
+          "text": "Det skiljer sig åt beroende på bussmodell. På långfärdsbussar med bälte är grundregeln att bebisen åker tryggast i bärsele mot din kropp, med ditt bälte fäst under selen – aldrig runt er båda. Vissa bussbolag tillåter babyskydd på egen sittplats om du bokat en; fråga vid bokningen. På stadsbussar och i lokaltrafiken är det tvärtom bebisen som ska stanna kvar i vagnen: fäst alltid vagnens egna sele ordentligt, bromsa vagnen och spänn fast den med bussens remmar i det avsedda vagnutrymmet – helst i hörnet, där den står stabilast och inte kan rulla vid inbromsning. Att ta upp bebisen i bärsele och lämna vagnen lös är alltså inte rätt väg på en stadsbuss; vagnen är gjord för att spännas fast, inte för att stå fri."
+        },
+        {
+          "h2": "Stadsbuss med bebis – vardagslogistiken",
+          "text": "I många svenska städer reser den som har barnvagn gratis eller går ombord genom mittdörren direkt till vagnplatsen – men kolla vad som gäller just er linje (se kostnadsavsnittet nedan för Stockholm). Utomlands varierar det: i vissa städer viker alla undan för vagnen, i andra är trappsteg och trängsel standard. Res utanför rusningstid när ni kan och välj låggolvsbussar där det syns i tidtabellen. En hopfällbar resevagn gör hela stadsbussekvationen enklare, särskilt om ni ska byta buss eller gå en bit till och från hållplatsen."
+        },
+        {
+          "h2": "Vad kostar det att ta med barnvagn på bussen?",
+          "text": "I de flesta svenska kommuner är huvudregeln fortfarande att den som reser med barnvagn åker gratis, eller i alla fall att själva vagnen inte kostar extra – men 2026 blev det mer nyanserat i Stockholm. På SL:s bussar 1, 2, 3, 4, 5 och 6 (\"blåbussarna\", med biljettläsare vid alla dörrar) behöver den vuxna nu en giltig biljett för resan, eftersom de busslinjerna infört betalning i alla dörrar. På övriga SL-bussar, där biljettläsaren bara finns vid framdörren, reser ni fortfarande gratis med barnvagn. Värt att veta: SL har själva erkänt att informationen om det nya kravet gått ut dåligt, och kontrollanter påminner i dagsläget snarare än bötfäller – men ta med giltig biljett på blåbussarna för säkerhets skull. Utanför Stockholm gäller i regel samma gamla princip: gratis i mån av plats, men kolla alltid med ert lokala kollektivtrafikbolag innan avresa."
+        },
         {
           "h2": "Bärsele ombord, vagn i lastutrymmet",
           "text": "På långfärdsbussar åker vagnen hopfälld i lastutrymmet, så allt ni behöver under resan ska finnas i en väska vid era fötter. Bebisen åker tryggast och lugnast i bärsele mot er – de flesta somnar av motorljudet innan bussen lämnat stationen."
@@ -524,18 +536,6 @@
         {
           "h2": "Räkna med pauserna – och utnyttja dem",
           "text": "Långfärdsbussar stannar var annan till var tredje timme. Använd varje paus: blöja, matning, frisk luft och lite rörelse för er egen del. En bebis som fått femton minuters ny miljö klarar nästa etapp mycket bättre."
-        },
-        {
-          "h2": "Säkerhet ombord – vad gäller egentligen?",
-          "text": "Det skiljer sig åt beroende på bussmodell. På långfärdsbussar med bälte är grundregeln att bebisen åker tryggast i bärsele mot din kropp, med ditt bälte fäst under selen – aldrig runt er båda. Vissa bussbolag tillåter babyskydd på egen sittplats om du bokat en; fråga vid bokningen. På stadsbussar och i lokaltrafiken är det tvärtom bebisen som ska stanna kvar i vagnen: fäst alltid vagnens egna sele ordentligt, bromsa vagnen och spänn fast den med bussens remmar i det avsedda vagnutrymmet – helst i hörnet, där den står stabilast och inte kan rulla vid inbromsning. Att ta upp bebisen i bärsele och lämna vagnen lös är alltså inte rätt väg på en stadsbuss; vagnen är gjord för att spännas fast, inte för att stå fri."
-        },
-        {
-          "h2": "Vad kostar det att ta med barnvagn på bussen?",
-          "text": "I de flesta svenska kommuner är huvudregeln fortfarande att den som reser med barnvagn åker gratis, eller i alla fall att själva vagnen inte kostar extra – men 2026 blev det mer nyanserat i Stockholm. På SL:s bussar 1, 2, 3, 4, 5 och 6 (\"blåbussarna\", med biljettläsare vid alla dörrar) behöver den vuxna nu en giltig biljett för resan, eftersom de busslinjerna infört betalning i alla dörrar. På övriga SL-bussar, där biljettläsaren bara finns vid framdörren, reser ni fortfarande gratis med barnvagn. Värt att veta: SL har själva erkänt att informationen om det nya kravet gått ut dåligt, och kontrollanter påminner i dagsläget snarare än bötfäller – men ta med giltig biljett på blåbussarna för säkerhets skull. Utanför Stockholm gäller i regel samma gamla princip: gratis i mån av plats, men kolla alltid med ert lokala kollektivtrafikbolag innan avresa."
-        },
-        {
-          "h2": "Stadsbuss med bebis – vardagslogistiken",
-          "text": "I många svenska städer reser den som har barnvagn gratis eller går ombord genom mittdörren direkt till vagnplatsen – men kolla vad som gäller just er linje (se kostnadsavsnittet nedan för Stockholm). Utomlands varierar det: i vissa städer viker alla undan för vagnen, i andra är trappsteg och trängsel standard. Res utanför rusningstid när ni kan och välj låggolvsbussar där det syns i tidtabellen. En hopfällbar resevagn gör hela stadsbussekvationen enklare, särskilt om ni ska byta buss eller gå en bit till och från hållplatsen."
         }
       ],
       "quicktips": [
@@ -4223,13 +4223,14 @@
         "name": "Stockholm",
         "emoji": "🏛️",
         "img": "photo-1509356843151-3e7d96241e11",
-        "cardText": "Museer med fri entré, Djurgårdens sevärdheter och gott om gratis parker.",
-        "title": "Stockholm med barn — gratis & betalt 2026 | Res med Barn",
-        "description": "Stockholm med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Skansen, Junibacken, Vasamuseet, Hagaparken och fler — med verkliga priser.",
-        "h1": "Stockholm med barn",
+        "cardText": "Barnaktiviteter i stan — museer med fri entré, Djurgårdens sevärdheter och gott om gratis parker.",
+        "title": "Barnaktiviteter Stockholm — gratis & betalt | Res med Barn",
+        "description": "Barnaktiviteter i Stockholm, gratis och betalt. Allt att göra med barn i stan — filtrera på ålder, väder och pris. Skansen, Vasamuseet och fler.",
+        "h1": "Aktiviteter för barn i Stockholm",
         "intro": [
-          "Stockholm kombinerar storstadens utbud med naturens omedelbarhet — skog, hav och park finns bokstavligen runt nästa hörn, och kollektivtrafiken täcker hela länet.",
-          "En stor andel av stadens bästa barnaktiviteter är helt gratis eller väldigt billiga. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+          "Letar ni efter barnaktiviteter i Stockholm? Staden kombinerar storstadens utbud med naturens omedelbarhet — skog, hav och park finns bokstavligen runt nästa hörn, och kollektivtrafiken täcker hela länet.",
+          "En stor andel av det bästa att göra med barn i stan är helt gratis eller väldigt billigt. Filtrera nedan för att hitta det som passar er familj och budget just idag.",
+          "Höstlovet i Stockholm 2026 är 26–30 oktober — ett bra tillfälle att beta av några av museerna nedan, särskilt de dagar vädret inte bjuder till utomhuslek."
         ],
         "activities": [
           {
@@ -4311,6 +4312,26 @@
             "indoor": false,
             "area": "Järvastaden, Solna",
             "desc": "Temalekplats inspirerad av barnboksfiguren Mulle Meck, fylld med kreativa byggstationer."
+          },
+          {
+            "name": "Nordiska museet",
+            "type": "paid",
+            "price": "Barn 3–18 år: 75 kr (gratis vardagar under termin)",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Djurgården",
+            "desc": "Svensk kulturhistoria i ett imponerande slottsliknande hus — klädkammare, julgransutställning och lekrum som gör museet lättillgängligt även för de yngsta."
+          },
+          {
+            "name": "Naturhistoriska riksmuseet",
+            "type": "free",
+            "price": "Gratis t.o.m. 18 år (huvudutställningarna)",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Frescati",
+            "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — en klassiker för barn som är nyfikna på allt som är stort, gammalt eller långt bort. Cosmonova-planetariet kostar extra."
           }
         ],
         "faq": [
@@ -4321,10 +4342,18 @@
           {
             "q": "Vilka museer i Stockholm är helt gratis?",
             "a": "Moderna Museet och Etnografiska museet har fri entré för barn/unga året runt. Flera andra statliga museer, som Historiska museet, har generellt fri entré för alla."
+          },
+          {
+            "q": "Vad kan man göra med barn i Stockholm på höstlovet?",
+            "a": "Höstlovet 2026 är 26–30 oktober. Satsa på inomhusalternativ om vädret krånglar: Naturhistoriska riksmuseet (gratis för barn t.o.m. 18 år, dinosaurier och rymden), Nordiska museet (gratis vardagar under termin för barn) och Junibacken är tre säkra kort. Är det uppehåll funkar Skansen och Hagaparken utmärkt även i oktoberkylan — ta med varma kläder."
+          },
+          {
+            "q": "Finns det julmarknader i Stockholm som passar barn?",
+            "a": "Skansens julmarknad är den mest klassiska — den går av stapeln helger (fre–sön) 27 november till 20 december 2026, med hantverk, julgodis och den traditionella halmbocken. Kombinera gärna besöket med Skansens djurpark, så blir det en hel dag."
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-10-06"
       },
       {
         "slug": "goteborg",
