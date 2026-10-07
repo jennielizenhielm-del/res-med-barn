@@ -636,6 +636,7 @@ h1 {
 .activity-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem; }
 .activity-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .activity-meta .meta-chip { font-size: 0.76rem; color: var(--text-muted); }
+.activity-link { display: inline-block; margin-top: 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--primary); }
 
 /* ---- FOOTER ---- */
 .footer {
