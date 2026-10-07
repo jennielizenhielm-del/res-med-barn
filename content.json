@@ -4353,7 +4353,91 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-10-06"
+        "updated": "2026-10-06",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "title": "Höstlov i Stockholm 2026 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Stockholm 2026 är 26–30 oktober (vecka 44). Våra bästa tips på museer och aktiviteter för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Stockholm 2026 — vad ni kan göra",
+            "intro": [
+              "Höstlovet i Stockholm 2026 är 26–30 oktober (vecka 44) — en vecka med kortare dagar och ofta ostadigt väder, vilket gör den till ett bra tillfälle att beta av stadens museer istället för att vänta på sommaren.",
+              "Nedan har vi samlat de aktiviteter som passar extra bra just under höstlovsveckan, både gratis och betalda."
+            ],
+            "tips": [
+              {
+                "name": "Naturhistoriska riksmuseet",
+                "type": "free",
+                "price": "Gratis t.o.m. 18 år (huvudutställningarna)",
+                "ageMin": 0,
+                "ageMax": 18,
+                "indoor": true,
+                "area": "Frescati",
+                "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — en säker vinnare om vädret krånglar. Cosmonova-planetariet kostar extra."
+              },
+              {
+                "name": "Nordiska museet",
+                "type": "free",
+                "price": "Gratis vardagar under höstlovet (annars 75 kr, barn 3–18 år)",
+                "ageMin": 3,
+                "ageMax": 18,
+                "indoor": true,
+                "area": "Djurgården",
+                "desc": "Svensk kulturhistoria i ett slottsliknande hus — klädkammare och lekrum som funkar bra även för de yngsta.",
+                "dateInfo": "Gratis mån–fre under lovet"
+              },
+              {
+                "name": "Junibacken",
+                "type": "paid",
+                "price": "Från ca 189 kr",
+                "ageMin": 1,
+                "ageMax": 8,
+                "indoor": true,
+                "area": "Djurgården",
+                "desc": "Sagomuseum med tågresa genom Astrid Lindgrens värld och stor lekvärld — ett säkert regnalternativ."
+              },
+              {
+                "name": "Skansen",
+                "type": "paid",
+                "price": "Gratis under 15 år, annars ca 260 kr",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": false,
+                "area": "Djurgården",
+                "desc": "Djurpark och friluftsmuseum — klär man sig varmt funkar det fint även i höstkylan."
+              },
+              {
+                "name": "Höstlovspyssel på biblioteken",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 3,
+                "ageMax": 12,
+                "indoor": true,
+                "area": "Flera bibliotek i Stockholm",
+                "desc": "Många av stadens bibliotek kör pyssel och sagostunder under lovveckan — kolla aktuellt program på biblioteket närmast er.",
+                "dateInfo": "Vecka 44"
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Stockholm 2026?",
+                "a": "Höstlovet i Stockholm 2026 är vecka 44, måndag 26 till fredag 30 oktober."
+              },
+              {
+                "q": "Är Nordiska museet gratis på höstlovet?",
+                "a": "Ja — Nordiska museet är gratis för barn 3–18 år på vardagar under terminen, vilket inkluderar höstlovsveckan. På helger kostar det 75 kr."
+              }
+            ],
+            "published": "2026-10-07",
+            "updated": "2026-10-07",
+            "dateLabel": "26–30 oktober 2026"
+          }
+        ]
       },
       {
         "slug": "goteborg",
@@ -4461,7 +4545,82 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-09-23",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "title": "Höstlov Göteborg 2026 — Halloween & pyssel | Res med Barn",
+            "description": "Höstlovet i Göteborg 2026 är 26–30 oktober (vecka 44). Halloween på Liseberg och Universeum, Día de Muertos och svampvandring för barnfamiljer.",
+            "h1": "Höstlov i Göteborg 2026 — Halloween, museer och höstpyssel",
+            "intro": [
+              "Höstlovet i Göteborg 2026 är 26–30 oktober (vecka 44) — samma vecka som Stockholm och Malmö i år.",
+              "Göteborg satsar stort på Halloween-tema i oktober, så lovveckan har gott om säsongsaktiviteter utöver stadens vanliga barnutbud."
+            ],
+            "tips": [
+              {
+                "name": "Halloween på Liseberg",
+                "type": "paid",
+                "price": "Se aktuellt pris, entré + åkband",
+                "ageMin": 1,
+                "ageMax": 16,
+                "indoor": false,
+                "area": "Korsvägen",
+                "desc": "30 000 pumpor, spökhus och \"mys och rys\" för hela familjen.",
+                "dateInfo": "2 okt–1 nov 2026"
+              },
+              {
+                "name": "Halloween på Universeum",
+                "type": "paid",
+                "price": "Se aktuellt pris",
+                "ageMin": 3,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Korsvägen",
+                "desc": "Tre nya utställningar om naturens mörkaste hemligheter — bra regnalternativ.",
+                "dateInfo": "29 sep–1 nov 2026"
+              },
+              {
+                "name": "Día de Muertos på Världskulturmuseet",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 1,
+                "ageMax": 10,
+                "indoor": true,
+                "area": "Världskulturmuseet",
+                "desc": "Pyssel, verkstäder och föreställningar kring den mexikanska högtiden.",
+                "dateInfo": "24 okt–2 nov 2026"
+              },
+              {
+                "name": "Svampvandring i Botaniska trädgården",
+                "type": "free",
+                "price": "Gratis ute, växthusen 50 kr",
+                "ageMin": 2,
+                "ageMax": 14,
+                "indoor": false,
+                "area": "Änggården",
+                "desc": "Höstklassiker — svampexperter visar runt, och barnen kan pyssla igelkottar av naturmaterial."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Göteborg 2026?",
+                "a": "Höstlovet i Göteborg 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som Stockholm och Malmö i år."
+              },
+              {
+                "q": "Hur länge pågår Halloween på Liseberg och Universeum?",
+                "a": "Liseberg kör Halloween-temat 2 oktober–1 november 2026. Universeum kör sitt Halloween-program 29 september–1 november 2026 — båda täcker alltså hela höstlovsveckan."
+              }
+            ],
+            "published": "2026-10-07",
+            "updated": "2026-10-07",
+            "dateLabel": "26–30 oktober 2026"
+          }
+        ]
       },
       {
         "slug": "malmo",
@@ -4569,7 +4728,83 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-09-23",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "title": "Höstlov i Malmö 2026 — Skräckveckan & badhus | Res med Barn",
+            "description": "Höstlovet i Malmö 2026 är 26–30 oktober (vecka 44). Skräckveckan i Folkets Park, Hylliebadets lovprogram och fler tips för barnfamiljer.",
+            "h1": "Höstlov i Malmö 2026 — spökrysligt, bad och pyssel",
+            "intro": [
+              "Höstlovet i Malmö 2026 är 26–30 oktober (vecka 44) — samma vecka som Stockholm och Göteborg i år.",
+              "Malmö har två återkommande höstlovsdragare: Skräckveckan i Folkets Park och Hylliebadets lovprogram, plus stadens museer som bra regnalternativ."
+            ],
+            "tips": [
+              {
+                "name": "Skräckveckan i Folkets Park",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": false,
+                "area": "Möllevången",
+                "desc": "Lagom läskigt och rysligt kul — teater, scenkonst och musik för barn och familj, inomhus och utomhus i parken.",
+                "dateInfo": "26–31 okt 2026"
+              },
+              {
+                "name": "Hylliebadets höstlovsprogram",
+                "type": "paid",
+                "price": "120/55/30 kr (gratis 0–3 år), ingår i entrén",
+                "ageMin": 0,
+                "ageMax": 17,
+                "indoor": true,
+                "area": "Hyllie",
+                "desc": "Sjöjungfrusim, vattendisco och hopptorn/hinderbana i Simmet, plus lovfika i kaféet (45 kr). Fullständigt dagsschema på Hylliebadets egen sida.",
+                "dateInfo": "23 okt–1 nov 2026",
+                "link": "https://malmo.se/Uppleva-och-gora/Bada-och-simma/Hylliebadet/Familjebad--vattenlek/Lovaktiviteter/Hostlov.html"
+              },
+              {
+                "name": "Museets stora konst för de små",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 1,
+                "ageMax": 3,
+                "indoor": true,
+                "area": "Moderna Museet Malmö",
+                "desc": "Drop-in konstverkstad för de minsta och deras vuxna, med pyssel och en kort visning ur barnens perspektiv.",
+                "dateInfo": "Tisdagar, ingen föranmälan"
+              },
+              {
+                "name": "Malmö Museer (Malmöhus slott)",
+                "type": "paid",
+                "price": "100 kr vuxen, gratis under 19 år (2026)",
+                "ageMin": 3,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Skeppsbron",
+                "desc": "Bra regnalternativ med naturhistoria, akvarium och lekmöjligheter för de yngsta."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Malmö 2026?",
+                "a": "Höstlovet i Malmö 2026 är vecka 44, måndag 26 till fredag 30 oktober."
+              },
+              {
+                "q": "Kostar Skräckveckan i Folkets Park något?",
+                "a": "Nej, Skräckveckan är gratis och pågår 26–31 oktober 2026, inomhus och utomhus i parken."
+              }
+            ],
+            "published": "2026-10-07",
+            "updated": "2026-10-07",
+            "dateLabel": "26–30 oktober 2026"
+          }
+        ]
       },
       {
         "slug": "uppsala",

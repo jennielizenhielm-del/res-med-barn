@@ -725,6 +725,10 @@ ${faqHtml(l.faq)}
 }
 
 /* ---------- STÄDER ---------- */
+// act.dateInfo (valfri) och act.link (valfri) används av lov-sidorna
+// (buildLovSidor) för att visa säsongstajming och länka ut till en
+// arrangörs egen sida — vanliga activityCard-anrop från buildStader()
+// sätter aldrig dessa fält, så kortet ser likadant ut som förut då.
 function activityCard(act) {
   const ageLabel = act.ageMin === act.ageMax ? `${act.ageMin} år` : `${act.ageMin}–${act.ageMax} år`;
   return `
@@ -739,7 +743,9 @@ function activityCard(act) {
       <span class="meta-chip">👶 ${ageLabel}</span>
       <span class="meta-chip">${act.indoor ? '🏠 Inomhus' : '🌳 Utomhus'}</span>
       <span class="meta-chip">📍 ${esc(act.area)}</span>
+      ${act.dateInfo ? `<span class="meta-chip">📅 ${esc(act.dateInfo)}</span>` : ''}
     </div>
+    ${act.link ? `<a class="activity-link" href="${esc(act.link)}" rel="nofollow noopener">Fullständigt program →</a>` : ''}
   </article>`;
 }
 
@@ -784,6 +790,8 @@ function buildStader() {
   <div class="page-intro">${paras(s.intro)}</div>
 </header>
 ${media(s.img, s.emoji, 'page-hero', 1400)}
+
+${(s.lov || []).map(l => `<p class="packlist-cta">${l.emoji} <a href="/stader/${s.slug}/${l.lovSlug}/">${esc(l.lovName)}stips för ${esc(s.name)} (${esc(l.dateLabel)}) →</a></p>`).join('\n')}
 
 <div class="stader-filters" role="group" aria-label="Filtrera aktiviteter">
   <div class="filter-group">
@@ -857,6 +865,46 @@ ${faqHtml(s.faq)}
 })();
 </script>`;
     write(`stader/${s.slug}/index.html`, page(url, s, '/stader/', inner, s.faq ? [bc.jsonld, itemList, faqLd(s.faq)] : [bc.jsonld, itemList], 'Article'));
+  }
+}
+
+// Lovsidor per stad (höstlov/jullov/sportlov) — data-driven via s.lov (array
+// per stad i content.json, ett objekt per lovtyp). Byggs bara för städer som
+// faktiskt har en lov-array; en stad utan lov-data (t.ex. Uppsala just nu)
+// genererar helt enkelt inga lovsidor. Datum/vecka ligger i content.json så
+// att nästa läsårs uppdatering är en datarevision, inte en kodändring.
+function buildLovSidor() {
+  for (const s of C.stader.cities) {
+    for (const l of (s.lov || [])) {
+      const url = `/stader/${s.slug}/${l.lovSlug}/`;
+      const bc = breadcrumbs([['Hem', '/'], ['Städer', '/stader/'], [s.name, `/stader/${s.slug}/`], [l.lovName, null]]);
+      const meta = { title: l.title, description: l.description, h1: l.h1, updated: l.updated, published: l.published };
+      const itemList = {
+        '@context': 'https://schema.org', '@type': 'ItemList',
+        name: `${l.lovName} i ${s.name}`, itemListElement: l.tips.map((a, i) => ({
+          '@type': 'ListItem', position: i + 1, name: a.name
+        }))
+      };
+      const others = (s.lov || []).filter(x => x.lovSlug !== l.lovSlug);
+      const inner = `
+<header class="page-header">
+  ${bc.html}
+  <p class="kicker">${l.emoji} ${esc(l.dateLabel)} · vecka ${l.week}</p>
+  <h1>${esc(l.h1)}</h1>
+  <div class="page-intro">${paras(l.intro)}</div>
+</header>
+<div class="activity-grid">
+  ${l.tips.map(activityCard).join('')}
+</div>
+${faqHtml(l.faq)}
+<h2 class="section-title">${esc(l.lovName)} i andra städer</h2>
+<div class="related-links">
+  ${C.stader.cities.filter(x => x.slug !== s.slug && (x.lov || []).some(y => y.lovSlug === l.lovSlug)).map(x => `<a href="/stader/${x.slug}/${l.lovSlug}/">${x.emoji} ${esc(x.name)}</a>`).join('\n  ')}
+  <a href="/stader/${s.slug}/">${s.emoji} Alla aktiviteter i ${esc(s.name)} →</a>
+  ${others.map(x => `<a href="/stader/${s.slug}/${x.lovSlug}/">${x.emoji} ${esc(x.lovName)} i ${esc(s.name)}</a>`).join('\n  ')}
+</div>`;
+      write(`stader/${s.slug}/${l.lovSlug}/index.html`, page(url, meta, '/stader/', inner, l.faq ? [bc.jsonld, itemList, faqLd(l.faq)] : [bc.jsonld, itemList], 'Article'));
+    }
   }
 }
 
@@ -1236,7 +1284,10 @@ function buildMeta(destinations) {
   }
   for (const l of C.topplistor.lists) urls.push(`/topplistor/${l.slug}/`);
   urls.push('/stader/');
-  for (const s of C.stader.cities) urls.push(`/stader/${s.slug}/`);
+  for (const s of C.stader.cities) {
+    urls.push(`/stader/${s.slug}/`);
+    for (const l of (s.lov || [])) urls.push(`/stader/${s.slug}/${l.lovSlug}/`);
+  }
   urls.push('/artiklar/');
   for (const a of C.artiklar.list) urls.push(`/artiklar/${a.slug}/`);
   urls.push('/resmal/');
@@ -1280,6 +1331,7 @@ buildGuides();
 buildTopplistor();
 buildStaderHub();
 buildStader();
+buildLovSidor();
 buildArtiklarHub();
 buildArtiklar();
 function buildSmartPacklista() {
