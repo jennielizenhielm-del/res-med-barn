@@ -638,6 +638,30 @@ h1 {
 .activity-meta .meta-chip { font-size: 0.76rem; color: var(--text-muted); }
 .activity-link { display: inline-block; margin-top: 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--primary); }
 
+/* ---- LOV-CTA (länk från en stads huvudsida till dess höstlov/jullov/sportlov-sida) ---- */
+.lov-cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.4rem;
+  margin: 1.5rem 0 2rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.lov-cta:hover { border-color: var(--accent-hover); transform: translateY(-1px); }
+.lov-cta-emoji { font-size: 1.8rem; line-height: 1; flex-shrink: 0; }
+.lov-cta-text { display: flex; flex-direction: column; gap: 0.15rem; }
+.lov-cta-text strong { color: var(--on-accent-light); font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; }
+.lov-cta-text span { color: var(--on-accent-light); font-size: 0.85rem; opacity: 0.82; }
+.lov-cta-arrow { margin-left: auto; font-size: 1.3rem; color: var(--on-accent-light); flex-shrink: 0; }
+@media (max-width: 640px) {
+  .lov-cta { padding: 0.9rem 1.1rem; gap: 0.75rem; }
+  .lov-cta-emoji { font-size: 1.5rem; }
+}
+
 /* ---- FOOTER ---- */
 .footer {
   padding: clamp(3rem, 6vw, 4rem) clamp(1.25rem, 4vw, 3rem);
