@@ -791,7 +791,15 @@ function buildStader() {
 </header>
 ${media(s.img, s.emoji, 'page-hero', 1400)}
 
-${(s.lov || []).map(l => `<p class="packlist-cta">${l.emoji} <a href="/stader/${s.slug}/${l.lovSlug}/">${esc(l.lovName)}stips för ${esc(s.name)} (${esc(l.dateLabel)}) →</a></p>`).join('\n')}
+${(s.lov || []).map(l => `
+<a class="lov-cta" href="/stader/${s.slug}/${l.lovSlug}/">
+  <span class="lov-cta-emoji">${l.emoji}</span>
+  <span class="lov-cta-text">
+    <strong>${esc(l.lovName)}stips för ${esc(s.name)}</strong>
+    <span>${esc(l.dateLabel)}</span>
+  </span>
+  <span class="lov-cta-arrow">→</span>
+</a>`).join('\n')}
 
 <div class="stader-filters" role="group" aria-label="Filtrera aktiviteter">
   <div class="filter-group">
