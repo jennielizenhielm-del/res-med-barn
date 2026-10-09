@@ -197,9 +197,10 @@ const paras = arr => arr.map(p => `<p>${escLinks(p)}</p>`).join('\n');
 
 /* ---------- images ---------- */
 const IMG = (id, w) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
-// img kan vara ett Unsplash-foto-id ("photo-...") eller en egen bild under
-// static/images/ (t.ex. "/images/akpase-barn.jpg") — den senare serveras som
-// den är, ingen Unsplash-URL byggs. aspect (valfri) sätter en egen
+// img kan vara ett Unsplash-foto-id ("photo-...") eller en egen bild som
+// ligger platt i static/ och kopieras till dist/ (t.ex. "/akpase-barn.jpg",
+// samma mönster som logo.png) — den senare serveras som den är, ingen
+// Unsplash-URL byggs. aspect (valfri) sätter en egen
 // aspect-ratio på hero-boxen istället för CSS-standarden, för bilder som
 // inte passar det vanliga 21:9-formatet.
 function media(img, emoji, cls, w, aspect) {
@@ -1330,13 +1331,8 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY
   console.log('  ✓ styles.css');
   fs.copyFileSync(path.join(ROOT, 'static', 'logo.png'), path.join(DIST, 'logo.png'));
   console.log('  ✓ logo.png');
-  const imagesDir = path.join(ROOT, 'static', 'images');
-  if (fs.existsSync(imagesDir)) {
-    fs.mkdirSync(path.join(DIST, 'images'), { recursive: true });
-    const imgFiles = fs.readdirSync(imagesDir);
-    for (const f of imgFiles) fs.copyFileSync(path.join(imagesDir, f), path.join(DIST, 'images', f));
-    console.log(`  ✓ images/ (${imgFiles.length} st)`);
-  }
+  fs.copyFileSync(path.join(ROOT, 'static', 'akpase-barn.jpg'), path.join(DIST, 'akpase-barn.jpg'));
+  console.log('  ✓ akpase-barn.jpg');
   for (const f of ['favicon.ico', 'favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png', 'android-chrome-192x192.png', 'android-chrome-512x512.png']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
   }
