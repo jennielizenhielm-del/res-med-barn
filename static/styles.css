@@ -486,6 +486,16 @@ h1 {
   text-align: center;
   padding-top: 0.2rem;
 }
+.product-img {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--sand-light);
+  align-self: flex-start;
+}
+.product-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .product-body { flex: 1; }
 .product-top {
   display: flex;
@@ -560,6 +570,7 @@ h1 {
 @media (max-width: 600px) {
   .pros-cons { grid-template-columns: 1fr; }
   .product-card { flex-direction: column; gap: 0.5rem; }
+  .product-img { width: 100%; height: 160px; order: -1; }
 }
 
 /* ---- RELATED ---- */
