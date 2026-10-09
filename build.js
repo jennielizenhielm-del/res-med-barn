@@ -682,6 +682,7 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
   ${l.products.map((p, i) => `
   <article class="product-card">
     <div class="product-rank">${i + 1}</div>
+    ${p.img ? `<div class="product-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-img').remove()"></div>` : ''}
     <div class="product-body">
       <div class="product-top">
         <h2>${esc(p.name)}</h2>
