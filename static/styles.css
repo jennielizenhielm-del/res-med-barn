@@ -468,34 +468,34 @@ h1 {
 /* ---- PRODUCTS ---- */
 .products { display: flex; flex-direction: column; gap: 1.1rem; margin-bottom: 1rem; }
 .product-card {
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 2.75rem 1fr 30%;
+  grid-template-areas: "rank body img";
+  align-items: start;
   gap: 1.25rem;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: clamp(1.25rem, 3vw, 1.75rem);
 }
-.product-main {
-  display: flex;
-  gap: 1.25rem;
-  flex: 1 1 70%;
-  min-width: 0;
+.product-card.no-img {
+  grid-template-columns: 2.75rem 1fr;
+  grid-template-areas: "rank body";
 }
 .product-rank {
+  grid-area: rank;
+  align-self: start;
+  padding-top: 0.2rem;
   font-family: var(--font-display);
   font-size: 2.2rem;
   font-weight: 300;
   color: var(--sand);
   line-height: 1;
-  flex-shrink: 0;
-  width: 2.75rem;
   text-align: center;
-  padding-top: 0.2rem;
 }
 .product-img {
-  flex: 0 0 30%;
-  max-width: 30%;
+  grid-area: img;
+  align-self: stretch;
   border-radius: var(--radius);
   overflow: hidden;
   background: transparent;
@@ -503,16 +503,17 @@ h1 {
   box-sizing: border-box;
 }
 .product-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
-.product-body { flex: 1; }
+.product-body { grid-area: body; min-width: 0; }
 .product-top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
-.product-top h2 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; }
+.product-top h2 { flex: 1 1 auto; min-width: 0; font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; }
 .product-badge {
+  flex: 0 0 auto;
   padding: 0.25rem 0.75rem;
   background: var(--accent-light);
   color: var(--on-accent-light);
@@ -575,9 +576,42 @@ h1 {
 }
 .btn-compare:hover { background: var(--accent-hover); }
 @media (max-width: 600px) {
-  .pros-cons { grid-template-columns: 1fr; }
-  .product-card { flex-direction: column; gap: 0.75rem; }
-  .product-img { flex: 0 0 auto; width: 100%; max-width: 100%; height: 200px; order: -1; }
+  /* Bild och rangnummer flyter i textflödet (riktiga CSS-floats) istället för
+     fasta rutnätskolumner. Allt — titel, badge, pris, ingress, plus/minus-listan
+     — är vanligt radbrytande innehåll som packar sig runt bilden ända tills
+     texten passerat bildens nederkant, sen fortsätter den i full bredd av sig
+     själv. Inget av innehållet får vara flex/grid här, annars slutar det
+     respektera floaten (rutnäts-/flex-boxar ignorerar floats och lägger sig
+     över bilden istället för att krympa bredvid den).
+  */
+  .product-card { display: block; padding: 1rem; }
+  .product-rank {
+    float: left;
+    margin: 0 0.5rem 0.3rem 0;
+    font-size: 1.7rem;
+    padding-top: 0;
+  }
+  .product-img {
+    float: right;
+    width: 38%;
+    max-width: 9.5rem;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin: 1.5cm 0 0.5rem 0.75rem;
+    padding: 0.25rem;
+  }
+  .product-top { display: block; }
+  .product-top h2 { display: inline; font-size: 1.2rem; }
+  .product-badge { display: inline-block; margin-left: 0.5rem; vertical-align: middle; }
+  .product-price { display: block; margin-top: 0.4rem; }
+  .pros-cons { display: block; }
+  .pros, .cons { display: block; }
+  .pros li, .cons li {
+    display: block;
+    position: relative;
+    padding: 0.2rem 0 0.2rem 1.1rem;
+  }
+  .pros li::before, .cons li::before { position: absolute; left: 0; }
 }
 
 /* ---- RELATED ---- */
