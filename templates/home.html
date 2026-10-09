@@ -1451,6 +1451,20 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-8F9VYNYZRM');
+    // CTA click-spårning: alla utgående affiliate-/bokningslänkar har rel="sponsored",
+    // så en enda delegerad lyssnare fångar dem allihopa utan egen kod per länk-mall.
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a[rel~="sponsored"]');
+      if (!a) return;
+      var dest = '';
+      try { dest = new URL(a.href, location.href).hostname; } catch (err) {}
+      gtag('event', 'cta_click', {
+        cta_label: (a.textContent || '').trim(),
+        cta_destination: a.href,
+        cta_domain: dest,
+        page_path: location.pathname
+      });
+    });
   </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
