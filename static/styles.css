@@ -498,7 +498,7 @@ h1 {
   max-width: 30%;
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--sand-light);
+  background: transparent;
   padding: 0.5rem;
   box-sizing: border-box;
 }
