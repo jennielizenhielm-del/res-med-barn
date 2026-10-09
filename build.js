@@ -695,27 +695,25 @@ ${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect)}
 ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
 <div class="products">
   ${l.products.map((p, i) => `
-  <article class="product-card">
-    <div class="product-main">
-      <div class="product-rank">${i + 1}</div>
-      <div class="product-body">
-        <div class="product-top">
-          <h2>${esc(p.name)}</h2>
-          <span class="product-badge">${esc(p.badge)}</span>
-        </div>
-        <p class="product-price">${esc(p.price)}</p>
-        <p>${esc(p.text)}</p>
-        ${p.handbagage ? `<p class="handbagage-badge">✈️ <strong>Godkänd som handbagage:</strong> ${esc(p.handbagage)}</p>` : ''}
-        <div class="pros-cons">
-          <ul class="pros">${p.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-          <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-        </div>
-        ${p.buyUrl
-          ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">🛒 Köp hos ${esc(p.buyStore || 'butik')} →</a>`
-          : (p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : '')}
+  <article class="product-card${p.img ? '' : ' no-img'}">
+    <div class="product-rank">${i + 1}</div>
+    ${p.img ? `<div class="product-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-img').remove();this.closest('.product-card').classList.add('no-img')"></div>` : ''}
+    <div class="product-body">
+      <div class="product-top">
+        <h2>${esc(p.name)}</h2>
+        <span class="product-badge">${esc(p.badge)}</span>
       </div>
+      <p class="product-price">${esc(p.price)}</p>
+      <p>${esc(p.text)}</p>
+      ${p.handbagage ? `<p class="handbagage-badge">✈️ <strong>Godkänd som handbagage:</strong> ${esc(p.handbagage)}</p>` : ''}
+      <div class="pros-cons">
+        <ul class="pros">${p.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+        <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      ${p.buyUrl
+        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">🛒 Köp hos ${esc(p.buyStore || 'butik')} →</a>`
+        : (p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : '')}
     </div>
-    ${p.img ? `<div class="product-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-img').remove()"></div>` : ''}
   </article>`).join('')}
 </div>
 ${authorByline()}

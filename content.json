@@ -2459,12 +2459,13 @@
           {
             "name": "Voksi Åkpåse Move",
             "badge": "Bäst i test",
-            "price": "Från ca 1 495 kr",
+            "price": "Från ca 1 399 kr",
             "text": "Norsk åkpåse med hög värmeisolering och genomtänkt passform, utsedd till bäst i test i flera oberoende jämförelser. Fungerar i både ligg- och sittdel, med selöppningar som passar de flesta vagnmodeller.",
             "pros": [
               "Utsedd till bäst i test av flera oberoende testare",
               "Fungerar i både liggdel och sittdel",
-              "Håller värmen väl även på riktigt kalla dagar"
+              "Håller värmen väl även på riktigt kalla dagar",
+              "Selöppningar som passar de flesta vagnmodeller"
             ],
             "cons": [
               "Inget att öppna vid fötterna om barnet blir för varmt",
@@ -2497,10 +2498,11 @@
           {
             "name": "Elodie Details Åkpåse",
             "badge": "Snyggast design",
-            "price": "Från ca 1 195 kr",
+            "price": "Från ca 995 kr",
             "text": "Svenskdesignad åkpåse som uppdateras med nya mönster varje säsong, med öppningsbara hål i ryggen som gör den kompatibel med de flesta 5-punktsbälten. Smart flärp på baksidan förhindrar att åkpåsen glider i sittdelen.",
             "pros": [
               "Stort utbud av snygga, säsongsuppdaterade mönster",
+              "Öppningsbara hål i ryggen gör den kompatibel med de flesta 5-punktsbälten",
               "Flärp på baksidan förhindrar glidning i sittdelen",
               "Maskintvättbar i 30 grader"
             ],
@@ -2511,12 +2513,12 @@
             "priceRunnerUrl": "https://www.pricerunner.se/sp/elodie-details-akpase.html",
             "buyUrl": "https://dot.jollyroom.se/t/t?a=1487384677&as=2110114461&t=2&tk=1&cupa_sku=10335017&fid=111&url=https://www.jollyroom.se/barnvagnar/akpasar/vinterakpasar/elodie-details-comfort-akpase-svart",
             "buyStore": "Jollyroom",
-            "img": "https://www.jollyroom.se/storage/A812862C633142E0E58B71407F86B6EEF871D230E7BA7DAAF5C3ADCB5E926049/4dd039404f5d4919b512c9e339ac0e33/jpg/media/1bd77f6926d1453bb0e28d7fa05a8446/MUFFCOMFORT-50501102120NA-1526_2.jpg"
+            "img": "https://www.jollyroom.se/storage/14F7CB1C96400EDF7393623750951535B24A7E9F9AD965B19A8229597F345F11/362b76ba128d41b1b05a18e79fc2e5f6/1200-1600-0-jpg.Jpeg/media/9c2bef519b6745669840395145211b9a/MUFFCOMFORT-50501102120NA-1526_1.jpeg"
           },
           {
             "name": "Bozz Åkpåse Lammskinn",
             "badge": "Varmast — äkta lammskinn",
-            "price": "Från ca 1 495 kr",
+            "price": "Från ca 1 499 kr",
             "text": "Fodrad med äkta, långhårigt lammskinn från Nya Zeeland (Woolmark- och ÖKO-Tex-certifierat, helt kromfritt), vilket ger en värme ingen syntetisk fyllning riktigt kommer upp i. Uttag för 5-punktsbälte gör att den fungerar både i vagnens sittdel och i bilbarnstolen. Öppnas helt via dragkedja i mitten och vid fötterna, så den även funkar som lektäcke på golvet.",
             "pros": [
               "Äkta lammskinn ger en värme som är svår att matcha syntetiskt",
@@ -2535,7 +2537,7 @@
           {
             "name": "Petite Chérie Åkpåse Essence",
             "badge": "Mysigast/roligast design",
-            "price": "295 kr",
+            "price": "Från ca 295 kr",
             "text": "Jollyrooms eget märke, känt för lekfulla mönster och färger snarare än de mer avskalade konkurrenterna. Rejält vadderad med tjock stoppning i kanaler och en fuskpälskant runt huvudöppningen som ger en extra mysig känsla. Finns i tolv olika utföranden.",
             "pros": [
               "Störst utbud av roliga mönster och färger i jämförelsen",
