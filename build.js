@@ -197,10 +197,17 @@ const paras = arr => arr.map(p => `<p>${escLinks(p)}</p>`).join('\n');
 
 /* ---------- images ---------- */
 const IMG = (id, w) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
-function media(img, emoji, cls, w) {
+// img kan vara ett Unsplash-foto-id ("photo-...") eller en egen bild under
+// static/images/ (t.ex. "/images/akpase-barn.jpg") — den senare serveras som
+// den är, ingen Unsplash-URL byggs. aspect (valfri) sätter en egen
+// aspect-ratio på hero-boxen istället för CSS-standarden, för bilder som
+// inte passar det vanliga 21:9-formatet.
+function media(img, emoji, cls, w, aspect) {
   if (!img) return '';
-  return `<div class="card-media ${cls}" data-emoji="${emoji || '🌍'}">
-    <img src="${IMG(img, w)}" alt="" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+  const src = img.startsWith('/') || /^https?:\/\//.test(img) ? img : IMG(img, w);
+  const style = aspect ? ` style="aspect-ratio:${aspect}"` : '';
+  return `<div class="card-media ${cls}" data-emoji="${emoji || '🌍'}"${style}>
+    <img src="${src}" alt="" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
   </div>`;
 }
 
@@ -358,7 +365,12 @@ function page(url, meta, active, inner, extraJsonld, ldType) {
   const ld = extraJsonld ? (Array.isArray(extraJsonld) ? extraJsonld.slice() : [extraJsonld]) : [];
   ld.push(pageLd(meta, url, updated, published, ldType));
   meta = { ...meta, jsonld: ld };
-  if (ldType === 'Article' && inner.includes('</header>')) {
+  // Topplistor lägger själva in authorByline() längre ner på sidan (efter
+  // sista produkten, inte i headern — Jennie ville ha mindre "bloggkänsla"
+  // för besökare som kommer från annonser och vill se produkterna direkt).
+  // inner.includes('author-byline') signalerar att det redan är gjort, så
+  // vi inte dubblerar den här.
+  if (ldType === 'Article' && inner.includes('</header>') && !inner.includes('author-byline')) {
     inner = inner.replace('</header>', `  ${authorByline()}\n</header>`);
   }
   return head(meta, url) + nav(active) + `<main class="page">` + inner + `</main>` + footer();
@@ -663,7 +675,7 @@ ${faqHtml(hub.faq)}`;
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
-${media(l.img, l.emoji, 'page-hero', 1400)}
+${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect)}
 ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
 <div class="products">
   ${l.products.map((p, i) => `
@@ -687,6 +699,7 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
     </div>
   </article>`).join('')}
 </div>
+${authorByline()}
 <article class="article">
   ${l.sections.map(s => {
     if (s.statusGrid) {
@@ -1317,6 +1330,13 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY
   console.log('  ✓ styles.css');
   fs.copyFileSync(path.join(ROOT, 'static', 'logo.png'), path.join(DIST, 'logo.png'));
   console.log('  ✓ logo.png');
+  const imagesDir = path.join(ROOT, 'static', 'images');
+  if (fs.existsSync(imagesDir)) {
+    fs.mkdirSync(path.join(DIST, 'images'), { recursive: true });
+    const imgFiles = fs.readdirSync(imagesDir);
+    for (const f of imgFiles) fs.copyFileSync(path.join(imagesDir, f), path.join(DIST, 'images', f));
+    console.log(`  ✓ images/ (${imgFiles.length} st)`);
+  }
   for (const f of ['favicon.ico', 'favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png', 'android-chrome-192x192.png', 'android-chrome-512x512.png']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
   }
