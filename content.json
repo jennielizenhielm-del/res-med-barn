@@ -2457,43 +2457,23 @@
         ],
         "products": [
           {
-            "name": "Voksi Åkpåse Move",
-            "badge": "Bäst i test",
-            "price": "Från ca 1 399 kr",
-            "text": "Norsk åkpåse med hög värmeisolering och genomtänkt passform, utsedd till bäst i test i flera oberoende jämförelser. Fungerar i både ligg- och sittdel, med selöppningar som passar de flesta vagnmodeller.",
+            "name": "Bozz Åkpåse Lammskinn",
+            "badge": "Varmast — äkta lammskinn",
+            "price": "Från ca 1 499 kr",
+            "text": "Fodrad med äkta, långhårigt lammskinn från Nya Zeeland (Woolmark- och ÖKO-Tex-certifierat, helt kromfritt), vilket ger en värme ingen syntetisk fyllning riktigt kommer upp i. Uttag för 5-punktsbälte gör att den fungerar både i vagnens sittdel och i bilbarnstolen. Öppnas helt via dragkedja i mitten och vid fötterna, så den även funkar som lektäcke på golvet.",
             "pros": [
-              "Utsedd till bäst i test av flera oberoende testare",
-              "Fungerar i både liggdel och sittdel",
-              "Håller värmen väl även på riktigt kalla dagar",
-              "Selöppningar som passar de flesta vagnmodeller"
+              "Äkta lammskinn ger en värme som är svår att matcha syntetiskt",
+              "Fungerar både i vagn och bilbarnstol tack vare 5-punktsbälte-uttag",
+              "Kan öppnas helt och användas som lektäcke"
             ],
             "cons": [
-              "Inget att öppna vid fötterna om barnet blir för varmt",
-              "Dyrare än enklare universalmodeller"
+              "Andas sämre än syntetiska alternativ — bäst vid minusgrader, kan bli för varmt vid mildare väder",
+              "Kräver särskild skötsel (ullschampo, handtvätt eller ullprogram, får ej torktumlas)"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-akpase-move.html",
-            "buyUrl": "https://in.bonti.se/t/t?a=1954032785&as=2110114461&t=2&tk=1&cupa_sku=VOKS11040955-Black-0-1&fid=2692&url=http://bonti.se/voksi-akpase-move-black",
-            "buyStore": "Bonti",
-            "img": "https://bonti.se/bilder/artiklar/zoom/VOKS11040955-Black-0-1_1.jpg?m=1756462535"
-          },
-          {
-            "name": "Voksi Urban",
-            "badge": "Bästa premium",
-            "price": "Från ca 2 999 kr",
-            "text": "Voksis premiummodell med öppning vid fötterna för extra ventilation, napphållare vid huvudöppningen och halkskydd på undersidan. Dubbla dragkedjor gör att överdelen går att ta bort helt när säsongen växlar.",
-            "pros": [
-              "Öppning vid fötterna — kan ventileras om barnet blir för varmt",
-              "Napphållare och halkskydd inbyggt",
-              "Dubbla dragkedjor, överdelen tas bort helt vid varmare väder"
-            ],
-            "cons": [
-              "Ett av de dyrare alternativen i jämförelsen",
-              "Överkvalificerad om ni bara behöver den några månader per år"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-urban.html",
-            "buyUrl": "https://adtr.co/bkvpv2",
-            "buyStore": "Jollyroom",
-            "img": "https://www.jollyroom.se/storage/B3865850B26AE1D83EE2E6FCE919B9268585A087F1C7007816FABE6DE5FFD6EF/92d29f7c641840fb8730c34b482de896/jpg/media/9db909f930e341d2a661c786b07563c5/11030880-Black-HDCream-3394_1.jpg"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/bozz-akpase-lammskinn.html",
+            "buyUrl": "https://adtr.co/tzpq90",
+            "buyStore": "Baby V",
+            "img": "https://02.cdn37.se/epl/images/2.257931/bozz-akpase-lammskinn-svartnatur-kortharig.jpeg"
           },
           {
             "name": "Elodie Details Åkpåse",
@@ -2516,23 +2496,43 @@
             "img": "https://www.jollyroom.se/storage/14F7CB1C96400EDF7393623750951535B24A7E9F9AD965B19A8229597F345F11/362b76ba128d41b1b05a18e79fc2e5f6/1200-1600-0-jpg.Jpeg/media/9c2bef519b6745669840395145211b9a/MUFFCOMFORT-50501102120NA-1526_1.jpeg"
           },
           {
-            "name": "Bozz Åkpåse Lammskinn",
-            "badge": "Varmast — äkta lammskinn",
-            "price": "Från ca 1 499 kr",
-            "text": "Fodrad med äkta, långhårigt lammskinn från Nya Zeeland (Woolmark- och ÖKO-Tex-certifierat, helt kromfritt), vilket ger en värme ingen syntetisk fyllning riktigt kommer upp i. Uttag för 5-punktsbälte gör att den fungerar både i vagnens sittdel och i bilbarnstolen. Öppnas helt via dragkedja i mitten och vid fötterna, så den även funkar som lektäcke på golvet.",
+            "name": "Voksi Urban",
+            "badge": "Bästa premium",
+            "price": "Från ca 2 999 kr",
+            "text": "Voksis premiummodell med öppning vid fötterna för extra ventilation, napphållare vid huvudöppningen och halkskydd på undersidan. Dubbla dragkedjor gör att överdelen går att ta bort helt när säsongen växlar.",
             "pros": [
-              "Äkta lammskinn ger en värme som är svår att matcha syntetiskt",
-              "Fungerar både i vagn och bilbarnstol tack vare 5-punktsbälte-uttag",
-              "Kan öppnas helt och användas som lektäcke"
+              "Öppning vid fötterna — kan ventileras om barnet blir för varmt",
+              "Napphållare och halkskydd inbyggt",
+              "Dubbla dragkedjor, överdelen tas bort helt vid varmare väder"
             ],
             "cons": [
-              "Andas sämre än syntetiska alternativ — bäst vid minusgrader, kan bli för varmt vid mildare väder",
-              "Kräver särskild skötsel (ullschampo, handtvätt eller ullprogram, får ej torktumlas)"
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Överkvalificerad om ni bara behöver den några månader per år"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/bozz-akpase-lammskinn.html",
-            "buyUrl": "https://adtr.co/tzpq90",
-            "buyStore": "Baby V",
-            "img": "https://02.cdn37.se/epl/images/2.257931/bozz-akpase-lammskinn-svartnatur-kortharig.jpeg"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-urban.html",
+            "buyUrl": "https://adtr.co/bkvpv2",
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/B3865850B26AE1D83EE2E6FCE919B9268585A087F1C7007816FABE6DE5FFD6EF/92d29f7c641840fb8730c34b482de896/jpg/media/9db909f930e341d2a661c786b07563c5/11030880-Black-HDCream-3394_1.jpg"
+          },
+          {
+            "name": "Voksi Åkpåse Move",
+            "badge": "Bäst anpassad för bilbarnstol",
+            "price": "Från ca 1 399 kr",
+            "text": "Norsk åkpåse speciellt framtagen för bilbarnstolen, krocktestad och godkänd tillsammans med BeSafes bilbarnstolar. Dragkedjan sitter i mitten fram och går att öppna helt för ventilation, och innerdynan träs igenom öppningar i ryggen så bältet ligger tätt mot kroppen. Passar från nyfött barn upp till ca 1,5 års ålder.",
+            "pros": [
+              "Fungerar med de flesta vagnmodeller och passar 5-punktsbälte",
+              "Krocktestad och godkänd tillsammans med BeSafes bilbarnstolar",
+              "Dragkedjan i mitten går att öppna helt för ventilation om barnet blir för varmt",
+              "Innerdynan träs igenom ryggöppningar så bilbarnstolens bälte sitter tätt mot kroppen"
+            ],
+            "cons": [
+              "Rekommenderas bara upp till ca 1,5 års ålder — kortare användningstid än flera konkurrenter",
+              "Dyrare än de enklaste universalmodellerna i jämförelsen"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/voksi-akpase-move.html",
+            "buyUrl": "https://in.bonti.se/t/t?a=1954032785&as=2110114461&t=2&tk=1&cupa_sku=VOKS11040955-Black-0-1&fid=2692&url=http://bonti.se/voksi-akpase-move-black",
+            "buyStore": "Bonti",
+            "img": "https://bonti.se/bilder/artiklar/zoom/VOKS11040955-Black-0-1_1.jpg?m=1756462535"
           },
           {
             "name": "Petite Chérie Åkpåse Essence",
