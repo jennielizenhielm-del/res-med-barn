@@ -476,7 +476,7 @@ function collectLatestPages() {
   for (const s of C.stader.cities) {
     if (s.updated) items.push({ url: `/stader/${s.slug}/`, emoji: s.emoji, img: s.img, title: s.h1 || s.name, summary: s.cardText, updated: s.updated });
     for (const l of (s.lov || [])) {
-      if (l.updated) items.push({ url: `/stader/${s.slug}/${l.lovSlug}/`, emoji: l.emoji, img: l.img, title: l.h1 || `${l.lovName} i ${s.name}`, summary: `${l.lovName}stips för ${s.name}`, updated: l.updated });
+      if (l.updated) items.push({ url: `/stader/${s.slug}/${l.lovSlug}/`, emoji: l.emoji, img: l.img || s.img, title: l.h1 || `${l.lovName} i ${s.name}`, summary: `${l.lovName}stips för ${s.name}`, updated: l.updated });
     }
     for (const g of (s.guider || [])) {
       if (g.updated) items.push({ url: `/stader/${s.slug}/${g.guideSlug}/`, emoji: g.emoji, img: g.img, title: g.h1 || g.guideName, summary: g.description, updated: g.updated });
