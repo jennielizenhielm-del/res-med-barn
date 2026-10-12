@@ -690,6 +690,24 @@ h1 {
 .activity-meta .meta-chip { font-size: 0.76rem; color: var(--text-muted); }
 .activity-link { display: inline-block; margin-top: 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--primary); }
 
+/* ---- VENUE-LINK (hemsida/Instagram-knapp på barnvagnsguidernas kort) ---- */
+.venue-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.85rem;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition);
+  align-self: flex-start;
+}
+.venue-link:hover { background: var(--border-light); }
+
 /* ---- LOV-CTA (länk från en stads huvudsida till dess höstlov/jullov/sportlov-sida) ---- */
 .lov-cta {
   display: flex;
