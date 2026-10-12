@@ -483,7 +483,7 @@ function collectLatestPages() {
     }
   }
   items.sort((x, y) => (y.updated || '').localeCompare(x.updated || ''));
-  return items.slice(0, 3);
+  return items.slice(0, 4);
 }
 
 function buildHome() {
