@@ -444,6 +444,48 @@ function destCardSSR(d) {
     </a>`;
 }
 
+// Samlar ihop de redaktionella sidtyper som har ett äkta, satt "updated"-datum
+// (INTE resmål, som alltid faller tillbaka på TODAY och skulle dominera listan)
+// och plockar ut de 3 senast uppdaterade för "Senast uppdaterat"-sektionen på
+// startsidan. Helt datadrivet — nästa gång något uppdateras hamnar det här
+// automatiskt, ingen hårdkodning.
+function recentCardSSR(item) {
+  return `
+  <a class="hub-card has-media" href="${item.url}">
+    ${media(item.img, item.emoji, 'hub-media', 640)}
+    <span class="hub-emoji">${item.emoji || '🆕'}</span>
+    <h2>${esc(item.title)}</h2>
+    <p>${esc(item.summary || '')}</p>
+    <span class="hub-link">Läs mer →</span>
+  </a>`;
+}
+function collectLatestPages() {
+  const items = [];
+  for (const a of C.ages) {
+    for (const t of C.transports) {
+      const g = C.guides[a.slug + '/' + t.slug];
+      if (g && g.updated) items.push({ url: `/guider/${a.slug}/${t.slug}/`, emoji: t.emoji, img: g.img, title: g.h1 || g.title, summary: g.cardText, updated: g.updated });
+    }
+  }
+  for (const l of C.topplistor.lists) {
+    if (l.updated) items.push({ url: `/topplistor/${l.slug}/`, emoji: l.emoji, img: l.img, title: l.h1 || l.name, summary: l.cardText, updated: l.updated });
+  }
+  for (const a of C.artiklar.list) {
+    if (a.updated) items.push({ url: `/artiklar/${a.slug}/`, emoji: a.emoji, img: a.img, title: a.h1 || a.name, summary: a.cardText, updated: a.updated });
+  }
+  for (const s of C.stader.cities) {
+    if (s.updated) items.push({ url: `/stader/${s.slug}/`, emoji: s.emoji, img: s.img, title: s.h1 || s.name, summary: s.cardText, updated: s.updated });
+    for (const l of (s.lov || [])) {
+      if (l.updated) items.push({ url: `/stader/${s.slug}/${l.lovSlug}/`, emoji: l.emoji, img: l.img, title: l.h1 || `${l.lovName} i ${s.name}`, summary: `${l.lovName}stips för ${s.name}`, updated: l.updated });
+    }
+    for (const g of (s.guider || [])) {
+      if (g.updated) items.push({ url: `/stader/${s.slug}/${g.guideSlug}/`, emoji: g.emoji, img: g.img, title: g.h1 || g.guideName, summary: g.description, updated: g.updated });
+    }
+  }
+  items.sort((x, y) => (y.updated || '').localeCompare(x.updated || ''));
+  return items.slice(0, 3);
+}
+
 function buildHome() {
   let html = fs.readFileSync(path.join(ROOT, 'templates', 'home.html'), 'utf8');
   const m = C.pages.home;
@@ -452,6 +494,7 @@ function buildHome() {
   URL_DATES['/'] = updated;
   const DESTINATIONS = loadDestinations();
   const featured = DESTINATIONS.filter(d => d.featured);
+  const latest = collectLatestPages();
   warnLen('/', 'meta title', m.title, 60);
   warnLen('/', 'meta description', m.description, 155);
   html = html
@@ -459,6 +502,7 @@ function buildHome() {
     .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="${esc(m.description)}">`)
     .replace('<!--FAQ_PLACEHOLDER-->', m.faq ? faqHtml(m.faq) : '')
     .replace('<!--FEATURED_GRID_PLACEHOLDER-->', featured.map(featCardSSR).join(''))
+    .replace('<!--LATEST_GRID_PLACEHOLDER-->', latest.map(recentCardSSR).join(''))
     .replace('<!--DEST_GRID_PLACEHOLDER-->', DESTINATIONS.map(destCardSSR).join(''))
     .replace('</head>', `<link rel="canonical" href="${DOMAIN}/">
 <meta property="og:title" content="${esc(m.title)}">
@@ -830,6 +874,18 @@ ${(s.lov || []).map(l => `
   </span>
   <span class="lov-cta-arrow">→</span>
 </a>`).join('\n')}
+
+${(s.guider || []).length ? `<div class="guide-cta-row">
+  ${s.guider.map(g => `
+  <a class="guide-cta" href="/stader/${s.slug}/${g.guideSlug}/">
+    <span class="guide-cta-emoji">${g.emoji}</span>
+    <span class="guide-cta-text">
+      <strong>${esc(g.guideName)}</strong>
+      <span>${g.venues.length} ställen i ${esc(s.name)}s innerstad</span>
+    </span>
+    <span class="guide-cta-arrow">→</span>
+  </a>`).join('\n')}
+</div>` : ''}
 
 <div class="stader-filters" role="group" aria-label="Filtrera aktiviteter">
   <div class="filter-group">
