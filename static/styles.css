@@ -687,7 +687,15 @@ h1 {
 .activity-price { font-size: 0.82rem; font-weight: 600; color: var(--sand); margin-bottom: 0.5rem; }
 .activity-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem; }
 .activity-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.activity-meta .meta-chip { font-size: 0.76rem; color: var(--text-muted); }
+.activity-meta .meta-chip {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
 .activity-link { display: inline-block; margin-top: 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--primary); }
 
 /* ---- VENUE-LINK (hemsida/Instagram-knapp på barnvagnsguidernas kort) ---- */
@@ -730,6 +738,31 @@ h1 {
 @media (max-width: 640px) {
   .lov-cta { padding: 0.9rem 1.1rem; gap: 0.75rem; }
   .lov-cta-emoji { font-size: 1.5rem; }
+}
+
+/* ---- GUIDE-CTA (länk från en stads huvudsida till t.ex. barnvagnsguiderna) ---- */
+.guide-cta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0 2rem; }
+.guide-cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 260px;
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.4rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.guide-cta:hover { border-color: var(--primary); transform: translateY(-1px); }
+.guide-cta-emoji { font-size: 1.8rem; line-height: 1; flex-shrink: 0; }
+.guide-cta-text { display: flex; flex-direction: column; gap: 0.15rem; }
+.guide-cta-text strong { color: var(--primary); font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; }
+.guide-cta-text span { color: var(--text-secondary); font-size: 0.85rem; }
+.guide-cta-arrow { margin-left: auto; font-size: 1.3rem; color: var(--primary); flex-shrink: 0; }
+@media (max-width: 640px) {
+  .guide-cta { padding: 0.9rem 1.1rem; gap: 0.75rem; }
+  .guide-cta-emoji { font-size: 1.5rem; }
 }
 
 /* ---- FOOTER ---- */
