@@ -669,6 +669,55 @@
     .card-media.img-fallback[data-cat="sweden"] { background: linear-gradient(135deg, color-mix(in srgb, var(--cat-sweden) 32%, var(--bg)), color-mix(in srgb, var(--cat-nature) 25%, var(--bg))); }
     .card-media.img-fallback[data-cat="museums"] { background: linear-gradient(135deg, color-mix(in srgb, var(--cat-museums) 32%, var(--bg)), color-mix(in srgb, var(--sand) 25%, var(--bg))); }
 
+    /* ---- HUB CARDS (delad komponent med övriga sajten, t.ex. "Senast
+       uppdaterat" — hemsidan har ingen länk till static/styles.css utan är
+       helt självbärande, så reglerna måste finnas här också) ---- */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .hub-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      padding: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      color: inherit;
+      transition: all var(--transition);
+      min-width: 0;
+      overflow-wrap: break-word;
+    }
+    .hub-card:hover {
+      border-color: var(--text-muted);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .hub-card:hover .card-media img { transform: scale(1.045); }
+    .hub-media {
+      aspect-ratio: 16 / 9;
+      margin: -1.5rem -1.5rem 0.9rem;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .hub-emoji { font-size: 1.9rem; margin-bottom: 0.35rem; }
+    .hub-card.has-media .hub-emoji { font-size: 1.3rem; margin-bottom: 0.1rem; }
+    .hub-card h2, .hub-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .hub-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; }
+    .hub-link {
+      margin-top: auto;
+      padding-top: 0.75rem;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
     /* ---- FEATURED ---- */
     .featured-grid {
       display: grid;
