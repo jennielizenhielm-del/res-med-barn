@@ -4445,6 +4445,703 @@
             "updated": "2026-10-07",
             "dateLabel": "26–30 oktober 2026"
           }
+        ],
+        "guider": [
+          {
+            "guideSlug": "barnvagnsvanliga-restauranger",
+            "guideName": "Barnvagnsvänliga restauranger",
+            "emoji": "🍽️",
+            "title": "Barnvagnsvänliga restauranger i Stockholm — 25 ställen | Res med Barn",
+            "description": "25 barnvagnsvänliga restauranger i Stockholms innerstad, uppdelat per stadsdel — var det är gott om plats, var du bör ringa innan och vad de serverar.",
+            "h1": "Barnvagnsvänliga restauranger i Stockholms innerstad",
+            "intro": [
+              "Att hitta en restaurang där barnvagnen får plats kan vara frustrerande. Här är ett urval ställen i Stockholms innerstad som fungerar bra med barnvagn, uppdelade per stadsdel.",
+              "Några av ställena är stora och rymliga rakt av. Andra är mindre men ändå värda listan — där rekommenderar vi att ringa innan för att säkra ett bra bord, vilket vi har flaggat för varje sådant ställe."
+            ],
+            "areaOrder": [
+              "Södermalm",
+              "Gamla stan",
+              "Djurgården",
+              "Skeppsholmen",
+              "Östermalm",
+              "Östermalm/Gärdet",
+              "Norrmalm",
+              "Kungsholmen",
+              "Vasastan"
+            ],
+            "venues": [
+              {
+                "name": "Urban Deli",
+                "area": "Södermalm",
+                "address": "Nytorget",
+                "note": "Delikatessbutik och restaurang i ett, med stora öppna ytor i gatunivå.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.urbandeli.org/",
+                "linkLabel": "urbandeli.org"
+              },
+              {
+                "name": "Fotografiska",
+                "area": "Södermalm",
+                "address": "Stadsgårdshamnen 22",
+                "note": "20+ barnstolar och stora salar enligt recensioner. Fotoutställningarna brukar fånga även barn.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.fotografiska.com/sto/",
+                "linkLabel": "fotografiska.com"
+              },
+              {
+                "name": "Koh Phangan",
+                "area": "Södermalm",
+                "address": "Skånegatan 57",
+                "note": "Thailändsk mat i djungeltema, stora öppna salar. Bara middag på vardagar, lunch och middag på helger.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://kohphangan.se/ostermalm/",
+                "linkLabel": "kohphangan.se"
+              },
+              {
+                "name": "Non Solo Bar",
+                "area": "Gamla stan",
+                "address": "Gamla stan",
+                "note": "Ljus, luftig bistro med gott om plats för barnvagn enligt recensioner. Frukost, brunch, lunch och middag.",
+                "meals": {
+                  "frukost": true,
+                  "brunch": true,
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.nonsolobar.se/location-gamla-stan",
+                "linkLabel": "nonsolobar.se"
+              },
+              {
+                "name": "Järnet",
+                "area": "Gamla stan",
+                "address": "Österlånggatan 34",
+                "note": "Tapas med skandinavisk twist. Bara middag, stängt söndag–måndag.",
+                "meals": {
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://jarnetbar.se/",
+                "linkLabel": "jarnetbar.se"
+              },
+              {
+                "name": "Ulla Winbladh",
+                "area": "Djurgården",
+                "address": "Djurgården",
+                "note": "Klassisk husmanskrog som tar emot alla. Lunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://ullawinbladh.se/",
+                "linkLabel": "ullawinbladh.se"
+              },
+              {
+                "name": "Villa Godthem",
+                "area": "Djurgården",
+                "address": "Djurgården",
+                "note": "Undanskymda bås som passar familjer, bra stopp på en barnvagnspromenad. Lunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.villagodthem.se/",
+                "linkLabel": "villagodthem.se"
+              },
+              {
+                "name": "Restaurangen, Moderna Museet",
+                "area": "Skeppsholmen",
+                "address": "Skeppsholmen",
+                "note": "Skötbord, barnvagnsparkering och lånevagnar enligt museets egna uppgifter. Varmt kök till kl 19 tis/fre, annars till kl 16. Skeppsholmen har i övrigt inga fler restauranger, så den får stå ensam i sin stadsdel.",
+                "meals": {
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.modernamuseet.se/sv/stockholm/besok-museet/mat-dryck/",
+                "linkLabel": "modernamuseet.se"
+              },
+              {
+                "name": "Riche",
+                "area": "Östermalm",
+                "address": "Birger Jarlsgatan",
+                "note": "Inga problem att ta med barnvagn enligt recensioner. Lunch och middag — ring innan för att säkra ett bra bord.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": true,
+                "link": "https://riche.se/",
+                "linkLabel": "riche.se"
+              },
+              {
+                "name": "Glashuset Restaurang & Bar",
+                "area": "Östermalm",
+                "address": "Kajplats 18, Strandvägen",
+                "note": "Bred skandinavisk brasserie-meny, nära Stureplan. Lunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": true,
+                "link": "https://www.glashuset.com/",
+                "linkLabel": "glashuset.com"
+              },
+              {
+                "name": "Broms",
+                "area": "Östermalm",
+                "address": "Karlaplan",
+                "note": "Bistro, bar och deli i ett. Lunch och middag, brunch på helger.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true,
+                  "brunch": true
+                },
+                "ringAhead": true,
+                "link": "https://www.bromskarlaplan.se/sv/",
+                "linkLabel": "bromskarlaplan.se"
+              },
+              {
+                "name": "Brasserie Astoria",
+                "area": "Östermalm",
+                "address": "Nybrogatan 15",
+                "note": "Avslappnad fransk-italiensk meny. Lunch och middag, brunch på helger.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true,
+                  "brunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.brasserieastoria.se/",
+                "linkLabel": "brasserieastoria.se"
+              },
+              {
+                "name": "Grodan",
+                "area": "Östermalm",
+                "address": "Grev Turegatan 16",
+                "note": "En av Östermalms mest klassiska krogar. Frukost på vardagar, lunch och middag.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.grodan.se/grevture",
+                "linkLabel": "grodan.se"
+              },
+              {
+                "name": "Tures",
+                "area": "Östermalm",
+                "address": "Sturegallerian 10",
+                "note": "Bar och restaurang med lunch, helglunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://tures.se/",
+                "linkLabel": "tures.se"
+              },
+              {
+                "name": "Artilleriet",
+                "area": "Östermalm",
+                "address": "Artillerigatan 13",
+                "note": "Husmanskost och småplattor, helgbrunch, lunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true,
+                  "brunch": true
+                },
+                "ringAhead": false,
+                "link": "https://restaurangartilleriet.se/",
+                "linkLabel": "restaurangartilleriet.se"
+              },
+              {
+                "name": "Brödernas Stadion",
+                "area": "Östermalm/Gärdet",
+                "address": "Valhallavägen 113",
+                "note": "Pizza och burgare, enkelt och avslappnat. Lunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.brodernas.nu/restauranger/stadion",
+                "linkLabel": "brodernas.nu"
+              },
+              {
+                "name": "Restaurang Hantverket",
+                "area": "Östermalm",
+                "address": "Sturegatan",
+                "note": "Lunch och middag. Enligt egen hemsida: “Har ni med barnvagn eller hund så meddela oss gärna vid bokning så ser vi till att det finns plats vid bordet.”",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": true,
+                "link": "https://restauranghantverket.se/restaurang-hantverket",
+                "linkLabel": "restauranghantverket.se"
+              },
+              {
+                "name": "Pinchos",
+                "area": "Norrmalm",
+                "address": "Norrlandsgatan 33",
+                "note": "Tapasrestaurang, beställning via app. Middag vardag och helg, lunch bara på helger.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.pinchos.se/restaurant/se-sthlm-norrlands",
+                "linkLabel": "pinchos.se"
+              },
+              {
+                "name": "Griffins Steakhouse",
+                "area": "Norrmalm",
+                "address": "Klarabergsviadukten 67",
+                "note": "Brunchbuffé, lunch och middag.",
+                "meals": {
+                  "brunch": true,
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://griffinssteakhouse.se/",
+                "linkLabel": "griffinssteakhouse.se"
+              },
+              {
+                "name": "Stella Pizza",
+                "area": "Kungsholmen",
+                "address": "Kungsholmen",
+                "note": "Barnvagns- och barnvänlig pizzeria med bra råvaror. Lunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://www.stellapizza.se/restauranger/kungsholmen/",
+                "linkLabel": "stellapizza.se"
+              },
+              {
+                "name": "Mormors Pastabageri",
+                "area": "Kungsholmen",
+                "address": "Lindhagensgatan 90",
+                "note": "Pastabageri och deli med egentillverkad pasta, serverar frukost, lunch och middag.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://mormorspasta.se/",
+                "linkLabel": "mormorspasta.se"
+              },
+              {
+                "name": "Brasserie Balzac",
+                "area": "Vasastan",
+                "address": "Odengatan 26",
+                "note": "Fine dining-brasserie med lång bar. Lunch och middag — ring innan för plats.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": true,
+                "link": "https://balzac.se/",
+                "linkLabel": "balzac.se"
+              },
+              {
+                "name": "Primo Ciao Ciao",
+                "area": "Vasastan",
+                "address": "Odengatan 79",
+                "note": "Italiensk mat, kända för sina pizzor. Lunch och middag.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://primociaociao.se/",
+                "linkLabel": "primociaociao.se"
+              },
+              {
+                "name": "Scandwich",
+                "area": "Norrmalm",
+                "address": "Malmskillnadsgatan",
+                "note": "Rejäla smörgåsar, skötbord, uteservering. Ren lunchkoncept, inget café.",
+                "meals": {
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.scandwich.se/malmskillnadsgatan",
+                "linkLabel": "scandwich.se"
+              },
+              {
+                "name": "Boketto, Blique by Nobis",
+                "area": "Vasastan",
+                "address": "Vasastan",
+                "note": "Barnrum med leksaker och pyssel. Frukost, lunch och helgbrunch — hotellrestaurang, inget café.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "brunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.bliquebynobis.se/boketto",
+                "linkLabel": "bliquebynobis.se"
+              }
+            ],
+            "published": "2026-10-12",
+            "updated": "2026-10-12",
+            "img": "photo-1667388969250-1c7220bf3f37"
+          },
+          {
+            "guideSlug": "barnvagnsvanliga-cafeer",
+            "guideName": "Barnvagnsvänliga caféer",
+            "emoji": "☕",
+            "title": "Barnvagnsvänliga caféer i Stockholm — 23 ställen | Res med Barn",
+            "description": "23 barnvagnsvänliga caféer i Stockholms innerstad, uppdelat per stadsdel — frukost, fika eller lunch, och var det faktiskt är gott om plats för barnvagnen.",
+            "h1": "Barnvagnsvänliga caféer i Stockholms innerstad",
+            "intro": [
+              "23 caféer i Stockholms innerstad där barnvagnen får plats, uppdelade per stadsdel. Några är klassiska konditorier, andra renodlade lekcaféer — vi har markerat vad varje ställe faktiskt serverar så du vet om det är läge för frukost, fika eller en enklare lunch."
+            ],
+            "areaOrder": [
+              "Norrmalm",
+              "Vasastan",
+              "Östermalm",
+              "Kungsholmen",
+              "Södermalm",
+              "Djurgården",
+              "Gamla stan"
+            ],
+            "venues": [
+              {
+                "name": "Vete-Katten",
+                "area": "Norrmalm",
+                "address": "Kungsgatan 55",
+                "note": "Stockholms mest klassiska konditori, sedan 1928.",
+                "meals": {
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://vetekatten.se/",
+                "linkLabel": "vetekatten.se"
+              },
+              {
+                "name": "Gretas",
+                "area": "Norrmalm",
+                "address": "Haymarket by Scandic",
+                "note": "Café i hotellets bottenplan. Lunch vardagar 11–14.30, brunch helger, café/fika alla dagar.",
+                "meals": {
+                  "fika": true,
+                  "lunch": true,
+                  "brunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.scandichotels.com/sv/hotell/haymarket-by-scandic/gretas",
+                "linkLabel": "Scandic Haymarket"
+              },
+              {
+                "name": "Art Bakery",
+                "area": "Norrmalm",
+                "address": "vid NK",
+                "note": "Gott om plats, stora toaletter med skötbord.",
+                "meals": {
+                  "fika": true,
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://artbakery.se/",
+                "linkLabel": "artbakery.se"
+              },
+              {
+                "name": "Mr. Cake",
+                "area": "Norrmalm",
+                "address": "Regeringsgatan",
+                "note": "Frukost, lunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://mrcake.se/sv/cakestartor",
+                "linkLabel": "mrcake.se"
+              },
+              {
+                "name": "Café Pascal",
+                "area": "Vasastan",
+                "address": "Norrtullsgatan",
+                "note": "Populärt bland föräldrar med barnvagn enligt flera guider. Frukost, lunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://www.instagram.com/cafepascal/",
+                "linkLabel": "Instagram"
+              },
+              {
+                "name": "Pom & Flora",
+                "area": "Vasastan",
+                "address": "Odengatan 39",
+                "note": "Frukost hela dagen.",
+                "meals": {
+                  "frukost": true,
+                  "brunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.pomochflora.se/",
+                "linkLabel": "pomochflora.se"
+              },
+              {
+                "name": "Saturnus",
+                "area": "Vasastan",
+                "address": "Eriksbergsgatan 6",
+                "note": "Stockholms största kanelbullar, söndagsbrunch.",
+                "meals": {
+                  "fika": true,
+                  "brunch": true
+                },
+                "ringAhead": false,
+                "link": "http://www.cafesaturnus.se/",
+                "linkLabel": "cafesaturnus.se"
+              },
+              {
+                "name": "Daily's Café & Bistro",
+                "area": "Vasastan",
+                "address": "Sankt Eriksgatan 80",
+                "note": "Brunch och lunch, omeletter, sallader och tartines.",
+                "meals": {
+                  "brunch": true,
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://dailysbistro.se/",
+                "linkLabel": "dailysbistro.se"
+              },
+              {
+                "name": "Fika & Fun Playcafe",
+                "area": "Vasastan",
+                "address": "Rådmansgatan 46",
+                "note": "Lekcafé med både lugn och aktiv lekyta, plus skötrum för blöjbyte och amning — troligen det mest barnvagns- och bebisanpassade stället på hela listan.",
+                "meals": {
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://fikafun.com/",
+                "linkLabel": "fikafun.com"
+              },
+              {
+                "name": "Frost Bageri",
+                "area": "Östermalm",
+                "address": "Östermalm",
+                "note": "Rymligt bageri med gott om sittplatser. Frukost och fika.",
+                "meals": {
+                  "frukost": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://thatsup.se/stockholm/bageri/frost-bageri-ostermalm",
+                "linkLabel": "Frost Bageri"
+              },
+              {
+                "name": "BodyBuddy",
+                "area": "Östermalm",
+                "address": "Jungfrugatan",
+                "note": "Smoothies, sallader. Frukost, lunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://www.bodybuddyfoods.com/jungfrugatan.html",
+                "linkLabel": "bodybuddyfoods.com"
+              },
+              {
+                "name": "Bullar & Bröd",
+                "area": "Östermalm",
+                "address": "Valhallavägen 65",
+                "note": "Stenugnsbageri, serverar frukost, brunch och lunch — även fika och take-away från bageridisken.",
+                "meals": {
+                  "frukost": true,
+                  "brunch": true,
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.bullarochbrod.se/",
+                "linkLabel": "bullarochbrod.se"
+              },
+              {
+                "name": "Mr. Cake",
+                "area": "Östermalm",
+                "address": "Rådmansgatan, hörnet Karlavägen",
+                "note": "Samma meny som Regeringsgatan-läget, men mer utrymme här — bättre med barnvagn. Frukost, lunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://mrcake.se/sv/cakestartor",
+                "linkLabel": "mrcake.se"
+              },
+              {
+                "name": "Wilmer Kaffebar",
+                "area": "Kungsholmen",
+                "address": "Bergsgatan 30",
+                "note": "Serverar frukost, lunch och takeaway, utöver fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://wilmercafe.se/",
+                "linkLabel": "wilmercafe.se"
+              },
+              {
+                "name": "Komet",
+                "area": "Kungsholmen",
+                "address": "Kungsholmsgatan 10",
+                "note": "Café och hantverksbageri, croissanter och frukostpaket.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://kometstockholm.com/",
+                "linkLabel": "kometstockholm.com"
+              },
+              {
+                "name": "Paulinas kök & kakeri",
+                "area": "Södermalm",
+                "address": "nära Ersta sjukhus",
+                "note": "Stor, rymlig frukostlokal med många låga bord. Frukost, lunch, helgbrunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "brunch": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://paulinaskokochbakeri.se/",
+                "linkLabel": "paulinaskokochbakeri.se"
+              },
+              {
+                "name": "Johan & Nyström",
+                "area": "Södermalm",
+                "address": "Swedenborgsgatan 7",
+                "note": "Kafferosteri med egen rostning, gatuservering vår–höst. Frukost, lunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://johanochnystrom.se/om-oss/butiker/swedenborgsgatan",
+                "linkLabel": "johanochnystrom.se"
+              },
+              {
+                "name": "Vurma",
+                "area": "Södermalm",
+                "address": "Hornstull",
+                "note": "Café, brunch och fika mitt i Hornstull. Frukost, lunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "fika": true,
+                  "brunch": true
+                },
+                "ringAhead": false,
+                "link": "https://cafevurma.se/",
+                "linkLabel": "cafevurma.se"
+              },
+              {
+                "name": "Rosendals Trädgårdskafé",
+                "area": "Djurgården",
+                "address": "Djurgården",
+                "note": "Växthus, stor terrass och fruktträdgård — bäst vår och sommar, trängre inomhus på vintern.",
+                "meals": {
+                  "fika": true,
+                  "lunch": true
+                },
+                "ringAhead": false,
+                "link": "https://www.rosendalstradgard.se/tradgardskafe/",
+                "linkLabel": "rosendalstradgard.se"
+              },
+              {
+                "name": "Blå Porten",
+                "area": "Djurgården",
+                "address": "Djurgårdsvägen 64",
+                "note": "Buffé-café på stor tomt med trädgård, uteservering vid fontänen. Lunch, fika och tidig middag (stänger kl 20).",
+                "meals": {
+                  "lunch": true,
+                  "fika": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://blaporten.com/",
+                "linkLabel": "blaporten.com"
+              },
+              {
+                "name": "Djurgårdsbrunn",
+                "area": "Djurgården",
+                "address": "Djurgården",
+                "note": "Drivs av Fabrique. Frukost och fika.",
+                "meals": {
+                  "frukost": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://www.instagram.com/djurgardsbrunn/",
+                "linkLabel": "Instagram"
+              },
+              {
+                "name": "Sundbergs Konditori",
+                "area": "Gamla stan",
+                "address": "Järntorget 83",
+                "note": "Sveriges äldsta konditori (1785) — rymligt inomhus med gott om bord, stor uteservering på sommaren. Frukost, lunch och fika.",
+                "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://www.instagram.com/sundbergskonditori/",
+                "linkLabel": "Instagram"
+              },
+              {
+                "name": "Fabrique",
+                "area": "Gamla stan",
+                "address": "Slussplan",
+                "note": "Bagerikedja, frukost och fika.",
+                "meals": {
+                  "frukost": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://fabrique.se/locations/",
+                "linkLabel": "fabrique.se"
+              }
+            ],
+            "published": "2026-10-12",
+            "updated": "2026-10-12",
+            "img": "photo-1699559510594-12624b72312c"
+          }
         ]
       },
       {

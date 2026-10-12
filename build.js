@@ -946,6 +946,76 @@ ${faqHtml(l.faq)}
   }
 }
 
+// Stadsguider per stad (t.ex. barnvagnsvänliga caféer/restauranger) —
+// data-driven via s.guider (array per stad i content.json, ett objekt per
+// guide). Återanvänder activity-card-mönstret från buildStader() istället
+// för att bygga nya CSS-klasser; "meta-chip"-raden visar vilka måltider
+// stället faktiskt serverar (bara bekräftade, inga gissningar), och
+// "activity-badge" återanvänds till "Ring innan"-flaggan där det gäller.
+function venueCard(v) {
+  const meals = v.meals || {};
+  const mealChips = [
+    meals.frukost ? '🥐 Frukost' : null,
+    meals.brunch ? '🍳 Brunch' : null,
+    meals.lunch ? '🍽️ Lunch' : null,
+    meals.middag ? '🌙 Middag' : null,
+    meals.fika ? '☕ Fika' : null,
+  ].filter(Boolean);
+  return `
+  <article class="activity-card">
+    <div class="activity-top">
+      <h3>${esc(v.name)}</h3>
+      ${v.ringAhead ? `<span class="activity-badge activity-badge-paid">Ring innan</span>` : ''}
+    </div>
+    <p class="activity-price">📍 ${esc(v.address)}${v.address && v.area ? ', ' : ''}${esc(v.area || '')}</p>
+    ${v.note ? `<p class="activity-desc">${esc(v.note)}</p>` : ''}
+    ${mealChips.length ? `<div class="activity-meta">${mealChips.map(c => `<span class="meta-chip">${c}</span>`).join('')}</div>` : ''}
+    ${v.link ? `<a class="venue-link" href="${esc(v.link)}" rel="nofollow noopener" target="_blank">${/instagram\.com/.test(v.link) ? '📷' : '🌐'} ${esc(v.linkLabel || 'hemsidan')}</a>` : ''}
+  </article>`;
+}
+
+function buildStadsGuider() {
+  for (const s of C.stader.cities) {
+    for (const g of (s.guider || [])) {
+      const url = `/stader/${s.slug}/${g.guideSlug}/`;
+      const bc = breadcrumbs([['Hem', '/'], ['Städer', '/stader/'], [s.name, `/stader/${s.slug}/`], [g.guideName, null]]);
+      const meta = { title: g.title, description: g.description, h1: g.h1, updated: g.updated, published: g.published };
+      const itemList = {
+        '@context': 'https://schema.org', '@type': 'ItemList',
+        name: `${g.guideName} i ${s.name}`, itemListElement: g.venues.map((v, i) => ({
+          '@type': 'ListItem', position: i + 1, name: v.name
+        }))
+      };
+      const areas = (g.areaOrder && g.areaOrder.length) ? g.areaOrder : [...new Set(g.venues.map(v => v.area))];
+      const others = (s.guider || []).filter(x => x.guideSlug !== g.guideSlug);
+      const inner = `
+<header class="page-header">
+  ${bc.html}
+  <p class="kicker">${g.emoji} Uppdaterad ${svDate(g.updated)}</p>
+  <h1>${esc(g.h1)}</h1>
+  <div class="page-intro">${paras(g.intro)}</div>
+</header>
+${media(g.img, g.emoji, 'page-hero', 1400)}
+${areas.map(area => {
+  const inArea = g.venues.filter(v => v.area === area);
+  if (!inArea.length) return '';
+  return `
+<h2 class="section-title">${esc(area)}</h2>
+<div class="activity-grid">
+  ${inArea.map(venueCard).join('')}
+</div>`;
+}).join('')}
+${faqHtml(g.faq)}
+<h2 class="section-title">Mer i ${esc(s.name)}</h2>
+<div class="related-links">
+  <a href="/stader/${s.slug}/">${s.emoji} Alla aktiviteter i ${esc(s.name)} →</a>
+  ${others.map(x => `<a href="/stader/${s.slug}/${x.guideSlug}/">${x.emoji} ${esc(x.guideName)}</a>`).join('\n  ')}
+</div>`;
+      write(`stader/${s.slug}/${g.guideSlug}/index.html`, page(url, meta, '/stader/', inner, [bc.jsonld, itemList], 'Article'));
+    }
+  }
+}
+
 /* ---------- ARTIKLAR ---------- */
 function buildArtiklarHub() {
   const m = C.pages.artiklar;
@@ -1325,6 +1395,7 @@ function buildMeta(destinations) {
   for (const s of C.stader.cities) {
     urls.push(`/stader/${s.slug}/`);
     for (const l of (s.lov || [])) urls.push(`/stader/${s.slug}/${l.lovSlug}/`);
+    for (const g of (s.guider || [])) urls.push(`/stader/${s.slug}/${g.guideSlug}/`);
   }
   urls.push('/artiklar/');
   for (const a of C.artiklar.list) urls.push(`/artiklar/${a.slug}/`);
@@ -1372,6 +1443,7 @@ buildTopplistor();
 buildStaderHub();
 buildStader();
 buildLovSidor();
+buildStadsGuider();
 buildArtiklarHub();
 buildArtiklar();
 function buildSmartPacklista() {
