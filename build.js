@@ -1118,6 +1118,18 @@ ${a.quicktips ? `
   <h2>${esc(a.quicktipsTitle || 'Snabbtips')}</h2>
   <ul class="checklist">${a.quicktips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
 </div>` : ''}
+${a.products && a.products.length ? `
+<div class="product-recs">
+  <h2>Produkter som kan hjälpa</h2>
+  <div class="product-mini-grid">
+    ${a.products.map(p => `
+    <div class="product-mini-card">
+      <h3>${esc(p.name)}</h3>
+      <p>${esc(p.note)}</p>
+      <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">🛒 Köp hos ${esc(p.store)} →</a>
+    </div>`).join('')}
+  </div>
+</div>` : ''}
 ${faqHtml(a.faq)}
 <h2 class="section-title">Fler artiklar</h2>
 <div class="related-links">

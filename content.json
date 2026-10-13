@@ -6780,6 +6780,96 @@
         ],
         "published": "2026-10-03",
         "updated": "2026-10-03"
+      },
+      {
+        "slug": "jetlag-med-barn",
+        "name": "Jetlag med barn",
+        "emoji": "🌙",
+        "img": "photo-1675648577009-c7058e061395",
+        "cardText": "Så ställer ni om barns och bebisars dygnsrytm snabbare – före, under och efter resan.",
+        "title": "Jetlag med barn och bebis | Res med Barn",
+        "description": "Så minskar ni jetlag hos barn och bebis på resan – ljus, tajming, melatonin och enkla knep före, under och efter tidszonsbytet.",
+        "h1": "Jetlag med barn och bebis – så ställer ni om kroppsklockan snabbare",
+        "kicker": "Före, under och efter resan",
+        "intro": [
+          "Jetlagen ni själva kan bita ihop och jobba igenom är en annan sak än ett barn som är pigg klockan tre på natten och vägrar somna klockan nio på kvällen – mitt i semestern. Tidsskillnader drabbar barn på ett annat sätt än vuxna: de har mindre kontroll över sin egen trötthet, ingen förmåga att dricka sig pigg med kaffe, och humöret följer sömnen rakt av.",
+          "Det går inte att undvika jetlag helt, men det går att göra den kortare och mildare. Det handlar mest om tre saker: ljus, tajming och att inte stressa de första dygnen."
+        ],
+        "sections": [
+          {
+            "h2": "Börja ställa om innan ni åker",
+            "text": "Vid större tidsskillnader (fler än 3–4 timmar) hjälper det att flytta läggtiden 20–30 minuter per dag i 3–4 dagar innan ni reser – tidigare om ni ska österut, senare om ni ska västerut. Det känns som petimeterarbete hemma i vardagsrummet, men det gör att kroppsklockan redan är på väg åt rätt håll innan ni ens checkat in bagaget."
+          },
+          {
+            "h2": "Jetlag hos bebisar – ofta mildare än du tror",
+            "text": "De minsta slipper ofta undan jetlag nästan helt. Innan ungefär tre månaders ålder har bebisar ingen etablerad dygnsrytm än – de skiljer egentligen inte på dag och natt, utan styrs mest av mat och närhet. Det gör dem lättpåverkade av nya ljus- och matrutiner, men det är inte samma sak som att deras inre klocka \"ställer om\" som hos ett äldre barn – de följer bara de nya signalerna rakt av. Från runt tre månader börjar dygnsrytmen sätta sig, och då kan jetlag märkas tydligare: tidiga uppvaknanden och svårighet att somna på kvällen, ungefär som hos äldre barn. Vid resor på tre dagar eller kortare är det ofta enklast att hålla bebisen på hemtid istället för att försöka ställa om alls. Undvik antihistaminer (till exempel vissa lugnande receptfria preparat) mot jetlag hos bebisar – de kan ge motsatt effekt och göra barnet överaktivt istället för sömnigt. Melatonin är ännu svårare att dosera rätt för små bebisar än för äldre barn, så det är ett ämne att ta upp med barnläkaren, inte att testa själva."
+          },
+          {
+            "h2": "Ställ om till den nya tiden direkt – inte gradvis",
+            "text": "Så fort ni är framme (gärna redan på planet om det går), lägg om måltider och sömn efter destinationens klocka istället för hemmaklockan. Ett barn som \"sover enligt hemtid\" mitt på dagen på resmålet bara skjuter upp hela anpassningen. Vakna med morgonen och håll er uppe till kvällen på den nya platsen, även om det känns tufft dag ett."
+          },
+          {
+            "h2": "Morgonljus är den starkaste signalen till kroppsklockan",
+            "text": "Dagsljus är det som ställer om den inre klockan snabbast. Har ni rest österut (till exempel från Sverige till Thailand) hjälper morgonljus utomhus att skynda på anpassningen. Har ni rest västerut hjälper eftermiddags- och kvällsljus istället. Dra isär gardinerna direkt på morgonen, ta en kort promenad innan frukost, och dämpa belysningen hemma (eller på hotellrummet) en stund innan läggdags på kvällen."
+          },
+          {
+            "h2": "Håll tupplurar korta de första dagarna",
+            "text": "En lång eftermiddagslur känns som en skänk från ovan när alla är slut – men ett barn som sover tre timmar mitt på dagen har svårt att somna på kvällen, och hela växlingen tar längre tid. Låt korta tupplurar (20–40 minuter) ske, väck barnet innan det blir en riktig sovmorgon mitt på dagen."
+          },
+          {
+            "h2": "Räkna med några tunga dygn – och planera lätt",
+            "text": "Vid stora tidszonsbyten brukar det ta ungefär 3–4 dygn innan kroppen är i fas, och de första nätterna kan bjuda på tidiga uppvaknanden eller sena insomningar oavsett vad ni gör. Boka inte in den stora utflykten eller det långa restaurangbesöket dag ett eller två – ha hellre lite is i magen och låt planen vara flexibel. Samma sovrutin som hemma (samma ordning, samma gosedjur, samma sagoläsning) gör mer för tryggheten än att jaga en exakt klockslag."
+          },
+          {
+            "h2": "Melatonin? Fråga barnets läkare",
+            "text": "Det är inte ovanligt att föräldrar funderar på melatonin mot jetlag, men barnläkarkällor är överens om att det inte är första steget – ljus, rutiner och tajming gör mer skillnad, och de flesta barn ställer om själva inom några dygn utan tillskott. Ska ni ändå använda det: prata med barnets läkare innan ni reser, inte på plats, och förvara det utom räckhåll hemma och på resan. Gummitabletter ser ut som godis och förväxlas lätt."
+          }
+        ],
+        "quicktipsTitle": "Snabbtips att ta med",
+        "quicktips": [
+          "Flytta läggtiden 20–30 min/dag några dagar innan ni reser vid stora tidsskillnader",
+          "Ställ om till lokal tid direkt när ni landar – inte gradvis",
+          "Morgonljus om ni rest österut, eftermiddagsljus om ni rest västerut",
+          "Håll dagtupplurar korta (20–40 min) de första dagarna",
+          "Planera inga stora utflykter dag ett eller två",
+          "Prata med barnläkaren innan ni ger melatonin – och förvara den utom räckhåll"
+        ],
+        "faq": [
+          {
+            "q": "Hur lång tid tar det för ett barn att anpassa sig till en ny tidszon?",
+            "a": "Det varierar med hur stor tidsskillnaden är, men vid större tidszonsbyten räknar barnsjukhus ofta med omkring 3–4 dygn innan kroppen är i fas. Det går snabbare om ni följer den nya klockan direkt istället för att dröja kvar vid hemmatiden."
+          },
+          {
+            "q": "Är melatonin bra mot jetlag för barn?",
+            "a": "Flera barnläkarkällor pekar på att beteendeförändringar – ljus, rutiner, tajming – gör mer nytta än melatonin, och att det inte är något att ge utan att först ha pratat med barnets läkare. Väljer ni att använda det, förvara det utom räckhåll: gummitabletter förväxlas lätt med godis."
+          },
+          {
+            "q": "Får bebisar jetlag?",
+            "a": "Mindre än man kan tro. Innan ungefär tre månaders ålder har bebisar ingen etablerad dygnsrytm, så de anpassar sig oftast snabbt efter nya mat- och ljusrutiner istället för att visa tydlig jetlag. Från runt tre månader, när dygnsrytmen börjar sätta sig, kan jetlag märkas mer – ungefär som hos äldre barn, med tidiga uppvaknanden och svårt att somna."
+          }
+        ],
+        "published": "2026-10-13",
+        "updated": "2026-10-13",
+        "products": [
+          {
+            "name": "Moonboon White Noise Speaker",
+            "store": "Babysam",
+            "note": "En dedikerad vit brus-högtalare i lugn, neutral design – bara på/av och volym, inget appkrångel mitt i natten på hotellrummet.",
+            "url": "https://to.babyworld.se/t/t?a=1945556825&as=2110114461&t=2&tk=1&cupa_sku=37f0aad8-7538-45f7-8b91-be82387188d8&fid=2532&url=https://www.babysam.se/moonboon-white-noise-speaker-cream-white-onesize"
+          },
+          {
+            "name": "Zazu Suzy",
+            "store": "Babysam",
+            "note": "Bärbar sovhjälp i gosedjursform med vitt brus och milt ljus – går att klämma fast i resesängen eller barnvagnen.",
+            "url": "https://to.babyworld.se/t/t?a=1945556825&as=2110114461&t=2&tk=1&cupa_sku=1047b563-f206-4151-b7ed-42d0b35fecc4&fid=2532&url=https://www.babysam.se/suzy-sovhjaelp-white-onesize"
+          },
+          {
+            "name": "Fisher-Price Soothe & Snuggle",
+            "store": "Jollyroom",
+            "note": "Mjukisdjur med inbyggt vitt brus och timer för automatisk avstängning – finns i flera djurvarianter att välja mellan.",
+            "url": "https://dot.jollyroom.se/t/t?a=1487384677&as=2110114461&t=2&tk=1&cupa_sku=10295652&fid=111&url=https://www.jollyroom.se/leksaker/dockor-gosedjur/gosedjur/fisher-price-gosedjur-med-ljud"
+          }
+        ]
       }
     ]
   }
