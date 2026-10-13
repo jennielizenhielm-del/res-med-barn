@@ -4833,7 +4833,8 @@
                 "address": "Kungsgatan 55",
                 "note": "Stockholms mest klassiska konditori, sedan 1928.",
                 "meals": {
-                  "fika": true
+                  "fika": true,
+                  "lunch": true
                 },
                 "ringAhead": false,
                 "link": "https://vetekatten.se/",
@@ -4914,7 +4915,8 @@
                 "note": "Stockholms största kanelbullar, söndagsbrunch.",
                 "meals": {
                   "fika": true,
-                  "brunch": true
+                  "brunch": true,
+                  "lunch": true
                 },
                 "ringAhead": false,
                 "link": "http://www.cafesaturnus.se/",
@@ -4937,8 +4939,11 @@
                 "name": "Fika & Fun Playcafe",
                 "area": "Vasastan",
                 "address": "Rådmansgatan 46",
-                "note": "Lekcafé med både lugn och aktiv lekyta, plus skötrum för blöjbyte och amning — troligen det mest barnvagns- och bebisanpassade stället på hela listan.",
+                "note": "Lekcafé med både lugn och aktiv lekyta, plus skötrum för blöjbyte och amning — troligen det mest barnvagns- och bebisanpassade stället på hela listan. Frukost, lunch, tidig middag och fika.",
                 "meals": {
+                  "frukost": true,
+                  "lunch": true,
+                  "middag": true,
                   "fika": true
                 },
                 "ringAhead": false,
@@ -5007,7 +5012,8 @@
                 "note": "Serverar frukost, lunch och takeaway, utöver fika.",
                 "meals": {
                   "frukost": true,
-                  "lunch": true
+                  "lunch": true,
+                  "fika": true
                 },
                 "ringAhead": false,
                 "link": "https://wilmercafe.se/",
@@ -5020,7 +5026,8 @@
                 "note": "Café och hantverksbageri, croissanter och frukostpaket.",
                 "meals": {
                   "frukost": true,
-                  "lunch": true
+                  "lunch": true,
+                  "fika": true
                 },
                 "ringAhead": false,
                 "link": "https://kometstockholm.com/",
@@ -5101,9 +5108,10 @@
                 "name": "Djurgårdsbrunn",
                 "area": "Djurgården",
                 "address": "Djurgården",
-                "note": "Drivs av Fabrique. Frukost och fika.",
+                "note": "Drivs av Fabrique. Frukost, lunch och fika.",
                 "meals": {
                   "frukost": true,
+                  "lunch": true,
                   "fika": true
                 },
                 "ringAhead": false,
