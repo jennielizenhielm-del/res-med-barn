@@ -1342,6 +1342,24 @@ function medgivandeNoteForDestination(d) {
   </div>`;
 }
 
+function subPlaces(title, items) {
+  if (!items || !items.length) return '';
+  return `
+<h2 class="section-title">${esc(title)}</h2>
+<div class="subplaces">
+  ${items.map(it => `
+  <div class="subplace">${it.img ? `
+    <div class="subplace-media" data-emoji="📍">
+      <img src="https://images.unsplash.com/${it.img}?q=80&w=700&auto=format&fit=crop" alt="${esc(it.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+    </div>` : ''}
+    <div class="subplace-body">
+      <h3>${esc(it.name)}${it.area ? ` <span class="subplace-area">— ${esc(it.area)}</span>` : ''}</h3>
+      <p>${esc(it.text)}</p>
+    </div>
+  </div>`).join('')}
+</div>`;
+}
+
 function buildResmal() {
   const DESTINATIONS = loadDestinations();
 
@@ -1394,6 +1412,10 @@ function buildResmal() {
   <p class="detail-desc">${esc(d.desc)}</p>
   <h2 class="section-title">Missa inte</h2>
   <ul class="highlights">${d.highlights.map(h => `<li>${esc(h)}</li>`).join('')}</ul>
+  ${subPlaces('Olika delar av ' + d.name, d.areas)}
+  ${subPlaces('Toppaktiviteter', d.topActivities)}
+  ${subPlaces('Stränder', d.beaches)}
+  ${subPlaces('Populära restauranger', d.restaurants)}
   <div class="detail-tip">
     <div class="t-label">Förälder till förälder</div>
     <p>${esc(d.tip)}</p>
