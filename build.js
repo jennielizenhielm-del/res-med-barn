@@ -504,6 +504,7 @@ function buildHome() {
     .replace('<!--FEATURED_GRID_PLACEHOLDER-->', featured.map(featCardSSR).join(''))
     .replace('<!--LATEST_GRID_PLACEHOLDER-->', latest.map(recentCardSSR).join(''))
     .replace('<!--DEST_GRID_PLACEHOLDER-->', DESTINATIONS.map(destCardSSR).join(''))
+    .replace('<!--DEST_COUNT_PLACEHOLDER-->', String(DESTINATIONS.length))
     .replace('</head>', `<link rel="canonical" href="${DOMAIN}/">
 <meta property="og:title" content="${esc(m.title)}">
 <meta property="og:description" content="${esc(m.description)}">
