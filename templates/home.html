@@ -1848,7 +1848,7 @@ const DESTINATIONS = [
   cat: "beach",
   catLabel: "Strand & Sol",
   emoji: "🏖️",
-  img: "photo-1734639403228-476663647bcf",
+  img: "photo-1672264430465-781cd9154896",
   desc: "Glöm partystämpeln. Mallorcas norra del är rent familjemagiskt — stenbyar, turkost vatten och barnmenyer på varje restaurang. Serra de Tramuntana bjuder dessutom på vandringar som funkar med bärstol.",
   age: "0–15 år",
   ageMin: 0,
@@ -1861,7 +1861,36 @@ const DESTINATIONS = [
   highlights: ["Port de Pollença — lugn, långgrund familjebukt", "Trätåget till Sóller — en attraktion i sig", "Grottorna i Drach — räddaren när regnet kommer"],
   tip: "Norra delen är familjedelen. Undvik Magaluf, punkt.",
   bookingUrl: "https://adtr.co/pxfdic",
-  semboUrl: "https://adtr.co/3trbre"
+  semboUrl: "https://adtr.co/3trbre",
+  areas: [
+    { name: "Norra Mallorca — Alcúdia & Pollença", text: "Den klassiska familjedelen. Alcúdia-viken är grund och sandig i flera kilometer, och den medeltida muromgärdade stadskärnan är lagom liten att vandra runt med barnvagn. Cap de Formentor, längst ut på bergsudden, är en av Mallorcas mest fotograferade vyer — bara bilresan dit känns som en egen utflykt." },
+    { name: "Tramuntanabergen — Sóller, Valldemossa & Deià", img: "photo-1724446177636-3e21ecc23ca1", text: "Bergsbyarna i nordväst är gjorda för en dagsutflykt, inte en hel vistelse med små barn — smala gränder, trappor och branta backar. Trätåget från Palma till Sóller (drygt en timme, öppningsbara fönster, hundra år gammalt) är i sig värt resan och funkar fint även med en fyraåring i knät." },
+    { name: "Östra Mallorca — Cala Millor & Porto Cristo", text: "Cala Millor har en av öns bredaste och mest barnvänliga stränder, med en lång strandpromenad full av restauranger. Porto Cristo, en kort bit söderut, är basen för Grottorna i Drach — öns mest populära regndagsaktivitet." },
+    { name: "Sydvästra Mallorca — Palma Nova & Santa Ponsa", text: "Hit hör Marineland och Katmandu Park, båda bra för barn, men området ligger nära partytäta Magaluf. Boka boende specifikt i Palma Nova eller Santa Ponsa, inte \"sydvästkusten\" i största allmänhet, för att undvika att hamna mitt i festandet." },
+    { name: "Söder & sydöstra Mallorca — Es Trenc & Mondragó", text: "Öns lugnaste stränder, utan höghotell i bakgrunden. Es Trenc är två kilometer vit sand och grundare vatten än de flesta andra stränderna, men har färre restauranger och faciliteter nära till hands — packa eget fika om ni stannar hela dagen." }
+  ],
+  topActivities: [
+    { name: "Trätåget till Sóller", text: "Hundra år gammalt trätåg från Palma genom bergen till Sóller, med öppningsbara fönster och utsikt som gör att ingen i baksätet frågar \"är vi snart framme\". Ta gärna spårvagnen vidare ner till hamnen när ni är framme." },
+    { name: "Grottorna i Drach (Cuevas del Drach)", text: "Underjordiska grottor med en av Europas största underjordiska sjöar, avslutas med en kort konsert ombord på båtar som glider fram i mörkret. Svalt och skuggigt — en räddare när det är för varmt för stranden." },
+    { name: "Palma Aquarium", text: "Över 8 000 djur, och hajbassängen räknas som en av Europas djupaste på 8,5 meter. De äldre barnen kan boka en guidad dykning med hajarna mot en extra avgift." },
+    { name: "Hidropark, Port d'Alcúdia", text: "Norra Mallorcas största vattenpark, med rutschbanor för olika åldrar (1–17 år), 54-håls minigolf och studsmattor. De flesta hotell i området har egen bussförbindelse dit." },
+    { name: "Marineland, Palma Nova", text: "Spaniens äldsta marina park, med shower på delfiner, sjölejon och fåglar samt en koloni Humboldtpingviner. Mot extra avgift kan barn över 7 år möta delfinerna på nära håll." },
+    { name: "Cap de Formentor", text: "Den smala bergsudden längst i norr, med en av Medelhavets mest dramatiska utsikter vid fyren längst ut. Vägen dit är smal och kurvig — ingen aktivitet i sig, men väl värd bilturen med barn som tål en halvtimme i bilen." }
+  ],
+  beaches: [
+    { name: "Playa de Muro", area: "Norra Mallorca", text: "Fin, mjuk sand och grunt, lugnt vatten mellan Alcúdia och Can Picafort, med gott om faciliteter och Blå flagg. En av öns mest barnvänliga stränder rakt av." },
+    { name: "Es Trenc", area: "Söder", text: "Två kilometer vit sand och grundare vatten än de flesta — men betydligt färre restauranger och solstolar att hyra, så packa med fikat själva om ni stannar länge." },
+    { name: "Cala Agulla", area: "Nordost, nära Capdepera", text: "Guldbrun sand i ett naturreservat med klart, grunt vatten, livräddare och stranduthyrning. Ligger en bit utanför de stora resortorterna." },
+    { name: "Cala Mondragó", area: "Söder", img: "photo-1621871281120-5f0b7a217024", text: "Mjuk sand, dyner och grundare vatten i en naturpark, plus klippvikar med klart vatten för snorkling och glasbottenbåtar för de som inte vill blöta håret." },
+    { name: "Cala Millor", area: "Östra Mallorca", text: "Vit sand och ljust, grunt vatten längs en av öns bredaste strandpromenader, med gott om restauranger och butiker precis vid stranden." }
+  ],
+  restaurants: [
+    { name: "Il Chiringo", area: "Palmanova", text: "Öppet året runt, bred strand för bollspel, pinjeskog, lekplats och en ovanligt generös barnmeny." },
+    { name: "Patiki Beach", area: "Port de Sóller", text: "Klippdammar där barnen kan fånga krabbor, en lekyta i tiki-stil för de minsta och en enkel pastarätt på barnmenyn." },
+    { name: "AMÉ", area: "Cala Millor", text: "Sushi, fisk och vegetariskt för de vuxna, barnmeny för under tio år och en lekplats precis vid den skuggiga terrassen." },
+    { name: "Ponderosa Beach", area: "Playa de Muro", text: "Risrätter och färsk fisk, med en barnmeny som byter ut nuggets mot fisk, och grunt vatten att simma i precis utanför." },
+    { name: "Berganta Beach Club", area: "Playa de Muro", text: "Ligger i den lugnare, skogsklädda änden av stranden. Barnen får burgare, pasta och klyftpotatis, plus en hängande soffa att svinga i." }
+  ]
 },
 { updated: "2026-09-23", published: "2026-09-23",
   name: "Algarve",
