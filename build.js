@@ -1350,7 +1350,7 @@ function subPlaces(title, items) {
   ${items.map(it => `
   <div class="subplace">${it.img ? `
     <div class="subplace-media" data-emoji="📍">
-      <img src="https://images.unsplash.com/${it.img}?q=80&w=700&auto=format&fit=crop" alt="${esc(it.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+      <img src="https://images.unsplash.com/${it.img}?q=80&w=900&auto=format&fit=crop" alt="${esc(it.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
     </div>` : ''}
     <div class="subplace-body">
       <h3>${esc(it.name)}${it.area ? ` <span class="subplace-area">— ${esc(it.area)}</span>` : ''}</h3>
