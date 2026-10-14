@@ -1280,7 +1280,7 @@ h1 {
 .table-note { max-width: 720px; margin: 0.75rem auto 1.75rem; color: var(--text-muted); font-size: 0.82rem; line-height: 1.5; }
 
 .status-grid { max-width: 720px; margin: 0 auto 0.5rem; display: flex; flex-direction: column; gap: 0.6rem; }
-.status-card { background: var(--bg-alt); border-radius: var(--radius-lg); padding: 1rem 1.1rem; }
+.status-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.1rem; }
 .status-card-name { font-size: 0.95rem; font-weight: 600; color: var(--text); margin-bottom: 0.65rem; }
 .status-card-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; }
 .status-chip { border-radius: 8px; padding: 0.55rem 0.4rem; text-align: center; }
