@@ -1820,1173 +1820,2760 @@
 const IMG = id => `https://images.unsplash.com/${id}?q=80&w=900&auto=format&fit=crop`;
 
 const DESTINATIONS = [
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Kreta",
-  country: "Grekland",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1507525428034-b723cf961d3e",
-  desc: "Kreta har allt en barnfamilj kan önska sig: grunda, kristallklara vikar som Elafonissi, fantastisk mat och antika ruiner som får till och med treåringar att häpna. Vi åkte hit med barnen första gången och har inte hittat något bättre sedan dess.",
-  age: "0–12 år",
-  ageMin: 0,
-  ageMax: 12,
-  season: "Maj–Okt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 4 h",
-  rating: 4.8,
-  highlights: ["Elafonissi — rosa sand och knädjupt vatten i hundra meter", "Knossos palats — grekisk mytologi som fastnar även på småbarn", "Barnvänliga tavernor precis överallt, med grillad halloumi som räddar varje middag"],
-  tip: "Hyr bil. Bussarna går sällan och de bästa stränderna ligger utspridda över hela ön.",
-  bookingUrl: "https://adtr.co/yojg94",
-  semboUrl: "https://adtr.co/ocn75t",
-  featured: true
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Mallorca",
-  country: "Spanien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1672264430465-781cd9154896",
-  desc: "Glöm partystämpeln. Mallorcas norra del är rent familjemagiskt — stenbyar, turkost vatten och barnmenyer på varje restaurang. Serra de Tramuntana bjuder dessutom på vandringar som funkar med bärstol.",
-  age: "0–15 år",
-  ageMin: 0,
-  ageMax: 15,
-  season: "Apr–Okt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 3,5 h",
-  rating: 4.7,
-  highlights: ["Port de Pollença — lugn, långgrund familjebukt", "Trätåget till Sóller — en attraktion i sig", "Grottorna i Drach — räddaren när regnet kommer"],
-  tip: "Norra delen är familjedelen. Undvik Magaluf, punkt.",
-  bookingUrl: "https://adtr.co/pxfdic",
-  semboUrl: "https://adtr.co/3trbre",
-  areas: [
-    { name: "Norra Mallorca — Alcúdia & Pollença", text: "Den klassiska familjedelen. Alcúdia-viken är grund och sandig i flera kilometer, och den medeltida muromgärdade stadskärnan är lagom liten att vandra runt med barnvagn. Cap de Formentor, längst ut på bergsudden, är en av Mallorcas mest fotograferade vyer — bara bilresan dit känns som en egen utflykt." },
-    { name: "Tramuntanabergen — Sóller, Valldemossa & Deià", img: "photo-1724446177636-3e21ecc23ca1", text: "Bergsbyarna i nordväst är gjorda för en dagsutflykt, inte en hel vistelse med små barn — smala gränder, trappor och branta backar. Trätåget från Palma till Sóller (drygt en timme, öppningsbara fönster, hundra år gammalt) är i sig värt resan och funkar fint även med en fyraåring i knät." },
-    { name: "Östra Mallorca — Cala Millor & Porto Cristo", text: "Cala Millor har en av öns bredaste och mest barnvänliga stränder, med en lång strandpromenad full av restauranger. Porto Cristo, en kort bit söderut, är basen för Grottorna i Drach — öns mest populära regndagsaktivitet." },
-    { name: "Sydvästra Mallorca — Palma Nova & Santa Ponsa", text: "Hit hör Marineland och Katmandu Park, båda bra för barn, men området ligger nära partytäta Magaluf. Boka boende specifikt i Palma Nova eller Santa Ponsa, inte \"sydvästkusten\" i största allmänhet, för att undvika att hamna mitt i festandet." },
-    { name: "Söder & sydöstra Mallorca — Es Trenc & Mondragó", text: "Öns lugnaste stränder, utan höghotell i bakgrunden. Es Trenc är två kilometer vit sand och grundare vatten än de flesta andra stränderna, men har färre restauranger och faciliteter nära till hands — packa eget fika om ni stannar hela dagen." }
-  ],
-  topActivities: [
-    { name: "Trätåget till Sóller", text: "Hundra år gammalt trätåg från Palma genom bergen till Sóller, med öppningsbara fönster och utsikt som gör att ingen i baksätet frågar \"är vi snart framme\". Ta gärna spårvagnen vidare ner till hamnen när ni är framme." },
-    { name: "Grottorna i Drach (Cuevas del Drach)", text: "Underjordiska grottor med en av Europas största underjordiska sjöar, avslutas med en kort konsert ombord på båtar som glider fram i mörkret. Svalt och skuggigt — en räddare när det är för varmt för stranden." },
-    { name: "Palma Aquarium", text: "Över 8 000 djur, och hajbassängen räknas som en av Europas djupaste på 8,5 meter. De äldre barnen kan boka en guidad dykning med hajarna mot en extra avgift." },
-    { name: "Hidropark, Port d'Alcúdia", text: "Norra Mallorcas största vattenpark, med rutschbanor för olika åldrar (1–17 år), 54-håls minigolf och studsmattor. De flesta hotell i området har egen bussförbindelse dit." },
-    { name: "Marineland, Palma Nova", text: "Spaniens äldsta marina park, med shower på delfiner, sjölejon och fåglar samt en koloni Humboldtpingviner. Mot extra avgift kan barn över 7 år möta delfinerna på nära håll." },
-    { name: "Cap de Formentor", text: "Den smala bergsudden längst i norr, med en av Medelhavets mest dramatiska utsikter vid fyren längst ut. Vägen dit är smal och kurvig — ingen aktivitet i sig, men väl värd bilturen med barn som tål en halvtimme i bilen." }
-  ],
-  beaches: [
-    { name: "Playa de Muro", area: "Norra Mallorca", text: "Fin, mjuk sand och grunt, lugnt vatten mellan Alcúdia och Can Picafort, med gott om faciliteter och Blå flagg. En av öns mest barnvänliga stränder rakt av." },
-    { name: "Es Trenc", area: "Söder", text: "Två kilometer vit sand och grundare vatten än de flesta — men betydligt färre restauranger och solstolar att hyra, så packa med fikat själva om ni stannar länge." },
-    { name: "Cala Agulla", area: "Nordost, nära Capdepera", text: "Guldbrun sand i ett naturreservat med klart, grunt vatten, livräddare och stranduthyrning. Ligger en bit utanför de stora resortorterna." },
-    { name: "Cala Mondragó", area: "Söder", img: "photo-1621871281120-5f0b7a217024", text: "Mjuk sand, dyner och grundare vatten i en naturpark, plus klippvikar med klart vatten för snorkling och glasbottenbåtar för de som inte vill blöta håret." },
-    { name: "Cala Millor", area: "Östra Mallorca", text: "Vit sand och ljust, grunt vatten längs en av öns bredaste strandpromenader, med gott om restauranger och butiker precis vid stranden." }
-  ],
-  restaurants: [
-    { name: "Il Chiringo", area: "Palmanova", text: "Öppet året runt, bred strand för bollspel, pinjeskog, lekplats och en ovanligt generös barnmeny." },
-    { name: "Patiki Beach", area: "Port de Sóller", text: "Klippdammar där barnen kan fånga krabbor, en lekyta i tiki-stil för de minsta och en enkel pastarätt på barnmenyn." },
-    { name: "AMÉ", area: "Cala Millor", text: "Sushi, fisk och vegetariskt för de vuxna, barnmeny för under tio år och en lekplats precis vid den skuggiga terrassen." },
-    { name: "Ponderosa Beach", area: "Playa de Muro", text: "Risrätter och färsk fisk, med en barnmeny som byter ut nuggets mot fisk, och grunt vatten att simma i precis utanför." },
-    { name: "Berganta Beach Club", area: "Playa de Muro", text: "Ligger i den lugnare, skogsklädda änden av stranden. Barnen får burgare, pasta och klyftpotatis, plus en hängande soffa att svinga i." }
-  ]
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Algarve",
-  country: "Portugal",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1621971913709-377f53807c6a",
-  desc: "Enorma sandstränder, grottor att utforska med båt och fish & chips för halva priset mot Sverige. Albufeira har vattenpark, Lagos har charm. Perfekt mix av avkoppling och äventyr.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Maj–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 4,5 h",
-  rating: 4.6,
-  highlights: ["Båttur till Benagil-grottan — barnen pratar om den i veckor", "Zoomarine i Albufeira — delfiner och vattenland i ett", "Praia da Marinha — stranden från alla vykort"],
-  tip: "Atlanten är kallare än ni tror. Välj lagunstränder som Praia de Alvor för de minsta.",
-  bookingUrl: "https://adtr.co/ieyxji",
-  semboUrl: "https://adtr.co/6kq2uh"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Sardinien",
-  country: "Italien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1544551763-46a013bb70d5",
-  desc: "Karibiskt vatten fast fyra timmar från Arlanda. Costa Smeralda är dyrt men resten av ön är överkomligt. Stranden La Pelosa vid Stintino? Barnen vägrade åka därifrån.",
-  age: "0–12 år",
-  ageMin: 0,
-  ageMax: 12,
-  season: "Jun–Sep",
-  budget: "€€–€€€",
-  b: 2.5,
-  flight: "ca 4 h",
-  rating: 4.7,
-  highlights: ["La Pelosa — Karibien på europeisk mark", "Neptungrottan vid Alghero — trappan ner är ett äventyr", "Italiensk gelato. Varje dag. Utan dåligt samvete."],
-  tip: "Boka boende tidigt — ön säljer slut i juli. Juni och september är dessutom billigare och svalare.",
-  bookingUrl: "https://adtr.co/dsj2q4",
-  semboUrl: "https://adtr.co/vx537y"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Koh Lanta",
-  country: "Thailand",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1528181304800-259b08848526",
-  desc: "Thailands lugna familjeö. Inga fullmånefester, bara långgrunda stränder, billiga thairätter och barnvänliga resorts. Lång resa dit men varje timme värd det.",
-  age: "2–15 år",
-  ageMin: 2,
-  ageMax: 15,
-  season: "Nov–Mar",
-  budget: "€€",
-  b: 2,
-  flight: "ca 13 h",
-  rating: 4.6,
-  highlights: ["Long Beach — långgrunt i flera kilometer", "Snorkelutflykt till Koh Rok — akvarium på riktigt", "Nattmarknaden i Saladan — mango sticky rice till allt"],
-  tip: "Ta nattflyget. Barnen sover bort halva resan och ni landar med jetlaggen halvt avklarad.",
-  bookingUrl: "https://adtr.co/ehlcji",
-  semboUrl: "https://adtr.co/3nh0x1"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Disneyland Paris",
-  country: "Frankrike",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🎢",
-  img: "photo-1597466599360-3b9775841aec",
-  desc: "Det magiska som Disney levererar är svårt att matcha. Barnen glömmer att de har jetlag redan vid entrén. Boka hotell i parken om du kan — morgonöppningen före alla andra är guld värd.",
-  age: "3–12 år",
-  ageMin: 3,
-  ageMax: 12,
-  season: "Mar–Jun, Sep",
-  budget: "€€€",
-  b: 3,
-  flight: "ca 2,5 h",
-  rating: 4.5,
-  highlights: ["Extra Magic Time — parken nästan tom, bara för hotellgäster", "Paraden — bättre än ni minns den", "Avengers Campus och Star Wars för de äldre barnen"],
-  tip: "Ladda ner appen och köp Premier Access till två–tre åk. Värt varenda euro.",
-  bookingUrl: "https://www.disneylandparis.com/",
-  semboUrl: "https://adtr.co/0km3it",
-  prisinfo: "Priset varierar kraftigt med datum och förbokning — kolla alltid aktuellt pris på officiella sidan innan ni bokar, det kan skilja hundratals kronor mellan lågsäsong och skollov.",
-  featured: true
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Legoland Billund",
-  country: "Danmark",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🎢",
-  img: "photo-1587654780291-39c9404d746b",
-  desc: "Klassikern. Miniland imponerar på alla åldrar och de nya åkattraktionerna har lyft parken rejält. Kombinera med Lalandia bredvid för en komplett vecka med badland och Lego.",
-  age: "2–12 år",
-  ageMin: 2,
-  ageMax: 12,
-  season: "Maj–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 1,5 h",
-  rating: 4.5,
-  highlights: ["Miniland — 20 miljoner bitar, vuxna fastnar längst", "Lalandia vägg i vägg — Skandinaviens största badland", "Peppa Pig Park för de allra minsta"],
-  tip: "Två dagar i parken räcker. Lägg badlandsdagen i mitten så orkar alla.",
-  bookingUrl: "https://www.legoland.dk/",
-  semboUrl: "https://adtr.co/nmw8xx",
-  prisinfo: "Dagsbiljett från ca 349–498 DKK. Säsongskort (AWESOME) från 849 DKK — lönar sig redan efter två besök på en säsong."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Europa-Park",
-  country: "Tyskland",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🎢",
-  img: "photo-1560713781-d00f6c18f388",
-  desc: "Europas bästa nöjespark enligt i princip alla rankingar, och efter ett besök förstår man varför. Enormt utbud för alla åldrar, från karuseller till berg-och-dalbanor som slår Liseberg.",
-  age: "3–16 år",
-  ageMin: 3,
-  ageMax: 16,
-  season: "Apr–Okt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 2 h + bil",
-  rating: 4.8,
-  highlights: ["15 temaområden byggda som europeiska länder", "Wodan — träbanan som toppar entusiasternas listor", "Rulantica — vattenvärlden intill, värd en egen dag"],
-  tip: "Bo på något av parkens hotell. Morgonköerna är hälften så långa som mitt på dagen.",
-  bookingUrl: "https://www.europapark.de/",
-  semboUrl: "https://adtr.co/j55klt",
-  prisinfo: "Priset varierar med datum och förbokning — Europa-Park använder dynamisk prissättning, så boka i god tid för bästa pris."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Liseberg",
-  country: "Göteborg, Sverige",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🎢",
-  img: "photo-1506461883276-594a12b11cf3",
-  desc: "Sverigesvängen. Kaniner för de små, Helix för de stora, och atmosfären slår de flesta europeiska parkerna. Jul på Liseberg är dessutom en helt egen upplevelse.",
-  age: "2–16 år",
-  ageMin: 2,
-  ageMax: 16,
-  season: "Jun–Aug, Dec",
-  budget: "€",
-  b: 1,
-  flight: "tåg/bil",
-  rating: 4.4,
-  highlights: ["Helix i mörkret — sista åket innan stängning", "Kaninlandet — perfekt skalat för småbarn", "Jul på Liseberg — en egen årstid"],
-  tip: "Åk på vardagar utanför industrisemestern. Halva köerna, samma park.",
-  bookingUrl: "https://www.liseberg.se/",
-  semboUrl: "https://adtr.co/46cpdb",
-  prisinfo: "Entré + åkband ca 625 kr vuxen, 410 kr barn (2025 års priser). Säsongskort finns och lönar sig ofta redan efter 2–3 besök."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Gröna Lund",
-  country: "Stockholm, Sverige",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🎢",
-  img: "photo-1686084915896-5c3035e86d13",
-  desc: "Anrik nöjespark mitt i Stockholm, på Djurgården med utsikt över vattnet. Klassiska karuseller för de minsta och riktiga fartåk som Insane för de äldre barnen. Perfekt för en halvdag mellan stadens andra sevärdheter.",
-  age: "2–16 år",
-  ageMin: 2,
-  ageMax: 16,
-  season: "Apr–Sep",
-  budget: "€",
-  b: 1,
-  flight: "tåg/T-bana",
-  rating: 4.4,
-  highlights: ["Läskiga huset och Kvasten — klassiker sedan barndomen", "Insane — för de som vågar", "Konserter på sommarkvällarna, ingår i entrén"],
-  tip: "Köp armband för obegränsat åkande om ni stannar hela dagen — lönar sig redan efter fyra åk.",
-  bookingUrl: "https://www.gronalund.com/",
-  prisinfo: "Entré + åkband ca 595 kr vuxen, 545 kr barn. Gröna Kortet (säsongskort) ger även rabatt på vissa konserter."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Tivoli",
-  country: "Köpenhamn, Danmark",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🎢",
-  img: "photo-1513622470522-26c3c8a854bc",
-  desc: "Världens näst äldsta nöjespark mitt i stan. Charmigt, vackert och perfekt storlek för en dag med barn. Kvällsbelysningen är magisk — stanna tills det mörknar.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Apr–Sep, Dec",
-  budget: "€€",
-  b: 2,
-  flight: "ca 1 h / tåg",
-  rating: 4.4,
-  highlights: ["Rutschebanen från 1914 — träklassikern med bromsförare ombord", "Kvällsbelysningen — tusentals lampor när mörkret faller", "Pantomimteatern — gratis föreställningar varje kväll"],
-  tip: "Kom vid 15 och stanna till stängning. Tivoli är som bäst i mörker.",
-  bookingUrl: "https://www.tivoli.dk/",
-  semboUrl: "https://adtr.co/l7tm7f",
-  prisinfo: "Entré ca 165 DKK vuxen, 85 DKK barn (3–8 år gratis under 3 år). Obegränsat åkband tillkommer, ca 235 DKK extra."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Furuvik",
-  country: "Gävle, Sverige",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🐒",
-  img: "photo-1545581078-80a17b62651a",
-  desc: "Djurpark och nöjespark i ett, med allt från lekfulla brunbjörnar till klassiska åkattraktioner. Lagom stort för en heldag utan att bli överväldigande — perfekt för familjer med både yngre och äldre barn.",
-  age: "1–12 år",
-  ageMin: 1,
-  ageMax: 12,
-  season: "Maj–Aug",
-  budget: "€€",
-  b: 2,
-  flight: "ca 2 h bil/tåg från Sthlm",
-  rating: 4.4,
-  highlights: ["Djurparken med brunbjörnar, lejon och kamelhägn", "Klassiska åkattraktioner för olika åldrar", "Lagom kompakt yta — inget långt gående mellan attraktionerna"],
-  tip: "Köp biljett online i förväg — priset kan variera kraftigt beroende på dag och säsong.",
-  bookingUrl: "https://www.furuvik.se/",
-  prisinfo: "Dagsentré ca 319–519 kr vuxen, 269–469 kr barn (varierar med säsong). Säsongskort (Furuvik Pass) ca 1 195 kr."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Skara Sommarland",
-  country: "Skara, Sverige",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🎢",
-  img: "photo-1725758575836-338d8ac83592",
-  desc: "Skandinaviens största vattenland, med rutschbanor för alla mod- och åldersnivåer samt lugnare vattenlekplatser för de minsta. En hel dag går snabbt när solen är framme.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Jun–Aug",
-  budget: "€€",
-  b: 2,
-  flight: "ca 2,5 h bil från Gbg",
-  rating: 4.3,
-  highlights: ["Skandinaviens största vattenland", "Lugna vattenlekplatser för de allra minsta", "Adrenalinrutschbanor för äldre barn och tonåringar"],
-  tip: "Ta med egna badskor — betongen runt bassängerna blir het och skrapig på högsommaren.",
-  bookingUrl: "https://www.sommarland.se/",
-  prisinfo: "Dagsentré ca 529–565 kr vuxen, 430 kr barn. Sommarlandskortet (säsongskort) ca 1 399 kr."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Parken Zoo",
-  country: "Eskilstuna, Sverige",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🦁",
-  img: "photo-1690214141886-367e93a2eefb",
-  desc: "Djurpark och nöjespark mitt i Eskilstuna, med lejon, tigrar och en handfull åkattraktioner inbakade i djurmiljöerna. Kompakt och lättöverskådligt — bra för familjer med yngre barn som lätt tröttnar.",
-  age: "1–10 år",
-  ageMin: 1,
-  ageMax: 10,
-  season: "Apr–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 1,5 h bil/tåg från Sthlm",
-  rating: 4.1,
-  highlights: ["Lejon och tigrar på nära håll", "Åkattraktioner inbakade i djurmiljöerna", "Kompakt yta, bra för yngre barn med kortare tålamod"],
-  tip: "Säsongskort släpps ofta med Black Friday-rabatt — bevaka det om ni planerar flera besök.",
-  bookingUrl: "https://www.parkenzoo.se/",
-  prisinfo: "Priser varierar per säsong — kolla aktuellt datum på hemsidan innan besök. Säsongskort finns."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Nordens Ark",
-  country: "Bohuslän, Sverige",
-  cat: "parks",
-  catLabel: "Nöjesparker",
-  emoji: "🐅",
-  img: "photo-1613693745316-e09014ac910e",
-  desc: "Djurpark med fokus på utrotningshotade arter, vackert belägen vid Åbyfjorden. Amurtiger, röd panda och nordiska lantraser i naturnära hägn — mer vandring i naturskön miljö än traditionell djurpark.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Året runt (bäst jun–aug)",
-  budget: "€€",
-  b: 2,
-  flight: "ca 1,5 h bil från Gbg",
-  rating: 4.6,
-  highlights: ["Amurtiger och röd panda i naturnära hägn", "Vacker natur vid Åbyfjorden — även en fin promenad", "Arbete med utrotningshotade arter, engagerande för äldre barn"],
-  tip: "Räkna med minst tre timmars promenad om ni vill se hela parken — ta med barnvagn, den går fint på gångarna.",
-  bookingUrl: "https://nordensark.se/",
-  semboUrl: "https://adtr.co/ahyab8",
-  prisinfo: "Entré ca 280–310 kr vuxen, 110–130 kr barn (5–17 år), 0–4 år gratis. Säsongskort 800 kr vuxen / 400 kr barn."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "London",
-  country: "England",
-  cat: "cities",
-  catLabel: "Storstäder",
-  emoji: "🏙️",
-  img: "photo-1513635269975-59663e0ac1ad",
-  desc: "Natural History Museum ensamt gör resan värd det — och det är gratis. Lägg till Harry Potter-studion, Camden Market och dubbeldäckarbussar. Barnen får sin kulturkick utan att märka det.",
-  age: "4–16 år",
-  ageMin: 4,
-  ageMax: 16,
-  season: "Apr–Jun, Sep",
-  budget: "€€€",
-  b: 3,
-  flight: "ca 2,5 h",
-  rating: 4.6,
-  highlights: ["Natural History Museum — dinosaurier, gratis entré", "Harry Potter Studio Tour — magi även för vuxna", "Dubbeldäckare, rad ett på övervåningen. Alltid."],
-  tip: "Boka Harry Potter-studion månader i förväg. Den säljer alltid slut, alltid.",
-  semboUrl: "https://adtr.co/5e2ln5"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Barcelona",
-  country: "Spanien",
-  cat: "cities",
-  catLabel: "Storstäder",
-  emoji: "🏙️",
-  img: "photo-1583422409516-2895a77efded",
-  desc: "Gaudís byggnader är som att kliva in i en saga. Park Güell, Barceloneta-stranden på eftermiddagen, tapas till middag. Staden har en energi som funkar för alla åldrar.",
-  age: "3–16 år",
-  ageMin: 3,
-  ageMax: 16,
-  season: "Apr–Jun, Sep–Okt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 3,5 h",
-  rating: 4.6,
-  highlights: ["Park Güell — Gaudí genom barnögon", "Barceloneta på eftermiddagen — storstad och strand samma dag", "Camp Nou för de fotbollsfrälsta"],
-  tip: "Sagrada Família: boka tid online och skippa kön. Barnens ljudguide är förvånansvärt bra.",
-  bookingUrl: "https://adtr.co/ym3lvu",
-  semboUrl: "https://adtr.co/yztdhn"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Tokyo",
-  country: "Japan",
-  cat: "cities",
-  catLabel: "Storstäder",
-  emoji: "🏙️",
-  img: "photo-1540959733332-eab4deabeeaf",
-  desc: "Kulturkrocken som barn älskar. Robotrestauranger, Pokémon Center, Shibuya-korsningen, och den bästa maten i världen. Otroligt rent och säkert. Dyrt men oförglömligt.",
-  age: "5–16 år",
-  ageMin: 5,
-  ageMax: 16,
-  season: "Mar–Maj, Okt–Nov",
-  budget: "€€€",
-  b: 3,
-  flight: "ca 14 h",
-  rating: 4.9,
-  highlights: ["Pokémon Center och Nintendo Tokyo i Shibuya", "teamLab Planets — konst man vadar genom", "Shinkansen-dagstur till Hakone med Fuji-vy"],
-  tip: "Skaffa Suica-kort till alla direkt på flygplatsen. Tunnelbanan går från stress till nöje.",
-  semboUrl: "https://adtr.co/hj3dhk"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "New York",
-  country: "USA",
-  cat: "cities",
-  catLabel: "Storstäder",
-  emoji: "🏙️",
-  img: "photo-1496442226666-8d4d0e62e6e9",
-  desc: "Central Park, Frihetsgudinnan, Broadway-shower och pizza på varje hörn. Intensivt och utmattande men det finns en anledning till att alla vill dit minst en gång.",
-  age: "6–16 år",
-  ageMin: 6,
-  ageMax: 16,
-  season: "Apr–Jun, Sep–Okt",
-  budget: "€€€",
-  b: 3,
-  flight: "ca 8,5 h",
-  rating: 4.5,
-  highlights: ["Central Park — hyr cyklar och gör en förmiddag av det", "Intrepid — ett riktigt hangarfartyg mitt i stan", "Broadway-matiné — barnversionerna håller världsklass"],
-  tip: "Bo i Midtown West. Gångavstånd till det mesta, tunnelbana till resten.",
-  semboUrl: "https://adtr.co/cmd2qt"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Amsterdam",
-  country: "Nederländerna",
-  cat: "cities",
-  catLabel: "Storstäder",
-  emoji: "🏙️",
-  img: "photo-1534351590666-13e3e96b5017",
-  desc: "Platt, cykelvänligt och fullt av grachter att upptäcka med båt. NEMO Science Museum är fantastiskt för barn, och pannkakor till lunch varje dag? Inga protester hemifrån.",
-  age: "3–14 år",
-  ageMin: 3,
-  ageMax: 14,
-  season: "Apr–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 2 h",
-  rating: 4.5,
-  highlights: ["NEMO Science Museum — fem våningar att pilla på allt", "Kanalbåt — barnens favorittransport", "Vondelpark — lekplatser och pannkakshus"],
-  tip: "Hyr cyklar med barnsits eller lådcykel. Staden är bokstavligen byggd för det.",
-  semboUrl: "https://adtr.co/ytcs96"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Gotland",
-  country: "Sverige",
-  cat: "sweden",
-  catLabel: "Sverige",
-  emoji: "🇸🇪",
-  img: "photo-1560089168-6516081f5bf1",
-  desc: "Sveriges egen semesterö. Visby inom murarna, Fårö med raukarna, och stränderna vid Tofta. Barnen cyklar fritt, alla äter glass och tempot går ner till noll. Sommar som den ska vara.",
-  age: "0–16 år",
-  ageMin: 0,
-  ageMax: 16,
-  season: "Jun–Aug",
-  budget: "€–€€",
-  b: 1.5,
-  flight: "45 min / färja",
-  rating: 4.7,
-  highlights: ["Visby ringmur och rosorna i varje gränd", "Raukarna på Fårö — stenskulpturer av naturen själv", "Kneippbyn — Pippi Långstrumps riktiga villa"],
-  tip: "Tar ni bilen: boka färjan tidigt. Sommarturerna säljer slut långt i förväg.",
-  bookingUrl: "https://gotland.com/",
-  semboUrl: "https://adtr.co/p2nn9a"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Astrid Lindgrens Värld",
-  country: "Vimmerby, Sverige",
-  cat: "sweden",
-  catLabel: "Sverige",
-  emoji: "🇸🇪",
-  img: "photo-1509356843151-3e7d96241e11",
-  desc: "Pippi, Emil och Karlsson — allt kommer till liv. Teatern i parken är förvånansvärt bra och Bullerbyn-stugan gör vuxna tårögda. Obligatoriskt minst en gång för svenska barnfamiljer.",
-  age: "2–10 år",
-  ageMin: 2,
-  ageMax: 10,
-  season: "Jun–Aug",
-  budget: "€",
-  b: 1,
-  flight: "bil / tåg",
-  rating: 4.6,
-  highlights: ["Pippi-föreställningen — kom i god tid, gräset fylls snabbt", "Bullerbyn — nostalgi som tar även vuxna", "Katthult med Emils snickerbod (och nya hyss)"],
-  tip: "Bo på campingen intill. Barnen orkar två dagar i parken, lätt.",
-  bookingUrl: "https://astridlindgrensvarld.se/",
-  semboUrl: "https://adtr.co/uab845"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Kolmården",
-  country: "Norrköping, Sverige",
-  cat: "sweden",
-  catLabel: "Sverige",
-  emoji: "🇸🇪",
-  img: "photo-1546182990-dffeafbe841d",
-  desc: "Sveriges bästa djurpark med safari, tropikarium och riktigt bra nyheter varje säsong. Wildfire-berg-och-dalbanan satte en ny standard. Perfekt tvådagarsutflykt från Stockholm.",
-  age: "1–14 år",
-  ageMin: 1,
-  ageMax: 14,
-  season: "Maj–Sep",
-  budget: "€–€€",
-  b: 1.5,
-  flight: "1,5 h från Sthlm",
-  rating: 4.5,
-  highlights: ["Safari med linbana över savannen", "Wildfire — för de modiga längre barnen", "Bamses värld — allt de minsta behöver"],
-  tip: "Kom till öppning. Djuren är piggast på morgonen och köerna kortast.",
-  bookingUrl: "https://www.kolmarden.com/",
-  semboUrl: "https://adtr.co/oigbgw"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Höga Kusten",
-  country: "Ångermanland, Sverige",
-  cat: "sweden",
-  catLabel: "Sverige",
-  emoji: "🇸🇪",
-  img: "photo-1441974231531-c6227db76b6e",
-  desc: "UNESCO-världsarv med stigar, klippor och Skuleskogen. Höga Kusten-leden har etapper som funkar med barn. Sverige på riktigt, utan folkmassor. Känslan av att vara först på platsen.",
-  age: "6–16 år",
-  ageMin: 6,
-  ageMax: 16,
-  season: "Jun–Sep",
-  budget: "€",
-  b: 1,
-  flight: "bil / tåg",
-  rating: 4.6,
-  highlights: ["Skuleberget — linbana upp, vandring ner", "Trysunda — skärgårdsidyll utan bilar", "Slåttdalsskrevan — 40 meter djup spricka rakt genom berget"],
-  tip: "Tälta nästan var som helst. Allemansrätten är världens bästa reseförmån.",
-  bookingUrl: "https://www.hogakusten.com/",
-  semboUrl: "https://adtr.co/6x7qhj"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Stockholms skärgård",
-  country: "Sverige",
-  cat: "sweden",
-  catLabel: "Sverige",
-  emoji: "🇸🇪",
-  img: "photo-1508189860359-777d945909ef",
-  desc: "24 000 öar. Vaxholm på dagstur eller hyr stuga på Sandhamn för en vecka. Barnen badar, fiskar och hoppar från klippor. Funktionell semester utan flygstress.",
-  age: "0–16 år",
-  ageMin: 0,
-  ageMax: 16,
-  season: "Jun–Aug",
-  budget: "€–€€",
-  b: 1.5,
-  flight: "båt från Sthlm",
-  rating: 4.7,
-  highlights: ["Vaxholm — enklaste dagsturen med barn", "Hyr stuga på Sandhamn eller Utö en hel vecka", "Klippbad från morgon till kväll"],
-  tip: "Waxholmsbolagets båtluffarkort är skärgårdens interrail. Öhoppa en hel vecka.",
-  bookingUrl: "https://visitskargarden.se/",
-  semboUrl: "https://adtr.co/6lz2bw"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Tekniska museet",
-  country: "Stockholm, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1518133910546-b6c2fb7d79e3",
-  desc: "Sveriges största teknik- och vetenskapsmuseum, byggt för att pillas på. Barnen får trycka, klättra och experimentera i egen takt medan de faktiskt lär sig något. Perfekt regndagsutflykt i Stockholm.",
-  age: "3–14 år",
-  ageMin: 3,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "tåg/T-bana",
-  rating: 4.5,
-  highlights: ["Teknorama — hela våningen byggd för att experimentera med händerna", "Kraftstationen — fysik man känner i kroppen, inte bara läser om", "Lilla Idas Kök för de yngsta barnen"],
-  tip: "Räkna med minst tre timmar. Kaféet ligger mitt i museet så ni slipper gå ut och in.",
-  bookingUrl: "https://www.tekniskamuseet.se/",
-  prisinfo: "Entré från ca 145 kr. Barn under 7 år gratis. Medlemskap i Tekniska museets vänner ger fritt inträde + 25% rabatt för medföljande familj."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Vasamuseet",
-  country: "Stockholm, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1580795479225-c50ab8c3348d",
-  desc: "Ett helt, 400 år gammalt skepp mitt i en museihall — barn som annars tycker museer är trist blir svarslösa här. Kombinera med barnverkstaden på helger och lov för extra pyssel kring skeppet och sjöfart.",
-  age: "4–16 år",
-  ageMin: 4,
-  ageMax: 16,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/båt",
-  rating: 4.8,
-  highlights: ["Skeppet i sin fulla, bevarade storlek — går inte att ta miste på", "Filmen om Vasas historia, textad på flera språk", "Barnverkstad med pyssel kopplat till 1600-talet"],
-  tip: "Boka gratis biljett online i förväg på sommaren — det blir långa köer annars.",
-  bookingUrl: "https://www.vasamuseet.se/",
-  prisinfo: "195 kr vuxen (jan–apr, okt–dec) / 240 kr (maj–sep). Barn och unga till 18 år alltid gratis."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Polismuseet",
-  country: "Stockholm, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1589391886645-d51941baf7fb",
-  desc: "Litet men engagerande museum om polisarbete förr och nu, med riktiga polisbilar, uniformer och interaktiva stationer där barnen får testa på detektivarbete. Ligger vid Gärdet, granne med Tekniska museet — lätt att kombinera till en museidag.",
-  age: "5–14 år",
-  ageMin: 5,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/spårvagn",
-  rating: 4.2,
-  highlights: ["Riktiga polisbilar och motorcyklar att klättra i", "Interaktiva stationer om spårsäkring och detektivarbete", "Lagom litet — funkar även med kortare tålamod"],
-  tip: "Kombinera med Tekniska museet samma dag — de ligger vägg i vägg vid Gärdet.",
-  bookingUrl: "https://polismuseet.se/",
-  prisinfo: "Entré ca 80 kr vuxen (2025 års pris)."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Sjöhistoriska museet",
-  country: "Stockholm, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1544967082-d9d25d867d66",
-  desc: "Museum om Sveriges sjöfart och örlogshistoria, med skeppsmodeller, dykarutrustning och en hel avdelning med lekhörnor för de yngsta. Mysigt och lugnare tempo än grannen Vasamuseet, med bra café med utsikt över vattnet.",
-  age: "3–14 år",
-  ageMin: 3,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/spårvagn",
-  rating: 4.3,
-  highlights: ["Skeppsmodeller i miniatyr som barnen älskar att studera", "Lugnare och mindre trängsel än Vasamuseet bredvid", "Fin lekhörna för de yngsta"],
-  tip: "Ett bra andra-val när Vasamuseet känns för fullt — samma närhet till vattnet, mycket lugnare.",
-  bookingUrl: "https://sjohistoriska.se/",
-  prisinfo: "Entré ca 130 kr vuxen (2025 års pris)."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Paradox",
-  country: "Stockholm, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1518998053901-5348d3961a04",
-  desc: "Interaktivt illusionsmuseum fullt av optiska bländverk, omvända rum och foton som ser omöjliga ut. Mindre \"titta men rör inte\" och mer \"testa, skratta och fota\" — en garanterad hit för barn som tröttnat på traditionella montrar.",
-  age: "4–16 år",
-  ageMin: 4,
-  ageMax: 16,
-  season: "Året runt",
-  budget: "€€",
-  b: 2,
-  flight: "buss/T-bana",
-  rating: 4.4,
-  highlights: ["Omvända rum och optiska illusioner att fota i", "Allt är gjort för att röras och testas, inte bara beskådas", "Bra regndags- eller vinteraktivitet mitt i stan"],
-  tip: "Ta med telefonen fulladdad — det här är ett museum ni kommer vilja fota varenda rum i.",
-  bookingUrl: "https://paradoxmuseum.com/stockholm/",
-  prisinfo: "249 kr vuxen, 195 kr barn (5–12 år)/student/senior. Familjebiljett (2 vuxna + 2 barn) 710 kr. Barn under 5 år gratis."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Universeum",
-  country: "Göteborg, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1764253340517-9adc9a839970",
-  desc: "Nordens största science center, med regnskog, hajakvarium och interaktiva experimentstationer under ett och samma tak. En hel dag räcker knappt till för att se allt — planera hellre för två kortare besök om ni bor nära.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€€",
-  b: 2,
-  flight: "buss/spårvagn",
-  rating: 4.6,
-  highlights: ["Regnskog med fritt flygande fåglar och apor", "Ocean Zone med hajar och stora akvarier", "Miniverseum — egen avdelning för de allra minsta"],
-  tip: "Räkna med minst 3–4 timmar. Kombinera gärna med Liseberg som ligger alldeles intill.",
-  bookingUrl: "https://www.universeum.se/",
-  prisinfo: "Dagspass ca 305 kr vuxen, 255 kr barn (2025 års pris, kan variera med säsong)."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Naturhistoriska museet Göteborg",
-  country: "Göteborg, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1491156855053-9cdff72c7f85",
-  desc: "Dinosaurieskelett, fossiler och världens enda monterade blåval under ett tak. Prisvärt och lagom stort för en förmiddags- eller eftermiddagsutflykt, med ett tydligt \"wow\" när blåvalen dyker upp.",
-  age: "3–14 år",
-  ageMin: 3,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/spårvagn",
-  rating: 4.4,
-  highlights: ["Världens enda monterade blåval", "Dinosaurieskelett och fossiler", "Prisvärt jämfört med de flesta andra Göteborgsmuseer"],
-  tip: "Årskortet (140 kr) gäller på fem museer i regionen — värt det redan efter två besök.",
-  bookingUrl: "https://www.gnm.se/",
-  prisinfo: "Entré 70 kr vuxen, gratis under 20 år. Årskort 140 kr (gäller fem museer i regionen)."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Malmö Museer",
-  country: "Malmö, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1696694139314-e0e5962b8dc0",
-  desc: "Malmöhus slott, akvarium, ubåt och konstmuseum under ett och samma årskort. Barnen kan gå från riddarsal till akvarium till att klättra ombord på en riktig ubåt på samma eftermiddag.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/spårvagn",
-  rating: 4.3,
-  highlights: ["Malmöhus slott med utställningar i äkta slottsmiljö", "Litet men charmigt akvarium med tropiska fiskar", "Riktig ubåt att gå ombord på i Teknikens och sjöfartens hus"],
-  tip: "Barn 0–19 år går alltid in gratis, så det är främst vuxenbiljetten eller årskortet ni behöver planera för.",
-  bookingUrl: "https://malmo.se/museum",
-  prisinfo: "Barn 0–19 år alltid gratis. Årskort vuxen 250 kr (150 kr student/pensionär), gäller Slottet + Teknikens och sjöfartens hus."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Disgusting Food Museum",
-  country: "Malmö, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1714621186557-c862830f157f",
-  desc: "80 av världens mest \"äckliga\" maträtter utställda och till och med smakbara, från surströmming till ostmask. Mer skratt och \"usch!\" än traditionellt museum — en garanterad snackis bland barn (och lite äldre barn i synnerhet).",
-  age: "8–16 år",
-  ageMin: 8,
-  ageMax: 16,
-  season: "Året runt",
-  budget: "€€",
-  b: 2,
-  flight: "buss/tåg",
-  rating: 4.3,
-  highlights: ["80 utställda \"äckliga\" rätter från hela världen", "Smakbar med riktiga smakprov för de modiga", "Snurrhjul med pris om man klarar utmaningen"],
-  tip: "Passar bäst från ca 8 år — yngre barn kan tycka lukterna och texterna blir för mycket.",
-  bookingUrl: "https://disgustingfoodmuseum.com/",
-  prisinfo: "230 kr vuxen, 80 kr barn (6–15 år), gratis under 6 år (2 barn per vuxen)."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Gustavianum",
-  country: "Uppsala, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1575223970966-76ae61ee7838",
-  desc: "Uppsala universitets äldsta bevarade byggnad, fylld med vikingasvärd, mumier och en anatomisk teater från 1600-talet. Lagom kompakt för ett museibesök som inte tar hela dagen.",
-  age: "5–14 år",
-  ageMin: 5,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/tåg",
-  rating: 4.4,
-  highlights: ["Vikingavapen och smycken från Valsgärdegravarna", "Mumier och antika föremål från Medelhavsområdet", "Anatomiska teatern högst upp i huset, byggd på 1600-talet"],
-  tip: "Kombinera med en promenad i Uppsala domkyrka, som ligger på andra sidan gatan.",
-  bookingUrl: "https://www.gustavianum.uu.se/",
-  prisinfo: "150 kr vuxen, 120 kr student/pensionär, 0–19 år gratis."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Kulturen i Lund",
-  country: "Lund, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1649452843752-663493034117",
-  desc: "Ett av världens första friluftsmuseer, med historiska hus från medeltid till 1930-tal utspridda över två kvarter i centrala Lund. Barnvänligt med egen lekutställning och lekplats mitt bland de historiska husen.",
-  age: "3–14 år",
-  ageMin: 3,
-  ageMax: 14,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/tåg",
-  rating: 4.4,
-  highlights: ["Historiska hus att gå in i, från medeltid till 1930-tal", "Egen lekplats inne i friluftsmuseet", "Madicken-lekutställning för barn 3–9 år"],
-  tip: "Barn och unga till och med 18 år har alltid gratis entré — bra prisvärt val för barnfamiljer.",
-  bookingUrl: "https://www.kulturen.com/",
-  prisinfo: "150 kr vuxen, 120 kr pensionär/student. Barn 0–18 år alltid gratis."
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Marinmuseum",
-  country: "Karlskrona, Sverige",
-  cat: "museums",
-  catLabel: "Museer",
-  emoji: "🏛️",
-  img: "photo-1642689431614-099b1fc8dd05",
-  desc: "Sveriges nationella marinmuseum, med en riktig ubåt att gå ombord på och en undervattenstunnel med ett faktiskt vrak. Ligger vackert på ön Stumholmen i historiska Örlogsstaden Karlskrona.",
-  age: "4–16 år",
-  ageMin: 4,
-  ageMax: 16,
-  season: "Året runt",
-  budget: "€",
-  b: 1,
-  flight: "buss/tåg",
-  rating: 4.5,
-  highlights: ["Gå ombord på den riktiga ubåten HMS Neptun", "Undervattenstunnel med ett faktiskt vrak", "Interaktiva stationer där barnen får slå knopar och ro kanonslup"],
-  tip: "Barn 0–18 år går alltid gratis, och museet har fri entré för alla på onsdagar.",
-  bookingUrl: "https://www.marinmuseum.se/",
-  prisinfo: "110–170 kr vuxen (varierar med säsong), barn 0–18 år alltid gratis. Årskort 350 kr (inkluderar en gäst per besök). Gratis entré för alla på onsdagar."
-},
-{ updated: "2026-09-30", published: "2026-09-23",
-  name: "Rhodos",
-  country: "Grekland",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1601581875039-e899893d520c",
-  desc: "Medeltida stadsmurar att upptäcka till fots, långgrunda familjestränder i Faliraki och vattenland precis vid stranden. Rhodos har historien för de äldre barnen och det grunda vattnet för de yngsta — en av Greklands mest kompletta familjeöar.",
-  age: "1–14 år",
-  ageMin: 1,
-  ageMax: 14,
-  season: "Maj–Okt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 3,5 h",
-  rating: 4.6,
-  highlights: ["Rhodos gamla stad — medeltida gränder som barnen älskar att vilse i", "Faliraki Water Park precis vid familjestranden", "Lindos akropolis — en kortare, barnvänlig historielektion"],
-  tip: "Bo i Faliraki eller Kolymbia om ni vill ha nära till både strand och vattenland.",
-  bookingUrl: "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fupplev-rhodos-med-nazar",
-  semboUrl: "https://adtr.co/e7vt0s",
-  featured: true
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Korfu",
-  country: "Grekland",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1601581875309-4f27f3937a3f",
-  desc: "Grönskande grekisk ö med olivlundar, mysiga byar och stränder som passar både lugna dopp och lite större vågor. Dassia och Gouvia är klassiska familjeorter med lagom avstånd till Korfu stad för en dagsutflykt.",
-  age: "1–14 år",
-  ageMin: 1,
-  ageMax: 14,
-  season: "Maj–Okt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 3 h",
-  rating: 4.5,
-  highlights: ["Korfu stad — venetianska gränder och glasscaféer", "Dassia — långgrund familjestrand med vattensport för de äldre", "Grönskan gör ön svalare än många andra grekiska öar i högsommarhettan"],
-  tip: "Hyr bil ett par dagar — öns inland med olivlundar och byar är minst lika fint som kusten.",
-  bookingUrl: "https://adtr.co/9blnx3",
-  semboUrl: "https://adtr.co/jjj8ul"
-},
-{ updated: "2026-09-30", published: "2026-09-30",
-  name: "Antalya",
-  country: "Turkiet",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1637220819663-5497af2cee5c",
-  desc: "Antalya-regionen, med förorterna Lara och Belek, är Turkiets tätaste kluster av stora all-inclusive-resorter byggda för barnfamiljer — egna vattenland, barnklubb från tidig morgon och sandstränder som sluttar milt ner i Medelhavet. Kort transfer från Antalya flygplats gör att semestern börjar nästan direkt.",
-  age: "1–14 år",
-  ageMin: 1,
-  ageMax: 14,
-  season: "Maj–Okt",
-  budget: "€",
-  b: 1,
-  flight: "ca 4 h",
-  rating: 4.5,
-  highlights: ["Lara Beach och Belek — Turkiets tätaste kluster av femstjärniga familjeresorter med egna vattenland och barnklubbar", "Antalyas gamla stad Kaleiçi — smala gränder, vattenfall och hamnutsikt, en kort utflykt från hotellen", "Aspendos antika teater — en välbevarad romersk arena som funkar även som utflykt för lite äldre barn"],
-  tip: "Nästan alla stora hotell i Lara och Belek är all inclusive med barnklubb — kolla vattenlandet på hotellets egna bilder innan ni bokar, det varierar stort mellan anläggningarna.",
-  bookingUrl: "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fturkiet%2Fantalya",
-  altUrl: "https://adtr.co/1xhj6x"
-},
-{ updated: "2026-09-30", published: "2026-09-30",
-  name: "Alanya",
-  country: "Turkiet",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1661163090068-ebfdaf6c433a",
-  desc: "Alanya är Turkiska rivierans mest livliga strandstad — en lång sandstrand under en dramatisk klippborg, ett myller av restauranger och affärer längs strandpromenaden, och hotell som ofta är prisvärdare än Lara/Belek en bit bort.",
-  age: "1–14 år",
-  ageMin: 1,
-  ageMax: 14,
-  season: "Maj–Okt",
-  budget: "€",
-  b: 1,
-  flight: "ca 4 h",
-  rating: 4.4,
-  highlights: ["Kleopatra Beach — kilometerlång sandstrand mitt i stan, långgrund och barnvänlig", "Kabinbana upp till Alanya fästning — utsikten är värd besväret, och barnen tycker om själva linbanan", "Strandpromenaden med glasscaféer och prisvärda restauranger utanför hotellområdet"],
-  tip: "Bo längs stranden snarare än inne i centrum om ni vill undvika trafik och ha gångavstånd till vattnet.",
-  bookingUrl: "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fturkiet%2Falanya-incekum",
-  altUrl: "https://adtr.co/4ur8vm"
-},
-{ updated: "2026-09-30", published: "2026-09-30",
-  name: "Ayia Napa",
-  country: "Cypern",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1671276067124-1f4c7894d36e",
-  desc: "Ayia Napa är Cyperns mest kända badort — kompakt och lätt att ta sig runt i med barnvagn, med Nissi Beach som en av Medelhavets mest barnvänliga stränder: långgrund, vit sand och spegelblankt vatten.",
-  age: "1–12 år",
-  ageMin: 1,
-  ageMax: 12,
-  season: "Apr–Okt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 4,5 h",
-  rating: 4.3,
-  highlights: ["Nissi Beach — långgrund vik med vitt sand och lugnt vatten, en av Medelhavets mest barnvänliga stränder", "Cape Greco nationalpark — kustpromenad med grottor och utsiktsplatser barnen tycker om att utforska", "Vattenland och lekplatser inom gångavstånd från de flesta hotell i centrum"],
-  tip: "Bo en bit från Nissi Avenues nattliv om ni vill ha lugnare nätter — stranden är minst lika fin därifrån.",
-  bookingUrl: "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fupplev-cypern-med-nazar",
-  altUrl: "https://adtr.co/dz5u8o"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Istrien",
-  country: "Kroatien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1604696896158-33aa56a7d352",
-  desc: "Kroatiens mest lättillgängliga kustremsa för barnfamiljer — kort bilresa från flera europeiska flygplatser, klippstränder blandat med sandvikar, och Rovinjs pastellfärgade gamla stad som gör sig fint på varenda familjefoto.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Maj–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 2 h",
-  rating: 4.6,
-  highlights: ["Rovinjs gamla stad — smala gränder rakt ner i havet", "Klippbad med stegar för enkel i- och urstigning", "Närhet gör det enkelt att kombinera med en dag i Venedig"],
-  tip: "Packa badskor — Istriens stränder är ofta klippiga snarare än sandiga.",
-  bookingUrl: "https://adtr.co/7u2ahr",
-  semboUrl: "https://adtr.co/uaw05e"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Makarska rivieran",
-  country: "Kroatien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1580891349087-9d51c7f6a1d0",
-  desc: "Dramatiska berg som reser sig rakt bakom kritvita sandstränder — Makarska rivieran har några av Kroatiens finaste familjestränder i Brela och Tučepi, med tallskog som ger skugga mitt på dagen.",
-  age: "1–14 år",
-  ageMin: 1,
-  ageMax: 14,
-  season: "Jun–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 2,5 h",
-  rating: 4.6,
-  highlights: ["Brela — ofta rankad som en av Europas finaste familjestränder", "Tallskogen ger skugga precis vid vattnet, ovärderligt mitt på dagen", "Bergen i bakgrunden för en enklare vandring på kvällen"],
-  tip: "Boka boende med kort promenadavstånd till stranden — vägarna längs rivieran kan vara branta.",
-  bookingUrl: "https://adtr.co/s6omyj",
-  semboUrl: "https://adtr.co/r12mwo"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Costa Blanca",
-  country: "Spanien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1583422409516-9a4b0d3f5a1c",
-  desc: "Benidorm och grannorterna är byggda för familjesemester: långa sandstränder, vattenland i världsklass och ett utbud av barnvänliga restauranger som slår det mesta i Medelhavet. Perfekt för familjer som vill ha allt inom promenadavstånd.",
-  age: "1–14 år",
-  ageMin: 1,
-  ageMax: 14,
-  season: "Maj–Okt",
-  budget: "€",
-  b: 1.5,
-  flight: "ca 3,5 h",
-  rating: 4.4,
-  highlights: ["Terra Mítica och Aqualandia — två av Spaniens största temaparker", "Playa de Levante — kilometerlång, långgrund sandstrand", "Enormt utbud av all-inclusive-hotell riktade just till barnfamiljer"],
-  tip: "Boka en lägenhet med pool om ni vill variera stranddagarna — Benidorm har poolutbud i toppklass.",
-  bookingUrl: "https://adtr.co/hn9r82",
-  semboUrl: "https://adtr.co/8q0law"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Costa Brava",
-  country: "Spanien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1512753360442-27bc4cd90adc",
-  desc: "Klippiga vikar och charmiga fiskebyar en kort bit norr om Barcelona. Lloret de Mar har det stora utbudet av familjehotell och underhållning, medan mindre orter längs kusten bjuder på lugnare stränder om ni vill komma undan.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Maj–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 2,5 h",
-  rating: 4.4,
-  highlights: ["Lloret de Mar — stort utbud av barnvänliga hotell och aktiviteter", "Vattenland Water World precis utanför stan", "Dagsutflykt till Barcelona fullt möjlig om ni vill kombinera strand och stad"],
-  tip: "Kolla in de mindre vikarna som Tossa de Mar för en lugnare dag borta från huvudstranden.",
-  semboUrl: "https://adtr.co/91336b"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Franska Rivieran",
-  country: "Frankrike",
-  cat: "cities",
-  catLabel: "Storstäder",
-  emoji: "🏙️",
-  img: "photo-1503696967350-ad1874122058",
-  desc: "Nice och Cannes bjuder på elegant strandliv, glasspauser vid Promenade des Anglais och närhet till både berg och hav. Mer sofistikerat än de klassiska charterorterna, men gångavstånd och kollektivtrafik gör det förvånansvärt smidigt med barn.",
-  age: "3–16 år",
-  ageMin: 3,
-  ageMax: 16,
-  season: "Maj–Sep",
-  budget: "€€€",
-  b: 3,
-  flight: "ca 3 h",
-  rating: 4.5,
-  highlights: ["Promenade des Anglais — cykla eller rulla längs hela strandpromenaden", "Vieux Nice — färgglada gränder och marknader", "Spårvagnen gör bilfria dagar helt möjliga"],
-  tip: "Basera er i Nice snarare än Cannes — bättre kollektivtrafik och billigare restauranger.",
-  semboUrl: "https://adtr.co/099s1a"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Korsika",
-  country: "Frankrike",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1591192867485-56d5c5c0e5f8",
-  desc: "Medelhavets kanske vackraste ö, med kristallklart vatten och berg som når nästan ner till stranden. Mindre turisttätt än Mallorca eller Kreta, vilket gör Korsika till ett bra val för familjer som vill ha naturupplevelser utöver bad.",
-  age: "3–15 år",
-  ageMin: 3,
-  ageMax: 15,
-  season: "Jun–Sep",
-  budget: "€€",
-  b: 2,
-  flight: "ca 3 h",
-  rating: 4.7,
-  highlights: ["Calvi — sandstrand med citadell som fond", "Kristallklart vatten som gör snorkling till en höjdpunkt även för nybörjare", "Bergsbyar en kort bilresa från kusten för den som vill variera"],
-  tip: "Hyr bil. Kollektivtrafiken är gles och de finaste vikarna kräver egna hjul.",
-  semboUrl: "https://adtr.co/peglrb"
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Phuket",
-  country: "Thailand",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1589394815804-964ed0be2eb5",
-  desc: "Thailands största och mest barnvänliga ö, med familjeinriktade stränder i Bangtao och Karon där vattnet är lugnare än på de mer kända partystränderna. Enormt utbud av allt från vattenland till elefantsanktuarier.",
-  age: "1–15 år",
-  ageMin: 1,
-  ageMax: 15,
-  season: "Nov–Mar",
-  budget: "€€",
-  b: 2,
-  flight: "ca 11 h",
-  rating: 4.6,
-  highlights: ["Bangtao Beach — lugnt vatten och gott om barnvänliga resorts", "Phuket FantaSea — kvällsshow som fascinerar hela familjen", "Etiskt elefantsanktuarium istället för ridturer"],
-  tip: "Välj Bangtao eller Kata framför Patong om ni reser med mindre barn — lugnare tempo.",
-  bookingUrl: "https://adtr.co/mtaqut",
-  semboUrl: "https://adtr.co/ole5qd",
-  featured: true
-},
-{ updated: "2026-09-23", published: "2026-09-23",
-  name: "Ao Nang",
-  country: "Thailand",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1552465011-b4e21bf6e79a",
-  desc: "Krabis mest lättillgängliga strandort, med dramatiska kalkstensklippor som stiger rakt ur havet. Kortare och billigare båtturer till öarna än från Phuket, och ett tempo som passar familjer som vill varva strand med utflykter.",
-  age: "2–15 år",
-  ageMin: 2,
-  ageMax: 15,
-  season: "Nov–Mar",
-  budget: "€€",
-  b: 2,
-  flight: "ca 12 h",
-  rating: 4.5,
-  highlights: ["Klätterklippor som ramar in stranden — fotogent från första sekunden", "Kort båttur till Railay Beach, en av Thailands mest fotograferade stränder", "Längtan-turer till Fyra öar-turen passar bra även med barn"],
-  tip: "Boka öturer på förmiddagen — eftermiddagsvindarna gör sjön guppigare senare på dagen.",
-  semboUrl: "https://adtr.co/4qidyl"
-},
-{ updated: "2026-10-01", published: "2026-10-01",
-  name: "Gran Canaria",
-  country: "Spanien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1450128910652-d698afa60ac8",
-  desc: "Kanarieöarnas klassiska vintersolmål — 20 grader i januari och stränder för alla smaker. Playa de Amadores är långgrund och vågskyddad av två pirar, Puerto Rico är öns soligaste och lugnaste hörn, och Las Canteras skyddas av ett naturligt rev som håller vågorna borta.",
-  age: "0–14 år",
-  ageMin: 0,
-  ageMax: 14,
-  season: "Okt–Apr (vintersol), fint året runt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 5,5 h",
-  rating: 4.6,
-  highlights: ["Playa de Amadores — långgrund, vågskyddad av pirar, svalkande importerad sand", "Puerto Rico — öns solsäkraste strand, paddelbåtar och vattenaktiviteter för barnen", "Las Canteras — ett naturligt stenrev håller stranden lugn även när det blåser"],
-  tip: "Södra delen (Maspalomas, Puerto Rico, Amadores) har mest sol och minst regn. Norra delen kring huvudstaden är grönare men molnigare.",
-  bookingUrl: "https://adtr.co/m4g5p6",
-  semboUrl: "https://adtr.co/uuto80"
-},
-{ updated: "2026-10-01", published: "2026-10-01",
-  name: "Fuerteventura",
-  country: "Spanien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1635463498136-96e4df88bac8",
-  desc: "Mil efter mil av vit sand och öken-dyner att leka i, mindre bebyggt än grannöarna. La Concha vid El Cotillo är familjefavoriten — ett naturligt rev gör vattnet lugnt och kristallklart. Vindigare ö, så äldre barn som vill prova kitesurfing har gott om möjligheter.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Okt–Apr (vintersol), fint året runt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 5,5 h",
-  rating: 4.5,
-  highlights: ["La Concha — revskyddad lagun med lugnt, kristallklart vatten", "Corralejos sanddyner — som en liten öken att utforska och leka i", "Gott om vindsport för tonåringar, från nybörjarkurser till kitesurfing"],
-  tip: "Fuerteventura blåser mer än Gran Canaria och Teneriffa. Välj skyddade vikar som La Concha om ni har små barn som ska bada.",
-  bookingUrl: "https://adtr.co/y8lu0h",
-  semboUrl: "https://adtr.co/b50dff"
-},
-{ updated: "2026-10-01", published: "2026-10-01",
-  name: "Teneriffa",
-  country: "Spanien",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1654802966959-35be231117ae",
-  desc: "Störst av Kanarieöarna och svårslagen på aktiviteter för barn. Siam Park räknas som ett av Europas bästa vattenparker med egen sandstrand och vågmaskin, Aqualand har glidbanor för alla åldrar, och en linbana tar hela familjen upp mot toppen av vulkanen Teide.",
-  age: "2–15 år",
-  ageMin: 2,
-  ageMax: 15,
-  season: "Okt–Apr (vintersol), fint året runt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 5,5 h",
-  rating: 4.7,
-  highlights: ["Siam Park — thailändskt tema, konstgjord strand och 3-metersvågor i vågbassängen", "Aqualand — 15+ rutschbanor, lugn flod och egen barnbassäng", "Linbanan upp mot Teide — storslagen utsikt utan krävande vandring"],
-  tip: "Siam Park säljer ofta slut — boka biljett med tid online i förväg. Bo i Los Cristianos eller Playa de las Américas för gratis shuttlebuss dit.",
-  bookingUrl: "https://adtr.co/a07j46",
-  semboUrl: "https://adtr.co/s5k5uk"
-},
-{ updated: "2026-10-01", published: "2026-10-01",
-  name: "Hurghada",
-  country: "Egypten",
-  cat: "beach",
-  catLabel: "Strand & Sol",
-  emoji: "🏖️",
-  img: "photo-1665643956022-ee053e925743",
-  desc: "Prisvärd vintersol vid Röda havet med Egyptens tätaste utbud av vattenparkshotell. Pickalbatros Jungle Aqua Park har 81 rutschbanor fördelat på 45 pooler, Makadi Water World över 50 banor, och de lugna, grunda stränderna i Sahl Hasheesh och Makadi Bay passar små simmare perfekt.",
-  age: "2–14 år",
-  ageMin: 2,
-  ageMax: 14,
-  season: "Okt–Apr (svalare), soligt året runt",
-  budget: "€€",
-  b: 2,
-  flight: "ca 5 h",
-  rating: 4.6,
-  highlights: ["Pickalbatros Jungle Aqua Park — 81 rutschbanor över 45 pooler", "Sahl Hasheesh och Makadi Bay — lugnt, grunt vatten direkt vid hotellen", "Snorkling i Röda havet — tillgängligt redan från stranden på många hotell"],
-  tip: "Välj hotell i Sahl Hasheesh eller Makadi Bay snarare än centrala Hurghada — där är stranden sandig istället för korall/sten och kräver inga badskor.",
-  bookingUrl: "https://adtr.co/oa8m74",
-  semboUrl: "https://adtr.co/bh4hb8"
-}
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Kreta",
+    "country": "Grekland",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1507525428034-b723cf961d3e",
+    "desc": "Kreta har allt en barnfamilj kan önska sig: grunda, kristallklara vikar som Elafonissi, fantastisk mat och antika ruiner som får till och med treåringar att häpna. Vi åkte hit med barnen första gången och har inte hittat något bättre sedan dess.",
+    "age": "0–12 år",
+    "ageMin": 0,
+    "ageMax": 12,
+    "season": "Maj–Okt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 4 h",
+    "rating": 4.8,
+    "highlights": [
+      "Elafonissi — rosa sand och knädjupt vatten i hundra meter",
+      "Knossos palats — grekisk mytologi som fastnar även på småbarn",
+      "Barnvänliga tavernor precis överallt, med grillad halloumi som räddar varje middag"
+    ],
+    "tip": "Hyr bil. Bussarna går sällan och de bästa stränderna ligger utspridda över hela ön.",
+    "bookingUrl": "https://adtr.co/yojg94",
+    "semboUrl": "https://adtr.co/ocn75t",
+    "featured": true,
+    "areas": [
+      {
+        "name": "Chania och väster",
+        "text": "Kretas mest charmiga stad, med en venetiansk hamn full av färgglada hus. Perfekt bas för att kombinera stadsliv med närhet till västkustens drömstränder — Elafonissi, Balos och Falassarna ligger alla inom en till två timmars bilresa.",
+        "img": "photo-1635575891166-87881d3473eb"
+      },
+      {
+        "name": "Rethymno",
+        "text": "Mindre turisttätt än Chania men med samma venetianska charm: en pittoresk hamn, en fästning (Fortezza) och en lång sandstrand längs hela stadens framsida."
+      },
+      {
+        "name": "Heraklion och Knossos-området",
+        "text": "Öns huvudstad och mest centrala läge. Förutom Knossos palats ligger Cretaquarium i Gournes bara en kort bilresa bort, och flygplatsen gör det smidigt vid ankomst."
+      },
+      {
+        "name": "Elounda och Agios Nikolaos",
+        "text": "Östra Kretas lugnare sida, byggd kring en vacker lagun och en söt hamnstad. Nära till båtutflykten till Spinalonga och barnvänliga Almyros-stranden."
+      },
+      {
+        "name": "Hersonissos och Malia",
+        "text": "Kretas tätaste turiststråk, med vattenland, minigolf och ett enormt utbud av barnaktiviteter inom gångavstånd (Aquaworld, Lychnostatis och Labyrinth Park ligger alla i närheten)."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Samaria-ravinen",
+        "text": "Europas längsta ravin — men var ärlig om barnens ork: den fulla leden tar 4–6 timmar och passar bäst äldre barn (runt 8+). En kortare variant: ta båten till Agia Roumeli och gå bara den smalaste delen, Järnportarna."
+      },
+      {
+        "name": "Aquaworld Hersonissos",
+        "text": "Litet akvarium och reptilcenter där de flesta djuren är skadade eller räddade exemplar. Här får man komma riktigt nära ormar och ödlor."
+      },
+      {
+        "name": "Cretaquarium",
+        "area": "Gournes",
+        "text": "Stort akvarium i gamla amerikanska basen utanför Heraklion, med fem teman från grunda vatten till djuphavet, inklusive rockor och hajar."
+      },
+      {
+        "name": "Lychnostatis friluftsmuseum",
+        "text": "Genuint friluftsmuseum utanför Hersonissos med gamla bondgårdar, väderkvarn och olivpress. Bara öppet från senvår till senhöst."
+      },
+      {
+        "name": "Labyrinth Park",
+        "text": "Labyrint-aktivitetspark byggd kring myten om Minotauros — barnen ska hitta vägen till mitten genom ett nät av gångar, plus andra pysselaktiviteter runt om."
+      },
+      {
+        "name": "Båtutflykt till Spinalonga",
+        "text": "En venetiansk fästningsö utanför Elounda som senare blev spetälskekoloni. Historiskt stoff som engagerar barn från ungefär 7 år — ojämna kullerstenar, ingen barnvagn klarar det."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Balos lagun",
+        "area": "nära Kissamos",
+        "text": "En av Greklands mest fotograferade stränder med turkost vatten. Vägen dit är lång och gropig, och från parkeringen är det en dryg 20 minuters vandring över stenig terräng — ingen barnvagn klarar det. På sommaren går även båt från Kissamos eller Falassarna."
+      },
+      {
+        "name": "Falassarna",
+        "text": "Vit, nästan tropisk sand utspritt över fem sammanhängande stränder. Huvudstranden kan vara ganska vågig — klippformationerna strax intill bildar lugna, naturliga bassänger för småbarn.",
+        "img": "photo-1724190119251-bb3d5092c84f"
+      },
+      {
+        "name": "Vai",
+        "area": "Sitia",
+        "text": "Europas enda vilda palmskog, med sandstrand omsluten av hundratals palmer. Populärt och kan bli trångt i juli–augusti."
+      },
+      {
+        "name": "Almyros",
+        "area": "nära Agios Nikolaos",
+        "text": "Lugnt och skyddat från vind, med grunt och klart vatten — en av de bäst lämpade stränderna för småbarn på östra Kreta. Livräddare, omklädningsrum och en lekplats."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Petousis Taverna",
+        "area": "Ammoudara, strax väster om Heraklion",
+        "text": "En äkta familjekrog med en bevakad inomhuslekplats med piratskepp, karusell och trampolin. Boka gärna i förväg."
+      },
+      {
+        "name": "The Fanari",
+        "area": "Panormos, Rethymno-området",
+        "text": "Familjeägd taverna med egen barnmeny och en lekyta i trädgården där barnen snabbt hittar andra barn att leka med."
+      },
+      {
+        "name": "Gilisma",
+        "area": "vid Falassarna strand",
+        "text": "Ligger precis vid stranden och har en lekplats på plats, så man kan växla mellan bad och lunch."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Mallorca",
+    "country": "Spanien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1672264430465-781cd9154896",
+    "desc": "Glöm partystämpeln. Mallorcas norra del är rent familjemagiskt — stenbyar, turkost vatten och barnmenyer på varje restaurang. Serra de Tramuntana bjuder dessutom på vandringar som funkar med bärstol.",
+    "age": "0–15 år",
+    "ageMin": 0,
+    "ageMax": 15,
+    "season": "Apr–Okt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 3,5 h",
+    "rating": 4.7,
+    "highlights": [
+      "Port de Pollença — lugn, långgrund familjebukt",
+      "Trätåget till Sóller — en attraktion i sig",
+      "Grottorna i Drach — räddaren när regnet kommer"
+    ],
+    "tip": "Norra delen är familjedelen. Undvik Magaluf, punkt.",
+    "bookingUrl": "https://adtr.co/pxfdic",
+    "semboUrl": "https://adtr.co/3trbre",
+    "areas": [
+      {
+        "name": "Norra Mallorca — Alcúdia & Pollença",
+        "text": "Den klassiska familjedelen. Alcúdia-viken är grund och sandig i flera kilometer, och den medeltida muromgärdade stadskärnan är lagom liten att vandra runt med barnvagn. Cap de Formentor, längst ut på bergsudden, är en av Mallorcas mest fotograferade vyer — bara bilresan dit känns som en egen utflykt."
+      },
+      {
+        "name": "Tramuntanabergen — Sóller, Valldemossa & Deià",
+        "img": "photo-1724446177636-3e21ecc23ca1",
+        "text": "Bergsbyarna i nordväst är gjorda för en dagsutflykt, inte en hel vistelse med små barn — smala gränder, trappor och branta backar. Trätåget från Palma till Sóller (drygt en timme, öppningsbara fönster, hundra år gammalt) är i sig värt resan och funkar fint även med en fyraåring i knät."
+      },
+      {
+        "name": "Östra Mallorca — Cala Millor & Porto Cristo",
+        "text": "Cala Millor har en av öns bredaste och mest barnvänliga stränder, med en lång strandpromenad full av restauranger. Porto Cristo, en kort bit söderut, är basen för Grottorna i Drach — öns mest populära regndagsaktivitet."
+      },
+      {
+        "name": "Sydvästra Mallorca — Palma Nova & Santa Ponsa",
+        "text": "Hit hör Marineland och Katmandu Park, båda bra för barn, men området ligger nära partytäta Magaluf. Boka boende specifikt i Palma Nova eller Santa Ponsa, inte \"sydvästkusten\" i största allmänhet, för att undvika att hamna mitt i festandet."
+      },
+      {
+        "name": "Söder & sydöstra Mallorca — Es Trenc & Mondragó",
+        "text": "Öns lugnaste stränder, utan höghotell i bakgrunden. Es Trenc är två kilometer vit sand och grundare vatten än de flesta andra stränderna, men har färre restauranger och faciliteter nära till hands — packa eget fika om ni stannar hela dagen."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Trätåget till Sóller",
+        "text": "Hundra år gammalt trätåg från Palma genom bergen till Sóller, med öppningsbara fönster och utsikt som gör att ingen i baksätet frågar \"är vi snart framme\". Ta gärna spårvagnen vidare ner till hamnen när ni är framme."
+      },
+      {
+        "name": "Grottorna i Drach (Cuevas del Drach)",
+        "text": "Underjordiska grottor med en av Europas största underjordiska sjöar, avslutas med en kort konsert ombord på båtar som glider fram i mörkret. Svalt och skuggigt — en räddare när det är för varmt för stranden."
+      },
+      {
+        "name": "Palma Aquarium",
+        "text": "Över 8 000 djur, och hajbassängen räknas som en av Europas djupaste på 8,5 meter. De äldre barnen kan boka en guidad dykning med hajarna mot en extra avgift."
+      },
+      {
+        "name": "Hidropark, Port d'Alcúdia",
+        "text": "Norra Mallorcas största vattenpark, med rutschbanor för olika åldrar (1–17 år), 54-håls minigolf och studsmattor. De flesta hotell i området har egen bussförbindelse dit."
+      },
+      {
+        "name": "Marineland, Palma Nova",
+        "text": "Spaniens äldsta marina park, med shower på delfiner, sjölejon och fåglar samt en koloni Humboldtpingviner. Mot extra avgift kan barn över 7 år möta delfinerna på nära håll."
+      },
+      {
+        "name": "Cap de Formentor",
+        "text": "Den smala bergsudden längst i norr, med en av Medelhavets mest dramatiska utsikter vid fyren längst ut. Vägen dit är smal och kurvig — ingen aktivitet i sig, men väl värd bilturen med barn som tål en halvtimme i bilen."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Playa de Muro",
+        "area": "Norra Mallorca",
+        "text": "Fin, mjuk sand och grunt, lugnt vatten mellan Alcúdia och Can Picafort, med gott om faciliteter och Blå flagg. En av öns mest barnvänliga stränder rakt av."
+      },
+      {
+        "name": "Es Trenc",
+        "area": "Söder",
+        "text": "Två kilometer vit sand och grundare vatten än de flesta — men betydligt färre restauranger och solstolar att hyra, så packa med fikat själva om ni stannar länge."
+      },
+      {
+        "name": "Cala Agulla",
+        "area": "Nordost, nära Capdepera",
+        "text": "Guldbrun sand i ett naturreservat med klart, grunt vatten, livräddare och stranduthyrning. Ligger en bit utanför de stora resortorterna."
+      },
+      {
+        "name": "Cala Mondragó",
+        "area": "Söder",
+        "img": "photo-1621871281120-5f0b7a217024",
+        "text": "Mjuk sand, dyner och grundare vatten i en naturpark, plus klippvikar med klart vatten för snorkling och glasbottenbåtar för de som inte vill blöta håret."
+      },
+      {
+        "name": "Cala Millor",
+        "area": "Östra Mallorca",
+        "text": "Vit sand och ljust, grunt vatten längs en av öns bredaste strandpromenader, med gott om restauranger och butiker precis vid stranden."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Il Chiringo",
+        "area": "Palmanova",
+        "text": "Öppet året runt, bred strand för bollspel, pinjeskog, lekplats och en ovanligt generös barnmeny."
+      },
+      {
+        "name": "Patiki Beach",
+        "area": "Port de Sóller",
+        "text": "Klippdammar där barnen kan fånga krabbor, en lekyta i tiki-stil för de minsta och en enkel pastarätt på barnmenyn."
+      },
+      {
+        "name": "AMÉ",
+        "area": "Cala Millor",
+        "text": "Sushi, fisk och vegetariskt för de vuxna, barnmeny för under tio år och en lekplats precis vid den skuggiga terrassen."
+      },
+      {
+        "name": "Ponderosa Beach",
+        "area": "Playa de Muro",
+        "text": "Risrätter och färsk fisk, med en barnmeny som byter ut nuggets mot fisk, och grunt vatten att simma i precis utanför."
+      },
+      {
+        "name": "Berganta Beach Club",
+        "area": "Playa de Muro",
+        "text": "Ligger i den lugnare, skogsklädda änden av stranden. Barnen får burgare, pasta och klyftpotatis, plus en hängande soffa att svinga i."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Algarve",
+    "country": "Portugal",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1621971913709-377f53807c6a",
+    "desc": "Enorma sandstränder, grottor att utforska med båt och fish & chips för halva priset mot Sverige. Albufeira har vattenpark, Lagos har charm. Perfekt mix av avkoppling och äventyr.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Maj–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 4,5 h",
+    "rating": 4.6,
+    "highlights": [
+      "Båttur till Benagil-grottan — barnen pratar om den i veckor",
+      "Zoomarine i Albufeira — delfiner och vattenland i ett",
+      "Praia da Marinha — stranden från alla vykort"
+    ],
+    "tip": "Atlanten är kallare än ni tror. Välj lagunstränder som Praia de Alvor för de minsta.",
+    "bookingUrl": "https://adtr.co/ieyxji",
+    "semboUrl": "https://adtr.co/6kq2uh"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Sardinien",
+    "country": "Italien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1544551763-46a013bb70d5",
+    "desc": "Karibiskt vatten fast fyra timmar från Arlanda. Costa Smeralda är dyrt men resten av ön är överkomligt. Stranden La Pelosa vid Stintino? Barnen vägrade åka därifrån.",
+    "age": "0–12 år",
+    "ageMin": 0,
+    "ageMax": 12,
+    "season": "Jun–Sep",
+    "budget": "€€–€€€",
+    "b": 2.5,
+    "flight": "ca 4 h",
+    "rating": 4.7,
+    "highlights": [
+      "La Pelosa — Karibien på europeisk mark",
+      "Neptungrottan vid Alghero — trappan ner är ett äventyr",
+      "Italiensk gelato. Varje dag. Utan dåligt samvete."
+    ],
+    "tip": "Boka boende tidigt — ön säljer slut i juli. Juni och september är dessutom billigare och svalare.",
+    "bookingUrl": "https://adtr.co/dsj2q4",
+    "semboUrl": "https://adtr.co/vx537y"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Koh Lanta",
+    "country": "Thailand",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1528181304800-259b08848526",
+    "desc": "Thailands lugna familjeö. Inga fullmånefester, bara långgrunda stränder, billiga thairätter och barnvänliga resorts. Lång resa dit men varje timme värd det.",
+    "age": "2–15 år",
+    "ageMin": 2,
+    "ageMax": 15,
+    "season": "Nov–Mar",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 13 h",
+    "rating": 4.6,
+    "highlights": [
+      "Long Beach — långgrunt i flera kilometer",
+      "Snorkelutflykt till Koh Rok — akvarium på riktigt",
+      "Nattmarknaden i Saladan — mango sticky rice till allt"
+    ],
+    "tip": "Ta nattflyget. Barnen sover bort halva resan och ni landar med jetlaggen halvt avklarad.",
+    "bookingUrl": "https://adtr.co/ehlcji",
+    "semboUrl": "https://adtr.co/3nh0x1",
+    "areas": [
+      {
+        "name": "Lanta Old Town (Ban Si Raya)",
+        "text": "Östra sidan av ön, gamla hamnstaden med sekelgamla trähus på pålar rakt ut i vattnet. Restauranger på pirarna och på lördagar (nov–apr) en walking street med matstånd och thaidans — ett halvdagsutflykt snarare än bas.",
+        "img": "photo-1741336313943-4f257d2e6fe6"
+      },
+      {
+        "name": "Klong Dao",
+        "text": "Den mest utbyggda och barnanpassade delen av ön, med flest familjeresorts i rad. Böljande, grund sandbotten gör att barnen kan leka tryggt i vattnet."
+      },
+      {
+        "name": "Klong Khong & Klong Nin",
+        "text": "Klong Khong är stenigare och mer backpacker-/partyläge — inget förstaval med badande barn. Klong Nin några kilometer söderut blir genast lugnare och mer familjevänligt, med finare sand."
+      },
+      {
+        "name": "Mu Ko Lanta National Park",
+        "area": "sydspetsen",
+        "text": "En kort, delvis kuperad stig upp till en vit fyr med utsikt över skogklädda kullar. Vilda apor syns ofta längs vägarna — mata dem aldrig.",
+        "img": "photo-1732568796206-148d9ea3b2e9"
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Utsikten vid Laem Tanod & fyren",
+        "text": "Kort promenad från nationalparkens entré upp till fyren på sydspetsen, med vy över hav och regnskog. Stigen kan vara halkig och går nära stup på vissa ställen."
+      },
+      {
+        "name": "Four Islands & Emerald Cave",
+        "area": "Koh Mook",
+        "text": "Heldagstur med snorkling runt fyra kalkstensöar och ett stopp vid den berömda Emerald Cave, en gömd lagun man simmar in till. Passar bäst äldre barn eller vattenvana ungar. Säsongsstängd jun–sep."
+      },
+      {
+        "name": "Thailändsk matlagningskurs",
+        "text": "Flera skolor tar emot familjer för en förmiddag i köket — barnen får forma egna wraps och curries i mindre portioner. En av de mest kända skänker intäkter till djurskyddet Lanta Animal Welfare."
+      },
+      {
+        "name": "Following Giants",
+        "text": "Etiskt elefantprojekt utan ridning eller shower — familjen går bredvid elefanterna genom skogen och matar dem. Boka i god tid under högsäsong."
+      },
+      {
+        "name": "Kajaktur i mangrove och havsgrottor",
+        "text": "Guidade kajakturer runt ön Koh Talabeng, med paddling in i grottor vid lågvatten. Lugnt tempo gör det görbart även med mindre barn."
+      },
+      {
+        "name": "Lanta Animal Welfare",
+        "text": "Djurhemmet tar emot besökare som vill klappa katter och hundar, och äldre barn kan följa med och rasta hundarna."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Klong Dao Beach",
+        "area": "väster, vid Saladan",
+        "text": "Lång, bred sandstrand med mjukt sluttande, grunt vatten — skolboksexemplet på en barnstrand. Eldshower på kvällen, kolla tiderna om de små redan sover."
+      },
+      {
+        "name": "Klong Khong Beach",
+        "area": "väster",
+        "text": "Mer stenig botten och sämre badvatten än grannstränderna, stämningen mer backpacker-/partyinriktad."
+      },
+      {
+        "name": "Klong Nin Beach",
+        "area": "väster, längre söderut",
+        "text": "Finare sand och lugnare tempo, med ett par medvetet familjeanpassade resorts."
+      },
+      {
+        "name": "Bamboo Bay",
+        "area": "sydöstra kusten",
+        "text": "Avskild liten vik omgiven av kalkstensklippor och grönska, med lugnt vatten bra för snorkling nära land."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Koala Bar and Restaurant",
+        "area": "Klong Dao",
+        "text": "Thailändsk och internationell meny inklusive pizza, med leksaker och en gunga ute på sanden."
+      },
+      {
+        "name": "The Backyard",
+        "text": "Trädgårdsrestaurang med egen lekyta — rutschkana och bollhav — samt hälsosamma skålrätter för föräldrarna."
+      },
+      {
+        "name": "Lanta Cinema",
+        "area": "Klong Dao",
+        "text": "Utomhusbio med egen lekplats på området och enkel barnmat. Kör familjefilmer — kolla aktuella visningstider."
+      },
+      {
+        "name": "Two Scoops Gelato",
+        "area": "Klong Dao och Old Town",
+        "text": "Glassbar med två lägen på ön, bra stopp efter stranden."
+      },
+      {
+        "name": "Oasis Restaurant and Bar",
+        "text": "Blandning av thailändskt och internationellt, med både hälsosamma och mer matiga alternativ."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Disneyland Paris",
+    "country": "Frankrike",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🎢",
+    "img": "photo-1597466599360-3b9775841aec",
+    "desc": "Det magiska som Disney levererar är svårt att matcha. Barnen glömmer att de har jetlag redan vid entrén. Boka hotell i parken om du kan — morgonöppningen före alla andra är guld värd.",
+    "age": "3–12 år",
+    "ageMin": 3,
+    "ageMax": 12,
+    "season": "Mar–Jun, Sep",
+    "budget": "€€€",
+    "b": 3,
+    "flight": "ca 2,5 h",
+    "rating": 4.5,
+    "highlights": [
+      "Extra Magic Time — parken nästan tom, bara för hotellgäster",
+      "Paraden — bättre än ni minns den",
+      "Avengers Campus och Star Wars för de äldre barnen"
+    ],
+    "tip": "Ladda ner appen och köp Premier Access till två–tre åk. Värt varenda euro.",
+    "bookingUrl": "https://www.disneylandparis.com/",
+    "semboUrl": "https://adtr.co/0km3it",
+    "prisinfo": "Priset varierar kraftigt med datum och förbokning — kolla alltid aktuellt pris på officiella sidan innan ni bokar, det kan skilja hundratals kronor mellan lågsäsong och skollov.",
+    "featured": true
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Legoland Billund",
+    "country": "Danmark",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🎢",
+    "img": "photo-1587654780291-39c9404d746b",
+    "desc": "Klassikern. Miniland imponerar på alla åldrar och de nya åkattraktionerna har lyft parken rejält. Kombinera med Lalandia bredvid för en komplett vecka med badland och Lego.",
+    "age": "2–12 år",
+    "ageMin": 2,
+    "ageMax": 12,
+    "season": "Maj–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 1,5 h",
+    "rating": 4.5,
+    "highlights": [
+      "Miniland — 20 miljoner bitar, vuxna fastnar längst",
+      "Lalandia vägg i vägg — Skandinaviens största badland",
+      "Peppa Pig Park för de allra minsta"
+    ],
+    "tip": "Två dagar i parken räcker. Lägg badlandsdagen i mitten så orkar alla.",
+    "bookingUrl": "https://www.legoland.dk/",
+    "semboUrl": "https://adtr.co/nmw8xx",
+    "prisinfo": "Dagsbiljett från ca 349–498 DKK. Säsongskort (AWESOME) från 849 DKK — lönar sig redan efter två besök på en säsong."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Europa-Park",
+    "country": "Tyskland",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🎢",
+    "img": "photo-1560713781-d00f6c18f388",
+    "desc": "Europas bästa nöjespark enligt i princip alla rankingar, och efter ett besök förstår man varför. Enormt utbud för alla åldrar, från karuseller till berg-och-dalbanor som slår Liseberg.",
+    "age": "3–16 år",
+    "ageMin": 3,
+    "ageMax": 16,
+    "season": "Apr–Okt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 2 h + bil",
+    "rating": 4.8,
+    "highlights": [
+      "15 temaområden byggda som europeiska länder",
+      "Wodan — träbanan som toppar entusiasternas listor",
+      "Rulantica — vattenvärlden intill, värd en egen dag"
+    ],
+    "tip": "Bo på något av parkens hotell. Morgonköerna är hälften så långa som mitt på dagen.",
+    "bookingUrl": "https://www.europapark.de/",
+    "semboUrl": "https://adtr.co/j55klt",
+    "prisinfo": "Priset varierar med datum och förbokning — Europa-Park använder dynamisk prissättning, så boka i god tid för bästa pris."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Liseberg",
+    "country": "Göteborg, Sverige",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🎢",
+    "img": "photo-1506461883276-594a12b11cf3",
+    "desc": "Sverigesvängen. Kaniner för de små, Helix för de stora, och atmosfären slår de flesta europeiska parkerna. Jul på Liseberg är dessutom en helt egen upplevelse.",
+    "age": "2–16 år",
+    "ageMin": 2,
+    "ageMax": 16,
+    "season": "Jun–Aug, Dec",
+    "budget": "€",
+    "b": 1,
+    "flight": "tåg/bil",
+    "rating": 4.4,
+    "highlights": [
+      "Helix i mörkret — sista åket innan stängning",
+      "Kaninlandet — perfekt skalat för småbarn",
+      "Jul på Liseberg — en egen årstid"
+    ],
+    "tip": "Åk på vardagar utanför industrisemestern. Halva köerna, samma park.",
+    "bookingUrl": "https://www.liseberg.se/",
+    "semboUrl": "https://adtr.co/46cpdb",
+    "prisinfo": "Entré + åkband ca 625 kr vuxen, 410 kr barn (2025 års priser). Säsongskort finns och lönar sig ofta redan efter 2–3 besök."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Gröna Lund",
+    "country": "Stockholm, Sverige",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🎢",
+    "img": "photo-1686084915896-5c3035e86d13",
+    "desc": "Anrik nöjespark mitt i Stockholm, på Djurgården med utsikt över vattnet. Klassiska karuseller för de minsta och riktiga fartåk som Insane för de äldre barnen. Perfekt för en halvdag mellan stadens andra sevärdheter.",
+    "age": "2–16 år",
+    "ageMin": 2,
+    "ageMax": 16,
+    "season": "Apr–Sep",
+    "budget": "€",
+    "b": 1,
+    "flight": "tåg/T-bana",
+    "rating": 4.4,
+    "highlights": [
+      "Läskiga huset och Kvasten — klassiker sedan barndomen",
+      "Insane — för de som vågar",
+      "Konserter på sommarkvällarna, ingår i entrén"
+    ],
+    "tip": "Köp armband för obegränsat åkande om ni stannar hela dagen — lönar sig redan efter fyra åk.",
+    "bookingUrl": "https://www.gronalund.com/",
+    "prisinfo": "Entré + åkband ca 595 kr vuxen, 545 kr barn. Gröna Kortet (säsongskort) ger även rabatt på vissa konserter."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Tivoli",
+    "country": "Köpenhamn, Danmark",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🎢",
+    "img": "photo-1513622470522-26c3c8a854bc",
+    "desc": "Världens näst äldsta nöjespark mitt i stan. Charmigt, vackert och perfekt storlek för en dag med barn. Kvällsbelysningen är magisk — stanna tills det mörknar.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Apr–Sep, Dec",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 1 h / tåg",
+    "rating": 4.4,
+    "highlights": [
+      "Rutschebanen från 1914 — träklassikern med bromsförare ombord",
+      "Kvällsbelysningen — tusentals lampor när mörkret faller",
+      "Pantomimteatern — gratis föreställningar varje kväll"
+    ],
+    "tip": "Kom vid 15 och stanna till stängning. Tivoli är som bäst i mörker.",
+    "bookingUrl": "https://www.tivoli.dk/",
+    "semboUrl": "https://adtr.co/l7tm7f",
+    "prisinfo": "Entré ca 165 DKK vuxen, 85 DKK barn (3–8 år gratis under 3 år). Obegränsat åkband tillkommer, ca 235 DKK extra."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Furuvik",
+    "country": "Gävle, Sverige",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🐒",
+    "img": "photo-1545581078-80a17b62651a",
+    "desc": "Djurpark och nöjespark i ett, med allt från lekfulla brunbjörnar till klassiska åkattraktioner. Lagom stort för en heldag utan att bli överväldigande — perfekt för familjer med både yngre och äldre barn.",
+    "age": "1–12 år",
+    "ageMin": 1,
+    "ageMax": 12,
+    "season": "Maj–Aug",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 2 h bil/tåg från Sthlm",
+    "rating": 4.4,
+    "highlights": [
+      "Djurparken med brunbjörnar, lejon och kamelhägn",
+      "Klassiska åkattraktioner för olika åldrar",
+      "Lagom kompakt yta — inget långt gående mellan attraktionerna"
+    ],
+    "tip": "Köp biljett online i förväg — priset kan variera kraftigt beroende på dag och säsong.",
+    "bookingUrl": "https://www.furuvik.se/",
+    "prisinfo": "Dagsentré ca 319–519 kr vuxen, 269–469 kr barn (varierar med säsong). Säsongskort (Furuvik Pass) ca 1 195 kr."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Skara Sommarland",
+    "country": "Skara, Sverige",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🎢",
+    "img": "photo-1725758575836-338d8ac83592",
+    "desc": "Skandinaviens största vattenland, med rutschbanor för alla mod- och åldersnivåer samt lugnare vattenlekplatser för de minsta. En hel dag går snabbt när solen är framme.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Jun–Aug",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 2,5 h bil från Gbg",
+    "rating": 4.3,
+    "highlights": [
+      "Skandinaviens största vattenland",
+      "Lugna vattenlekplatser för de allra minsta",
+      "Adrenalinrutschbanor för äldre barn och tonåringar"
+    ],
+    "tip": "Ta med egna badskor — betongen runt bassängerna blir het och skrapig på högsommaren.",
+    "bookingUrl": "https://www.sommarland.se/",
+    "prisinfo": "Dagsentré ca 529–565 kr vuxen, 430 kr barn. Sommarlandskortet (säsongskort) ca 1 399 kr."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Parken Zoo",
+    "country": "Eskilstuna, Sverige",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🦁",
+    "img": "photo-1690214141886-367e93a2eefb",
+    "desc": "Djurpark och nöjespark mitt i Eskilstuna, med lejon, tigrar och en handfull åkattraktioner inbakade i djurmiljöerna. Kompakt och lättöverskådligt — bra för familjer med yngre barn som lätt tröttnar.",
+    "age": "1–10 år",
+    "ageMin": 1,
+    "ageMax": 10,
+    "season": "Apr–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 1,5 h bil/tåg från Sthlm",
+    "rating": 4.1,
+    "highlights": [
+      "Lejon och tigrar på nära håll",
+      "Åkattraktioner inbakade i djurmiljöerna",
+      "Kompakt yta, bra för yngre barn med kortare tålamod"
+    ],
+    "tip": "Säsongskort släpps ofta med Black Friday-rabatt — bevaka det om ni planerar flera besök.",
+    "bookingUrl": "https://www.parkenzoo.se/",
+    "prisinfo": "Priser varierar per säsong — kolla aktuellt datum på hemsidan innan besök. Säsongskort finns."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Nordens Ark",
+    "country": "Bohuslän, Sverige",
+    "cat": "parks",
+    "catLabel": "Nöjesparker",
+    "emoji": "🐅",
+    "img": "photo-1613693745316-e09014ac910e",
+    "desc": "Djurpark med fokus på utrotningshotade arter, vackert belägen vid Åbyfjorden. Amurtiger, röd panda och nordiska lantraser i naturnära hägn — mer vandring i naturskön miljö än traditionell djurpark.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Året runt (bäst jun–aug)",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 1,5 h bil från Gbg",
+    "rating": 4.6,
+    "highlights": [
+      "Amurtiger och röd panda i naturnära hägn",
+      "Vacker natur vid Åbyfjorden — även en fin promenad",
+      "Arbete med utrotningshotade arter, engagerande för äldre barn"
+    ],
+    "tip": "Räkna med minst tre timmars promenad om ni vill se hela parken — ta med barnvagn, den går fint på gångarna.",
+    "bookingUrl": "https://nordensark.se/",
+    "semboUrl": "https://adtr.co/ahyab8",
+    "prisinfo": "Entré ca 280–310 kr vuxen, 110–130 kr barn (5–17 år), 0–4 år gratis. Säsongskort 800 kr vuxen / 400 kr barn."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "London",
+    "country": "England",
+    "cat": "cities",
+    "catLabel": "Storstäder",
+    "emoji": "🏙️",
+    "img": "photo-1513635269975-59663e0ac1ad",
+    "desc": "Natural History Museum ensamt gör resan värd det — och det är gratis. Lägg till Harry Potter-studion, Camden Market och dubbeldäckarbussar. Barnen får sin kulturkick utan att märka det.",
+    "age": "4–16 år",
+    "ageMin": 4,
+    "ageMax": 16,
+    "season": "Apr–Jun, Sep",
+    "budget": "€€€",
+    "b": 3,
+    "flight": "ca 2,5 h",
+    "rating": 4.6,
+    "highlights": [
+      "Natural History Museum — dinosaurier, gratis entré",
+      "Harry Potter Studio Tour — magi även för vuxna",
+      "Dubbeldäckare, rad ett på övervåningen. Alltid."
+    ],
+    "tip": "Boka Harry Potter-studion månader i förväg. Den säljer alltid slut, alltid.",
+    "semboUrl": "https://adtr.co/5e2ln5"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Barcelona",
+    "country": "Spanien",
+    "cat": "cities",
+    "catLabel": "Storstäder",
+    "emoji": "🏙️",
+    "img": "photo-1583422409516-2895a77efded",
+    "desc": "Gaudís byggnader är som att kliva in i en saga. Park Güell, Barceloneta-stranden på eftermiddagen, tapas till middag. Staden har en energi som funkar för alla åldrar.",
+    "age": "3–16 år",
+    "ageMin": 3,
+    "ageMax": 16,
+    "season": "Apr–Jun, Sep–Okt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 3,5 h",
+    "rating": 4.6,
+    "highlights": [
+      "Park Güell — Gaudí genom barnögon",
+      "Barceloneta på eftermiddagen — storstad och strand samma dag",
+      "Camp Nou för de fotbollsfrälsta"
+    ],
+    "tip": "Sagrada Família: boka tid online och skippa kön. Barnens ljudguide är förvånansvärt bra.",
+    "bookingUrl": "https://adtr.co/ym3lvu",
+    "semboUrl": "https://adtr.co/yztdhn",
+    "areas": [
+      {
+        "name": "Eixample",
+        "text": "Barcelonas gyllene standard för familjer — breda, trädkantade gator i rutnät gör det enkelt med barnvagn, och det finns gott om bageri, apotek och stormarknader i varje kvarter. Här bor ni centralt med gångavstånd till Casa Batlló och Casa Milà."
+      },
+      {
+        "name": "Gràcia",
+        "text": "En gammal by som blivit stadsdel, med smala bilfria gränder som öppnar upp i solbelysta torg där barnen kan leka medan ni sitter kvar på ett kafé. Park Güell ligger på gångavstånd uppåt berget, men tänk på att äldre fastigheter ofta saknar hiss."
+      },
+      {
+        "name": "Poblenou",
+        "text": "Avslappnad, havsnära stadsdel med den bilfria huvudgatan Rambla de Poblenou full av glassbarer, kaféer och små lekplatser. Hit kommer ni närmast stränderna Bogatell, Mar Bella och Nova Icària — lugnare och billigare än Barceloneta."
+      },
+      {
+        "name": "Montjuïc",
+        "text": "Det gröna berget söder om centrum är en hel dag i sig — ta linbanan upp från Barceloneta, besök slottet med lekplats och fin utsikt, och kombinera med Poble Espanyol, en miniatyrby med byggnader från hela Spanien.",
+        "img": "photo-1655926580546-3b02df72b824"
+      },
+      {
+        "name": "El Born / Ciutadella",
+        "text": "Centralt och lugnare än Gotiska kvarteren tack vare gågator, med Parc de la Ciutadella precis intill — stadens finaste familjepark med lekplatser, roddbåtar och en liten djurpark."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Sagrada Família",
+        "text": "Boka tid online och skippa kön, och satsa på barnens egen ljudguide som förklarar byggnaden på ett sätt som fångar även yngre barn. Vill man upp i tornen krävs separat biljett och trånga trappor — passar bäst från ungefär 8–10 år."
+      },
+      {
+        "name": "Tibidabo nöjespark",
+        "text": "Åk spårvagn (Tramvia Blau) och sedan linbana eller TibiBus upp på berget — resan dit är lika rolig som parken. Biljetten gäller alla åkattraktioner, men kolla längdgränser för yngre barn. Utsiktsplattformen är gratis och har en av stadens bästa vyer."
+      },
+      {
+        "name": "CosmoCaixa",
+        "text": "Interaktivt händer-på-museum med experiment inom matte, geologi och kemi, plus en rekonstruerad amazonsk regnskog med piranior och krokodiler. Fungerar utmärkt som regndagsaktivitet för nyfikna barn i alla åldrar."
+      },
+      {
+        "name": "Barcelona Aquarium",
+        "text": "Ligger vid Port Vell, en kort promenad från slutet av La Rambla. Rörbassänger passar de minsta, medan det stora oceanariet med glastunnel och hajar lockar de större barnen. Öppet året runt — ett säkert kort för regniga dagar."
+      },
+      {
+        "name": "Linbanorna till Montjuïc",
+        "text": "Port Cable Car från Barceloneta-stranden till Miramar, och vidare upp med Telefèric de Montjuïc till toppen (olika biljetter trots korta avstånd). Uppe vid slottet finns både lekplats och fantastisk utsikt över hamnen."
+      },
+      {
+        "name": "Parc de la Ciutadella",
+        "text": "Gratis stadspark med två lekplatser, roddbåtar att hyra på dammen och djurparken Barcelona Zoo inom området. Ett perfekt lugnare mellanrum mellan sightseeing, gångavstånd från Born och gamla stan."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Barceloneta",
+        "text": "Stadens mest välkända och livligaste strand, med beachvolleyplaner, bordtennisbord och lekplatsutrustning för barn. Mest folk och mest stämning, men också mest trängsel mitt på dagen.",
+        "img": "photo-1628541289614-b70c327da0bf"
+      },
+      {
+        "name": "Nova Icària",
+        "area": "vid Olympiahamnen",
+        "text": "Den strand som oftast nämns som mest familjevänlig — lugnare än Barceloneta men ändå med strandpromenad full av caféer och restauranger precis vid Port Olímpic."
+      },
+      {
+        "name": "Bogatell",
+        "area": "Poblenou",
+        "text": "Lång strand med upphöjd promenad för jogging och cykling, vilket dämpar trafikbuller. Mer avslappnad känsla, lugn på dagtid."
+      },
+      {
+        "name": "Mar Bella",
+        "area": "östra Poblenou",
+        "text": "Mindre strand med uthyrning av vindsurfing- och kajakutrustning, samt park och skatepark i närheten. Observera att första delen av stranden är stadens officiella nudiststrand."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Semproniana",
+        "area": "Eixample, nära Hospital Clínic",
+        "text": "Medelhavs/fransk-katalansk mat med matlagningsworkshops för barn 4–10 år på lördagseftermiddagar."
+      },
+      {
+        "name": "Pudding",
+        "area": "Dreta de l'Eixample, nära Urquinaona",
+        "text": "Kafé byggt för eftermiddagar med barn — egen lekzon med böcker, sällskapsspel och iPads, man kan även boka kalas här."
+      },
+      {
+        "name": "Chocolatería La Nena",
+        "area": "Gràcia, nära Fontana",
+        "text": "Klassiskt choklad- och churroskafé med ett litet inomhuslekrum så att barnen kan leka medan föräldrarna kopplar av över en kopp varm choklad."
+      },
+      {
+        "name": "Doble Zer00",
+        "area": "sushi, El Born",
+        "text": "Egen barnmeny med sushi anpassad för barn, och bemannad barnpassning på helger (13.30–17.00) — ovanligt och praktiskt för föräldrar som vill äta ostressat."
+      },
+      {
+        "name": "Can Castellví / La Granja",
+        "area": "Molins de Rei, ca 20 min utanför stan",
+        "text": "Ligger vid en gård med ponnyridning, djur och en liten lekplats/trädgård — ett bra val för en heldagsutflykt kombinerad med lunch."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Tokyo",
+    "country": "Japan",
+    "cat": "cities",
+    "catLabel": "Storstäder",
+    "emoji": "🏙️",
+    "img": "photo-1540959733332-eab4deabeeaf",
+    "desc": "Kulturkrocken som barn älskar. Robotrestauranger, Pokémon Center, Shibuya-korsningen, och den bästa maten i världen. Otroligt rent och säkert. Dyrt men oförglömligt.",
+    "age": "5–16 år",
+    "ageMin": 5,
+    "ageMax": 16,
+    "season": "Mar–Maj, Okt–Nov",
+    "budget": "€€€",
+    "b": 3,
+    "flight": "ca 14 h",
+    "rating": 4.9,
+    "highlights": [
+      "Pokémon Center och Nintendo Tokyo i Shibuya",
+      "teamLab Planets — konst man vadar genom",
+      "Shinkansen-dagstur till Hakone med Fuji-vy"
+    ],
+    "tip": "Skaffa Suica-kort till alla direkt på flygplatsen. Tunnelbanan går från stress till nöje.",
+    "semboUrl": "https://adtr.co/hj3dhk"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "New York",
+    "country": "USA",
+    "cat": "cities",
+    "catLabel": "Storstäder",
+    "emoji": "🏙️",
+    "img": "photo-1496442226666-8d4d0e62e6e9",
+    "desc": "Central Park, Frihetsgudinnan, Broadway-shower och pizza på varje hörn. Intensivt och utmattande men det finns en anledning till att alla vill dit minst en gång.",
+    "age": "6–16 år",
+    "ageMin": 6,
+    "ageMax": 16,
+    "season": "Apr–Jun, Sep–Okt",
+    "budget": "€€€",
+    "b": 3,
+    "flight": "ca 8,5 h",
+    "rating": 4.5,
+    "highlights": [
+      "Central Park — hyr cyklar och gör en förmiddag av det",
+      "Intrepid — ett riktigt hangarfartyg mitt i stan",
+      "Broadway-matiné — barnversionerna håller världsklass"
+    ],
+    "tip": "Bo i Midtown West. Gångavstånd till det mesta, tunnelbana till resten.",
+    "semboUrl": "https://adtr.co/cmd2qt"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Amsterdam",
+    "country": "Nederländerna",
+    "cat": "cities",
+    "catLabel": "Storstäder",
+    "emoji": "🏙️",
+    "img": "photo-1534351590666-13e3e96b5017",
+    "desc": "Platt, cykelvänligt och fullt av grachter att upptäcka med båt. NEMO Science Museum är fantastiskt för barn, och pannkakor till lunch varje dag? Inga protester hemifrån.",
+    "age": "3–14 år",
+    "ageMin": 3,
+    "ageMax": 14,
+    "season": "Apr–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 2 h",
+    "rating": 4.5,
+    "highlights": [
+      "NEMO Science Museum — fem våningar att pilla på allt",
+      "Kanalbåt — barnens favorittransport",
+      "Vondelpark — lekplatser och pannkakshus"
+    ],
+    "tip": "Hyr cyklar med barnsits eller lådcykel. Staden är bokstavligen byggd för det.",
+    "semboUrl": "https://adtr.co/ytcs96"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Gotland",
+    "country": "Sverige",
+    "cat": "sweden",
+    "catLabel": "Sverige",
+    "emoji": "🇸🇪",
+    "img": "photo-1560089168-6516081f5bf1",
+    "desc": "Sveriges egen semesterö. Visby inom murarna, Fårö med raukarna, och stränderna vid Tofta. Barnen cyklar fritt, alla äter glass och tempot går ner till noll. Sommar som den ska vara.",
+    "age": "0–16 år",
+    "ageMin": 0,
+    "ageMax": 16,
+    "season": "Jun–Aug",
+    "budget": "€–€€",
+    "b": 1.5,
+    "flight": "45 min / färja",
+    "rating": 4.7,
+    "highlights": [
+      "Visby ringmur och rosorna i varje gränd",
+      "Raukarna på Fårö — stenskulpturer av naturen själv",
+      "Kneippbyn — Pippi Långstrumps riktiga villa"
+    ],
+    "tip": "Tar ni bilen: boka färjan tidigt. Sommarturerna säljer slut långt i förväg.",
+    "bookingUrl": "https://gotland.com/",
+    "semboUrl": "https://adtr.co/p2nn9a"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Astrid Lindgrens Värld",
+    "country": "Vimmerby, Sverige",
+    "cat": "sweden",
+    "catLabel": "Sverige",
+    "emoji": "🇸🇪",
+    "img": "photo-1509356843151-3e7d96241e11",
+    "desc": "Pippi, Emil och Karlsson — allt kommer till liv. Teatern i parken är förvånansvärt bra och Bullerbyn-stugan gör vuxna tårögda. Obligatoriskt minst en gång för svenska barnfamiljer.",
+    "age": "2–10 år",
+    "ageMin": 2,
+    "ageMax": 10,
+    "season": "Jun–Aug",
+    "budget": "€",
+    "b": 1,
+    "flight": "bil / tåg",
+    "rating": 4.6,
+    "highlights": [
+      "Pippi-föreställningen — kom i god tid, gräset fylls snabbt",
+      "Bullerbyn — nostalgi som tar även vuxna",
+      "Katthult med Emils snickerbod (och nya hyss)"
+    ],
+    "tip": "Bo på campingen intill. Barnen orkar två dagar i parken, lätt.",
+    "bookingUrl": "https://astridlindgrensvarld.se/",
+    "semboUrl": "https://adtr.co/uab845"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Kolmården",
+    "country": "Norrköping, Sverige",
+    "cat": "sweden",
+    "catLabel": "Sverige",
+    "emoji": "🇸🇪",
+    "img": "photo-1546182990-dffeafbe841d",
+    "desc": "Sveriges bästa djurpark med safari, tropikarium och riktigt bra nyheter varje säsong. Wildfire-berg-och-dalbanan satte en ny standard. Perfekt tvådagarsutflykt från Stockholm.",
+    "age": "1–14 år",
+    "ageMin": 1,
+    "ageMax": 14,
+    "season": "Maj–Sep",
+    "budget": "€–€€",
+    "b": 1.5,
+    "flight": "1,5 h från Sthlm",
+    "rating": 4.5,
+    "highlights": [
+      "Safari med linbana över savannen",
+      "Wildfire — för de modiga längre barnen",
+      "Bamses värld — allt de minsta behöver"
+    ],
+    "tip": "Kom till öppning. Djuren är piggast på morgonen och köerna kortast.",
+    "bookingUrl": "https://www.kolmarden.com/",
+    "semboUrl": "https://adtr.co/oigbgw"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Höga Kusten",
+    "country": "Ångermanland, Sverige",
+    "cat": "sweden",
+    "catLabel": "Sverige",
+    "emoji": "🇸🇪",
+    "img": "photo-1441974231531-c6227db76b6e",
+    "desc": "UNESCO-världsarv med stigar, klippor och Skuleskogen. Höga Kusten-leden har etapper som funkar med barn. Sverige på riktigt, utan folkmassor. Känslan av att vara först på platsen.",
+    "age": "6–16 år",
+    "ageMin": 6,
+    "ageMax": 16,
+    "season": "Jun–Sep",
+    "budget": "€",
+    "b": 1,
+    "flight": "bil / tåg",
+    "rating": 4.6,
+    "highlights": [
+      "Skuleberget — linbana upp, vandring ner",
+      "Trysunda — skärgårdsidyll utan bilar",
+      "Slåttdalsskrevan — 40 meter djup spricka rakt genom berget"
+    ],
+    "tip": "Tälta nästan var som helst. Allemansrätten är världens bästa reseförmån.",
+    "bookingUrl": "https://www.hogakusten.com/",
+    "semboUrl": "https://adtr.co/6x7qhj"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Stockholms skärgård",
+    "country": "Sverige",
+    "cat": "sweden",
+    "catLabel": "Sverige",
+    "emoji": "🇸🇪",
+    "img": "photo-1508189860359-777d945909ef",
+    "desc": "24 000 öar. Vaxholm på dagstur eller hyr stuga på Sandhamn för en vecka. Barnen badar, fiskar och hoppar från klippor. Funktionell semester utan flygstress.",
+    "age": "0–16 år",
+    "ageMin": 0,
+    "ageMax": 16,
+    "season": "Jun–Aug",
+    "budget": "€–€€",
+    "b": 1.5,
+    "flight": "båt från Sthlm",
+    "rating": 4.7,
+    "highlights": [
+      "Vaxholm — enklaste dagsturen med barn",
+      "Hyr stuga på Sandhamn eller Utö en hel vecka",
+      "Klippbad från morgon till kväll"
+    ],
+    "tip": "Waxholmsbolagets båtluffarkort är skärgårdens interrail. Öhoppa en hel vecka.",
+    "bookingUrl": "https://visitskargarden.se/",
+    "semboUrl": "https://adtr.co/6lz2bw"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Tekniska museet",
+    "country": "Stockholm, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1518133910546-b6c2fb7d79e3",
+    "desc": "Sveriges största teknik- och vetenskapsmuseum, byggt för att pillas på. Barnen får trycka, klättra och experimentera i egen takt medan de faktiskt lär sig något. Perfekt regndagsutflykt i Stockholm.",
+    "age": "3–14 år",
+    "ageMin": 3,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "tåg/T-bana",
+    "rating": 4.5,
+    "highlights": [
+      "Teknorama — hela våningen byggd för att experimentera med händerna",
+      "Kraftstationen — fysik man känner i kroppen, inte bara läser om",
+      "Lilla Idas Kök för de yngsta barnen"
+    ],
+    "tip": "Räkna med minst tre timmar. Kaféet ligger mitt i museet så ni slipper gå ut och in.",
+    "bookingUrl": "https://www.tekniskamuseet.se/",
+    "prisinfo": "Entré från ca 145 kr. Barn under 7 år gratis. Medlemskap i Tekniska museets vänner ger fritt inträde + 25% rabatt för medföljande familj."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Vasamuseet",
+    "country": "Stockholm, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1580795479225-c50ab8c3348d",
+    "desc": "Ett helt, 400 år gammalt skepp mitt i en museihall — barn som annars tycker museer är trist blir svarslösa här. Kombinera med barnverkstaden på helger och lov för extra pyssel kring skeppet och sjöfart.",
+    "age": "4–16 år",
+    "ageMin": 4,
+    "ageMax": 16,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/båt",
+    "rating": 4.8,
+    "highlights": [
+      "Skeppet i sin fulla, bevarade storlek — går inte att ta miste på",
+      "Filmen om Vasas historia, textad på flera språk",
+      "Barnverkstad med pyssel kopplat till 1600-talet"
+    ],
+    "tip": "Boka gratis biljett online i förväg på sommaren — det blir långa köer annars.",
+    "bookingUrl": "https://www.vasamuseet.se/",
+    "prisinfo": "195 kr vuxen (jan–apr, okt–dec) / 240 kr (maj–sep). Barn och unga till 18 år alltid gratis."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Polismuseet",
+    "country": "Stockholm, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1589391886645-d51941baf7fb",
+    "desc": "Litet men engagerande museum om polisarbete förr och nu, med riktiga polisbilar, uniformer och interaktiva stationer där barnen får testa på detektivarbete. Ligger vid Gärdet, granne med Tekniska museet — lätt att kombinera till en museidag.",
+    "age": "5–14 år",
+    "ageMin": 5,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/spårvagn",
+    "rating": 4.2,
+    "highlights": [
+      "Riktiga polisbilar och motorcyklar att klättra i",
+      "Interaktiva stationer om spårsäkring och detektivarbete",
+      "Lagom litet — funkar även med kortare tålamod"
+    ],
+    "tip": "Kombinera med Tekniska museet samma dag — de ligger vägg i vägg vid Gärdet.",
+    "bookingUrl": "https://polismuseet.se/",
+    "prisinfo": "Entré ca 80 kr vuxen (2025 års pris)."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Sjöhistoriska museet",
+    "country": "Stockholm, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1544967082-d9d25d867d66",
+    "desc": "Museum om Sveriges sjöfart och örlogshistoria, med skeppsmodeller, dykarutrustning och en hel avdelning med lekhörnor för de yngsta. Mysigt och lugnare tempo än grannen Vasamuseet, med bra café med utsikt över vattnet.",
+    "age": "3–14 år",
+    "ageMin": 3,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/spårvagn",
+    "rating": 4.3,
+    "highlights": [
+      "Skeppsmodeller i miniatyr som barnen älskar att studera",
+      "Lugnare och mindre trängsel än Vasamuseet bredvid",
+      "Fin lekhörna för de yngsta"
+    ],
+    "tip": "Ett bra andra-val när Vasamuseet känns för fullt — samma närhet till vattnet, mycket lugnare.",
+    "bookingUrl": "https://sjohistoriska.se/",
+    "prisinfo": "Entré ca 130 kr vuxen (2025 års pris)."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Paradox",
+    "country": "Stockholm, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1518998053901-5348d3961a04",
+    "desc": "Interaktivt illusionsmuseum fullt av optiska bländverk, omvända rum och foton som ser omöjliga ut. Mindre \"titta men rör inte\" och mer \"testa, skratta och fota\" — en garanterad hit för barn som tröttnat på traditionella montrar.",
+    "age": "4–16 år",
+    "ageMin": 4,
+    "ageMax": 16,
+    "season": "Året runt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "buss/T-bana",
+    "rating": 4.4,
+    "highlights": [
+      "Omvända rum och optiska illusioner att fota i",
+      "Allt är gjort för att röras och testas, inte bara beskådas",
+      "Bra regndags- eller vinteraktivitet mitt i stan"
+    ],
+    "tip": "Ta med telefonen fulladdad — det här är ett museum ni kommer vilja fota varenda rum i.",
+    "bookingUrl": "https://paradoxmuseum.com/stockholm/",
+    "prisinfo": "249 kr vuxen, 195 kr barn (5–12 år)/student/senior. Familjebiljett (2 vuxna + 2 barn) 710 kr. Barn under 5 år gratis."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Universeum",
+    "country": "Göteborg, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1764253340517-9adc9a839970",
+    "desc": "Nordens största science center, med regnskog, hajakvarium och interaktiva experimentstationer under ett och samma tak. En hel dag räcker knappt till för att se allt — planera hellre för två kortare besök om ni bor nära.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "buss/spårvagn",
+    "rating": 4.6,
+    "highlights": [
+      "Regnskog med fritt flygande fåglar och apor",
+      "Ocean Zone med hajar och stora akvarier",
+      "Miniverseum — egen avdelning för de allra minsta"
+    ],
+    "tip": "Räkna med minst 3–4 timmar. Kombinera gärna med Liseberg som ligger alldeles intill.",
+    "bookingUrl": "https://www.universeum.se/",
+    "prisinfo": "Dagspass ca 305 kr vuxen, 255 kr barn (2025 års pris, kan variera med säsong)."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Naturhistoriska museet Göteborg",
+    "country": "Göteborg, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1491156855053-9cdff72c7f85",
+    "desc": "Dinosaurieskelett, fossiler och världens enda monterade blåval under ett tak. Prisvärt och lagom stort för en förmiddags- eller eftermiddagsutflykt, med ett tydligt \"wow\" när blåvalen dyker upp.",
+    "age": "3–14 år",
+    "ageMin": 3,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/spårvagn",
+    "rating": 4.4,
+    "highlights": [
+      "Världens enda monterade blåval",
+      "Dinosaurieskelett och fossiler",
+      "Prisvärt jämfört med de flesta andra Göteborgsmuseer"
+    ],
+    "tip": "Årskortet (140 kr) gäller på fem museer i regionen — värt det redan efter två besök.",
+    "bookingUrl": "https://www.gnm.se/",
+    "prisinfo": "Entré 70 kr vuxen, gratis under 20 år. Årskort 140 kr (gäller fem museer i regionen)."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Malmö Museer",
+    "country": "Malmö, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1696694139314-e0e5962b8dc0",
+    "desc": "Malmöhus slott, akvarium, ubåt och konstmuseum under ett och samma årskort. Barnen kan gå från riddarsal till akvarium till att klättra ombord på en riktig ubåt på samma eftermiddag.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/spårvagn",
+    "rating": 4.3,
+    "highlights": [
+      "Malmöhus slott med utställningar i äkta slottsmiljö",
+      "Litet men charmigt akvarium med tropiska fiskar",
+      "Riktig ubåt att gå ombord på i Teknikens och sjöfartens hus"
+    ],
+    "tip": "Barn 0–19 år går alltid in gratis, så det är främst vuxenbiljetten eller årskortet ni behöver planera för.",
+    "bookingUrl": "https://malmo.se/museum",
+    "prisinfo": "Barn 0–19 år alltid gratis. Årskort vuxen 250 kr (150 kr student/pensionär), gäller Slottet + Teknikens och sjöfartens hus."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Disgusting Food Museum",
+    "country": "Malmö, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1714621186557-c862830f157f",
+    "desc": "80 av världens mest \"äckliga\" maträtter utställda och till och med smakbara, från surströmming till ostmask. Mer skratt och \"usch!\" än traditionellt museum — en garanterad snackis bland barn (och lite äldre barn i synnerhet).",
+    "age": "8–16 år",
+    "ageMin": 8,
+    "ageMax": 16,
+    "season": "Året runt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "buss/tåg",
+    "rating": 4.3,
+    "highlights": [
+      "80 utställda \"äckliga\" rätter från hela världen",
+      "Smakbar med riktiga smakprov för de modiga",
+      "Snurrhjul med pris om man klarar utmaningen"
+    ],
+    "tip": "Passar bäst från ca 8 år — yngre barn kan tycka lukterna och texterna blir för mycket.",
+    "bookingUrl": "https://disgustingfoodmuseum.com/",
+    "prisinfo": "230 kr vuxen, 80 kr barn (6–15 år), gratis under 6 år (2 barn per vuxen)."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Gustavianum",
+    "country": "Uppsala, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1575223970966-76ae61ee7838",
+    "desc": "Uppsala universitets äldsta bevarade byggnad, fylld med vikingasvärd, mumier och en anatomisk teater från 1600-talet. Lagom kompakt för ett museibesök som inte tar hela dagen.",
+    "age": "5–14 år",
+    "ageMin": 5,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/tåg",
+    "rating": 4.4,
+    "highlights": [
+      "Vikingavapen och smycken från Valsgärdegravarna",
+      "Mumier och antika föremål från Medelhavsområdet",
+      "Anatomiska teatern högst upp i huset, byggd på 1600-talet"
+    ],
+    "tip": "Kombinera med en promenad i Uppsala domkyrka, som ligger på andra sidan gatan.",
+    "bookingUrl": "https://www.gustavianum.uu.se/",
+    "prisinfo": "150 kr vuxen, 120 kr student/pensionär, 0–19 år gratis."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Kulturen i Lund",
+    "country": "Lund, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1649452843752-663493034117",
+    "desc": "Ett av världens första friluftsmuseer, med historiska hus från medeltid till 1930-tal utspridda över två kvarter i centrala Lund. Barnvänligt med egen lekutställning och lekplats mitt bland de historiska husen.",
+    "age": "3–14 år",
+    "ageMin": 3,
+    "ageMax": 14,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/tåg",
+    "rating": 4.4,
+    "highlights": [
+      "Historiska hus att gå in i, från medeltid till 1930-tal",
+      "Egen lekplats inne i friluftsmuseet",
+      "Madicken-lekutställning för barn 3–9 år"
+    ],
+    "tip": "Barn och unga till och med 18 år har alltid gratis entré — bra prisvärt val för barnfamiljer.",
+    "bookingUrl": "https://www.kulturen.com/",
+    "prisinfo": "150 kr vuxen, 120 kr pensionär/student. Barn 0–18 år alltid gratis."
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Marinmuseum",
+    "country": "Karlskrona, Sverige",
+    "cat": "museums",
+    "catLabel": "Museer",
+    "emoji": "🏛️",
+    "img": "photo-1642689431614-099b1fc8dd05",
+    "desc": "Sveriges nationella marinmuseum, med en riktig ubåt att gå ombord på och en undervattenstunnel med ett faktiskt vrak. Ligger vackert på ön Stumholmen i historiska Örlogsstaden Karlskrona.",
+    "age": "4–16 år",
+    "ageMin": 4,
+    "ageMax": 16,
+    "season": "Året runt",
+    "budget": "€",
+    "b": 1,
+    "flight": "buss/tåg",
+    "rating": 4.5,
+    "highlights": [
+      "Gå ombord på den riktiga ubåten HMS Neptun",
+      "Undervattenstunnel med ett faktiskt vrak",
+      "Interaktiva stationer där barnen får slå knopar och ro kanonslup"
+    ],
+    "tip": "Barn 0–18 år går alltid gratis, och museet har fri entré för alla på onsdagar.",
+    "bookingUrl": "https://www.marinmuseum.se/",
+    "prisinfo": "110–170 kr vuxen (varierar med säsong), barn 0–18 år alltid gratis. Årskort 350 kr (inkluderar en gäst per besök). Gratis entré för alla på onsdagar."
+  },
+  {
+    "updated": "2026-09-30",
+    "published": "2026-09-23",
+    "name": "Rhodos",
+    "country": "Grekland",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1601581875039-e899893d520c",
+    "desc": "Medeltida stadsmurar att upptäcka till fots, långgrunda familjestränder i Faliraki och vattenland precis vid stranden. Rhodos har historien för de äldre barnen och det grunda vattnet för de yngsta — en av Greklands mest kompletta familjeöar.",
+    "age": "1–14 år",
+    "ageMin": 1,
+    "ageMax": 14,
+    "season": "Maj–Okt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 3,5 h",
+    "rating": 4.6,
+    "highlights": [
+      "Rhodos gamla stad — medeltida gränder som barnen älskar att vilse i",
+      "Faliraki Water Park precis vid familjestranden",
+      "Lindos akropolis — en kortare, barnvänlig historielektion"
+    ],
+    "tip": "Bo i Faliraki eller Kolymbia om ni vill ha nära till både strand och vattenland.",
+    "bookingUrl": "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fupplev-rhodos-med-nazar",
+    "semboUrl": "https://adtr.co/e7vt0s",
+    "featured": true,
+    "areas": [
+      {
+        "name": "Rhodos stad — Nya staden & Mandraki",
+        "text": "Bortom de medeltida gränderna ligger Nya staden, den modernare delen runt hamnen Mandraki — bredare gator, enklare med barnvagn och nära till Rhodos Akvarium och sandstranden Elli."
+      },
+      {
+        "name": "Faliraki",
+        "text": "Rhodos största familjeort med det bredaste utbudet av hotell och barnaktiviteter utöver vattenlandet. Många familjer väljer boende i de lugnare södra delarna mot Ladiko/Anthony Quinn Bay."
+      },
+      {
+        "name": "Lindos",
+        "text": "Ett vitkalkat bykomplex uppe på en kulle, bilfritt inne i byn — åsnetaxi upp till akropolis är en höjdpunkt för barnen. Gränderna är kulliga, passar bäst barn som går själva snarare än barnvagn.",
+        "img": "photo-1725964014864-cb08d9325fc4"
+      },
+      {
+        "name": "Kolymbia & Afandou",
+        "text": "Lugnare och mer lågmält än Faliraki, mitt på östkusten. Eukalyptusklädda gator, familjedrivna hotell och en lugn sandstrand."
+      },
+      {
+        "name": "Ixia & Ialyssos",
+        "text": "Västkusten, närmast Rhodos stad och flygplatsen — blåsigare med mer vågor, stränderna är mest sten/grus. Bra ställe för äldre barn som vill prova vindsurfing."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Fjärilsdalen (Petaloudes)",
+        "text": "En skuggig dal söder om Rhodos stad där tusentals fjärilar samlas juli–september, med gångstigar över små träbroar. Lätt och vacker promenad för alla åldrar."
+      },
+      {
+        "name": "Sju Källor (Epta Piges)",
+        "text": "En skuggig skogspromenad till en liten sjö med gäss och påfåglar. Den som vågar kan vada genom en 150 meter lång, mörk tunnel med kallt vatten — kul för äldre barn, hoppa över med småttingar."
+      },
+      {
+        "name": "Rhodos Akvarium",
+        "text": "Litet akvarium vid Mandraki i Rhodos stad, med medelhavsfiskar och säsongsvisa barnaktiviteter som skattjakt med kompass och karta."
+      },
+      {
+        "name": "Båtutflykt till Symi",
+        "text": "Cirka en timmes båtresa till den pittoreska ön, med badstopp och en tågtur runt Symi stad som barnen brukar älska."
+      },
+      {
+        "name": "Tsambika kloster + strand",
+        "text": "Klättra de dryga 300 trappstegen upp till klostret för utsikten (gör det tidigt på morgonen), och belöna er sedan med en dag på den breda sandstranden nedanför."
+      },
+      {
+        "name": "Hästridning",
+        "text": "Ridklubbar erbjuder lektioner och utflykter till häst genom kullar och längs stranden — fråga om åldersgränser innan ni bokar."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Tsambika Strand",
+        "area": "mellan Lindos och Faliraki",
+        "text": "Lång, mjuk sandstrand med grunt vatten långt ut. Strandbarer, duschar och en liten lekplats finns.",
+        "img": "photo-1447248016153-6034f0ece13a"
+      },
+      {
+        "name": "Anthony Quinn Bay (Ladiko)",
+        "area": "strax söder om Faliraki",
+        "text": "Liten, skyddad vik med kristallklart turkost vatten och naturliga klippbassänger. Mycket populär, räkna med trängsel i juli–augusti."
+      },
+      {
+        "name": "Kolymbia Strand",
+        "area": "mellan Faliraki och Lindos",
+        "text": "Gyllen sand blandad med fin grus, lugnt och klart vatten — Blue Flag-certifierad."
+      },
+      {
+        "name": "Agathi Strand",
+        "area": "nära Lindos/Haraki",
+        "text": "Mjuk, gyllen sand och lugnt, grunt vatten gör det till ett favoritställe för småbarnsfamiljer."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Something Different",
+        "area": "Faliraki",
+        "text": "Internationell och lokal meny och en liten lekplats på plats."
+      },
+      {
+        "name": "Opera Steak House",
+        "area": "Faliraki",
+        "text": "Stekhus med inslag av grekisk mat, beskrivet som ett barnvänligt alternativ."
+      },
+      {
+        "name": "Taverna Anthoula",
+        "area": "Kolymbia",
+        "text": "Grekisk meze och fisk med ett bra urval av barnvänliga rätter — lugnare än de stora restaurangerna i Faliraki."
+      },
+      {
+        "name": "Taverna Edem",
+        "area": "Kolymbia",
+        "text": "Klassisk grekisk taverna med en stor trädgård under olivträd — gott om plats för barnen att springa av sig."
+      },
+      {
+        "name": "Mavrikos",
+        "area": "Lindos huvudtorg",
+        "text": "En av öns äldsta restauranger, fortfarande familjedriven, listad som lämplig för familjer med barn. Boka bord i förväg."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Korfu",
+    "country": "Grekland",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1601581875309-4f27f3937a3f",
+    "desc": "Grönskande grekisk ö med olivlundar, mysiga byar och stränder som passar både lugna dopp och lite större vågor. Dassia och Gouvia är klassiska familjeorter med lagom avstånd till Korfu stad för en dagsutflykt.",
+    "age": "1–14 år",
+    "ageMin": 1,
+    "ageMax": 14,
+    "season": "Maj–Okt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 3 h",
+    "rating": 4.5,
+    "highlights": [
+      "Korfu stad — venetianska gränder och glasscaféer",
+      "Dassia — långgrund familjestrand med vattensport för de äldre",
+      "Grönskan gör ön svalare än många andra grekiska öar i högsommarhettan"
+    ],
+    "tip": "Hyr bil ett par dagar — öns inland med olivlundar och byar är minst lika fint som kusten.",
+    "bookingUrl": "https://adtr.co/9blnx3",
+    "semboUrl": "https://adtr.co/jjj8ul",
+    "areas": [
+      {
+        "name": "Kassiopi",
+        "text": "Liten fiskehamn längst i nordöst, en skyddad naturlig vik omgiven av tavernor. Barnvänligaste stranden i närheten är Avlaki, en lång sandvik med lugnt och grunt vatten."
+      },
+      {
+        "name": "Sidari",
+        "text": "Känt för Canal d'Amour — sandstensklippor format till smala kanaler med turkost vatten. Själva stranden är lång, sandig och grundlutande, men vattnet vid klipporna kan vara kallt och det blåser ofta."
+      },
+      {
+        "name": "Paleokastritsa",
+        "text": "Öns mest dramatiska kustparti på västsidan: cypressklädda klippor, grottor och sex olika små vikar. Huvudstranden har sand och är lättast att komma ner till med barn.",
+        "img": "photo-1628339888780-0725f9ed97a3"
+      },
+      {
+        "name": "Benitses",
+        "text": "Lugnare östkustort med en gammal fiskebyskänsla kvar. Stranden är fingrus med lugnt vatten, mindre utbud av vattensport och nattliv än norra resorterna."
+      },
+      {
+        "name": "Moraitika",
+        "text": "Pittoresk by på sydkusten med gamla kullerstensgränder och en lång Blue Flag-strand med ramp ner i vattnet — en av öns mest tillgängliga stränder för småbarn."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Aqualand Corfu",
+        "text": "En av Europas största vattenparker, med rutschkanor för både tonåringar och mindre barn, lat flod och separata barnzoner."
+      },
+      {
+        "name": "Achilleion-palatset",
+        "text": "Neoklassiskt palats byggt av kejsarinnan Elisabeth (Sisi), fullt av statyer med motiv ur grekisk mytologi. Trädgården har havsutsikt och är fin för en picknickpaus."
+      },
+      {
+        "name": "Gamla fästningen i Korfu stad",
+        "text": "Venetiansk fästning med vallar, tunnlar och branta trappor med utsikt över staden och havet — ett bra, luftigt avbrott från glasscaféerna i gränderna."
+      },
+      {
+        "name": "Båttur till Paxos och Antipaxos",
+        "text": "Dagskryssning till grannöarna, med stopp för bad i kristallklart vatten och besök i grottor. Lång dag men ett självklart äventyr för barn som gillar båt och snorkling."
+      },
+      {
+        "name": "Corfu Donkey Rescue",
+        "text": "Åsnehem utanför byn Doukades där utslitna arbetsåsnor får sina sista år. Gratis, men en räddningsverksamhet — passar bäst lugna barn som kan hålla sig stilla."
+      },
+      {
+        "name": "Snäckmuseet (Sea Shell Museum)",
+        "area": "utanför Benitses",
+        "text": "Privat samling med tusentals snäckor, fossiler och uppstoppade fiskar. Litet och kompakt, perfekt som regnuppfyllare."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Sidari / Canal d'Amour",
+        "text": "Lång, grundlutande sandstrand bra för småbarn, plus de berömda sandstensklipporna med turkost vatten. Håll barnen nära vid klippdelen."
+      },
+      {
+        "name": "Paleokastritsa",
+        "area": "Agios Spiridon",
+        "text": "Öns mest fotogeniska vik, sand/grus-blandad botten med gradvis djup. Båtar till grottor går direkt från hamnen.",
+        "img": "photo-1628339888780-0725f9ed97a3"
+      },
+      {
+        "name": "Glyfada",
+        "text": "Gyllen sand, Blue Flag, cirka 500 meter lång med gradvis djup — öns mest populära familjestrand enligt flera guider."
+      },
+      {
+        "name": "Agios Gordios",
+        "text": "1,5 km gyllen sand med gradvis fördjupning, gröna klippor runt om. Byn bakom har minimarket och tavernor.",
+        "img": "photo-1725031321409-6f5362ebad1c"
+      },
+      {
+        "name": "Moraitika",
+        "text": "Lång Blue Flag-strand med mycket grund och lång strandlinje, ramp ner i vattnet — ett av öns bästa val för småbarn."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Captain Octopus Taverna",
+        "area": "Benitses",
+        "text": "Uttalad barnmeny (bland annat kycklingsouvlaki med örtrostad potatis). Vänliga ägare, prisad grekisk sallad."
+      },
+      {
+        "name": "Filippas Taverna",
+        "area": "Gouvia",
+        "text": "Stor, avslappnad taverna i en by som själv beskrivs som idealisk för familjer. Klassiska rätter serverade med pommes."
+      },
+      {
+        "name": "Karydia",
+        "area": "Dassia-området",
+        "text": "Lekplats precis bredvid, vilket gör den till ett naturligt stopp med mindre barn."
+      },
+      {
+        "name": "Vinieri Bistro",
+        "area": "Dassia-området",
+        "text": "Familjefavorit med medelhavsklassiker — barn får gärna en stor glasssundae med tänt sparkler-ljus."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-30",
+    "published": "2026-09-30",
+    "name": "Antalya",
+    "country": "Turkiet",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1637220819663-5497af2cee5c",
+    "desc": "Antalya-regionen, med förorterna Lara och Belek, är Turkiets tätaste kluster av stora all-inclusive-resorter byggda för barnfamiljer — egna vattenland, barnklubb från tidig morgon och sandstränder som sluttar milt ner i Medelhavet. Kort transfer från Antalya flygplats gör att semestern börjar nästan direkt.",
+    "age": "1–14 år",
+    "ageMin": 1,
+    "ageMax": 14,
+    "season": "Maj–Okt",
+    "budget": "€",
+    "b": 1,
+    "flight": "ca 4 h",
+    "rating": 4.5,
+    "highlights": [
+      "Lara Beach och Belek — Turkiets tätaste kluster av femstjärniga familjeresorter med egna vattenland och barnklubbar",
+      "Antalyas gamla stad Kaleiçi — smala gränder, vattenfall och hamnutsikt, en kort utflykt från hotellen",
+      "Aspendos antika teater — en välbevarad romersk arena som funkar även som utflykt för lite äldre barn"
+    ],
+    "tip": "Nästan alla stora hotell i Lara och Belek är all inclusive med barnklubb — kolla vattenlandet på hotellets egna bilder innan ni bokar, det varierar stort mellan anläggningarna.",
+    "bookingUrl": "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fturkiet%2Fantalya",
+    "altUrl": "https://adtr.co/1xhj6x"
+  },
+  {
+    "updated": "2026-09-30",
+    "published": "2026-09-30",
+    "name": "Alanya",
+    "country": "Turkiet",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1661163090068-ebfdaf6c433a",
+    "desc": "Alanya är Turkiska rivierans mest livliga strandstad — en lång sandstrand under en dramatisk klippborg, ett myller av restauranger och affärer längs strandpromenaden, och hotell som ofta är prisvärdare än Lara/Belek en bit bort.",
+    "age": "1–14 år",
+    "ageMin": 1,
+    "ageMax": 14,
+    "season": "Maj–Okt",
+    "budget": "€",
+    "b": 1,
+    "flight": "ca 4 h",
+    "rating": 4.4,
+    "highlights": [
+      "Kleopatra Beach — kilometerlång sandstrand mitt i stan, långgrund och barnvänlig",
+      "Kabinbana upp till Alanya fästning — utsikten är värd besväret, och barnen tycker om själva linbanan",
+      "Strandpromenaden med glasscaféer och prisvärda restauranger utanför hotellområdet"
+    ],
+    "tip": "Bo längs stranden snarare än inne i centrum om ni vill undvika trafik och ha gångavstånd till vattnet.",
+    "bookingUrl": "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fturkiet%2Falanya-incekum",
+    "altUrl": "https://adtr.co/4ur8vm"
+  },
+  {
+    "updated": "2026-09-30",
+    "published": "2026-09-30",
+    "name": "Ayia Napa",
+    "country": "Cypern",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1671276067124-1f4c7894d36e",
+    "desc": "Ayia Napa är Cyperns mest kända badort — kompakt och lätt att ta sig runt i med barnvagn, med Nissi Beach som en av Medelhavets mest barnvänliga stränder: långgrund, vit sand och spegelblankt vatten.",
+    "age": "1–12 år",
+    "ageMin": 1,
+    "ageMax": 12,
+    "season": "Apr–Okt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 4,5 h",
+    "rating": 4.3,
+    "highlights": [
+      "Nissi Beach — långgrund vik med vitt sand och lugnt vatten, en av Medelhavets mest barnvänliga stränder",
+      "Cape Greco nationalpark — kustpromenad med grottor och utsiktsplatser barnen tycker om att utforska",
+      "Vattenland och lekplatser inom gångavstånd från de flesta hotell i centrum"
+    ],
+    "tip": "Bo en bit från Nissi Avenues nattliv om ni vill ha lugnare nätter — stranden är minst lika fin därifrån.",
+    "bookingUrl": "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fupplev-cypern-med-nazar",
+    "altUrl": "https://adtr.co/dz5u8o"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Istrien",
+    "country": "Kroatien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1604696896158-33aa56a7d352",
+    "desc": "Kroatiens mest lättillgängliga kustremsa för barnfamiljer — kort bilresa från flera europeiska flygplatser, klippstränder blandat med sandvikar, och Rovinjs pastellfärgade gamla stad som gör sig fint på varenda familjefoto.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Maj–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 2 h",
+    "rating": 4.6,
+    "highlights": [
+      "Rovinjs gamla stad — smala gränder rakt ner i havet",
+      "Klippbad med stegar för enkel i- och urstigning",
+      "Närhet gör det enkelt att kombinera med en dag i Venedig"
+    ],
+    "tip": "Packa badskor — Istriens stränder är ofta klippiga snarare än sandiga.",
+    "bookingUrl": "https://adtr.co/7u2ahr",
+    "semboUrl": "https://adtr.co/uaw05e"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Makarska rivieran",
+    "country": "Kroatien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1580891349087-9d51c7f6a1d0",
+    "desc": "Dramatiska berg som reser sig rakt bakom kritvita sandstränder — Makarska rivieran har några av Kroatiens finaste familjestränder i Brela och Tučepi, med tallskog som ger skugga mitt på dagen.",
+    "age": "1–14 år",
+    "ageMin": 1,
+    "ageMax": 14,
+    "season": "Jun–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 2,5 h",
+    "rating": 4.6,
+    "highlights": [
+      "Brela — ofta rankad som en av Europas finaste familjestränder",
+      "Tallskogen ger skugga precis vid vattnet, ovärderligt mitt på dagen",
+      "Bergen i bakgrunden för en enklare vandring på kvällen"
+    ],
+    "tip": "Boka boende med kort promenadavstånd till stranden — vägarna längs rivieran kan vara branta.",
+    "bookingUrl": "https://adtr.co/s6omyj",
+    "semboUrl": "https://adtr.co/r12mwo"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Costa Blanca",
+    "country": "Spanien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1583422409516-9a4b0d3f5a1c",
+    "desc": "Benidorm och grannorterna är byggda för familjesemester: långa sandstränder, vattenland i världsklass och ett utbud av barnvänliga restauranger som slår det mesta i Medelhavet. Perfekt för familjer som vill ha allt inom promenadavstånd.",
+    "age": "1–14 år",
+    "ageMin": 1,
+    "ageMax": 14,
+    "season": "Maj–Okt",
+    "budget": "€",
+    "b": 1.5,
+    "flight": "ca 3,5 h",
+    "rating": 4.4,
+    "highlights": [
+      "Terra Mítica och Aqualandia — två av Spaniens största temaparker",
+      "Playa de Levante — kilometerlång, långgrund sandstrand",
+      "Enormt utbud av all-inclusive-hotell riktade just till barnfamiljer"
+    ],
+    "tip": "Boka en lägenhet med pool om ni vill variera stranddagarna — Benidorm har poolutbud i toppklass.",
+    "bookingUrl": "https://adtr.co/hn9r82",
+    "semboUrl": "https://adtr.co/8q0law",
+    "areas": [
+      {
+        "name": "Benidorm Levante",
+        "text": "Den livligaste delen av Benidorm: en 2 km lång, bred sandstrand med långgrund botten, gott om vattensport och en strandpromenad full av restauranger och nattklubbar. Bäst för familjer med tonåringar — kan kännas rörigt med små barn på kvällen."
+      },
+      {
+        "name": "Benidorm Poniente",
+        "text": "Den lugnare, mer barnvänliga halvan av staden, halvmåneformad med fin sand och en lekplats direkt på stranden. Längst ut ligger La Cala med klippor och vattenpooler där barn kan leta krabbor och småfisk."
+      },
+      {
+        "name": "Altea",
+        "text": "Vitkalkad gammal stad med branta kullerstensgränder och en ikonisk blå kupolkyrka, cirka 10 km norr om Benidorm. Kustspårvagnen tar er dit på ungefär 15 minuter och är en del av nöjet.",
+        "img": "photo-1686953377344-61f0c90aff8a"
+      },
+      {
+        "name": "La Vila Joiosa (Villajoyosa)",
+        "text": "Fiskestad känd för sina färgglada husfasader längs hamnen, cirka 13 km söder om Benidorm. En 2 km sandstrand som sällan är trängd, och Valors chokladmuseum mitt i stan — gratis och populärt med barn."
+      },
+      {
+        "name": "Calpe & Peñón de Ifach",
+        "text": "Cirka 23 km norr om Benidorm, flat och långgrund sandstrand som är lätt för småbarn att vada i, plus vattenpedaler med rutschkanor att hyra. Klippberget Peñón de Ifach syns överallt och går att vandra med äldre barn.",
+        "img": "photo-1598579441576-353c5de45a2f"
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Mundomar",
+        "text": "Djurpark med delfiner, sjölejon och pingviner mitt i Benidorm, med flera dagliga shower. Barn kan boka en delfinträff eller bli zookeeper för en dag (bokas i förväg)."
+      },
+      {
+        "name": "Båttur till Isla de Benidorm",
+        "text": "Kort båttur till den lilla ön utanför Levante, för bad eller en drink med utsikt över bukten. Den gula ubåten har fönster under vattenlinjen så barn kan se havsbotten utan att snorkla."
+      },
+      {
+        "name": "Dagsutflykt till Guadalest",
+        "text": "Bergsby cirka 22 km inåt landet, byggd runt en slottsruin med utsikt över en turkos vattenreservoar. Kombinera gärna med ett dopp vid Algar-vattenfallen (kallt vatten, ta med badskor)."
+      },
+      {
+        "name": "Benidorm Palace",
+        "text": "Familjevänlig dinnershow med dans, akrobatik och ljuseffekter. Barnmeny till showen finns, men dörrarna öppnar 20.30 och showen börjar 22.00 — sent för de minsta."
+      },
+      {
+        "name": "Kustspårvagnen Benidorm–Altea–Dénia",
+        "text": "Enkelt, barnvänligt sätt att se flera kustorter utan att hyra bil eller leta parkering. Hoppa av i Altea eller Villajoyosa för en lugn eftermiddag."
+      },
+      {
+        "name": "Terra Natura nattsafari",
+        "text": "Benidorms savannpark håller nattöppet på sommaren, med start kring 22.30 när djuren är mest aktiva. Barn får mata vissa djur i mörkret med ficklampor."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Playa de Levante",
+        "area": "Benidorm",
+        "text": "Benidorms mest kända strand, 2 km lång med bred, långgrund sandbotten och gott om vattensport för äldre barn. Livlig kvällstid — stökigt om ni vill ha lugn med småbarn."
+      },
+      {
+        "name": "Playa de Poniente",
+        "area": "Benidorm",
+        "text": "Halvmåneformad med fin sand, en lekplats direkt på stranden och ett lugnare läge än Levante. Flera barnvänliga restauranger ligger precis bakom stranden."
+      },
+      {
+        "name": "Platja de l'Albir",
+        "area": "mellan Benidorm och Altea",
+        "text": "Sten-/kullerstensstrand (packa badskor), omgiven av minigolf och familjerestauranger. Mindre turisttät än Benidorms stränder."
+      },
+      {
+        "name": "Playa de Villajoyosa",
+        "text": "2 km sandstrand i fiskestaden strax söder om Benidorm, sällan trängd även i högsäsong. Kombinera med chokladmuseet mitt i stan."
+      },
+      {
+        "name": "Calpe-stranden",
+        "area": "Playa del Arenal-Bol",
+        "text": "Flat och långgrund, en av kustens tryggaste för småbarn att vada i. Vattenpedaler med rutschkanor finns att hyra på sommaren, med Peñón de Ifach som fond."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Arrocería La Marina",
+        "area": "strax utanför Benidorm",
+        "text": "Paellarestaurang med egen lekplats för barn och gratis parkering i naturskönt läge."
+      },
+      {
+        "name": "Restaurante Ulía",
+        "area": "vid Poniente-stranden",
+        "text": "Havsutsikt och en lunchmeny där barnportionen enligt besökande familjer är rejäl — bra om barnen äter mer än en vanlig barnmeny antyder."
+      },
+      {
+        "name": "Casa Guillermo",
+        "area": "Poniente-stranden",
+        "text": "Anrik restaurang känd för risbuljong med hummer och tonfiskpaella i avslappnad, familjär atmosfär."
+      },
+      {
+        "name": "Restaurant Aitona",
+        "area": "Benidorm",
+        "text": "Drivs av samma familj sedan 1968, familjär stämning och omtalad risbuljong — den typen av ställe lokalbefolkningen själva äter på."
+      },
+      {
+        "name": "Mundomar-restaurangen",
+        "area": "inne i djurparken",
+        "text": "Om ni redan tillbringar en dag i parken slipper ni leta mat utanför — bufférestaurangen serverar enligt besökare en förvånansvärt bra paella, och det finns picknickyta."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Costa Brava",
+    "country": "Spanien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1512753360442-27bc4cd90adc",
+    "desc": "Klippiga vikar och charmiga fiskebyar en kort bit norr om Barcelona. Lloret de Mar har det stora utbudet av familjehotell och underhållning, medan mindre orter längs kusten bjuder på lugnare stränder om ni vill komma undan.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Maj–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 2,5 h",
+    "rating": 4.4,
+    "highlights": [
+      "Lloret de Mar — stort utbud av barnvänliga hotell och aktiviteter",
+      "Vattenland Water World precis utanför stan",
+      "Dagsutflykt till Barcelona fullt möjlig om ni vill kombinera strand och stad"
+    ],
+    "tip": "Kolla in de mindre vikarna som Tossa de Mar för en lugnare dag borta från huvudstranden.",
+    "semboUrl": "https://adtr.co/91336b",
+    "areas": [
+      {
+        "name": "Lloret de Mar",
+        "text": "Den mest utbyggda och barnanpassade orten på Costa Brava, med gott om familjehotell och restauranger längs strandpromenaden. Lugnare vikar som Sa Caleta och Cala Banys ligger bara en kort promenad från centrum.",
+        "img": "photo-1630698678488-813f80ea0c74"
+      },
+      {
+        "name": "Tossa de Mar",
+        "text": "En kort bit söder om Lloret, känd för sin medeltida gamla stad Vila Vella med borgmurar rakt ut mot havet. Gratis att gå runt på muren, och nedanför ligger den lilla viken Cala es Codolar."
+      },
+      {
+        "name": "Blanes",
+        "text": "Sydligaste staden på Costa Brava och porten till regionen. Har Costa Bravas längsta strand (S'Abanell, 2,3 km) och den fina botaniska trädgården Marimurtra på en klippa med havsutsikt."
+      },
+      {
+        "name": "Platja d'Aro",
+        "text": "Lite längre norrut, mer utbyggd kring handel och nöjen men med en riktigt bred huvudstrand (Platja Gran) och vattenparken Aquadiver strax utanför centrum."
+      },
+      {
+        "name": "Calella de Palafrugell",
+        "text": "En mindre och lugnare fiskeby norr om Platja d'Aro, med pastellfärgade hus och småskaliga klippvikar. Betydligt mer avkopplat tempo än Lloret.",
+        "img": "photo-1634817644849-c05542d41db5"
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Aquadiver",
+        "area": "Platja d'Aro",
+        "text": "Vattenpark med rutschbanor för både små och stora barn (de snabbaste kräver minst 1,20 m). Egna restauranger med pizza, pommes och glass på plats."
+      },
+      {
+        "name": "Castell de Tossa de Mar",
+        "text": "Medeltida borgmurar och torn ni kan vandra fritt och gratis, med utsikt över bukten. En stig genom pinjeskog leder ner till en liten, naturlig badvik."
+      },
+      {
+        "name": "Marimurtra botaniska trädgård",
+        "area": "Blanes",
+        "text": "Terrasserad trädgård med runt 4 000 växtarter och havsutsikt från utsiktstornet. Räkna med en lång trappa upp — barn under 4 år går in gratis."
+      },
+      {
+        "name": "Båtutflykt längs vikarna",
+        "area": "Lloret/Tossa de Mar",
+        "text": "Panoramautflykter längs kusten där ni ser vikar som annars bara går att nå till fots eller bil. Bra sätt att variera en strandsemester."
+      },
+      {
+        "name": "Parque Aventura",
+        "area": "Platja d'Aro",
+        "text": "Klätterparker i träden med nio banor, den lättaste öppen från 3 års ålder (de flesta banorna kräver minst 1,25 m)."
+      },
+      {
+        "name": "Pp's Park",
+        "area": "Platja d'Aro",
+        "text": "Litet nöjespark i centrum anpassat för barn upp till ca 10 år, fungerar med ett påfyllningskort — bra mellan strandpass."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Platja de Lloret",
+        "area": "Lloret de Mar",
+        "text": "Huvudstranden, lång och väl utbyggd med all service, men också den mest välbesökta.",
+        "img": "photo-1630698678488-813f80ea0c74"
+      },
+      {
+        "name": "Santa Cristina",
+        "area": "Lloret de Mar",
+        "text": "En av traktens mest familjevänliga stränder: skyddad mellan klippor, fin sand och grundare vatten."
+      },
+      {
+        "name": "S'Abanell",
+        "area": "Blanes",
+        "text": "Costa Bravas längsta strand (2,3 km), bred och väl utbyggd med duschar och liggstolsuthyrning."
+      },
+      {
+        "name": "Cala Canyelles",
+        "area": "Lloret de Mar",
+        "text": "Vik med egen småbåtshamn, Blå Flagg-märkt vatten och gott om vattenaktiviteter samt restauranger precis vid stranden."
+      },
+      {
+        "name": "Platja Gran",
+        "area": "Platja d'Aro",
+        "text": "Den stora huvudstranden med liggstolar, toaletter, duschar och uthyrning av kajak och trampbåt."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Pizzería Il Pomodoro",
+        "area": "Lloret de Mar",
+        "text": "Pizza och pasta på strandpromenaden, med egen barnmeny och mindre portioner för de minsta."
+      },
+      {
+        "name": "Restaurante Sybius",
+        "area": "Cala Canyelles, Lloret de Mar",
+        "text": "Strandrestaurang med färsk fisk, tapas och pizza till barnen — ligger direkt vid viken."
+      },
+      {
+        "name": "L'Italianini",
+        "area": "Platja d'Aro",
+        "text": "Litet italienskt med varierad pasta, både inomhus och på uteservering."
+      },
+      {
+        "name": "Pizzeria Roma",
+        "area": "Platja d'Aro",
+        "text": "Populär pizzeria med flera sorter samt kötträtter — kan bli kö på kvällen, så gå tidigt med barn."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Franska Rivieran",
+    "country": "Frankrike",
+    "cat": "cities",
+    "catLabel": "Storstäder",
+    "emoji": "🏙️",
+    "img": "photo-1503696967350-ad1874122058",
+    "desc": "Nice och Cannes bjuder på elegant strandliv, glasspauser vid Promenade des Anglais och närhet till både berg och hav. Mer sofistikerat än de klassiska charterorterna, men gångavstånd och kollektivtrafik gör det förvånansvärt smidigt med barn.",
+    "age": "3–16 år",
+    "ageMin": 3,
+    "ageMax": 16,
+    "season": "Maj–Sep",
+    "budget": "€€€",
+    "b": 3,
+    "flight": "ca 3 h",
+    "rating": 4.5,
+    "highlights": [
+      "Promenade des Anglais — cykla eller rulla längs hela strandpromenaden",
+      "Vieux Nice — färgglada gränder och marknader",
+      "Spårvagnen gör bilfria dagar helt möjliga"
+    ],
+    "tip": "Basera er i Nice snarare än Cannes — bättre kollektivtrafik och billigare restauranger.",
+    "semboUrl": "https://adtr.co/099s1a"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Korsika",
+    "country": "Frankrike",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1591192867485-56d5c5c0e5f8",
+    "desc": "Medelhavets kanske vackraste ö, med kristallklart vatten och berg som når nästan ner till stranden. Mindre turisttätt än Mallorca eller Kreta, vilket gör Korsika till ett bra val för familjer som vill ha naturupplevelser utöver bad.",
+    "age": "3–15 år",
+    "ageMin": 3,
+    "ageMax": 15,
+    "season": "Jun–Sep",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 3 h",
+    "rating": 4.7,
+    "highlights": [
+      "Calvi — sandstrand med citadell som fond",
+      "Kristallklart vatten som gör snorkling till en höjdpunkt även för nybörjare",
+      "Bergsbyar en kort bilresa från kusten för den som vill variera"
+    ],
+    "tip": "Hyr bil. Kollektivtrafiken är gles och de finaste vikarna kräver egna hjul.",
+    "semboUrl": "https://adtr.co/peglrb"
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Phuket",
+    "country": "Thailand",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1589394815804-964ed0be2eb5",
+    "desc": "Thailands största och mest barnvänliga ö, med familjeinriktade stränder i Bangtao och Karon där vattnet är lugnare än på de mer kända partystränderna. Enormt utbud av allt från vattenland till elefantsanktuarier.",
+    "age": "1–15 år",
+    "ageMin": 1,
+    "ageMax": 15,
+    "season": "Nov–Mar",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 11 h",
+    "rating": 4.6,
+    "highlights": [
+      "Bangtao Beach — lugnt vatten och gott om barnvänliga resorts",
+      "Phuket FantaSea — kvällsshow som fascinerar hela familjen",
+      "Etiskt elefantsanktuarium istället för ridturer"
+    ],
+    "tip": "Välj Bangtao eller Kata framför Patong om ni reser med mindre barn — lugnare tempo.",
+    "bookingUrl": "https://adtr.co/mtaqut",
+    "semboUrl": "https://adtr.co/ole5qd",
+    "featured": true,
+    "areas": [
+      {
+        "name": "Bangtao & Laguna",
+        "text": "Laguna-komplexet bakom Bangtao-stranden är en samling resorts byggda runt kanaler, med gratis skytteltrafik mellan hotellen. Boat Avenue, ett shoppingstråk med familjerestauranger, ligger en kort bilresa bort."
+      },
+      {
+        "name": "Kata & Karon",
+        "text": "Uppbyggt kring mindre köpcentrum, massage och familjerestauranger på gångavstånd, så man klarar en hel dag utan bil. Karon Viewpoint ger utsikt över tre stränder samtidigt.",
+        "img": "photo-1587926690267-87a56fd98cdc"
+      },
+      {
+        "name": "Patong",
+        "text": "Phukets mest kända område, men också det mest intensiva — Bangla Road domineras av barer riktade mot vuxna. Som dagaktivitet fungerar det bra: Jungceylon-gallerian har bowling och arkadhall. Lugnare fickor finns i utkanten mot Kalim och Freedom Beach."
+      },
+      {
+        "name": "Rawai & Nai Harn",
+        "text": "Den sydligaste delen av ön känns mer lokal och mindre uppbyggd kring turism. Nai Harn har en skyddad vik med lugnare vatten, Rawai är känt för fiskemarknader och enkla strandrestauranger."
+      },
+      {
+        "name": "Phuket Old Town",
+        "text": "Den gamla stadskärnan är värd en heldag, särskilt en regnig. Sino-portugisiska butikshus i pastellfärger, Baan Chinpracha-museet och gatukonst som fungerar som en informell skattjakt för barn."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Splash Jungle Water Park",
+        "text": "Vattenland nära flygplatsen med ett 335 meter långt lazy river-system och en separat barnzon. Barn under 122 cm måste ha flytväst i poolerna, barn under 4 år gratis."
+      },
+      {
+        "name": "Aquaria Phuket",
+        "area": "Central Floresta",
+        "text": "Thailands största akvarium med omkring 25 000 djur. Pekpool med sjöstjärnor, jättetankrum med hajar och en sjöjungfrushow klockan 11 och 15 (ej måndagar)."
+      },
+      {
+        "name": "Phang Nga Bay & James Bond Island",
+        "text": "Dagstur med speedbåt genom karstklippor, inklusive ön som blev känd via Bond-filmen. Kombineras ofta med kanotpaddling i mangrove-grottor och ett besök i en flytande fiskeby."
+      },
+      {
+        "name": "Big Buddha-utsiktsplatsen",
+        "text": "Den 45 meter höga vita Buddha-statyn på Nakkerd Hills, med vidsträckt vy. Ofta ihopslaget med Wat Chalong-templet och Karon Viewpoint."
+      },
+      {
+        "name": "Similan-öarna",
+        "text": "Dagsturer till nationalparken, känd för kristallklart vatten och bra snorkelrev. Resan tar ett par timmar varje väg — passar bäst från ungefär 8–10 år, bara under säsong (stängt ca maj–oktober)."
+      },
+      {
+        "name": "Gibbon Rehabilitation Project",
+        "text": "Välgörenhetsdriven station som rehabiliterar tidigare fångenskapshållna gibboner för utsättning — ett etiskt alternativ till ställen där man rider på djur. Går att kombinera med Bang Pae-vattenfallet."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Nai Harn Beach",
+        "area": "söder om Rawai",
+        "text": "Skyddad vik med lugnare vatten än västkustens stränder, särskilt efter oktober, och en lagun bakom stranden som fungerar som plaskdamm för mindre barn."
+      },
+      {
+        "name": "Kata Noi",
+        "area": "söder om Kata/Karon",
+        "text": "Betydligt lugnare än den större Kata Yai-stranden runt hörnet. Bra swimmingvatten, Kata Yai med fler restauranger en kort tuk-tuk-resa bort."
+      },
+      {
+        "name": "Mai Khao Beach",
+        "area": "norra Phuket",
+        "text": "Öns minst utbyggda strand, del av Sirinat National Park. Känd som en av Thailands sista häckningsplatser för havssköldpaddor (nov–feb).",
+        "img": "photo-1671625120025-49a3c3476d8c"
+      },
+      {
+        "name": "Freedom Beach",
+        "area": "söder om Patong",
+        "text": "Avskild vik som bara går att nå med longtailbåt eller en brant vandringsled. Skyddat och lugnt vatten, inga restauranger på plats — ta med eget."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Three Monkeys Canopy Restaurant",
+        "area": "väster om Phuket Town",
+        "text": "Trädkoja-inspirerad restaurang med utsiktsdäck, barnstolar och egen barnmeny. Håll småbarn nära vid canopydelens räcken."
+      },
+      {
+        "name": "Efe Turkish Restaurant",
+        "area": "Phuket Old Town",
+        "text": "Turkisk mat med en egen inomhus-lekyta på övervåningen anpassad för ungefär 1–5-åringar."
+      },
+      {
+        "name": "The Roost Cafe",
+        "area": "norr om Rawai",
+        "text": "Hälsoinriktad meny, barnstolar och sittsäckar. Gäster får använda infinitypoolen gratis mot ett köp av mat eller dryck."
+      },
+      {
+        "name": "Café vid K-Park",
+        "area": "utkanten av Phuket Old Town",
+        "text": "Ligger direkt intill en inhägnad lekpark utomhus, lätt att hålla ett öga på barnen samtidigt som man tar en kaffe."
+      },
+      {
+        "name": "Samero's Gelato Café",
+        "area": "centrala Patong",
+        "text": "Enkelt glasställe med barnstol och särskilda glasspriser för barn — ett kort och billigt avbrott mitt i en Patong-dag."
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-23",
+    "published": "2026-09-23",
+    "name": "Ao Nang",
+    "country": "Thailand",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1552465011-b4e21bf6e79a",
+    "desc": "Krabis mest lättillgängliga strandort, med dramatiska kalkstensklippor som stiger rakt ur havet. Kortare och billigare båtturer till öarna än från Phuket, och ett tempo som passar familjer som vill varva strand med utflykter.",
+    "age": "2–15 år",
+    "ageMin": 2,
+    "ageMax": 15,
+    "season": "Nov–Mar",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 12 h",
+    "rating": 4.5,
+    "highlights": [
+      "Klätterklippor som ramar in stranden — fotogent från första sekunden",
+      "Kort båttur till Railay Beach, en av Thailands mest fotograferade stränder",
+      "Längtan-turer till Fyra öar-turen passar bra även med barn"
+    ],
+    "tip": "Boka öturer på förmiddagen — eftermiddagsvindarna gör sjön guppigare senare på dagen.",
+    "semboUrl": "https://adtr.co/4qidyl",
+    "areas": [
+      {
+        "name": "Ao Nang (strandremsan)",
+        "text": "Navet i orten — en lång strandpromenad kantad av hotell och restauranger, med båtarna till öarna och Railay avgående direkt från stranden."
+      },
+      {
+        "name": "Railay",
+        "text": "En halvö man bara når med båt, känd för klätterklippor och Phra Nang-stranden. Planera som heldagsutflykt — båten tar bara några minuter men räkna med kö på returen.",
+        "img": "photo-1672931365343-1a7fcf77d378"
+      },
+      {
+        "name": "Noppharat Thara Beach",
+        "text": "Grannstranden till Ao Nang, del av en nationalpark, med en lång flack strand full av snäckor. Vattenskor är bra att ha med."
+      },
+      {
+        "name": "Krabi Town",
+        "text": "Provinshuvudstaden, en knapp timme med bil från Ao Nang. Helgkvällar blir det walking street-marknad med matstånd, dans och eldshower."
+      },
+      {
+        "name": "Nong Thale",
+        "text": "Ett lugnare, mer lokalt bostadsområde strax inland, populärt bland långtidsboende expatfamiljer. Inget turistmål i sig, men ett alternativ om man vill bo billigare och lugnare.",
+        "img": "photo-1543765136-4167c51ccb01"
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Tiger Cave Temple (Wat Tham Suea)",
+        "text": "Ett tempel med en trappa på hela 1 200 steg upp till toppen, med utsikt över djungeln. En kortare 130-stegstrappa till en lugn dal med munkhyddor finns för den som vill nöja sig."
+      },
+      {
+        "name": "Krabi Hot Springs & Emerald Pool",
+        "area": "Khlong Thom",
+        "text": "En kombination av varma naturliga källor och en kristallklar turkos pool mitt i regnskogen, cirka en timmes bilväg söder om Ao Nang."
+      },
+      {
+        "name": "Sjökajak i Ao Thalane",
+        "text": "En halvdagstur genom mangroveskog, förbi kalkstensklippor och in i dolda grottor. Lugnt och skyddat vatten, turen tar barn från fyra år."
+      },
+      {
+        "name": "Krabi Elephant Care House",
+        "text": "Etisk elefantsanktuary utan ridning — man gör elefantgodis och badar/skrubbar elefanterna i floden. Bara 3–4 elefanter totalt så grupperna är små."
+      },
+      {
+        "name": "Phra Nang Cave Beach",
+        "text": "Nå stranden med kort långbåt till Railay och en promenad genom en grottliknande passage. Lugnt, klart vatten och en sandbank man kan vada ut på."
+      },
+      {
+        "name": "Båttur till Khao Khanab Nam",
+        "area": "från Krabi Town",
+        "text": "Kortare båttur på Krabi-floden till tvillingbergen med grottor, omgiven av mangroveskog. Lugnt alternativ när familjen vill variera."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Noppharat Thara Beach",
+        "text": "Lång, flack strand i nationalparken med gott om snäckor. Vattnet blir djupt sent, så vattenskor rekommenderas."
+      },
+      {
+        "name": "Railay West Beach",
+        "area": "Railay-halvön",
+        "text": "Brukar kallas Railays vackraste strand: bred, vit sand och lugnt badvatten, kalkstensklippor rakt ur havet. Räkna med högre vågor maj–oktober."
+      },
+      {
+        "name": "Ao Phra Nang / Phra Nang Cave Beach",
+        "area": "Railay-halvön",
+        "text": "Lugnt vatten för bad och flytmadrasser, plus en berömd grotta. Få bekvämligheter — ta med eget fika."
+      },
+      {
+        "name": "Koh Poda",
+        "area": "dagsutflykt, båt från Ao Nang",
+        "text": "Obebodd ö med ovanligt klart vatten och korallrev nära land för enkel snorkling."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Krua Thara",
+        "area": "Noppharat Thara Beach",
+        "text": "Enkel skaldjursrestaurang med egna tankar så barnen kan se krabbor och fisk innan de hamnar på tallriken."
+      },
+      {
+        "name": "Jame Food Centre",
+        "area": "Ao Nang centrum",
+        "text": "Hawkercenter under tak med massor av småstånd — mango med klibbris, grillspett, kycklingris. Perfekt när familjen vill olika saker."
+      },
+      {
+        "name": "King Palace Restaurant",
+        "area": "Ao Nang",
+        "text": "Thai- och västerländsk mat sida vid sida, med pizza på menyn för barnen."
+      },
+      {
+        "name": "Holiday Beach Walk food market",
+        "area": "nära Noppharat Thara Beach",
+        "text": "Marknad med många stånd, inklusive burgare och chicken nuggets för den kräsna ätaren."
+      },
+      {
+        "name": "Azzurra",
+        "area": "Ao Nang, strandvägen",
+        "text": "Italienskt kök med hemgjord pasta och havsutsikt över stranden."
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-01",
+    "published": "2026-10-01",
+    "name": "Gran Canaria",
+    "country": "Spanien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1450128910652-d698afa60ac8",
+    "desc": "Kanarieöarnas klassiska vintersolmål — 20 grader i januari och stränder för alla smaker. Playa de Amadores är långgrund och vågskyddad av två pirar, Puerto Rico är öns soligaste och lugnaste hörn, och Las Canteras skyddas av ett naturligt rev som håller vågorna borta.",
+    "age": "0–14 år",
+    "ageMin": 0,
+    "ageMax": 14,
+    "season": "Okt–Apr (vintersol), fint året runt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 5,5 h",
+    "rating": 4.6,
+    "highlights": [
+      "Playa de Amadores — långgrund, vågskyddad av pirar, svalkande importerad sand",
+      "Puerto Rico — öns solsäkraste strand, paddelbåtar och vattenaktiviteter för barnen",
+      "Las Canteras — ett naturligt stenrev håller stranden lugn även när det blåser"
+    ],
+    "tip": "Södra delen (Maspalomas, Puerto Rico, Amadores) har mest sol och minst regn. Norra delen kring huvudstaden är grönare men molnigare.",
+    "bookingUrl": "https://adtr.co/m4g5p6",
+    "semboUrl": "https://adtr.co/uuto80",
+    "areas": [
+      {
+        "name": "Maspalomas & Sanddynerna",
+        "text": "Gran Canarias mest ikoniska landskap: ett 404 hektar skyddat naturreservat med sandkullar som sträcker sig ner till havet. Kameltur genom sanden är en klassisk aktivitet, och Maspalomas by har ett stort köpcentrum med lekland för regniga dagar.",
+        "img": "photo-1674854131343-3deca526d4c1"
+      },
+      {
+        "name": "Puerto Rico & Amadores",
+        "text": "Här ligger en liten marina med båtar ut till val- och delfinskådning, ett köpcentrum och Angry Birds Activity Park mitt i byn. Hela området är byggt i terrasser uppför en dalgång, bra att veta med barnvagn."
+      },
+      {
+        "name": "Las Canteras & Las Palmas",
+        "text": "En helt annan stämning än sydkusten: riktig stadsstrand mitt i en levande huvudstad, med akvariet Poema del Mar och Casa de Colón som regnalternativ. Lite svalare än i söder, men mer äkta Kanarienliv."
+      },
+      {
+        "name": "Playa del Inglés",
+        "text": "Systerorten till Maspalomas, livligare och mer tättbebyggt med en lång shoppingpromenad (Avenida de Tirajana). Stranden glider ihop med Maspalomas utan tydlig gräns."
+      },
+      {
+        "name": "Inlandet — Roque Nublo & bergsbyarna",
+        "text": "En dagsutflykt för familjer som vill se den andra ön: vindlande bergsvägar upp till över 1800 meter och klippformationen Roque Nublo. Vandringen tar cirka 30 minuter enkel väg men är brant på slutet — bäst med äldre barn."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Kameltur i sanddynerna",
+        "area": "Maspalomas",
+        "text": "En kort ridtur (cirka 20–30 minuter) genom dynerna, oftast tidig morgon innan det blir för varmt. Klassiskt förstagångsäventyr för barn."
+      },
+      {
+        "name": "Aqualand Gran Canaria",
+        "area": "Maspalomas",
+        "text": "Vattenland med egen barnbassäng, lugna rutschkanor och piratskepp för de minsta, plus vågbassäng för hela familjen. Barn under 3 år går in gratis."
+      },
+      {
+        "name": "Palmitos Park",
+        "text": "Djurpark i bergen med apor, surikater, flamingos, fjärilshus och delfinarium. Pappegojshowen med cyklande och målande kakaduor brukar vara dagens höjdpunkt för de minsta."
+      },
+      {
+        "name": "Holiday World (Wooland)",
+        "area": "Maspalomas",
+        "text": "Kanarieöarnas enda nöjespark, med pariserhjul och karuseller för de små och berg-och-dalbana för äldre syskon. Samma område har bowling och escape rooms."
+      },
+      {
+        "name": "Angry Birds Activity Park",
+        "area": "Puerto Rico",
+        "text": "Aktivitetspark mitt i byn med minigolf, klätterväggar, studsmattor och vattenlek med skumkanoner, för barn från ungefär 3 till 14 år."
+      },
+      {
+        "name": "Val- och delfinskådning med katamaran",
+        "area": "Puerto Rico/Puerto de Mogán",
+        "text": "Turer på 2–3 timmar där ni oftast möter delfiner och ibland val; många båtar har vattenrutschkana inlagd."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Maspalomas strand",
+        "text": "Den långa gyllene stranden som fortsätter från dynerna, bredare och mindre vågskyddad än Amadores. Bäst för barn som redan är trygga i vatten."
+      },
+      {
+        "name": "Playa del Inglés",
+        "text": "Brett sandstrand som glider ihop med Maspalomas, med gott om vattensport och strandrestauranger. Mer folk och mer vind."
+      },
+      {
+        "name": "Playa de Mogán",
+        "area": "Puerto de Mogán",
+        "text": "Liten, lugn strand vid den pittoreska hamnen, vågskyddad av pirer precis som Amadores.",
+        "img": "photo-1740698366995-1d36f1cc430f"
+      },
+      {
+        "name": "San Agustín",
+        "text": "Lugnare och mindre turisttät, med mörkare vulkanisk sand. Restauranger med lekplats ligger precis vid stranden."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Costa Mar Grill",
+        "area": "Puerto Rico",
+        "text": "Grillad fisk, skaldjur och paella vid marinan, öppet 9–22. Avslappnad hamnmiljö, lätt att sitta länge med barnvagn intill bordet."
+      },
+      {
+        "name": "Don Quijote",
+        "area": "Puerto Rico",
+        "text": "Kanarisk husmanskost och internationell meny, känd för entrecôte och hembakta efterrätter, vid marinan."
+      },
+      {
+        "name": "La Pasión",
+        "area": "Puerto de Mogán",
+        "text": "Medelhavskök med hemgjord pasta, uttryckligen markerad som barnvänlig, stor terrass."
+      },
+      {
+        "name": "El Capitán",
+        "area": "San Agustín",
+        "text": "Egen lekplats med bollhav vid restaurangen (obevakad), stranden några steg bort."
+      },
+      {
+        "name": "Maspalomas Golf Restaurant",
+        "text": "Genomtänkt barnmeny: spaghetti, krokett, kycklingfilé, schnitzel. Stor terrass att springa på."
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-01",
+    "published": "2026-10-01",
+    "name": "Fuerteventura",
+    "country": "Spanien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1635463498136-96e4df88bac8",
+    "desc": "Mil efter mil av vit sand och öken-dyner att leka i, mindre bebyggt än grannöarna. La Concha vid El Cotillo är familjefavoriten — ett naturligt rev gör vattnet lugnt och kristallklart. Vindigare ö, så äldre barn som vill prova kitesurfing har gott om möjligheter.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Okt–Apr (vintersol), fint året runt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 5,5 h",
+    "rating": 4.5,
+    "highlights": [
+      "La Concha — revskyddad lagun med lugnt, kristallklart vatten",
+      "Corralejos sanddyner — som en liten öken att utforska och leka i",
+      "Gott om vindsport för tonåringar, från nybörjarkurser till kitesurfing"
+    ],
+    "tip": "Fuerteventura blåser mer än Gran Canaria och Teneriffa. Välj skyddade vikar som La Concha om ni har små barn som ska bada.",
+    "bookingUrl": "https://adtr.co/y8lu0h",
+    "semboUrl": "https://adtr.co/b50dff",
+    "areas": [
+      {
+        "name": "Corralejo",
+        "text": "Den stora turistorten i norr, med hamn, shopping och närheten till sanddynerna. Härifrån går båtarna till Isla de Lobos."
+      },
+      {
+        "name": "Costa Calma",
+        "text": "Ligger vid Jandía-halvöns smalaste del, med den berömda Playa de Sotavento på ena sidan. Känt som kitesurf-mecka — bra med tonåringar som vill prova vindsport, mer för äldre barn än de minsta.",
+        "img": "photo-1615539761343-771aed9d2b53"
+      },
+      {
+        "name": "Morro Jable",
+        "text": "Söderns största ort, med en lång, lugn strand (Playa del Matorral) rakt igenom byn. Bra bas om ni vill ha gångavstånd till restauranger och en strand som fungerar även med små barn."
+      },
+      {
+        "name": "Caleta de Fuste",
+        "text": "Byggd kring en skyddad vik med lugnt, böljande vatten — en av öns mest barnvänliga stränder. Lekplats vid stranden och gångavstånd till köpcentrum med bowling."
+      },
+      {
+        "name": "Puerto del Rosario",
+        "text": "Öns huvudstad, mer vardaglig och mindre turistisk men nära flygplatsen, med genuina restauranger utan turistpriser."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Oasis Wildlife Fuerteventura",
+        "area": "La Lajita",
+        "text": "Djurpark med över 3 000 djur av cirka 250 arter, plus Europas största kamelreservat med kamelridning. Tre restauranger med buffé på plats."
+      },
+      {
+        "name": "Båttur till Isla de Lobos",
+        "area": "från Corralejo",
+        "text": "Cirka 15 minuter över till den obebodda ön. Vattnet är grunt och varmt, perfekt för snorkling med barn — begränsat till 200 besökare samtidigt, så boka i förväg."
+      },
+      {
+        "name": "Corralejo sanddyner nationalpark",
+        "text": "Ett helt naturreservat ni kan utforska till fots eller med guidad fyrhjulingstur. Som en liten Sahara mitt i Atlanten."
+      },
+      {
+        "name": "Acua Waterpark",
+        "area": "Corralejo",
+        "text": "Vattenpark med 17 attraktioner — vågpool, lugn flytränna och eget barnområde, plus snabbare rutschkanor för äldre barn och vuxna."
+      },
+      {
+        "name": "Kitesurf- och surfskolor",
+        "area": "Costa Calma/Sotavento",
+        "text": "Flera etablerade skolor med nybörjarlektioner — ett bra sätt att låta tonåringar testa på riktigt."
+      },
+      {
+        "name": "Val- och delfinskådning med katamaran",
+        "area": "från Corralejo",
+        "text": "Cirka 4 timmar ut i vattnen norr om ön där val och delfin ofta syns. Ett lugnare alternativ till snorkling."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Playa de Sotavento",
+        "area": "Costa Calma",
+        "text": "Känd över hela Europa för kitesurf. Vid lågvatten bildas en gigantisk lagun med spegelblankt, knädjupt vatten — kolla tidvattentabellen eftersom karaktären ändras helt mellan hög- och lågvatten."
+      },
+      {
+        "name": "Playa del Matorral",
+        "area": "Morro Jable",
+        "text": "Cirka 4 km lång, guldfärgad sand, Blue Flag-certifierad. Vattnet är turkost och vanligtvis lugnt — beskrivs som särskilt idealisk för familjer."
+      },
+      {
+        "name": "Grandes Playas",
+        "area": "Corralejo",
+        "text": "Vida sandstränder norr om Corralejo med sanddynerna som fond. Mer öppet hav och mer vind än La Concha."
+      },
+      {
+        "name": "Caleta de Fustes strand",
+        "text": "Skyddad vik med lugnt vatten, skonad från både vågor och vind. Lekplats, beachvolleyplaner och duschar."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Gibson's",
+        "area": "Corralejo",
+        "text": "Stor meny med brittiskt, mexikanskt och indiskt. Har bekräftad barnmeny."
+      },
+      {
+        "name": "La Laja Restaurant",
+        "area": "Morro Jable",
+        "text": "Har en dedikerad barnmeny enligt flera guider — ett av få ställen på ön där det är uttryckligen bekräftat."
+      },
+      {
+        "name": "Casa Manolo",
+        "area": "Corralejo",
+        "text": "Beskrivs genomgående som familjevänlig atmosfär i flera oberoende guider, lokal känsla snarare än turistrestaurang."
+      },
+      {
+        "name": "El Bounty del Muelle",
+        "area": "Puerto del Rosario",
+        "text": "Omnämnd specifikt som family restaurant i reseguider — bra alternativ om ni är i huvudstaden."
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-01",
+    "published": "2026-10-01",
+    "name": "Teneriffa",
+    "country": "Spanien",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1654802966959-35be231117ae",
+    "desc": "Störst av Kanarieöarna och svårslagen på aktiviteter för barn. Siam Park räknas som ett av Europas bästa vattenparker med egen sandstrand och vågmaskin, Aqualand har glidbanor för alla åldrar, och en linbana tar hela familjen upp mot toppen av vulkanen Teide.",
+    "age": "2–15 år",
+    "ageMin": 2,
+    "ageMax": 15,
+    "season": "Okt–Apr (vintersol), fint året runt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 5,5 h",
+    "rating": 4.7,
+    "highlights": [
+      "Siam Park — thailändskt tema, konstgjord strand och 3-metersvågor i vågbassängen",
+      "Aqualand — 15+ rutschbanor, lugn flod och egen barnbassäng",
+      "Linbanan upp mot Teide — storslagen utsikt utan krävande vandring"
+    ],
+    "tip": "Siam Park säljer ofta slut — boka biljett med tid online i förväg. Bo i Los Cristianos eller Playa de las Américas för gratis shuttlebuss dit.",
+    "bookingUrl": "https://adtr.co/a07j46",
+    "semboUrl": "https://adtr.co/s5k5uk",
+    "areas": [
+      {
+        "name": "Costa Adeje & Playa de las Américas",
+        "text": "Öns mest utbyggda turistzon med flest hotell och restauranger. Promenaderna är barnvagnsvänliga rakt genom hela kustremsan, kort resväg till Siam Park och Aqualand.",
+        "img": "photo-1782470177933-cccc22835461"
+      },
+      {
+        "name": "Puerto de la Cruz",
+        "area": "norr",
+        "text": "Äldre, mer äkta kanarisk stad med svart lavastrand och det berömda sjövattenbadet Lago Martiánez. Svalare och grönare än söder, nära Loro Parque."
+      },
+      {
+        "name": "Teide National Park",
+        "area": "inland",
+        "text": "Spaniens högsta berg och en av världens mest stjärnklara himlar. Förutom linbanan finns gratis guidade vandringar genom månlandskap av lava — ta med varma kläder även på sommaren."
+      },
+      {
+        "name": "Los Gigantes & Costa de Isora",
+        "area": "väster",
+        "text": "Dramatiska 500 meter höga klippor som stupar rakt ner i havet, med småbåtshamn varifrån valsafaris går ut nästan dagligen."
+      },
+      {
+        "name": "La Laguna & Santa Cruz",
+        "area": "stad",
+        "text": "Öns huvudstad och den Unesco-listade universitetsstaden San Cristóbal de La Laguna. Bra för en kulturdag, och hit hör Playa de las Teresitas — en importerad guldsandstrand."
+      }
+    ],
+    "topActivities": [
+      {
+        "name": "Loro Parque",
+        "area": "Puerto de la Cruz",
+        "text": "Djur- och akvariepark med världens största papegojsamling, gorillor och Planet Penguin. Orka- och delfinshower lockar mest besökare men är omdiskuterade bland djurrättsorganisationer — något fler familjer väger in innan besök."
+      },
+      {
+        "name": "Jungle Park",
+        "area": "nära Los Cristianos",
+        "text": "Djurpark och botanisk trädgård byggd kring hängbroar och vattenfall. Barnen kan mata fåglar som går fritt bland besökarna, och falkshowen är öns mest kända."
+      },
+      {
+        "name": "Valsafari från Los Gigantes",
+        "text": "Båtutflykt (2–4 timmar) där ni nästan garanterat ser grindvalar och delfiner. Många turer stannar vid Masca Bay för bad och lunch — bäst för barn från cirka 5–6 år."
+      },
+      {
+        "name": "Lago Martiánez",
+        "area": "Puerto de la Cruz",
+        "text": "César Manrique-designat sjövattenbad med en stor konstgjord lagun och tre separata barnbassänger. Ett avkopplat alternativ till vattenparkerna i söder."
+      },
+      {
+        "name": "Sendero de los Sentidos",
+        "area": "Anaga",
+        "text": "Den enda lättillgängliga vandringsleden i Anaga-bergen — ett plant, barnvagnsvänligt promenadstråk genom lagerskog med tre längdalternativ."
+      },
+      {
+        "name": "Gratis guidade vandringar",
+        "area": "Teide-nationalparken",
+        "text": "Cirka två timmar långa guidade turer med minimal höjdskillnad. Måste bokas i förväg hos parkkontoret — boka tidigt på högsäsong."
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Playa de las Américas",
+        "text": "Öns mest centrala och livliga strand, gyllenbrun sand och gott om vattensport, men kan vara rejält trångt högsäsong."
+      },
+      {
+        "name": "Playa del Duque",
+        "area": "Costa Adeje",
+        "text": "Blåflaggad guldsandstrand med lugnt, skyddat vatten — en av öns bästa familjestränder. Livräddare, duschar och gott om restauranger."
+      },
+      {
+        "name": "Playa Jardín",
+        "area": "Puerto de la Cruz",
+        "text": "Svart vulkansand designad av César Manrique, med trädgårdar och lekplatser längs promenaden. Ingen livräddare och ibland märkbar svallvåg — håll extra uppsikt."
+      },
+      {
+        "name": "Playa de las Teresitas",
+        "area": "Santa Cruz",
+        "text": "Guldgul importerad Sahara-sand och ett vågbrytarrev som håller vattnet ovanligt lugnt — kallas ofta öns bästa barnstrand."
+      },
+      {
+        "name": "Los Cristianos strand",
+        "text": "Mindre och mer avskärmad än Las Américas, med lugnare vatten tack vare sin halvmåneform och hamnpir.",
+        "img": "photo-1749387920008-f0d974af717f"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "La Torre del Mirador",
+        "area": "Costa Adeje",
+        "text": "Fisk- och skaldjursrestaurang med havsutsikt och egen barnmeny. Stängt tisdagar."
+      },
+      {
+        "name": "The Ginger Pig Bar and Kitchen",
+        "area": "San Eugenio, Costa Adeje",
+        "text": "Amerikansk/brittisk meny med burgare och fish and chips — populär bland tonåringar och äldre barn."
+      },
+      {
+        "name": "El Makami",
+        "area": "Fañabé, Costa Adeje",
+        "text": "Tapasrestaurang vid strandpromenaden med generösa portioner och barnvänlig atmosfär."
+      },
+      {
+        "name": "Duquesa Bistrò",
+        "area": "Costa Adeje",
+        "text": "Italienskt kök med hemgjord pasta, beskrivs som välkomnande mot barnfamiljer. Öppnar först 16:30."
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-01",
+    "published": "2026-10-01",
+    "name": "Hurghada",
+    "country": "Egypten",
+    "cat": "beach",
+    "catLabel": "Strand & Sol",
+    "emoji": "🏖️",
+    "img": "photo-1665643956022-ee053e925743",
+    "desc": "Prisvärd vintersol vid Röda havet med Egyptens tätaste utbud av vattenparkshotell. Pickalbatros Jungle Aqua Park har 81 rutschbanor fördelat på 45 pooler, Makadi Water World över 50 banor, och de lugna, grunda stränderna i Sahl Hasheesh och Makadi Bay passar små simmare perfekt.",
+    "age": "2–14 år",
+    "ageMin": 2,
+    "ageMax": 14,
+    "season": "Okt–Apr (svalare), soligt året runt",
+    "budget": "€€",
+    "b": 2,
+    "flight": "ca 5 h",
+    "rating": 4.6,
+    "highlights": [
+      "Pickalbatros Jungle Aqua Park — 81 rutschbanor över 45 pooler",
+      "Sahl Hasheesh och Makadi Bay — lugnt, grunt vatten direkt vid hotellen",
+      "Snorkling i Röda havet — tillgängligt redan från stranden på många hotell"
+    ],
+    "tip": "Välj hotell i Sahl Hasheesh eller Makadi Bay snarare än centrala Hurghada — där är stranden sandig istället för korall/sten och kräver inga badskor.",
+    "bookingUrl": "https://adtr.co/oa8m74",
+    "semboUrl": "https://adtr.co/bh4hb8"
+  }
 ];
-
 /* ============ STATE ============ */
 let favs = new Set();
 try { favs = new Set(JSON.parse(localStorage.getItem('rmb-favs') || '[]')); } catch (e) {}
