@@ -1060,9 +1060,9 @@ h1 {
   align-items: flex-start;
 }
 .subplace-media {
-  flex: 0 0 120px;
-  width: 120px;
-  height: 90px;
+  flex: 0 0 220px;
+  width: 220px;
+  height: 165px;
   border-radius: var(--radius-md, 10px);
   overflow: hidden;
   background: var(--primary-light);
