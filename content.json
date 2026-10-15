@@ -5528,14 +5528,14 @@
             "link": "https://malmo.se/Folkets-Park.html"
           },
           {
-            "name": "Bullhuset (Folkets Park)",
+            "name": "Cykelsafari",
             "type": "free",
             "price": "Gratis",
             "ageMin": 1,
             "ageMax": 4,
             "indoor": true,
             "area": "Möllevången",
-            "desc": "Inomhuslekpark för de allra minsta, en del av Folkets Park — perfekt regndagsalternativ.",
+            "desc": "Guidad cykelaktivitet i Folkets Park — ett av parkens programpunkter för barn. Kolla malmo.se för aktuella tider och vad som ingår.",
             "link": "https://malmo.se/Folkets-Park/Lek-och-aktiviteter/Cykelsafari.html"
           },
           {
