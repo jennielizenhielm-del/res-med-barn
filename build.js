@@ -819,7 +819,7 @@ function activityCard(act) {
   return `
   <article class="activity-card" data-type="${act.type}" data-indoor="${act.indoor}" data-age-min="${act.ageMin}" data-age-max="${act.ageMax}">
     <div class="activity-top">
-      <h3>${act.link ? `<a href="${esc(act.link)}" rel="nofollow noopener">${esc(act.name)}</a>` : esc(act.name)}</h3>
+      <h3>${act.link ? `<a href="${esc(act.link)}" rel="nofollow noopener" target="_blank">${esc(act.name)}</a>` : esc(act.name)}</h3>
       <span class="activity-badge activity-badge-${act.type}">${act.type === 'free' ? 'Gratis' : 'Kostar'}</span>
     </div>
     <p class="activity-price">${esc(act.price)}</p>

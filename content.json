@@ -2472,7 +2472,7 @@
               "Tillverkaren anger inte uttryckligen att den är avsedd eller testad för bilbarnstol"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/bozz-akpase-lammskinn.html",
-            "buyUrl": "https://adtr.co/tzpq90",
+            "buyUrl": "https://adtr.co/fc7pzo",
             "buyStore": "Baby V",
             "img": "https://02.cdn37.se/epl/images/2.257931/bozz-akpase-lammskinn-svartnatur-kortharig.jpeg"
           },
@@ -5346,7 +5346,7 @@
           {
             "name": "Universeum",
             "type": "paid",
-            "price": "Se aktuellt pris",
+            "price": "Från 160 kr, gratis under 3 år",
             "ageMin": 3,
             "ageMax": 16,
             "indoor": true,
@@ -5596,7 +5596,7 @@
           {
             "name": "Disgusting Food Museum",
             "type": "paid",
-            "price": "Se aktuellt pris",
+            "price": "230 kr vuxen, gratis under 6 år (2026)",
             "ageMin": 8,
             "ageMax": 16,
             "indoor": true,
@@ -5888,6 +5888,390 @@
             "dateLabel": "26–30 oktober 2026"
           }
         ]
+      },
+      {
+        "slug": "umea",
+        "name": "Umeå",
+        "emoji": "🌲",
+        "cardText": "Norrlands kulturhuvudstad med gratis skulpturpark, vetenskapscenter och äventyrslekplats vid sjön.",
+        "title": "Umeå med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Umeå med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Curiosum, Gammlia, Nydala och fler — med verkliga priser.",
+        "h1": "Umeå med barn",
+        "intro": [
+          "Umeå är Norrlands största stad och en påfallande barnvänlig sådan — gott om gratis sevärdheter, en kompakt stadskärna och naturen aldrig långt bort.",
+          "Flera av stadens bästa aktiviteter för barn är helt gratis. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+        ],
+        "activities": [
+          {
+            "name": "Västerbottens museum & Gammlia friluftsmuseum",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Gammlia",
+            "desc": "Friluftsmuseum med ett 30-tal historiska byggnader att upptäcka, plus Västerbottens museum med länets historia under tak. Fri entré och gott om plats att springa av sig.",
+            "link": "https://www.vbm.se/en"
+          },
+          {
+            "name": "Curiosum",
+            "type": "paid",
+            "price": "120 kr vuxen (helger/skollov), gratis för barn och ungdom 0–19 år",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Umeå centrum",
+            "desc": "Interaktivt vetenskapscenter med hands-on-experiment och en kupolformad filmsal. Barn och ungdomar har alltid fri entré — publikt öppet är i första hand helger och skollov.",
+            "link": "https://www.curiosum.umu.se/en/"
+          },
+          {
+            "name": "Navet",
+            "type": "paid",
+            "price": "145 kr vuxen, 100 kr barn 2–17 år (bad)",
+            "ageMin": 1,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Umeå centrum",
+            "desc": "Modernt badhus med äventyrsbassäng, rutschkanor och strömkanal. Öppet alla dagar året runt — ett säkert kort oavsett väder.",
+            "link": "https://navet.umea.se/english/"
+          },
+          {
+            "name": "Umedalens Skulpturpark",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Umedalen, ca 5 km från centrum",
+            "desc": "Gratis skulpturpark i tallskog med verk av internationellt kända konstnärer utspridda bland träden. Öppet dygnet runt, fint för en promenad eller cykeltur med barnen.",
+            "link": "https://umedalenskulptur.org/"
+          },
+          {
+            "name": "Nydala äventyrslekplats",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 2,
+            "ageMax": 14,
+            "indoor": false,
+            "area": "Nydala/Tomtebo, ca 4 km från centrum",
+            "desc": "Stor äventyrslekplats vid Nydalasjön med klätternät, linbana och vattenlek, plus sandstrand och en 9 km slinga runt sjön.",
+            "link": "https://visitumea.se/en/nydala"
+          },
+          {
+            "name": "Leo's Lekland Umeå",
+            "type": "paid",
+            "price": "Barn under 2 år från 124 kr, barn 2–17 år från 249 kr",
+            "ageMin": 0,
+            "ageMax": 10,
+            "indoor": true,
+            "area": "Ersboda",
+            "desc": "Inomhuslekland med studsmattor, klätterställningar och bollhav anpassat efter ålder. Bra alternativ en kall eller blöt dag.",
+            "link": "https://www.leoslekland.se/en/our-playcenters/umea"
+          },
+          {
+            "name": "Norrmjöle havsbad",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Norrmjöle, ca 20 min norr om Umeå",
+            "desc": "Grund och barnvänlig havsstrand med lekplats och omklädningsrum, sommaröppet fik. En klassisk utflykt en varm dag.",
+            "link": "https://visitumea.se/en/beaches-in-umea"
+          },
+          {
+            "name": "Sparken",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 6,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Umeå centrum",
+            "desc": "Umeås stora skatepark mitt i stan med ramper för skateboard, inlines och BMX. Bra för de något äldre barnen.",
+            "link": "https://visitumea.se/en/skate-park"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Västerbottens museum gratis för barn?",
+            "a": "Ja, Västerbottens museum och Gammlia friluftsmuseum har fri entré för alla, oavsett ålder."
+          },
+          {
+            "q": "Vilka aktiviteter i Umeå är helt gratis?",
+            "a": "Västerbottens museum/Gammlia, Umedalens Skulpturpark, Nydala äventyrslekplats, Norrmjöle havsbad och Sparken skatepark kostar inget. Bra start för en billig familjedag i Umeå."
+          }
+        ],
+        "published": "2026-10-15",
+        "updated": "2026-10-15",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "title": "Höstlov i Umeå 2026 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Umeå 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — vetenskapscenter, museer och badhus — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Umeå 2026 — vad ni kan göra",
+            "intro": [
+              "Höstlovet i Umeå 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare och mörkare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Nedan har vi samlat Umeås bästa inomhusalternativ för lovveckan."
+            ],
+            "tips": [
+              {
+                "name": "Curiosum",
+                "type": "paid",
+                "price": "120 kr vuxen (helger/skollov), gratis för barn och ungdom 0–19 år",
+                "ageMin": 3,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Umeå centrum",
+                "desc": "Interaktivt vetenskapscenter med hands-on-experiment och en kupolformad filmsal. Barn och ungdomar har alltid fri entré.",
+                "link": "https://www.curiosum.umu.se/en/"
+              },
+              {
+                "name": "Navet",
+                "type": "paid",
+                "price": "145 kr vuxen, 100 kr barn 2–17 år (bad)",
+                "ageMin": 1,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Umeå centrum",
+                "desc": "Modernt badhus med äventyrsbassäng, rutschkanor och strömkanal. Öppet alla dagar — ett säkert kort oavsett väder.",
+                "link": "https://navet.umea.se/english/"
+              },
+              {
+                "name": "Leo's Lekland Umeå",
+                "type": "paid",
+                "price": "Barn under 2 år från 124 kr, barn 2–17 år från 249 kr",
+                "ageMin": 0,
+                "ageMax": 10,
+                "indoor": true,
+                "area": "Ersboda",
+                "desc": "Inomhuslekland med studsmattor, klätterställningar och bollhav anpassat efter ålder.",
+                "link": "https://www.leoslekland.se/en/our-playcenters/umea"
+              },
+              {
+                "name": "Västerbottens museum",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Gammlia",
+                "desc": "Museets utställningar inomhus om länets historia — perfekt om vädret krånglar under lovveckan.",
+                "link": "https://www.vbm.se/en"
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Umeå 2026?",
+                "a": "Höstlovet i Umeå 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som övriga Sverige i år."
+              },
+              {
+                "q": "Är Curiosum gratis för barn på höstlovet?",
+                "a": "Ja, barn och ungdom 0–19 år har fri entré till Curiosum året runt, även under höstlovet. Vuxenbiljetten kostar 120 kr."
+              }
+            ],
+            "published": "2026-10-15",
+            "updated": "2026-10-15",
+            "dateLabel": "26–30 oktober 2026"
+          }
+        ],
+        "img": "photo-1681803843401-67d808538e98"
+      },
+      {
+        "slug": "vasteras",
+        "name": "Västerås",
+        "emoji": "🏰",
+        "cardText": "Mälarstaden med actionbad i ett gammalt kraftverk, gratis museer och en historisk gravhög att utforska.",
+        "title": "Västerås med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Västerås med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Kokpunkten, Vallby friluftsmuseum och fler — med verkliga priser.",
+        "h1": "Västerås med barn",
+        "intro": [
+          "Västerås ligger vid Mälarens strand och har en ovanligt tät samling gratis museer mitt i centrum, plus naturreservat och badplatser bara minuter bort.",
+          "Flera av stadens bästa aktiviteter för barn är helt gratis. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+        ],
+        "activities": [
+          {
+            "name": "Kokpunkten Actionbad",
+            "type": "paid",
+            "price": "Från 149 kr/person (pris varierar med ankomsttid)",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Öster Mälarstrand, vid hamnen",
+            "desc": "Sveriges enda actionbad, inrymt i ett gammalt ångkraftverk vid hamnen — vattenrutschbanor, vågbassäng och äventyr för hela familjen. Perfekt regndagstips.",
+            "link": "https://kokpunkten.se/"
+          },
+          {
+            "name": "Vallby Friluftsmuseum",
+            "type": "free",
+            "price": "Gratis (vissa lovaktiviteter kan kosta extra)",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Vallby",
+            "desc": "Levande friluftsmuseum med gamla hus, djur och hantverk från Västmanland. Gratis att vandra runt i, med extra barnaktiviteter under skolloven.",
+            "link": "https://vallbyfriluftsmuseum.se/"
+          },
+          {
+            "name": "Västerås konstmuseum",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Centrum, Karlsgatan 2",
+            "desc": "Konstmuseum centralt i Västerås med fri entré och utställningar som även passar barn. Bra regndagsalternativ.",
+            "link": "https://vasteraskonstmuseum.se/"
+          },
+          {
+            "name": "Västmanlands läns museum",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Centrum, Karlsgatan 2",
+            "desc": "Länsmuseum med Västmanlands historia under samma tak som konstmuseet. Alltid fri entré, med extra barnprogram under höst- och sommarlov.",
+            "link": "https://vastmanlandslansmuseum.se/"
+          },
+          {
+            "name": "Djäkneberget",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Västermalm",
+            "desc": "Grön höjd nära centrum med utsikt över staden, promenadstigar och en lekplats. Fin och helt gratis picknickplats för familjen.",
+            "link": "https://www.vasteras.se/uppleva-och-gora/upplev-vasteras/kulturhistoriska-hus-och-platser/djakneberget.html"
+          },
+          {
+            "name": "Björnön naturreservat",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Björnö, strax utanför centrum",
+            "desc": "Naturreservat med badplats, grillplatser och vandringsstigar. Ett klassiskt och helt kostnadsfritt utflyktsmål för hela familjen.",
+            "link": "https://www.lansstyrelsen.se/vastmanland/besoksmal/naturreservat/bjornon.html"
+          },
+          {
+            "name": "Anundshög",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Badelunda, ca 5 km öster om centrum",
+            "desc": "Sveriges största gravhög med skeppssättningar och runsten på Badelundaåsen. Fritt att utforska när som helst — en spännande historisk utflykt för hela familjen.",
+            "link": "https://www.anundshog.se/"
+          },
+          {
+            "name": "Prison Island Västerås",
+            "type": "paid",
+            "price": "Barn 8–17 år 120–220 kr, vuxen 180–320 kr (beroende på längd), familjepris finns, barn under 8 år gratis med vuxen",
+            "ageMin": 8,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Centrum, Kopparbergsvägen 13",
+            "desc": "Lagbaserade uppdrag i fängelsemiljö där ni tillsammans löser gåtor och tar er ut. Spännande utmaning för barn från ca 8 år, perfekt en regnig dag.",
+            "link": "https://prisonislandvasteras.se/en/"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Västerås konstmuseum gratis för barn?",
+            "a": "Ja, både Västerås konstmuseum och Västmanlands läns museum (samma hus) har fri entré för alla."
+          },
+          {
+            "q": "Vilka aktiviteter i Västerås är helt gratis?",
+            "a": "Vallby friluftsmuseum, Västerås konstmuseum, Västmanlands läns museum, Djäkneberget, Björnön och Anundshög kostar inget. Bra start för en billig familjedag i Västerås."
+          }
+        ],
+        "published": "2026-10-15",
+        "updated": "2026-10-15",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "title": "Höstlov i Västerås 2026 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Västerås 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — actionbad och museer — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Västerås 2026 — vad ni kan göra",
+            "intro": [
+              "Höstlovet i Västerås 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Nedan har vi samlat Västerås bästa inomhusalternativ för lovveckan."
+            ],
+            "tips": [
+              {
+                "name": "Kokpunkten Actionbad",
+                "type": "paid",
+                "price": "Från 149 kr/person (pris varierar med ankomsttid)",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Öster Mälarstrand, vid hamnen",
+                "desc": "Sveriges enda actionbad i ett gammalt ångkraftverk vid hamnen — vattenrutschbanor och äventyr för hela familjen.",
+                "link": "https://kokpunkten.se/"
+              },
+              {
+                "name": "Västerås konstmuseum",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Centrum, Karlsgatan 2",
+                "desc": "Konstmuseum centralt i Västerås med fri entré — bra regndagsalternativ under lovveckan.",
+                "link": "https://vasteraskonstmuseum.se/"
+              },
+              {
+                "name": "Västmanlands läns museum",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Centrum, Karlsgatan 2",
+                "desc": "Länsmuseum med extra barnprogram under höstlovet, alltid fri entré.",
+                "link": "https://vastmanlandslansmuseum.se/"
+              },
+              {
+                "name": "Prison Island Västerås",
+                "type": "paid",
+                "price": "Barn 8–17 år 120–220 kr, vuxen 180–320 kr (beroende på längd)",
+                "ageMin": 8,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Centrum, Kopparbergsvägen 13",
+                "desc": "Lagbaserade uppdrag i fängelsemiljö — spännande utmaning för barn från ca 8 år, perfekt en regnig lovdag.",
+                "link": "https://prisonislandvasteras.se/en/"
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Västerås 2026?",
+                "a": "Höstlovet i Västerås 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som övriga Sverige i år."
+              },
+              {
+                "q": "Är Västerås konstmuseum gratis för barn på höstlovet?",
+                "a": "Ja, Västerås konstmuseum har fri entré året runt, även under höstlovet."
+              }
+            ],
+            "published": "2026-10-15",
+            "updated": "2026-10-15",
+            "dateLabel": "26–30 oktober 2026"
+          }
+        ],
+        "img": "photo-1613404040238-49587344a9b4"
       }
     ]
   },
