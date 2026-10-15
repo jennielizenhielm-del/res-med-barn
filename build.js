@@ -14,6 +14,16 @@ const DOMAIN = C.site.domain.replace(/\/$/, '');
 // Dagens datum (ISO) — används som sista utväg om en sida saknar eget
 // updated/published-fält i content.json, och för sitemapens fallback-lastmod.
 const TODAY = new Date().toISOString().slice(0, 10);
+// Svensk chartersäsong: oktober–mars räknas som "vinter" (Kanarieöarna/Thailand/
+// Egypten-säsong — bokningen drar igång redan kring höstlovet i slutet av oktober),
+// april–september som "sommar" (Medelhavet). Används för att välja vilka resmål som
+// visas i "Populära resmål" och hero-bildkollaget på startsidan — samma logik
+// speglas client-side i templates/home.html så den håller sig aktuell även mellan
+// builds (se getSeason() där).
+const SEASON = (() => {
+  const m = new Date().getMonth(); // 0=jan … 11=dec
+  return (m >= 9 || m <= 2) ? 'vinter' : 'sommar';
+})();
 // Svensk visningsversion av ett ISO-datum ("2026-09-28" -> "28 september 2026"),
 // för synliga "Uppdaterad"-etiketter på sidan. Strukturerad data behåller ISO.
 const svDate = iso => {
@@ -493,7 +503,7 @@ function buildHome() {
   const published = m.published || updated;
   URL_DATES['/'] = updated;
   const DESTINATIONS = loadDestinations();
-  const featured = DESTINATIONS.filter(d => d.featured);
+  const featured = DESTINATIONS.filter(d => d.featured === 'alltid' || d.featured === SEASON);
   const latest = collectLatestPages();
   warnLen('/', 'meta title', m.title, 60);
   warnLen('/', 'meta description', m.description, 155);
