@@ -228,12 +228,13 @@ const IMG = (id, w) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=forma
 // Unsplash-URL byggs. aspect (valfri) sätter en egen
 // aspect-ratio på hero-boxen istället för CSS-standarden, för bilder som
 // inte passar det vanliga 21:9-formatet.
-function media(img, emoji, cls, w, aspect) {
+function media(img, emoji, cls, w, aspect, pos) {
   if (!img) return '';
   const src = img.startsWith('/') || /^https?:\/\//.test(img) ? img : IMG(img, w);
   const style = aspect ? ` style="aspect-ratio:${aspect}"` : '';
+  const imgStyle = pos ? ` style="object-position:${esc(pos)}"` : '';
   return `<div class="card-media ${cls}" data-emoji="${emoji || '🌍'}"${style}>
-    <img src="${src}" alt="" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+    <img src="${src}" alt="" loading="lazy"${imgStyle} onerror="this.parentElement.classList.add('img-fallback');this.remove();">
   </div>`;
 }
 
@@ -873,7 +874,7 @@ function buildStader() {
   <h1>${esc(s.h1)}</h1>
   <div class="page-intro">${paras(s.intro)}</div>
 </header>
-${media(s.img, s.emoji, 'page-hero', 1400)}
+${media(s.img, s.emoji, 'page-hero', 1400, null, s.imgPos)}
 
 ${(s.lov || []).map(l => `
 <a class="lov-cta" href="/stader/${s.slug}/${l.lovSlug}/">
