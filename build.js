@@ -1342,6 +1342,17 @@ function medgivandeNoteForDestination(d) {
   </div>`;
 }
 
+function subPlaceLink(url) {
+  if (!url) return '';
+  let emoji = '🌐';
+  let label = 'hemsidan';
+  if (/instagram\.com/.test(url)) { emoji = '📷'; label = 'Instagram'; }
+  else if (/facebook\.com/.test(url)) { emoji = '📘'; label = 'Facebook'; }
+  else if (/tripadvisor\./.test(url)) { emoji = '📝'; label = 'Tripadvisor'; }
+  else if (/google\.[a-z.]+\/maps|maps\.google\.|google\.com\/maps/.test(url)) { emoji = '📍'; label = 'Google Maps'; }
+  return `<a class="venue-link" href="${esc(url)}" rel="nofollow noopener" target="_blank">${emoji} ${esc(label)}</a>`;
+}
+
 function subPlaces(title, items) {
   if (!items || !items.length) return '';
   return `
@@ -1355,6 +1366,7 @@ function subPlaces(title, items) {
     <div class="subplace-body">
       <h3>${esc(it.name)}${it.area ? ` <span class="subplace-area">— ${esc(it.area)}</span>` : ''}</h3>
       <p>${esc(it.text)}</p>
+      ${subPlaceLink(it.url)}
     </div>
   </div>`).join('')}
 </div>`;
