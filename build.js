@@ -998,6 +998,7 @@ function buildLovSidor() {
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
+${media(l.img, l.emoji, 'page-hero', 1400, null, l.imgPos)}
 <div class="activity-grid">
   ${l.tips.map(activityCard).join('')}
 </div>

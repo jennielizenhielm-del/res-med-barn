@@ -16,6 +16,22 @@
         {
           "q": "Var är det bäst att resa med barn?",
           "a": "Det beror på barnens ålder och vad familjen gillar. Grekland, Kroatien och Spanien är klassiska val för långgrunda stränder och barnvänliga hotell. Nöjesparker som Legoland eller Gröna Lund passar utmärkt för en kortare resa, och Sverige (Gotland, Stockholms skärgård) är perfekt när ni vill hålla resan enkel. Filtrera bland våra 54 resmål ovan efter ålder, budget och typ av resa för att hitta rätt för just er familj."
+        },
+        {
+          "q": "Vilken ålder är bäst för att börja resa utomlands med barn?",
+          "a": "Det finns inget rätt svar, men många väljer att vänta tills barnet är runt 1 år för enklare logistik med mat och sömn. Charterresor till Medelhavet eller Kanarieöarna fungerar ofta bra redan från 6 månader om ni håller resan kort och väljer ett barnvänligt hotell. Längre flygresor till till exempel Thailand är enklare när barnen är lite äldre och orkar sitta still."
+        },
+        {
+          "q": "Behöver vi medgivandebrev om bara en förälder reser med barnen?",
+          "a": "I vissa länder kan gränskontrollen be om ett skriftligt medgivande från den andra vårdnadshavaren, särskilt vid delad vårdnad eller skilda efternamn. Se vår guide till vilka länder som har krav eller rekommendationer, och skapa ett medgivandebrev gratis med vår generator."
+        },
+        {
+          "q": "Hur håller vi nere kostnaden på en charterresa med barn?",
+          "a": "Att resa utanför skollov och välja resmål som Turkiet eller Egypten istället för högsäsongsklassiker som Kanarieöarna sänker ofta priset rejält. All inclusive är värt det för många barnfamiljer eftersom det gör dagskassan förutsägbar. Filtrera våra resmål på budget (€, €€, €€€) för att snabbt se vad som passar er plånbok."
+        },
+        {
+          "q": "Vilka resmål passar bäst för småbarn (0–3 år)?",
+          "a": "Kort flygtid, stabilt klimat och barnvänliga hotell med grund pool eller barnbassäng är viktigast i den åldern. Kreta, Mallorca och Algarve är klassiska val med kort flygtid från Sverige, medan Gran Canaria fungerar fint även på vintern. Filtrera våra resmål på ålder 0–3 år för en fullständig lista."
         }
       ],
       "published": "2026-09-23",
@@ -6076,7 +6092,8 @@
             ],
             "published": "2026-10-15",
             "updated": "2026-10-15",
-            "dateLabel": "26–30 oktober 2026"
+            "dateLabel": "26–30 oktober 2026",
+            "img": "photo-1636555269230-74ff8f069e5b"
           }
         ],
         "img": "photo-1681803843401-67d808538e98",
@@ -6269,7 +6286,8 @@
             ],
             "published": "2026-10-15",
             "updated": "2026-10-15",
-            "dateLabel": "26–30 oktober 2026"
+            "dateLabel": "26–30 oktober 2026",
+            "img": "photo-1576227058206-2e98638d2228"
           }
         ],
         "img": "photo-1613404040238-49587344a9b4"
