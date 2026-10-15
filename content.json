@@ -4389,7 +4389,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Norra innerstaden",
-            "desc": "Stor kunglig park med öppna gräsytor, Fjärilshuset (kostar extra) och gott om plats att springa av sig."
+            "desc": "Stor kunglig park med öppna gräsytor, Fjärilshuset (kostar extra) och gott om plats att springa av sig.",
+            "link": "https://www.kungligaslotten.se/english/royal-palaces-and-sites/royal-national-city-park/haga-park---brunnsviken.html"
           },
           {
             "name": "Junibacken",
@@ -4399,7 +4400,8 @@
             "ageMax": 8,
             "indoor": true,
             "area": "Djurgården",
-            "desc": "Sagomuseum byggt kring Astrid Lindgrens värld, med tågresa genom sagorna och stor lekvärld."
+            "desc": "Sagomuseum byggt kring Astrid Lindgrens värld, med tågresa genom sagorna och stor lekvärld.",
+            "link": "https://www.junibacken.se/"
           },
           {
             "name": "Skansen",
@@ -4409,7 +4411,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Djurgården",
-            "desc": "Friluftsmuseum och djurpark med svenska djur, historiska hus och Lill-Skansen för de minsta."
+            "desc": "Friluftsmuseum och djurpark med svenska djur, historiska hus och Lill-Skansen för de minsta.",
+            "link": "https://www.skansen.se/"
           },
           {
             "name": "Moderna Museet",
@@ -4419,7 +4422,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Skeppsholmen",
-            "desc": "Fri entré för barn och unga året runt, med kreativa workshops och familjevänliga visningar."
+            "desc": "Fri entré för barn och unga året runt, med kreativa workshops och familjevänliga visningar.",
+            "link": "https://www.modernamuseet.se/stockholm/"
           },
           {
             "name": "Etnografiska museet",
@@ -4429,7 +4433,8 @@
             "ageMax": 14,
             "indoor": true,
             "area": "Djurgården",
-            "desc": "Fri entré året runt, med interaktiva utställningar och sagovärldar för de yngsta."
+            "desc": "Fri entré året runt, med interaktiva utställningar och sagovärldar för de yngsta.",
+            "link": "https://www.etnografiskamuseet.se/"
           },
           {
             "name": "Tyresta nationalpark",
@@ -4439,7 +4444,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Söder om stan",
-            "desc": "Naturreservat med gammal skog och lättillgängliga leder — perfekt för en heldagsutflykt i naturen."
+            "desc": "Naturreservat med gammal skog och lättillgängliga leder — perfekt för en heldagsutflykt i naturen.",
+            "link": "https://www.sverigesnationalparker.se/en/parks/tyresta-national-park/"
           },
           {
             "name": "Kulturhuset Stadsteatern (Lava)",
@@ -4449,7 +4455,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Sergels torg",
-            "desc": "Gratis ungdomsvåning med spel, skapande och mysiga hörnor — perfekt regndagsalternativ mitt i city."
+            "desc": "Gratis ungdomsvåning med spel, skapande och mysiga hörnor — perfekt regndagsalternativ mitt i city.",
+            "link": "https://kulturhusetstadsteatern.se/english/libraries"
           },
           {
             "name": "Mulle Meck-parken",
@@ -4459,7 +4466,8 @@
             "ageMax": 8,
             "indoor": false,
             "area": "Järvastaden, Solna",
-            "desc": "Temalekplats inspirerad av barnboksfiguren Mulle Meck, fylld med kreativa byggstationer."
+            "desc": "Temalekplats inspirerad av barnboksfiguren Mulle Meck, fylld med kreativa byggstationer.",
+            "link": "https://www.tripadvisor.de/Attraction_Review-g670665-d10524097-Reviews-Mulle_Meck_parken-Solna.html"
           },
           {
             "name": "Nordiska museet",
@@ -4469,7 +4477,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Djurgården",
-            "desc": "Svensk kulturhistoria i ett imponerande slottsliknande hus — klädkammare, julgransutställning och lekrum som gör museet lättillgängligt även för de yngsta."
+            "desc": "Svensk kulturhistoria i ett imponerande slottsliknande hus — klädkammare, julgransutställning och lekrum som gör museet lättillgängligt även för de yngsta.",
+            "link": "https://nordiskamuseet.se/"
           },
           {
             "name": "Naturhistoriska riksmuseet",
@@ -4479,7 +4488,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Frescati",
-            "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — en klassiker för barn som är nyfikna på allt som är stort, gammalt eller långt bort. Cosmonova-planetariet kostar extra."
+            "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — en klassiker för barn som är nyfikna på allt som är stort, gammalt eller långt bort. Cosmonova-planetariet kostar extra.",
+            "link": "https://www.nrm.se/"
           }
         ],
         "faq": [
@@ -4526,7 +4536,8 @@
                 "ageMax": 18,
                 "indoor": true,
                 "area": "Frescati",
-                "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — en säker vinnare om vädret krånglar. Cosmonova-planetariet kostar extra."
+                "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — en säker vinnare om vädret krånglar. Cosmonova-planetariet kostar extra.",
+                "link": "https://www.nrm.se/"
               },
               {
                 "name": "Nordiska museet",
@@ -4537,7 +4548,8 @@
                 "indoor": true,
                 "area": "Djurgården",
                 "desc": "Svensk kulturhistoria i ett slottsliknande hus — klädkammare och lekrum som funkar bra även för de yngsta.",
-                "dateInfo": "Gratis mån–fre under lovet"
+                "dateInfo": "Gratis mån–fre under lovet",
+                "link": "https://nordiskamuseet.se/"
               },
               {
                 "name": "Junibacken",
@@ -4547,7 +4559,8 @@
                 "ageMax": 8,
                 "indoor": true,
                 "area": "Djurgården",
-                "desc": "Sagomuseum med tågresa genom Astrid Lindgrens värld och stor lekvärld — ett säkert regnalternativ."
+                "desc": "Sagomuseum med tågresa genom Astrid Lindgrens värld och stor lekvärld — ett säkert regnalternativ.",
+                "link": "https://www.junibacken.se/"
               },
               {
                 "name": "Skansen",
@@ -4557,7 +4570,8 @@
                 "ageMax": 16,
                 "indoor": false,
                 "area": "Djurgården",
-                "desc": "Djurpark och friluftsmuseum — klär man sig varmt funkar det fint även i höstkylan."
+                "desc": "Djurpark och friluftsmuseum — klär man sig varmt funkar det fint även i höstkylan.",
+                "link": "https://www.skansen.se/"
               },
               {
                 "name": "Höstlovspyssel på biblioteken",
@@ -4568,7 +4582,8 @@
                 "indoor": true,
                 "area": "Flera bibliotek i Stockholm",
                 "desc": "Många av stadens bibliotek kör pyssel och sagostunder under lovveckan — kolla aktuellt program på biblioteket närmast er.",
-                "dateInfo": "Vecka 44"
+                "dateInfo": "Vecka 44",
+                "link": "https://biblioteket.stockholm.se/"
               }
             ],
             "faq": [
@@ -5314,7 +5329,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Linnéstaden",
-            "desc": "Göteborgs mest besökta gratis-djurpark, med älg, ren, sälar, pingviner och Barnens Zoo att klappa djur i."
+            "desc": "Göteborgs mest besökta gratis-djurpark, med älg, ren, sälar, pingviner och Barnens Zoo att klappa djur i.",
+            "link": "https://goteborg.se/wps/portal/enhetssida/slottsskogen/in-english"
           },
           {
             "name": "Liseberg",
@@ -5324,7 +5340,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Korsvägen",
-            "desc": "Nöjesparken med Kaninlandet för de minsta och stora åkattraktioner för äldre barn och tonåringar."
+            "desc": "Nöjesparken med Kaninlandet för de minsta och stora åkattraktioner för äldre barn och tonåringar.",
+            "link": "https://www.liseberg.se/"
           },
           {
             "name": "Universeum",
@@ -5334,7 +5351,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Korsvägen",
-            "desc": "Sveriges nationella science center med regnskog, akvarium och hajbassäng under samma tak."
+            "desc": "Sveriges nationella science center med regnskog, akvarium och hajbassäng under samma tak.",
+            "link": "https://www.universeum.se/"
           },
           {
             "name": "Trädgårdsföreningen",
@@ -5344,7 +5362,8 @@
             "ageMax": 12,
             "indoor": false,
             "area": "Centralt",
-            "desc": "Historisk park mitt i stan med stora grönytor, lekplatser och det ikoniska växthuset Palmhuset."
+            "desc": "Historisk park mitt i stan med stora grönytor, lekplatser och det ikoniska växthuset Palmhuset.",
+            "link": "https://goteborg.se/wps/portal/enheter/tradgardsforeningen/in-english/history"
           },
           {
             "name": "Göteborgs botaniska trädgård",
@@ -5354,7 +5373,8 @@
             "ageMax": 14,
             "indoor": false,
             "area": "Änggården",
-            "desc": "Sveriges största botaniska trädgård, med stora ytor att utforska och växthus att kika in i."
+            "desc": "Sveriges största botaniska trädgård, med stora ytor att utforska och växthus att kika in i.",
+            "link": "https://www.botaniska.se/"
           },
           {
             "name": "Naturhistoriska museet",
@@ -5364,7 +5384,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Slottsskogen",
-            "desc": "Sveriges äldsta naturhistoriska museum, med blåval, dinosaurier och massor av utstoppade djur."
+            "desc": "Sveriges äldsta naturhistoriska museum, med blåval, dinosaurier och massor av utstoppade djur.",
+            "link": "https://www.gnm.se/"
           },
           {
             "name": "Jubileumsparken",
@@ -5374,7 +5395,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Frihamnen",
-            "desc": "Utomhusbad, lekskulpturer och skateboardramp precis vid vattnet, tvärs över Hisingsbron."
+            "desc": "Utomhusbad, lekskulpturer och skateboardramp precis vid vattnet, tvärs över Hisingsbron.",
+            "link": "https://goteborg.se/wps/portal/enhetssida/jubileumsparken/in-english/location"
           },
           {
             "name": "Världens lek",
@@ -5384,7 +5406,8 @@
             "ageMax": 10,
             "indoor": false,
             "area": "Världskulturmuseet",
-            "desc": "Färgsprakande, tillgänglighetsanpassad lekplats precis utanför Världskulturmuseet."
+            "desc": "Färgsprakande, tillgänglighetsanpassad lekplats precis utanför Världskulturmuseet.",
+            "link": "https://www.varldskulturmuseet.se/"
           }
         ],
         "faq": [
@@ -5424,7 +5447,8 @@
                 "indoor": false,
                 "area": "Korsvägen",
                 "desc": "30 000 pumpor, spökhus och \"mys och rys\" för hela familjen.",
-                "dateInfo": "2 okt–1 nov 2026"
+                "dateInfo": "2 okt–1 nov 2026",
+                "link": "https://www.liseberg.se/"
               },
               {
                 "name": "Halloween på Universeum",
@@ -5435,7 +5459,8 @@
                 "indoor": true,
                 "area": "Korsvägen",
                 "desc": "Tre nya utställningar om naturens mörkaste hemligheter — bra regnalternativ.",
-                "dateInfo": "29 sep–1 nov 2026"
+                "dateInfo": "29 sep–1 nov 2026",
+                "link": "https://www.universeum.se/"
               },
               {
                 "name": "Día de Muertos på Världskulturmuseet",
@@ -5446,7 +5471,8 @@
                 "indoor": true,
                 "area": "Världskulturmuseet",
                 "desc": "Pyssel, verkstäder och föreställningar kring den mexikanska högtiden.",
-                "dateInfo": "24 okt–2 nov 2026"
+                "dateInfo": "24 okt–2 nov 2026",
+                "link": "https://www.varldskulturmuseet.se/"
               },
               {
                 "name": "Svampvandring i Botaniska trädgården",
@@ -5456,7 +5482,8 @@
                 "ageMax": 14,
                 "indoor": false,
                 "area": "Änggården",
-                "desc": "Höstklassiker — svampexperter visar runt, och barnen kan pyssla igelkottar av naturmaterial."
+                "desc": "Höstklassiker — svampexperter visar runt, och barnen kan pyssla igelkottar av naturmaterial.",
+                "link": "https://www.botaniska.se/"
               }
             ],
             "faq": [
@@ -5497,7 +5524,8 @@
             "ageMax": 14,
             "indoor": false,
             "area": "Möllevången",
-            "desc": "Malmös familjehjärta med lekplatser för olika åldrar, ponnyridning på sommarhelger och plaskdamm."
+            "desc": "Malmös familjehjärta med lekplatser för olika åldrar, ponnyridning på sommarhelger och plaskdamm.",
+            "link": "https://malmo.se/Folkets-Park.html"
           },
           {
             "name": "Bullhuset (Folkets Park)",
@@ -5507,7 +5535,8 @@
             "ageMax": 4,
             "indoor": true,
             "area": "Möllevången",
-            "desc": "Inomhuslekpark för de allra minsta, en del av Folkets Park — perfekt regndagsalternativ."
+            "desc": "Inomhuslekpark för de allra minsta, en del av Folkets Park — perfekt regndagsalternativ.",
+            "link": "https://malmo.se/Folkets-Park/Lek-och-aktiviteter/Cykelsafari.html"
           },
           {
             "name": "Malmö Museer (Malmöhus slott)",
@@ -5517,7 +5546,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Skeppsbron",
-            "desc": "Fyra museer i ett slottskomplex, inklusive akvarium med hajar och pingviner samt Teknikens och sjöfartens hus."
+            "desc": "Fyra museer i ett slottskomplex, inklusive akvarium med hajar och pingviner samt Teknikens och sjöfartens hus.",
+            "link": "https://malmo.se/museum"
           },
           {
             "name": "Ribersborgs strand",
@@ -5527,7 +5557,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Ribersborg",
-            "desc": "Malmös mest besökta strand, kallad \"Ribban\" — lång sandstrand med närhet till centrum."
+            "desc": "Malmös mest besökta strand, kallad \"Ribban\" — lång sandstrand med närhet till centrum.",
+            "link": "https://malmo.se/Uppleva-och-gora/Bada-och-simma/Strander-och-badplatser/Ribersborgsstranden.html"
           },
           {
             "name": "Pildammsparken",
@@ -5537,7 +5568,8 @@
             "ageMax": 12,
             "indoor": false,
             "area": "Centrala Malmö",
-            "desc": "Stora dammar och grönytor, perfekt för att mata änder och leka på den stora lekplatsen."
+            "desc": "Stora dammar och grönytor, perfekt för att mata änder och leka på den stora lekplatsen.",
+            "link": "https://malmo.se/Uppleva-och-gora/Natur-och-parker/Parker-i-Malmo/Pildammsparken.html"
           },
           {
             "name": "Slottsparken",
@@ -5547,7 +5579,8 @@
             "ageMax": 12,
             "indoor": false,
             "area": "Vid Malmöhus slott",
-            "desc": "Vacker park med kanal där man kan hyra roddbåtar, samt flera lekplatser och stora gräsytor."
+            "desc": "Vacker park med kanal där man kan hyra roddbåtar, samt flera lekplatser och stora gräsytor.",
+            "link": "https://malmo.se/Uppleva-och-gora/Natur-och-parker/Parker-i-Malmo/Slottsparken.html"
           },
           {
             "name": "Bokskogen (Torup)",
@@ -5557,7 +5590,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Strax utanför Malmö",
-            "desc": "Stort skogsområde med vandringsleder, grillplatser och naturlekplats — bra för en heldagsutflykt."
+            "desc": "Stort skogsområde med vandringsleder, grillplatser och naturlekplats — bra för en heldagsutflykt.",
+            "link": "https://malmo.se/Uppleva-och-gora/Besoksmal/Bokskogen.html"
           },
           {
             "name": "Disgusting Food Museum",
@@ -5567,7 +5601,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Centrala Malmö",
-            "desc": "Udda och lärorikt museum om världens mest ovanliga maträtter — populärt bland äldre barn."
+            "desc": "Udda och lärorikt museum om världens mest ovanliga maträtter — populärt bland äldre barn.",
+            "link": "https://disgustingfoodmuseum.com/"
           }
         ],
         "faq": [
@@ -5607,7 +5642,8 @@
                 "indoor": false,
                 "area": "Möllevången",
                 "desc": "Lagom läskigt och rysligt kul — teater, scenkonst och musik för barn och familj, inomhus och utomhus i parken.",
-                "dateInfo": "26–31 okt 2026"
+                "dateInfo": "26–31 okt 2026",
+                "link": "https://malmo.se/Folkets-Park.html"
               },
               {
                 "name": "Hylliebadets höstlovsprogram",
@@ -5630,7 +5666,8 @@
                 "indoor": true,
                 "area": "Moderna Museet Malmö",
                 "desc": "Drop-in konstverkstad för de minsta och deras vuxna, med pyssel och en kort visning ur barnens perspektiv.",
-                "dateInfo": "Tisdagar, ingen föranmälan"
+                "dateInfo": "Tisdagar, ingen föranmälan",
+                "link": "https://malmo.se/museum"
               },
               {
                 "name": "Malmö Museer (Malmöhus slott)",
@@ -5640,7 +5677,8 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Skeppsbron",
-                "desc": "Bra regnalternativ med naturhistoria, akvarium och lekmöjligheter för de yngsta."
+                "desc": "Bra regnalternativ med naturhistoria, akvarium och lekmöjligheter för de yngsta.",
+                "link": "https://malmo.se/museum"
               }
             ],
             "faq": [
@@ -5681,7 +5719,8 @@
             "ageMax": 10,
             "indoor": false,
             "area": "Engelska parken, centrala Uppsala",
-            "desc": "Temalekplats i Carolinaparken byggd kring Pelle Svanslös, Uppsalas egen bokkatt. Klätterdomkyrka, rutschkanor och lekytor mitt i stan."
+            "desc": "Temalekplats i Carolinaparken byggd kring Pelle Svanslös, Uppsalas egen bokkatt. Klätterdomkyrka, rutschkanor och lekytor mitt i stan.",
+            "link": "https://destinationuppsala.se/se-gora-ata/pelleparken/"
           },
           {
             "name": "Gamla Uppsala högar",
@@ -5691,7 +5730,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Gamla Uppsala, ca 10 min från centrum",
-            "desc": "Öppet gravfält med kungshögar från 500-talet, perfekt att springa runt på och lätt vikingahistoria för barnen. Museet bredvid kostar extra."
+            "desc": "Öppet gravfält med kungshögar från 500-talet, perfekt att springa runt på och lätt vikingahistoria för barnen. Museet bredvid kostar extra.",
+            "link": "https://www.upplandsmuseet.se/en/gamla-uppsala-museum/visit-gamla-uppsala/"
           },
           {
             "name": "Fyrishovs Äventyrsbad",
@@ -5701,7 +5741,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Fyrislund",
-            "desc": "Äventyrsbad med rutschkanor, vågmaskin och djungeltema inomhus, plus utomhusbassäng på sommaren. Familjebiljett (1 vuxen + 2 barn) för 275 kr."
+            "desc": "Äventyrsbad med rutschkanor, vågmaskin och djungeltema inomhus, plus utomhusbassäng på sommaren. Familjebiljett (1 vuxen + 2 barn) för 275 kr.",
+            "link": "https://fyrishov.se/bad/aventyrsbad/"
           },
           {
             "name": "Evolutionsmuseet",
@@ -5711,7 +5752,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Norbyvägen",
-            "desc": "Uppsala universitets museum med dinosaurieben och över 5 000 utställda djur. Biljetten gäller både zoologi- och paleontologidelen."
+            "desc": "Uppsala universitets museum med dinosaurieben och över 5 000 utställda djur. Biljetten gäller både zoologi- och paleontologidelen.",
+            "link": "https://www.uu.se/evolutionsmuseet/"
           },
           {
             "name": "Biotopia",
@@ -5721,7 +5763,8 @@
             "ageMax": 12,
             "indoor": true,
             "area": "Centrala Uppsala, vid slottet",
-            "desc": "Naturmuseum med dioramor över Upplands djurliv, akvarium och en egen barnhörna. Fri entré för alla, bra regndagsalternativ."
+            "desc": "Naturmuseum med dioramor över Upplands djurliv, akvarium och en egen barnhörna. Fri entré för alla, bra regndagsalternativ.",
+            "link": "https://biotopia.nu/"
           },
           {
             "name": "Lennakatten",
@@ -5731,7 +5774,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Uppsala Östra station",
-            "desc": "Veterantåg från sent 1800-tal till 1950-tal som kör genom Upplands landskap. Dagskort finns för familjer som vill åka flera gånger samma dag."
+            "desc": "Veterantåg från sent 1800-tal till 1950-tal som kör genom Upplands landskap. Dagskort finns för familjer som vill åka flera gånger samma dag.",
+            "link": "https://lennakatten.se/"
           },
           {
             "name": "Turbo Sport & Adventure Zone",
@@ -5741,7 +5785,8 @@
             "ageMax": 16,
             "indoor": true,
             "area": "Gränbystaden",
-            "desc": "Studsmattepark med 51 studsmattor, ninja warrior-bana, klättring och dunk zone för de minsta. Barn under 10 år måste ha vuxen med sig."
+            "desc": "Studsmattepark med 51 studsmattor, ninja warrior-bana, klättring och dunk zone för de minsta. Barn under 10 år måste ha vuxen med sig.",
+            "link": "https://turbosportzone.se/"
           },
           {
             "name": "Fjällnora friluftsområde",
@@ -5751,7 +5796,8 @@
             "ageMax": 16,
             "indoor": false,
             "area": "Ca 20 min från centrum",
-            "desc": "Badplats och naturområde med fiske, cykelleder och trampbåtsuthyrning på sommaren, skidspår och skridskois på vintern."
+            "desc": "Badplats och naturområde med fiske, cykelleder och trampbåtsuthyrning på sommaren, skidspår och skridskois på vintern.",
+            "link": "https://arenorochfastigheter.uppsala.se/idrotts--och-fritidsanlaggningar/friluftsomraden-och-besoksmal/fjallnora-friluftsomrade/"
           }
         ],
         "faq": [
@@ -5790,7 +5836,8 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Norbyvägen",
-                "desc": "Uppsala universitets museum med dinosaurieben och över 5 000 utställda djur. Biljetten gäller både zoologi- och paleontologidelen."
+                "desc": "Uppsala universitets museum med dinosaurieben och över 5 000 utställda djur. Biljetten gäller både zoologi- och paleontologidelen.",
+                "link": "https://www.uu.se/evolutionsmuseet/"
               },
               {
                 "name": "Biotopia",
@@ -5800,7 +5847,8 @@
                 "ageMax": 12,
                 "indoor": true,
                 "area": "Centrala Uppsala, vid slottet",
-                "desc": "Naturmuseum med dioramor över Upplands djurliv, akvarium och en egen barnhörna. Fri entré för alla, bra regndagsalternativ."
+                "desc": "Naturmuseum med dioramor över Upplands djurliv, akvarium och en egen barnhörna. Fri entré för alla, bra regndagsalternativ.",
+                "link": "https://biotopia.nu/"
               },
               {
                 "name": "Fyrishovs Äventyrsbad",
@@ -5810,7 +5858,8 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Fyrislund",
-                "desc": "Äventyrsbad med rutschkanor, vågmaskin och djungeltema inomhus, plus utomhusbassäng på sommaren. Familjebiljett (1 vuxen + 2 barn) för 275 kr."
+                "desc": "Äventyrsbad med rutschkanor, vågmaskin och djungeltema inomhus, plus utomhusbassäng på sommaren. Familjebiljett (1 vuxen + 2 barn) för 275 kr.",
+                "link": "https://fyrishov.se/bad/aventyrsbad/"
               },
               {
                 "name": "Turbo Sport & Adventure Zone",
@@ -5820,7 +5869,8 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Gränbystaden",
-                "desc": "Studsmattepark med 51 studsmattor, ninja warrior-bana, klättring och dunk zone för de minsta. Barn under 10 år måste ha vuxen med sig."
+                "desc": "Studsmattepark med 51 studsmattor, ninja warrior-bana, klättring och dunk zone för de minsta. Barn under 10 år måste ha vuxen med sig.",
+                "link": "https://turbosportzone.se/"
               }
             ],
             "faq": [
