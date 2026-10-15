@@ -1846,7 +1846,7 @@ const DESTINATIONS = [
     "tip": "Hyr bil. Bussarna går sällan och de bästa stränderna ligger utspridda över hela ön.",
     "bookingUrl": "https://adtr.co/yojg94",
     "semboUrl": "https://adtr.co/ocn75t",
-    "featured": true,
+    "featured": "sommar",
     "areas": [
       {
         "name": "Chania och väster",
@@ -2074,7 +2074,8 @@ const DESTINATIONS = [
         "text": "Ligger i den lugnare, skogsklädda änden av stranden. Barnen får burgare, pasta och klyftpotatis, plus en hängande soffa att svinga i.",
         "url": "https://www.berganta.com/en"
       }
-    ]
+    ],
+    "featured": "sommar"
   },
   {
     "updated": "2026-09-23",
@@ -2271,7 +2272,7 @@ const DESTINATIONS = [
     "bookingUrl": "https://www.disneylandparis.com/",
     "semboUrl": "https://adtr.co/0km3it",
     "prisinfo": "Priset varierar kraftigt med datum och förbokning — kolla alltid aktuellt pris på officiella sidan innan ni bokar, det kan skilja hundratals kronor mellan lågsäsong och skollov.",
-    "featured": true
+    "featured": "alltid"
   },
   {
     "updated": "2026-09-23",
@@ -3234,7 +3235,7 @@ const DESTINATIONS = [
     "tip": "Bo i Faliraki eller Kolymbia om ni vill ha nära till både strand och vattenland.",
     "bookingUrl": "https://visit.nazar.se/click?p=377445&a=3498048&url=https%3A%2F%2Fwww.nazar.se%2Fvaara-resor%2Fupplev-rhodos-med-nazar",
     "semboUrl": "https://adtr.co/e7vt0s",
-    "featured": true,
+    "featured": "sommar",
     "areas": [
       {
         "name": "Rhodos stad — Nya staden & Mandraki",
@@ -3926,7 +3927,7 @@ const DESTINATIONS = [
     "tip": "Välj Bangtao eller Kata framför Patong om ni reser med mindre barn — lugnare tempo.",
     "bookingUrl": "https://adtr.co/mtaqut",
     "semboUrl": "https://adtr.co/ole5qd",
-    "featured": true,
+    "featured": "vinter",
     "areas": [
       {
         "name": "Bangtao & Laguna",
@@ -4278,7 +4279,8 @@ const DESTINATIONS = [
         "text": "Genomtänkt barnmeny: spaghetti, krokett, kycklingfilé, schnitzel. Stor terrass att springa på.",
         "url": "https://www.maspalomasgolf.net/en/restaurante/"
       }
-    ]
+    ],
+    "featured": "vinter"
   },
   {
     "updated": "2026-10-01",
@@ -4557,7 +4559,8 @@ const DESTINATIONS = [
     ],
     "tip": "Välj hotell i Sahl Hasheesh eller Makadi Bay snarare än centrala Hurghada — där är stranden sandig istället för korall/sten och kräver inga badskor.",
     "bookingUrl": "https://adtr.co/oa8m74",
-    "semboUrl": "https://adtr.co/bh4hb8"
+    "semboUrl": "https://adtr.co/bh4hb8",
+    "featured": "vinter"
   }
 ];
 /* ============ STATE ============ */
@@ -4626,9 +4629,23 @@ function showFavorites() {
   window.location.href = '/resmal/?filter=favs';
 }
 
+/* ============ SÄSONG ============ */
+// Svensk chartersäsong: okt–mar = vinter (Kanarieöarna/Thailand/Egypten), apr–sep
+// = sommar (Medelhavet). Speglar SEASON i build.js — hålls i synk vid ändring där.
+// Beräknas client-side (inte bara vid build) så "Populära resmål" och hero-bilderna
+// alltid matchar dagens datum, även om sajten inte byggts om på ett tag.
+function getSeason() {
+  const m = new Date().getMonth(); // 0=jan … 11=dec
+  return (m >= 9 || m <= 2) ? 'vinter' : 'sommar';
+}
+
 /* ============ HERO COLLAGE ============ */
 function renderCollage() {
-  const picks = ['Kreta', 'Tokyo', 'Rhodos', 'Istrien'].map(n => DESTINATIONS.find(d => d.name === n));
+  const season = getSeason();
+  const picks = (season === 'vinter'
+    ? ['Gran Canaria', 'Teneriffa', 'Koh Lanta', 'Tokyo']
+    : ['Kreta', 'Rhodos', 'Istrien', 'Tokyo']
+  ).map(n => DESTINATIONS.find(d => d.name === n)).filter(Boolean);
   document.getElementById('heroCollage').innerHTML = picks.map(d => `
     <a class="col-img card-media" data-cat="${d.cat}" data-emoji="${d.emoji}" href="/resmal/${resmalSlug(d)}/" onclick="return handleCardClick(event, '${resmalSlug(d)}')" aria-label="${esc(d.name)}">
       <img src="${IMG(d.img)}" alt="" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
@@ -4638,7 +4655,8 @@ function renderCollage() {
 
 /* ============ FEATURED ============ */
 function renderFeatured() {
-  const featured = DESTINATIONS.filter(d => d.featured);
+  const season = getSeason();
+  const featured = DESTINATIONS.filter(d => d.featured === 'alltid' || d.featured === season);
   document.getElementById('featuredGrid').innerHTML = featured.map(d => `
     <a class="feat-card reveal" href="/resmal/${resmalSlug(d)}/" onclick="return handleCardClick(event, '${resmalSlug(d)}')">
       ${mediaHTML(d)}
