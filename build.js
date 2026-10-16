@@ -762,6 +762,7 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
       <p class="product-price">${esc(p.price)}</p>
       <p>${esc(p.text)}</p>
       ${p.handbagage ? `<p class="handbagage-badge">✈️ <strong>Godkänd som handbagage:</strong> ${esc(p.handbagage)}</p>` : ''}
+      ${p.sizeTip ? `<p class="handbagage-badge">📏 <strong>Tips för rätt storlek:</strong> ${esc(p.sizeTip.text)} <a href="${esc(p.sizeTip.url)}" target="_blank" rel="nofollow noopener">${esc(p.sizeTip.linkText || 'Se storleksguide →')}</a></p>` : ''}
       <div class="pros-cons">
         <ul class="pros">${p.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
         <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>

@@ -4045,7 +4045,13 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/ecco-snow-mountain-wp-1v.html",
             "buyUrl": "https://adtr.co/k8irx1",
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/8D6838BC2DB8BD0F53EA6E12B716E05B36BC30DE3B801A27D58922885F77F2BD/d6aeda8761bd4773a70eeb68c7a894df/jpg/media/7b04a8be1d294cd18c94194342021cc3/710312-51094-4197_1.jpg",
+            "sizeTip": {
+              "text": "Fötter kan sitta olika i olika skomärken — mät barnets fot enligt Eccos egen storleksguide innan köp för att få exakt rätt storlek.",
+              "url": "https://se.ecco.com/produkt/ecco-snow-mountain/710262/60159",
+              "linkText": "Eccos storleksguide →"
+            }
           },
           {
             "name": "Nordbjörn Snowfall",
@@ -4063,7 +4069,8 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-snowfall.html",
             "buyUrl": "https://adtr.co/2ov2p5",
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/8B9803A0D7E40655FE931FE5805B24135B594D58A4C3920C8B13FF91376AB542/44d783e1e8e04f9ca9518a38d73758a7/jpg/media/b1e6449b31944ed88607ee061db537dc/119264-2015-4300_1.jpg"
           },
           {
             "name": "Viking Ultra Fodrade Gummistövlar",
@@ -4081,7 +4088,8 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/viking-ultra-fodrade-gummistovlar.html",
             "buyUrl": "https://adtr.co/ac0r1k",
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/F80D2BA29B1938F7F2215FA45A90B5DA46958AA36BE4CDE3E4C55A33C7852DAA/c9eb4e99749444e79d575bed16c4b55c/jpg/media/7e8c55e39b0b46a7ac6f5ee322abbf19/25100-203-AW15_1.jpg"
           },
           {
             "name": "Viking Equip Glitter Warm WP 2V",
@@ -4099,7 +4107,8 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/viking-equip-glitter-warm-wp-2v.html",
             "buyUrl": "https://adtr.co/u91j0h",
-            "buyStore": "Babysam"
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/d6c6e5fc-985a-45ca-85a2-00b8232d04aa/productfeedproductbig/3-95515_1.webp"
           },
           {
             "name": "Color Kids Vinterkängor Toadstool",
@@ -4117,7 +4126,8 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/color-kids-vinterkangor-toadstool.html",
             "buyUrl": "https://adtr.co/etzeea",
-            "buyStore": "Babysam"
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/b0e04140-81a2-493b-9bfb-efbcb1b53903/productfeedproductbig/760377_6011_A.webp"
           }
         ],
         "sections": [
