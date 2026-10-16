@@ -747,7 +747,7 @@ ${faqHtml(hub.faq)}`;
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
-${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect)}
+${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect, l.imgPos)}
 ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
 <div class="products">
   ${l.products.map((p, i) => `
