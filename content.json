@@ -1971,22 +1971,24 @@
         ],
         "products": [
           {
-            "name": "Axkid Minikid 4",
+            "name": "Axkid Minikid 4 Pro",
             "badge": "Bäst i test",
-            "price": "Från ca 5 500 kr",
-            "text": "Den svenska bakåtvänt-specialisten. Rymmer barn upp till 125 cm bakåtvänt – längst på marknaden – vilket i praktiken betyder bakåtvänt till sex–sju år. Bältesmontering som sitter bergfast när den väl är rätt gjord, och generösa ryggmått som ger benplats äldre barn saknar i konkurrenterna.",
+            "price": "Från ca 3 799 kr",
+            "text": "Pro-versionen av Axkid Minikid 4 — samma grundsäkerhet som toppmodellen Max (UN R129-certifierad, godkänd i Svenska Plustestet, SafeLock bältesmontering och CompactFit), men i en mer strömlinjeformad och prisvärd uppsättning: 2-stegs liggfunktion och en manuell tether-rem istället för Max-versionens automatiska. Rymmer barn upp till 125 cm bakåtvänt – längst på marknaden – vilket i praktiken betyder bakåtvänt till sex–sju år.",
             "pros": [
               "Bakåtvänt längst av alla (till 125 cm)",
-              "Toppresultat i oberoende krocktester",
-              "Sitter i de flesta bilar, även små"
+              "Godkänd i Svenska Plustestet och UN R129-certifierad",
+              "Pro-versionen är ett prisvärt alternativ till toppmodellen Max, med samma grundsäkerhet"
             ],
             "cons": [
               "Bältesmontering kräver noggrannhet första gången",
+              "Manuell tether-rem (inte automatisk som i Max-versionen)",
               "Ingen rotation – barnet lyfts i och ur"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/axkid-minikid-4.html",
-            "buyUrl": "https://adtr.co/2mtsc5",
-            "buyStore": "Babysam"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/axkid-minikid-4-pro.html",
+            "buyUrl": "https://adtr.co/t6s9rp",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/c07eb8b6-27e4-457d-9975-306d94cf3883/productfeedproductbig/22170139_1.webp"
           },
           {
             "name": "Axkid One 3",
@@ -2004,7 +2006,8 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/axkid-one-3.html",
             "buyUrl": "https://adtr.co/uppev8",
-            "buyStore": "Babysam"
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/570da61e-9fed-4310-a9b9-66b2f2d24f16/productdetailzoom/Axkid_one3_25110249_arctic_mist_grey_1.jpg"
           },
           {
             "name": "Britax Römer Dualfix 5Z",
@@ -2021,8 +2024,9 @@
               "Kräver isofixbas, fungerar inte med enbart bilbälte"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-romer-dualfix-5z.html",
-            "buyUrl": "https://adtr.co/r8ghty",
-            "buyStore": "Babysam"
+            "buyUrl": "https://adtr.co/n113i4",
+            "buyStore": "Baby V",
+            "img": "https://02.cdn37.se/epl/images/2.429335/britax-romer-dualfix-5z-i-size-deep-black.jpeg"
           },
           {
             "name": "Maxi-Cosi Emerald 360 S",
@@ -2040,12 +2044,13 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/maxi-cosi-emerald-360-s.html",
             "buyUrl": "https://adtr.co/1rnohi",
-            "buyStore": "Babysam"
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/57381079-df70-4c26-a0db-3d6ef36e67b0/productdetailproduct/8620104110_2024_maxicosi_carseat_babytoddlerchildcarseat_emerald360s_rearwardfacing_black_tonalblack_3qrtleft.jpg"
           },
           {
             "name": "Cybex Sirona T i-Size",
             "badge": "Bäst premium/sidoskydd",
-            "price": "Från ca 3 516 kr",
+            "price": "Från ca 3 150 kr",
             "text": "Premiumstol med linjärt sidokrockskydd (LSP) och allround-ventilation för jämnare temperatur oavsett årstid. 360°-rotation och möjlighet att växla mellan bakåt- och framåtvänd position i samma stol när barnet är redo. ADAC-betyget \"Bra\".",
             "pros": [
               "Linjärt sidokrockskydd (LSP) — stark premiumfunktion för sidokrockar",
@@ -2058,7 +2063,8 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-sirona-t-i-size.html",
             "buyUrl": "https://adtr.co/dtnb6y",
-            "buyStore": "Babysam"
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/b0dba3de-eb6b-4a91-8b86-8463b728a1e0/productdetailproduct/CYB_23_EU_y045_SironaT_Canopy_SEBL_Plus_BaseT_GreyedOut_screen_HD.jpg"
           }
         ],
         "sections": [
@@ -2094,7 +2100,7 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-10-19"
       },
       {
         "slug": "bilbarnstol/framatvand",
@@ -2110,22 +2116,23 @@
         ],
         "products": [
           {
-            "name": "Britax Römer Kidfix i-Size",
+            "name": "Britax Römer Kidfix M i-Size",
             "badge": "Bästa bältesstol",
             "price": "Från ca 2 500 kr",
-            "text": "När barnet vuxit ur bakåtvänt (100+ cm och minst 4–5 år) tar bältesstolen vid. Kidfix leder klassen: styr bilbältet exakt rätt, sidokrockskydd i toppklass och en sittkomfort som klarar semesterns långkörningar utan gnäll.",
+            "text": "Britax Römer Kidfix M i-Size är bältesstolen (grupp 2/3, ca 3,5–12 år, 100–150 cm, 15–36 kg) som tar vid när barnet vuxit ur den bakåtvända stolen. Isofix-fästena stabiliserar stolen i bilen medan det är bilens eget 3-punktsbälte som håller barnet, enligt principen för alla bältesstolar/bälteskuddar. Styr bilbältet exakt rätt, sidokrockskydd i toppklass och en sittkomfort som klarar semesterns långkörningar utan gnäll. Fick betyget GOD (2.0) hos tyska Stiftung Warentest (06/2022).",
             "pros": [
-              "Bäst bälteslöpning i klassen",
-              "Växer med barnet till 150 cm",
-              "Isofix-fästen håller stolen stadig även tom"
+              "Fick betyget GOD (2.0) hos Stiftung Warentest (06/2022)",
+              "Isofix-fästen stabiliserar stolen i bilen, bilens eget bälte håller barnet",
+              "Växer med barnet till 150 cm (grupp 2/3, 15–36 kg)"
             ],
             "cons": [
               "Endast för barn som är klara med bakåtvänt",
               "Ryggstödet tar plats i smala baksäten"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-romer-kidfix-i-size.html",
-            "buyUrl": "https://adtr.co/vje29n",
-            "buyStore": "Babysam"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/britax-romer-kidfix-m-i-size.html",
+            "buyUrl": "https://adtr.co/7uwcc4",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/16422ad0-0e8a-4741-8b96-7905b5af03ce/productdetailproduct/KIDFIX_M_i-SIZE_SpaceBlack_02_2025_300dpi..jpg"
           },
           {
             "name": "BeSafe Flex FIX 2",
@@ -2142,14 +2149,15 @@
               "Något klumpig att flytta mellan bilar"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/besafe-flex-fix-2.html",
-            "buyUrl": "https://adtr.co/np4qbr",
-            "buyStore": "Babysam"
+            "buyUrl": "https://adtr.co/w2158g",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/4a01644d-8a33-4cb0-89cd-08ec16d0cc3a/productfeedproductbig/BeSafe_Flex%20_FIX_2_Black_Cab_137816_3.webp"
           },
           {
             "name": "Maxi-Cosi RodiFix Pro 2 i-Size",
             "badge": "Bästa budget",
             "price": "Från ca 1 889 kr",
-            "text": "Fullmatad bälteskudde till ett prisvärt pris — höga sidovingar på båda sidor för sidokrockskydd, tre vilolägen, och justerbar i både höjd och bredd så den växer med barnet från 3,5 upp till 12 år. Patenterat AirProtect-sidokollisionsskydd i nackstödet.",
+            "text": "Fullmatad bälteskudde till ett prisvärt pris — höga sidovingar på båda sidor för sidokrockskydd, tre vilolägen, och justerbar i både höjd och bredd så den växer med barnet från 3,5 upp till 12 år. Patenterat AirProtect-sidokollisionsskydd i nackstödet. Vår egen erfarenhet: vi har den här stolen i familjen, och vår snart 5-åriga dotter älskar att sitta i den — hon somnar gott även på längre bilresor.",
             "pros": [
               "Betydligt billigare än premiumalternativen trots fullt utrustad",
               "Justerbar i både höjd och bredd — ovanligt i den här prisklassen",
@@ -2161,7 +2169,8 @@
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/maxi-cosi-rodifix-pro-2-i-size.html",
             "buyUrl": "https://adtr.co/o7cwh3",
-            "buyStore": "Babysam"
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/402569b7-524a-41c7-8ff6-b704c377e44a/productdetailproduct/ImageHandler.jpg"
           },
           {
             "name": "Cybex Solution T i-Fix",
@@ -2178,26 +2187,28 @@
               "Färre år på garantin enligt vissa återförsäljare"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-solution-t-i-fix.html",
-            "buyUrl": "https://adtr.co/kec6ca",
-            "buyStore": "Babysam"
+            "buyUrl": "https://adtr.co/biz58q",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/c503da0a-4532-450d-a3ca-a6b5d1370fcb/productfeedproductbig/cyb_22_eu_y045_solutiont_plus_sebl_184ae9b60fb92570.webp"
           },
           {
-            "name": "Cybex Solution S2 i-Fix",
-            "badge": "Enklare Cybex-alternativ",
-            "price": "Pris varierar — kontrollera hos återförsäljare",
-            "text": "Cybex enklare bältesstol, utan Solution T:s breddjustering men med samma trygga grundkänsla. 12 höjdlägen och ett fällbart nackstöd som håller huvudet kvar i säkerhetszonen om barnet somnar.",
+            "name": "Cybex Solution X i-Fix",
+            "badge": "Instegsnivå i Cybex-serien",
+            "price": "Från ca 2 799 kr",
+            "text": "Cybex Solution X i-Fix är instegsmodellen i Cybex Solution-serien (Cybex Silver-nivå, under S2 och T i-Fix). i-Fix-kopplingarna klickar fast i bilens isofix-fästen för extra stabilitet, men kan också fällas in och användas helt utan isofix om bilen saknar fästen — bilens eget bälte håller alltid barnet. Linjärt sidokrockskydd (L.S.P.) i armstöd och sidovingar, 11 höjdlägen för nackstödet och tre vilolägen.",
             "pros": [
-              "Billigare än Solution T inom samma varumärke",
-              "Fällbart nackstöd förhindrar att huvudet faller framåt vid sömn",
-              "12 höjdlägen, enkel enhandsjustering"
+              "i-Fix-kopplingar för extra stabilitet, går även att köra helt utan isofix",
+              "Linjärt sidokrockskydd (L.S.P.) i armstöd och sidovingar",
+              "11 höjdlägen för nackstödet och tre vilolägen"
             ],
             "cons": [
-              "Ingen breddjustering (till skillnad från Solution T)",
-              "Mindre känd modell, svårare att jämföra recensioner"
+              "Ingen breddjustering — till skillnad från Solution T i-Fix",
+              "Enklaste modellen i Cybex Solution-serien, färre premiumdetaljer än S2/T"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-solution-s2-i-fix.html",
-            "buyUrl": "https://clk.tradedoubler.com/click?p=310990&a=3498048&url=https%3A%2F%2Fwww.pyretosnackan.se%2Fbilbarnstolar%2Fbaltesstolar-15-36-kg%2Fcybex-solution-s2-i-fix-baltesstol-lava-grey",
-            "buyStore": "Pyret & Snäckan"
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-solution-x-i-fix.html",
+            "buyUrl": "https://adtr.co/z5kdpq",
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/20FEFAF2D4ADA9983BF488FCB5F3864B88535FCA1908895D281EEC469266C6AC/c29f4795a23a4a55b32a64df242a21c3/jpg/media/419126a56d58426f8117adf80f93a905/522003961-SOLXI-FIX-PURBLA-3606_1.jpg"
           }
         ],
         "sections": [],
@@ -2208,7 +2219,7 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-10-19"
       },
       {
         "slug": "babyskydd",
@@ -5000,10 +5011,23 @@
                 "ringAhead": false,
                 "link": "https://www.bliquebynobis.se/boketto",
                 "linkLabel": "bliquebynobis.se"
+              },
+              {
+                "name": "Vapiano Sturegatan",
+                "area": "Östermalm",
+                "address": "Sturegatan",
+                "note": "Italiensk kedjerestaurang vid Stureplan med barnmeny för 79 kr — kaninpizza eller en pastavariant, med festis ingår.",
+                "meals": {
+                  "lunch": true,
+                  "middag": true
+                },
+                "ringAhead": false,
+                "link": "https://vapiano.se/restaurant/stureplan/",
+                "linkLabel": "vapiano.se"
               }
             ],
             "published": "2026-10-12",
-            "updated": "2026-10-12",
+            "updated": "2026-10-19",
             "img": "photo-1667388969250-1c7220bf3f37"
           },
           {
