@@ -6344,6 +6344,579 @@
           }
         ],
         "img": "photo-1613404040238-49587344a9b4"
+      },
+      {
+        "slug": "linkoping",
+        "name": "Linköping",
+        "emoji": "🏰",
+        "cardText": "Flygvapenmuseum, slottsmuseum och gratis parker — kompakt stad med mycket att göra för barnfamiljer.",
+        "title": "Linköping med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Linköping med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Flygvapenmuseum, Gamla Linköping och fler — med verkliga priser.",
+        "h1": "Linköping med barn",
+        "intro": [
+          "Linköping är en kompakt universitetsstad med gott om barnvänliga sevärdheter inom cykelavstånd från centrum — från ett levande friluftsmuseum till ett vetenskapstätt flygmuseum.",
+          "Flera av stadens bästa aktiviteter för barn är helt gratis. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+        ],
+        "activities": [
+          {
+            "name": "Gamla Linköping",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Valla, ca 2 km från centrum",
+            "desc": "Friluftsmuseum med ett hundratal historiska träbyggnader, butiker och caféer, plus en egen lekplats (\"Lill-Valla\") och LasseMajas Deckarhus. Gratis entré till museiområdet.",
+            "link": "https://gamlalinkoping.se/"
+          },
+          {
+            "name": "Flygvapenmuseum",
+            "type": "paid",
+            "price": "120 kr vuxen (sep–maj), 150 kr (jun–aug), gratis för barn och unga under 18",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Malmslätt, ca 7 km från centrum",
+            "desc": "Interaktivt flygmuseum med en hands-on \"Flight Lab\" och en gratis utomhuslekplats. Flygsimulatorn kräver förbokning och minst 10 år.",
+            "link": "https://flygvapenmuseum.se/"
+          },
+          {
+            "name": "Fun Skatepark",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 5,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Ekholmen",
+            "desc": "En av Sveriges större betongskateparker, belyst för kvällsåkning. Bra för de något äldre barnen med skateboard, inlines eller BMX.",
+            "link": "https://visitlinkoping.se/en/se-och-gora/fun-skatepark"
+          },
+          {
+            "name": "JumpYard Linköping",
+            "type": "paid",
+            "price": "Från 199 kr/timme, familjebiljett från 599 kr för 4 (betala för 3)",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Norra Svedengatan 13",
+            "desc": "Studsmattepark med foam pit, zipline, ninjabana och klättring. Barn 3–5 år hoppar tillsammans med en vuxen.",
+            "link": "https://jumpyard.se/linkoping/intrade/"
+          },
+          {
+            "name": "Linköpings Slotts- och domkyrkomuseum",
+            "type": "paid",
+            "price": "95 kr vuxen, 50 kr barn 7–18 år",
+            "ageMin": 5,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Linköpings centrum, vid domkyrkan",
+            "desc": "Medeltidsmuseum inne i Linköpings slott om stadens, slottets och domkyrkans historia, med egna familjeaktiviteter.",
+            "link": "https://lsdm.se/besok-oss/"
+          },
+          {
+            "name": "Östergötlands museum",
+            "type": "paid",
+            "price": "130 kr vuxen, gratis för barn och unga under 18",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Raoul Wallenbergs plats, centrum",
+            "desc": "Länsmuseum med \"Viljans värld\" — en lek- och upptäckaryta för barn — samt ett säsongsprogram med aktiviteter, bland annat under höstlovet.",
+            "link": "https://ostergotlandsmuseum.se/"
+          },
+          {
+            "name": "Tinnerbäcksbadet",
+            "type": "paid",
+            "price": "Barn 3–11 år 60–85 kr, ungdom 12–17 år 85–100 kr, vuxen 120–150 kr beroende på tid, barn 0–2 år gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Tinnerbäck, nära centrum",
+            "desc": "Linköpings badhus med egen barnbassäng, nära centrum. Priserna varierar med tid på dygnet och säsong.",
+            "link": "https://www.medley.se/tinnerbacksbadet/priser/"
+          },
+          {
+            "name": "Trädgårdsföreningen",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Linköpings centrum",
+            "desc": "Historisk stadspark med lekplats, gräsmattor och säsongsplanteringar mitt i stan. Gratis året runt.",
+            "link": "https://linkoping.se/uppleva-och-gora/friluftsliv-och-parker/tradgardsforeningen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Flygvapenmuseum gratis för barn?",
+            "a": "Ja, barn och unga upp till 18 år har gratis inträde till Flygvapenmuseum. Vuxna betalar 120 kr september–maj eller 150 kr juni–augusti."
+          },
+          {
+            "q": "Vad kostar det att bada på Tinnerbäcksbadet under höstlovet?",
+            "a": "Under skollov gäller ordinarie priser: barn 3–11 år 85 kr, ungdom 12–17 år 100 kr, vuxen 150 kr. Barn 0–2 år badar gratis."
+          }
+        ],
+        "published": "2026-10-21",
+        "updated": "2026-10-21",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "dateLabel": "26–30 oktober 2026",
+            "title": "Höstlov i Linköping 2026 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Linköping 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — flygmuseum, studsmattepark och badhus — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Linköping 2026 — vad ni kan göra",
+            "intro": [
+              "Höstlovet i Linköping 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Nedan har vi samlat Linköpings bästa inomhusalternativ för lovveckan."
+            ],
+            "tips": [
+              {
+                "name": "Flygvapenmuseum",
+                "type": "paid",
+                "price": "120 kr vuxen (sep–maj), 150 kr (jun–aug), gratis för barn och unga under 18",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Malmslätt",
+                "desc": "Interaktivt flygmuseum med \"Flight Lab\" — barn och unga har alltid fri entré.",
+                "link": "https://flygvapenmuseum.se/"
+              },
+              {
+                "name": "JumpYard Linköping",
+                "type": "paid",
+                "price": "Från 199 kr/timme, familjebiljett från 599 kr för 4",
+                "ageMin": 3,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Norra Svedengatan 13",
+                "desc": "Studsmattepark med foam pit, zipline och ninjabana — bra energikick en regnig lovdag.",
+                "link": "https://jumpyard.se/linkoping/intrade/"
+              },
+              {
+                "name": "Östergötlands museum",
+                "type": "paid",
+                "price": "130 kr vuxen, gratis för barn och unga under 18",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Raoul Wallenbergs plats",
+                "desc": "Länsmuseum med lek- och upptäckaryta för barn (\"Viljans värld\") och ett eget lovprogram.",
+                "link": "https://ostergotlandsmuseum.se/"
+              },
+              {
+                "name": "Tinnerbäcksbadet",
+                "type": "paid",
+                "price": "Barn 3–11 år 85 kr, ungdom 12–17 år 100 kr, vuxen 150 kr (lovpris)",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Tinnerbäck",
+                "desc": "Badhus med barnbassäng, nära centrum — ett säkert kort oavsett väder.",
+                "link": "https://www.medley.se/tinnerbacksbadet/priser/"
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Linköping 2026?",
+                "a": "Höstlovet i Linköping 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som övriga Sverige i år."
+              },
+              {
+                "q": "Är JumpYard bra för yngre barn på höstlovet?",
+                "a": "Ja, men barn 3–5 år måste hoppa tillsammans med en vuxen. Från 199 kr/timme, med en familjebiljett från 599 kr för 4 personer (betala för 3)."
+              }
+            ],
+            "published": "2026-10-21",
+            "updated": "2026-10-21"
+          }
+        ]
+      },
+      {
+        "slug": "helsingborg",
+        "name": "Helsingborg",
+        "emoji": "🌊",
+        "cardText": "Kärnan, Sofiero slott och ett tropiskt inomhuszoo — kuststad med mycket för barnfamiljer, oavsett väder.",
+        "title": "Helsingborg med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Helsingborg med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Kärnan, Sofiero, Tropikariet och fler — med verkliga priser.",
+        "h1": "Helsingborg med barn",
+        "intro": [
+          "Helsingborg ligger vid Öresund med ett medeltida borgtorn, kungliga slottsträdgårdar och gott om gratis natur längs Landborgspromenaden.",
+          "Flera av stadens bästa aktiviteter för barn är helt gratis. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+        ],
+        "activities": [
+          {
+            "name": "Kärnan",
+            "type": "paid",
+            "price": "Från ca 100 kr",
+            "ageMin": 4,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Helsingborgs centrum",
+            "desc": "Medeltida 1300-talstorn — klättra upp genom våningarna för en vy över Öresund och Danmark. Mest invändigt, bara toppen är utomhus.",
+            "link": "https://book.visithelsingborg.com/en/adventure/882-karnan-in-helsingborg"
+          },
+          {
+            "name": "Fredriksdal Museums and Gardens",
+            "type": "paid",
+            "price": "Från ca 120 kr",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Fredriksdal",
+            "desc": "Friluftsmuseum med historiska hus och Sveriges största friluftsbotaniska trädgård, plus sommarens barnprogram \"Barnens Fredriksdal\". Öppet april–oktober.",
+            "link": "https://book.visithelsingborg.com/en/adventure/891-fredriksdal-museums-and-gardens"
+          },
+          {
+            "name": "Sofiero Slott och Park",
+            "type": "paid",
+            "price": "Från ca 85 kr",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Norra Helsingborg, kusten",
+            "desc": "Före detta kungligt sommarslott med stora rhododendronträdgårdar, lekplatser och café — en klassisk Helsingborgsutflykt.",
+            "link": "https://book.bastad.com/en/adventure/795-entranceticket-to-the-wonderful-sofiero-castle"
+          },
+          {
+            "name": "Dunkers Kulturhus",
+            "type": "paid",
+            "price": "Från ca 120 kr",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Helsingborgs hamn",
+            "desc": "Kulturhus vid hamnen med skiftande konst- och historieutställningar och ett eget familjeprogram.",
+            "link": "https://book.engelholm.com/en/adventure/851-entrance-to-dunker-s-culture-house-in-helsingborg"
+          },
+          {
+            "name": "Tropikariet",
+            "type": "paid",
+            "price": "Från ca 225 kr",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Hävertgatan 21",
+            "desc": "Helsingborgs inomhuszoo med djur från hela världen i tematiserade miljöer — helt vädersäkert.",
+            "link": "https://book.visithelsingborg.com/en/adventure/1418-entryticket-to-tropikariet-in-helsingborg"
+          },
+          {
+            "name": "Ramlösa Brunnspark",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Ramlösa",
+            "desc": "Historisk brunnspark från 1707 med mineralkälla, skog och promenadstigar. Skyddat kulturminne, fri entré.",
+            "link": "https://www.mynewsdesk.com/se/helsingborg/pressreleases/vaelkommen-till-nyinvigning-av-den-renoverade-brunnsparken-i-ramloesa-den-24-maj-3387419"
+          },
+          {
+            "name": "Landborgspromenaden",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Hela staden, från Råå till Sofiero",
+            "desc": "14 km lång, barnvagnsvänlig promenad längs landborgskanten med grönområden, utsiktsplatser och lekplatser på vägen.",
+            "link": "https://naturkartan.se/en/helsingborg/landborgspromenaden"
+          },
+          {
+            "name": "Papegojlekplatsen, Adolfsberg",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 1,
+            "ageMax": 10,
+            "indoor": false,
+            "area": "Adolfsberg",
+            "desc": "En av Helsingborgs största temalekplatser, med djur- och naturtema.",
+            "link": "https://www.mynewsdesk.com/se/helsingborg/pressreleases/helsingborg-faar-tvaa-nya-temalekplatser-3310673"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Kärnan gratis för barn i Helsingborg?",
+            "a": "Nej, Kärnan har inträde från ca 100 kr. Det anges inget separat barnpris, så kolla aktuellt pris innan besöket."
+          },
+          {
+            "q": "Vilken vecka är höstlovet i Helsingborg 2026?",
+            "a": "Höstlovet i Helsingborg 2026 är vecka 44, måndag 26 till fredag 30 oktober."
+          }
+        ],
+        "published": "2026-10-21",
+        "updated": "2026-10-21",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "dateLabel": "26–30 oktober 2026",
+            "title": "Höstlov i Helsingborg 2026 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Helsingborg 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — Kärnan, Tropikariet och Dunkers — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Helsingborg 2026 — vad ni kan göra",
+            "intro": [
+              "Höstlovet i Helsingborg 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Nedan har vi samlat Helsingborgs bästa inomhusalternativ för lovveckan."
+            ],
+            "tips": [
+              {
+                "name": "Kärnan",
+                "type": "paid",
+                "price": "Från ca 100 kr",
+                "ageMin": 4,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Helsingborgs centrum",
+                "desc": "Klättra upp genom tornets våningar — mestadels invändigt, ett bra regndagsval.",
+                "link": "https://book.visithelsingborg.com/en/adventure/882-karnan-in-helsingborg"
+              },
+              {
+                "name": "Tropikariet",
+                "type": "paid",
+                "price": "Från ca 225 kr",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Hävertgatan 21",
+                "desc": "Inomhuszoo med djur från hela världen — helt vädersäkert.",
+                "link": "https://book.visithelsingborg.com/en/adventure/1418-entryticket-to-tropikariet-in-helsingborg"
+              },
+              {
+                "name": "Dunkers Kulturhus",
+                "type": "paid",
+                "price": "Från ca 120 kr",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Helsingborgs hamn",
+                "desc": "Konst- och historieutställningar samt familjeprogram vid hamnen.",
+                "link": "https://book.engelholm.com/en/adventure/851-entrance-to-dunker-s-culture-house-in-helsingborg"
+              },
+              {
+                "name": "Fredriksdal Museums and Gardens",
+                "type": "paid",
+                "price": "Från ca 120 kr",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": false,
+                "area": "Fredriksdal",
+                "desc": "Friluftsmuseum med historiska hus — ta med paraply, men mycket att se även i blåsväder.",
+                "link": "https://book.visithelsingborg.com/en/adventure/891-fredriksdal-museums-and-gardens"
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Helsingborg 2026?",
+                "a": "Höstlovet i Helsingborg 2026 är vecka 44, måndag 26 till fredag 30 oktober."
+              },
+              {
+                "q": "Är Tropikariet ett bra regndagstips?",
+                "a": "Ja, Tropikariet är helt inomhus och fungerar oavsett väder. Från ca 225 kr."
+              }
+            ],
+            "published": "2026-10-21",
+            "updated": "2026-10-21"
+          }
+        ]
+      },
+      {
+        "slug": "norrkoping",
+        "name": "Norrköping",
+        "emoji": "🦌",
+        "cardText": "Vetenskapscenter, Kolmårdens djurpark och gratis hällristningar — mycket att upptäcka för barnfamiljer.",
+        "title": "Norrköping med barn — gratis & betalt 2026 | Res med Barn",
+        "description": "Norrköping med barn: filtrera aktiviteter på gratis/betalt, ålder och väder. Kolmårdens djurpark, Visualiseringscenter C och fler — med verkliga priser.",
+        "h1": "Norrköping med barn",
+        "intro": [
+          "Norrköping blandar ett levande industrilandskap fullt av museer med närheten till Kolmårdens djurpark, Sveriges största zoo.",
+          "Flera av stadens bästa aktiviteter för barn är helt gratis. Filtrera nedan för att hitta det som passar er familj och budget just idag."
+        ],
+        "activities": [
+          {
+            "name": "Centralbadet",
+            "type": "paid",
+            "price": "Vuxen 115 kr, barn 3–17 år 70 kr, familjebiljett (2 vuxna + 2 barn) 300 kr",
+            "ageMin": 0,
+            "ageMax": 17,
+            "indoor": true,
+            "area": "Badhusgatan 4, centrum",
+            "desc": "Stort badhus med familjebassäng, tre rutschkanor, klättervägg och en egen småbarnspool (\"Croco Island\"), plus utomhusbassäng och bastu.",
+            "link": "https://www.medley.se/centralbadet/priser/"
+          },
+          {
+            "name": "Visualiseringscenter C",
+            "type": "paid",
+            "price": "Vuxen 120 kr, barn 4–17 år 80 kr, 0–3 år gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Kungsgatan 54, Industrilandskapet",
+            "desc": "Vetenskapscenter med gratis interaktiva utställningar och en stor kupolsal för rymd- och naturvisningar (biljett krävs till kupolen).",
+            "link": "https://visualiseringscenter.se/en/wisdome/"
+          },
+          {
+            "name": "Arbetets museum",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Laxholmen, Industrilandskapet",
+            "desc": "Museum om arbetslivets historia i en gammal textilfabrik, med praktiska familjeutställningar. Huvudentrén är stängd hösten 2026–våren 2027 för brobygge — använd personalentrén.",
+            "link": "https://www.arbetetsmuseum.se/?p=353"
+          },
+          {
+            "name": "Norrköpings konstmuseum",
+            "type": "free",
+            "price": "Gratis för basutställningen och för alla under 26 år, särskilda utställningar 90 kr vuxen",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Södra Promenaden, centrum",
+            "desc": "Konstmuseum med en egen skapande verkstad för barn (Ateljé Krumeluren) och en skulpturpark utomhus.",
+            "link": "https://www.norrkopingskonstmuseum.se/in-english/"
+          },
+          {
+            "name": "Strömparken",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 0,
+            "ageMax": 10,
+            "indoor": false,
+            "area": "Gamla Rådstugugatan 10, centrum",
+            "desc": "Park vid Motala ström med en lekplats som har vattenlek och klätterställning.",
+            "link": "https://thatsup.co.uk/norrkoping/landmark/stromparken/"
+          },
+          {
+            "name": "Himmelstalund (hällristningar)",
+            "type": "free",
+            "price": "Gratis",
+            "ageMin": 5,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Himmelstalund, västra Norrköping",
+            "desc": "En av Sveriges tätaste bronsåldersristningar, över 1 600 ristningar längs trägångar — en rolig \"skattjakt\" för barn. Inga toaletter på plats.",
+            "link": "https://wanderlog.com/place/details/581719/himmelstalund-rock-carvings"
+          },
+          {
+            "name": "Jumpyard Norrköping",
+            "type": "paid",
+            "price": "Från 140 kr/60 min, familjebiljett (4 för pris av 3) från 420 kr",
+            "ageMin": 3,
+            "ageMax": 16,
+            "indoor": true,
+            "area": "Lundatorpsvägen 3",
+            "desc": "Inomhus studsmattepark med hoppzoner, foam pit och hinderbana.",
+            "link": "https://jumpyard.se/norrkoping/priser/"
+          },
+          {
+            "name": "Kolmårdens djurpark",
+            "type": "paid",
+            "price": "Dagsbiljett varierar (dynamiskt pris, boka online), årskort från 1 690 kr barn / 2 390 kr vuxen",
+            "ageMin": 0,
+            "ageMax": 16,
+            "indoor": false,
+            "area": "Kolmården, ca 30 km NO om Norrköping",
+            "desc": "Sveriges största djurpark med delfinarium, linbanesafari och berg- och dalbanan Wild Mouse. Norrköping är närmaste tågstation med anslutande buss.",
+            "link": "https://www.kolmarden.com/en/tickets"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är Centralbadet gratis för barn?",
+            "a": "Nej, barn 3–17 år betalar 70 kr för ett engångsbesök (115 kr för vuxna). Barn under 3 år är normalt gratis i sällskap med betalande vuxen."
+          },
+          {
+            "q": "Är hällristningarna i Himmelstalund gratis att besöka?",
+            "a": "Ja, det är en öppen fornlämning utan entréavgift. Ta med regnkläder eller stövlar eftersom det saknas toaletter i anslutning till platsen."
+          }
+        ],
+        "published": "2026-10-21",
+        "updated": "2026-10-21",
+        "lov": [
+          {
+            "lovSlug": "hostlov",
+            "lovName": "Höstlov",
+            "emoji": "🍂",
+            "dateStart": "2026-10-26",
+            "dateEnd": "2026-10-30",
+            "week": 44,
+            "dateLabel": "26–30 oktober 2026",
+            "title": "Höstlov i Norrköping 2026 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Norrköping 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — badhus, vetenskapscenter och studsmattepark — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Norrköping 2026 — vad ni kan göra",
+            "intro": [
+              "Höstlovet i Norrköping 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Nedan har vi samlat Norrköpings bästa inomhusalternativ för lovveckan."
+            ],
+            "tips": [
+              {
+                "name": "Centralbadet",
+                "type": "paid",
+                "price": "Vuxen 115 kr, barn 3–17 år 70 kr, familjebiljett 300 kr",
+                "ageMin": 0,
+                "ageMax": 17,
+                "indoor": true,
+                "area": "Badhusgatan 4",
+                "desc": "Familjebassäng, rutschkanor och klättervägg — ett säkert kort oavsett väder.",
+                "link": "https://www.medley.se/centralbadet/priser/"
+              },
+              {
+                "name": "Visualiseringscenter C",
+                "type": "paid",
+                "price": "Vuxen 120 kr, barn 4–17 år 80 kr, 0–3 år gratis",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Kungsgatan 54",
+                "desc": "Gratis interaktiva utställningar och kupolvisningar om rymden och naturen.",
+                "link": "https://visualiseringscenter.se/en/wisdome/"
+              },
+              {
+                "name": "Arbetets museum",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 0,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Laxholmen",
+                "desc": "Praktiska familjeutställningar om arbetslivets historia. Använd personalentrén under ombyggnaden.",
+                "link": "https://www.arbetetsmuseum.se/?p=353"
+              },
+              {
+                "name": "Jumpyard Norrköping",
+                "type": "paid",
+                "price": "Från 140 kr/60 min, familjebiljett från 420 kr",
+                "ageMin": 3,
+                "ageMax": 16,
+                "indoor": true,
+                "area": "Lundatorpsvägen 3",
+                "desc": "Studsmattepark med foam pit — bra energikick en regnig lovdag.",
+                "link": "https://jumpyard.se/norrkoping/priser/"
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilken vecka är höstlovet i Norrköping 2026?",
+                "a": "Höstlovet i Norrköping 2026 är vecka 44, måndag 26 till fredag 30 oktober, för kommunens grund- och gymnasieskolor."
+              },
+              {
+                "q": "Är Visualiseringscenter C gratis på höstlovet?",
+                "a": "De interaktiva basutställningarna är gratis. Kupolvisningarna kostar 120 kr för vuxna och 80 kr för barn 4–17 år, barn 0–3 år gratis."
+              }
+            ],
+            "published": "2026-10-21",
+            "updated": "2026-10-21"
+          }
+        ]
       }
     ]
   },
