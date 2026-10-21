@@ -221,7 +221,7 @@ function breadcrumbs(items) {
 const paras = arr => arr.map(p => `<p>${escLinks(p)}</p>`).join('\n');
 
 /* ---------- images ---------- */
-const IMG = (id, w) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
+const IMG = (id, w) => `https://${id.startsWith('premium_photo-') ? 'plus' : 'images'}.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
 // img kan vara ett Unsplash-foto-id ("photo-...") eller en egen bild som
 // ligger platt i static/ och kopieras till dist/ (t.ex. "/akpase-barn.jpg",
 // samma mönster som logo.png) — den senare serveras som den är, ingen
@@ -404,7 +404,7 @@ function page(url, meta, active, inner, extraJsonld, ldType) {
 }
 
 /* ---------- HOME ---------- */
-const IMG_CARD = id => `https://images.unsplash.com/${id}?q=80&w=900&auto=format&fit=crop`;
+const IMG_CARD = id => `https://${id.startsWith('premium_photo-') ? 'plus' : 'images'}.unsplash.com/${id}?q=80&w=900&auto=format&fit=crop`;
 const HEART_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path class="heart-path" d="M12 21s-7.5-4.9-9.8-9.2C.7 8.9 2.2 5.4 5.5 4.6c2-.5 4 .3 5.2 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.5 5.2-2 3.3.8 4.8 4.3 3.3 7.2C18.1 16.1 12 21 12 21z"/></svg>`;
 function cardMediaSSR(d) {
   return `<div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
@@ -1032,6 +1032,7 @@ function venueCard(v) {
   ].filter(Boolean);
   return `
   <article class="activity-card">
+    ${v.img ? `<div class="venue-media"><span class="venue-visited-badge">🧡 Vi har varit här</span><img src="${esc(v.img)}" alt="${esc(v.name)}" loading="lazy"></div>` : ''}
     <div class="activity-top">
       <h3>${esc(v.name)}</h3>
       ${v.ringAhead ? `<span class="activity-badge activity-badge-paid">Ring innan</span>` : ''}
@@ -1165,7 +1166,7 @@ const NESTED_COUNTRIES = { 'Grekland': 'grekland', 'Spanien': 'spanien', 'Frankr
 const COUNTRY_FLAGS = { 'Grekland': '🇬🇷', 'Spanien': '🇪🇸', 'Frankrike': '🇫🇷', 'Thailand': '🇹🇭' };
 const resmalSlug = d => (NESTED_COUNTRIES[d.country] ? `${NESTED_COUNTRIES[d.country]}/${destSlug(d.name)}` : destSlug(d.name));
 const resmalUrl = d => `/resmal/${resmalSlug(d)}/`;
-const IMG_RESMAL = id => `https://images.unsplash.com/${id}?q=80&w=1400&auto=format&fit=crop`;
+const IMG_RESMAL = id => `https://${id.startsWith('premium_photo-') ? 'plus' : 'images'}.unsplash.com/${id}?q=80&w=1400&auto=format&fit=crop`;
 
 function loadDestinations() {
   const homeSrc = fs.readFileSync(path.join(ROOT, 'templates', 'home.html'), 'utf8');
@@ -1535,6 +1536,8 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY
   console.log('  ✓ logo.png');
   fs.copyFileSync(path.join(ROOT, 'static', 'akpase-barn.jpg'), path.join(DIST, 'akpase-barn.jpg'));
   console.log('  ✓ akpase-barn.jpg');
+  fs.copyFileSync(path.join(ROOT, 'static', 'vapiano-barnmeny.jpg'), path.join(DIST, 'vapiano-barnmeny.jpg'));
+  console.log('  ✓ vapiano-barnmeny.jpg');
   for (const f of ['favicon.ico', 'favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png', 'android-chrome-192x192.png', 'android-chrome-512x512.png']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
   }

@@ -5023,11 +5023,12 @@
                 },
                 "ringAhead": false,
                 "link": "https://vapiano.se/restaurant/stureplan/",
-                "linkLabel": "vapiano.se"
+                "linkLabel": "vapiano.se",
+                "img": "/vapiano-barnmeny.jpg"
               }
             ],
             "published": "2026-10-12",
-            "updated": "2026-10-19",
+            "updated": "2026-10-21",
             "img": "photo-1667388969250-1c7220bf3f37"
           },
           {
