@@ -731,6 +731,28 @@ h1 {
 }
 .activity-link { display: inline-block; margin-top: 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--primary); }
 
+/* ---- VENUE-MEDIA (bild på barnvagnsguidernas kort — bara när v.img finns, så
+   kort utan bild ser exakt ut som innan. Negativ marginal låter bilden blöda ut
+   till kortets kanter trots .activity-cards padding, utan att röra den globala
+   regeln som delas med aktivitets-/lov-korten.) ---- */
+.venue-media {
+  position: relative;
+  margin: -1.25rem -1.25rem 1rem;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-alt);
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.venue-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.venue-visited-badge {
+  position: absolute; top: 0.6rem; left: 0.6rem;
+  background: var(--surface); color: var(--text);
+  font-size: 0.7rem; font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+}
+
 /* ---- VENUE-LINK (hemsida/Instagram-knapp på barnvagnsguidernas kort) ---- */
 .venue-link {
   display: inline-flex;
