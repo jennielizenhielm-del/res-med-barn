@@ -1151,7 +1151,7 @@ h1 {
 .detail-prisinfo p { font-size: 0.98rem; color: var(--text); line-height: 1.65; }
 .detail-prisinfo .prisinfo-note { font-size: 0.86rem; color: var(--text-secondary); margin-top: 0.6rem; }
 .detail-medgivande-note {
-  background: var(--sand-light);
+  background: var(--accent-light);
   border-radius: var(--radius-lg);
   padding: 1.4rem 1.6rem;
   margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
@@ -1162,12 +1162,12 @@ h1 {
   font-weight: 700;
   text-transform: none;
   letter-spacing: normal;
-  color: var(--sand);
+  color: var(--on-accent-light);
   margin-bottom: 0.5rem;
   line-height: 1.4;
 }
 .detail-medgivande-note p { font-size: 0.98rem; color: var(--text); line-height: 1.65; }
-.detail-medgivande-note a { color: var(--sand); text-decoration: underline; }
+.detail-medgivande-note a { color: var(--on-accent-light); text-decoration: underline; }
 .detail-actions { display: flex; gap: 0.75rem; margin-bottom: clamp(2.5rem, 5vw, 3.5rem); flex-wrap: wrap; }
 .btn {
   display: inline-flex;
