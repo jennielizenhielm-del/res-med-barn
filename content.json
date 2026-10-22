@@ -5025,10 +5025,27 @@
                 "link": "https://vapiano.se/restaurant/stureplan/",
                 "linkLabel": "vapiano.se",
                 "img": "/vapiano-barnmeny.jpg"
+              },
+              {
+                "name": "BodyBuddy Sveavägen",
+                "area": "Vasastan",
+                "address": "Sveavägen 96",
+                "note": "Hälsoinriktat café med Bali/Indonesien-inspirerad meny – sallader, smoothiebowlar och mat utan tillsatt socker, gluten eller laktos. Öppet långa dagar (vardagar 7.30–21, helg 9–17), så det funkar för frukost, lunch och middag. Vi var själva där och det stod fyra barnvagnar inne samtidigt, så gott om plats att komma förbi med vagn.",
+                "meals": {
+                  "frukost": true,
+                  "brunch": true,
+                  "lunch": true,
+                  "middag": true,
+                  "fika": true
+                },
+                "ringAhead": false,
+                "link": "https://www.bodybuddyfoods.com/",
+                "linkLabel": "bodybuddyfoods.com",
+                "img": "/bodybuddy-sveavagen.jpg"
               }
             ],
             "published": "2026-10-12",
-            "updated": "2026-10-21",
+            "updated": "2026-10-22",
             "img": "photo-1667388969250-1c7220bf3f37"
           },
           {
