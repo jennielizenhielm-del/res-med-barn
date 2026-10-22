@@ -1161,6 +1161,21 @@ const destSlug = s => s.toLowerCase().replace(/å|ä/g, 'a').replace(/ö/g, 'o')
 // ännu inte rankar på något, så omflyttningen är billig att göra nu. Länder med bara
 // ett resmål (t.ex. Turkiet, Cypern) förblir platta.
 const NESTED_COUNTRIES = { 'Grekland': 'grekland', 'Spanien': 'spanien', 'Frankrike': 'frankrike', 'Thailand': 'thailand' };
+
+// Grov regionindelning för "Liknande resmål" — avgör bara vilka länder som räknas som
+// geografiska grannar när vi inte har tillräckligt många resmål i exakt samma land.
+const COUNTRY_REGION = {
+  'Thailand': 'Sydostasien',
+  'Japan': 'Fjärran Östern',
+  'Turkiet': 'Medelhavet', 'Cypern': 'Medelhavet', 'Grekland': 'Medelhavet',
+  'Kroatien': 'Medelhavet', 'Spanien': 'Medelhavet', 'Portugal': 'Medelhavet',
+  'Italien': 'Medelhavet', 'Frankrike': 'Medelhavet',
+  'Egypten': 'Nordafrika',
+  'England': 'Europa', 'Nederländerna': 'Europa', 'Tyskland': 'Europa',
+  'Danmark': 'Norden',
+  'USA': 'Nordamerika',
+};
+const regionOf = country => /Sverige/.test(country) ? 'Norden' : (COUNTRY_REGION[country] || 'Övrigt');
 // Flaggemoji för landshubbarna (pillren på /resmal/ och H1 på varje landssida) —
 // samma grepp som redan fanns för Sverige-kategorin i filtret ("🇸🇪 Sverige").
 const COUNTRY_FLAGS = { 'Grekland': '🇬🇷', 'Spanien': '🇪🇸', 'Frankrike': '🇫🇷', 'Thailand': '🇹🇭' };
@@ -1358,11 +1373,14 @@ function medgivandeNoteForDestination(d) {
 function subPlaceLink(url) {
   if (!url) return '';
   let emoji = '🌐';
-  let label = 'hemsidan';
+  let label;
   if (/instagram\.com/.test(url)) { emoji = '📷'; label = 'Instagram'; }
   else if (/facebook\.com/.test(url)) { emoji = '📘'; label = 'Facebook'; }
   else if (/tripadvisor\./.test(url)) { emoji = '📝'; label = 'Tripadvisor'; }
-  else if (/google\.[a-z.]+\/maps|maps\.google\.|google\.com\/maps/.test(url)) { emoji = '📍'; label = 'Google Maps'; }
+  else if (/google\.[a-z.]+\/maps|maps\.google\.|google\.com\/maps/.test(url)) { emoji = '📍'; label = 'Visa på Google Maps'; }
+  else {
+    try { label = new URL(url).hostname.replace(/^www\./, ''); } catch { label = 'hemsidan'; }
+  }
   return `<a class="venue-link" href="${esc(url)}" rel="nofollow noopener" target="_blank">${emoji} ${esc(label)}</a>`;
 }
 
@@ -1396,7 +1414,12 @@ function buildResmal() {
     const bc = breadcrumbs(countrySlug
       ? [['Hem', '/'], ['Resmål', '/resmal/'], [d.country, `/resmal/${countrySlug}/`], [d.name, null]]
       : [['Hem', '/'], ['Resmål', '/resmal/'], [d.name, null]]);
-    const similar = DESTINATIONS.filter(x => x.cat === d.cat && x.name !== d.name).slice(0, 4);
+    const simPool = DESTINATIONS.filter(x => x.cat === d.cat && x.name !== d.name);
+    const dRegion = regionOf(d.country);
+    const sameCountry = simPool.filter(x => x.country === d.country);
+    const sameRegion = simPool.filter(x => x.country !== d.country && regionOf(x.country) === dRegion);
+    const restOfCat = simPool.filter(x => x.country !== d.country && regionOf(x.country) !== dRegion);
+    const similar = [...sameCountry, ...sameRegion, ...restOfCat].slice(0, 4);
 
     const schema = {
       '@context': 'https://schema.org',
