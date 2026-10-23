@@ -1181,7 +1181,7 @@ h1 {
 }
 .subplace p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; }
 .detail-tip {
-  background: var(--primary-light);
+  background: var(--sand-light);
   border-radius: var(--radius-lg);
   padding: 1.4rem 1.6rem;
   margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
@@ -1192,7 +1192,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--primary);
+  color: var(--sand);
   margin-bottom: 0.4rem;
 }
 .detail-tip p { font-size: 0.98rem; color: var(--text); line-height: 1.65; }
