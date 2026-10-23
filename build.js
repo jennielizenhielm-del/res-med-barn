@@ -103,9 +103,12 @@ function head(meta, url) {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-8F9VYNYZRM');
+  gtag('config', 'AW-18385738907');
   // CTA click-spårning: alla utgående affiliate-/bokningslänkar har rel="sponsored",
   // så en enda delegerad lyssnare fångar dem allihopa (köpknappar på topplistor,
   // Sembo/Nazar-knappar på resmål, m.fl.) utan att varje länk-mall behöver egen kod.
+  // Samma klick driver även Google Ads "Purchase"-konverteringen, eftersom sajten
+  // själv aldrig har en egen tack-sida — det riktiga köpet sker hos partnern.
   document.addEventListener('click', function(e) {
     var a = e.target.closest('a[rel~="sponsored"]');
     if (!a) return;
@@ -116,6 +119,11 @@ function head(meta, url) {
       cta_destination: a.href,
       cta_domain: dest,
       page_path: location.pathname
+    });
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18385738907/vdVDCMrMreAcEJu5gL9E',
+      'value': 1.0,
+      'currency': 'SEK'
     });
   });
 </script>
