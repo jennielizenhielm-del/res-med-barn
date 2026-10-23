@@ -1493,6 +1493,8 @@ function buildResmal() {
     <div class="t-label">Förälder till förälder</div>
     <p>${esc(d.tip)}</p>
   </div>
+  <p class="packlist-solkram-cta">☀️ Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
+  <p class="packlist-cta"><a href="/packlista/">🧳 Packa rätt för resan till ${esc(d.name)} — prova vår anpassade packlista →</a></p>
   ${medgivandeNoteForDestination(d)}
   ${d.prisinfo ? `
   <div class="detail-prisinfo">
