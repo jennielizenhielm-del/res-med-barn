@@ -1494,7 +1494,7 @@ function buildResmal() {
     <p>${esc(d.tip)}</p>
   </div>
   <p class="packlist-solkram-cta">☀️ Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
-  <p class="packlist-cta"><a href="/packlista/">🧳 Packa rätt för resan till ${esc(d.name)} — prova vår anpassade packlista →</a></p>
+  <p class="packlist-solkram-cta">🧳 Packa rätt för resan till ${esc(d.name)} — prova vår anpassade <a href="/packlista/">packlista →</a></p>
   ${medgivandeNoteForDestination(d)}
   ${d.prisinfo ? `
   <div class="detail-prisinfo">
