@@ -1403,6 +1403,32 @@ function subPlaces(title, items) {
 </div>`;
 }
 
+function prosConsCard(d) {
+  if (!d.considerations || !d.considerations.length) return '';
+  const checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+  const cautionIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="8" x2="12" y2="13.5"/><circle cx="12" cy="16.7" r="0.6" fill="currentColor" stroke="none"/></svg>';
+  const good = (d.highlights || []).slice(0, 3);
+  return `
+  <div class="proscons-card">
+    <div class="proscons-split">
+      <div class="proscons-pane pc-good">
+        <span class="pc-label"><span class="pc-badge">${checkIcon}</span>Fördelar</span>
+        <ul class="pc-list">
+          ${good.map(h => `
+          <li><span class="pc-dot">${checkIcon}</span><span class="pc-plain">${esc(h)}</span></li>`).join('')}
+        </ul>
+      </div>
+      <div class="proscons-pane pc-caution">
+        <span class="pc-label"><span class="pc-badge">${cautionIcon}</span>Tänk på</span>
+        <ul class="pc-list">
+          ${d.considerations.map(c => `
+          <li><span class="pc-dot">${cautionIcon}</span><span class="pc-body"><span class="pc-title">${esc(c.title)}</span><span class="pc-text">${esc(c.text)}</span></span></li>`).join('')}
+        </ul>
+      </div>
+    </div>
+  </div>`;
+}
+
 function buildResmal() {
   const DESTINATIONS = loadDestinations();
 
@@ -1458,8 +1484,7 @@ function buildResmal() {
     <div class="fact"><div class="f-label">Budget</div><div class="f-value">${esc(d.budget)}</div></div>
   </div>
   <p class="detail-desc">${esc(d.desc)}</p>
-  <h2 class="section-title">Missa inte</h2>
-  <ul class="highlights">${d.highlights.map(h => `<li>${esc(h)}</li>`).join('')}</ul>
+  ${prosConsCard(d)}
   ${subPlaces('Olika delar av ' + d.name, d.areas)}
   ${subPlaces('Toppaktiviteter', d.topActivities)}
   ${subPlaces('Stränder', d.beaches)}
