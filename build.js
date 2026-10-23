@@ -1493,8 +1493,8 @@ function buildResmal() {
     <div class="t-label">Förälder till förälder</div>
     <p>${esc(d.tip)}</p>
   </div>
-  <p class="packlist-solkram-cta">☀️ Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
-  <p class="packlist-solkram-cta">🧳 Packa rätt för resan till ${esc(d.name)} — prova vår anpassade <a href="/packlista/">packlista →</a></p>
+  ${d.cat === 'beach' ? `<p class="packlist-solkram-cta">☀️ Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>` : ''}
+  ${d.cat !== 'museums' ? `<p class="packlist-solkram-cta">🧳 Packa rätt för resan till ${esc(d.name)} — prova vår anpassade <a href="/packlista/">packlista →</a></p>` : ''}
   ${medgivandeNoteForDestination(d)}
   ${d.prisinfo ? `
   <div class="detail-prisinfo">
