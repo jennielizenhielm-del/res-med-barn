@@ -4426,6 +4426,246 @@
         ],
         "published": "2026-09-23",
         "updated": "2026-09-23"
+      },
+      {
+        "slug": "vinteroverall",
+        "emoji": "🧥",
+        "name": "Vinteroverall",
+        "cardText": "Varma, vattentäta vinteroveraller för barn — vattenpelare, andningsförmåga och pris jämförda.",
+        "title": "Vinteroverall barn bäst i test 2026 | Res med Barn",
+        "description": "Vinteroverall för barn bäst i test 2026 — fem vinteroveraller jämförda på vattentäthet, andningsförmåga och pris. Didriksons, Isbjörn of Sweden, Nordbjörn och fler.",
+        "h1": "Vinteroverall för barn bäst i test 2026",
+        "intro": [
+          "En bra vinteroverall är skillnaden mellan glada snölekar och en förkyld unge på väg hem. Vi har jämfört fem populära vinteroveraller för barn på vattentäthet (vattenpelare), andningsförmåga och hur mycket de kostar, baserat på oberoende tester och återförsäljarnas egna uppgifter."
+        ],
+        "products": [
+          {
+            "name": "Didriksons Bjärven",
+            "badge": "Bäst i test",
+            "price": "Från ca 1 699 kr",
+            "text": "Vann RISE-institutets oberoende test med totalbetyget 8,8 av 10 — högst i jämförelsen. Vattenpelare på 10 000 mm (oberoende uppmätt över 1 000 cm på sittytan) och tejpade sömmar håller barnet torrt genom hela vintern. Extend size-funktionen förlänger ärmar och ben en storlek, så overallen räcker en säsong till.",
+            "pros": [
+              "Vann RISE-institutets oberoende test — högsta betyget i jämförelsen (8,8/10)",
+              "Extend size förlänger ärmar och ben en säsong till",
+              "Tejpade sömmar och hög vattenpelare håller tätt på sittytan"
+            ],
+            "cons": [
+              "Ett av de dyrare alternativen i jämförelsen",
+              "Andningsförmågan är bara måttlig enligt testet"
+            ],
+            "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-bjarven-overall-navy.html",
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Wheat Ludo Gummi Vinteroverall",
+            "badge": "2-i-1: regn & vinter",
+            "price": "Från ca 1 599 kr",
+            "text": "En hybrid mellan regnoverall och vinteroverall — vattenpelare på 9 000 mm med ett tjockare vadderat lager (100 % återvunnen polyester) för kalla, blöta vinterdagar. GRS-certifierad återvunnen polyester, PFC-fri och fluorfri ytbehandling, tejpade sömmar, avtagbar justerbar luva och reflexdetaljer.",
+            "pros": [
+              "Dubbelfunktion — tänkt att fungera som både regnoverall och vinteroverall",
+              "GRS-certifierad återvunnen polyester, PFC- och fluorfri ytbehandling",
+              "Tejpade sömmar och 9 000 mm vattenpelare"
+            ],
+            "cons": [
+              "Lägre andningsförmåga (600 g/m²/24h) än flera av de andra jämförda modellerna",
+              "Ett av de dyrare alternativen i jämförelsen"
+            ],
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/d793a022-88bb-4a31-a48e-58603b47583b/productdetailthumbnail/7072-975R%20GRS_9620_1.jpg"
+          },
+          {
+            "name": "Nordbjørn Arctic",
+            "badge": "Bästa budget",
+            "price": "Från ca 799 kr",
+            "text": "Samma angivna vattenpelare som testvinnaren Bjärven (10 000 mm, tillverkarens uppgift), till under hälften av priset. Förstärkt material på knän och rumpa, avtagbar luva, reflexdetaljer och praktiska sidofickor för en overall som håller för vinterns slitage.",
+            "pros": [
+              "Samma angivna vattenpelare som testvinnaren — till under halva priset",
+              "Förstärkt material på knän och rumpa, bra för aktiva barn",
+              "Avtagbar luva och reflexdetaljer för säkerhet i mörker"
+            ],
+            "cons": [
+              "Vattenpelaren är tillverkarens egen uppgift, inte oberoende testad",
+              "Saknar växfunktion (extend size) som dyrare alternativ har"
+            ],
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Didriksons Talvi",
+            "badge": "Mest miljövänlig",
+            "price": "Från ca 1 199 kr",
+            "text": "Vadderad med 100 % återvunnen fiberfyllning och en PFC-fri vattenavvisande ytbehandling (utan de miljö- och hälsoskadliga \"evighetskemikalier\" som används i många vattentäta tyger), samt lösningsfärgat foder som sparar vatten och kemikalier i produktionen. Extend size-funktion gör att den räcker en säsong till.",
+            "pros": [
+              "100 % återvunnen fiberfyllning och PFC-fri ytbehandling",
+              "Extend size förlänger användningstiden en säsong",
+              "Lösningsfärgat foder — mindre vatten- och kemikalieåtgång i produktionen"
+            ],
+            "cons": [
+              "Ingen oberoende uppmätt vattenpelare angiven",
+              "Enklare konstruktion än Bjärven/Isbjörn — färre förstärkningsdetaljer"
+            ],
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Nordbjörn Frej",
+            "badge": "Bäst synlighet i mörker",
+            "price": "Från ca 999 kr",
+            "text": "Reflekterande tryck över hela tyget gör barnet rejält synligt i mörker och dimma under vinterns korta dagar, kombinerat med varmt fleecefoder och förstärkt material på knän och rumpa.",
+            "pros": [
+              "Reflekterande tryck över hela ytan — mycket synlig i mörker",
+              "Varmt fleecefoder för kalla vinterdagar",
+              "Förstärkt material på knän och rumpa"
+            ],
+            "cons": [
+              "Ingen vattenpelare angiven från tillverkaren",
+              "Det reflekterande mönstret syns mindre i dagsljus"
+            ],
+            "buyStore": "Jollyroom"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Vilken vattenpelare behövs för en vinteroverall?",
+            "text": "Vattenpelare mäts i millimeter och visar hur mycket vattentryck tyget tål innan det börjar läcka. För en vinteroverall som ska klara snölek, pulkaåkning och att sitta i snön rekommenderas minst 8 000–10 000 mm — klarar tyget mindre än det riskerar barnet att bli blött genom byxorna vid stillasittande lek. Alla fem overaller i den här jämförelsen ligger på eller över den nivån."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Hur vet jag rätt storlek på en vinteroverall?",
+            "a": "Mät barnet och jämför med tillverkarens egen storleksguide snarare än åldersangivelsen, eftersom barn växer olika mycket. Räkna med plats för tjocka stickade kläder under overallen, men inte så rymligt att snö kan ta sig in vid ärm- och benslut. Overaller med \"extend size\"-funktion (förlängningsbara ärmar/ben) ger en extra säsongs användning innan den blir för liten."
+          },
+          {
+            "q": "Behöver en vinteroverall impregneras?",
+            "a": "Ja, med tiden nöts den vattenavvisande ytbehandlingen (DWR) bort, särskilt vid knän och rumpa där barnet sitter och kryper mest. Impregnera ett par gånger per säsong med ett medel avsett för membran-/skaltyg, annars suger ytmaterialet åt sig vatten och blir tungt även om overallen i övrigt är hel."
+          },
+          {
+            "q": "Vad är skillnaden mellan en vinteroverall och en skaloverall?",
+            "a": "En vinteroverall är vadderad med ett eget värmande fyllningsmaterial och är tänkt att bäras direkt över underställ i kallt väder. En skaloverall saknar vaddering och är bara ett vind- och vattentätt yttre skal som kombineras med en fristående fodrad innerdel eller flera lager underkläder — mer flexibel över säsonger men kräver fler lager att hålla reda på."
+          },
+          {
+            "q": "Går det att tvätta en vinteroverall i vanlig tvättmaskin?",
+            "a": "De flesta vinteroveraller går att tvätta i maskin på ett specifikt skal-/funktionsprogram (ofta 30-40 grader) med ett tvättmedel utan sköljmedel, som annars kan sätta igen membranet och försämra andningsförmågan. Kontrollera alltid tvättrådet i det specifika plagget, och torktumla aldrig om det inte uttryckligen är tillåtet — hög värme kan skada tejpade sömmar och vattentäta membran."
+          }
+        ],
+        "published": "2026-10-24",
+        "updated": "2026-10-24"
+      },
+      {
+        "slug": "fodrat-regnstall",
+        "emoji": "🌧️",
+        "name": "Fodrat regnställ",
+        "cardText": "Fodrade regnställ för barn — ett varmt och smidigt alternativ till vinteroverall i milda vintrar.",
+        "title": "Fodrat regnställ barn bäst i test 2026 | Res med Barn",
+        "description": "Fodrat regnställ för barn bäst i test 2026 — fem fodrade regnställ jämförda på vattentäthet, värme och pris. Didriksons, Petite Chérie, Nordbjörn och Lindberg.",
+        "h1": "Fodrat regnställ för barn bäst i test 2026",
+        "intro": [
+          "Vi använder själva fodrat regnställ som vinterplagg i vår egen familj, inte bara som en höstprodukt — i mildare vinterväder (runt noll och uppåt) fungerar det ofta bättre än en tjockt vadderad vinteroverall, som lätt blir för varm. Vi har jämfört fem fodrade regnställ på vattentäthet (vattenpelare), fodertjocklek och pris, baserat på oberoende tester och återförsäljarnas egna uppgifter.",
+          "Osäker på om ni behöver fodrat regnställ eller en riktig vinteroverall? Vid stadig minusgrader och snö är en vadderad vinteroverall varmare — se vår jämförelse av vinteroveraller för barn."
+        ],
+        "products": [
+          {
+            "name": "Didriksons Boardman",
+            "badge": "Bäst i test",
+            "price": "Från ca 729–749 kr",
+            "text": "Toppbetyg hos flera oberoende testsajter och återförsäljare. Vattenpelare på 8 000 mm med svetsade sömmar och en varm fleecefoder håller barnet torrt och skönt varmt. PFC-fri impregnering, reflexer, avtagbar luva och förstärkta knän för hård lek.",
+            "pros": [
+              "Högst testbetyg av de jämförda modellerna",
+              "PFC-fri impregnering — skonsammare miljöval",
+              "Förstärkta knän och avtagbar luva för hård utelek"
+            ],
+            "cons": [
+              "Dyrare än budgetalternativen i jämförelsen",
+              "Kan bli för varmt vid mildare väder eller intensiv lek"
+            ],
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Petite Chérie Amira",
+            "badge": "Bästa budget",
+            "price": "Från ca 299–399 kr",
+            "text": "Lägst pris i jämförelsen men med samma grundspecifikation som de dyrare alternativen: 8 000 mm vattenpelare, svetsade sömmar, fleecefoder och förstärkta knän. Hög bystdel, avtagbar luva, justerbara hängslen, fotöglor och reflexer ingår.",
+            "pros": [
+              "Lägst pris i jämförelsen, ändå samma vattenpelare (8 000 mm) som dyrare alternativ",
+              "Fullt utrustad: avtagbar luva, justerbara hängslen, fotöglor, reflexer",
+              "Tvättbar i 40°C"
+            ],
+            "cons": [
+              "Materialet är mindre robust än premiumalternativen vid hård daglig användning",
+              "Färgutbudet varierar efter säsong"
+            ],
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Nordbjørn Skagen",
+            "badge": "Bra mellanklass",
+            "price": "Från ca 399–799 kr",
+            "text": "Varmt fleecefoder i både jacka och byxor, med svetsade sömmar, avtagbar luva, justerbara hängslen och fotöglor. Rymlig passform gör det lätt att lagra kläder under vid riktigt kallt väder.",
+            "pros": [
+              "Rymlig passform — plats för extra lager underkläder vid kyla",
+              "Bra synlig färg och reflexer",
+              "Lätt att torka av vid smuts"
+            ],
+            "cons": [
+              "Begränsad andningsförmåga vid intensiv lek i mildare väder",
+              "Fleecefodret torkar långsamt om det blir genomblött"
+            ],
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Lindberg Fagerhult",
+            "badge": "OEKO-TEX-certifierad",
+            "price": "Från ca 650–780 kr",
+            "text": "OEKO-TEX-certifierat material (testat och certifierat fritt från skadliga ämnen) med slitstarkt PU-ytterskal, polyesterfleece-foder, hög bystdel, förstärkta knän, fickor och reflexer.",
+            "pros": [
+              "OEKO-TEX-certifierat material",
+              "Fickor — ovanligt bland fodrade regnställ i den här jämförelsen",
+              "Förstärkta knän och hög bystdel för skydd vid lek i vått underlag"
+            ],
+            "cons": [
+              "Kan kännas varmt vid intensiv lek",
+              "Något högre pris än budgetalternativen"
+            ],
+            "buyStore": "Jollyroom"
+          },
+          {
+            "name": "Mikk-Line Regnställ m. Fleece",
+            "badge": "Lättast att ta på",
+            "price": "Från ca 799 kr",
+            "text": "Fleecefoder i kropp, luva, krage och övre delen av ärmar/ben, men med en glatt, friktionsfri insida på nedre ärmar och benslut som gör den snabbare att få på och av än modeller med fleece hela vägen ut. Vattenpelare på 5 000 mm, OEKO-TEX- och GRS-certifierat material, 3M-reflexer, svetsade sömmar och avtagbar luva.",
+            "pros": [
+              "Glatt, friktionsfri insida på nedre ärmar/ben — snabbare att få på än helfodrade modeller",
+              "OEKO-TEX- och GRS-certifierat material",
+              "3M-reflexer och svetsade sömmar"
+            ],
+            "cons": [
+              "Vattenpelare på 5 000 mm — under de 8 000 mm vi rekommenderar ovan, mindre lämplig för långvarigt sittande i blöt snö/mark",
+              "Produktsidans materialuppgifter är inkonsekventa (anges både som PU och som polyester/återvunnen polyester)"
+            ],
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/5aabc462-7725-4a0d-bd30-16017d6373cb/productdetailthumbnail/33181%20-%20Star%20Sky%20AOP%20-%20Extra%201.jpg"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Fodrat regnställ eller vinteroverall — vilket passar bäst?",
+            "text": "Ett fodrat regnställ har ett tunnare fleecefoder och är tänkt att användas i temperaturer runt noll grader och uppåt, eller som ett lättare lager under en jacka vid lite kallare väder. En vadderad vinteroverall har tjockare isolering och är byggd för stadig minusgrader och stillasittande lek i snön (pulka, bygga snögubbe). Många familjer, oss själva inkluderat, använder fodrat regnställ som huvudplagg under höst och mildare vinterperioder, och sparar den tjockare vinteroverallen för de kallaste veckorna."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Håller fodrat regnställ lika varmt som en vinteroverall?",
+            "a": "Nej, inte vid stadig kyla. Fleecefodret i ett regnställ är tunnare än vadderingen i en vinteroverall, så vid minusgrader och stillasittande lek i snön behövs extra lager underkläder eller en riktig vinteroverall. I mildare väder (runt noll och uppåt) och vid aktiv lek håller regnställets tunnare foder ofta precis rätt temperatur, utan att barnet svettas igenom som i en tjockare overall."
+          },
+          {
+            "q": "Vilken vattenpelare behöver ett fodrat regnställ ha?",
+            "a": "Minst 8 000 mm rekommenderas för ett regnställ som ska klara stillasittande lek i vått gräs eller snö, vilket alla fem modeller i den här jämförelsen uppfyller. Ett lägre värde räcker för kortare promenader men riskerar att släppa igenom fukt vid långvarigt sittande på blöt mark."
+          },
+          {
+            "q": "Går fodrat regnställ att maskintvätta?",
+            "a": "De flesta klarar tvätt i maskin på 30-40 grader utan sköljmedel (som kan sätta igen vattenavstötningen), men kontrollera alltid tvättrådet i det specifika plagget. Undvik torktumling om det inte uttryckligen är tillåtet — hög värme kan skada svetsade sömmar och den vattenavstötande ytbehandlingen."
+          }
+        ],
+        "published": "2026-10-24",
+        "updated": "2026-10-24"
       }
     ]
   },
@@ -4649,6 +4889,66 @@
                 "desc": "Många av stadens bibliotek kör pyssel och sagostunder under lovveckan — kolla aktuellt program på biblioteket närmast er.",
                 "dateInfo": "Vecka 44",
                 "link": "https://biblioteket.stockholm.se/"
+              },
+              {
+                "name": "Elverket: Prehistoric Planet – Discovering Dinosaurs",
+                "type": "paid",
+                "price": "Se aktuellt pris vid bokning",
+                "ageMin": 4,
+                "ageMax": 18,
+                "indoor": true,
+                "area": "Östermalm",
+                "desc": "360°-upplevelse med dinosaurier i naturlig storlek, inspirerad av Apple TV-serien Prehistoric Planet. 55 minuter långt, extra visningar under höstlovet.",
+                "dateInfo": "Extra visningar under höstlovet, pågår t.o.m. 10 januari",
+                "link": "https://elverket.com/produktioner/prehistoric-planet-discovering-dinosaurs"
+              },
+              {
+                "name": "Sjöhistoriska museet: höstlovsprogram",
+                "type": "paid",
+                "price": "Entré 0–150 kr",
+                "ageMin": 4,
+                "ageMax": 10,
+                "indoor": true,
+                "area": "Djurgården",
+                "desc": "Spökvisningar för barn 6–10 år, sagostund för 4–6-åringar, pyssel i \"Ruskpricken\" och en spökig tipspromenad för hela familjen.",
+                "dateInfo": "24 okt–1 nov, kl. 10–17",
+                "link": "https://www.sjohistoriska.se/besok/kalender/lov/hostlov-2026"
+              },
+              {
+                "name": "Nobel Prize Museum: Familjeworkshop – celler och akvareller",
+                "type": "paid",
+                "price": "180 kr/person",
+                "ageMin": 7,
+                "ageMax": 12,
+                "indoor": true,
+                "area": "Gamla stan",
+                "desc": "Guidad visning av utställningen \"Celler, nerver, gener\" följt av akvarellmålning av celler tillsammans med en forskare från Karolinska Institutet. Fika ingår.",
+                "dateInfo": "26 okt, bokningsbara tider 09:30 och 13:00",
+                "link": "https://www.nobelprizemuseum.se/program/familjeworkshop-celler-och-akvareller/"
+              },
+              {
+                "name": "Siggesta Gård: Pimpa din pumpa",
+                "type": "paid",
+                "price": "250 kr/person",
+                "ageMin": 5,
+                "ageMax": 13,
+                "indoor": false,
+                "area": "Värmdö (ca 40 min från Slussen)",
+                "desc": "Pyssla med naturmaterial och pumpor utomhus tillsammans med Lina vid Viken, avslutas med grillad korv. Ta med egen matsäck om ni vill.",
+                "dateInfo": "30 okt, kl. 11–13.30",
+                "link": "https://www.siggestagard.se/aktiviteter/hostlovsaktivitet-pa-siggesta-gard-pimpa-din-pumpa"
+              },
+              {
+                "name": "Vrak – Museum of Wrecks: Höstlovsäventyr",
+                "type": "free",
+                "price": "Fri entré för barn och unga upp till 18 år",
+                "ageMin": 6,
+                "ageMax": 18,
+                "indoor": true,
+                "area": "Djurgården",
+                "desc": "Spökjakt med ficklampa efter stängning, LEGO-bygge med Stefan Eriksson, familjevisning, vikingautmaningar, VR-dykning och museikluring under hela lovveckan.",
+                "dateInfo": "26 okt–1 nov, kl. 10–17",
+                "link": "https://www.vrak.se/besok/kalender/26-okt---1-nov-hostlovsaventyr-pa-vrak"
               }
             ],
             "faq": [
@@ -4662,7 +4962,7 @@
               }
             ],
             "published": "2026-10-07",
-            "updated": "2026-10-07",
+            "updated": "2026-10-25",
             "dateLabel": "26–30 oktober 2026"
           }
         ],
