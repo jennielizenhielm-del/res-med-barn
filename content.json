@@ -4442,7 +4442,7 @@
           {
             "name": "Didriksons Bjärven",
             "badge": "Bäst i test",
-            "price": "Från ca 1 699 kr",
+            "price": "Från ca 989 kr",
             "text": "Vann RISE-institutets oberoende test med totalbetyget 8,8 av 10 — högst i jämförelsen. Vattenpelare på 10 000 mm (oberoende uppmätt över 1 000 cm på sittytan) och tejpade sömmar håller barnet torrt genom hela vintern. Extend size-funktionen förlänger ärmar och ben en storlek, så overallen räcker en säsong till.",
             "pros": [
               "Vann RISE-institutets oberoende test — högsta betyget i jämförelsen (8,8/10)",
@@ -4454,7 +4454,9 @@
               "Andningsförmågan är bara måttlig enligt testet"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-bjarven-overall-navy.html",
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/q5f7oc",
+            "img": "https://www.jollyroom.se/storage/82C4D633B747FB19FFB8900685AE645B75B0EFBA6588F35DD31E0CB6991E7C4E/f7519395a90242d09f8b834b947ae178/jpg/media/10e17e9346c340d4b25e3ad628664ac5/505999-324-1356_5.jpg"
           },
           {
             "name": "Wheat Ludo Gummi Vinteroverall",
@@ -4471,28 +4473,31 @@
               "Ett av de dyrare alternativen i jämförelsen"
             ],
             "buyStore": "Babysam",
-            "img": "https://cdn.babysam.se/d793a022-88bb-4a31-a48e-58603b47583b/productdetailthumbnail/7072-975R%20GRS_9620_1.jpg"
+            "img": "https://cdn.babysam.se/d793a022-88bb-4a31-a48e-58603b47583b/productdetailthumbnail/7072-975R%20GRS_9620_1.jpg",
+            "buyUrl": "https://adtr.co/hq24h4"
           },
           {
-            "name": "Nordbjørn Arctic",
-            "badge": "Bästa budget",
-            "price": "Från ca 799 kr",
-            "text": "Samma angivna vattenpelare som testvinnaren Bjärven (10 000 mm, tillverkarens uppgift), till under hälften av priset. Förstärkt material på knän och rumpa, avtagbar luva, reflexdetaljer och praktiska sidofickor för en overall som håller för vinterns slitage.",
+            "name": "Nordbjörn Enelunden",
+            "badge": "Lägst pris",
+            "price": "Från ca 399 kr",
+            "text": "Billigast i jämförelsen, med samma angivna vattenpelare som flera dyrare alternativ (10 000 mm) och roliga mönster som barnen ofta gillar. I ett oberoende test fick den dock bottenbetyg (1,5 av 5) — främsta kritiken var att materialet går sönder snabbare än konkurrenterna och att passformen är bylsig.",
             "pros": [
-              "Samma angivna vattenpelare som testvinnaren — till under halva priset",
-              "Förstärkt material på knän och rumpa, bra för aktiva barn",
-              "Avtagbar luva och reflexdetaljer för säkerhet i mörker"
+              "Lägst pris i jämförelsen",
+              "Håller värmen väl enligt testet",
+              "Roliga färger och mönster, enkel att ta på"
             ],
             "cons": [
-              "Vattenpelaren är tillverkarens egen uppgift, inte oberoende testad",
-              "Saknar växfunktion (extend size) som dyrare alternativ har"
+              "Fick bottenbetyg (1,5/5) i ett oberoende test — går snabbt sönder enligt testarna",
+              "Bylsig passform och få reflexer"
             ],
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/nr86dm",
+            "img": "https://www.jollyroom.se/storage/795F8C98364D42FD97A81DDC9A3B9D57F29D750E56068E0022B504F9AC6464B1/789ef2733677404cbbe9ca249d325754/jpg/media/d042737d906242b5a4233c56d8b36ba3/1972728_24049-1522-3004_5.jpg"
           },
           {
             "name": "Didriksons Talvi",
             "badge": "Mest miljövänlig",
-            "price": "Från ca 1 199 kr",
+            "price": "Från ca 779 kr",
             "text": "Vadderad med 100 % återvunnen fiberfyllning och en PFC-fri vattenavvisande ytbehandling (utan de miljö- och hälsoskadliga \"evighetskemikalier\" som används i många vattentäta tyger), samt lösningsfärgat foder som sparar vatten och kemikalier i produktionen. Extend size-funktion gör att den räcker en säsong till.",
             "pros": [
               "100 % återvunnen fiberfyllning och PFC-fri ytbehandling",
@@ -4503,23 +4508,27 @@
               "Ingen oberoende uppmätt vattenpelare angiven",
               "Enklare konstruktion än Bjärven/Isbjörn — färre förstärkningsdetaljer"
             ],
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/qpsykj",
+            "img": "https://www.jollyroom.se/storage/E3B165AC98A5C26509157A47634D21C1157303C2E9B4A8AB7AEF268E6E99CD47/f29821682a7d4303b86a999c7505fcfc/jpg/media/da3173e4c62446d0a221043485c8be45/505362-039-1356_5.jpg"
           },
           {
-            "name": "Nordbjörn Frej",
-            "badge": "Bäst synlighet i mörker",
-            "price": "Från ca 999 kr",
-            "text": "Reflekterande tryck över hela tyget gör barnet rejält synligt i mörker och dimma under vinterns korta dagar, kombinerat med varmt fleecefoder och förstärkt material på knän och rumpa.",
+            "name": "Name It Snow10 Vinteroverall",
+            "badge": "Bäst med fickor",
+            "price": "Från ca 1 100 kr",
+            "text": "Vattenpelare på 10 000 mm med tejpade sömmar och membran, isolering och ytterskal i 100 % återvunnen polyester. Avtagbar luva med löstagbar fuskpälskant, två framfickor (ovanligt bland vinteroveraller), elastiska och justerbara benslut samt reflexdetaljer.",
             "pros": [
-              "Reflekterande tryck över hela ytan — mycket synlig i mörker",
-              "Varmt fleecefoder för kalla vinterdagar",
-              "Förstärkt material på knän och rumpa"
+              "10 000 mm vattenpelare med tejpade sömmar och membran",
+              "Två framfickor — ovanligt bland jämförda vinteroveraller",
+              "Ytterskal och isolering i 100 % återvunnen polyester"
             ],
             "cons": [
-              "Ingen vattenpelare angiven från tillverkaren",
-              "Det reflekterande mönstret syns mindre i dagsljus"
+              "Andningsförmågan (4 000 g/m²/24h) är lägre än premiumalternativen i jämförelsen",
+              "Inget oberoende testbetyg hittat, bygger på tillverkarens egna specifikationer"
             ],
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/pau1r8",
+            "img": "https://cdn.babysam.se/10c2b966-98f6-4c44-9a67-04480560149c/productfeedproductbig/NAME-IT_Autumnwinter_5127973_13230586.webp"
           }
         ],
         "sections": [
@@ -4547,7 +4556,7 @@
           }
         ],
         "published": "2026-10-24",
-        "updated": "2026-10-24"
+        "updated": "2026-10-26"
       },
       {
         "slug": "fodrat-regnstall",
