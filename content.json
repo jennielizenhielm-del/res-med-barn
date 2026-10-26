@@ -4477,22 +4477,22 @@
             "buyUrl": "https://adtr.co/hq24h4"
           },
           {
-            "name": "Nordbjörn Enelunden",
-            "badge": "Lägst pris",
-            "price": "Från ca 399 kr",
-            "text": "Billigast i jämförelsen, med samma angivna vattenpelare som flera dyrare alternativ (10 000 mm) och roliga mönster som barnen ofta gillar. I ett oberoende test fick den dock bottenbetyg (1,5 av 5) — främsta kritiken var att materialet går sönder snabbare än konkurrenterna och att passformen är bylsig.",
+            "name": "Lindberg Polar Vinteroverall",
+            "badge": "Bäst för kyla",
+            "price": "Från ca 999 kr",
+            "text": "Fick 4,3 av 5 i en oberoende granskning med fokus på \"bäst för kyla\" — vattenpelare på 15 000 mm och en andningsförmåga på 6 000 g/m²/24h. Höll tätt mot blöt snö i testet och gav god rörlighet med underställ under, samtidigt som den höll värmen bra vid lugnare lek i kyla.",
             "pros": [
-              "Lägst pris i jämförelsen",
-              "Håller värmen väl enligt testet",
-              "Roliga färger och mönster, enkel att ta på"
+              "Högt betyg (4,3/5) i oberoende granskning, utmärkte sig för kyla",
+              "15 000 mm vattenpelare — höll tätt mot blöt snö i testet",
+              "God rörlighet med underställ under"
             ],
             "cons": [
-              "Fick bottenbetyg (1,5/5) i ett oberoende test — går snabbt sönder enligt testarna",
-              "Bylsig passform och få reflexer"
+              "Begränsad fukttransport vid intensiv lek enligt testet",
+              "Luvans syntetpäls skymmer sikten lite åt sidorna"
             ],
             "buyStore": "Jollyroom",
-            "buyUrl": "https://adtr.co/nr86dm",
-            "img": "https://www.jollyroom.se/storage/795F8C98364D42FD97A81DDC9A3B9D57F29D750E56068E0022B504F9AC6464B1/789ef2733677404cbbe9ca249d325754/jpg/media/d042737d906242b5a4233c56d8b36ba3/1972728_24049-1522-3004_5.jpg"
+            "buyUrl": "https://adtr.co/wq5an9",
+            "img": "https://www.jollyroom.se/storage/138B64C296C9373DDE03A984264DE016F9734EF4554DE67FC75E776F113CC9FC/3b3c613a8ee34be8b0816a03f52de2af/jpg/media/e00942a82aa84fdb813d7a8829798d0c/2157793_3421-0100-1796_5.jpg"
           },
           {
             "name": "Didriksons Talvi",
@@ -4556,7 +4556,8 @@
           }
         ],
         "published": "2026-10-24",
-        "updated": "2026-10-26"
+        "updated": "2026-10-26",
+        "img": "photo-1699516781997-21beee06a67f"
       },
       {
         "slug": "fodrat-regnstall",
@@ -4674,7 +4675,8 @@
           }
         ],
         "published": "2026-10-24",
-        "updated": "2026-10-24"
+        "updated": "2026-10-26",
+        "img": "photo-1607930232028-f01079639b00"
       }
     ]
   },
