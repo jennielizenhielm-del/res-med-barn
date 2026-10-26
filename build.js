@@ -678,8 +678,10 @@ const TOPPLISTOR_RELATED = {
   babymonitor: ['sleep-carrier', 'bilbarnstol', 'vagnar'],
   barsjal: ['barsele', 'sleep-carrier', 'amningskudde'],
   'uv-badklader': ['regnstall', 'vinterskor', 'tillbehor'],
-  regnstall: ['vinterskor', 'uv-badklader', 'tillbehor'],
-  vinterskor: ['regnstall', 'uv-badklader', 'tillbehor'],
+  regnstall: ['fodrat-regnstall', 'vinterskor', 'vinteroverall'],
+  vinterskor: ['vinteroverall', 'fodrat-regnstall', 'regnstall'],
+  vinteroverall: ['fodrat-regnstall', 'vinterskor', 'regnstall'],
+  'fodrat-regnstall': ['vinteroverall', 'regnstall', 'vinterskor'],
   reseunderhallning: ['tillbehor', 'akpase', 'vagnar']
 };
 
@@ -1040,9 +1042,10 @@ function venueCard(v) {
   ].filter(Boolean);
   return `
   <article class="activity-card">
-    ${v.img ? `<div class="venue-media"><span class="venue-visited-badge">🧡 Vi har varit här</span><img src="${esc(v.img)}" alt="${esc(v.name)}" loading="lazy"></div>` : ''}
+    ${v.img ? `<div class="venue-media">${v.favorite ? `<span class="venue-visited-badge">🧡 Favorit hos oss</span>` : ''}<img src="${esc(v.img)}" alt="${esc(v.name)}" loading="lazy"></div>` : ''}
     <div class="activity-top">
       <h3>${esc(v.name)}</h3>
+      ${(v.favorite && !v.img) ? `<span class="activity-badge activity-badge-favorite">🧡 Favorit hos oss</span>` : ''}
       ${v.ringAhead ? `<span class="activity-badge activity-badge-paid">Ring innan</span>` : ''}
     </div>
     <p class="activity-price">📍 ${esc(v.address)}${v.address && v.area ? ', ' : ''}${esc(v.area || '')}</p>

@@ -5345,7 +5345,8 @@
                 "ringAhead": false,
                 "link": "https://vapiano.se/restaurant/stureplan/",
                 "linkLabel": "vapiano.se",
-                "img": "/vapiano-barnmeny.jpg"
+                "img": "/vapiano-barnmeny.jpg",
+                "favorite": true
               },
               {
                 "name": "BodyBuddy Sveavägen",
@@ -5362,7 +5363,7 @@
                 "ringAhead": false,
                 "link": "https://www.bodybuddyfoods.com/",
                 "linkLabel": "bodybuddyfoods.com",
-                "img": "/bodybuddy-sveavagen.jpg"
+                "favorite": true
               }
             ],
             "published": "2026-10-12",
@@ -5468,7 +5469,8 @@
                 },
                 "ringAhead": false,
                 "link": "https://www.pomochflora.se/",
-                "linkLabel": "pomochflora.se"
+                "linkLabel": "pomochflora.se",
+                "img": "/bodybuddy-sveavagen.jpg"
               },
               {
                 "name": "Saturnus",
