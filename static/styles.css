@@ -405,7 +405,16 @@ h1 {
   flex-direction: column;
   gap: 0.4rem;
 }
+.product-mini-img {
+  margin: -1rem -1rem 0.2rem;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-alt);
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.product-mini-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .product-mini-card h3 { font-size: 1rem; font-weight: 600; }
+.product-mini-price { font-size: 0.82rem; font-weight: 600; color: var(--sand); margin-bottom: -0.1rem; }
 .product-mini-card p { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.2rem; }
 .product-mini-card .btn-compare { margin-top: auto; align-self: flex-start; }
 
