@@ -58,7 +58,8 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 // "prova vår [bränslekalkylator](/branslekalkylator/)" — texten escapas
 // först (så inga riktiga HTML-taggar kan smygas in), sedan omvandlas bara
 // den specifika [text](url)-syntaxen till en riktig länk.
-const escLinks = s => esc(s).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+const escLinks = s => esc(s).replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, text, url) =>
+  `<a href="${url}"${/^https?:\/\//.test(url) ? ' target="_blank" rel="nofollow noopener"' : ''}>${text}</a>`);
 const write = (rel, html) => {
   const file = path.join(DIST, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -1148,7 +1149,9 @@ ${a.products && a.products.length ? `
   <div class="product-mini-grid">
     ${a.products.map(p => `
     <div class="product-mini-card">
+      ${p.img ? `<div class="product-mini-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-mini-img').remove()"></div>` : ''}
       <h3>${esc(p.name)}</h3>
+      ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
       <p>${esc(p.note)}</p>
       <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">🛒 Köp hos ${esc(p.store)} →</a>
     </div>`).join('')}
@@ -1506,6 +1509,8 @@ function buildResmal() {
   </div>
   ${d.cat === 'beach' ? `<p class="packlist-solkram-cta">☀️ Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>` : ''}
   ${d.cat !== 'museums' ? `<p class="packlist-solkram-cta">🧳 Packa rätt för resan till ${esc(d.name)} — prova vår anpassade <a href="/packlista/">packlista →</a></p>` : ''}
+  ${d.country === 'Thailand' ? `<p class="packlist-solkram-cta">🚗 Ska ni åka taxi, transfer eller tuk-tuk med barn på ${esc(d.name)}? Läs vår guide om <a href="/artiklar/bilbarnstol-utomlands/">bilbarnstol och babyskydd på resan →</a></p>` : ''}
+  ${(d.country === 'Grekland' || d.country === 'Spanien') ? `<p class="packlist-solkram-cta">🚗 Ska ni hyra bil med barn på ${esc(d.name)}? Läs vår guide om <a href="/artiklar/bilbarnstol-utomlands/">bilbarnstol och babyskydd på resan →</a></p>` : ''}
   ${medgivandeNoteForDestination(d)}
   ${d.prisinfo ? `
   <div class="detail-prisinfo">
