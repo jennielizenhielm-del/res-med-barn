@@ -5843,10 +5843,23 @@
                 "ringAhead": false,
                 "link": "https://fabrique.se/locations/",
                 "linkLabel": "fabrique.se"
+              },
+              {
+                "name": "Gast Café",
+                "area": "Vasastan",
+                "address": "Rådmansgatan 57",
+                "note": "Frukost, brunch och fika med fokus på kaffe av hög kvalitet, mitt i Vasastan. Testat själva — rymligt nog för flera barnvagnar samtidigt, det stod två inne vid lunchtid utan att det kändes trångt.",
+                "meals": {
+                  "fika": true,
+                  "lunch": false
+                },
+                "ringAhead": false,
+                "link": "https://www.gastcafe.se/",
+                "linkLabel": "gastcafe.se"
               }
             ],
             "published": "2026-10-12",
-            "updated": "2026-10-26",
+            "updated": "2026-10-28",
             "img": "photo-1699559510594-12624b72312c"
           }
         ]
