@@ -488,9 +488,8 @@ function collectLatestPages() {
       if (g && g.updated) items.push({ url: `/guider/${a.slug}/${t.slug}/`, emoji: t.emoji, img: g.img, title: g.h1 || g.title, summary: g.cardText, updated: g.updated });
     }
   }
-  for (const l of C.topplistor.lists) {
-    if (l.updated) items.push({ url: `/topplistor/${l.slug}/`, emoji: l.emoji, img: l.img, title: l.h1 || l.name, summary: l.cardText, updated: l.updated });
-  }
+  // Topplistor exkluderas medvetet — de uppdateras ofta bara med nya adtraction-länkar
+  // (rutinunderhåll, inte nytt redaktionellt innehåll) och skulle annars dominera "Senast uppdaterat".
   for (const a of C.artiklar.list) {
     if (a.updated) items.push({ url: `/artiklar/${a.slug}/`, emoji: a.emoji, img: a.img, title: a.h1 || a.name, summary: a.cardText, updated: a.updated });
   }
