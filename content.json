@@ -4984,6 +4984,132 @@
             "published": "2026-10-07",
             "updated": "2026-10-27",
             "dateLabel": "26–30 oktober 2026"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Stockholm 2026/2027 — tips & aktiviteter | Res med Barn",
+            "description": "Jullovet i Stockholm 2026/2027 är 21 december–10 januari (v.52–1). Våra bästa tips på julmarknad, skridskor och aktiviteter för barnfamiljer under lovet.",
+            "h1": "Jullov i Stockholm 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Stockholm 2026/2027 sträcker sig från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor och kommuner, så dubbelkolla gärna med ert eget barns skola.",
+              "Jullovet ger er fler lediga dagar än t.ex. höstlovet, vilket ger gott om tid för både klassiska jultraditioner och ett par dagar med rena vinteraktiviteter innan vardagen drar igång igen. Nedan har vi samlat det som passar extra bra just den här perioden."
+            ],
+            "tips": [
+              {
+                "name": "Skridskoåkning i Kungsträdgården",
+                "type": "free",
+                "price": "Gratis med egna skridskor, hyra ca 30 kr/timme för barn (70 kr för vuxna), hjälm lånas gratis",
+                "ageMin": 3,
+                "ageMax": 18,
+                "indoor": false,
+                "area": "Kungsträdgården",
+                "desc": "Stockholms mest klassiska isbana, öppen från början av november till mars. Kommunalt driven så det är fritt fram att åka med egna skridskor — bra alternativ om vädret är kallt men uppehåll.",
+                "dateInfo": "Öppen hela jullovet",
+                "link": "https://www.stockholm.se/kungstradgarden"
+              },
+              {
+                "name": "Jul på Nordiska museet",
+                "type": "paid",
+                "price": "Gratis vardagar under lovet för barn 3–18 år (annars 75 kr)",
+                "ageMin": 2,
+                "ageMax": 12,
+                "indoor": true,
+                "area": "Djurgården",
+                "desc": "Museets stora hall kläs varje år i ett nytt jultema kring granen, och Lekstugan och Tidsvalvet (museets lekrum för de yngsta) håller öppet hela lovet. Ofta finns en julquiz att lösa på egen hand. Kolla aktuellt tema och ev. extra program på museets egen sajt inför just er dag.",
+                "link": "https://www.nordiskamuseet.se/"
+              },
+              {
+                "name": "Skansens julmarknad",
+                "type": "paid",
+                "price": "Ingår i vanlig entré, gratis för barn under 15 år",
+                "ageMin": 0,
+                "ageMax": 12,
+                "indoor": false,
+                "area": "Djurgården",
+                "desc": "Sveriges mest klassiska julmarknad, med hantverk, julgodis och glögg i gamla tiders miljö. Obs: marknaden kör bara fredag–söndag och stänger för säsongen redan 20 december — så den ligger mest precis före lovet startar, med sista helgen (18–20 december) som enda överlapp. Boka in den innan eller allra först i lovet.",
+                "dateInfo": "Fre–sön 27 nov–20 dec",
+                "link": "https://www.skansen.se/"
+              },
+              {
+                "name": "Nyårsafton på Skansen",
+                "type": "paid",
+                "price": "Ingår i vanlig entré/årskort, barn 0–15 år gratis (eget digitalt inträde krävs)",
+                "ageMin": 4,
+                "ageMax": 18,
+                "indoor": false,
+                "area": "Djurgården",
+                "desc": "Stockholms mest klassiska nyårsfirande, med Nyårsklockan som läses från Solliden och sänds live i SVT — en tradition sedan 1893. Dagtid är öppet 10–16, parken öppnar igen kl 20 för kvällsprogrammet. Räkna med kö in till Solliden-området, så kom i god tid.",
+                "dateInfo": "31 december, kväll",
+                "link": "https://www.skansen.se/en/see-and-do/holidays-and-traditions/new-years-celebration/new-years-eve/"
+              },
+              {
+                "name": "Vasamuseet",
+                "type": "free",
+                "price": "Gratis t.o.m. 18 år",
+                "ageMin": 0,
+                "ageMax": 18,
+                "indoor": true,
+                "area": "Djurgården",
+                "desc": "Ett säkert inomhuskort när det är kallt eller blåsigt ute — ett helt skepp från 1600-talet och gott om utrymme att röra sig i för hela familjen.",
+                "link": "https://www.vasamuseet.se/"
+              },
+              {
+                "name": "Tekniska museet",
+                "type": "paid",
+                "price": "Entré 0–180 kr beroende på ålder",
+                "ageMin": 2,
+                "ageMax": 12,
+                "indoor": true,
+                "area": "Norra Djurgården",
+                "desc": "Teknorama, museets egen lekhall för barn, gör det här till ett av de bästa regn- och kylalternativen i stan — mycket att klättra på, trycka på och testa själv.",
+                "link": "https://www.tekniskamuseet.se/"
+              },
+              {
+                "name": "Julbelysningen på Drottninggatan och i Kungsträdgården",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 0,
+                "ageMax": 18,
+                "indoor": false,
+                "area": "City / Kungsträdgården",
+                "desc": "Enklaste och billigaste jullovsaktiviteten: en kväll med varma kläder och choklad i handen längs den julbelysta Drottninggatan, med Kungsträdgårdens stora julgran och ljusdekorationer som naturligt slutmål.",
+                "link": "https://www.visitstockholm.com/"
+              },
+              {
+                "name": "Jullovspyssel på biblioteken",
+                "type": "free",
+                "price": "Gratis",
+                "ageMin": 3,
+                "ageMax": 12,
+                "indoor": true,
+                "area": "Flera bibliotek i Stockholm",
+                "desc": "Precis som på höstlovet kör många av stadens bibliotek pyssel och sagostunder under jullovsveckorna — kolla aktuellt program på biblioteket närmast er.",
+                "link": "https://biblioteket.stockholm.se/"
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Stockholm 2026/2027?",
+                "a": "Jullovet i Stockholm 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla alltid med ert eget barns skola för exakt sista och första skoldag."
+              },
+              {
+                "q": "Är Skansens julmarknad öppen under jullovet?",
+                "a": "Nästan inte — marknaden kör bara fredag till söndag och stänger för säsongen redan 20 december, precis innan de flesta skolors jullov börjar. Sista chansen är helgen 18–20 december."
+              },
+              {
+                "q": "Är skridskoåkning i Kungsträdgården gratis?",
+                "a": "Ja, banan är kommunalt driven och gratis att åka på med egna skridskor. Hyra kostar ca 30 kr/timme för barn och 70 kr/timme för vuxna, och hjälm till barn lånas gratis vid banan."
+              }
+            ],
+            "published": "2026-10-28",
+            "updated": "2026-10-28",
+            "dateLabel": "21 december 2026 – 10 januari 2027",
+            "img": "photo-1764522234619-da6b4b116ad8"
           }
         ],
         "guider": [
