@@ -4575,7 +4575,7 @@
           {
             "name": "Didriksons Boardman",
             "badge": "Bäst i test",
-            "price": "Från ca 729–749 kr",
+            "price": "Från ca 699 kr",
             "text": "Toppbetyg hos flera oberoende testsajter och återförsäljare. Vattenpelare på 8 000 mm med svetsade sömmar och en varm fleecefoder håller barnet torrt och skönt varmt. PFC-fri impregnering, reflexer, avtagbar luva och förstärkta knän för hård lek.",
             "pros": [
               "Högst testbetyg av de jämförda modellerna",
@@ -4586,12 +4586,14 @@
               "Dyrare än budgetalternativen i jämförelsen",
               "Kan bli för varmt vid mildare väder eller intensiv lek"
             ],
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/e3wwa7",
+            "img": "https://www.jollyroom.se/storage/2F86AE0DBE56D5ACE6083072ED8BB3787613547E65044AE82AA8C67109527E84/89b0210528b24b959f210bd8505103ec/jpg/media/d0d6e3a318734b95a68b77321abbec24/506000-471-1356_5.jpg"
           },
           {
-            "name": "Petite Chérie Amira",
+            "name": "Petite Chérie Atelier Aline Fodrat Regnställ",
             "badge": "Bästa budget",
-            "price": "Från ca 299–399 kr",
+            "price": "299 kr",
             "text": "Lägst pris i jämförelsen men med samma grundspecifikation som de dyrare alternativen: 8 000 mm vattenpelare, svetsade sömmar, fleecefoder och förstärkta knän. Hög bystdel, avtagbar luva, justerbara hängslen, fotöglor och reflexer ingår.",
             "pros": [
               "Lägst pris i jämförelsen, ändå samma vattenpelare (8 000 mm) som dyrare alternativ",
@@ -4602,12 +4604,14 @@
               "Materialet är mindre robust än premiumalternativen vid hård daglig användning",
               "Färgutbudet varierar efter säsong"
             ],
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/ti849q",
+            "img": "https://www.jollyroom.se/storage/5670AE027ACD640EB0827DCB62BCA7A085A27D1868AC37F0F343A1448FB94376/5dcc8ef8c82b48b0969c6845b68b3291/jpg/media/d53fe46bc29c44a196b40c0d077236af/1970197_111497-771-1800_5.jpg"
           },
           {
             "name": "Nordbjørn Skagen",
             "badge": "Bra mellanklass",
-            "price": "Från ca 399–799 kr",
+            "price": "Från ca 449 kr",
             "text": "Varmt fleecefoder i både jacka och byxor, med svetsade sömmar, avtagbar luva, justerbara hängslen och fotöglor. Rymlig passform gör det lätt att lagra kläder under vid riktigt kallt väder.",
             "pros": [
               "Rymlig passform — plats för extra lager underkläder vid kyla",
@@ -4618,12 +4622,14 @@
               "Begränsad andningsförmåga vid intensiv lek i mildare väder",
               "Fleecefodret torkar långsamt om det blir genomblött"
             ],
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/dhxza9",
+            "img": "https://www.jollyroom.se/storage/F03648BCA40D4ABE8FB605D6D3936D9CA51BD878BCEA5FBCD1558A99D2F16E47/68f0b95606574f79869c9429786a892e/jpg/media/76b3153e7a9144d490eb9ceea21b6058/WÄSKAG-2016-2879_5.jpg"
           },
           {
             "name": "Lindberg Fagerhult",
             "badge": "OEKO-TEX-certifierad",
-            "price": "Från ca 650–780 kr",
+            "price": "Från ca 745 kr",
             "text": "OEKO-TEX-certifierat material (testat och certifierat fritt från skadliga ämnen) med slitstarkt PU-ytterskal, polyesterfleece-foder, hög bystdel, förstärkta knän, fickor och reflexer.",
             "pros": [
               "OEKO-TEX-certifierat material",
@@ -4634,7 +4640,9 @@
               "Kan kännas varmt vid intensiv lek",
               "Något högre pris än budgetalternativen"
             ],
-            "buyStore": "Jollyroom"
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/2hgv49",
+            "img": "https://www.jollyroom.se/storage/50C8D61899A8B410525179DBB75A0F3EEEFA1043C64650D8E0D6F9B2E1177AE4/3d8805bf912d4aa79e3903b323ed940a/jpg/media/c955b3ef63754707ac124af435748e84/3365-4204-1796_1.jpg"
           },
           {
             "name": "Mikk-Line Regnställ m. Fleece",
@@ -4651,7 +4659,8 @@
               "Produktsidans materialuppgifter är inkonsekventa (anges både som PU och som polyester/återvunnen polyester)"
             ],
             "buyStore": "Babysam",
-            "img": "https://cdn.babysam.se/5aabc462-7725-4a0d-bd30-16017d6373cb/productdetailthumbnail/33181%20-%20Star%20Sky%20AOP%20-%20Extra%201.jpg"
+            "img": "https://cdn.babysam.se/5aabc462-7725-4a0d-bd30-16017d6373cb/productfeedproductbig/33181%20-%20Star%20Sky%20AOP%20-%20Extra%201.webp",
+            "buyUrl": "https://adtr.co/1h83yl"
           }
         ],
         "sections": [
@@ -4675,7 +4684,7 @@
           }
         ],
         "published": "2026-10-24",
-        "updated": "2026-10-26",
+        "updated": "2026-10-28",
         "img": "photo-1607930232028-f01079639b00"
       }
     ]
