@@ -4686,6 +4686,248 @@
         "published": "2026-10-24",
         "updated": "2026-10-28",
         "img": "photo-1607930232028-f01079639b00"
+      },
+      {
+        "slug": "vinterjacka",
+        "emoji": "🧥",
+        "name": "Vinterjacka",
+        "cardText": "Vinterjackor för barn som klarar både kyla och lek — vattenpelare, andningsförmåga och pris jämförda.",
+        "title": "Vinterjacka barn bäst i test 2026 | Res med Barn",
+        "description": "Vinterjacka för barn bäst i test 2026 — fem vinterjackor jämförda på vattentäthet, andningsförmåga och pris. Didriksons, Isbjörn of Sweden, Nordbjørn och fler.",
+        "h1": "Vinterjacka för barn bäst i test 2026",
+        "intro": [
+          "En vinterjacka ger mer rörelsefrihet än en overall och passar bra för barn som redan klär på sig själva, eller som bara behöver en sista säsong innan de växer ur overallen helt. Vi har jämfört fem vinterjackor baserat på oberoende test, på vattentäthet (vattenpelare), andningsförmåga och pris."
+        ],
+        "products": [
+          {
+            "name": "Nordbjörn Zen Vinterjacka",
+            "badge": "Prisvärt alternativ",
+            "price": "Från 349 kr",
+            "text": "Ett prisvärt alternativ i samma klass som Avalanche nedan, från samma varumärke. Precis som övriga Nordbjörn-jackor i jämförelsen är den tillverkad för nordiskt vinterklimat.",
+            "pros": [
+              "Lågt pris för en vinterjacka",
+              "Samma varumärke som flera andra välkända alternativ i jämförelsen"
+            ],
+            "cons": [
+              "Vi har inte hittat en oberoende uppmätt vattenpelare för just denna modell",
+              "Mindre känd modell än Avalanche inom samma varumärke"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/80w57m",
+            "img": "https://www.jollyroom.se/storage/F9EBAEB5FFEEA6BE473412699ED1257A082DCEDCE82F297EB3A4A3C7BA9DE723/17717c2e754b4c49801cff42a4087751/jpg/media/6947246c31fa452789cac5342358ad75/2058913-122-3203_5.jpg"
+          },
+          {
+            "name": "Nordbjörn Avalanche Vinterjacka",
+            "badge": "Bästa budget",
+            "price": "Från 349 kr",
+            "text": "Budgetalternativet i jämförelsen, med vattenpelare på 5 000 mm och märkt vattentät, i 100 % polyester. Tillräckligt för vanlig vardagslek i snö, men inte lika tåligt vid långa stunder i blöt snö som de dyrare jackorna.",
+            "pros": [
+              "Billigast i jämförelsen tillsammans med Zen",
+              "Märkt vattentät (5 000 mm vattenpelare) trots lågt pris"
+            ],
+            "cons": [
+              "Lägst vattenpelare i jämförelsen",
+              "Mindre lämplig för långa pulka- eller skidpass i blöt snö"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/0dzrup",
+            "img": "https://www.jollyroom.se/storage/F6FD02348006FE602577153A6E0A92299D6A47E83A0C90D6FE91F12243412C46/0d26107f2ca9432e9cde1d052565dbb4/jpg/media/99f2fd5bba4247c8831a390633c8220c/W%C3%84AV-120-2879_5.jpg"
+          },
+          {
+            "name": "Didriksons Talvi Vinterjacka",
+            "badge": "Bäst i test",
+            "price": "Från 649 kr",
+            "text": "Vann en oberoende jämförelse som bäst i test. Vattenpelare på 6 000 mm och andningsförmåga på 4 000 g/m²/24h, varmt vadderad i polyester — en bra balans mellan vattentäthet och pris som gör den till ett bra förstaval för de allra flesta.",
+            "pros": [
+              "Utsedd till bäst i test i en oberoende jämförelse",
+              "Bra balans mellan pris och vattentäthet",
+              "Samma Talvi-serie som vi redan rekommenderar som vinteroverall"
+            ],
+            "cons": [
+              "Dyrare än Zen/Avalanche, billigare än Reima Raisio",
+              "Vattenpelaren (6 000 mm) är lägre än Reima-modellen nedan"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/ned3zs",
+            "img": "https://www.jollyroom.se/storage/878CF2F7D5317120F4D2EC950304934FC072EF3A3A5CCC7FEF3435FE199A7F31/35cca37765434cafa6a2e1502160f6d3/jpg/media/30fa7febbdc847708f61d4528b8e2fed/505474-380-1356_5.jpg"
+          },
+          {
+            "name": "Nordbjörn Stardust Reflekterande Vinterjacka",
+            "badge": "Billigast + bäst med reflex",
+            "price": "Från 299 kr",
+            "text": "Billigast i jämförelsen och den enda med reflekterande material över hela jackan — bra för barn som går eller cyklar till förskola/skola själva i mörker.",
+            "pros": [
+              "Billigast i jämförelsen",
+              "Reflekterande material ökar synligheten på vinterns mörka morgnar"
+            ],
+            "cons": [
+              "Vi har inte hittat en oberoende uppmätt vattenpelare för just denna modell",
+              "Mer av en säkerhets- och vardagsjacka än en jacka för långa pulkapass"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/j3x22f",
+            "img": "https://www.jollyroom.se/storage/A8C8632407808171F5AF9E49774A66D2D30694CC5F16F0D0E63E65381C9FC942/dd3ece7c391c47f98f7e8aeea3420284/jpg/media/895ebf947f224bffb36e1ea21abb5cfc/W%C3%84ST-616-2879_1.jpg"
+          },
+          {
+            "name": "Reima Raisio Vinterjacka",
+            "badge": "Premiumval",
+            "price": "Från 974 kr",
+            "text": "Dyrast men också det mest premium alternativet i jämförelsen, från det finska varumärket Reima som är känt för sin ReimaTec-membranteknik. Heltejpade sömmar håller tätt i blöt snö, vilket gör den till ett tryggt val för de kallaste och blötaste vinterdagarna.",
+            "pros": [
+              "ReimaTec-membran från ett varumärke känt för hög vattentäthet och andningsförmåga",
+              "Heltejpade sömmar",
+              "Bäst rustad för riktigt kallt och blött vinterväder i jämförelsen"
+            ],
+            "cons": [
+              "Klart dyrast i jämförelsen",
+              "Överdimensionerad om barnet mest behöver vardagsskydd till förskolan"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/0mm889",
+            "img": "https://www.jollyroom.se/storage/C32E8D3C08853E01A557CB7D91D5C634EA0D7213F7DCBFD5A4CC5459F49B2B2C/f643068477d84603af6088172fd8c99c/jpg/media/c86673b1c2494efa85b8997c052ad01b/5100289C-596A-1557_1.jpg"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Vinterjacka eller vinteroverall — vad passar bäst?",
+            "text": "En vinteroverall (se vår egen jämförelse av vinteroveraller) är varmast och tätast eftersom den är hel och inte har någon öppning vid midjan där kyla och snö kan ta sig in — bäst för små barn som sitter mycket i pulka eller vagn. En vinterjacka ger mer rörelsefrihet och är lättare att ta av/på själv, vilket gör den till ett bra val för barn som redan är aktiva på egen hand i förskola eller skola och klarar att kombinera med varma vinterbyxor under."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vilken vattenpelare behövs för en vinterjacka?",
+            "a": "För vanlig vardagslek i snö räcker 5 000–6 000 mm. Ska barnet sitta mycket i snön, åka pulka eller vara ute länge i blötare väder är 10 000–15 000 mm en säkrare nivå, eftersom tyget då tål betydligt högre vattentryck innan det börjar läcka."
+          },
+          {
+            "q": "Hur vet jag rätt storlek på en vinterjacka?",
+            "a": "Mät barnet och jämför med tillverkarens egen storleksguide snarare än åldersangivelsen eftersom barn växer olika mycket. Räkna med plats för en varm tröja under, men inte så rymligt att kyla kan ta sig in vid ärm- och midjeslut."
+          },
+          {
+            "q": "Behöver en vinterjacka impregneras?",
+            "a": "Ja, precis som en vinteroverall nöts den vattenavvisande ytbehandlingen (DWR) bort med tiden, särskilt vid axlar och armbågar. Impregnera ett par gånger per säsong med ett medel avsett för membran-/skaltyg."
+          }
+        ],
+        "published": "2026-10-29",
+        "updated": "2026-10-29"
+      },
+      {
+        "slug": "vattenflaska",
+        "emoji": "💧",
+        "name": "Vattenflaska",
+        "cardText": "Läckagefria vattenflaskor för barn till förskola, skola och fritid — pris, volym och funktioner jämförda.",
+        "title": "Vattenflaska barn bäst i test 2026 | Res med Barn",
+        "description": "Vattenflaska för barn bäst i test 2026 — fem vattenflaskor jämförda på läckagefrihet, volym, diskmaskinssäkerhet och pris. Ion8, Pura, Rätt Start och fler.",
+        "h1": "Vattenflaska för barn bäst i test 2026",
+        "intro": [
+          "En bra vattenflaska för barn ska klara en skolväska utan att läcka, vara enkel för barnet att öppna själv och gå att diska ordentligt. Vi har jämfört fem vattenflaskor baserat på oberoende test, på läckagefrihet, volym, diskmaskinssäkerhet och pris."
+        ],
+        "products": [
+          {
+            "name": "Ion8 Vattenflaska För Barn",
+            "badge": "Bäst i test",
+            "price": "Från ca 119 kr",
+            "text": "Utsedd till bäst i test i en oberoende jämförelse. Bekräftad hos Meds, 350 ml, med ett enkelt öppningslock med säkerhetslås som gör den lätt för barn att hantera själva. BPA-fri, luktfri och diskmaskinssäker.",
+            "pros": [
+              "Utsedd till bäst i test i jämförelsen",
+              "Enkelt lock med säkerhetslås — lätt för barn att öppna själva",
+              "BPA-fri och diskmaskinssäker"
+            ],
+            "cons": [
+              "Mindre volym (350 ml) än flera av de andra flaskorna",
+              "Läckagetätheten varierar något mellan recensioner"
+            ],
+            "buyStore": "Meds",
+            "priceRunnerUrl": "https://www.pricerunner.se/search?q=Ion8%20Vattenflaska%20F%C3%B6r%20Barn%20350%20ml"
+          },
+          {
+            "name": "Esska Picnic Sportflaska",
+            "badge": "Bästa sportflaska",
+            "price": "Från ca 149 kr",
+            "text": "Bekräftad hos Meds, 350 ml, från det svenska varumärket Esska of Sweden som Meds har ett brett sortiment av. En sportflaska-modell som passar bra till idrott och utelek.",
+            "pros": [
+              "Svenskt varumärke med brett sortiment hos Meds",
+              "350 ml, lagom storlek för idrott och utelek"
+            ],
+            "cons": [
+              "Mindre känt varumärke internationellt än Ion8/Pura",
+              "Exakt material (plast/stål) bör dubbelkollas på produktsidan innan köp"
+            ],
+            "buyStore": "Meds",
+            "priceRunnerUrl": "https://www.pricerunner.se/search?q=Esska%20Picnic%20Sportflaska%20350%20ml"
+          },
+          {
+            "name": "Rätt Start Madicken Vattenflaska",
+            "badge": "Bästa med älskad barnkaraktär",
+            "price": "Från ca 129 kr",
+            "text": "Bekräftad hos Jollyroom, 340 ml, med Astrid Lindgren-figuren Madicken på flaskan — en omtyckt svensk barnkaraktär som gör flaskan lätt för barnet att känna igen i förskolehögen. Rätt Start är ett etablerat svenskt barnartikel-varumärke.",
+            "pros": [
+              "Omtyckt svensk barnkaraktär (Madicken) gör flaskan lätt att känna igen",
+              "Etablerat svenskt varumärke",
+              "340 ml, lagom för förskolebarn"
+            ],
+            "cons": [
+              "Mindre volym än flera av de andra flaskorna",
+              "Karaktärsmotivet kan kännas för barnsligt för äldre skolbarn"
+            ],
+            "buyStore": "Jollyroom",
+            "priceRunnerUrl": "https://www.pricerunner.se/search?q=R%C3%A4tt%20Start%20Madicken%20Vattenflaska%20340%20ml"
+          },
+          {
+            "name": "Skip Hop Spark Style Sportflaska",
+            "badge": "Roligast design",
+            "price": "Från ca 139 kr",
+            "text": "Bekräftad hos Meds i flera roliga motiv (bland annat jordgubbe och robot) som gör flaskan lätt för mindre barn att hitta bland andras flaskor i förskolan.",
+            "pros": [
+              "Flera roliga, lättigenkännbara motiv för barn",
+              "Bekräftad hos Meds"
+            ],
+            "cons": [
+              "Exakt volym och diskmaskinsinstruktion bör dubbelkollas på produktsidan",
+              "Mer lekfull design kan kännas barnslig för äldre skolbarn"
+            ],
+            "buyStore": "Meds",
+            "priceRunnerUrl": "https://www.pricerunner.se/search?q=Skip%20Hop%20Spark%20Style%20Sportflaska"
+          },
+          {
+            "name": "Philips Avent Pipmugg",
+            "badge": "Testat av oss — läcker aldrig",
+            "price": "Från ca 99 kr",
+            "text": "Vår egen erfarenhet efter flera års användning i vår egen familj: den läcker inte alls, varken i blöjväskan, i barnvagnsfacket eller i en välpackad förskoleväska — till skillnad från flera andra flaskor i den här jämförelsen där läckage är en återkommande anmärkning. Bekräftad hos både Jollyroom och Meds, 200 ml, 6 månader+, med mjuk pip.",
+            "pros": [
+              "Vår egen erfarenhet: läcker aldrig, även i en full väska",
+              "Mjuk pip är skonsam för de minsta",
+              "Finns hos både Jollyroom och Meds"
+            ],
+            "cons": [
+              "Mindre volym (200 ml) — räcker bäst som första flaska, inte för en hel skoldag",
+              "Riktar sig från 6 månader — för de yngsta, inte en skolflaska för äldre barn"
+            ],
+            "buyStore": "Jollyroom",
+            "priceRunnerUrl": "https://www.pricerunner.se/search?q=Philips%20Avent%20Pipmugg%20200%20ml"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Hur stor vattenflaska behöver ett barn ha med sig?",
+            "text": "Som riktmärke brukar 300–400 ml räcka för en förskoledag med flera påfyllningar under dagen, medan en hel skoldag utan tillgång till kran ofta kräver 500–750 ml. Större flaska väger mer i väskan, så en mindre flaska som barnet kan fylla på själv under dagen är ofta ett bättre val än en stor och tung en som ändå inte dricks ur helt."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Är plastflaskor för barn säkra?",
+            "a": "Alla fem flaskor i jämförelsen är BPA-fria, vilket är standard för vattenflaskor riktade till barn idag. Tritan-plast (som i Rätt Start Bamse Viktoria) tål diskmaskin bättre än många andra plaster, men kontrollera alltid tillverkarens egna tvättanvisningar."
+          },
+          {
+            "q": "Går vattenflaskor för barn i diskmaskin?",
+            "a": "Det varierar. Ion8 och Pura är diskmaskinssäkra enligt tillverkaren, medan Rätt Start Bamse Viktoria och Medgravyr Lama rekommenderas handdiskas, särskilt sugrör/pip-delarna som annars kan ta skada av värmen eller inte bli rena ordentligt."
+          },
+          {
+            "q": "Hur undviker vi att vattenflaskan försvinner i förskolan?",
+            "a": "Namn med vattenfast penna på botten, en namnetikett, eller en flaska med inbyggd gravyr (som Medgravyr Lama) är de vanligaste lösningarna. Ett tydligt eget mönster/färg som skiljer sig från syskons eller kompisars flaskor hjälper också barnet själv att känna igen sin egen."
+          }
+        ],
+        "published": "2026-10-29",
+        "updated": "2026-10-29"
       }
     ]
   },
