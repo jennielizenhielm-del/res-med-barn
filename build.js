@@ -845,7 +845,9 @@ function activityCard(act) {
       <span class="meta-chip">${act.indoor ? '🏠 Inomhus' : '🌳 Utomhus'}</span>
       <span class="meta-chip">📍 ${esc(act.area)}</span>
       ${act.dateInfo ? `<span class="meta-chip">📅 ${esc(act.dateInfo)}</span>` : ''}
+      ${act.note ? `<span class="meta-chip meta-chip-note">⚠️ ${esc(act.note)}</span>` : ''}
     </div>
+    ${act.familyCost ? `<p class="activity-family-cost">👨‍👩‍👧‍👦 ${esc(act.familyCost)}</p>` : ''}
   </article>`;
 }
 
@@ -1017,6 +1019,7 @@ ${media(l.img, l.emoji, 'page-hero', 1400, null, l.imgPos)}
 <div class="activity-grid">
   ${l.tips.map(activityCard).join('')}
 </div>
+${l.totalCost ? `<p class="lov-total-cost">💰 ${esc(l.totalCost)}</p>` : ''}
 ${faqHtml(l.faq)}
 <h2 class="section-title">${esc(l.lovName)} i andra städer</h2>
 <div class="related-links">

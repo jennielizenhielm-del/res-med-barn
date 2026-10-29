@@ -4693,7 +4693,7 @@
         "name": "Vinterjacka",
         "cardText": "Vinterjackor för barn som klarar både kyla och lek — vattenpelare, andningsförmåga och pris jämförda.",
         "title": "Vinterjacka barn bäst i test 2026 | Res med Barn",
-        "description": "Vinterjacka för barn bäst i test 2026 — fem vinterjackor jämförda på vattentäthet, andningsförmåga och pris. Didriksons, Isbjörn of Sweden, Nordbjørn och fler.",
+        "description": "Vinterjacka för barn bäst i test 2026 — fem vinterjackor jämförda på vattentäthet, andningsförmåga och pris. Didriksons, Nordbjörn och Reima.",
         "h1": "Vinterjacka för barn bäst i test 2026",
         "intro": [
           "En vinterjacka ger mer rörelsefrihet än en overall och passar bra för barn som redan klär på sig själva, eller som bara behöver en sista säsong innan de växer ur overallen helt. Vi har jämfört fem vinterjackor baserat på oberoende test, på vattentäthet (vattenpelare), andningsförmåga och pris."
@@ -5105,31 +5105,33 @@
                 "ageMax": 18,
                 "indoor": true,
                 "area": "Frescati",
-                "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — en säker vinnare om vädret krånglar. Cosmonova-planetariet kostar extra.",
-                "link": "https://www.nrm.se/"
+                "desc": "Dinosaurier, rymden och Sveriges natur under ett tak — huvudutställningarna är fria för alla under 19 år, medan Cosmonovas planetariefilmer kostar extra (ca 100 kr för barn, 160 kr för vuxna). Under höstlovet (24 okt–1 nov) har museet öppet alla dagar kl. 10–17, även måndagar.",
+                "link": "https://www.nrm.se/",
+                "familyCost": "Huvudutställningarna gratis — Cosmonova för hela familjen (2 vuxna + 2 barn): ca 520 kr extra"
               },
               {
                 "name": "Nordiska museet",
                 "type": "free",
-                "price": "Gratis vardagar under höstlovet (annars 75 kr, barn 3–18 år)",
+                "price": "75 kr barn 3–18 år (gäller alltid, även under lov)",
                 "ageMin": 3,
                 "ageMax": 18,
                 "indoor": true,
                 "area": "Djurgården",
-                "desc": "Svensk kulturhistoria i ett slottsliknande hus — klädkammare och lekrum som funkar bra även för de yngsta.",
-                "dateInfo": "Gratis mån–fre under lovet",
+                "desc": "Nordiska museets höstlovsprogram bjuder på Lekstugan, där barn från 5 år kläs ut som pigor och drängar och gör sysslor från 1890-talet, och Tidsvalvet, en tidsresa genom en magisk portal från 1870-talet till idag (från 8 år). Det finns även ljudguidade uppdrag (Uppdrag: Väsen, Uppdrag: Arktis), en dockskåpsjakt i Stora hallen och våfflor i Café Lusknäppen.",
+                "dateInfo": null,
                 "link": "https://nordiskamuseet.se/"
               },
               {
                 "name": "Junibacken",
                 "type": "paid",
-                "price": "Från ca 189 kr",
+                "price": "Från ca 140 kr (onlinepris)",
                 "ageMin": 1,
                 "ageMax": 8,
                 "indoor": true,
                 "area": "Djurgården",
-                "desc": "Sagomuseum med tågresa genom Astrid Lindgrens värld och stor lekvärld — ett säkert regnalternativ.",
-                "link": "https://www.junibacken.se/"
+                "desc": "Sagomuseum med tågresa genom Astrid Lindgrens sagovärld, pjäser och stor lekvärld inomhus — ett säkert regnalternativ. Under höstlovet spelas den spökiga pjäsen \"Skinn Skerping\" (baserad på en Astrid Lindgren-berättelse) på vardagar för barn från 5 år, och barn som kommer utklädda bjuds på glass.",
+                "link": "https://www.junibacken.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): från ca 560 kr (onlinepris)"
               },
               {
                 "name": "Skansen",
@@ -5139,8 +5141,9 @@
                 "ageMax": 16,
                 "indoor": false,
                 "area": "Djurgården",
-                "desc": "Djurpark och friluftsmuseum — klär man sig varmt funkar det fint även i höstkylan.",
-                "link": "https://www.skansen.se/"
+                "desc": "Djurpark och friluftsmuseum som satsar extra under höstlovet: skelettskola i Rovdjurshuset, spökhistorier vid Bak-Mats stuga och en labyrint (från 5 år) ingår i vanlig entré. På kvällarna 24 samt 28–31 oktober (kl. 15–19) blir det Halloween med bokningsbar godisrunda, pumpaddisco och fackeltåg/parad — barn 0–15 år går alltid gratis in.",
+                "link": "https://www.skansen.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 520 kr — barn under 15 år gratis"
               },
               {
                 "name": "Höstlovspyssel på biblioteken",
@@ -5150,7 +5153,7 @@
                 "ageMax": 12,
                 "indoor": true,
                 "area": "Flera bibliotek i Stockholm",
-                "desc": "Många av stadens bibliotek kör pyssel och sagostunder under lovveckan — kolla aktuellt program på biblioteket närmast er.",
+                "desc": "Flera av Stockholms bibliotek kör eget höstlovsprogram vecka 44: Hässelby villastads bibliotek bjuder på gemensam monstermålning, Blackebergs bibliotek har en kalasvecka med pyssel kring boken om Sommarskuggan, och Kista och Husby bibliotek ordnar tipsrundor om spel. Programmet varierar mellan stadsdelarna, så kolla aktuellt schema för biblioteket närmast er.",
                 "dateInfo": "Vecka 44",
                 "link": "https://biblioteket.stockholm.se/"
               },
@@ -5162,8 +5165,8 @@
                 "ageMax": 18,
                 "indoor": true,
                 "area": "Östermalm",
-                "desc": "360°-upplevelse med dinosaurier i naturlig storlek, inspirerad av Apple TV-serien Prehistoric Planet. 55 minuter långt, extra visningar under höstlovet.",
-                "dateInfo": "Extra visningar under höstlovet, pågår t.o.m. 10 januari",
+                "desc": "360°-upplevelse med dinosaurier i naturlig storlek, inspirerad av Apple TV-serien Prehistoric Planet. 55 minuter långt, visningar varje halvtimme.",
+                "dateInfo": "Visningar var 30:e minut, pågår t.o.m. 10 januari 2027",
                 "link": "https://elverket.com/produktioner/prehistoric-planet-discovering-dinosaurs"
               },
               {
@@ -5174,21 +5177,22 @@
                 "ageMax": 10,
                 "indoor": true,
                 "area": "Djurgården",
-                "desc": "Spökvisningar för barn 6–10 år, sagostund för 4–6-åringar, pyssel i \"Ruskpricken\" och en spökig tipspromenad för hela familjen.",
+                "desc": "Familjevisningen \"Sjöspöken och gastar\" för barn 6–10 år, sagostunden \"Sagostund för små spökjägare\" för 4–6-åringar, båtbygge i skaparverkstaden Ruskpricken och en spökig tipspromenad med litet pris för hela familjen.",
                 "dateInfo": "24 okt–1 nov, kl. 10–17",
                 "link": "https://www.sjohistoriska.se/besok/kalender/lov/hostlov-2026"
               },
               {
-                "name": "Nobel Prize Museum: Familjeworkshop – celler och akvareller",
+                "name": "Nobel Prize Museum: Pyssla på höstlovet",
                 "type": "paid",
-                "price": "180 kr/person",
-                "ageMin": 7,
+                "price": "160 kr vuxen, gratis under 18 år (pysslet ingår i entrén)",
+                "ageMin": 6,
                 "ageMax": 12,
                 "indoor": true,
                 "area": "Gamla stan",
-                "desc": "Guidad visning av utställningen \"Celler, nerver, gener\" följt av akvarellmålning av celler tillsammans med en forskare från Karolinska Institutet. Fika ingår.",
-                "dateInfo": "26 okt, bokningsbara tider 09:30 och 13:00",
-                "link": "https://www.nobelprizemuseum.se/program/familjeworkshop-celler-och-akvareller/"
+                "desc": "Höstlovets pysselbord ersätter höstens ordinarie tema \"Kemi eller trolleri?\" med äppelträd, svampbrickor och annat höstpyssel för barn 6–12 år. Drop-in, ingår i vanlig museientré — vuxna betalar 160 kr, barn och unga under 18 år går alltid gratis. Vi har inte hittat uppgift om förbokning krävs, så dubbelkolla med museet innan ni räknar in det i dagsplaneringen.",
+                "dateInfo": "27 okt–1 nov, kl. 11–16",
+                "link": "https://www.nobelprizemuseum.se/program/pyssla-pa-hostlovet/",
+                "familyCost": "Familj (2 vuxna + 2 barn): 320 kr — barn och unga under 18 år gratis"
               },
               {
                 "name": "Siggesta Gård: Pimpa din pumpa",
@@ -5198,9 +5202,10 @@
                 "ageMax": 13,
                 "indoor": false,
                 "area": "Värmdö (ca 40 min från Slussen)",
-                "desc": "Pyssla med naturmaterial och pumpor utomhus tillsammans med Lina vid Viken, avslutas med grillad korv. Ta med egen matsäck om ni vill.",
+                "desc": "Pyssla med naturmaterial och pumpor utomhus tillsammans med naturguiden Lina, avslutas med grillad korv och festis. Ta med egen matsäck om ni vill ha mer.",
                 "dateInfo": "30 okt, kl. 11–13.30",
-                "link": "https://www.siggestagard.se/aktiviteter/hostlovsaktivitet-pa-siggesta-gard-pimpa-din-pumpa"
+                "link": "https://www.siggestagard.se/aktiviteter/hostlovsaktivitet-pa-siggesta-gard-pimpa-din-pumpa",
+                "familyCost": "Familj (2 vuxna + 2 barn): 1 000 kr (250 kr/person)"
               },
               {
                 "name": "Vrak – Museum of Wrecks: Höstlovsäventyr",
@@ -5210,7 +5215,7 @@
                 "ageMax": 18,
                 "indoor": true,
                 "area": "Djurgården",
-                "desc": "Spökjakt med ficklampa efter stängning, LEGO-bygge med Stefan Eriksson, familjevisning, vikingautmaningar, VR-dykning och museikluring under hela lovveckan.",
+                "desc": "Fri entré för barn och unga upp till 18 år under höstlovsäventyret (26 okt–1 nov). Vardagar 26–30 okt bygger brickkonstnären Stefan Eriksson tillsammans med besökarna i \"Bygg med klossmagikern Stefan\", och ficklampsäventyret \"Vem vågar jaga vrakspöket\" lockar så många att det snabbt blir fullbokat. Hela veckan går det även att testa VR-upplevelsen \"Dyk utan att bli blöt\", som annars finns på museet året runt.",
                 "dateInfo": "26 okt–1 nov, kl. 10–17",
                 "link": "https://www.vrak.se/besok/kalender/26-okt---1-nov-hostlovsaventyr-pa-vrak"
               }
@@ -5226,7 +5231,7 @@
               }
             ],
             "published": "2026-10-07",
-            "updated": "2026-10-27",
+            "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026"
           },
           {
@@ -6247,7 +6252,7 @@
                 "ageMax": 16,
                 "indoor": false,
                 "area": "Korsvägen",
-                "desc": "30 000 pumpor, spökhus och \"mys och rys\" för hela familjen.",
+                "desc": "Skräckhusen som Zombie och Nattsvart på Gasten kräver minst 11 år, och skräckzonerna med skådespelare som hoppar fram drar igång klockan 18 — men barnvänliga Sagoskogen och Kaninlandet har ingen åldersgräns och bjuder på pumpor, snälla väsen och godisjakt hela dagen. Barn under 110 cm kommer in gratis, annars börjar onlinebiljetter på 125 kr, men priserna kan ändras så kolla aktuellt pris på liseberg.se.",
                 "dateInfo": "2 okt–1 nov 2026",
                 "link": "https://www.liseberg.se/"
               },
@@ -6259,7 +6264,7 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Korsvägen",
-                "desc": "Tre nya utställningar om naturens mörkaste hemligheter — bra regnalternativ.",
+                "desc": "Tre nya skräckvärldar under temat \"Naturens mörkaste hemligheter\": i Professor Mycels biolabb (från 8 år) löser man pussel bland mögelangripna rör, i Galleri Parasit (från 10 år) kryper man genom en trång gång full av larver och armémyror, och i Spindelvinden (från 5 år) klättrar barnen över ett jättespindelnät och möter en enorm spindel. Under höstlovet (24–31 okt) har Universeum förlängt öppet till klockan 19.",
                 "dateInfo": "29 sep–1 nov 2026",
                 "link": "https://www.universeum.se/"
               },
@@ -6271,19 +6276,19 @@
                 "ageMax": 10,
                 "indoor": true,
                 "area": "Världskulturmuseet",
-                "desc": "Pyssel, verkstäder och föreställningar kring den mexikanska högtiden.",
+                "desc": "Höstlovsfirandet av den mexikanska högtiden Día de Muertos, arrangerat med Mexikanska föreningen i Göteborg, bjuder på gratis drop-in-pyssel som dödskallemasker och ett mexikanskt gravaltare (ofrenda) i ateljén. Den dansande skelettmarionetten kostar 10 kr att testa, och klockan 13–14.30 visas en animerad film som rekommenderas från 7 år. Vill man boka i förväg kan man även göra egna piñatas eller pappersblommor i verkstäderna.",
                 "dateInfo": "24 okt–2 nov 2026",
                 "link": "https://www.varldskulturmuseet.se/"
               },
               {
-                "name": "Svampvandring i Botaniska trädgården",
+                "name": "Höstlov i Botaniska trädgården",
                 "type": "free",
-                "price": "Gratis ute, växthusen 50 kr",
+                "price": "Gratis entré (frivillig gåva 30 kr)",
                 "ageMin": 2,
                 "ageMax": 14,
                 "indoor": false,
                 "area": "Änggården",
-                "desc": "Höstklassiker — svampexperter visar runt, och barnen kan pyssla igelkottar av naturmaterial.",
+                "desc": "Höstlovsaktiviteten heter \"Sov gott lilla igelkott\" (27–29 okt, kl 13–16): barnen pysslar ihop igelkottar av kvistar och löv och går en tipspromenad om hur djuren bäddar bo inför vintern. Den guidade svampvandringen med expert hölls redan 4 oktober, före lovet — räkna inte med en svampguide på plats denna vecka. Entrén är gratis (frivillig gåva 30 kr), men växthusen är stängda för ombyggnad till 2030.",
                 "link": "https://www.botaniska.se/"
               }
             ],
@@ -6298,7 +6303,7 @@
               }
             ],
             "published": "2026-10-07",
-            "updated": "2026-10-07",
+            "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026"
           }
         ]
@@ -6442,7 +6447,7 @@
                 "ageMax": 16,
                 "indoor": false,
                 "area": "Möllevången",
-                "desc": "Lagom läskigt och rysligt kul — teater, scenkonst och musik för barn och familj, inomhus och utomhus i parken.",
+                "desc": "Hela veckan fylls parken med lagom läskiga föreställningar: cirkusshowen Cirkus Omöjligt, trollkonstnären Andrea Lang och monsterrockshowen Återuppståndelsen med Skräckkabinettet, plus eldshower med Pangea. På lördagen blir det spökdisco och rullskridskodisco (hjälm krävs för barn under 15) — allt helt gratis. Vissa program är inomhus i Moriska Paviljongen, andra utomhus, så kolla dagsschemat.",
                 "dateInfo": "26–31 okt 2026",
                 "link": "https://malmo.se/Folkets-Park.html"
               },
@@ -6454,7 +6459,7 @@
                 "ageMax": 17,
                 "indoor": true,
                 "area": "Hyllie",
-                "desc": "Sjöjungfrusim, vattendisco och hopptorn/hinderbana i Simmet, plus lovfika i kaféet (45 kr). Fullständigt dagsschema på Hylliebadets egen sida.",
+                "desc": "Höstlovsveckan bjuder på sjöjungfrusim, vattendisco och hopptorn/hinderbana i lekbassängen Simmet — bra variation för både de minsta och de som vill busa loss. Det ordinarie 3-meters hopptornet och vattenhinderbanan är öppna som vanligt, och i kaféet finns lovfika för 45 kr. Fullständigt dagsschema för veckan ligger på Hylliebadets egen sida, så kolla innan ni åker.",
                 "dateInfo": "23 okt–1 nov 2026",
                 "link": "https://malmo.se/Uppleva-och-gora/Bada-och-simma/Hylliebadet/Familjebad--vattenlek/Lovaktiviteter/Hostlov.html"
               },
@@ -6466,7 +6471,7 @@
                 "ageMax": 3,
                 "indoor": true,
                 "area": "Moderna Museet Malmö",
-                "desc": "Drop-in konstverkstad för de minsta och deras vuxna, med pyssel och en kort visning ur barnens perspektiv.",
+                "desc": "Drop-in konstverkstad för barn 1–3 år och deras vuxna, varje tisdag kl 14–16.30 i Verkstan — ingen föranmälan behövs. Barnen får pyssla med material och lek, och en kort visning tar gruppen igenom utställningen ur barnens perspektiv. Två konstpedagoger finns alltid på plats, och det går bra att ta en fika och umgås efteråt. Fri entré för barn och en medföljande vuxen.",
                 "dateInfo": "Tisdagar, ingen föranmälan",
                 "link": "https://malmo.se/museum"
               },
@@ -6478,8 +6483,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Skeppsbron",
-                "desc": "Bra regnalternativ med naturhistoria, akvarium och lekmöjligheter för de yngsta.",
-                "link": "https://malmo.se/museum"
+                "desc": "Bra regnalternativ med Naturmuseets dinosaurieutställning Skånska dinosaurier och andra jättegamla djur, Akvariet (dykvisning på torsdagar) och Båtlekrummet för de yngsta. Under höstlovsveckan bjuds det även på spökhistorier i Fångtornet och sockerbetslyktor att pyssla ihop i Kommendanthuset. Barn och unga upp till 19 år har fri entré, vuxna betalar 100 kr för kombibiljett till alla husen.",
+                "link": "https://malmo.se/museum",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 200 kr — barn och unga under 19 år gratis"
               }
             ],
             "faq": [
@@ -6493,7 +6499,7 @@
               }
             ],
             "published": "2026-10-07",
-            "updated": "2026-10-07",
+            "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026"
           }
         ]
@@ -6634,11 +6640,12 @@
                 "type": "paid",
                 "price": "70 kr vuxen, gratis för barn",
                 "ageMin": 4,
-                "ageMax": 16,
+                "ageMax": 17,
                 "indoor": true,
                 "area": "Norbyvägen",
-                "desc": "Uppsala universitets museum med dinosaurieben och över 5 000 utställda djur. Biljetten gäller både zoologi- och paleontologidelen.",
-                "link": "https://www.uu.se/evolutionsmuseet/"
+                "desc": "Uppsala universitets naturhistoriska museum med Nordens största samling av äkta dinosaurieskelett, plus utställningar om mineraler, fossil och människans utveckling i zoologi- och paleontologibyggnaderna. Biljetten gäller båda husen, och barn och unga upp till 17 år går alltid in gratis. Höstlovsprogrammet varierar år till år – kolla uu.se/evolutionsmuseet/program för aktuella visningar innan ni åker.",
+                "link": "https://www.uu.se/evolutionsmuseet/",
+                "familyCost": "Familj (2 vuxna + 2 barn): 140 kr — barn går alltid gratis"
               },
               {
                 "name": "Biotopia",
@@ -6648,7 +6655,7 @@
                 "ageMax": 12,
                 "indoor": true,
                 "area": "Centrala Uppsala, vid slottet",
-                "desc": "Naturmuseum med dioramor över Upplands djurliv, akvarium och en egen barnhörna. Fri entré för alla, bra regndagsalternativ.",
+                "desc": "Naturmuseum med levande miljöer över Upplands natur – skärgård, fågelsjö, vinterland och skog – fyllda med ljud, ljus och dofter som visar djuren på nära håll. Under höstlovet (24 okt–1 nov) ordnas en gratis återbruksverkstad där barnen syr egna djuromasker och svansar, gör pumpadynor och figurer av toarullar. Fri entré alltid, mitt i centrala Uppsala vid slottet.",
                 "link": "https://biotopia.nu/"
               },
               {
@@ -6659,8 +6666,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Fyrislund",
-                "desc": "Äventyrsbad med rutschkanor, vågmaskin och djungeltema inomhus, plus utomhusbassäng på sommaren. Familjebiljett (1 vuxen + 2 barn) för 275 kr.",
-                "link": "https://fyrishov.se/bad/aventyrsbad/"
+                "desc": "Äventyrsbad med två rutschkanor (en interaktiv med ljud, ljus och poängräkning), jetströmkanal, vattenfall, en liten grotta att simma in i samt vattenkanoner och lekvatten för de minsta, allt i 30-gradigt vatten. Bassängdjupet går från 30 cm till 1,2 m. Familjebiljett (1 vuxen + 2 barn) kostar 275 kr, men på helger och under skollov gäller högre dagspriser (115 kr vuxen, 95 kr barn 4–15 år).",
+                "link": "https://fyrishov.se/bad/aventyrsbad/",
+                "familyCost": "Familj (2 vuxna + 2 barn), lovpris: ca 420 kr"
               },
               {
                 "name": "Turbo Sport & Adventure Zone",
@@ -6670,8 +6678,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Gränbystaden",
-                "desc": "Studsmattepark med 51 studsmattor, ninja warrior-bana, klättring och dunk zone för de minsta. Barn under 10 år måste ha vuxen med sig.",
-                "link": "https://turbosportzone.se/"
+                "desc": "Studsmattepark med 51 studsmattor, dunk zone, stuntzon, parkourbana och Ninja Warrior-bana, plus klättring (Klättring Extreme) vid fasta tider varje timme 11–17 och en 60 kvm lekyta för de allra minsta (0–3 år). Studsmattestrumpor är obligatoriska för alla, även vuxna, 49 kr paret om ni saknar egna. Barn under 10 år måste ha en vuxen med sig hela besöket.",
+                "link": "https://turbosportzone.se/",
+                "note": "Barn under 10 år: vuxen måste följa med"
               }
             ],
             "faq": [
@@ -6685,7 +6694,7 @@
               }
             ],
             "published": "2026-10-09",
-            "updated": "2026-10-28",
+            "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026"
           }
         ]
@@ -6828,8 +6837,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Umeå centrum",
-                "desc": "Interaktivt vetenskapscenter med hands-on-experiment och en kupolformad filmsal. Barn och ungdomar har alltid fri entré.",
-                "link": "https://www.curiosum.umu.se/en/"
+                "desc": "Vetenskapscentret har bytt namn på kupolbiografen till Wisdome Umeå och erbjuder också robotprogrammering, labbexperiment och ett Makerspace att bygga i. Barn och ungdomar upp till 19 år har alltid fri entré, medan vuxna betalar 120 kr på helger och skollov. Barn under 13 år måste ha en vuxen med sig, max fyra barn per vuxen.",
+                "link": "https://www.curiosum.umu.se/en/",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 240 kr — barn och ungdom 0–19 år alltid gratis"
               },
               {
                 "name": "Navet",
@@ -6839,18 +6849,19 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Umeå centrum",
-                "desc": "Modernt badhus med äventyrsbassäng, rutschkanor och strömkanal. Öppet alla dagar — ett säkert kort oavsett väder.",
-                "link": "https://navet.umea.se/english/"
+                "desc": "Äventyrsbadet har två rutschkanor — på den längre, Aqua Smash, kan man tävla i ett ljud- och ljusstyrt poängspel på väg ner — samt strömkanal, klättervägg ovanför vattnet, vågmaskin och den varma Pluppbassängen med egen minirutschkana för de minsta. Observera att det är 7-årsgräns för att åka rutschkanorna. Under höstlovet finns dessutom en hinderbana i 50-metersbassängen.",
+                "link": "https://navet.umea.se/english/",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 490 kr"
               },
               {
                 "name": "Leo's Lekland Umeå",
                 "type": "paid",
-                "price": "Barn under 2 år från 124 kr, barn 2–17 år från 249 kr",
+                "price": "Under 1 år fri entré, 1-åring halva barnpriset, barn 2–17 år varierande pris efter dag/efterfrågan",
                 "ageMin": 0,
                 "ageMax": 10,
                 "indoor": true,
                 "area": "Ersboda",
-                "desc": "Inomhuslekland med studsmattor, klätterställningar och bollhav anpassat efter ålder.",
+                "desc": "Inomhuslekland med arton lekstationer: bollhav, trampoliner, Parkour, Spider Tower, Volcano Climb och fem rutschkanor som Racing Slide och Tiger Slide, plus Mini World — en egen lekyta för barn under fem år. Barn under 1 år har fri entré och 1-åringar betalar halva barnpriset; priset för barn 2–17 år varierar efter dag och efterfrågan, så kolla aktuellt pris vid bokning.",
                 "link": "https://www.leoslekland.se/en/our-playcenters/umea"
               },
               {
@@ -6861,7 +6872,7 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Gammlia",
-                "desc": "Museets utställningar inomhus om länets historia — perfekt om vädret krånglar under lovveckan.",
+                "desc": "Permanenta utställningar om Västerbottens historia, bland annat skidutställningen med Kalvträskskidan — ett av världens äldsta skidfynd — samt Fiske- och sjöfartsmuseet och samiska föremål, allt inomhus och gratis. Bra alternativ om vädret krånglar under lovveckan. Friluftsmuseets historiska hus och djur på Gammlia har säsongsstängt efter sommaren, men utomhusområdet går alltid att gå runt i.",
                 "link": "https://www.vbm.se/en"
               }
             ],
@@ -6876,7 +6887,7 @@
               }
             ],
             "published": "2026-10-15",
-            "updated": "2026-10-15",
+            "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026",
             "img": "photo-1636555269230-74ff8f069e5b"
           }
@@ -7022,8 +7033,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Öster Mälarstrand, vid hamnen",
-                "desc": "Sveriges enda actionbad i ett gammalt ångkraftverk vid hamnen — vattenrutschbanor och äventyr för hela familjen.",
-                "link": "https://kokpunkten.se/"
+                "desc": "Äventyrsbad i ett gammalt ångkraftverk med VR-rutschbana där man åker ner med VR-headset på, tävlingsbanan SM-rutschbana (rekordet är 10,23 sekunder) samt lekarna The Wall och Double Racer. Under höstlovet pyntas hela badet som ett skräckslott, och onsdag 28/10 blir det Halloween-disco med godisregn och trollkarl kl 18–20.",
+                "link": "https://kokpunkten.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): från ca 596 kr (149 kr/person)"
               },
               {
                 "name": "Västerås konstmuseum",
@@ -7033,7 +7045,7 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Centrum, Karlsgatan 2",
-                "desc": "Konstmuseum centralt i Västerås med fri entré — bra regndagsalternativ under lovveckan.",
+                "desc": "Konstmuseum med fri entré, centralt på Karlsgatan 2. Under höstlovet öppnar konstlabbet för workshopen \"Vilket rum!\" torsdag 29/10 kl 13–15, och fredag 30/10 kl 10.15 blir det Barnens konstfredag med pysslet Pudervippa. Båda aktiviteterna är gratis drop-in.",
                 "link": "https://vasteraskonstmuseum.se/"
               },
               {
@@ -7044,7 +7056,7 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Centrum, Karlsgatan 2",
-                "desc": "Länsmuseum med extra barnprogram under höstlovet, alltid fri entré.",
+                "desc": "Länsmuseum med fri entré, i samma hus som konstmuseet på Karlsgatan 2. Höstlovsveckan bjuder på pyssel som att göra en fingerdocka i filt (torsdag 29/10 kl 10, från 6 år) och en bildorientering i utställningen Älskade Västmanland hela veckan, samt den lekfulla guidningen \"Sant eller falskt\" där guiden ibland ljuger (torsdag 14.00, fredag 11.00, från 10 år) — allt gratis drop-in.",
                 "link": "https://vastmanlandslansmuseum.se/"
               },
               {
@@ -7055,7 +7067,7 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Centrum, Kopparbergsvägen 13",
-                "desc": "Lagbaserade uppdrag i fängelsemiljö — spännande utmaning för barn från ca 8 år, perfekt en regnig lovdag.",
+                "desc": "Lagbaserat äventyr i fängelsemiljö med 31 olika celler att knäcka inom en tidsgräns på ca 1,5–5 minuter var — grönt ljus ger poäng på er bricka, rött betyder att tiden runnit ut. Rekommenderas från 8 år; barn upp till 7 år går in gratis med en betalande vuxen. Räkna med minst två timmar för att hinna med alla celler första gången.",
                 "link": "https://prisonislandvasteras.se/en/"
               }
             ],
@@ -7070,7 +7082,7 @@
               }
             ],
             "published": "2026-10-15",
-            "updated": "2026-10-15",
+            "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026",
             "img": "photo-1576227058206-2e98638d2228"
           }
@@ -7205,7 +7217,8 @@
             "h1": "Höstlov i Linköping 2026 — vad ni kan göra",
             "intro": [
               "Höstlovet i Linköping 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
-              "Nedan har vi samlat Linköpings bästa inomhusalternativ för lovveckan."
+              "Alla fyra tips nedan är inomhusaktiviteter, så hela listan fungerar oavsett väder — bra att veta eftersom slutet av oktober ofta bjuder på regn i Linköping.",
+              "Nedan har vi samlat Linköpings bästa inomhusalternativ för lovveckan, med riktiga priser och en kostnadsexempel för en familj på fyra."
             ],
             "tips": [
               {
@@ -7216,8 +7229,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Malmslätt",
-                "desc": "Interaktivt flygmuseum med \"Flight Lab\" — barn och unga har alltid fri entré.",
-                "link": "https://flygvapenmuseum.se/"
+                "desc": "Interaktiva flygmuseet med science centret Flyglabbet: bygg en egen virtuell flygmaskin, sitt i jaktplanet Draken och testa flygsimulatorer för både JAS 39 Gripen E och SK 60 — barn och unga under 18 har alltid fri entré. Vissa stationer kan vara högljudda, men hörselproppar finns att hämta i receptionen.",
+                "link": "https://flygvapenmuseum.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): 240 kr — barn och unga under 18 går gratis"
               },
               {
                 "name": "JumpYard Linköping",
@@ -7227,8 +7241,10 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Norra Svedengatan 13",
-                "desc": "Studsmattepark med foam pit, zipline och ninjabana — bra energikick en regnig lovdag.",
-                "link": "https://jumpyard.se/linkoping/intrade/"
+                "desc": "Studsmattepark med foam pit, Jump Tower, Mini Ninja-bana för de minsta (från 3 år), Clip'n Climb-klättervägg och reaktionsspelet Cardio Wall — bra energikick en regnig lovdag. Zipline-attraktionen SkyRider kostar extra och ingår inte i entrépriset.",
+                "link": "https://jumpyard.se/linkoping/intrade/",
+                "familyCost": "Familjebiljett 599 kr för 4 personer (betala för 3)",
+                "note": "3–5 år hoppar med vuxen"
               },
               {
                 "name": "Östergötlands museum",
@@ -7238,8 +7254,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Raoul Wallenbergs plats",
-                "desc": "Länsmuseum med lek- och upptäckaryta för barn (\"Viljans värld\") och ett eget lovprogram.",
-                "link": "https://ostergotlandsmuseum.se/"
+                "desc": "Länsmuseum med lek- och upptäckaryta för barn (Viljans värld), kreativa Atélje Rut och just nu lekutställningen Hemma hos Pettson & Findus. Under höstlovet bjuds det på extra program: familjevisning av Bergsgraven torsdag 29 oktober samt Höstlovsateljé 30–31 oktober och 1 november (de två sista dagarna ligger efter själva lovveckan — värt att dubbelkolla innan ni planerar).",
+                "link": "https://ostergotlandsmuseum.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): 260 kr — barn och unga under 18 går gratis"
               },
               {
                 "name": "Tinnerbäcksbadet",
@@ -7249,8 +7266,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Tinnerbäck",
-                "desc": "Badhus med barnbassäng, nära centrum — ett säkert kort oavsett väder.",
-                "link": "https://www.medley.se/tinnerbacksbadet/priser/"
+                "desc": "Äventyrsbad med tre rutschkanor, vågbassäng, strömkanal, bubbelpool och en egen uppvärmd del (32°C) för de minsta — ett säkert kort oavsett väder. Familjebadets exakta öppettider kan variera under lovveckan, så dubbelkolla Medleys bassängschema innan ni åker.",
+                "link": "https://www.medley.se/tinnerbacksbadet/priser/",
+                "familyCost": "Familj (2 vuxna + 2 barn 3–11 år): ca 470 kr (lovpris)"
               }
             ],
             "faq": [
@@ -7261,11 +7279,16 @@
               {
                 "q": "Är JumpYard bra för yngre barn på höstlovet?",
                 "a": "Ja, men barn 3–5 år måste hoppa tillsammans med en vuxen. Från 199 kr/timme, med en familjebiljett från 599 kr för 4 personer (betala för 3)."
+              },
+              {
+                "q": "Vad kostar det att göra alla fyra aktiviteterna under höstlovet?",
+                "a": "Räknar man ihop alla fyra ställen för en familj på två vuxna och två barn (3–11 år) landar det på ungefär 1 570 kr totalt: 240 kr för Flygvapenmuseum, 599 kr för JumpYards familjebiljett, 260 kr för Östergötlands museum och ca 470 kr för Tinnerbäcksbadet. De flesta väljer förstås bara ett par av ställena, inte alla fyra på en vecka."
               }
             ],
             "published": "2026-10-21",
-            "updated": "2026-10-21",
-            "img": "photo-1508694396858-5a25e4301594"
+            "updated": "2026-10-29",
+            "img": "photo-1508694396858-5a25e4301594",
+            "totalCost": "Gör ni alla fyra under lovveckan landar det på ca 1 570 kr för en familj på två vuxna och två barn (3–11 år) — de flesta väljer förstås bara ett par av ställena."
           }
         ],
         "img": "photo-1652459002555-bef7e22211da"
@@ -7409,8 +7432,10 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Helsingborgs centrum",
-                "desc": "Klättra upp genom tornets våningar — mestadels invändigt, ett bra regndagsval.",
-                "link": "https://book.visithelsingborg.com/en/adventure/882-karnan-in-helsingborg"
+                "desc": "Historiskt 700 år gammalt vakttorn mitt i centrum, med branta trappor upp till en utsiktsplattform med vid vy över Öresund och Helsingör. Barn och unga upp till 18 år har fri entré, vuxenbiljett kostar 100 kr. Tänk på att Kärnan under höstlovet bara har drop-in-öppet helger (5 okt–8 nov) kl. 11–15 — vardagar kräver förbokning, planera besöket till 31/10 eller 1/11.",
+                "link": "https://book.visithelsingborg.com/en/adventure/882-karnan-in-helsingborg",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 200 kr — barn och unga upp till 18 år gratis",
+                "note": "Vardagar under lovet kräver förbokning"
               },
               {
                 "name": "Tropikariet",
@@ -7420,7 +7445,7 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Hävertgatan 21",
-                "desc": "Inomhuszoo med djur från hela världen — helt vädersäkert.",
+                "desc": "Inomhuszoo med krokodiler, ormar, flyghundar, apor och skorpioner från hela världen — helt vädersäkert och perfekt på en regnig lovdag. Under höstlovet (v. 44) har Tropikariet utökade öppettider alla dagar 10–17, annars stängt måndagar. Vill man komma riktigt nära kan man boka djurmöte eller orm- och krokodilklappning, men det kostar extra och bokas separat per telefon.",
                 "link": "https://book.visithelsingborg.com/en/adventure/1418-entryticket-to-tropikariet-in-helsingborg"
               },
               {
@@ -7431,19 +7456,21 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Helsingborgs hamn",
-                "desc": "Konst- och historieutställningar samt familjeprogram vid hamnen.",
-                "link": "https://book.engelholm.com/en/adventure/851-entrance-to-dunker-s-culture-house-in-helsingborg"
+                "desc": "Permanenta utställningen Om Helsingborg tar barnen 10 000 år bakåt i stadens historia med AR och 3D-animationer — bland annat möter man stadens första elbil och borgmästaren Peter Karlsson som animerad karaktär. Under höstlovet bjuds det även på gratis sockerskalle-pyssel, väggmålning och teaterföreställningen Äldre, äldre (från 4 år, 80 kr). Fri entré för barn och unga upp till 18 år.",
+                "link": "https://book.engelholm.com/en/adventure/851-entrance-to-dunker-s-culture-house-in-helsingborg",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 240 kr — barn och unga upp till 18 år gratis"
               },
               {
                 "name": "Fredriksdal Museums and Gardens",
                 "type": "paid",
-                "price": "Från ca 120 kr",
+                "price": "Fri entré (höst/vinterkampanj 2026) — ordinarie pris från ca 120 kr under högsäsong",
                 "ageMin": 0,
                 "ageMax": 16,
                 "indoor": false,
                 "area": "Fredriksdal",
-                "desc": "Friluftsmuseum med historiska hus — ta med paraply, men mycket att se även i blåsväder.",
-                "link": "https://book.visithelsingborg.com/en/adventure/891-fredriksdal-museums-and-gardens"
+                "desc": "Öppet friluftsmuseum och trädgård med lekplatsen Dinosaurielekan — bra plats att röra på sig även i höstruskväder, men de historiska husen och gårdarna är stängda för säsongen. Höstlovets höjdpunkt är den kusliga Väsenvandringen 27–28 oktober kl. 17–20.30 (från 6 år, vuxen 180 kr/barn 80 kr) — biljetter måste bokas i förväg, restbiljetter vid entrén är inte garanterade.",
+                "link": "https://book.visithelsingborg.com/en/adventure/891-fredriksdal-museums-and-gardens",
+                "familyCost": "Väsenvandringen (separat bokning, 2 vuxna + 2 barn): ca 520 kr — själva området är gratis just nu"
               }
             ],
             "faq": [
@@ -7457,7 +7484,7 @@
               }
             ],
             "published": "2026-10-21",
-            "updated": "2026-10-21",
+            "updated": "2026-10-29",
             "img": "photo-1642290172761-a919a8627734"
           }
         ],
@@ -7602,19 +7629,21 @@
                 "ageMax": 17,
                 "indoor": true,
                 "area": "Badhusgatan 4",
-                "desc": "Familjebassäng, rutschkanor och klättervägg — ett säkert kort oavsett väder.",
-                "link": "https://www.medley.se/centralbadet/priser/"
+                "desc": "Fyra inomhusbassänger: 25-metersbassängen, multibassängen, äventyrsbadet med klättervägg och en egen barnpool för de minsta. På helger och lov brukar sjöodjuret Flodis dyka upp och busa med badgästerna. Familjebiljett för 2 vuxna + 2 barn kostar 300 kr — ofta billigare än separata biljetter för en hel familj.",
+                "link": "https://www.medley.se/centralbadet/priser/",
+                "familyCost": "Familjebiljett: 300 kr"
               },
               {
                 "name": "Visualiseringscenter C",
                 "type": "paid",
-                "price": "Vuxen 120 kr, barn 4–17 år 80 kr, 0–3 år gratis",
+                "price": "Fri entré till utställningarna; kupolshow (WISDOME) 120 kr vuxen, 80 kr barn 4–17 år, gratis 0–3 år",
                 "ageMin": 0,
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Kungsgatan 54",
-                "desc": "Gratis interaktiva utställningar och kupolvisningar om rymden och naturen.",
-                "link": "https://visualiseringscenter.se/en/wisdome/"
+                "desc": "Gratis entré till alla utställningar i huset, men kupolshowerna i WISDOME kostar extra (120 kr vuxen, 80 kr barn 4–17 år, gratis 0–3 år). Under höstlovet 24/10–1/11 visas rymdäventyret \"Rysliga rymden\" tis–fre kl 14 (bokning krävs), och i Creepy Studio pysslar och programmerar barnen drop-in hela dagen. Onsdag 28/10 kl 19 blir det SpaceNight med Halloween-tema och middag — förboka biljett.",
+                "link": "https://visualiseringscenter.se/en/wisdome/",
+                "familyCost": "Kupolshow, familj (2 vuxna + 2 barn): ca 400 kr — övriga utställningar alltid gratis"
               },
               {
                 "name": "Arbetets museum",
@@ -7624,7 +7653,7 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Laxholmen",
-                "desc": "Praktiska familjeutställningar om arbetslivets historia. Använd personalentrén under ombyggnaden.",
+                "desc": "Gratis entré, öppet 10–17 hela lovet, med drop-in-pyssel i Kreativa verkstan (11–16) och en egen lekhörna, Lilla Arbetets, för barn upp till 6 år. Barnen kan lösa uppdrag som Bamses källspanare eller Museideckarna, hämtade i receptionen. Observera att bron Holmbron norr om museet byggs om till våren 2027, så vissa gångvägar till museet kan vara avstängda under lovveckan.",
                 "link": "https://www.arbetetsmuseum.se/?p=353"
               },
               {
@@ -7635,8 +7664,9 @@
                 "ageMax": 16,
                 "indoor": true,
                 "area": "Lundatorpsvägen 3",
-                "desc": "Studsmattepark med foam pit — bra energikick en regnig lovdag.",
-                "link": "https://jumpyard.se/norrkoping/priser/"
+                "desc": "Studsmattepark med foam pit, Clip'n Climb-klättervägg och reaktionsspelet Cardio Wall ingår i entrén — bra energikick en regnig lovdag. Mini Ninja-bana för de minsta finns från 3 år. Höghöjdsbanan (40 kr) och zipline-attraktionen SkyRider (30 kr/åk, minst 110 cm) kostar extra och ingår inte i priset.",
+                "link": "https://jumpyard.se/norrkoping/priser/",
+                "familyCost": "Familjebiljett: från 420 kr"
               }
             ],
             "faq": [
@@ -7650,7 +7680,7 @@
               }
             ],
             "published": "2026-10-21",
-            "updated": "2026-10-21",
+            "updated": "2026-10-29",
             "img": "photo-1652459002369-654b7fefe6a3"
           }
         ],
