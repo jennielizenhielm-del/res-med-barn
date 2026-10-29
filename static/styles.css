@@ -760,6 +760,28 @@ h1 {
   font-weight: 600;
 }
 .activity-link { display: inline-block; margin-top: 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--primary); }
+.activity-family-cost {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.meta-chip-note { background: var(--accent-light); color: var(--on-accent-light); border-color: transparent; }
+
+/* ---- LOV-TOTAL-COST (sammanfattande totalsumma på lov-sidor, t.ex. höstlov) ---- */
+.lov-total-cost {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: -1rem 0 2rem;
+}
 
 /* ---- VENUE-MEDIA (bild på barnvagnsguidernas kort — bara när v.img finns, så
    kort utan bild ser exakt ut som innan. Negativ marginal låter bilden blöda ut
