@@ -186,7 +186,7 @@ function footer() {
     </div>
     <div class="footer-col">
       <h4>Topplistor</h4>
-      ${C.topplistor.lists.map(l => `<a href="/topplistor/${l.slug}/">${esc(l.name)}</a>`).join('\n      ')}
+      ${C.topplistor.lists.filter(l => !l.paused).map(l => `<a href="/topplistor/${l.slug}/">${esc(l.name)}</a>`).join('\n      ')}
     </div>
     <div class="footer-col">
       <h4>Städer</h4>
@@ -679,10 +679,12 @@ const TOPPLISTOR_RELATED = {
   babymonitor: ['sleep-carrier', 'bilbarnstol', 'vagnar'],
   barsjal: ['barsele', 'sleep-carrier', 'amningskudde'],
   'uv-badklader': ['regnstall', 'vinterskor', 'tillbehor'],
-  regnstall: ['fodrat-regnstall', 'vinterskor', 'vinteroverall'],
-  vinterskor: ['vinteroverall', 'fodrat-regnstall', 'regnstall'],
-  vinteroverall: ['fodrat-regnstall', 'vinterskor', 'regnstall'],
-  'fodrat-regnstall': ['vinteroverall', 'regnstall', 'vinterskor'],
+  regnstall: ['fodrat-regnstall', 'vinterskor', 'vinteroverall', 'vinterjacka'],
+  vinterskor: ['vinteroverall', 'fodrat-regnstall', 'regnstall', 'vinterjacka'],
+  vinteroverall: ['fodrat-regnstall', 'vinterskor', 'regnstall', 'vinterjacka'],
+  'fodrat-regnstall': ['vinteroverall', 'regnstall', 'vinterskor', 'vinterjacka'],
+  vinterjacka: ['vinteroverall', 'vinterskor', 'fodrat-regnstall'],
+  vattenflaska: ['tillbehor', 'akpase', 'reseunderhallning'],
   reseunderhallning: ['tillbehor', 'akpase', 'vagnar']
 };
 
@@ -696,7 +698,7 @@ function buildTopplistor() {
   <div class="page-intro">${paras(hub.intro)}</div>
 </header>
 <div class="card-grid">
-  ${C.topplistor.lists.filter(l => !l.subPages).map(l => `
+  ${C.topplistor.lists.filter(l => !l.subPages && !l.paused).map(l => `
   <a class="hub-card has-media" href="/topplistor/${l.slug}/">
     ${media(l.img, l.emoji, 'hub-media', 640)}
     <span class="hub-emoji">${l.emoji}</span>
@@ -709,6 +711,7 @@ ${faqHtml(hub.faq)}`;
   write('topplistor/index.html', page('/topplistor/', hub, '/topplistor/', hubInner, hub.faq ? [bcHub.jsonld, faqLd(hub.faq)] : bcHub.jsonld));
 
   for (const l of C.topplistor.lists) {
+    if (l.paused) continue; // Pausad lista — bygg inte sidan, visa ingen kort/länk
     if (l.subPages) {
       // Hubb-sida (t.ex. bilbarnstol) — länkar bara vidare till sina undersidor
       const url = `/topplistor/${l.slug}/`;
@@ -1572,7 +1575,7 @@ function buildMeta(destinations) {
     urls.push(`/guider/${a.slug}/`);
     for (const t of C.transports) urls.push(`/guider/${a.slug}/${t.slug}/`);
   }
-  for (const l of C.topplistor.lists) urls.push(`/topplistor/${l.slug}/`);
+  for (const l of C.topplistor.lists) if (!l.paused) urls.push(`/topplistor/${l.slug}/`);
   urls.push('/stader/');
   for (const s of C.stader.cities) {
     urls.push(`/stader/${s.slug}/`);

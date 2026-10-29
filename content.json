@@ -4808,7 +4808,8 @@
           }
         ],
         "published": "2026-10-29",
-        "updated": "2026-10-29"
+        "updated": "2026-10-29",
+        "img": "photo-1512701229568-30fd3924fd79"
       },
       {
         "slug": "vattenflaska",
@@ -4927,7 +4928,8 @@
           }
         ],
         "published": "2026-10-29",
-        "updated": "2026-10-29"
+        "updated": "2026-10-29",
+        "paused": true
       }
     ]
   },
