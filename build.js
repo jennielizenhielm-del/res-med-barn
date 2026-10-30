@@ -481,29 +481,46 @@ function recentCardSSR(item) {
   </a>`;
 }
 function collectLatestPages() {
+  // group: varje kandidat har en "group"-nyckel. Innan sortering behålls bara den
+  // senast uppdaterade posten PER GRUPP — annars kan en enda innehållstyp som
+  // uppdateras i bulk samma dag (t.ex. 9 julmarknadssidor, eller 9 höstlovssidor)
+  // svälja alla 4 platserna. Varje unik guide/artikel/stad är sin egen grupp (de
+  // uppdateras sällan i klump), medan lov-typ, stadsguide-typ och ALLA topplistor
+  // är grupperade ihop till en enda gemensam plats var, så "Senast uppdaterat"
+  // alltid blandar olika innehållstyper istället för att en enda dominerar.
   const items = [];
   for (const a of C.ages) {
     for (const t of C.transports) {
       const g = C.guides[a.slug + '/' + t.slug];
-      if (g && g.updated) items.push({ url: `/guider/${a.slug}/${t.slug}/`, emoji: t.emoji, img: g.img, title: g.h1 || g.title, summary: g.cardText, updated: g.updated });
+      if (g && g.updated) items.push({ group: `guide:${a.slug}/${t.slug}`, url: `/guider/${a.slug}/${t.slug}/`, emoji: t.emoji, img: g.img, title: g.h1 || g.title, summary: g.cardText, updated: g.updated });
     }
   }
-  // Topplistor exkluderas medvetet — de uppdateras ofta bara med nya adtraction-länkar
-  // (rutinunderhåll, inte nytt redaktionellt innehåll) och skulle annars dominera "Senast uppdaterat".
   for (const a of C.artiklar.list) {
-    if (a.updated) items.push({ url: `/artiklar/${a.slug}/`, emoji: a.emoji, img: a.img, title: a.h1 || a.name, summary: a.cardText, updated: a.updated });
+    if (a.updated) items.push({ group: `artikel:${a.slug}`, url: `/artiklar/${a.slug}/`, emoji: a.emoji, img: a.img, title: a.h1 || a.name, summary: a.cardText, updated: a.updated });
   }
   for (const s of C.stader.cities) {
-    if (s.updated) items.push({ url: `/stader/${s.slug}/`, emoji: s.emoji, img: s.img, title: s.h1 || s.name, summary: s.cardText, updated: s.updated });
+    if (s.updated) items.push({ group: `stad:${s.slug}`, url: `/stader/${s.slug}/`, emoji: s.emoji, img: s.img, title: s.h1 || s.name, summary: s.cardText, updated: s.updated });
     for (const l of (s.lov || [])) {
-      if (l.updated) items.push({ url: `/stader/${s.slug}/${l.lovSlug}/`, emoji: l.emoji, img: l.img || s.img, title: l.h1 || `${l.lovName} i ${s.name}`, summary: `${l.lovName}stips för ${s.name}`, updated: l.updated });
+      if (l.updated) items.push({ group: `lov-typ:${l.lovSlug}`, url: `/stader/${s.slug}/${l.lovSlug}/`, emoji: l.emoji, img: l.img || s.img, title: l.h1 || `${l.lovName} i ${s.name}`, summary: `${l.lovName}stips för ${s.name}`, updated: l.updated });
     }
     for (const g of (s.guider || [])) {
-      if (g.updated) items.push({ url: `/stader/${s.slug}/${g.guideSlug}/`, emoji: g.emoji, img: g.img, title: g.h1 || g.guideName, summary: g.description, updated: g.updated });
+      if (g.updated) items.push({ group: `guide-typ:${g.guideSlug}`, url: `/stader/${s.slug}/${g.guideSlug}/`, emoji: g.emoji, img: g.img, title: g.h1 || g.guideName, summary: g.description, updated: g.updated });
     }
   }
-  items.sort((x, y) => (y.updated || '').localeCompare(x.updated || ''));
-  return items.slice(0, 4);
+  // Topplistor: en enda gemensam grupp (bara den senast uppdaterade av alla visas) —
+  // de uppdateras ofta bara med nya adtraction-länkar (rutinunderhåll snarare än nytt
+  // redaktionellt innehåll), så de ska aldrig ta mer än en enda plats i "Senast uppdaterat".
+  for (const l of C.topplistor.lists) {
+    if (l.updated && !l.paused && !l.subPages) items.push({ group: 'topplistor', url: `/topplistor/${l.slug}/`, emoji: l.emoji, img: l.img, title: l.h1 || l.name, summary: l.cardText, updated: l.updated });
+  }
+  const bestPerGroup = new Map();
+  for (const it of items) {
+    const existing = bestPerGroup.get(it.group);
+    if (!existing || (it.updated || '') > (existing.updated || '')) bestPerGroup.set(it.group, it);
+  }
+  const deduped = [...bestPerGroup.values()];
+  deduped.sort((x, y) => (y.updated || '').localeCompare(x.updated || ''));
+  return deduped.slice(0, 4);
 }
 
 function buildHome() {
