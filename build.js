@@ -1076,6 +1076,11 @@ function buildStadsGuider() {
       };
       const areas = (g.areaOrder && g.areaOrder.length) ? g.areaOrder : [...new Set(g.venues.map(v => v.area))];
       const others = (s.guider || []).filter(x => x.guideSlug !== g.guideSlug);
+      // g.cardType === 'activity' reuses activityCard() (price/ålder/datum/familyCost/note) instead of
+      // venueCard() (måltider/ring-innan) — för guider som inte är restaurang/café-typ, t.ex. julmarknader.
+      // g.flatList hoppar över area-grupperingen (en H2 per unikt v.area) och renderar allt i ett enda grid —
+      // relevant när varje "ställe" ändå har ett eget unikt område och grupperingen bara skulle ge en rubrik per kort.
+      const cardFn = g.cardType === 'activity' ? activityCard : venueCard;
       const inner = `
 <header class="page-header">
   ${bc.html}
@@ -1084,13 +1089,16 @@ function buildStadsGuider() {
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
 ${media(g.img, g.emoji, 'page-hero', 1400)}
-${areas.map(area => {
+${g.flatList ? `
+<div class="activity-grid">
+  ${g.venues.map(cardFn).join('')}
+</div>` : areas.map(area => {
   const inArea = g.venues.filter(v => v.area === area);
   if (!inArea.length) return '';
   return `
 <h2 class="section-title">${esc(area)}</h2>
 <div class="activity-grid">
-  ${inArea.map(venueCard).join('')}
+  ${inArea.map(cardFn).join('')}
 </div>`;
 }).join('')}
 ${faqHtml(g.faq)}
