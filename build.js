@@ -1638,10 +1638,10 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY
   console.log('  ✓ vapiano-barnmeny.jpg');
   fs.copyFileSync(path.join(ROOT, 'static', 'bodybuddy-sveavagen.jpg'), path.join(DIST, 'bodybuddy-sveavagen.jpg'));
   console.log('  ✓ bodybuddy-sveavagen.jpg');
-  for (const f of ['krubbans-lekplats.jpg', 'humlegardens-lekplats.jpg', 'olaus-petris-lekplats.jpg', 'olaus-petri-skolgard.jpg', 'lekplatsen-plockepinn.jpg']) {
+  for (const f of ['krubbans-lekplats-esso.jpg', 'krubbans-lekplats-tegeltorn.jpg', 'humlegardens-lekplats.jpg', 'olaus-petris-lekplats.jpg', 'olaus-petri-skolgard.jpg', 'lekplatsen-plockepinn.jpg']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
   }
-  console.log('  ✓ lekplatser-foton (5 st)');
+  console.log('  ✓ lekplatser-foton (6 st)');
   for (const f of ['favicon.ico', 'favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png', 'android-chrome-192x192.png', 'android-chrome-512x512.png']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
   }

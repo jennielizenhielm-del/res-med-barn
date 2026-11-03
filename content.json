@@ -6393,11 +6393,11 @@
                 "name": "Krubbans lekplats",
                 "area": "Östermalm",
                 "address": "Linnégatan 64, vid Styrmansgatan",
-                "note": "Temalekplats med en gammal lekbuss barnen kan \"köra\", klätterlek, rutschkana, lekhus, sandlåda och en karusell formad som en stor hand. Lekutrustningen är även themad kring Stockholms husgavlar genom historien, från 1600-talet och framåt.",
+                "note": "Temalekplats med husgavlar genom historien, från 1600-talet och framåt — bland annat en gammal Esso-bensinstation att leka i, ett tegeltorn med tunnel att krypa genom, klätternät, en gammal lekbuss att \"köra\" och en karusell formad som en stor hand. Rutschkana, lekhus och sandlåda finns också.",
                 "favorite": true,
                 "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/krubbans-lekplats/",
                 "linkLabel": "parker.stockholm",
-                "img": "/krubbans-lekplats.jpg"
+                "img": "/krubbans-lekplats-esso.jpg"
               },
               {
                 "name": "Lekplatsen Plockepinn",
@@ -6517,7 +6517,7 @@
             "faq": [],
             "published": "2026-11-03",
             "updated": "2026-11-03",
-            "img": "/krubbans-lekplats.jpg"
+            "img": "/krubbans-lekplats-esso.jpg"
           }
         ]
       },
