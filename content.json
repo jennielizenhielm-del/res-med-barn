@@ -6338,6 +6338,186 @@
             "updated": "2026-10-30",
             "cardType": "activity",
             "flatList": true
+          },
+          {
+            "guideSlug": "lekplatser",
+            "guideName": "Lekplatser",
+            "emoji": "🛝",
+            "title": "Bästa lekplatserna i Stockholms innerstad | Res med Barn",
+            "description": "Våra egna favoritlekplatser i Stockholms innerstad, med riktiga bilder och exakta adresser — uppdelat per område så du hittar en nära dig.",
+            "h1": "Lekplatser i Stockholms innerstad",
+            "intro": [
+              "Lekplatser i Stockholms innerstad, stadsdel för stadsdel. De lekplatser nedan som vi har egna bilder på har vi besökt själva — övriga är researchade mot officiella källor men ännu inte besökta av oss, vilket du ser på att de saknar bild. Östermalm, Vasastan, Hagastaden, Kungsholmen, Södermalm och Essingen är med hittills, och fler stadsdelar fylls på efter hand.",
+              "Alla lekplatser nedan är kommunala, gratis och öppna för alla, med ett undantag som vi har märkt extra tydligt: en skolgård som bara är tillgänglig för allmänheten utanför skoltid."
+            ],
+            "areaOrder": [
+              "Östermalm",
+              "Vasastan",
+              "Hagastaden",
+              "Kungsholmen",
+              "Södermalm",
+              "Essingen"
+            ],
+            "venues": [
+              {
+                "name": "Humlegårdens lekplats",
+                "area": "Östermalm",
+                "address": "Karlavägen 32",
+                "note": "Stor lekplats mitt i Humlegårdens park, delvis inhägnad. Klätterställningar, rutschkanor, gungor (även en kompisgunga och en gunga med ryggstöd), lekstugor, sandlåda, bandyplan och basketkorgar. Bemannad parklek med leksaker att låna när den är öppen, samt handikappanpassad toalett i parklekshuset.",
+                "favorite": true,
+                "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/humlegardens-lekplats/",
+                "linkLabel": "parker.stockholm",
+                "img": "/humlegardens-lekplats.jpg"
+              },
+              {
+                "name": "Olaus Petris lekplats (\"Honungslekplatsen\")",
+                "area": "Östermalm",
+                "address": "Erik Dahlbergsgatan 47",
+                "note": "Kallas \"Honungslekplatsen\" i folkmun eftersom lekstugorna är byggda som bikupor. Klätterställning med rutschkana, hammock, sandlåda med ryggstöd och rullstolsanpassat bord, flisunderlag. Pallkragar för odling i och bredvid lekplatsen sköts av förskolor och grannar.",
+                "favorite": true,
+                "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/olaus-petris-lekplats/",
+                "linkLabel": "parker.stockholm",
+                "img": "/olaus-petris-lekplats.jpg"
+              },
+              {
+                "name": "Olaus Petri skolas skolgård",
+                "area": "Östermalm",
+                "address": "Olaus Petrigatan 1–3",
+                "note": "OBS: det här är en skolgård, inte en kommunal lekplats — tillgänglig för allmänheten bara utanför skoltid (kvällar och helger), inte dagtid på vardagar. Stor skolgård med klätterställningar, basketplan, bordtennisbord och en avdelad yta för de yngsta eleverna.",
+                "favorite": true,
+                "link": "https://grundskola.stockholm/hitta-grundskola/grundskola/olaus-petri-skola",
+                "linkLabel": "skolans sida",
+                "img": "/olaus-petri-skolgard.jpg"
+              },
+              {
+                "name": "Krubbans lekplats",
+                "area": "Östermalm",
+                "address": "Linnégatan 64, vid Styrmansgatan",
+                "note": "Temalekplats med en gammal lekbuss barnen kan \"köra\", klätterlek, rutschkana, lekhus, sandlåda och en karusell formad som en stor hand. Lekutrustningen är även themad kring Stockholms husgavlar genom historien, från 1600-talet och framåt.",
+                "favorite": true,
+                "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/krubbans-lekplats/",
+                "linkLabel": "parker.stockholm",
+                "img": "/krubbans-lekplats.jpg"
+              },
+              {
+                "name": "Lekplatsen Plockepinn",
+                "area": "Östermalm",
+                "address": "Sandhamnsgatan 64",
+                "note": "Ligger på Sportfältet vid Gärdet. Gungor (bland annat en kompisgunga) på flisunderlag, klätterställning, rutschkana och vatten- och sandlek, med lekutrustning i naturmaterial och fokus på natur och ekologi. Stadsodling på området, och Kampementsbadet (öppet sommartid) ligger precis bredvid.",
+                "favorite": true,
+                "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/lekplatsen-plockepinn/",
+                "linkLabel": "parker.stockholm",
+                "img": "/lekplatsen-plockepinn.jpg"
+              },
+              {
+                "name": "Vasaparkens lekplats",
+                "area": "Vasastan",
+                "address": "Dalagatan, Vasaparken",
+                "note": "Klassisk lekplats mitt i Vasaparken, nära Odenplan och S:t Eriksplan. Klätterställning, stor gräsyta och fotbollsplan — en del av parken blir skridskobana på vintern. Astrid Lindgrens terrass ligger i parkens nordöstra hörn.",
+                "link": "https://visitstockholm.com/o/vasaparken",
+                "linkLabel": "visitstockholm.com"
+              },
+              {
+                "name": "Norra Stationsparkens lekplats (västra delen)",
+                "area": "Hagastaden",
+                "address": "Hagastaden, vid Norra Stationsgatan",
+                "note": "Ny distriktspark i Hagastaden, byggd ovanpå gamla Norra Stationsområdet, med flera olika lekytor längs parkens norr–söder-stråk — hela parken byggs ut i etapper, planerad helfärdigställning 2030. Lekplats i den västra delen, omgiven av nya bostadshus, med lekdjuret \"Galten\" (trästol med stengrishuvud).",
+                "link": "https://vaxer.stockholm/projekt/norrmalm/norra-stationsparken/",
+                "linkLabel": "vaxer.stockholm"
+              },
+              {
+                "name": "Uggleparken",
+                "area": "Kungsholmen",
+                "address": "Nordenflychtsvägen 22A, Kristinebergs slottspark",
+                "note": "Lekplats i Kristinebergs slottspark på norra Kungsholmen, full av trädjur och svampar att klättra på och utforska — namnet syftar på ugglorna bland djuren.",
+                "link": "https://www.visitstockholm.com/o/uggleparken/",
+                "linkLabel": "visitstockholm.com"
+              },
+              {
+                "name": "Bryggartäppan",
+                "area": "Södermalm",
+                "address": "Bjurholmsgatan 1A",
+                "note": "Temalekplats byggd som ett litet 1800-talskvarter — små trähus med verkstad, smedja och fabriksbyggnad att utforska. Sommarkafé på plats med våfflor, kaffe och glass.",
+                "link": "https://www.visitstockholm.com/o/bryggartappan/",
+                "linkLabel": "visitstockholm.com"
+              },
+              {
+                "name": "Luxparkens lekplats",
+                "area": "Essingen",
+                "address": "Montebellogatan 1, Lilla Essingen",
+                "note": "Större inhägnad lekplats med sandlåda med ryggstöd, gungdjur, rutschkana för småbarn, volträcke, lekställning och lekhus nått via ramp. Väderskydd och grillar på plats, samt en egen gungyta med babygungor, däckgunga och kompisgunga en bit bort.",
+                "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/luxparkens-lekplats/",
+                "linkLabel": "parker.stockholm"
+              },
+              {
+                "name": "Disponentparkens lekplats",
+                "area": "Essingen",
+                "address": "Luxgatan 5, Lilla Essingen",
+                "note": "Mindre kvarterslekplats med klätterställning, sandlåda och två gungdjur, sandunderlag. Nås från Luxgatan eller via trappa med räcke och kontrastmarkering från Luxparken nedanför.",
+                "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/disponentparkens-lekplats/",
+                "linkLabel": "parker.stockholm"
+              },
+              {
+                "name": "Stora Blecktornsparken",
+                "area": "Södermalm",
+                "address": "Katarina Bangata 78",
+                "note": "Bemannad parklek med rutschkanor, studsmattor, klätterställningar och linbana. Djurhållning med minigrisar, kaniner, marsvin, får och getter (djurvisning tisdagar). Parklekshus med lånbara leksaker, skötbord och tillgängligt café (Swish). Öppen förskola på plats. Öppet mån–fre 9–17, sön 11–16.",
+                "link": "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/parklek/parkleken-stora-blecktornsparken",
+                "linkLabel": "parker.stockholm"
+              },
+              {
+                "name": "Rålambshovs parklek",
+                "area": "Kungsholmen",
+                "address": "Smedsuddsvägen 6, i Rålambshovsparken",
+                "note": "Stor, bemannad parklek i Rålambshovsparken med klätterställningar, rutschkana och sandlådor — ska passa alla åldrar enligt besökare. Öppet vardagar 9–17, lördagar 10–15.",
+                "link": "https://www.visitstockholm.com/o/ralambshovsparken/",
+                "linkLabel": "visitstockholm.com"
+              },
+              {
+                "name": "Kronobergsparkens parklek",
+                "area": "Kungsholmen",
+                "address": "Kronobergsgatan 4B",
+                "note": "Lekplats i Kronobergsparken, en lummig park på en gammal kvarnplats som blev offentlig park i början av 1900-talet.",
+                "link": "https://visitstockholm.com/o/kronobergsparken",
+                "linkLabel": "visitstockholm.com"
+              },
+              {
+                "name": "Vanadislundens lekplats",
+                "area": "Vasastan",
+                "address": "Sveavägen 140A, i Vanadislunden",
+                "note": "Lekplats med flera klätterställningar i Vanadislunden, en skogspark med fin utsikt över stan. Vanadisbadet, Stockholms klassiska utomhusbad, ligger precis bredvid och har öppet sommartid.",
+                "link": "https://www.visitstockholm.com/o/vanadislunden",
+                "linkLabel": "visitstockholm.com"
+              },
+              {
+                "name": "Tegnérlundens lekplats",
+                "area": "Vasastan",
+                "address": "Tegnérlunden",
+                "note": "Lekplats i Tegnérlunden, parken på gränsen mellan Vasastan och Norrmalm där en staty av Astrid Lindgren står.",
+                "link": "https://www.visitstockholm.com/o/tegnerlunden/",
+                "linkLabel": "visitstockholm.com"
+              },
+              {
+                "name": "Norra Stationsparkens lekplats (mellersta delen)",
+                "area": "Hagastaden",
+                "address": "Hagaesplanaden 65",
+                "note": "Den mellersta av flera lekytor i den prisbelönta Norra Stationsparken, med lek- och aktivitetsytor anpassade efter ålder längs parkens norr–söder-stråk.",
+                "link": "https://vaxer.stockholm/projekt/norrmalm/norra-stationsparken/",
+                "linkLabel": "vaxer.stockholm"
+              },
+              {
+                "name": "Norra Stationsparkens lekplats (östra delen)",
+                "area": "Hagastaden",
+                "address": "Hagaesplanaden, östra delen av parken",
+                "note": "Lekutrustning i den östra delen av Norra Stationsparken, med plaskdamm/vattenlek.",
+                "link": "https://vaxer.stockholm/projekt/norrmalm/norra-stationsparken/",
+                "linkLabel": "vaxer.stockholm"
+              }
+            ],
+            "faq": [],
+            "published": "2026-11-03",
+            "updated": "2026-11-03",
+            "img": "/krubbans-lekplats.jpg"
           }
         ]
       },
