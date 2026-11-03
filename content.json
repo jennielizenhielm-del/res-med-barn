@@ -4930,6 +4930,136 @@
         "published": "2026-10-29",
         "updated": "2026-10-29",
         "paused": true
+      },
+      {
+        "slug": "solkram",
+        "emoji": "☀️",
+        "name": "Solkräm barn",
+        "cardText": "Solkräm och solskydd för barn och bebis jämförda på skydd, kladdighet och pris — en oberoende testvinnare och familjens egen favorit.",
+        "title": "Solkräm barn bäst i test 2026 | Res med Barn",
+        "description": "Solkräm för barn bäst i test 2026 — fem solskydd för barn och bebis jämförda på UVA/UVB-skydd, kladdighet och pris. La Roche-Posay, EVY, Eucerin, CeraVe och ACO.",
+        "h1": "Solkräm för barn bäst i test 2026",
+        "intro": [
+          "En bra solkräm för barn ska ge brett skydd mot både UVB- och UVA-strålar, kännas skön mot känslig hud och helst inte kladda ner badkläder och händer. Vi har jämfört fem solskydd för barn och bebisar — från en oberoende testvinnare till familjens egen favorit — på skydd, konsistens och pris."
+        ],
+        "products": [
+          {
+            "name": "La Roche-Posay Anthelios Kids UVMune 400 Milk SPF50+",
+            "badge": "Bäst i test 2026",
+            "price": "279 kr",
+            "text": "Utsedd till bäst i test 2026 av den oberoende jämförelsen på hudbarriaren.se, tack vare Mexoryl 400-filtret som ger skydd mot ultralånga UVA-strålar — längre våglängder än många andra solkrämer täcker. Testad under dermatolog- och pediatrikerövervakning, hypoallergen och parfymfri. 250 ml räcker en hel sommar för en barnfamilj.",
+            "pros": [
+              "Utsedd till bäst i test 2026 (hudbarriaren.se)",
+              "Mexoryl 400-filter ger skydd mot ultralånga UVA-strålar",
+              "Dermatolog- och pediatrikertestad, hypoallergen"
+            ],
+            "cons": [
+              "Dyrast i jämförelsen",
+              "Ingen specifik lägsta ålder anges av tillverkaren — följ allmänna råd om direkt sol för spädbarn"
+            ],
+            "buyStore": "Dozapotek",
+            "buyUrl": "https://adtr.co/iwyjbs",
+            "img": "https://media.dozapotek.se/catalog/product/l/r/lrp_anthelios_kids_uvmune_milk_sfp50_.jpg"
+          },
+          {
+            "name": "Eucerin Sun Kids Dry Touch SPF50+",
+            "badge": "Minst kladdig",
+            "price": "199 kr",
+            "text": "Utsedd till bästa icke-kladdiga solkräm i Elles jämförelse av årets solskydd för barn. Absorberas snabbt utan att lämna någon film, parfymfri och vattenresistent med sandavvisande yta — bra för en dag på stranden. Innehåller lugnande ingredienser som Licochalcone A och passar barn från 3 månader på utsatta områden.",
+            "pros": [
+              "Utsedd till bästa icke-kladdiga av Elle",
+              "Sandavvisande yta — bra för stranden",
+              "Lugnande ingredienser som Licochalcone A"
+            ],
+            "cons": [
+              "Mindre flaska (200 ml) än flera av de andra alternativen",
+              "Som med alla kemiska solkrämer: applicera i god tid innan solexponering"
+            ],
+            "buyStore": "Dozapotek",
+            "buyUrl": "https://adtr.co/a8zhvm",
+            "img": "https://media.dozapotek.se/catalog/product/0/4/04005800323874_C1N1.jpg_2.png"
+          },
+          {
+            "name": "CeraVe Invisible Hydrating Sunscreen SPF50+",
+            "badge": "Bäst för hela familjen",
+            "price": "209 kr",
+            "text": "Till skillnad från de andra i jämförelsen är den här inte barnspecifik — den passar både barn och vuxna, vilket gör den praktisk när hela familjen ska dela en flaska på resan. Lätt, snabbabsorberande, parfymfri och med keramider och MVE-teknik som stödjer hudbarriären.",
+            "pros": [
+              "Passar barn och vuxna — en flaska för hela familjen",
+              "Innehåller keramider som stödjer hudbarriären",
+              "Lätt konsistens, snabbabsorberande"
+            ],
+            "cons": [
+              "Inte specifikt barnanpassad eller barntestad på samma sätt som de andra",
+              "Ingen sandavvisande eller särskilt lekvänlig funktion"
+            ],
+            "buyStore": "Dozapotek",
+            "buyUrl": "https://adtr.co/7cbasw",
+            "img": "https://media.dozapotek.se/catalog/product/0/3/03337875945738_C1N1.tif.png"
+          },
+          {
+            "name": "EVY Sunscreen Mousse Kids SPF50",
+            "badge": "Vår favorit",
+            "price": "250 kr",
+            "text": "Vår egen favorit i den här jämförelsen, och vi är inte ensamma om att tycka det — EVY:s barnmousse fick toppbetyg hos flera apotek i oberoende jämförelser och korades till bästa mousse av Elle. Skummet sjunker snabbt in i huden utan att lämna en kladdig hinna, vilket gör applicering betydligt enklare med små barn som inte vill stå still. Vattenresistent i upp till 8 timmar, hypoallergen och dermatologrekommenderad vid eksem och solallergi. Passar från 6 månader.",
+            "pros": [
+              "Vår egen favorit — går lättast in i huden av alla fem",
+              "Oberoende toppbetyg hos flera apotek, bästa mousse hos Elle",
+              "Vattenresistent upp till 8 timmar, rekommenderas vid eksem/solallergi"
+            ],
+            "cons": [
+              "Skumformatet kan vara ovant första gången",
+              "Något dyrare än flera av apotekens egna märken"
+            ],
+            "buyStore": "Meds",
+            "buyUrl": "https://adtr.co/pzn1sv",
+            "img": "https://media.meds.se/meds/images/image-jpeg-2026-05-19-083523558/800/800/fill/c/5694230167203-1-jpg.jpg"
+          },
+          {
+            "name": "ACO Sun Kids Active Roll-on SPF50+ Parfymfri",
+            "badge": "Bästa roll-on",
+            "price": "97 kr",
+            "text": "Utsedd till bästa roll-on i Elles jämförelse — perfekt för att snabbt fylla på skydd i ansiktet, på händer och fötter utan att få kladdiga fingrar, och tillräckligt enkel för att barnet ska kunna hjälpa till själv. Parfymfri och liten nog att alltid ha i väskan eller necessären.",
+            "pros": [
+              "Utsedd till bästa roll-on av Elle",
+              "Barnet kan ofta applicera själv",
+              "Kompakt format, perfekt att ha i väskan eller necessären"
+            ],
+            "cons": [
+              "Räcker inte till hela kroppen — bäst som komplement till en större flaska",
+              "Mindre volym (50 ml) för priset jämfört med de större flaskorna"
+            ],
+            "buyStore": "Dozapotek",
+            "buyUrl": "https://adtr.co/eqppog",
+            "img": "https://media.dozapotek.se/catalog/product/0/7/07319861021363_C1N1.tif_11.png"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Solkräm räcker inte hela vägen",
+            "text": "Solkräm är bara en del av solskyddet, och den del som lättast glöms bort att fylla på under en lång stranddag. [UV-kläder och UV-badkläder för barn](/topplistor/uv-badklader/) ger ett skydd som sitter kvar hela dagen utan påfyllning — särskilt användbart för de delar av kroppen som annars kräver mest omsmörjning (rygg, axlar, huvud) och för de yngsta barnen där du vill minimera hur mycket kemiska filter som används. Vår rekommendation: kombinera UV-kläder på bål och axlar med solkräm på ansikte, händer och fötter."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vad betyder SPF 30 och SPF 50?",
+            "a": "SPF (Sun Protection Factor) mäter hur mycket längre skyddad hud tar på sig att börja rodna jämfört med oskyddad hud, under idealiska labbförhållanden med ett tjockt, jämnt lager — SPF 30 innebär ungefär 30 gånger längre tid, SPF 50 ungefär 50 gånger längre. I praktiken smörjer de flesta barn (och vuxna) på ett tunnare lager än testerna bygger på, så det verkliga skyddet blir ofta lägre än siffran antyder — ett extra skäl att välja en högre faktor för barn. SPF mäter dessutom bara skydd mot UVB-strålar (de som ger solbränna), inte UVA-strålar (som tränger djupare och bidrar till åldrande och hudskador på sikt) — leta efter UVA-märkningen (en cirkel med bokstäverna UVA) som garanterar minst en tredjedel så starkt UVA-skydd som SPF-talet, vilket alla fem produkter i jämförelsen har. Räknat i hur stor andel UVB-strålning som faktiskt släpps igenom är skillnaden mellan SPF 30 och 50 också större än den ser ut: SPF 30 släpper igenom ungefär 3,3 %, SPF 50 ungefär 2 % — nästan 40 % mindre UVB-strålning når huden med SPF 50."
+          },
+          {
+            "q": "Hur ofta ska man smörja om barn med solkräm?",
+            "a": "Som riktmärke var annan timme, och alltid direkt efter bad även om solkrämen är vattenresistent — vattenresistens betyder att skyddet sitter kvar en viss tid, inte att det aldrig behöver fyllas på."
+          },
+          {
+            "q": "Vilken ålder passar solkräm med kemiska filter för?",
+            "a": "De flesta kemiska solkrämer i den här jämförelsen (Eucerin, CeraVe, ACO) rekommenderas från omkring 3 månader på utsatta områden, medan EVY:s mousse och La Roche-Posays Kids-serie anger 6 månader. Spädbarn under 6 månader rekommenderas generellt hellre skyddas med kläder, hatt och skugga än med solkräm, och alltid i samråd med BVC vid osäkerhet."
+          },
+          {
+            "q": "Är mineralisk eller kemisk solkräm bäst för barn?",
+            "a": "Båda typerna är säkra och testade enligt EU:s regler för kosmetika. Mineraliska filter (zinkoxid) ligger som ett lager ovanpå huden och är ofta förstahandsvalet för de allra känsligaste barnen, men kan lämna en vit film. Kemiska filter som i de flesta produkterna ovan absorberas i huden och ger oftast en mer osynlig finish — välj efter barnets hudkänslighet snarare än efter vad som i sig är \"bäst\"."
+          }
+        ],
+        "published": "2026-11-03",
+        "updated": "2026-11-03"
       }
     ]
   },
