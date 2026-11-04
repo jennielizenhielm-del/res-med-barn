@@ -118,7 +118,7 @@ textarea { min-height:64px; }
 
 <script>
 /* ---- password gate (client-side deterrent; use Cloudflare Access for real protection) ---- */
-const PW_HASH = '2056d36bcc044427c806d3645d97710c9cc8119fd36245094c5e57160ac7551c';
+const PW_HASH = 'ea5f609b6c9107abafd1690129cbb442633d8120f0a30a01f62dff596ac003d8';
 async function sha256(s) {
   const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
   return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
