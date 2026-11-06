@@ -839,7 +839,7 @@ function buildTopplistor() {
   <div class="page-intro">${paras(hub.intro)}</div>
 </header>
 <div class="card-grid">
-  ${C.topplistor.lists.filter(l => !l.subPages && !l.paused).map(l => `
+  ${C.topplistor.lists.filter(l => !l.subPages && !l.paused).sort((a, b) => (b.updated || '').localeCompare(a.updated || '')).map(l => `
   <a class="hub-card has-media" href="/topplistor/${l.slug}/">
     ${media(l.img, l.emoji, 'hub-media', 640)}
     <span class="hub-emoji">${icon(l.emoji)}</span>
