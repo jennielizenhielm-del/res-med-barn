@@ -54,6 +54,129 @@ function pageLd(meta, url, updated, published, type) {
 
 /* ---------- helpers ---------- */
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// --- Custom line-icon set (replaces emoji site-wide). Falls back to the raw
+// emoji character for anything not in the map, so nothing silently disappears. ---
+const ICON_MAP = {
+  "✈️": "<svg class=\"ico ico-plane\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><line x1=\"21\" y1=\"3\" x2=\"10.5\" y2=\"13.5\"/><polygon points=\"21 3 14.5 21 10.5 13.5 3 9.5 21 3\"/></svg>",
+  "✈": "<svg class=\"ico ico-plane\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><line x1=\"21\" y1=\"3\" x2=\"10.5\" y2=\"13.5\"/><polygon points=\"21 3 14.5 21 10.5 13.5 3 9.5 21 3\"/></svg>",
+  "🧭": "<svg class=\"ico ico-compass\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polygon points=\"15.5 8.5 12.8 12.8 8.5 15.5 11.2 11.2 15.5 8.5\"/></svg>",
+  "🏖️": "<svg class=\"ico ico-beach\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z\"/><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"/><line x1=\"7\" y1=\"21\" x2=\"17\" y2=\"21\"/></svg>",
+  "🏖": "<svg class=\"ico ico-beach\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z\"/><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"/><line x1=\"7\" y1=\"21\" x2=\"17\" y2=\"21\"/></svg>",
+  "🎢": "<svg class=\"ico ico-rollercoaster\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 17c2-6 4-9 6-9s3 6 5 6 3-9 6-9\"/><circle cx=\"9\" cy=\"8.3\" r=\"1.3\"/></svg>",
+  "🏙️": "<svg class=\"ico ico-city\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"11\" width=\"4\" height=\"10\"/><rect x=\"10\" y=\"6\" width=\"4\" height=\"15\"/><rect x=\"17\" y=\"13\" width=\"4\" height=\"8\"/></svg>",
+  "🏙": "<svg class=\"ico ico-city\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"11\" width=\"4\" height=\"10\"/><rect x=\"10\" y=\"6\" width=\"4\" height=\"15\"/><rect x=\"17\" y=\"13\" width=\"4\" height=\"8\"/></svg>",
+  "🇸🇪": "<svg class=\"ico ico-house\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 11 12 4l8 7\"/><path d=\"M6 10v10h12V10\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"20\"/></svg>",
+  "🏛️": "<svg class=\"ico ico-museum\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 9 12 3 21 9\"/><line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"/><line x1=\"5\" y1=\"9\" x2=\"5\" y2=\"19\"/><line x1=\"9\" y1=\"9\" x2=\"9\" y2=\"19\"/><line x1=\"15\" y1=\"9\" x2=\"15\" y2=\"19\"/><line x1=\"19\" y1=\"9\" x2=\"19\" y2=\"19\"/><line x1=\"3\" y1=\"19\" x2=\"21\" y2=\"19\"/><line x1=\"3\" y1=\"21\" x2=\"21\" y2=\"21\"/></svg>",
+  "🏛": "<svg class=\"ico ico-museum\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 9 12 3 21 9\"/><line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"/><line x1=\"5\" y1=\"9\" x2=\"5\" y2=\"19\"/><line x1=\"9\" y1=\"9\" x2=\"9\" y2=\"19\"/><line x1=\"15\" y1=\"9\" x2=\"15\" y2=\"19\"/><line x1=\"19\" y1=\"9\" x2=\"19\" y2=\"19\"/><line x1=\"3\" y1=\"19\" x2=\"21\" y2=\"19\"/><line x1=\"3\" y1=\"21\" x2=\"21\" y2=\"21\"/></svg>",
+  "♥": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "❤️": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "❤": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "🛝": "<svg class=\"ico ico-slide\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21 12 4l8 17\"/><line x1=\"8\" y1=\"14\" x2=\"16\" y2=\"14\"/></svg>",
+  "☀️": "<svg class=\"ico ico-sun\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"4.3\"/><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"5\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"22\"/><line x1=\"2\" y1=\"12\" x2=\"5\" y2=\"12\"/><line x1=\"19\" y1=\"12\" x2=\"22\" y2=\"12\"/><line x1=\"4.6\" y1=\"4.6\" x2=\"6.7\" y2=\"6.7\"/><line x1=\"17.3\" y1=\"17.3\" x2=\"19.4\" y2=\"19.4\"/><line x1=\"4.6\" y1=\"19.4\" x2=\"6.7\" y2=\"17.3\"/><line x1=\"17.3\" y1=\"6.7\" x2=\"19.4\" y2=\"4.6\"/></svg>",
+  "☀": "<svg class=\"ico ico-sun\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"4.3\"/><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"5\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"22\"/><line x1=\"2\" y1=\"12\" x2=\"5\" y2=\"12\"/><line x1=\"19\" y1=\"12\" x2=\"22\" y2=\"12\"/><line x1=\"4.6\" y1=\"4.6\" x2=\"6.7\" y2=\"6.7\"/><line x1=\"17.3\" y1=\"17.3\" x2=\"19.4\" y2=\"19.4\"/><line x1=\"4.6\" y1=\"19.4\" x2=\"6.7\" y2=\"17.3\"/><line x1=\"17.3\" y1=\"6.7\" x2=\"19.4\" y2=\"4.6\"/></svg>",
+  "🎄": "<svg class=\"ico ico-tree\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 5 13h4l-3 5h12l-3-5h4Z\"/><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"21\"/></svg>",
+  "🍂": "<svg class=\"ico ico-leaf\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19C5 10 10 5 19 5c0 9-5 14-14 14Z\"/><path d=\"M8.5 15.5 15.5 8.5\"/></svg>",
+  "👶": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🧒": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🧑": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🧑‍🦱": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🤱": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👯": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "📅": "<svg class=\"ico ico-calendar\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/><line x1=\"8\" y1=\"3\" x2=\"8\" y2=\"7\"/><line x1=\"16\" y1=\"3\" x2=\"16\" y2=\"7\"/></svg>",
+  "💰": "<svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg>",
+  "⭐": "<svg class=\"ico ico-star\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3.5 14.6 9 20.5 9.8 16.2 13.8 17.3 19.7 12 16.8 6.7 19.7 7.8 13.8 3.5 9.8 9.4 9Z\"/></svg>",
+  "🎒": "<svg class=\"ico ico-backpack\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 8V6a4 4 0 0 1 8 0v2\"/><rect x=\"5\" y=\"8\" width=\"14\" height=\"13\" rx=\"2\"/><line x1=\"9\" y1=\"13\" x2=\"15\" y2=\"13\"/></svg>",
+  "🌍": "<svg class=\"ico ico-globe\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><ellipse cx=\"12\" cy=\"12\" rx=\"4\" ry=\"9\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/></svg>",
+  "✍️": "<svg class=\"ico ico-pen\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20h9\"/><path d=\"M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>",
+  "✍": "<svg class=\"ico ico-pen\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20h9\"/><path d=\"M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>",
+  "🍼": "<svg class=\"ico ico-bottle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 3h6\"/><path d=\"M10 3v3l-2 2v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V8l-2-2V3\"/><line x1=\"8\" y1=\"13\" x2=\"16\" y2=\"13\"/></svg>",
+  "🪺": "<svg class=\"ico ico-bottle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 3h6\"/><path d=\"M10 3v3l-2 2v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V8l-2-2V3\"/><line x1=\"8\" y1=\"13\" x2=\"16\" y2=\"13\"/></svg>",
+  "🚗": "<svg class=\"ico ico-car\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 16V12l2-5h12l2 5v4\"/><path d=\"M4 16h16\"/><circle cx=\"8\" cy=\"17.5\" r=\"1.5\"/><circle cx=\"16\" cy=\"17.5\" r=\"1.5\"/></svg>",
+  "🚆": "<svg class=\"ico ico-train\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"6\" y=\"4\" width=\"12\" height=\"13\" rx=\"3\"/><line x1=\"6\" y1=\"10\" x2=\"18\" y2=\"10\"/><circle cx=\"9.5\" cy=\"14\" r=\"1\"/><circle cx=\"14.5\" cy=\"14\" r=\"1\"/><line x1=\"8\" y1=\"20\" x2=\"6\" y2=\"22\"/><line x1=\"16\" y1=\"20\" x2=\"18\" y2=\"22\"/></svg>",
+  "🧸": "<svg class=\"ico ico-teddy\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"13\" r=\"7\"/><circle cx=\"6.5\" cy=\"6.5\" r=\"2.3\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"2.3\"/><circle cx=\"9.3\" cy=\"12\" r=\"0.8\"/><circle cx=\"14.7\" cy=\"12\" r=\"0.8\"/><path d=\"M9.5 16c1 1 4 1 5 0\"/></svg>",
+  "🧣": "<svg class=\"ico ico-scarf\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 7c4 2 14 2 18 0\"/><path d=\"M3 7v3\"/><path d=\"M21 7v9a2 2 0 0 1-2 2h-2v-5\"/></svg>",
+  "🌙": "<svg class=\"ico ico-moon\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M16 3a9 9 0 1 0 5 16 9 9 0 0 1-5-16Z\"/></svg>",
+  "🎲": "<svg class=\"ico ico-dice\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"3\"/><circle cx=\"9\" cy=\"9\" r=\"1\"/><circle cx=\"15\" cy=\"9\" r=\"1\"/><circle cx=\"9\" cy=\"15\" r=\"1\"/><circle cx=\"15\" cy=\"15\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/></svg>",
+  "🧥": "<svg class=\"ico ico-jacket\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 4 7 6 4 8v12h5v-7l3 3 3-3v7h5V8l-3-2-2-2\"/><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"20\"/></svg>",
+  "🏰": "<svg class=\"ico ico-castle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21V11h3V8h2v3h2V6h2v5h2V8h2v3h3v10Z\"/><line x1=\"4\" y1=\"21\" x2=\"20\" y2=\"21\"/></svg>",
+  "🧳": "<svg class=\"ico ico-suitcase\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"8\" width=\"18\" height=\"12\" rx=\"2\"/><path d=\"M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2\"/><line x1=\"3\" y1=\"13\" x2=\"21\" y2=\"13\"/></svg>",
+  "🚌": "<svg class=\"ico ico-bus\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"12\" rx=\"2\"/><line x1=\"4\" y1=\"11\" x2=\"20\" y2=\"11\"/><circle cx=\"8\" cy=\"19.5\" r=\"1.5\"/><circle cx=\"16\" cy=\"19.5\" r=\"1.5\"/></svg>",
+  "🎧": "<svg class=\"ico ico-headphones\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 15v-3a8 8 0 0 1 16 0v3\"/><rect x=\"3\" y=\"14\" width=\"4\" height=\"6\" rx=\"1.5\"/><rect x=\"17\" y=\"14\" width=\"4\" height=\"6\" rx=\"1.5\"/></svg>",
+  "🛒": "<svg class=\"ico ico-cart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"9\" cy=\"20\" r=\"1.3\"/><circle cx=\"17\" cy=\"20\" r=\"1.3\"/><path d=\"M3 4h2l2.4 11.5a2 2 0 0 0 2 1.5h7.6a2 2 0 0 0 2-1.6L21 8H6\"/></svg>",
+  "🛏️": "<svg class=\"ico ico-bed\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6\"/><path d=\"M3 18v2\"/><path d=\"M21 18v2\"/><path d=\"M3 13V8a1 1 0 0 1 1-1h7v5\"/></svg>",
+  "🛏": "<svg class=\"ico ico-bed\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6\"/><path d=\"M3 18v2\"/><path d=\"M21 18v2\"/><path d=\"M3 13V8a1 1 0 0 1 1-1h7v5\"/></svg>",
+  "📹": "<svg class=\"ico ico-camera\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><circle cx=\"12\" cy=\"13.5\" r=\"3.5\"/><path d=\"M8 7l1.5-2h5L16 7\"/></svg>",
+  "☔": "<svg class=\"ico ico-rain-umbrella\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 11a9 9 0 0 1 18 0Z\"/><line x1=\"12\" y1=\"11\" x2=\"12\" y2=\"19\"/><path d=\"M9 19a3 3 0 0 0 6 0\"/></svg>",
+  "☔️": "<svg class=\"ico ico-rain-umbrella\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 11a9 9 0 0 1 18 0Z\"/><line x1=\"12\" y1=\"11\" x2=\"12\" y2=\"19\"/><path d=\"M9 19a3 3 0 0 0 6 0\"/></svg>",
+  "🥾": "<svg class=\"ico ico-boot\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 3v9l-3 3v3a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1c0-2-2-3-4-3H9v-4h4V3Z\"/></svg>",
+  "🌧️": "<svg class=\"ico ico-rain-cloud\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 15a4 4 0 0 1 .7-7.9 5.5 5.5 0 0 1 10.6 1.9A3.5 3.5 0 0 1 17 15Z\"/><line x1=\"9\" y1=\"18\" x2=\"9\" y2=\"21\"/><line x1=\"13\" y1=\"18\" x2=\"13\" y2=\"21\"/><line x1=\"17\" y1=\"18\" x2=\"17\" y2=\"21\"/></svg>",
+  "🌧": "<svg class=\"ico ico-rain-cloud\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 15a4 4 0 0 1 .7-7.9 5.5 5.5 0 0 1 10.6 1.9A3.5 3.5 0 0 1 17 15Z\"/><line x1=\"9\" y1=\"18\" x2=\"9\" y2=\"21\"/><line x1=\"13\" y1=\"18\" x2=\"13\" y2=\"21\"/><line x1=\"17\" y1=\"18\" x2=\"17\" y2=\"21\"/></svg>",
+  "💧": "<svg class=\"ico ico-droplet\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 4.5 6 8 6 11.5a6 6 0 0 1-12 0C6 11 9 7.5 12 3Z\"/></svg>",
+  "🍽️": "<svg class=\"ico ico-dining\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"16\" cy=\"12\" r=\"7\"/><path d=\"M5 3v6a2 2 0 0 0 2 2 2 2 0 0 0 2-2V3\"/><line x1=\"7\" y1=\"11\" x2=\"7\" y2=\"21\"/></svg>",
+  "🍽": "<svg class=\"ico ico-dining\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"16\" cy=\"12\" r=\"7\"/><path d=\"M5 3v6a2 2 0 0 0 2 2 2 2 0 0 0 2-2V3\"/><line x1=\"7\" y1=\"11\" x2=\"7\" y2=\"21\"/></svg>",
+  "☕": "<svg class=\"ico ico-coffee\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 9h11v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z\"/><path d=\"M16 10h1.5a2.5 2.5 0 0 1 0 5H16\"/><line x1=\"7\" y1=\"3\" x2=\"7\" y2=\"6\"/><line x1=\"11\" y1=\"3\" x2=\"11\" y2=\"6\"/></svg>",
+  "☕️": "<svg class=\"ico ico-coffee\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 9h11v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z\"/><path d=\"M16 10h1.5a2.5 2.5 0 0 1 0 5H16\"/><line x1=\"7\" y1=\"3\" x2=\"7\" y2=\"6\"/><line x1=\"11\" y1=\"3\" x2=\"11\" y2=\"6\"/></svg>",
+  "⚓": "<svg class=\"ico ico-anchor\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"5\" r=\"2\"/><line x1=\"12\" y1=\"7\" x2=\"12\" y2=\"19\"/><path d=\"M6 13a6 6 0 0 0 12 0\"/><line x1=\"4\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"13\" x2=\"20\" y2=\"13\"/></svg>",
+  "⚓️": "<svg class=\"ico ico-anchor\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"5\" r=\"2\"/><line x1=\"12\" y1=\"7\" x2=\"12\" y2=\"19\"/><path d=\"M6 13a6 6 0 0 0 12 0\"/><line x1=\"4\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"13\" x2=\"20\" y2=\"13\"/></svg>",
+  "🌉": "<svg class=\"ico ico-bridge\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 17a10 10 0 0 1 20 0\"/><line x1=\"2\" y1=\"17\" x2=\"2\" y2=\"21\"/><line x1=\"22\" y1=\"17\" x2=\"22\" y2=\"21\"/><line x1=\"6\" y1=\"14\" x2=\"6\" y2=\"21\"/><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"/><line x1=\"18\" y1=\"14\" x2=\"18\" y2=\"21\"/></svg>",
+  "🎓": "<svg class=\"ico ico-graduation\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4 2 9l10 5 10-5Z\"/><path d=\"M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5\"/></svg>",
+  "🌲": "<svg class=\"ico ico-tree\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 5 13h4l-3 5h12l-3-5h4Z\"/><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"21\"/></svg>",
+  "🌊": "<svg class=\"ico ico-wave\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 16c2-2 4-2 6 0s4 2 6 0 4-2 6 0\"/><path d=\"M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0\"/></svg>",
+  "🦌": "<svg class=\"ico ico-deer\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"13\" r=\"4\"/><path d=\"M9 10 7 5m0 0 2 1m-2-1-2 1\"/><path d=\"M15 10l2-5m0 0-2 1m2-1 2 1\"/></svg>",
+  "🐒": "<svg class=\"ico ico-paw\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"16.5\" r=\"3.3\"/><circle cx=\"6.5\" cy=\"12\" r=\"1.7\"/><circle cx=\"9.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"14.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"17.5\" cy=\"12\" r=\"1.7\"/></svg>",
+  "🦁": "<svg class=\"ico ico-paw\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"16.5\" r=\"3.3\"/><circle cx=\"6.5\" cy=\"12\" r=\"1.7\"/><circle cx=\"9.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"14.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"17.5\" cy=\"12\" r=\"1.7\"/></svg>",
+  "🐅": "<svg class=\"ico ico-paw\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"16.5\" r=\"3.3\"/><circle cx=\"6.5\" cy=\"12\" r=\"1.7\"/><circle cx=\"9.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"14.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"17.5\" cy=\"12\" r=\"1.7\"/></svg>",
+  "📄": "<svg class=\"ico ico-doc\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><line x1=\"8\" y1=\"8\" x2=\"16\" y2=\"8\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/><line x1=\"8\" y1=\"16\" x2=\"13\" y2=\"16\"/></svg>",
+  "📝": "<svg class=\"ico ico-doc\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><line x1=\"8\" y1=\"8\" x2=\"16\" y2=\"8\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/><line x1=\"8\" y1=\"16\" x2=\"13\" y2=\"16\"/></svg>",
+  "📋": "<svg class=\"ico ico-doc\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><line x1=\"8\" y1=\"8\" x2=\"16\" y2=\"8\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/><line x1=\"8\" y1=\"16\" x2=\"13\" y2=\"16\"/></svg>",
+  "🧰": "<svg class=\"ico ico-toolbox\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 10h18v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z\"/><path d=\"M8 10V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4\"/><line x1=\"3\" y1=\"14\" x2=\"21\" y2=\"14\"/><line x1=\"10\" y1=\"14\" x2=\"10\" y2=\"16\"/><line x1=\"14\" y1=\"14\" x2=\"14\" y2=\"16\"/></svg>",
+  "📚": "<svg class=\"ico ico-books\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"4\" width=\"4.5\" height=\"16\" rx=\"1\"/><rect x=\"9.5\" y=\"4\" width=\"4.5\" height=\"16\" rx=\"1\"/><path d=\"M16 5.3 20 6v14l-4-.7Z\"/></svg>",
+  "📍": "<svg class=\"ico ico-pin\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 21s-7-6.5-7-11.5a7 7 0 0 1 14 0C19 14.5 12 21 12 21Z\"/><circle cx=\"12\" cy=\"9.5\" r=\"2.4\"/></svg>",
+  "⛽": "<svg class=\"ico ico-fuel\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21V6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v15\"/><line x1=\"3\" y1=\"21\" x2=\"14\" y2=\"21\"/><path d=\"M13 10h2l3 3v5a1.5 1.5 0 0 1-3 0v-1a1 1 0 0 0-1-1h-1\"/><line x1=\"6\" y1=\"9\" x2=\"11\" y2=\"9\"/></svg>",
+  "⛽️": "<svg class=\"ico ico-fuel\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21V6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v15\"/><line x1=\"3\" y1=\"21\" x2=\"14\" y2=\"21\"/><path d=\"M13 10h2l3 3v5a1.5 1.5 0 0 1-3 0v-1a1 1 0 0 0-1-1h-1\"/><line x1=\"6\" y1=\"9\" x2=\"11\" y2=\"9\"/></svg>",
+  "🖨": "<svg class=\"ico ico-printer\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"8\" width=\"14\" height=\"8\" rx=\"1\"/><path d=\"M7 8V4h10v4\"/><path d=\"M7 16v4h10v-4\"/></svg>",
+  "🖨️": "<svg class=\"ico ico-printer\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"8\" width=\"14\" height=\"8\" rx=\"1\"/><path d=\"M7 8V4h10v4\"/><path d=\"M7 16v4h10v-4\"/></svg>",
+  "📏": "<svg class=\"ico ico-ruler\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"10\" rx=\"1.5\"/><line x1=\"7\" y1=\"7\" x2=\"7\" y2=\"10\"/><line x1=\"11\" y1=\"7\" x2=\"11\" y2=\"10\"/><line x1=\"15\" y1=\"7\" x2=\"15\" y2=\"10\"/></svg>",
+  "👕": "<svg class=\"ico ico-shirt\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 4 4 7l2 3 2-1.5V20h8V8.5L18 10l2-3-4-3-2 2h-4Z\"/></svg>",
+  "🍎": "<svg class=\"ico ico-food\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 2 4 5 4 7a4 4 0 1 1-8 0c0-2 1-5 4-7Z\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"21\"/></svg>",
+  "🥐": "<svg class=\"ico ico-food\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 2 4 5 4 7a4 4 0 1 1-8 0c0-2 1-5 4-7Z\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"21\"/></svg>",
+  "🍳": "<svg class=\"ico ico-food\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 2 4 5 4 7a4 4 0 1 1-8 0c0-2 1-5 4-7Z\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"21\"/></svg>",
+  "🧴": "<svg class=\"ico ico-toiletries\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"8\" width=\"6\" height=\"12\" rx=\"1.5\"/><path d=\"M10.5 8V5a1.5 1.5 0 0 1 3 0v3\"/><line x1=\"9\" y1=\"12\" x2=\"15\" y2=\"12\"/></svg>",
+  "🧩": "<svg class=\"ico ico-puzzle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 4h3v2.3a1.8 1.8 0 1 0 0 3.4V12h3a1.8 1.8 0 1 1 0 3.6V18h-3v-2.3a1.8 1.8 0 1 0-3.6 0V18H6v-3h2.3a1.8 1.8 0 1 0 0-3.6H6V8h3Z\"/></svg>",
+  "🆕": "<svg class=\"ico ico-sparkle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/></svg>",
+  "🏠": "<svg class=\"ico ico-house\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 11 12 4l8 7\"/><path d=\"M6 10v10h12V10\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"20\"/></svg>",
+  "🌳": "<svg class=\"ico ico-tree\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 5 13h4l-3 5h12l-3-5h4Z\"/><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"21\"/></svg>",
+  "🌐": "<svg class=\"ico ico-globe\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><ellipse cx=\"12\" cy=\"12\" rx=\"4\" ry=\"9\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/></svg>",
+  "🧡": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "📷": "<svg class=\"ico ico-camera\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><circle cx=\"12\" cy=\"13.5\" r=\"3.5\"/><path d=\"M8 7l1.5-2h5L16 7\"/></svg>",
+  "👨": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👩": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👧": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👦": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👨‍👩‍👧‍👦": "<svg class=\"ico ico-family\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"8\" cy=\"7\" r=\"2.2\"/><path d=\"M4 20c0-3 1.8-5 4-5s4 2 4 5\"/><circle cx=\"16.5\" cy=\"8.3\" r=\"1.7\"/><path d=\"M13.7 20c0-2.4 1.2-4 2.8-4s2.8 1.6 2.8 4\"/></svg>",
+  "📘": "<svg class=\"ico ico-globe\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><ellipse cx=\"12\" cy=\"12\" rx=\"4\" ry=\"9\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/></svg>",
+  "🫶": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "🔒": "<svg class=\"ico ico-lock\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"10\" rx=\"2\"/><path d=\"M8 11V7a4 4 0 0 1 8 0v4\"/></svg>",
+  "🔒️": "<svg class=\"ico ico-lock\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"10\" rx=\"2\"/><path d=\"M8 11V7a4 4 0 0 1 8 0v4\"/></svg>",
+  "⬇️": "<svg class=\"ico ico-download\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3v12\"/><path d=\"M7 11l5 5 5-5\"/><path d=\"M4 20h16\"/></svg>",
+  "⬇": "<svg class=\"ico ico-download\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3v12\"/><path d=\"M7 11l5 5 5-5\"/><path d=\"M4 20h16\"/></svg>",
+  "📤": "<svg class=\"ico ico-share\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3v10\"/><path d=\"M8 7l4-4 4 4\"/><path d=\"M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7\"/></svg>",
+  "📧": "<svg class=\"ico ico-mail\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M3 7l9 6 9-6\"/></svg>",
+  "⚠️": "<svg class=\"ico ico-warning\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 22 20H2Z\"/><line x1=\"12\" y1=\"9.5\" x2=\"12\" y2=\"14\"/><circle cx=\"12\" cy=\"16.8\" r=\"0.7\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+  "⚠": "<svg class=\"ico ico-warning\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 22 20H2Z\"/><line x1=\"12\" y1=\"9.5\" x2=\"12\" y2=\"14\"/><circle cx=\"12\" cy=\"16.8\" r=\"0.7\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+  "🔌": "<svg class=\"ico ico-bolt\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M13 2 4 14h6l-1 8 9-12h-6Z\"/></svg>",
+  "💰💰": "<svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg><svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg>",
+  "💰💰💰": "<svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg><svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg><svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg>"
+};
+function icon(e) { return (e && ICON_MAP[e]) || e; }
+function iconLabel(label) {
+  label = String(label);
+  const sp = label.indexOf(' ');
+  if (sp === -1 || !ICON_MAP[label.slice(0, sp)]) return esc(label);
+  return icon(label.slice(0, sp)) + ' ' + esc(label.slice(sp + 1));
+}
+
 // Som esc(), men tillåter enkla Markdown-länkar i brödtext, t.ex.
 // "prova vår [bränslekalkylator](/branslekalkylator/)" — texten escapas
 // först (så inga riktiga HTML-taggar kan smygas in), sedan omvandlas bara
@@ -67,7 +190,7 @@ const write = (rel, html) => {
   console.log('  ✓', rel);
 };
 const warnLen = (page, field, value, max) => {
-  if (value.length > max) console.warn(`  ⚠ ${page}: ${field} är ${value.length} tecken (max ${max})`);
+  if (value.length > max) console.warn(`  ${icon('⚠')} ${page}: ${field} är ${value.length} tecken (max ${max})`);
 };
 
 /* ---------- layout ---------- */
@@ -90,7 +213,7 @@ function head(meta, url) {
 <meta property="og:site_name" content="${esc(C.site.name)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -182,7 +305,7 @@ function footer() {
     </div>
     <div class="footer-col">
       <h4>Guider</h4>
-      ${C.ages.map(a => `<a href="/guider/${a.slug}/">${a.emoji} ${esc(a.name)}</a>`).join('\n      ')}
+      ${C.ages.map(a => `<a href="/guider/${a.slug}/">${icon(a.emoji)} ${esc(a.name)}</a>`).join('\n      ')}
     </div>
     <div class="footer-col">
       <h4>Topplistor</h4>
@@ -190,22 +313,22 @@ function footer() {
     </div>
     <div class="footer-col">
       <h4>Städer</h4>
-      ${C.stader.cities.map(s => `<a href="/stader/${s.slug}/">${s.emoji} ${esc(s.name)}</a>`).join('\n      ')}
+      ${C.stader.cities.map(s => `<a href="/stader/${s.slug}/">${icon(s.emoji)} ${esc(s.name)}</a>`).join('\n      ')}
     </div>
     <div class="footer-col">
       <h4>Om sajten</h4>
       <a href="/packlista/">Smart packlista</a>
       <a href="/foraldramedgivande/">Föräldramedgivande</a>
-      <a href="/verktyg/">🧰 Alla verktyg</a>
+      <a href="/verktyg/">${icon('🧰')} Alla verktyg</a>
       <a href="/resmal/">Alla resmål</a>
-      <a href="/artiklar/">📝 Alla artiklar</a>
+      <a href="/artiklar/">${icon('📝')} Alla artiklar</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
     </div>
   </div>
   <div class="footer-bottom">
     <span>&copy; 2024–${new Date().getFullYear()} ${esc(C.site.name)}</span>
-    <span>Gjord med ❤️ för barnfamiljer i Sverige</span>
+    <span>Gjord med ${icon('❤️')} för barnfamiljer i Sverige</span>
     <span>Innehåller annonslänkar från Adtraction och TradeDoubler</span>
   </div>
 </footer>
@@ -392,7 +515,7 @@ function packlistDaysAndCustomScript() {
 // (dvs. alla utom resmål-detaljsidorna, som har sin egen bylinerad inline i
 // buildResmal() eftersom de har ett helt annat header-layout).
 function authorByline() {
-  return `<p class="author-byline">✍️ Skrivet av <a href="/om-oss/">${esc(C.site.author.name)}</a></p>`;
+  return `<p class="author-byline">${icon('✍️')} Skrivet av <a href="/om-oss/">${esc(C.site.author.name)}</a></p>`;
 }
 
 function page(url, meta, active, inner, extraJsonld, ldType) {
@@ -425,17 +548,17 @@ function featCardSSR(d) {
   return `
     <a class="feat-card reveal visible" href="${resmalUrl(d)}" onclick="return handleCardClick(event, '${resmalSlug(d)}')">
       ${cardMediaSSR(d)}
-      <span class="feat-badge">${d.emoji} ${esc(d.catLabel)}</span>
+      <span class="feat-badge">${icon(d.emoji)} ${esc(d.catLabel)}</span>
       <button class="fav-heart" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${HEART_SVG}</button>
       <div class="feat-card-inner">
         <h3>${esc(d.name)}</h3>
         <p class="feat-country">${esc(d.country)}</p>
         <p class="feat-desc">${esc(d.desc)}</p>
         <div class="feat-meta">
-          <span class="feat-meta-item">👶 <strong>${esc(d.age)}</strong></span>
-          <span class="feat-meta-item">📅 <strong>${esc(d.season)}</strong></span>
-          <span class="feat-meta-item">💰 <strong>${esc(d.budget)}</strong></span>
-          <span class="feat-meta-item">⭐ <strong>${d.rating}</strong></span>
+          <span class="feat-meta-item">${icon('👶')} <strong>${esc(d.age)}</strong></span>
+          <span class="feat-meta-item">${icon('📅')} <strong>${esc(d.season)}</strong></span>
+          <span class="feat-meta-item">${icon('💰')} <strong>${esc(d.budget)}</strong></span>
+          <span class="feat-meta-item">${icon('⭐')} <strong>${d.rating}</strong></span>
         </div>
       </div>
     </a>`;
@@ -446,7 +569,7 @@ function destCardSSR(d) {
       <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
         <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
         <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
-        <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+        <span class="rating-badge">${icon('⭐')} ${String(d.rating).replace('.', ',')}</span>
       </div>
       <button class="fav-heart" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${HEART_SVG}</button>
       <div class="dest-card-body">
@@ -458,8 +581,8 @@ function destCardSSR(d) {
         <p class="dest-desc">${esc(d.desc)}</p>
         <div class="dest-card-meta">
           <span class="meta-chip">✓ Bäst ${esc(d.age)}</span>
-          <span class="meta-chip">✈️ ${esc(d.flight)}</span>
-          <span class="meta-chip">📅 ${esc(d.season)}</span>
+          <span class="meta-chip">${icon('✈️')} ${esc(d.flight)}</span>
+          <span class="meta-chip">${icon('📅')} ${esc(d.season)}</span>
         </div>
       </div>
     </a>`;
@@ -474,7 +597,7 @@ function recentCardSSR(item) {
   return `
   <a class="hub-card has-media" href="${item.url}">
     ${media(item.img, item.emoji, 'hub-media', 640)}
-    <span class="hub-emoji">${item.emoji || '🆕'}</span>
+    <span class="hub-emoji">${icon(item.emoji || '🆕')}</span>
     <h2>${esc(item.title)}</h2>
     <p>${esc(item.summary || '')}</p>
     <span class="hub-link">Läs mer →</span>
@@ -572,7 +695,7 @@ function buildGuiderHub() {
   ${C.ages.map(a => `
   <a class="hub-card has-media" href="/guider/${a.slug}/">
     ${media(a.img, a.emoji, 'hub-media', 640)}
-    <span class="hub-emoji">${a.emoji}</span>
+    <span class="hub-emoji">${icon(a.emoji)}</span>
     <h2>${esc(a.name)}</h2>
     <p class="hub-age">${esc(a.ageRange)}</p>
     <p>${esc(a.cardText)}</p>
@@ -591,7 +714,7 @@ function buildAgeHubs() {
     const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${a.emoji} ${esc(a.ageRange)}</p>
+  <p class="kicker">${icon(a.emoji)} ${esc(a.ageRange)}</p>
   <h1>${esc(a.h1)}</h1>
   <div class="page-intro">${paras(a.intro)}</div>
 </header>
@@ -601,7 +724,7 @@ ${media(a.img, a.emoji, 'page-hero', 1400)}
   ${C.transports.map(t => `
   <a class="hub-card has-media" href="/guider/${a.slug}/${t.slug}/">
     ${media(C.guides[a.slug + '/' + t.slug].img, t.emoji, 'hub-media', 640)}
-    <span class="hub-emoji">${t.emoji}</span>
+    <span class="hub-emoji">${icon(t.emoji)}</span>
     <h3>${esc(t.name)}</h3>
     <p>${esc(C.guides[a.slug + '/' + t.slug].cardText)}</p>
     <span class="hub-link">Läs guiden →</span>
@@ -635,7 +758,7 @@ function buildGuides() {
       const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${t.emoji} ${esc(a.name)} · ${esc(a.ageRange)} · Uppdaterad ${svDate(g.updated)}</p>
+  <p class="kicker">${icon(t.emoji)} ${esc(a.name)} · ${esc(a.ageRange)} · Uppdaterad ${svDate(g.updated)}</p>
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
@@ -660,14 +783,14 @@ ${g.packlista ? `
       ).join('')}</ul>
     </div>`).join('')}
   </div>
-  <p class="packlist-cta"><a href="/packlista/">🧳 Prova vår interaktiva packlista — anpassad efter ålder, resmål och transportsätt →</a></p>
+  <p class="packlist-cta"><a href="/packlista/">${icon('🧳')} Prova vår interaktiva packlista — anpassad efter ålder, resmål och transportsätt →</a></p>
 </div>` : ''}
-${t.slug === 'bil' ? `<p class="packlist-cta"><a href="/branslekalkylator/">⛽ Räkna ut vad bilresan kostar i bränsle — prova vår bränslekalkylator →</a></p>` : ''}
-${!g.packlista ? `<p class="packlist-cta"><a href="/packlista/">🧳 Packa rätt för resan — prova vår anpassade packlista →</a></p>` : ''}
+${t.slug === 'bil' ? `<p class="packlist-cta"><a href="/branslekalkylator/">${icon('⛽')} Räkna ut vad bilresan kostar i bränsle — prova vår bränslekalkylator →</a></p>` : ''}
+${!g.packlista ? `<p class="packlist-cta"><a href="/packlista/">${icon('🧳')} Packa rätt för resan — prova vår anpassade packlista →</a></p>` : ''}
 ${faqHtml(g.faq)}
 <h2 class="section-title">Fler guider för ${esc(a.name.toLowerCase())}</h2>
 <div class="related-links">
-  ${others.map(x => `<a href="/guider/${a.slug}/${x.slug}/">${x.emoji} ${esc(C.guides[a.slug + '/' + x.slug].h1)}</a>`).join('\n  ')}
+  ${others.map(x => `<a href="/guider/${a.slug}/${x.slug}/">${icon(x.emoji)} ${esc(C.guides[a.slug + '/' + x.slug].h1)}</a>`).join('\n  ')}
   <a href="/guider/${a.slug}/">← Alla guider för ${esc(a.name.toLowerCase())}</a>
 </div>`;
       write(`guider/${key}/index.html`, page(url, g, '/guider/', inner, g.faq ? [bc.jsonld, faqLd(g.faq)] : bc.jsonld, 'Article'));
@@ -719,7 +842,7 @@ function buildTopplistor() {
   ${C.topplistor.lists.filter(l => !l.subPages && !l.paused).map(l => `
   <a class="hub-card has-media" href="/topplistor/${l.slug}/">
     ${media(l.img, l.emoji, 'hub-media', 640)}
-    <span class="hub-emoji">${l.emoji}</span>
+    <span class="hub-emoji">${icon(l.emoji)}</span>
     <h2>${esc(l.name)}</h2>
     <p>${esc(l.cardText)}</p>
     <span class="hub-link">Se listan →</span>
@@ -746,7 +869,7 @@ ${faqHtml(hub.faq)}`;
     return `
   <a class="hub-card has-media" href="/topplistor/${sp.slug}/">
     ${media(target ? target.img : l.img, sp.emoji, 'hub-media', 640)}
-    <span class="hub-emoji">${sp.emoji}</span>
+    <span class="hub-emoji">${icon(sp.emoji)}</span>
     <h2>${esc(sp.label)}</h2>
     <p>${esc(sp.desc)}</p>
     <span class="hub-link">Se listan →</span>
@@ -757,7 +880,7 @@ ${faqHtml(hub.faq)}`;
 <div class="related-links">
   ${(TOPPLISTOR_RELATED[l.slug] || []).map(slug => {
     const x = C.topplistor.lists.find(t => t.slug === slug);
-    return x ? `<a href="/topplistor/${x.slug}/">${x.emoji} ${esc(x.h1)}</a>` : '';
+    return x ? `<a href="/topplistor/${x.slug}/">${icon(x.emoji)} ${esc(x.h1)}</a>` : '';
   }).join('\n  ')}
   <a href="/topplistor/" class="related-links-all">Alla topplistor →</a>
 </div>`;
@@ -775,12 +898,12 @@ ${faqHtml(hub.faq)}`;
     const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${l.emoji} Uppdaterad ${svDate(l.updated)}</p>
+  <p class="kicker">${icon(l.emoji)} Uppdaterad ${svDate(l.updated)}</p>
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
 ${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect, l.imgPos)}
-${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
+${l.handbagageNote ? `<div class="handbagage-note">${icon('✈️')} <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
 <div class="products">
   ${l.products.map((p, i) => `
   <article class="product-card${p.img ? '' : ' no-img'}">
@@ -793,14 +916,14 @@ ${l.handbagageNote ? `<div class="handbagage-note">✈️ <strong>Handbagage på
       </div>
       <p class="product-price">${esc(p.price)}</p>
       <p>${esc(p.text)}</p>
-      ${p.handbagage ? `<p class="handbagage-badge">✈️ <strong>Godkänd som handbagage:</strong> ${esc(p.handbagage)}</p>` : ''}
-      ${p.sizeTip ? `<p class="handbagage-badge">📏 <strong>Tips för rätt storlek:</strong> ${esc(p.sizeTip.text)} <a href="${esc(p.sizeTip.url)}" target="_blank" rel="nofollow noopener">${esc(p.sizeTip.linkText || 'Se storleksguide →')}</a></p>` : ''}
+      ${p.handbagage ? `<p class="handbagage-badge">${icon('✈️')} <strong>Godkänd som handbagage:</strong> ${esc(p.handbagage)}</p>` : ''}
+      ${p.sizeTip ? `<p class="handbagage-badge">${icon('📏')} <strong>Tips för rätt storlek:</strong> ${esc(p.sizeTip.text)} <a href="${esc(p.sizeTip.url)}" target="_blank" rel="nofollow noopener">${esc(p.sizeTip.linkText || 'Se storleksguide →')}</a></p>` : ''}
       <div class="pros-cons">
         <ul class="pros">${p.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
         <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
       </div>
       ${p.buyUrl
-        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">🛒 Köp hos ${esc(p.buyStore || 'butik')} →</a>`
+        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.buyStore || 'butik')} →</a>`
         : (p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : '')}
     </div>
   </article>`).join('')}
@@ -835,7 +958,7 @@ ${faqHtml(l.faq)}
 <div class="related-links">
   ${(TOPPLISTOR_RELATED[l.slug] || []).map(slug => {
     const x = C.topplistor.lists.find(t => t.slug === slug);
-    return x ? `<a href="/topplistor/${x.slug}/">${x.emoji} ${esc(x.h1)}</a>` : '';
+    return x ? `<a href="/topplistor/${x.slug}/">${icon(x.emoji)} ${esc(x.h1)}</a>` : '';
   }).join('\n  ')}
   <a href="/topplistor/" class="related-links-all">Alla topplistor →</a>
 </div>`;
@@ -859,13 +982,13 @@ function activityCard(act) {
     <p class="activity-price">${esc(act.price)}</p>
     <p class="activity-desc">${esc(act.desc)}</p>
     <div class="activity-meta">
-      <span class="meta-chip">👶 ${ageLabel}</span>
-      <span class="meta-chip">${act.indoor ? '🏠 Inomhus' : '🌳 Utomhus'}</span>
-      <span class="meta-chip">📍 ${esc(act.area)}</span>
-      ${act.dateInfo ? `<span class="meta-chip">📅 ${esc(act.dateInfo)}</span>` : ''}
-      ${act.note ? `<span class="meta-chip meta-chip-note">⚠️ ${esc(act.note)}</span>` : ''}
+      <span class="meta-chip">${icon('👶')} ${ageLabel}</span>
+      <span class="meta-chip">${act.indoor ? icon('🏠') + ' Inomhus' : icon('🌳') + ' Utomhus'}</span>
+      <span class="meta-chip">${icon('📍')} ${esc(act.area)}</span>
+      ${act.dateInfo ? `<span class="meta-chip">${icon('📅')} ${esc(act.dateInfo)}</span>` : ''}
+      ${act.note ? `<span class="meta-chip meta-chip-note">${icon('⚠️')} ${esc(act.note)}</span>` : ''}
     </div>
-    ${act.familyCost ? `<p class="activity-family-cost">👨‍👩‍👧‍👦 ${esc(act.familyCost)}</p>` : ''}
+    ${act.familyCost ? `<p class="activity-family-cost">${icon('👨‍👩‍👧‍👦')} ${esc(act.familyCost)}</p>` : ''}
   </article>`;
 }
 
@@ -882,7 +1005,7 @@ function buildStaderHub() {
   ${C.stader.cities.map(s => `
   <a class="hub-card has-media" href="/stader/${s.slug}/">
     ${media(s.img, s.emoji, 'hub-media', 640)}
-    <span class="hub-emoji">${s.emoji}</span>
+    <span class="hub-emoji">${icon(s.emoji)}</span>
     <h2>${esc(s.name)}</h2>
     <p>${esc(s.cardText)}</p>
     <span class="hub-link">Till stadsguiden →</span>
@@ -905,7 +1028,7 @@ function buildStader() {
     const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${s.emoji} Uppdaterad ${svDate(s.updated)}</p>
+  <p class="kicker">${icon(s.emoji)} Uppdaterad ${svDate(s.updated)}</p>
   <h1>${esc(s.h1)}</h1>
   <div class="page-intro">${paras(s.intro)}</div>
 </header>
@@ -913,7 +1036,7 @@ ${media(s.img, s.emoji, 'page-hero', 1400, null, s.imgPos)}
 
 ${(s.lov || []).map(l => `
 <a class="lov-cta" href="/stader/${s.slug}/${l.lovSlug}/">
-  <span class="lov-cta-emoji">${l.emoji}</span>
+  <span class="lov-cta-emoji">${icon(l.emoji)}</span>
   <span class="lov-cta-text">
     <strong>${esc(l.lovName)}stips för ${esc(s.name)}</strong>
     <span>${esc(l.dateLabel)}</span>
@@ -924,7 +1047,7 @@ ${(s.lov || []).map(l => `
 ${(s.guider || []).length ? `<div class="guide-cta-row">
   ${s.guider.map(g => `
   <a class="guide-cta" href="/stader/${s.slug}/${g.guideSlug}/">
-    <span class="guide-cta-emoji">${g.emoji}</span>
+    <span class="guide-cta-emoji">${icon(g.emoji)}</span>
     <span class="guide-cta-text">
       <strong>${esc(g.guideName)}</strong>
       <span>${g.venues.length} ställen i ${esc(s.name)}s innerstad</span>
@@ -963,7 +1086,7 @@ ${(s.guider || []).length ? `<div class="guide-cta-row">
 ${faqHtml(s.faq)}
 <h2 class="section-title">Fler städer</h2>
 <div class="related-links">
-  ${C.stader.cities.filter(x => x.slug !== s.slug).map(x => `<a href="/stader/${x.slug}/">${x.emoji} ${esc(x.name)} med barn</a>`).join('\n  ')}
+  ${C.stader.cities.filter(x => x.slug !== s.slug).map(x => `<a href="/stader/${x.slug}/">${icon(x.emoji)} ${esc(x.name)} med barn</a>`).join('\n  ')}
 </div>
 
 <script>
@@ -1029,7 +1152,7 @@ function buildLovSidor() {
       const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${l.emoji} ${esc(l.dateLabel)} · vecka ${l.week}</p>
+  <p class="kicker">${icon(l.emoji)} ${esc(l.dateLabel)} · vecka ${l.week}</p>
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
@@ -1037,13 +1160,13 @@ ${media(l.img, l.emoji, 'page-hero', 1400, null, l.imgPos)}
 <div class="activity-grid">
   ${l.tips.map(activityCard).join('')}
 </div>
-${l.totalCost ? `<p class="lov-total-cost">💰 ${esc(l.totalCost)}</p>` : ''}
+${l.totalCost ? `<p class="lov-total-cost">${icon('💰')} ${esc(l.totalCost)}</p>` : ''}
 ${faqHtml(l.faq)}
 <h2 class="section-title">${esc(l.lovName)} i andra städer</h2>
 <div class="related-links">
-  ${C.stader.cities.filter(x => x.slug !== s.slug && (x.lov || []).some(y => y.lovSlug === l.lovSlug)).map(x => `<a href="/stader/${x.slug}/${l.lovSlug}/">${x.emoji} ${esc(x.name)}</a>`).join('\n  ')}
-  <a href="/stader/${s.slug}/">${s.emoji} Alla aktiviteter i ${esc(s.name)} →</a>
-  ${others.map(x => `<a href="/stader/${s.slug}/${x.lovSlug}/">${x.emoji} ${esc(x.lovName)} i ${esc(s.name)}</a>`).join('\n  ')}
+  ${C.stader.cities.filter(x => x.slug !== s.slug && (x.lov || []).some(y => y.lovSlug === l.lovSlug)).map(x => `<a href="/stader/${x.slug}/${l.lovSlug}/">${icon(x.emoji)} ${esc(x.name)}</a>`).join('\n  ')}
+  <a href="/stader/${s.slug}/">${icon(s.emoji)} Alla aktiviteter i ${esc(s.name)} →</a>
+  ${others.map(x => `<a href="/stader/${s.slug}/${x.lovSlug}/">${icon(x.emoji)} ${esc(x.lovName)} i ${esc(s.name)}</a>`).join('\n  ')}
 </div>`;
       write(`stader/${s.slug}/${l.lovSlug}/index.html`, page(url, meta, '/stader/', inner, l.faq ? [bc.jsonld, itemList, faqLd(l.faq)] : [bc.jsonld, itemList], 'Article'));
     }
@@ -1059,24 +1182,24 @@ ${faqHtml(l.faq)}
 function venueCard(v) {
   const meals = v.meals || {};
   const mealChips = [
-    meals.frukost ? '🥐 Frukost' : null,
-    meals.brunch ? '🍳 Brunch' : null,
-    meals.lunch ? '🍽️ Lunch' : null,
-    meals.middag ? '🌙 Middag' : null,
-    meals.fika ? '☕ Fika' : null,
+    meals.frukost ? icon('🥐') + ' Frukost' : null,
+    meals.brunch ? icon('🍳') + ' Brunch' : null,
+    meals.lunch ? icon('🍽️') + ' Lunch' : null,
+    meals.middag ? icon('🌙') + ' Middag' : null,
+    meals.fika ? icon('☕') + ' Fika' : null,
   ].filter(Boolean);
   return `
   <article class="activity-card">
-    ${v.img ? `<div class="venue-media">${v.favorite ? `<span class="venue-visited-badge">🧡 Favorit hos oss</span>` : ''}<img src="${esc(v.img)}" alt="${esc(v.name)}" loading="lazy"></div>` : ''}
+    ${v.img ? `<div class="venue-media">${v.favorite ? `<span class="venue-visited-badge">${icon('🧡')} Favorit hos oss</span>` : ''}<img src="${esc(v.img)}" alt="${esc(v.name)}" loading="lazy"></div>` : ''}
     <div class="activity-top">
       <h3>${esc(v.name)}</h3>
-      ${(v.favorite && !v.img) ? `<span class="activity-badge activity-badge-favorite">🧡 Favorit hos oss</span>` : ''}
+      ${(v.favorite && !v.img) ? `<span class="activity-badge activity-badge-favorite">${icon('🧡')} Favorit hos oss</span>` : ''}
       ${v.ringAhead ? `<span class="activity-badge activity-badge-paid">Ring innan</span>` : ''}
     </div>
-    <p class="activity-price">📍 ${esc(v.address)}${v.address && v.area ? ', ' : ''}${esc(v.area || '')}</p>
+    <p class="activity-price">${icon('📍')} ${esc(v.address)}${v.address && v.area ? ', ' : ''}${esc(v.area || '')}</p>
     ${v.note ? `<p class="activity-desc">${esc(v.note)}</p>` : ''}
     ${mealChips.length ? `<div class="activity-meta">${mealChips.map(c => `<span class="meta-chip">${c}</span>`).join('')}</div>` : ''}
-    ${v.link ? `<a class="venue-link" href="${esc(v.link)}" rel="nofollow noopener" target="_blank">${/instagram\.com/.test(v.link) ? '📷' : '🌐'} ${esc(v.linkLabel || 'hemsidan')}</a>` : ''}
+    ${v.link ? `<a class="venue-link" href="${esc(v.link)}" rel="nofollow noopener" target="_blank">${icon(/instagram\.com/.test(v.link) ? '📷' : '🌐')} ${esc(v.linkLabel || 'hemsidan')}</a>` : ''}
   </article>`;
 }
 
@@ -1102,7 +1225,7 @@ function buildStadsGuider() {
       const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${g.emoji} Uppdaterad ${svDate(g.updated)}</p>
+  <p class="kicker">${icon(g.emoji)} Uppdaterad ${svDate(g.updated)}</p>
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
@@ -1122,8 +1245,8 @@ ${g.flatList ? `
 ${faqHtml(g.faq)}
 <h2 class="section-title">Mer i ${esc(s.name)}</h2>
 <div class="related-links">
-  <a href="/stader/${s.slug}/">${s.emoji} Alla aktiviteter i ${esc(s.name)} →</a>
-  ${others.map(x => `<a href="/stader/${s.slug}/${x.guideSlug}/">${x.emoji} ${esc(x.guideName)}</a>`).join('\n  ')}
+  <a href="/stader/${s.slug}/">${icon(s.emoji)} Alla aktiviteter i ${esc(s.name)} →</a>
+  ${others.map(x => `<a href="/stader/${s.slug}/${x.guideSlug}/">${icon(x.emoji)} ${esc(x.guideName)}</a>`).join('\n  ')}
 </div>`;
       write(`stader/${s.slug}/${g.guideSlug}/index.html`, page(url, meta, '/stader/', inner, [bc.jsonld, itemList], 'Article'));
     }
@@ -1144,7 +1267,7 @@ function buildArtiklarHub() {
   ${C.artiklar.list.map(a => `
   <a class="hub-card has-media" href="/artiklar/${a.slug}/">
     ${media(a.img, a.emoji, 'hub-media', 640)}
-    <span class="hub-emoji">${a.emoji}</span>
+    <span class="hub-emoji">${icon(a.emoji)}</span>
     <h2>${esc(a.name)}</h2>
     <p>${esc(a.cardText)}</p>
     <span class="hub-link">Läs artikeln →</span>
@@ -1162,7 +1285,7 @@ function buildArtiklar() {
     const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">${a.emoji} ${esc(a.kicker || '')} · Uppdaterad ${svDate(a.updated)}</p>
+  <p class="kicker">${icon(a.emoji)} ${esc(a.kicker || '')} · Uppdaterad ${svDate(a.updated)}</p>
   <h1>${esc(a.h1)}</h1>
   <div class="page-intro">${paras(a.intro)}</div>
 </header>
@@ -1185,14 +1308,14 @@ ${a.products && a.products.length ? `
       <h3>${esc(p.name)}</h3>
       ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
       <p>${esc(p.note)}</p>
-      <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">🛒 Köp hos ${esc(p.store)} →</a>
+      <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.store)} →</a>
     </div>`).join('')}
   </div>
 </div>` : ''}
 ${faqHtml(a.faq)}
 <h2 class="section-title">Fler artiklar</h2>
 <div class="related-links">
-  ${others.map(x => `<a href="/artiklar/${x.slug}/">${x.emoji} ${esc(x.name)}</a>`).join('\n  ')}
+  ${others.map(x => `<a href="/artiklar/${x.slug}/">${icon(x.emoji)} ${esc(x.name)}</a>`).join('\n  ')}
   <a href="/artiklar/">← Alla artiklar</a>
 </div>`;
     write(`artiklar/${a.slug}/index.html`, page(url, a, '/artiklar/', inner, a.faq ? [bc.jsonld, faqLd(a.faq)] : bc.jsonld, 'Article'));
@@ -1223,7 +1346,7 @@ const COUNTRY_REGION = {
 };
 const regionOf = country => /Sverige/.test(country) ? 'Norden' : (COUNTRY_REGION[country] || 'Övrigt');
 // Flaggemoji för landshubbarna (pillren på /resmal/ och H1 på varje landssida) —
-// samma grepp som redan fanns för Sverige-kategorin i filtret ("🇸🇪 Sverige").
+// samma grepp som redan fanns för Sverige-kategorin i filtret ("${icon('🇸🇪')} Sverige").
 const COUNTRY_FLAGS = { 'Grekland': '🇬🇷', 'Spanien': '🇪🇸', 'Frankrike': '🇫🇷', 'Thailand': '🇹🇭' };
 const resmalSlug = d => (NESTED_COUNTRIES[d.country] ? `${NESTED_COUNTRIES[d.country]}/${destSlug(d.name)}` : destSlug(d.name));
 const resmalUrl = d => `/resmal/${resmalSlug(d)}/`;
@@ -1272,8 +1395,8 @@ function buildResmalHub() {
 <div class="stader-filters" role="group" aria-label="Filtrera resmål">
   <div class="filter-group">
     <span class="filter-label">Kategori</span>
-    ${RESMAL_CATS.map(([val, emoji, label], i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-filter="cat" data-value="${val}">${emoji} ${label}</button>`).join('')}
-    <button class="filter-btn" data-filter="cat" data-value="favs">♥ Mina favoriter</button>
+    ${RESMAL_CATS.map(([val, emoji, label], i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-filter="cat" data-value="${val}">${icon(emoji)} ${label}</button>`).join('')}
+    <button class="filter-btn" data-filter="cat" data-value="favs">${icon('♥')} Mina favoriter</button>
   </div>
   <div class="filter-group">
     <input type="text" id="resmalSearch" placeholder="Sök namn eller land…" class="resmal-search-input" aria-label="Sök resmål">
@@ -1290,7 +1413,7 @@ function buildResmalHub() {
     <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
       <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
       <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
-      <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+      <span class="rating-badge">${icon('⭐')} ${String(d.rating).replace('.', ',')}</span>
     </div>
     <button class="fav-heart" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="event.preventDefault(); event.stopPropagation(); toggleResmalFav('${esc(d.name)}', this);">${HEART_SVG}</button>
     <div class="resmal-card-body">
@@ -1391,7 +1514,7 @@ function buildResmalCountryHubs() {
     <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
       <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
       <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
-      <span class="rating-badge">⭐ ${String(d.rating).replace('.', ',')}</span>
+      <span class="rating-badge">${icon('⭐')} ${String(d.rating).replace('.', ',')}</span>
     </div>
     <div class="resmal-card-body">
       <h3>${esc(d.name)}</h3>
@@ -1411,7 +1534,7 @@ function medgivandeNoteForDestination(d) {
   if (!entry) return '';
   return `
   <div class="detail-medgivande-note">
-    <div class="t-label">📄 ${entry.flag} Reser ni utan båda vårdnadshavarna?</div>
+    <div class="t-label">${icon('📄')} ${entry.flag} Reser ni utan båda vårdnadshavarna?</div>
     <p>${esc(entry.levelLabel)} — ${esc(d.country)} är ett av länderna där vi rekommenderar att ha ett skriftligt medgivandebrev med er, t.ex. om en förälder reser med barnen själv eller vid delad vårdnad. <a href="/foraldramedgivande/">Läs mer & skapa ett brev gratis →</a></p>
   </div>`;
 }
@@ -1427,7 +1550,7 @@ function subPlaceLink(url) {
   else {
     try { label = new URL(url).hostname.replace(/^www\./, ''); } catch { label = 'hemsidan'; }
   }
-  return `<a class="venue-link" href="${esc(url)}" rel="nofollow noopener" target="_blank">${emoji} ${esc(label)}</a>`;
+  return `<a class="venue-link" href="${esc(url)}" rel="nofollow noopener" target="_blank">${icon(emoji)} ${esc(label)}</a>`;
 }
 
 function subPlaces(title, items) {
@@ -1516,9 +1639,9 @@ function buildResmal() {
   </div>
   <a href="/resmal/" class="detail-back">← Alla resmål</a>
   <div class="detail-title-wrap">
-    <span class="d-chip" style="background: var(--cat-${d.cat}, var(--accent))">${d.emoji} ${esc(CAT_LABELS[d.cat] || d.catLabel)}</span>
+    <span class="d-chip" style="background: var(--cat-${d.cat}, var(--accent))">${icon(d.emoji)} ${esc(CAT_LABELS[d.cat] || d.catLabel)}</span>
     <h1>${esc(d.name)}</h1>
-    <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg · Uppdaterad ${svDate(d.updated)} · ✍️ <a href="/om-oss/">${esc(C.site.author.name)}</a></p>
+    <p class="d-country">${esc(d.country)} · ${icon('⭐')} ${d.rating} i familjebetyg · Uppdaterad ${svDate(d.updated)} · ${icon('✍️')} <a href="/om-oss/">${esc(C.site.author.name)}</a></p>
   </div>
 </div>
 <div class="detail-body">
@@ -1539,19 +1662,19 @@ function buildResmal() {
     <div class="t-label">Förälder till förälder</div>
     <p>${esc(d.tip)}</p>
   </div>
-  ${d.cat === 'beach' ? `<p class="packlist-solkram-cta">☀️ Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>` : ''}
-  ${d.cat !== 'museums' ? `<p class="packlist-solkram-cta">🧳 Packa rätt för resan till ${esc(d.name)} — prova vår anpassade <a href="/packlista/">packlista →</a></p>` : ''}
-  ${d.country === 'Thailand' ? `<p class="packlist-solkram-cta">🚗 Ska ni åka taxi, transfer eller tuk-tuk med barn på ${esc(d.name)}? Läs vår guide om <a href="/artiklar/bilbarnstol-utomlands/">bilbarnstol och babyskydd på resan →</a></p>` : ''}
-  ${(d.country === 'Grekland' || d.country === 'Spanien') ? `<p class="packlist-solkram-cta">🚗 Ska ni hyra bil med barn på ${esc(d.name)}? Läs vår guide om <a href="/artiklar/bilbarnstol-utomlands/">bilbarnstol och babyskydd på resan →</a></p>` : ''}
+  ${d.cat === 'beach' ? `<p class="packlist-solkram-cta">${icon('☀️')} Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>` : ''}
+  ${d.cat !== 'museums' ? `<p class="packlist-solkram-cta">${icon('🧳')} Packa rätt för resan till ${esc(d.name)} — prova vår anpassade <a href="/packlista/">packlista →</a></p>` : ''}
+  ${d.country === 'Thailand' ? `<p class="packlist-solkram-cta">${icon('🚗')} Ska ni åka taxi, transfer eller tuk-tuk med barn på ${esc(d.name)}? Läs vår guide om <a href="/artiklar/bilbarnstol-utomlands/">bilbarnstol och babyskydd på resan →</a></p>` : ''}
+  ${(d.country === 'Grekland' || d.country === 'Spanien') ? `<p class="packlist-solkram-cta">${icon('🚗')} Ska ni hyra bil med barn på ${esc(d.name)}? Läs vår guide om <a href="/artiklar/bilbarnstol-utomlands/">bilbarnstol och babyskydd på resan →</a></p>` : ''}
   ${medgivandeNoteForDestination(d)}
   ${d.prisinfo ? `
   <div class="detail-prisinfo">
-    <div class="t-label">💰 Pris & rabatter</div>
+    <div class="t-label">${icon('💰')} Pris & rabatter</div>
     <p>${esc(d.prisinfo)}</p>
     <p class="prisinfo-note">Tips: ICA, Coop och Hyresgästföreningen ger ofta roterande medlemsrabatter på svenska parker och museer — kolla era medlemsförmåner innan besöket, det kan sänka priset rejält.</p>
   </div>` : ''}
   <div class="detail-actions">
-    ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">✈️ Boka resa via Sembo →</a>` : ''}
+    ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">${icon('✈️')} Boka resa via Sembo →</a>` : ''}
     ${d.bookingUrl ? `<a class="btn ${d.semboUrl ? 'btn-ghost' : 'btn-primary'}" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">${d.semboUrl ? 'Fler alternativ' : 'Boka / Läs mer'} →</a>` : ''}
     ${d.altUrl && !d.semboUrl ? `<a class="btn btn-ghost" href="${esc(d.altUrl)}" target="_blank" rel="sponsored noopener">Fler alternativ →</a>` : ''}
     <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${esc(CAT_LABELS[d.cat] || d.catLabel)} →</a>
@@ -1591,7 +1714,7 @@ function buildSimplePages() {
 </header>
 <article class="article page-intro">
   ${paras(m.body)}
-  ${slug === 'kontakt' ? `<p class="contact-mail">📧 <a href="mailto:${esc(m.email)}">${esc(m.email)}</a></p>` : ''}
+  ${slug === 'kontakt' ? `<p class="contact-mail">${icon('📧')} <a href="mailto:${esc(m.email)}">${esc(m.email)}</a></p>` : ''}
 </article>`;
     write(`${slug}/index.html`, page(url, m, url, inner, bc.jsonld, slug === 'om-oss' ? 'AboutPage' : 'ContactPage'));
   }
@@ -1677,9 +1800,9 @@ function buildSmartPacklista() {
   ];
   const itemListLd = { '@context': 'https://schema.org', '@type': 'HowTo', name: P.meta.h1, description: P.meta.description };
 
-  const ageBtns = P.ages.map((a, i) => `<button class="filter-btn${i === 1 ? ' active' : ''}" data-group="age" data-value="${a.key}">${a.emoji} ${esc(a.label)}</button>`).join('');
-  const tripBtns = P.tripTypes.map((t, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-group="trip" data-value="${t.key}">${esc(t.label)}</button>`).join('');
-  const transBtns = P.transport.map((t, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-group="transport" data-value="${t.key}">${esc(t.label)}</button>`).join('');
+  const ageBtns = P.ages.map((a, i) => `<button class="filter-btn${i === 1 ? ' active' : ''}" data-group="age" data-value="${a.key}">${icon(a.emoji)} ${esc(a.label)}</button>`).join('');
+  const tripBtns = P.tripTypes.map((t, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-group="trip" data-value="${t.key}">${iconLabel(t.label)}</button>`).join('');
+  const transBtns = P.transport.map((t, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-group="transport" data-value="${t.key}">${iconLabel(t.label)}</button>`).join('');
 
   // SSR: bygg ALLA kombinationer, dolda via data-attribut, JS växlar synlighet
   let allBlocks = '';
@@ -1695,12 +1818,12 @@ function buildSmartPacklista() {
           <h2 class="packlist-combo-h2">${esc(comboH2)}</h2>
           <div class="packlist-grid packlist-grid-4">
             <div class="packlist-col">
-              <h3>👕 Kläder & hygien</h3>
+              <h3>${icon('👕')} Kläder & hygien</h3>
               ${kladerChecklist(kladerItems, age.key, trip.key, P.qtyRules)}
             </div>
             ${Object.entries(tillagg).map(([cat, items]) => `
             <div class="packlist-col">
-              <h3>${cat === 'Mat & dryck' ? '🍎' : cat === 'Förnödenheter' ? '🧴' : '🧩'} ${esc(cat)}</h3>
+              <h3>${icon(cat === 'Mat & dryck' ? '🍎' : cat === 'Förnödenheter' ? '🧴' : '🧩')} ${esc(cat)}</h3>
               <ul class="checklist">${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
             </div>`).join('')}
           </div>
@@ -1741,10 +1864,10 @@ function buildSmartPacklista() {
   </div>
 </div>
 
-<p class="packlist-solkram-cta">☀️ Ska ni sola mycket? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
+<p class="packlist-solkram-cta">${icon('☀️')} Ska ni sola mycket? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
 
 <div class="packlist-actions">
-  <button class="btn btn-primary" onclick="window.print()">🖨️ Skriv ut / Spara som PDF</button>
+  <button class="btn btn-primary" onclick="window.print()">${icon('🖨️')} Skriv ut / Spara som PDF</button>
 </div>
 
 <div id="packlistCombos">
@@ -1792,9 +1915,9 @@ function buildPacklistaSubPages() {
     const meta = { title: sub.title, description: sub.description, h1: sub.h1, updated: sub.updated, published: sub.published };
 
     // Bygg alla 24 kombinationer (samma data som hubben), men förvalt läge synligt direkt via SSR
-    const ageBtns = P.ages.map(a => `<button class="filter-btn${a.key === sub.defaultAge ? ' active' : ''}" data-group="age" data-value="${a.key}">${a.emoji} ${esc(a.label)}</button>`).join('');
-    const tripBtns = P.tripTypes.map(t => `<button class="filter-btn${t.key === sub.defaultTrip ? ' active' : ''}" data-group="trip" data-value="${t.key}">${esc(t.label)}</button>`).join('');
-    const transBtns = P.transport.map(t => `<button class="filter-btn${t.key === sub.defaultTransport ? ' active' : ''}" data-group="transport" data-value="${t.key}">${esc(t.label)}</button>`).join('');
+    const ageBtns = P.ages.map(a => `<button class="filter-btn${a.key === sub.defaultAge ? ' active' : ''}" data-group="age" data-value="${a.key}">${icon(a.emoji)} ${esc(a.label)}</button>`).join('');
+    const tripBtns = P.tripTypes.map(t => `<button class="filter-btn${t.key === sub.defaultTrip ? ' active' : ''}" data-group="trip" data-value="${t.key}">${iconLabel(t.label)}</button>`).join('');
+    const transBtns = P.transport.map(t => `<button class="filter-btn${t.key === sub.defaultTransport ? ' active' : ''}" data-group="transport" data-value="${t.key}">${iconLabel(t.label)}</button>`).join('');
 
     let allBlocks = '';
     for (const age of P.ages) {
@@ -1807,12 +1930,12 @@ function buildPacklistaSubPages() {
           <div class="packlist-combo" data-age="${age.key}" data-trip="${trip.key}" data-transport="${trans.key}"${isDefault ? '' : ' hidden'}>
             <div class="packlist-grid packlist-grid-4">
               <div class="packlist-col">
-                <h3>👕 Kläder & hygien</h3>
+                <h3>${icon('👕')} Kläder & hygien</h3>
                 ${kladerChecklist(kladerItems, age.key, trip.key, P.qtyRules)}
               </div>
               ${Object.entries(tillagg).map(([cat, items]) => `
               <div class="packlist-col">
-                <h3>${cat === 'Mat & dryck' ? '🍎' : cat === 'Förnödenheter' ? '🧴' : '🧩'} ${esc(cat)}</h3>
+                <h3>${icon(cat === 'Mat & dryck' ? '🍎' : cat === 'Förnödenheter' ? '🧴' : '🧩')} ${esc(cat)}</h3>
                 <ul class="checklist">${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
               </div>`).join('')}
             </div>
@@ -1842,15 +1965,15 @@ ${sub.sections.map(s => `<section class="article-section"><h2>${esc(s.h2)}</h2><
   </div>
 </div>
 <div class="packlist-actions">
-  <button class="btn btn-primary" onclick="window.print()">🖨️ Skriv ut / Spara som PDF</button>
+  <button class="btn btn-primary" onclick="window.print()">${icon('🖨️')} Skriv ut / Spara som PDF</button>
 </div>
 <div id="packlistCombos">
   ${allBlocks}
 </div>
 
-<p class="packlist-solkram-cta">☀️ Ska ni sola mycket? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
+<p class="packlist-solkram-cta">${icon('☀️')} Ska ni sola mycket? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>
 
-<p class="packlist-cta"><a href="/packlista/">🧳 Vill du anpassa fler detaljer? Prova hela det interaktiva verktyget →</a></p>
+<p class="packlist-cta"><a href="/packlista/">${icon('🧳')} Vill du anpassa fler detaljer? Prova hela det interaktiva verktyget →</a></p>
 
 ${faqHtml(sub.faq)}
 
@@ -1889,7 +2012,7 @@ function buildBranslekalkylator() {
   const B = C.branslekalkylator;
   const bc = breadcrumbs([['Hem', '/'], ['Bränslekalkylator', null]]);
 
-  const fuelBtns = B.fuelTypes.map((f, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-fuel="${f.key}" onclick="selectFuel('${f.key}')">${f.label}</button>`).join('');
+  const fuelBtns = B.fuelTypes.map((f, i) => `<button class="filter-btn${i === 0 ? ' active' : ''}" data-fuel="${f.key}" onclick="selectFuel('${f.key}')">${iconLabel(f.label)}</button>`).join('');
 
   const inner = `
 <header class="page-header">
@@ -1981,10 +2104,10 @@ function buildBranslekalkylator() {
 ${faqHtml(B.faq)}
 <h2 class="section-title">Fler resurser för bilresan</h2>
 <div class="related-links">
-  <a href="/guider/barn/bil/">🚗 Bilresa med barn</a>
-  <a href="/guider/smabarn/bil/">🚗 Bilresa med småbarn</a>
-  <a href="/packlista/">🧳 Smart packlista</a>
-  <a href="/topplistor/tillbehor/">🎒 Tillbehör för bilresan</a>
+  <a href="/guider/barn/bil/">${icon('🚗')} Bilresa med barn</a>
+  <a href="/guider/smabarn/bil/">${icon('🚗')} Bilresa med småbarn</a>
+  <a href="/packlista/">${icon('🧳')} Smart packlista</a>
+  <a href="/topplistor/tillbehor/">${icon('🎒')} Tillbehör för bilresan</a>
 </div>`;
 
   write('branslekalkylator/index.html', page('/branslekalkylator/', B.meta, '/branslekalkylator/', inner, [bc.jsonld, faqLd(B.faq)]));
@@ -1997,7 +2120,7 @@ function buildSolkramskalkylator() {
 
   const ageRows = S.ageGroups.map(a => `
     <div class="sun-calc-row">
-      <label for="sun-${a.key}">${a.emoji} ${esc(a.label)}</label>
+      <label for="sun-${a.key}">${icon(a.emoji)} ${esc(a.label)}</label>
       <input type="number" id="sun-${a.key}" class="sun-calc-count" min="0" step="1" value="0" data-ml="${a.mlPerApplication}">
     </div>`).join('');
 
@@ -2077,9 +2200,9 @@ function buildSolkramskalkylator() {
 ${faqHtml(S.faq)}
 <h2 class="section-title">Fler resurser för resan</h2>
 <div class="related-links">
-  <a href="/packlista/">🧳 Smart packlista</a>
-  <a href="/packlista/solsemester-barn/">☀️ Packlista för solsemester med barn</a>
-  <a href="/topplistor/">🛒 Alla topplistor</a>
+  <a href="/packlista/">${icon('🧳')} Smart packlista</a>
+  <a href="/packlista/solsemester-barn/">${icon('☀️')} Packlista för solsemester med barn</a>
+  <a href="/topplistor/">${icon('🛒')} Alla topplistor</a>
 </div>`;
 
   write('solkramskalkylator/index.html', page('/solkramskalkylator/', S.meta, '/solkramskalkylator/', inner, [bc.jsonld, faqLd(S.faq)]));
@@ -2123,11 +2246,11 @@ function buildMedgivande() {
   const inner = `
 <header class="page-header">
   ${bc.html}
-  <p class="kicker">✍️ Uppdaterad ${svDate(M.meta.updated)}</p>
+  <p class="kicker">${icon('✍️')} Uppdaterad ${svDate(M.meta.updated)}</p>
   <h1>${esc(M.meta.h1)}</h1>
   <div class="page-intro">${paras(M.meta.intro)}</div>
 </header>
-<p class="packlist-cta"><a href="/medgivandebrev/">✍️ Skapa ditt medgivandebrev direkt — gratis, klart på två minuter →</a></p>
+<p class="packlist-cta"><a href="/medgivandebrev/">${icon('✍️')} Skapa ditt medgivandebrev direkt — gratis, klart på två minuter →</a></p>
 <h2 class="section-title">Krav land för land — 22 resmål vi grävt i</h2>
 <p class="table-intro">Vi har prioriterat primärkällor (ambassader, ländernas egna myndigheter, EU:s Your Europe) framför bloggar och mallsajter. Där vi inte kunnat bekräfta ett krav skriver vi det tydligt i stället för att gissa.</p>
 <div class="country-cards">
@@ -2140,9 +2263,9 @@ function buildMedgivande() {
 ${faqHtml(M.faq)}
 <h2 class="section-title">Mer för resan</h2>
 <div class="related-links">
-  <a href="/medgivandebrev/">✍️ Medgivandebrevgenerator</a>
-  <a href="/verktyg/">🧰 Alla verktyg</a>
-  <a href="/resmal/">🌍 Alla resmål</a>
+  <a href="/medgivandebrev/">${icon('✍️')} Medgivandebrevgenerator</a>
+  <a href="/verktyg/">${icon('🧰')} Alla verktyg</a>
+  <a href="/resmal/">${icon('🌍')} Alla resmål</a>
 </div>`;
   write('foraldramedgivande/index.html', page('/foraldramedgivande/', M.meta, '/foraldramedgivande/', inner, M.faq ? [bc.jsonld, faqLd(M.faq)] : bc.jsonld, 'Article'));
   console.log('  ✓ foraldramedgivande/index.html');
@@ -2158,7 +2281,7 @@ function buildMedgivandeGenerator() {
   <h1>${esc(G.meta.h1)}</h1>
   <p class="page-intro">${esc(G.meta.intro)}</p>
 </header>
-<p class="letter-privacy-note">🔒 Allt du skriver stannar i din webbläsare — inget skickas till oss eller sparas.</p>
+<p class="letter-privacy-note">${icon('🔒')} Allt du skriver stannar i din webbläsare — inget skickas till oss eller sparas.</p>
 
 <div class="letter-form">
   <fieldset class="letter-form-fieldset">
@@ -2217,10 +2340,10 @@ function buildMedgivandeGenerator() {
   <div class="letter-preview" id="mg-preview"></div>
 </div>
 <div class="letter-actions">
-  <button type="button" class="btn-compare" id="mg-download">⬇️ Ladda ner som PDF</button>
-  <button type="button" class="btn-compare" onclick="window.print()">🖨️ Skriv ut</button>
-  <button type="button" class="btn-compare" id="mg-share" hidden>📤 Dela (mejl, AirDrop, m.m.)</button>
-  <button type="button" class="btn-compare" id="mg-copy">📋 Kopiera texten</button>
+  <button type="button" class="btn-compare" id="mg-download">${icon('⬇️')} Ladda ner som PDF</button>
+  <button type="button" class="btn-compare" onclick="window.print()">${icon('🖨️')} Skriv ut</button>
+  <button type="button" class="btn-compare" id="mg-share" hidden>${icon('📤')} Dela (mejl, AirDrop, m.m.)</button>
+  <button type="button" class="btn-compare" id="mg-copy"><svg class="ico ico-doc" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg> Kopiera texten</button>
 </div>
 <p class="letter-send-status" id="mg-shareStatus"></p>
 
@@ -2369,9 +2492,9 @@ function buildMedgivandeGenerator() {
 ${faqHtml(G.faq)}
 <h2 class="section-title">Mer för resan</h2>
 <div class="related-links">
-  <a href="/foraldramedgivande/">📋 Guide: föräldramedgivande land för land</a>
-  <a href="/verktyg/">🧰 Alla verktyg</a>
-  <a href="/packlista/">🧳 Smart packlista</a>
+  <a href="/foraldramedgivande/"><svg class="ico ico-doc" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg> Guide: föräldramedgivande land för land</a>
+  <a href="/verktyg/">${icon('🧰')} Alla verktyg</a>
+  <a href="/packlista/">${icon('🧳')} Smart packlista</a>
 </div>`;
   write('medgivandebrev/index.html', page('/medgivandebrev/', G.meta, '/medgivandebrev/', inner, G.faq ? [bc.jsonld, faqLd(G.faq)] : bc.jsonld));
   console.log('  ✓ medgivandebrev/index.html');
@@ -2390,7 +2513,7 @@ function buildVerktygHub() {
 <div class="card-grid">
   ${C.verktyg.tools.map(t => `
   <a class="hub-card" href="${t.url}">
-    <span class="hub-emoji">${t.emoji}</span>
+    <span class="hub-emoji">${icon(t.emoji)}</span>
     <h2>${esc(t.name)}</h2>
     <p>${esc(t.cardText)}</p>
     <span class="hub-link">Öppna verktyget →</span>
