@@ -1277,6 +1277,17 @@ ${faqHtml(m.faq)}`;
   write('artiklar/index.html', page('/artiklar/', m, '/artiklar/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
 }
 
+function productCardHtml(p) {
+  return `
+    <div class="product-mini-card">
+      ${p.img ? `<div class="product-mini-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-mini-img').remove()"></div>` : ''}
+      <h3>${esc(p.name)}</h3>
+      ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
+      <p>${esc(p.note)}</p>
+      <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.store)} →</a>
+    </div>`;
+}
+
 function buildArtiklar() {
   for (const a of C.artiklar.list) {
     const url = `/artiklar/${a.slug}/`;
@@ -1291,7 +1302,10 @@ function buildArtiklar() {
 </header>
 ${media(a.img, a.emoji, 'page-hero', 1400)}
 <article class="article">
-  ${a.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>`).join('\n')}
+  ${a.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>${s.products && s.products.length ? `
+  <div class="section-products">
+    <div class="product-mini-grid">${s.products.map(productCardHtml).join('')}</div>
+  </div>` : ''}`).join('\n')}
 </article>
 ${a.quicktips ? `
 <div class="quicktips-box">
@@ -1302,14 +1316,7 @@ ${a.products && a.products.length ? `
 <div class="product-recs">
   <h2>Produkter som kan hjälpa</h2>
   <div class="product-mini-grid">
-    ${a.products.map(p => `
-    <div class="product-mini-card">
-      ${p.img ? `<div class="product-mini-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-mini-img').remove()"></div>` : ''}
-      <h3>${esc(p.name)}</h3>
-      ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
-      <p>${esc(p.note)}</p>
-      <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.store)} →</a>
-    </div>`).join('')}
+    ${a.products.map(productCardHtml).join('')}
   </div>
 </div>` : ''}
 ${faqHtml(a.faq)}
