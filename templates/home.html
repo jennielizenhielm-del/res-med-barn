@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -37,7 +37,7 @@
       --shadow-lg: 0 8px 32px rgba(43,36,30,0.22);
       --radius: 10px;
       --radius-lg: 16px;
-      --radius-pill: 100px;
+      --radius-pill: 10px;
       --cat-beach: #E2836A;
       --cat-parks: #9D8BC7;
       --cat-nature: #5F9678;
@@ -45,8 +45,8 @@
       --cat-winter: #8AB6D8;
       --cat-sweden: #CFAC62;
       --cat-museums: #9C7A5B;
-      --font-display: 'Fraunces', Georgia, serif;
-      --font-body: 'Outfit', system-ui, sans-serif;
+      --font-display: 'Newsreader', Georgia, serif;
+      --font-body: 'Archivo', system-ui, sans-serif;
       --transition: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
@@ -106,10 +106,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: color-mix(in srgb, var(--bg) 85%, transparent);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-light);
+      background: var(--bg);
+      -webkit-border-bottom: 1px solid var(--border-light);
       transition: box-shadow var(--transition);
     }
     .nav.scrolled { box-shadow: var(--shadow-sm); }
@@ -278,18 +276,7 @@
       margin: 0 auto;
       overflow: visible;
     }
-    .hero::before {
-      content: '';
-      position: absolute;
-      width: clamp(300px, 45vw, 600px);
-      height: clamp(300px, 45vw, 600px);
-      border-radius: 50%;
-      background: radial-gradient(circle, var(--accent-light) 0%, transparent 70%);
-      top: 5%;
-      right: -5%;
-      pointer-events: none;
-      z-index: -1;
-    }
+    .hero::before { content: none; display: none; }
 
     .hero-label {
       display: inline-flex;
@@ -461,7 +448,6 @@
       bottom: 0.6rem; left: 0.6rem;
       padding: 0.25rem 0.7rem;
       background: color-mix(in srgb, #1A1816 55%, transparent);
-      backdrop-filter: blur(8px);
       border-radius: var(--radius-pill);
       color: #FDF9F3;
       font-size: 0.72rem;
@@ -599,10 +585,8 @@
       position: sticky;
       top: 68px;
       z-index: 90;
-      background: color-mix(in srgb, var(--bg) 92%, transparent);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      padding-top: 0.75rem;
+      background: var(--bg);
+      -webkit-padding-top: 0.75rem;
     }
     .cat-scroll {
       display: flex;
@@ -765,7 +749,6 @@
       font-size: 0.76rem;
       font-weight: 600;
       background: color-mix(in srgb, #FFFFFF 88%, transparent);
-      backdrop-filter: blur(6px);
       color: #2B3440;
       z-index: 2;
     }
@@ -814,7 +797,6 @@
       border: none;
       border-radius: 50%;
       background: color-mix(in srgb, #FFFFFF 85%, transparent);
-      backdrop-filter: blur(6px);
       cursor: pointer;
       font-size: 1.05rem;
       z-index: 3;
@@ -1014,7 +996,6 @@
       font-weight: 600;
       color: #2B3440;
       background: color-mix(in srgb, #FFFFFF 88%, transparent);
-      backdrop-filter: blur(6px);
       z-index: 2;
     }
 
@@ -1114,7 +1095,6 @@
       border: none;
       border-radius: 50%;
       background: color-mix(in srgb, #FFFFFF 88%, transparent);
-      backdrop-filter: blur(8px);
       color: #2B3440;
       font-size: 1.1rem;
       cursor: pointer;
@@ -1134,7 +1114,6 @@
       border: none;
       border-radius: var(--radius-pill);
       background: color-mix(in srgb, #FFFFFF 88%, transparent);
-      backdrop-filter: blur(8px);
       color: #2B3440;
       font-family: var(--font-body);
       font-size: 0.86rem;
@@ -1556,7 +1535,7 @@
   </ul>
   <div class="nav-actions">
     <button class="icon-btn" aria-label="Mina favoriter" onclick="showFavorites()" title="Mina favoriter">
-      <span>♥</span><span class="fav-count" id="favCount"></span>
+      <span><svg class="ico ico-heart" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z"/></svg></span><span class="fav-count" id="favCount"></span>
     </button>
     <button class="hamburger" aria-label="Meny" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -1577,7 +1556,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-label">✈️ Familjens resguide sedan 2024</div>
+    <div class="hero-label"><svg class="ico ico-plane" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="21" y1="3" x2="10.5" y2="13.5"/><polygon points="21 3 14.5 21 10.5 13.5 3 9.5 21 3"/></svg> Familjens resguide sedan 2024</div>
     <h1>Världens bästa resor<br>med <em>barn</em></h1>
     <p class="hero-sub">Handplockade resmål och ärliga tips – byggda på egen erfarenhet, grundlig research och råd från andra barnfamiljer som varit där. Med barn. På riktigt.</p>
     <div class="hero-search-wrap">
@@ -1592,7 +1571,7 @@
       <div class="hero-stat"><strong>5</strong> kategorier</div>
       <div class="hero-stat"><strong>0–16</strong> år</div>
     </div>
-    <a href="#quiz" class="hero-quiz-link">🧭 Vet ni inte vart ni ska? Gör vårt 30-sekunders quiz →</a>
+    <a href="#quiz" class="hero-quiz-link"><svg class="ico ico-compass" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><polygon points="15.5 8.5 12.8 12.8 8.5 15.5 11.2 11.2 15.5 8.5"/></svg> Vet ni inte vart ni ska? Gör vårt 30-sekunders quiz →</a>
   </div>
   <div class="hero-collage" id="heroCollage"></div>
 </section>
@@ -1600,13 +1579,13 @@
 <!-- CATEGORIES -->
 <div class="categories" id="categoriesNav">
   <div class="cat-scroll" role="tablist" aria-label="Bläddra resmål per kategori">
-    <a class="cat-pill" href="/resmal/"><span class="cat-emoji">🌍</span> Alla resmål</a>
-    <a class="cat-pill" href="/resmal/?cat=beach"><span class="cat-emoji">🏖️</span> Strand &amp; Sol</a>
-    <a class="cat-pill" href="/resmal/?cat=parks"><span class="cat-emoji">🎢</span> Nöjesparker</a>
-    <a class="cat-pill" href="/resmal/?cat=cities"><span class="cat-emoji">🏙️</span> Storstäder</a>
-    <a class="cat-pill" href="/resmal/?cat=sweden"><span class="cat-emoji">🇸🇪</span> Sverige</a>
-    <a class="cat-pill" href="/resmal/?cat=museums"><span class="cat-emoji">🏛️</span> Museer</a>
-    <a class="cat-pill" href="/resmal/?filter=favs"><span class="cat-emoji">♥</span> Mina favoriter</a>
+    <a class="cat-pill" href="/resmal/"><span class="cat-emoji"><svg class="ico ico-globe" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg></span> Alla resmål</a>
+    <a class="cat-pill" href="/resmal/?cat=beach"><span class="cat-emoji"><svg class="ico ico-beach" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z"/><line x1="12" y1="12" x2="12" y2="21"/><line x1="7" y1="21" x2="17" y2="21"/></svg></span> Strand &amp; Sol</a>
+    <a class="cat-pill" href="/resmal/?cat=parks"><span class="cat-emoji"><svg class="ico ico-rollercoaster" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17c2-6 4-9 6-9s3 6 5 6 3-9 6-9"/><circle cx="9" cy="8.3" r="1.3"/></svg></span> Nöjesparker</a>
+    <a class="cat-pill" href="/resmal/?cat=cities"><span class="cat-emoji"><svg class="ico ico-city" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="11" width="4" height="10"/><rect x="10" y="6" width="4" height="15"/><rect x="17" y="13" width="4" height="8"/></svg></span> Storstäder</a>
+    <a class="cat-pill" href="/resmal/?cat=sweden"><span class="cat-emoji"><svg class="ico ico-house" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11 12 4l8 7"/><path d="M6 10v10h12V10"/><line x1="12" y1="14" x2="12" y2="20"/></svg></span> Sverige</a>
+    <a class="cat-pill" href="/resmal/?cat=museums"><span class="cat-emoji"><svg class="ico ico-museum" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 9 12 3 21 9"/><line x1="4" y1="9" x2="20" y2="9"/><line x1="5" y1="9" x2="5" y2="19"/><line x1="9" y1="9" x2="9" y2="19"/><line x1="15" y1="9" x2="15" y2="19"/><line x1="19" y1="9" x2="19" y2="19"/><line x1="3" y1="19" x2="21" y2="19"/><line x1="3" y1="21" x2="21" y2="21"/></svg></span> Museer</a>
+    <a class="cat-pill" href="/resmal/?filter=favs"><span class="cat-emoji"><svg class="ico ico-heart" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z"/></svg></span> Mina favoriter</a>
   </div>
 </div>
 
@@ -1638,27 +1617,27 @@
   <div class="guide-hub-inner">
     <div class="guide-hub-row reveal">
       <div class="guide-hub-label">
-        <span>📚 Guider per ålder</span>
+        <span><svg class="ico ico-books" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="4.5" height="16" rx="1"/><rect x="9.5" y="4" width="4.5" height="16" rx="1"/><path d="M16 5.3 20 6v14l-4-.7Z"/></svg> Guider per ålder</span>
         <a href="/guider/" class="guide-hub-all">Alla guider →</a>
       </div>
       <div class="guide-hub-cards">
         <a class="guide-hub-card" href="/guider/bebisar/">
-          <span class="ghc-emoji">🍼</span>
+          <span class="ghc-emoji"><svg class="ico ico-bottle" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 3h6"/><path d="M10 3v3l-2 2v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V8l-2-2V3"/><line x1="8" y1="13" x2="16" y2="13"/></svg></span>
           <span class="ghc-name">Bebisar</span>
           <span class="ghc-desc">0–1 år</span>
         </a>
         <a class="guide-hub-card" href="/guider/smabarn/">
-          <span class="ghc-emoji">🧸</span>
+          <span class="ghc-emoji"><svg class="ico ico-teddy" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="7"/><circle cx="6.5" cy="6.5" r="2.3"/><circle cx="17.5" cy="6.5" r="2.3"/><circle cx="9.3" cy="12" r="0.8"/><circle cx="14.7" cy="12" r="0.8"/><path d="M9.5 16c1 1 4 1 5 0"/></svg></span>
           <span class="ghc-name">Småbarn</span>
           <span class="ghc-desc">1–3 år</span>
         </a>
         <a class="guide-hub-card" href="/guider/barn/">
-          <span class="ghc-emoji">🎒</span>
+          <span class="ghc-emoji"><svg class="ico ico-backpack" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 8V6a4 4 0 0 1 8 0v2"/><rect x="5" y="8" width="14" height="13" rx="2"/><line x1="9" y1="13" x2="15" y2="13"/></svg></span>
           <span class="ghc-name">Barn</span>
           <span class="ghc-desc">4–12 år</span>
         </a>
         <a class="guide-hub-card" href="/guider/tonaringar/">
-          <span class="ghc-emoji">🎧</span>
+          <span class="ghc-emoji"><svg class="ico ico-headphones" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
           <span class="ghc-name">Tonåringar</span>
           <span class="ghc-desc">13+ år</span>
         </a>
@@ -1667,27 +1646,27 @@
 
     <div class="guide-hub-row reveal">
       <div class="guide-hub-label">
-        <span>🛒 Topplistor</span>
+        <span><svg class="ico ico-cart" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/><path d="M3 4h2l2.4 11.5a2 2 0 0 0 2 1.5h7.6a2 2 0 0 0 2-1.6L21 8H6"/></svg> Topplistor</span>
         <a href="/topplistor/" class="guide-hub-all">Alla topplistor →</a>
       </div>
       <div class="guide-hub-cards">
         <a class="guide-hub-card" href="/topplistor/vagnar/">
-          <span class="ghc-emoji">🛒</span>
+          <span class="ghc-emoji"><svg class="ico ico-cart" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/><path d="M3 4h2l2.4 11.5a2 2 0 0 0 2 1.5h7.6a2 2 0 0 0 2-1.6L21 8H6"/></svg></span>
           <span class="ghc-name">Vagnar</span>
           <span class="ghc-desc">Bäst i test</span>
         </a>
         <a class="guide-hub-card" href="/topplistor/resevagnar/">
-          <span class="ghc-emoji">👶</span>
+          <span class="ghc-emoji"><svg class="ico ico-person" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="7.2" r="3.2"/><path d="M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5"/></svg></span>
           <span class="ghc-name">Resevagnar</span>
           <span class="ghc-desc">Bäst i test</span>
         </a>
         <a class="guide-hub-card" href="/topplistor/bilbarnstol/">
-          <span class="ghc-emoji">🚗</span>
+          <span class="ghc-emoji"><svg class="ico ico-car" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 16V12l2-5h12l2 5v4"/><path d="M4 16h16"/><circle cx="8" cy="17.5" r="1.5"/><circle cx="16" cy="17.5" r="1.5"/></svg></span>
           <span class="ghc-name">Bilbarnstol</span>
           <span class="ghc-desc">Bäst i test</span>
         </a>
         <a class="guide-hub-card" href="/topplistor/tillbehor/">
-          <span class="ghc-emoji">🎒</span>
+          <span class="ghc-emoji"><svg class="ico ico-backpack" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 8V6a4 4 0 0 1 8 0v2"/><rect x="5" y="8" width="14" height="13" rx="2"/><line x1="9" y1="13" x2="15" y2="13"/></svg></span>
           <span class="ghc-name">Tillbehör</span>
           <span class="ghc-desc">Bäst i test</span>
         </a>
@@ -1710,7 +1689,7 @@
 <!-- FÖRÄLDRAMEDGIVANDE-BANNER -->
 <section class="section medgivande-banner-section">
   <div class="medgivande-banner reveal">
-    <p>✍️ Reser du utan båda vårdnadshavarna? Se vilka 22 länder som kräver medgivandebrev.</p>
+    <p><svg class="ico ico-pen" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg> Reser du utan båda vårdnadshavarna? Se vilka 22 länder som kräver medgivandebrev.</p>
     <a href="/foraldramedgivande/">Läs guiden →</a>
   </div>
 </section>
@@ -1796,27 +1775,27 @@
     </div>
     <div class="footer-col">
       <h4>Kategorier</h4>
-      <a href="/resmal/?cat=beach">🏖️ Strand &amp; Sol</a>
-      <a href="/resmal/?cat=parks">🎢 Nöjesparker</a>
-      <a href="/resmal/?cat=cities">🏙️ Storstäder</a>
-      <a href="/resmal/?cat=sweden">🇸🇪 Sverige</a>
-      <a href="/resmal/?cat=museums">🏛️ Museer</a>
+      <a href="/resmal/?cat=beach"><svg class="ico ico-beach" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z"/><line x1="12" y1="12" x2="12" y2="21"/><line x1="7" y1="21" x2="17" y2="21"/></svg> Strand &amp; Sol</a>
+      <a href="/resmal/?cat=parks"><svg class="ico ico-rollercoaster" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17c2-6 4-9 6-9s3 6 5 6 3-9 6-9"/><circle cx="9" cy="8.3" r="1.3"/></svg> Nöjesparker</a>
+      <a href="/resmal/?cat=cities"><svg class="ico ico-city" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="11" width="4" height="10"/><rect x="10" y="6" width="4" height="15"/><rect x="17" y="13" width="4" height="8"/></svg> Storstäder</a>
+      <a href="/resmal/?cat=sweden"><svg class="ico ico-house" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11 12 4l8 7"/><path d="M6 10v10h12V10"/><line x1="12" y1="14" x2="12" y2="20"/></svg> Sverige</a>
+      <a href="/resmal/?cat=museums"><svg class="ico ico-museum" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 9 12 3 21 9"/><line x1="4" y1="9" x2="20" y2="9"/><line x1="5" y1="9" x2="5" y2="19"/><line x1="9" y1="9" x2="9" y2="19"/><line x1="15" y1="9" x2="15" y2="19"/><line x1="19" y1="9" x2="19" y2="19"/><line x1="3" y1="19" x2="21" y2="19"/><line x1="3" y1="21" x2="21" y2="21"/></svg> Museer</a>
     </div>
     <div class="footer-col">
       <h4>Snabblänkar</h4>
       <a href="/packlista/">Smart packlista</a>
-      <a href="/verktyg/">🧰 Alla verktyg</a>
+      <a href="/verktyg/"><svg class="ico ico-toolbox" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10h18v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M8 10V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/><line x1="3" y1="14" x2="21" y2="14"/><line x1="10" y1="14" x2="10" y2="16"/><line x1="14" y1="14" x2="14" y2="16"/></svg> Alla verktyg</a>
       <a href="/guider/">Guider</a>
       <a href="/topplistor/">Topplistor</a>
       <a href="/stader/">Städer</a>
-      <a href="/artiklar/">📝 Alla artiklar</a>
+      <a href="/artiklar/"><svg class="ico ico-doc" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg> Alla artiklar</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
     </div>
   </div>
   <div class="footer-bottom">
     <span>&copy; 2024–2026 Res med Barn</span>
-    <span>Gjord med ❤️ för barnfamiljer i Sverige</span>
+    <span>Gjord med <svg class="ico ico-heart" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z"/></svg> för barnfamiljer i Sverige</span>
     <span>Innehåller annonslänkar från Adtraction och TradeDoubler</span>
   </div>
 </footer>
@@ -1827,6 +1806,126 @@
 </div>
 <script>
 const IMG = id => `https://images.unsplash.com/${id}?q=80&w=900&auto=format&fit=crop`;
+
+const ICON_MAP = {
+  "✈️": "<svg class=\"ico ico-plane\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><line x1=\"21\" y1=\"3\" x2=\"10.5\" y2=\"13.5\"/><polygon points=\"21 3 14.5 21 10.5 13.5 3 9.5 21 3\"/></svg>",
+  "✈": "<svg class=\"ico ico-plane\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><line x1=\"21\" y1=\"3\" x2=\"10.5\" y2=\"13.5\"/><polygon points=\"21 3 14.5 21 10.5 13.5 3 9.5 21 3\"/></svg>",
+  "🧭": "<svg class=\"ico ico-compass\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polygon points=\"15.5 8.5 12.8 12.8 8.5 15.5 11.2 11.2 15.5 8.5\"/></svg>",
+  "🏖️": "<svg class=\"ico ico-beach\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z\"/><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"/><line x1=\"7\" y1=\"21\" x2=\"17\" y2=\"21\"/></svg>",
+  "🏖": "<svg class=\"ico ico-beach\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z\"/><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"/><line x1=\"7\" y1=\"21\" x2=\"17\" y2=\"21\"/></svg>",
+  "🎢": "<svg class=\"ico ico-rollercoaster\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 17c2-6 4-9 6-9s3 6 5 6 3-9 6-9\"/><circle cx=\"9\" cy=\"8.3\" r=\"1.3\"/></svg>",
+  "🏙️": "<svg class=\"ico ico-city\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"11\" width=\"4\" height=\"10\"/><rect x=\"10\" y=\"6\" width=\"4\" height=\"15\"/><rect x=\"17\" y=\"13\" width=\"4\" height=\"8\"/></svg>",
+  "🏙": "<svg class=\"ico ico-city\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"11\" width=\"4\" height=\"10\"/><rect x=\"10\" y=\"6\" width=\"4\" height=\"15\"/><rect x=\"17\" y=\"13\" width=\"4\" height=\"8\"/></svg>",
+  "🇸🇪": "<svg class=\"ico ico-house\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 11 12 4l8 7\"/><path d=\"M6 10v10h12V10\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"20\"/></svg>",
+  "🏛️": "<svg class=\"ico ico-museum\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 9 12 3 21 9\"/><line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"/><line x1=\"5\" y1=\"9\" x2=\"5\" y2=\"19\"/><line x1=\"9\" y1=\"9\" x2=\"9\" y2=\"19\"/><line x1=\"15\" y1=\"9\" x2=\"15\" y2=\"19\"/><line x1=\"19\" y1=\"9\" x2=\"19\" y2=\"19\"/><line x1=\"3\" y1=\"19\" x2=\"21\" y2=\"19\"/><line x1=\"3\" y1=\"21\" x2=\"21\" y2=\"21\"/></svg>",
+  "🏛": "<svg class=\"ico ico-museum\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 9 12 3 21 9\"/><line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"/><line x1=\"5\" y1=\"9\" x2=\"5\" y2=\"19\"/><line x1=\"9\" y1=\"9\" x2=\"9\" y2=\"19\"/><line x1=\"15\" y1=\"9\" x2=\"15\" y2=\"19\"/><line x1=\"19\" y1=\"9\" x2=\"19\" y2=\"19\"/><line x1=\"3\" y1=\"19\" x2=\"21\" y2=\"19\"/><line x1=\"3\" y1=\"21\" x2=\"21\" y2=\"21\"/></svg>",
+  "♥": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "❤️": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "❤": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "🛝": "<svg class=\"ico ico-slide\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21 12 4l8 17\"/><line x1=\"8\" y1=\"14\" x2=\"16\" y2=\"14\"/></svg>",
+  "☀️": "<svg class=\"ico ico-sun\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"4.3\"/><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"5\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"22\"/><line x1=\"2\" y1=\"12\" x2=\"5\" y2=\"12\"/><line x1=\"19\" y1=\"12\" x2=\"22\" y2=\"12\"/><line x1=\"4.6\" y1=\"4.6\" x2=\"6.7\" y2=\"6.7\"/><line x1=\"17.3\" y1=\"17.3\" x2=\"19.4\" y2=\"19.4\"/><line x1=\"4.6\" y1=\"19.4\" x2=\"6.7\" y2=\"17.3\"/><line x1=\"17.3\" y1=\"6.7\" x2=\"19.4\" y2=\"4.6\"/></svg>",
+  "☀": "<svg class=\"ico ico-sun\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"4.3\"/><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"5\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"22\"/><line x1=\"2\" y1=\"12\" x2=\"5\" y2=\"12\"/><line x1=\"19\" y1=\"12\" x2=\"22\" y2=\"12\"/><line x1=\"4.6\" y1=\"4.6\" x2=\"6.7\" y2=\"6.7\"/><line x1=\"17.3\" y1=\"17.3\" x2=\"19.4\" y2=\"19.4\"/><line x1=\"4.6\" y1=\"19.4\" x2=\"6.7\" y2=\"17.3\"/><line x1=\"17.3\" y1=\"6.7\" x2=\"19.4\" y2=\"4.6\"/></svg>",
+  "🎄": "<svg class=\"ico ico-tree\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 5 13h4l-3 5h12l-3-5h4Z\"/><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"21\"/></svg>",
+  "🍂": "<svg class=\"ico ico-leaf\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19C5 10 10 5 19 5c0 9-5 14-14 14Z\"/><path d=\"M8.5 15.5 15.5 8.5\"/></svg>",
+  "👶": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🧒": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🧑": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🧑‍🦱": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "🤱": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👯": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "📅": "<svg class=\"ico ico-calendar\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/><line x1=\"8\" y1=\"3\" x2=\"8\" y2=\"7\"/><line x1=\"16\" y1=\"3\" x2=\"16\" y2=\"7\"/></svg>",
+  "💰": "<svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg>",
+  "⭐": "<svg class=\"ico ico-star\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3.5 14.6 9 20.5 9.8 16.2 13.8 17.3 19.7 12 16.8 6.7 19.7 7.8 13.8 3.5 9.8 9.4 9Z\"/></svg>",
+  "🎒": "<svg class=\"ico ico-backpack\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 8V6a4 4 0 0 1 8 0v2\"/><rect x=\"5\" y=\"8\" width=\"14\" height=\"13\" rx=\"2\"/><line x1=\"9\" y1=\"13\" x2=\"15\" y2=\"13\"/></svg>",
+  "🌍": "<svg class=\"ico ico-globe\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><ellipse cx=\"12\" cy=\"12\" rx=\"4\" ry=\"9\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/></svg>",
+  "✍️": "<svg class=\"ico ico-pen\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20h9\"/><path d=\"M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>",
+  "✍": "<svg class=\"ico ico-pen\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20h9\"/><path d=\"M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>",
+  "🍼": "<svg class=\"ico ico-bottle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 3h6\"/><path d=\"M10 3v3l-2 2v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V8l-2-2V3\"/><line x1=\"8\" y1=\"13\" x2=\"16\" y2=\"13\"/></svg>",
+  "🪺": "<svg class=\"ico ico-bottle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 3h6\"/><path d=\"M10 3v3l-2 2v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V8l-2-2V3\"/><line x1=\"8\" y1=\"13\" x2=\"16\" y2=\"13\"/></svg>",
+  "🚗": "<svg class=\"ico ico-car\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 16V12l2-5h12l2 5v4\"/><path d=\"M4 16h16\"/><circle cx=\"8\" cy=\"17.5\" r=\"1.5\"/><circle cx=\"16\" cy=\"17.5\" r=\"1.5\"/></svg>",
+  "🚆": "<svg class=\"ico ico-train\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"6\" y=\"4\" width=\"12\" height=\"13\" rx=\"3\"/><line x1=\"6\" y1=\"10\" x2=\"18\" y2=\"10\"/><circle cx=\"9.5\" cy=\"14\" r=\"1\"/><circle cx=\"14.5\" cy=\"14\" r=\"1\"/><line x1=\"8\" y1=\"20\" x2=\"6\" y2=\"22\"/><line x1=\"16\" y1=\"20\" x2=\"18\" y2=\"22\"/></svg>",
+  "🧸": "<svg class=\"ico ico-teddy\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"13\" r=\"7\"/><circle cx=\"6.5\" cy=\"6.5\" r=\"2.3\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"2.3\"/><circle cx=\"9.3\" cy=\"12\" r=\"0.8\"/><circle cx=\"14.7\" cy=\"12\" r=\"0.8\"/><path d=\"M9.5 16c1 1 4 1 5 0\"/></svg>",
+  "🧣": "<svg class=\"ico ico-scarf\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 7c4 2 14 2 18 0\"/><path d=\"M3 7v3\"/><path d=\"M21 7v9a2 2 0 0 1-2 2h-2v-5\"/></svg>",
+  "🌙": "<svg class=\"ico ico-moon\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M16 3a9 9 0 1 0 5 16 9 9 0 0 1-5-16Z\"/></svg>",
+  "🎲": "<svg class=\"ico ico-dice\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"3\"/><circle cx=\"9\" cy=\"9\" r=\"1\"/><circle cx=\"15\" cy=\"9\" r=\"1\"/><circle cx=\"9\" cy=\"15\" r=\"1\"/><circle cx=\"15\" cy=\"15\" r=\"1\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/></svg>",
+  "🧥": "<svg class=\"ico ico-jacket\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 4 7 6 4 8v12h5v-7l3 3 3-3v7h5V8l-3-2-2-2\"/><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"20\"/></svg>",
+  "🏰": "<svg class=\"ico ico-castle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21V11h3V8h2v3h2V6h2v5h2V8h2v3h3v10Z\"/><line x1=\"4\" y1=\"21\" x2=\"20\" y2=\"21\"/></svg>",
+  "🧳": "<svg class=\"ico ico-suitcase\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"8\" width=\"18\" height=\"12\" rx=\"2\"/><path d=\"M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2\"/><line x1=\"3\" y1=\"13\" x2=\"21\" y2=\"13\"/></svg>",
+  "🚌": "<svg class=\"ico ico-bus\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"12\" rx=\"2\"/><line x1=\"4\" y1=\"11\" x2=\"20\" y2=\"11\"/><circle cx=\"8\" cy=\"19.5\" r=\"1.5\"/><circle cx=\"16\" cy=\"19.5\" r=\"1.5\"/></svg>",
+  "🎧": "<svg class=\"ico ico-headphones\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 15v-3a8 8 0 0 1 16 0v3\"/><rect x=\"3\" y=\"14\" width=\"4\" height=\"6\" rx=\"1.5\"/><rect x=\"17\" y=\"14\" width=\"4\" height=\"6\" rx=\"1.5\"/></svg>",
+  "🛒": "<svg class=\"ico ico-cart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"9\" cy=\"20\" r=\"1.3\"/><circle cx=\"17\" cy=\"20\" r=\"1.3\"/><path d=\"M3 4h2l2.4 11.5a2 2 0 0 0 2 1.5h7.6a2 2 0 0 0 2-1.6L21 8H6\"/></svg>",
+  "🛏️": "<svg class=\"ico ico-bed\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6\"/><path d=\"M3 18v2\"/><path d=\"M21 18v2\"/><path d=\"M3 13V8a1 1 0 0 1 1-1h7v5\"/></svg>",
+  "🛏": "<svg class=\"ico ico-bed\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6\"/><path d=\"M3 18v2\"/><path d=\"M21 18v2\"/><path d=\"M3 13V8a1 1 0 0 1 1-1h7v5\"/></svg>",
+  "📹": "<svg class=\"ico ico-camera\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><circle cx=\"12\" cy=\"13.5\" r=\"3.5\"/><path d=\"M8 7l1.5-2h5L16 7\"/></svg>",
+  "☔": "<svg class=\"ico ico-rain-umbrella\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 11a9 9 0 0 1 18 0Z\"/><line x1=\"12\" y1=\"11\" x2=\"12\" y2=\"19\"/><path d=\"M9 19a3 3 0 0 0 6 0\"/></svg>",
+  "☔️": "<svg class=\"ico ico-rain-umbrella\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 11a9 9 0 0 1 18 0Z\"/><line x1=\"12\" y1=\"11\" x2=\"12\" y2=\"19\"/><path d=\"M9 19a3 3 0 0 0 6 0\"/></svg>",
+  "🥾": "<svg class=\"ico ico-boot\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 3v9l-3 3v3a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1c0-2-2-3-4-3H9v-4h4V3Z\"/></svg>",
+  "🌧️": "<svg class=\"ico ico-rain-cloud\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 15a4 4 0 0 1 .7-7.9 5.5 5.5 0 0 1 10.6 1.9A3.5 3.5 0 0 1 17 15Z\"/><line x1=\"9\" y1=\"18\" x2=\"9\" y2=\"21\"/><line x1=\"13\" y1=\"18\" x2=\"13\" y2=\"21\"/><line x1=\"17\" y1=\"18\" x2=\"17\" y2=\"21\"/></svg>",
+  "🌧": "<svg class=\"ico ico-rain-cloud\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 15a4 4 0 0 1 .7-7.9 5.5 5.5 0 0 1 10.6 1.9A3.5 3.5 0 0 1 17 15Z\"/><line x1=\"9\" y1=\"18\" x2=\"9\" y2=\"21\"/><line x1=\"13\" y1=\"18\" x2=\"13\" y2=\"21\"/><line x1=\"17\" y1=\"18\" x2=\"17\" y2=\"21\"/></svg>",
+  "💧": "<svg class=\"ico ico-droplet\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 4.5 6 8 6 11.5a6 6 0 0 1-12 0C6 11 9 7.5 12 3Z\"/></svg>",
+  "🍽️": "<svg class=\"ico ico-dining\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"16\" cy=\"12\" r=\"7\"/><path d=\"M5 3v6a2 2 0 0 0 2 2 2 2 0 0 0 2-2V3\"/><line x1=\"7\" y1=\"11\" x2=\"7\" y2=\"21\"/></svg>",
+  "🍽": "<svg class=\"ico ico-dining\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"16\" cy=\"12\" r=\"7\"/><path d=\"M5 3v6a2 2 0 0 0 2 2 2 2 0 0 0 2-2V3\"/><line x1=\"7\" y1=\"11\" x2=\"7\" y2=\"21\"/></svg>",
+  "☕": "<svg class=\"ico ico-coffee\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 9h11v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z\"/><path d=\"M16 10h1.5a2.5 2.5 0 0 1 0 5H16\"/><line x1=\"7\" y1=\"3\" x2=\"7\" y2=\"6\"/><line x1=\"11\" y1=\"3\" x2=\"11\" y2=\"6\"/></svg>",
+  "☕️": "<svg class=\"ico ico-coffee\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 9h11v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z\"/><path d=\"M16 10h1.5a2.5 2.5 0 0 1 0 5H16\"/><line x1=\"7\" y1=\"3\" x2=\"7\" y2=\"6\"/><line x1=\"11\" y1=\"3\" x2=\"11\" y2=\"6\"/></svg>",
+  "⚓": "<svg class=\"ico ico-anchor\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"5\" r=\"2\"/><line x1=\"12\" y1=\"7\" x2=\"12\" y2=\"19\"/><path d=\"M6 13a6 6 0 0 0 12 0\"/><line x1=\"4\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"13\" x2=\"20\" y2=\"13\"/></svg>",
+  "⚓️": "<svg class=\"ico ico-anchor\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"5\" r=\"2\"/><line x1=\"12\" y1=\"7\" x2=\"12\" y2=\"19\"/><path d=\"M6 13a6 6 0 0 0 12 0\"/><line x1=\"4\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"13\" x2=\"20\" y2=\"13\"/></svg>",
+  "🌉": "<svg class=\"ico ico-bridge\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 17a10 10 0 0 1 20 0\"/><line x1=\"2\" y1=\"17\" x2=\"2\" y2=\"21\"/><line x1=\"22\" y1=\"17\" x2=\"22\" y2=\"21\"/><line x1=\"6\" y1=\"14\" x2=\"6\" y2=\"21\"/><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"/><line x1=\"18\" y1=\"14\" x2=\"18\" y2=\"21\"/></svg>",
+  "🎓": "<svg class=\"ico ico-graduation\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4 2 9l10 5 10-5Z\"/><path d=\"M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5\"/></svg>",
+  "🌲": "<svg class=\"ico ico-tree\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 5 13h4l-3 5h12l-3-5h4Z\"/><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"21\"/></svg>",
+  "🌊": "<svg class=\"ico ico-wave\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 16c2-2 4-2 6 0s4 2 6 0 4-2 6 0\"/><path d=\"M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0\"/></svg>",
+  "🦌": "<svg class=\"ico ico-deer\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"13\" r=\"4\"/><path d=\"M9 10 7 5m0 0 2 1m-2-1-2 1\"/><path d=\"M15 10l2-5m0 0-2 1m2-1 2 1\"/></svg>",
+  "🐒": "<svg class=\"ico ico-paw\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"16.5\" r=\"3.3\"/><circle cx=\"6.5\" cy=\"12\" r=\"1.7\"/><circle cx=\"9.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"14.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"17.5\" cy=\"12\" r=\"1.7\"/></svg>",
+  "🦁": "<svg class=\"ico ico-paw\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"16.5\" r=\"3.3\"/><circle cx=\"6.5\" cy=\"12\" r=\"1.7\"/><circle cx=\"9.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"14.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"17.5\" cy=\"12\" r=\"1.7\"/></svg>",
+  "🐅": "<svg class=\"ico ico-paw\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"16.5\" r=\"3.3\"/><circle cx=\"6.5\" cy=\"12\" r=\"1.7\"/><circle cx=\"9.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"14.5\" cy=\"7\" r=\"1.6\"/><circle cx=\"17.5\" cy=\"12\" r=\"1.7\"/></svg>",
+  "📄": "<svg class=\"ico ico-doc\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><line x1=\"8\" y1=\"8\" x2=\"16\" y2=\"8\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/><line x1=\"8\" y1=\"16\" x2=\"13\" y2=\"16\"/></svg>",
+  "📝": "<svg class=\"ico ico-doc\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><line x1=\"8\" y1=\"8\" x2=\"16\" y2=\"8\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/><line x1=\"8\" y1=\"16\" x2=\"13\" y2=\"16\"/></svg>",
+  "📋": "<svg class=\"ico ico-doc\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><line x1=\"8\" y1=\"8\" x2=\"16\" y2=\"8\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/><line x1=\"8\" y1=\"16\" x2=\"13\" y2=\"16\"/></svg>",
+  "🧰": "<svg class=\"ico ico-toolbox\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 10h18v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z\"/><path d=\"M8 10V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4\"/><line x1=\"3\" y1=\"14\" x2=\"21\" y2=\"14\"/><line x1=\"10\" y1=\"14\" x2=\"10\" y2=\"16\"/><line x1=\"14\" y1=\"14\" x2=\"14\" y2=\"16\"/></svg>",
+  "📚": "<svg class=\"ico ico-books\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"4\" width=\"4.5\" height=\"16\" rx=\"1\"/><rect x=\"9.5\" y=\"4\" width=\"4.5\" height=\"16\" rx=\"1\"/><path d=\"M16 5.3 20 6v14l-4-.7Z\"/></svg>",
+  "📍": "<svg class=\"ico ico-pin\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 21s-7-6.5-7-11.5a7 7 0 0 1 14 0C19 14.5 12 21 12 21Z\"/><circle cx=\"12\" cy=\"9.5\" r=\"2.4\"/></svg>",
+  "⛽": "<svg class=\"ico ico-fuel\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21V6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v15\"/><line x1=\"3\" y1=\"21\" x2=\"14\" y2=\"21\"/><path d=\"M13 10h2l3 3v5a1.5 1.5 0 0 1-3 0v-1a1 1 0 0 0-1-1h-1\"/><line x1=\"6\" y1=\"9\" x2=\"11\" y2=\"9\"/></svg>",
+  "⛽️": "<svg class=\"ico ico-fuel\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21V6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v15\"/><line x1=\"3\" y1=\"21\" x2=\"14\" y2=\"21\"/><path d=\"M13 10h2l3 3v5a1.5 1.5 0 0 1-3 0v-1a1 1 0 0 0-1-1h-1\"/><line x1=\"6\" y1=\"9\" x2=\"11\" y2=\"9\"/></svg>",
+  "🖨": "<svg class=\"ico ico-printer\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"8\" width=\"14\" height=\"8\" rx=\"1\"/><path d=\"M7 8V4h10v4\"/><path d=\"M7 16v4h10v-4\"/></svg>",
+  "🖨️": "<svg class=\"ico ico-printer\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"8\" width=\"14\" height=\"8\" rx=\"1\"/><path d=\"M7 8V4h10v4\"/><path d=\"M7 16v4h10v-4\"/></svg>",
+  "📏": "<svg class=\"ico ico-ruler\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"10\" rx=\"1.5\"/><line x1=\"7\" y1=\"7\" x2=\"7\" y2=\"10\"/><line x1=\"11\" y1=\"7\" x2=\"11\" y2=\"10\"/><line x1=\"15\" y1=\"7\" x2=\"15\" y2=\"10\"/></svg>",
+  "👕": "<svg class=\"ico ico-shirt\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 4 4 7l2 3 2-1.5V20h8V8.5L18 10l2-3-4-3-2 2h-4Z\"/></svg>",
+  "🍎": "<svg class=\"ico ico-food\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 2 4 5 4 7a4 4 0 1 1-8 0c0-2 1-5 4-7Z\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"21\"/></svg>",
+  "🥐": "<svg class=\"ico ico-food\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 2 4 5 4 7a4 4 0 1 1-8 0c0-2 1-5 4-7Z\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"21\"/></svg>",
+  "🍳": "<svg class=\"ico ico-food\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3c3 2 4 5 4 7a4 4 0 1 1-8 0c0-2 1-5 4-7Z\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"21\"/></svg>",
+  "🧴": "<svg class=\"ico ico-toiletries\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"8\" width=\"6\" height=\"12\" rx=\"1.5\"/><path d=\"M10.5 8V5a1.5 1.5 0 0 1 3 0v3\"/><line x1=\"9\" y1=\"12\" x2=\"15\" y2=\"12\"/></svg>",
+  "🧩": "<svg class=\"ico ico-puzzle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9 4h3v2.3a1.8 1.8 0 1 0 0 3.4V12h3a1.8 1.8 0 1 1 0 3.6V18h-3v-2.3a1.8 1.8 0 1 0-3.6 0V18H6v-3h2.3a1.8 1.8 0 1 0 0-3.6H6V8h3Z\"/></svg>",
+  "🆕": "<svg class=\"ico ico-sparkle\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/></svg>",
+  "🏠": "<svg class=\"ico ico-house\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 11 12 4l8 7\"/><path d=\"M6 10v10h12V10\"/><line x1=\"12\" y1=\"14\" x2=\"12\" y2=\"20\"/></svg>",
+  "🌳": "<svg class=\"ico ico-tree\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 5 13h4l-3 5h12l-3-5h4Z\"/><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"21\"/></svg>",
+  "🌐": "<svg class=\"ico ico-globe\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><ellipse cx=\"12\" cy=\"12\" rx=\"4\" ry=\"9\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/></svg>",
+  "🧡": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "📷": "<svg class=\"ico ico-camera\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><circle cx=\"12\" cy=\"13.5\" r=\"3.5\"/><path d=\"M8 7l1.5-2h5L16 7\"/></svg>",
+  "👨": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👩": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👧": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👦": "<svg class=\"ico ico-person\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"7.2\" r=\"3.2\"/><path d=\"M6 21c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5\"/></svg>",
+  "👨‍👩‍👧‍👦": "<svg class=\"ico ico-family\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"8\" cy=\"7\" r=\"2.2\"/><path d=\"M4 20c0-3 1.8-5 4-5s4 2 4 5\"/><circle cx=\"16.5\" cy=\"8.3\" r=\"1.7\"/><path d=\"M13.7 20c0-2.4 1.2-4 2.8-4s2.8 1.6 2.8 4\"/></svg>",
+  "📘": "<svg class=\"ico ico-globe\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><ellipse cx=\"12\" cy=\"12\" rx=\"4\" ry=\"9\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/></svg>",
+  "🫶": "<svg class=\"ico ico-heart\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z\"/></svg>",
+  "🔒": "<svg class=\"ico ico-lock\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"10\" rx=\"2\"/><path d=\"M8 11V7a4 4 0 0 1 8 0v4\"/></svg>",
+  "🔒️": "<svg class=\"ico ico-lock\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"10\" rx=\"2\"/><path d=\"M8 11V7a4 4 0 0 1 8 0v4\"/></svg>",
+  "⬇️": "<svg class=\"ico ico-download\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3v12\"/><path d=\"M7 11l5 5 5-5\"/><path d=\"M4 20h16\"/></svg>",
+  "⬇": "<svg class=\"ico ico-download\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3v12\"/><path d=\"M7 11l5 5 5-5\"/><path d=\"M4 20h16\"/></svg>",
+  "📤": "<svg class=\"ico ico-share\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3v10\"/><path d=\"M8 7l4-4 4 4\"/><path d=\"M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7\"/></svg>",
+  "📧": "<svg class=\"ico ico-mail\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M3 7l9 6 9-6\"/></svg>",
+  "⚠️": "<svg class=\"ico ico-warning\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 22 20H2Z\"/><line x1=\"12\" y1=\"9.5\" x2=\"12\" y2=\"14\"/><circle cx=\"12\" cy=\"16.8\" r=\"0.7\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+  "⚠": "<svg class=\"ico ico-warning\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3 22 20H2Z\"/><line x1=\"12\" y1=\"9.5\" x2=\"12\" y2=\"14\"/><circle cx=\"12\" cy=\"16.8\" r=\"0.7\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+  "🔌": "<svg class=\"ico ico-bolt\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M13 2 4 14h6l-1 8 9-12h-6Z\"/></svg>",
+  "💰💰": "<svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg><svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg>",
+  "💰💰💰": "<svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg><svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg><svg class=\"ico ico-money\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"13\" r=\"2.6\"/><line x1=\"5.5\" y1=\"10\" x2=\"5.5\" y2=\"16\"/><line x1=\"18.5\" y1=\"10\" x2=\"18.5\" y2=\"16\"/></svg>"
+};
+function icon(e) { return (e && ICON_MAP[e]) || e; }
+function iconLabel(label) {
+  label = String(label);
+  const sp = label.indexOf(' ');
+  if (sp === -1 || !ICON_MAP[label.slice(0, sp)]) return esc(label);
+  return icon(label.slice(0, sp)) + ' ' + esc(label.slice(sp + 1));
+}
 
 const DESTINATIONS = [
   {
@@ -5292,7 +5391,7 @@ function medgivandeNoteHTML(d) {
   if (!m) return '';
   return `
       <div class="detail-medgivande-note">
-        <div class="t-label">📄 ${m.flag} Reser ni utan båda vårdnadshavarna?</div>
+        <div class="t-label">${icon('📄')} ${m.flag} Reser ni utan båda vårdnadshavarna?</div>
         <p>${esc(m.levelLabel)} — ${esc(d.country)} är ett av länderna där vi rekommenderar att ha ett skriftligt medgivandebrev med er, t.ex. om en förälder reser med barnen själv eller vid delad vårdnad. <a href="/foraldramedgivande/">Läs mer &amp; skapa ett brev gratis →</a></p>
       </div>`;
 }
@@ -5354,7 +5453,7 @@ function renderCollage() {
   document.getElementById('heroCollage').innerHTML = picks.map(d => `
     <a class="col-img card-media" data-cat="${d.cat}" data-emoji="${d.emoji}" href="/resmal/${resmalSlug(d)}/" onclick="return handleCardClick(event, '${resmalSlug(d)}')" aria-label="${esc(d.name)}">
       <img src="${IMG(d.img)}" alt="" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
-      <span class="col-tag">${d.emoji} ${d.name}</span>
+      <span class="col-tag">${icon(d.emoji)} ${d.name}</span>
     </a>`).join('');
 }
 
@@ -5365,17 +5464,17 @@ function renderFeatured() {
   document.getElementById('featuredGrid').innerHTML = featured.map(d => `
     <a class="feat-card reveal" href="/resmal/${resmalSlug(d)}/" onclick="return handleCardClick(event, '${resmalSlug(d)}')">
       ${mediaHTML(d)}
-      <span class="feat-badge">${d.emoji} ${d.catLabel}</span>
+      <span class="feat-badge">${icon(d.emoji)} ${d.catLabel}</span>
       <button class="fav-heart ${favs.has(d.name) ? 'faved' : ''}" data-fav="${esc(d.name)}" aria-label="Spara ${esc(d.name)} som favorit" onclick="toggleFav('${esc(d.name)}', event)">${heartSVG()}</button>
       <div class="feat-card-inner">
         <h3>${esc(d.name)}</h3>
         <p class="feat-country">${esc(d.country)}</p>
         <p class="feat-desc">${esc(d.desc)}</p>
         <div class="feat-meta">
-          <span class="feat-meta-item">👶 <strong>${d.age}</strong></span>
-          <span class="feat-meta-item">📅 <strong>${d.season}</strong></span>
-          <span class="feat-meta-item">💰 <strong>${d.budget}</strong></span>
-          <span class="feat-meta-item">⭐ <strong>${d.rating}</strong></span>
+          <span class="feat-meta-item">${icon('👶')} <strong>${d.age}</strong></span>
+          <span class="feat-meta-item">${icon('📅')} <strong>${d.season}</strong></span>
+          <span class="feat-meta-item">${icon('💰')} <strong>${d.budget}</strong></span>
+          <span class="feat-meta-item">${icon('⭐')} <strong>${d.rating}</strong></span>
         </div>
       </div>
     </a>`).join('');
@@ -5401,9 +5500,9 @@ function openDetail(s, pushHash = true) {
     <div class="detail-hero">
       ${mediaHTML(d)}
       <div class="detail-title-wrap">
-        <span class="d-chip" style="background: var(--cat-${d.cat})">${d.emoji} ${d.catLabel}</span>
+        <span class="d-chip" style="background: var(--cat-${d.cat})">${icon(d.emoji)} ${d.catLabel}</span>
         <h2>${esc(d.name)}</h2>
-        <p class="d-country">${esc(d.country)} · ⭐ ${d.rating} i familjebetyg · ✍️ <a href="/om-oss/">Jennie Lundberg</a></p>
+        <p class="d-country">${esc(d.country)} · ${icon('⭐')} ${d.rating} i familjebetyg · ${icon('✍️')} <a href="/om-oss/">Jennie Lundberg</a></p>
       </div>
     </div>
     <div class="detail-body">
@@ -5422,11 +5521,11 @@ function openDetail(s, pushHash = true) {
       </div>
       ${medgivandeNoteHTML(d)}
       <div class="detail-actions">
-        ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">✈️ Boka resa via Sembo →</a>` : ''}
+        ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">${icon('✈️')} Boka resa via Sembo →</a>` : ''}
         ${d.bookingUrl ? `<a class="btn ${d.semboUrl ? 'btn-ghost' : 'btn-primary'}" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">${d.semboUrl ? 'Fler alternativ' : 'Boka / Läs mer'} →</a>` : ''}
         ${d.altUrl && !d.semboUrl ? `<a class="btn btn-ghost" href="${esc(d.altUrl)}" target="_blank" rel="sponsored noopener">Fler alternativ →</a>` : ''}
         <button class="btn btn-ghost ${favs.has(d.name) ? 'faved' : ''}" data-fav="${esc(d.name)}" onclick="toggleFav('${esc(d.name)}', event)">
-          ♥ <span class="fav-label">${favs.has(d.name) ? 'Sparad som favorit' : 'Spara som favorit'}</span>
+          ${icon('♥')} <span class="fav-label">${favs.has(d.name) ? 'Sparad som favorit' : 'Spara som favorit'}</span>
         </button>
         <a class="btn btn-ghost" href="/resmal/?cat=${d.cat}">Fler inom ${d.catLabel} →</a>
       </div>
@@ -5488,7 +5587,7 @@ heroInput.addEventListener('input', () => {
   if (!matches.length) { hideSuggestions(); return; }
   sugBox.innerHTML = matches.map(d => `
     <button class="suggestion" role="option" onclick="hideSuggestions(); openDetail('${resmalSlug(d)}')">
-      <span class="s-emoji">${d.emoji}</span>
+      <span class="s-emoji">${icon(d.emoji)}</span>
       <span>
         <span class="s-name">${esc(d.name)}</span><br>
         <span class="s-meta">${esc(d.country)} · ${d.catLabel} · ${d.budget}</span>
@@ -5553,7 +5652,7 @@ function renderQuiz() {
     <div class="quiz-options">
       ${q.opts.map((o, i) => `
         <button class="quiz-opt" onclick="quizPick(${i})">
-          <span class="qo-emoji">${o.emoji}</span>
+          <span class="qo-emoji">${icon(o.emoji)}</span>
           <span>${o.label}</span>
           <span class="qo-sub">${o.sub}</span>
         </button>`).join('')}
@@ -5593,8 +5692,8 @@ function renderQuizResults() {
         <a class="similar-card" href="/resmal/${resmalSlug(d)}/" onclick="return handleCardClick(event, '${resmalSlug(d)}')">
           ${mediaHTML(d)}
           <div class="sim-body">
-            <h4>${d.emoji} ${esc(d.name)}</h4>
-            <p class="sim-country">${esc(d.country)} · ${d.budget} · ⭐ ${d.rating}</p>
+            <h4>${icon(d.emoji)} ${esc(d.name)}</h4>
+            <p class="sim-country">${esc(d.country)} · ${d.budget} · ${icon('⭐')} ${d.rating}</p>
           </div>
         </a>`).join('')}
     </div>
