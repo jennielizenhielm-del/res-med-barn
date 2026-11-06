@@ -4236,60 +4236,6 @@
             "img": "https://www.jollyroom.se/storage/013908F211F48EC7D24849A43B094869E4F5E86B6072652F99FE1769CDD7AD42/3aac0d03506d409b92abc7963a06392f/jpg/media/1a215749e417408487c2f02d9a280124/51024078-2462_1.jpg"
           },
           {
-            "name": "Egmont Kärnan Pysselbok",
-            "badge": "Mest svensk klassiker",
-            "price": "Från ca 45–100 kr",
-            "text": "Pysselbok från Egmont Kärnan, svenskt varumärke sedan 1946, med populära karaktärer som Bamse eller Pokémon. A4-format med runt 24 sidor labyrinter, prick-till-prick, finn-fem-fel och andra klassiska pyssel.",
-            "pros": [
-              "Lågt pris — bra som liten extra-underhållning utan att kosta mycket",
-              "Välkänt, pålitligt svenskt varumärke sedan 1946",
-              "Lätt att hitta favoritkaraktärer barnet redan känner till"
-            ],
-            "cons": [
-              "Engångsbruk — går inte att sudda och göra om som en rittavla",
-              "Kräver att barnet kan hålla i en penna, passar inte de allra yngsta"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/egmont-karnan-pysselbok.html",
-            "buyUrl": "https://adtr.co/pbvvn1",
-            "buyStore": "Jollyroom"
-          },
-          {
-            "name": "Montessori Aktivitetsbräda i Filt (Dinosaurier)",
-            "badge": "Bäst sensoriskt",
-            "price": "Från ca 150–250 kr",
-            "text": "Mjuk aktivitetsbräda i filt med dinosauriemotiv, 28×22 cm — kompakt nog för handbagaget. Knäppen, snören och former att utforska tränar finmotoriken samtidigt som den håller barnet sysselsatt under väntan.",
-            "pros": [
-              "Kompakt resestorlek (28×22 cm), tar minimal plats",
-              "Mjukt filtmaterial, inga vassa kanter eller hårda delar",
-              "Dinosauriemotiv gör den extra lockande för dinosaurie-intresserade barn"
-            ],
-            "cons": [
-              "Riktar sig mest till yngre barn — äldre syskon tappar snabbt intresset",
-              "Mindre variation än en aktivitetsbok med flera olika uppgifter"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/montessori-aktivitetsbrada-dinosaurier.html",
-            "buyUrl": "https://clk.tradedoubler.com/click?p=46&a=3498048&url=https%3A%2F%2Fcdon.se%2Fprodukt%2Fmontessori-aktivitetsbrada-i-filt-med-dinosaurier-barbar-3-28x22-cm-d49c91a5112a5fb6%2F",
-            "buyStore": "CDON"
-          },
-          {
-            "name": "Magnetiskt Pussel för Barn (Dinosaurie)",
-            "badge": "Bäst pussel",
-            "price": "Från ca 100–200 kr",
-            "text": "Magnetiskt pussel med dinosauriemotiv — bitarna sitter fast med magneter istället för att glida runt, vilket gör det betydligt enklare att pussla i en gungande bil eller på ett tågbord utan att tappa bitar.",
-            "pros": [
-              "Magnetiska bitar rör sig inte av sig själva i bil, tåg eller flyg",
-              "Dinosauriemotiv passar den åldersgrupp som ofta är dinosaurie-besatt",
-              "Kompakt, tar liten plats i väskan"
-            ],
-            "cons": [
-              "Färre bitar än ett vanligt hempussel — löses relativt snabbt",
-              "Passar en smalare åldersgrupp än de mer flexibla alternativen i listan"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/magnetiskt-pussel-barn-dinosaurie.html",
-            "buyUrl": "https://clk.tradedoubler.com/click?p=46&a=3498048&url=https%3A%2F%2Fcdon.se%2Fprodukt%2Fmagnetiskt-pussel-for-barn-dinosaurie-54eed5f9428b5d29%2F",
-            "buyStore": "CDON"
-          },
-          {
             "name": "Filibabba Pusselbok, Dreamy Adventurers",
             "badge": "Bäst pusselbok",
             "price": "Ca 230 kr",

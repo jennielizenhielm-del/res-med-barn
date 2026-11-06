@@ -1281,10 +1281,12 @@ function productCardHtml(p) {
   return `
     <div class="product-mini-card">
       ${p.img ? `<div class="product-mini-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-mini-img').remove()"></div>` : ''}
-      <h3>${esc(p.name)}</h3>
-      ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
-      <p>${esc(p.note)}</p>
-      <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.store)} →</a>
+      <div class="product-mini-body">
+        <h3>${esc(p.name)}</h3>
+        ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
+        <p class="product-mini-note">${esc(p.note)}</p>
+        <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.store)} →</a>
+      </div>
     </div>`;
 }
 
