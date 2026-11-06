@@ -403,7 +403,7 @@ h1 {
 }
 .product-mini-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 280px));
   gap: 1.25rem;
   align-items: stretch;
 }
@@ -467,7 +467,7 @@ h1 {
   margin: 0.25rem 0 1.75rem;
 }
 .section-products .product-mini-grid {
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 220px));
   gap: 1rem;
 }
 .section-products .product-mini-img { padding: 0.85rem; }
