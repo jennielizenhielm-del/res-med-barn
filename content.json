@@ -5062,6 +5062,133 @@
         "published": "2026-11-03",
         "updated": "2026-11-03",
         "img": "https://images.pexels.com/photos/8925987/pexels-photo-8925987.jpeg"
+      },
+      {
+        "slug": "all-inclusive-hotell",
+        "emoji": "🏨",
+        "name": "All inclusive-hotell med barn",
+        "cardText": "Fem all inclusive-hotell som vi bokar via Solresor och Nazar, utvalda för barnfamiljer — stora vattenparker, barnklubbar och poolområden som gör semestern enkel.",
+        "title": "5 bästa All Inclusive-hotellen med barn 2026",
+        "description": "Vi har jämfört fem All Inclusive-hotell för barnfamiljer i Egypten, Grekland och Turkiet — från Solresors egna familjefavoriter till Nazars specialisthotell — på vattenpark, poolområde, läge och pris.",
+        "h1": "5 bästa All Inclusive-hotellen med barn 2026",
+        "intro": [
+          "All Inclusive är ofta det enklaste sättet att resa med barn — ingen koll på notan vid varje måltid, och snacks/is/dryck finns alltid inom räckhåll. Men hotellen skiljer sig enormt i vad som faktiskt ingår och hur barnvänligt det är i praktiken. Vi har gått igenom utbudet hos Solresor och Nazar (Sveriges All Inclusive-specialist) och valt ut fem hotell som sticker ut för just barnfamiljer — stora vattenparker, barnklubbar, pooler med barndel och bra strandläge.",
+          "Priserna nedan är cirkapriser för flyg + hotell en vecka, två vuxna — de varierar mycket med avresedatum och säsong, så se alltid aktuellt pris innan bokning."
+        ],
+        "products": [
+          {
+            "name": "Pickalbatros Aqua Blu Resort",
+            "badge": "Högst betyg av våra fem",
+            "price": "Från ca 8 200 kr/person (flyg + hotell, 7 nätter, 2 vuxna)",
+            "text": "Hurghada vid Röda havet, bokas via Solresor. Hotellet har en stor vattenpark och ligger nära stranden — på Solresors egna hotellomdömen har det 4,77 av 5, högst av de fem hotell vi jämfört här. Hurghada är redan ett av våra populära vinterresmål, med garanterat varmt väder även under svensk vinter.",
+            "pros": [
+              "Stor vattenpark ingår i priset — bra för barn i de flesta åldrar",
+              "Högst betygsatt av de fem hotellen i denna jämförelse (4,77/5 hos Solresor)",
+              "Nära stranden vid Röda havet"
+            ],
+            "cons": [
+              "Längre flyg till Hurghada (ca 5 timmar) än till Medelhavsresmål som Rhodos eller Turkiet",
+              "Priset varierar mycket med avresedatum — kolla alltid aktuellt pris innan bokning"
+            ],
+            "buyUrl": "https://www.solresor.se/hotell/Pickalbatros-Aqua-Blu-Resort-Hurghada-g65164",
+            "buyStore": "Solresor",
+            "img": "https://i.travelapi.com/lodging/2000000/1340000/1331200/1331178/2e2088c9_b.jpg"
+          },
+          {
+            "name": "Charmillion Sea Life Resort",
+            "badge": "Bäst för lugn strandsemester",
+            "price": "Från ca 8 200 kr/person (flyg + hotell, 7 nätter, 2 vuxna)",
+            "text": "Sharm el-Sheikh, bokas via Solresor. Hotellet har två separata poolområden och ett privat strandläge, med ett koncept som Solresor själva beskriver som familjevänligt. Betyg 4,52 av 5 hos Solresor.",
+            "pros": [
+              "Privat strandläge och två poolområden ger mer utrymme att sprida ut sig",
+              "Familjevänligt koncept enligt Solresors egen beskrivning",
+              "Sharm el-Sheikh har generellt lugnare och varmare vatten än Hurghada, bra för simskräckta barn"
+            ],
+            "cons": [
+              "Samma långa flygtid som övriga Egypten-resmål (ca 5 timmar)",
+              "Mindre känt resmål än Rhodos/Turkiet — färre svensktalande på plats"
+            ],
+            "buyUrl": "https://www.solresor.se/hotell/Charmillion-Sea-Life-Resort-g52522",
+            "buyStore": "Solresor",
+            "img": "https://dx0d3s2dnohhf.cloudfront.net/giata-image/400/52522/aHR0cHM6Ly9naGdtbC5naWF0YW1lZGlhLmNvbS93ZWJzZXJ2aWNlL3Jlc3QvMS4wL2ltYWdlcy81MjUyMi8yMjk4ODgzNA=="
+          },
+          {
+            "name": "Lindos Imperial",
+            "badge": "Bäst för bad & kultur ihop",
+            "price": "Från ca 10 300 kr/person (flyg + hotell, 7 nätter, 2 vuxna)",
+            "text": "Kiotari/Lindos på Rhodos, bokas via Nazar — Sveriges All Inclusive-specialist. Nazar själva lyfter fram hotellet som sitt mest populära på Rhodos: en \"lantlig grekisk familjeresort\" med flera pooler och gott om aktiviteter, bekvämt nära den antika staden Lindos. Rhodos är redan ett av våra resmål, så det går att kombinera med vårt fulla Rhodos-innehåll.",
+            "pros": [
+              "Flera pooler och ett brett aktivitetsutbud enligt Nazar",
+              "Nära antika Lindos — enkelt att kombinera bad med en kulturutflykt",
+              "Rhodos har kortare flygtid (ca 4 timmar) än Egypten-resmålen"
+            ],
+            "cons": [
+              "Ligger en bit söder på ön, en bit från Rhodos stad",
+              "Som grekiskt Medelhavsresmål är det säsongsbundet (ungefär maj–oktober) till skillnad från Egypten som går året runt"
+            ],
+            "buyUrl": "https://www.nazar.se/hotell/lindos-imperial",
+            "buyStore": "Nazar",
+            "img": "https://www.nazar.se/fileadmin/Multimedia/Vara_hotell/Grekland/Rhodos/Lindos_Imperial/Photos/Nazar_Lindos_Imperial_Kiotari_001.jpg?v=1678281371"
+          },
+          {
+            "name": "Land of Legends Kingdom",
+            "badge": "Lyxigaste valet",
+            "price": "Från ca 15 100 kr/person (flyg + hotell, 7 nätter, 2 vuxna)",
+            "text": "Belek i Turkiet, bokas via Nazar. Det här hotellet ligger inne i nöjesparken Land of Legends, så barnen har hela parken (åkattraktioner, delfinshow, vattenland) i princip utanför dörren hela vistelsen — ett tydligt premiumval i jämförelsen, men ett av de mest minnesvärda för barn i rätt ålder.",
+            "pros": [
+              "Bor man här ingår obegränsad entré till hela nöjesparken under vistelsen",
+              "Mycket för äldre barn/förskolebarn som gillar åkattraktioner och vattenland",
+              "Premiumklass på rum och service enligt Nazars egen kategorisering"
+            ],
+            "cons": [
+              "Betydligt dyrare än övriga hotell i jämförelsen",
+              "Mindre lämpat för de yngsta barnen (under ca 3 år) som inte har samma nytta av nöjesparksdelen"
+            ],
+            "buyUrl": "https://www.nazar.se/hotell/land-of-legends-kingdom",
+            "buyStore": "Nazar",
+            "img": "https://www.nazar.se/fileadmin/Multimedia/Vara_hotell/Belek/Land_of_Legends_Kingdom/Photos/2018-Land-of-Legends-001.jpg?v=1778506672"
+          },
+          {
+            "name": "Eftalia Aqua",
+            "badge": "Bästa prisvärda",
+            "price": "Från ca 7 300 kr/person (flyg + hotell, 7 nätter, 2 vuxna)",
+            "text": "Türkler/Alanya i Turkiet, bokas via Nazar. En stor beach club med vattenrutschbanor och flera pooler, till ett av de lägre priserna i jämförelsen. Alanya är redan ett av våra Turkiet-resmål.",
+            "pros": [
+              "Lägst pris av de tre Nazar-hotellen i jämförelsen, ändå med egen vattenpark",
+              "Stor beach club-känsla med gott om poolyta",
+              "Alanya har gott om annat att göra för de dagar ni vill lämna hotellet"
+            ],
+            "cons": [
+              "Enklare standard än Land of Legends Kingdom/Lindos Imperial — håll förväntningarna på rumsnivå realistiska för priset",
+              "Populärt område — kan vara stökigt kring poolen under högsäsong"
+            ],
+            "buyUrl": "https://www.nazar.se/hotell/eftalia-aqua",
+            "buyStore": "Nazar",
+            "img": "https://www.nazar.se/fileadmin/Multimedia/Vara_hotell/Incekum/Eftalia_Aqua/Photos/Nazar_Eftalia_Aqua_Turkler_016.jpg?v=1652429959"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vad ingår egentligen i All Inclusive?",
+            "a": "Det varierar mycket mellan hotell, och det är den vanligaste missuppfattningen. De flesta All Inclusive-hotell inkluderar alla måltider, snacks mellan måltiderna och lokalt producerad alkohol/dryck under bestämda tider, men importerad alkohol, vissa restauranger à la carte, vattenparksentré på vissa hotell och enstaka aktiviteter kan kosta extra. Läs alltid igenom exakt vad som ingår på hotellets egen sida hos Solresor eller Nazar innan bokning — \"All Inclusive\" är inte en standardiserad term."
+          },
+          {
+            "q": "Vilken ålder passar ett All Inclusive-hotell bäst för?",
+            "a": "De flesta av hotellen i den här listan passar bäst från ca 2–3 år och uppåt, när barnet kan ha nytta av barnklubb och vattenpark. Land of Legends Kingdom sticker ut som mindre lämpat för de yngsta eftersom hela poängen är nöjesparken, medan Pickalbatros Aqua Blu Resort och Lindos Imperial har ett bredare åldersspann tack vare egna barnpooler och lugnare poolområden."
+          },
+          {
+            "q": "Hur bokar jag en resa till något av hotellen?",
+            "a": "Alla fem hotell bokas som paketresa (flyg + hotell) direkt via Solresor eller Nazar, via knapparna ovan. Priserna varierar dagligen beroende på avresedatum, flygplats och hur långt i förväg ni bokar — se alltid aktuellt pris på bokningssidan innan ni bestämmer er."
+          }
+        ],
+        "published": "2026-11-07",
+        "updated": "2026-11-07",
+        "sections": [
+          {
+            "h2": "Så har vi valt ut hotellen",
+            "text": "Vi har bara tagit med hotell som går att boka direkt via Solresor eller Nazar, Sveriges All Inclusive-specialist, så att ni kan boka resan direkt härifrån istället för att behöva söka vidare själva. Vi har prioriterat hotell som själva marknadsförs som familjevänliga (barnklubb, barnpool eller vattenpark) och som har ett bra betyg hos researrangören. Vi har inte bott på hotellen själva denna gång — texterna bygger på researrangörens egen hotellinformation och betygsgenomsnitt, inte vårt eget förstahandsintryck. Fler produkter som kan vara bra att ha med på en All Inclusive-resa med barn hittar du i vår [solkräms-topplista](/topplistor/solkram/) och vår lista med [UV-badkläder](/topplistor/uv-badklader/)."
+          }
+        ]
       }
     ]
   },
@@ -6247,12 +6374,13 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Stockholm 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
-            "description": "De bästa julmarknaderna i Stockholm 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
+            "title": "Julmarknader i Stockholm 2026 — bästa julmarknaderna i hela regionen för barnfamiljer | Res med Barn",
+            "description": "De bästa julmarknaderna i Stockholm och hela Stockholmsregionen 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Stockholm med barn 2026",
             "intro": [
-              "Stockholm har ett riktigt stort utbud av julmarknader, från den enorma Kungsträdgårdens julmarknad till mysigare alternativ i ladugårdar och slottsparker runtom i stan.",
-              "Vi har valt ut ett urval med god geografisk spridning — från Skeppsholmen och Djurgården i city till Bromma, Hässelby och Hägersten i ytterstaden — så ni kan hitta en marknad nära er, eller göra en hel utflyktsdag av det."
+              "Stockholm och hela Stockholmsregionen bjuder på ett enormt utbud av julmarknader varje advent — allt från den jättestora Kungsträdgårdens julmarknad mitt i city till små gårdsmarknader i Roslagen, Södertörn, Nacka/Lidingö/Värmdö och ute i skärgården.",
+              "Vi har samlat över 40 julmarknader med god spridning över hela regionen — från innerstaden och Djurgården till Bromma, Hässelby, Sundbyberg, Solna, Nacka, Lidingö, Värmdö, Södertälje, Sigtuna och Österåker — så att ni kan hitta en marknad nära er, eller göra en hel utflyktsdag av det, oavsett var i länet ni bor.",
+              "En del arrangörer hade inte publicerat alla detaljer för 2026 när vi senast uppdaterade guiden. Vi har skrivit ut det tydligt vid de marknader där öppettider, pris eller exakt datum inte var helt bekräftat — dubbelkolla gärna direkt med arrangören om ni planerar ett besök långt i förväg."
             ],
             "img": "https://images.pexels.com/photos/35662998/pexels-photo-35662998.jpeg",
             "venues": [
@@ -6332,11 +6460,479 @@
                 "link": "https://julmarknaderna.se/julmarknad-skansens/",
                 "dateInfo": "Fre–sön 27 nov–20 dec 2026 (fre & lör 10:00–17:00, sön 10:00–16:00)",
                 "note": "Redan omnämnd på sajtens Stockholm-jullov-sida, men julmarknaden förtjänar en egen kort beskrivning"
+              },
+              {
+                "name": "Stortorgets Julmarknad",
+                "type": "free",
+                "price": "Gratis entré",
+                "desc": "Stortorgets julmarknad kallas Sveriges äldsta julmarknad och har funnits på torget i Gamla stan sedan 1915, arrangerad av föreningen Stockholms-Gillet. Omkring 30–40 marknadsstånd med konstsmide, trä- och keramikhantverk samt julgodis, bröd och viltkorv trängs mellan de färgglada husfasaderna på torget. Läget mitt i Gamla stan gör det lätt att kombinera besöket med en promenad till Kungliga slottet eller Nobelmuseet. Marknaden pågår hela adventstiden fram till julafton, så det går bra att passa in ett besök oavsett när i december man är i stan.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Gamla stan",
+                "link": "https://www.julmarknad.nu/event/stortorgets-julmarknad-gamla-stan/",
+                "dateInfo": "Lördag 21 nov–onsdag 23 dec 2026, sön–tors kl. 11–18, fre–lör kl. 11–19",
+                "note": "Mycket trängsel på torget helger i december – gå gärna en vardagsförmiddag med barnvagn."
+              },
+              {
+                "name": "Julmarknad på Farsta gård",
+                "type": "free",
+                "price": "Fri entré",
+                "desc": "Farsta gårds julmarknad arrangeras av Farsta föreningsråd på den anrika gården vid Farstaängsvägen, helgen innan första advent. Lokala hantverkare och föreningar säljer julpyssel, hemslöjd och andra presenttips i gårdsmiljön. Det är en liten, familjär marknad i stadsdelen, ett bra alternativ för den som vill undvika trängseln i city. Fri entré gör den enkel att kombinera med en promenad i Farsta gårds park.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Farsta",
+                "link": "https://farstagard.se/",
+                "dateInfo": "Lördag 21–söndag 22 nov 2026, söndag kl. 11–16 (lördagens öppettider ej bekräftade)",
+                "note": "Litet format jämfört med storstadsmarknaderna – begränsat utbud men också mindre köer."
+              },
+              {
+                "name": "Julmarknad på Stora Sköndal",
+                "type": "free",
+                "price": "Troligen gratis entré (ingen avgift anges)",
+                "desc": "Julmarknaden på Stora Sköndal lockar besökare till det stora växthuset och det utomhusbaserade Jultorget med utsikt över Drevviken, med över 60 utställarplatser. Här säljs julgranskransar, keramik, stickat, ost och chark, bröd, honung och hemlagad sylt, samt mat från food trucks. Marknaden arrangeras av Stora Sköndals Framtidsutveckling tillsammans med Stiftelsen Stora Sköndal och lokala byggaktörer, som en del av stadsdelens pågående utveckling. Blandningen av inomhus- och utomhusförsäljning gör den till ett bra besök oavsett väder.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Stora Sköndal",
+                "link": "https://www.framtidensstoraskondal.se/julmarknad/",
+                "dateInfo": "Lördag 28–söndag 29 nov 2026, kl. 11–16",
+                "note": "Kombinerar inomhus (växthuset) och utomhus (Jultorget) – bra om det är kallt eller blåsigt."
+              },
+              {
+                "name": "Bondens Egen Marknad – julmarknad, Katarina Bangata",
+                "type": "free",
+                "price": "Ingen entréavgift, öppen torghandel",
+                "desc": "Bondens Egen Marknad flyttar ut på Katarina Bangata på Södermalm varje lördag mellan slutet av november och strax innan jul, med torghandel av grönsaker, bröd, ost, honung, kött och blommor direkt från odlare och producenter. Marknaden har sin entré från Götgatan, mitt emot gamla Skatteskrapan, bara ett par minuters promenad från Medborgarplatsen. Det är en liten, lokal torghandel snarare än en stor turistattraktion – ett bra tips för den som vill handla julmat och presenter utan trängsel. Arrangör är Bondens Egen Marknad, som driver flera liknande marknadsplatser runt Stockholm.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Södermalm",
+                "link": "https://bondensegen.com/stockholm-katarina-bangata/",
+                "dateInfo": "Lördagar 28 nov, 5, 12 och 19 dec 2026, kl. 10–15 (ungefärliga tider enligt höstens marknader)",
+                "note": "Begränsade mängder av varje vara – kom tidigt för bästa urval."
+              },
+              {
+                "name": "Eken Julmarknad",
+                "type": "free",
+                "price": "Ingen entréavgift bekräftad",
+                "desc": "Eken Marknad slår upp portarna i Förbindelsehallen i Slakthusområdet två helger i december: första helgen med fokus på hantverk, prylar och delikatesser, andra helgen med second hand, vintagekläder och mat. Marknaden drivs av Eken Marknad tillsammans med kulturhuset Fållan och Distriktfem, och är känd för sitt stora antal utställare i den rymliga, industriella hallmiljön. Eftersom marknaden hålls inomhus i en stor hall passar den bra oavsett väder, med gott om plats för barnvagnar. Läget i Slakthusområdet gör det lätt att kombinera besöket med fika eller lunch på något av kvarterets många matställen.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": true,
+                "area": "Slakthusområdet",
+                "link": "https://www.ekenmarknad.se/",
+                "dateInfo": "Lör 5–sön 6 dec samt lör 12–sön 13 dec 2026, lördagar kl. 12–17, söndagar kl. 11–16",
+                "note": "Stort och populärt evenemang – räkna med folk och kö till garderoben på lördagar."
+              },
+              {
+                "name": "Julmarknad i Gamla Enskede",
+                "type": "free",
+                "price": "Gratis entré",
+                "desc": "Julmarknaden i Gamla Enskede breder ut sig längs Stora Gungans väg, från Stockholmsvägen genom tunneln under Nynäsvägen och ner mot Sandsborgs tunnelbanestation. Lokala hantverkare, hembakat och julpynt säljs i stånd längs gatan, och flera food trucks grillar och säljer mat på plats. Tomten själv finns på plats med en önskelåda, och en cirkusskola bjuder på uppvisning – ett omtyckt inslag för barnen. Marknaden arrangeras av Robin Delselius Bageri och hålls oavsett väder.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Enskede",
+                "link": "https://enskede.net/evenemang/julmarknad-i-gamla-enskede",
+                "dateInfo": "Lördag 5–söndag 6 dec 2026, kl. 11–16",
+                "note": "Hålls oavsett väder – klä barnen varmt, särskilt i vagn."
+              },
+              {
+                "name": "Världens julmarknad på Sjöhistoriska museet",
+                "type": "free",
+                "price": "Troligen fri entré (museet har normalt fri entré)",
+                "desc": "Sjöhistoriska museet på Gärdet bjuder in till en julmarknad med internationell prägel, där besökare får upptäcka julens smaker, hantverk och traditioner från olika delar av världen. Tidigare år har marknaden gått under namnet \"Baltisk julmarknad\", men 2026 års version heter \"Världens julmarknad\" och verkar ha ett bredare, mer globalt tema. Det är en engångshändelse under en enda dag, mitt i museets maritima miljö vid Djurgårdsbrunnsviken. Passar bra att kombinera med ett museibesök samma dag.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Gärdet",
+                "link": "https://www.sjohistoriska.se/",
+                "dateInfo": "Lördag 28 november 2026, start kl. 10:00",
+                "note": "Marknaden har bytt namn från \"Baltisk julmarknad\" till \"Världens julmarknad\" jämfört med tidigare år."
+              },
+              {
+                "name": "Wasa Julmarknad",
+                "type": "free",
+                "price": "Fri entré för besökare",
+                "desc": "Mitt på Odenplan, runt den stora julgranen, ställer omkring 35 bord upp med hemslöjd, hembakat, julgodis, ekologiska produkter och ljus. Marknaden har arrangerats i samma form sedan 2012 och är ett klassiskt, småskaligt inslag i Vasastans julfirande. Mellan 13:30 och 15:00 finns en jultomte på plats i en röd tronstol dit barn (och vuxna) kan lämna sina önskelistor. Ett enkelt, gratis stopp för familjer som redan är i Odenplan-området.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Odenplan",
+                "link": "https://kanonkulan.se/wasa-julmarknad/",
+                "dateInfo": "Lördagarna 28 november och 5 december 2026, kl. 10:30–16:30",
+                "note": "Jultomten finns på plats kl. 13:30–15:00 båda dagarna."
+              },
+              {
+                "name": "Julmarknad på Hovstallet",
+                "type": "paid",
+                "price": "120 kr/person, barn under 12 år gratis i vuxens sällskap",
+                "desc": "I Kungliga Hovstallets historiska byggnader från 1890-talet säljer omkring 70 hantverkare handgjorda julklappar: smide från marknadens egen smedja, silversmycken, ylletextilier, keramik, skinnprodukter och stearinljus, samt mat som glögg, korv, rökt fisk, löjrom och ost. Besökare kan även se Sjuglasvagnen och kungafamiljens vagnar samt passa på att hälsa på kungens hästar. Arrangeras av Kungliga slotten/Hovstallet och är en av stans mest anrika julmarknader. Biljetter säljs endast i entrén, inte i förväg.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": true,
+                "area": "Östermalm",
+                "link": "https://www.kungligaslotten.se/kalendarium/evenemang/julmarknad-pa-hovstallet.html",
+                "dateInfo": "4–6 december 2026. Fredag kl. 11:00–19:00, lördag kl. 10:00–18:00, söndag kl. 10:00–17:00",
+                "note": "Biljetter köps endast på plats i entrén – inget förköp."
+              },
+              {
+                "name": "Julmarknad på Nordiska museet",
+                "type": "free",
+                "price": "Fri entré till marknad, butik och restaurang (museets utställningar kostar separat)",
+                "desc": "I Nordiska museets Stora hall fylls golvet med antikviteter, konsthantverk, vintage och second hand med historisk prägel – bland utställarna finns Rönnells Antikvariat, Hälsinge Linneväveri och Svensk Hemslöjd. Museibutikens egen loppmarknad \"Arturs basar\" säljer vintageföremål och gamla rekvisita ur museets magasin. Dagen bjuder också på en julgransprydnadsworkshop och boksignering. Ett bra val för familjer som redan planerar ett museibesök på Djurgården.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": true,
+                "area": "Djurgården",
+                "link": "https://www.nordiskamuseet.se/evenemang/julmarknad-pa-nordiska-museet/",
+                "dateInfo": "Lördag 5 december 2026, kl. 10:00–16:00",
+                "note": ""
+              },
+              {
+                "name": "Birkagårdens julmarknad",
+                "type": "free",
+                "price": "Troligen fri entré",
+                "desc": "I kulturhuset Birkagårdens mötes- och kaférum säljer lokala hantverkare, konstnärer och kursdeltagare egna alster: keramik, akvareller och textil är exempel som förekommit tidigare år. Det är en småskalig, hemtrevlig marknad i ett anrikt Vasastans-kvarter snarare än en stor turistattraktion. Birkagården är en kooperativ kulturförening med lång historia i stadsdelen.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Vasastan",
+                "link": "https://www.birkagarden.se/evenemang",
+                "dateInfo": "Lördag 5 december 2026, kl. 11:00–15:00",
+                "note": "Birkagården publicerar fullständig info om utställare närmare datumet – kolla deras sida innan besök."
+              },
+              {
+                "name": "Bondens Egen Julmarknad, Tessinparken",
+                "type": "free",
+                "price": "Fri entré",
+                "desc": "Bondens Egen Marknad vid Tessinparken på Östermalm, som annars pågår under odlingssäsongen, kör extra julupplagor utomhus i parken. Här säljer lokala producenter grönsaker, sylt och inläggningar, fisk, olja, kött och honung – alltså gårdsprodukter snarare än hantverk. Marknaden nås lättast från Valhallavägen, mitt emot Fältöversten, eller från tunnelbanestationen Karlaplan. Ett bra alternativ för familjer som vill handla matvaror snarare än pyssel och prylar.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Östermalm",
+                "link": "https://bondensegen.com/stockholm-ostermalm-tessinparken/",
+                "dateInfo": "Lördagarna 5, 12 och 19 december 2026, kl. 10:00–15:00",
+                "note": ""
+              },
+              {
+                "name": "Beckmans julmarknad på Rosendals Trädgård",
+                "type": "free",
+                "price": "Ej bekräftat för 2026",
+                "desc": "Studenter från Beckmans Designhögskola säljer sina egna skapade produkter inom mode, form och visuell kommunikation i Rosendals Trädgårds stora växthus, med eld tänd ute på gårdsplanen och lunch/fika i caféet. Det är en av Stockholms mest omtalade \"insider\"-julmarknader, uppskattad för designkvaliteten och den stämningsfulla miljön på Djurgården. Marknaden återkommer varje år i början av december.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Djurgården",
+                "link": "https://www.rosendalstradgard.se/beckmans-julmarknad-6-7-december/",
+                "dateInfo": "5–6 december 2026 (preliminärt datum, ej officiellt publicerat av Rosendals Trädgård ännu)",
+                "note": "Rosendals Trädgårds egen sida hade vid vår senaste koll inte uppdaterats till 2026 års datum – dubbelkolla på deras hemsida innan besök."
+              },
+              {
+                "name": "Schysst Jul",
+                "type": "free",
+                "price": "Fri entré",
+                "desc": "I ABF-huset på Sveavägen arrangerar Svalorna Latinamerika julmarknaden Schysst Jul, med omkring 30 utställare som säljer rättvisemärkta, ekologiska och hållbart producerade julklappar och hantverk från biståndsorganisationer och småföretag. Programmet brukar innehålla körsång, filmvisningar och ett seminarium om medvetna julklappsval. Ett bra alternativ för föräldrar som aktivt vill handla schysst och hållbart under julen, mitt i city nära tunnelbanan Rådmansgatan.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": true,
+                "area": "Norrmalm",
+                "link": "https://abfstockholm.se/evenemang/schysst-jul-2024/",
+                "dateInfo": "5–6 december 2026, lördag ca kl. 10:00–16:00, söndag ca kl. 10:00–15:00",
+                "note": "Exakta öppettider varierar något mellan källor – kolla ABF Stockholms kalendarium strax innan besök."
+              },
+              {
+                "name": "Julmarknad på Färgfabriken",
+                "type": "paid",
+                "price": "60 kr, barn under 16 år gratis (pris från tidigare år, ej bekräftat för 2026)",
+                "desc": "Konsthallen Färgfabriken i Lövholmen fylls av omkring 120 designers och konsthantverkare som säljer eget skapat: tryck, keramik, glas, kläder, smycken och inredning, utspritt över stora hallen, övervåningen, smedjan och gården. Till marknaden hör mat, dryck, livemusik och DJ:s, vilket gör den till en av de större och mer sociala julmarknaderna i Stockholm. Lokalen har hiss.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Lövholmen",
+                "link": "https://fargfabriken.se/sv/pa-gang/julmarknad/",
+                "dateInfo": "5–6 december 2026 (preliminärt datum, ej officiellt publicerat av Färgfabriken ännu), kl. 11:00–17:00",
+                "note": "Färgfabrikens egen sida hade vid vår senaste koll inte uppdaterats till 2026 års datum – dubbelkolla på deras hemsida innan besök."
+              },
+              {
+                "name": "Julmarknad på Hesselby slott",
+                "type": "free",
+                "price": "Ej bekräftat av arrangören",
+                "desc": "Varje år fylls slottsparken vid Hesselby slott med marknadsstånd, julmusik och pyntade granar inför första advent. Här kan ni gå runt i slottsmiljön och handla julklappar och hemtrevliga saker samtidigt som barnen får lite slottskänsla på köpet. Slottet arrangerar marknaden själva och den brukar vara en av de första julmarknaderna i väster att öppna för säsongen. Kombinera gärna besöket med en fika eller lunch på slottets restaurang om ni vill stanna längre.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Hässelby",
+                "link": "https://www.hesselbyslott.se/restaurang/julen-2026/",
+                "dateInfo": "21–22 november 2026 (öppettider ej publicerade ännu)",
+                "note": "Öppettider, pris och exakt utbud är inte publicerat av slottet ännu – kolla deras sida eller Facebook strax innan besöket."
+              },
+              {
+                "name": "Sundbybergs centrum julmarknad",
+                "type": "free",
+                "price": "Troligen gratis (torghandel)",
+                "desc": "Julmarknaden i Sundbybergs centrum brukar fylla torget och gatorna kring Sturegatan och Stationsgatan med UF-företagens julmarknadsstånd, en fiskdamm och korvförsäljning, och tomten brukar finnas på plats för att samla in önskelistor från barnen. Marknaden arrangeras i samarbete med lokala aktörer kring Sundbybergs centrum, Signalfabriken och Fabriksparken. Det är en liten, nära och barnvänlig marknad snarare än en stor turistattraktion, vilket gör den bekväm för en kort utflykt med små barn.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Sundbyberg",
+                "link": "http://www.sundbybergcentrum.se/evenemang/julmarknad-6-december-46478443",
+                "dateInfo": "Preliminärt lördag 5 december 2026 (ej officiellt bekräftat av arrangören ännu)",
+                "note": "Datumet för 2026 var inte bekräftat av arrangören vid vår senaste koll – dubbelkolla på Sundbybergs centrums Facebook-sida innan besök."
+              },
+              {
+                "name": "Nördarnas julmarknad",
+                "type": "paid",
+                "price": "50 kr/dag för vuxna, barn 0–6 år gratis, sista timmen varje dag gratis (pris ej omdaterat till 2026)",
+                "desc": "Nördarnas julmarknad i Solnahallen är en marknad för alla som gillar sci-fi, fantasy, brädspel, rollspel och cosplay – här säljer konstnärer, speldesigner, författare, smycketillverkare och keramiker sina alster, och second hand-nördgrejer är också välkomna. Marknaden arrangeras av Uniting Geeks och lockar besökare i cosplay, inklusive en \"cosplay-Lucia\"-procession. Det är en inomhusmarknad i Solnahallen, vilket gör den väderoberoende. Barn under 6 år går alltid in gratis, och sista timmen varje dag är fri entré för alla.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": true,
+                "area": "Solna",
+                "link": "https://www.nordarnasjulmarknad.se/",
+                "dateInfo": "Preliminärt 5–6 december 2026 (ej bekräftat av arrangören ännu)",
+                "note": "Arrangörens egen sida hade vid vår senaste koll inte uppdaterats till 2026 – bekräfta datum via deras Facebook-event innan besök."
+              },
+              {
+                "name": "Filmstadens julmarknad",
+                "type": "free",
+                "price": "Gratis entré till marknad och de flesta programpunkter",
+                "desc": "Filmstadens julmarknad hålls på den filmhistoriska marken kring Gamla Filmstaden i Råsunda och bjuder på ett blandat program av marknadsstånd, musik, filmvisningar och våfflor. Tidigare år har omkring 40 utställare sålt konst, keramik, honung, choklad, smycken och julgranar, med korv, glögg och rostade mandlar att äta på plats. Marknaden arrangeras av Filmstadens Kultur och hålls varje år i området kring Portvaktsstugan, nära tunnelbanestationen Näckrosen.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Råsunda, Solna",
+                "link": "https://filmstadenskultur.se/var-verksamhet/evenemang/filmstadens-julmarknad/",
+                "dateInfo": "Söndag 6 december 2026, kl. 12.00–16.00",
+                "note": "Ingen exakt gatuadress anges av arrangören – området ligger vid tunnelbanestationen Näckrosen."
+              },
+              {
+                "name": "Julmarknad på Kajen (Fabrikören), Nacka Strand",
+                "type": "free",
+                "price": "Troligen gratis (ingen avgift nämns)",
+                "desc": "På Kajen i Nacka Strand hålls en mysig utomhusmarknad vid vattnet utanför Fabrikören, med hantverk, julklappar, keramik, handstickat och fårskinnsprodukter från lokala utställare och UF-företag. Det bjuds på glögg och godis att värma sig med mellan montrarna, och läget med Saltsjön som fond gör den till en av de mer pittoreska julmarknaderna österut. Marknaden hålls vid två tillfällen under säsongen, vilket ger familjer gott om chanser att besöka den.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Nacka Strand",
+                "link": "https://www.kajen.nu/17/77/julmarknad-pa-fabrikoren-kajen-nacka-strand/",
+                "dateInfo": "21–22 november och 12–13 december 2026, kl. 11.00–15.00 båda helgerna",
+                "note": "Helt utomhus vid vattnet – kolla väder och klä barnen varmt."
+              },
+              {
+                "name": "Julmarknad på Elfviks Gård",
+                "type": "free",
+                "price": "Ej angivet av arrangören",
+                "desc": "Elfviks Gård bjuder in till julmarknad i lantlig gårdsmiljö första advent-helgen, med handgjorda julklappar, hantverk och delikatesser från utställare. Barnen kan ta en tur på ponny och träffa jultomten på plats, vilket gör det till ett omtyckt utflyktsmål för familjer med små barn. Gården ligger naturskönt på Lidingö och är ett av öns mer kända besöksmål för säsongsbetonade evenemang.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Lidingö",
+                "link": "https://elfviksgard.nu/julmarknad-pa-elfviksgard-2026/",
+                "dateInfo": "Lördag–söndag 28–29 november 2026, kl. 11.00–16.00",
+                "note": "Räkna med en blandning av inomhus och utomhus i gårdsmiljön – ta med kläder för utevistelse."
+              },
+              {
+                "name": "Adventsdag på Nyckelviken",
+                "type": "free",
+                "price": "Fri entré",
+                "desc": "Första söndagen i advent fylls Nyckelvikens herrgård av marknadsstånd med hantverk, öppet museum och möjlighet att göra egna jularrangemang i orangeriet. Nacka musikskola sjunger julsånger, tomten samlar in barnens önskelistor i vagnslidret, det blir ponnyridning i trädgården och ett eldshow med jonglering och komik på eftermiddagen. Caféet i herrgårdsmiljön håller öppet längre än själva marknaden och serverar hembakat, glögg, korv och varm mat.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Nacka",
+                "link": "https://vastrasicklao.se/julmarknad-nacka/",
+                "dateInfo": "Söndag 29 november 2026, marknad kl. 11.00–15.00, café öppet till 16.00",
+                "note": "Skyltat från väg 222/Nacka Strand, parkering vid Nyckelviksvägen eller Ektorps skola."
+              },
+              {
+                "name": "Julmarknad på Artipelag",
+                "type": "paid",
+                "price": "Ej publicerat ännu – ordinarie Artipelag-entré kan krävas",
+                "desc": "På Artipelags julmarknad i Artbox säljer utvalda utställare finare hantverk, design och personliga julklappar i den karaktäristiska konsthallsmiljön vid Värmdö. Artipelag bjuder även på sin egen julsill och andra julgodingar, och ett luciatåg går genom foajén båda dagarna, öppet för alla besökare. Det är en inomhusmarknad med mer designfokus och konsthallskänsla än en traditionell lantlig julmarknad.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": true,
+                "area": "Värmdö",
+                "link": "https://artipelag.se/hander-pa-artipelag/julmarknad-pa-artipelag/",
+                "dateInfo": "12–13 december 2026 (öppettider och pris var ej publicerade av Artipelag vid vår senaste koll)",
+                "note": "Öppettider och pris saknades på officiella sidan vid vår senaste koll – kolla igen närmare december innan ni planerar besöket."
+              },
+              {
+                "name": "Vaxholms julmarknad",
+                "type": "free",
+                "price": "Troligen gratis (ingen avgift nämns)",
+                "desc": "Vaxholms julmarknad hålls på Rådhustorget mitt i den charmiga skärgårdsstaden, med rostade mandlar, hantverk, glögg och julgranar till försäljning, andra advent-helgen. Tomten brukar finnas på plats, och torgets småstadsmiljö med Vaxholms fästning inom synhåll gör det till ett trevligt utflyktsmål som går att kombinera med en promenad längs kajen.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Vaxholm",
+                "link": "https://www.destinationvaxholm.se/events/vaxholms-julmarknad-2026",
+                "dateInfo": "Lördag 5–söndag 6 december 2026, kl. 11.00–16.00",
+                "note": "Helt utomhus på öppet torg – ta med varma kläder."
+              },
+              {
+                "name": "Zetas julmarknad",
+                "type": "free",
+                "price": "Gratis inträde",
+                "desc": "Julmarknad i och runt handelsträdgården Zetas i Segeltorp, en kort bit söder om Stockholm. Lokala utställare säljer hantverk, julblommor, dekorationer, smycken, ljus, keramik och hemgjord honung, och trädgårdscaféet bjuder på hembakat fika och glögg. Marknaden är liten och mysig snarare än stor och turisttät, vilket gör den lagom för en kortare utflykt med småbarn.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Segeltorp, Huddinge",
+                "link": "https://zetas.se/pages/event",
+                "dateInfo": "Lördag 21–söndag 22 november 2026 (öppettider ej bekräftade för 2026, ca kl. 10–16 enligt tidigare år)",
+                "note": "Öppettider för 2026 inte bekräftade på zetas.se vid vår senaste koll – räkna med ca kl. 10–16 baserat på tidigare år."
+              },
+              {
+                "name": "Hågelbyparkens julmarknad",
+                "type": "free",
+                "price": "Fri entré",
+                "desc": "Hågelbyparkens traditionsenliga julmarknad arrangeras utomhus i parken mellan Alby och Tumba i Botkyrka, med lokala hantverkare och mathantverkare som säljer julklappar och delikatesser i stånd. Det är fri entré, och parken ligger granne med Lida friluftsgård så det går fint att kombinera besöket med en promenad eller lek i naturen efteråt. Marknaden är en av de mer etablerade i Botkyrka och brukar locka familjer från hela Södertörn.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Botkyrka",
+                "link": "https://hagelby.se/evenemang/julmarknad/",
+                "dateInfo": "Lördag 28–söndag 29 november 2026, kl. 11.00–15.00",
+                "note": "Officiella sidan skriver \"Mer info kommer!\" – dubbelkolla utställarlista/aktiviteter närmare marknadsdagen."
+              },
+              {
+                "name": "Prinsvillans julmarknad",
+                "type": "free",
+                "price": "Troligen fri entré till marknadsstånden",
+                "desc": "Julmarknaden på Prinsvillan i Tyresö slottspark bjuder på stånd med handgjort, lokalproducerat och omsorgsfullt utvalda julklappar, julgodis och glögg vid elden, och barnen kan hälsa på tomten under helgen. I angränsande Pilgrimscentrum/församlingshemmet pysslas julpyssel och sjungs julsånger båda dagarna, och på söndagen hålls en julmässa i Tyresö kyrka. Parkeringen vid Prinsvillan är begränsad, så arrangören rekommenderar buss 875 från Gullmarsplan eller Tyresö centrum.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Tyresö",
+                "link": "https://prinsvillan.se/julmarknad-2026/",
+                "dateInfo": "Lördag 28–söndag 29 november 2026, kl. 10.00–16.00. Mässa i Tyresö kyrka söndag kl. 11.00",
+                "note": "Begränsad parkering på plats – räkna med att ta buss 875 eller samåka."
+              },
+              {
+                "name": "Smådalarö Gårds adventsmarknad",
+                "type": "free",
+                "price": "Fri entré till marknaden; enskilda aktiviteter (glöggprovning, ljudhealing, yoga) kräver bokning och kostar extra",
+                "desc": "På Smådalarö Gård Hotell & Spa i Dalarös skärgårdsmiljö inleds julen med en adventsmarknad utomhus på gårdsplanen, där lokala gårdar säljer delikatesser, julklappar och hett och kallt att dricka. Barnen kan rida ponny och meta i fiskdammen, medan vuxna kan boka glöggprovning med sommelier, ljudhealing eller yoga inne på hotellet. Det är femte året i rad hotellet arrangerar marknaden.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Dalarö",
+                "link": "https://www.smadalarogard.se/hotellet/hander-pa-hotellet/adventmarknad-2025",
+                "dateInfo": "Söndag 29 november 2026, kl. 11.00–15.00",
+                "note": "Flera av tilläggsaktiviteterna (glöggprovning, ljudhealing, yoga) måste bokas i förväg via receptionen och kostar extra utöver den fria marknaden."
+              },
+              {
+                "name": "Dalarö Julmarknad (vid Tullhuset)",
+                "type": "free",
+                "price": "Ingen inträdesavgift",
+                "desc": "Dalarö Julmarknad hålls på och kring torget vid det gamla tullhuset på Dalarö, med ett tjugotal marknadsstånd som säljer lokalproducerat från Södertörn – honung, hembakat, sylt, ost, chark, textil, stickat och konsthantverk är stående inslag. Tullhuset är öppet under dagen och ger ett varmt inomhusalternativ mellan stånden utomhus på torget. Marknaden brukar locka flera tusen besökare till den lilla skärgårdsorten, så räkna med folk och begränsad parkering.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Dalarö",
+                "link": "https://www.dalaro.se/files/Dalaroguiden/dalaroguidenqr.pdf",
+                "dateInfo": "Lördag 5 december 2026, kl. 10.00–15.00",
+                "note": "Marknaden pågår bara lördagen (en dag) – planera besöket därefter."
+              },
+              {
+                "name": "Torekällbergets julmarknad (Julstök på Berget)",
+                "type": "free",
+                "price": "Fri entré",
+                "desc": "På frilandsmuseet Torekällberget i Södertälje arrangeras \"Julstök på Berget\", en 1800-talsdoftande julmarknad med hantverk och mathantverk utspritt över det historiska museiområdet med gamla hus och gårdar. Under helgen bjuds det på julstöksuppträdanden, och söndagen avslutas med ett luciatåg klockan 16. Entrén till Torekällberget är normalt fri, vilket gör det till ett budgetvänligt förstahandsval för en familjeutflykt.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Södertälje",
+                "link": "https://www.sodertalje.se/kultur-och-fritid/torekallberget/",
+                "dateInfo": "Lördag 5–söndag 6 december 2026, kl. 11.00–16.00. Luciatåg söndag kl. 16.00",
+                "note": "Stora delar av museiområdet är utomhus och kan vara kallt och blåsigt – klä barnen varmt."
+              },
+              {
+                "name": "Nynäshamns julmarknad (Fiskehamnen)",
+                "type": "free",
+                "price": "Gratis inträde till marknaden; ponnyridning 30 kr/tur",
+                "desc": "Nynäshamns julmarknad fyller Fiskehamnen och hamnområdet med stånd som säljer allt från hemgjorda ljus, kransar och julgranar till godis, ost, chark, praliner, rostade mandlar, sylt, te och kaffe, och körer sjunger julsånger bland båtarna. Barnen kan rida ponny, åka gratis hästskjuts in till marknaden från centrum, och träffa tomten. Marknaden ligger precis vid Nynäshamns station, så den går lätt att nå med pendeltåg.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Nynäshamn",
+                "link": "https://www.nynashamnscentrum.se/julmarknad.html",
+                "dateInfo": "Lördag 5–söndag 6 december 2026, kl. 11.00–16.00 (ponnyridning kl. 11.00–15.00)",
+                "note": "Ponnyridningen kostar 30 kr/tur; övrigt på marknaden är gratis."
+              },
+              {
+                "name": "Sagolik Julmarknad på Wira Bruk",
+                "type": "paid",
+                "price": "50 kr/vuxen, barn och ungdomar upp till 18 år gratis. Parkering 50 kr/bil.",
+                "desc": "Wira bruks anrika smedmiljö fylls av julstämning när Wira Bruks Kulturförening bjuder in till sagolik julmarknad på första adventhelgen. Man vandrar mellan utställarna i den gamla bruksmiljön bland hantverk och julinspiration, med öppet redan fredag för den som vill undvika köerna på helgen. Vuxna betalar 50 kr i entré medan barn och ungdomar upp till 18 år går in gratis.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Österåker",
+                "link": "https://www.wirabruk.se/sagolik-julmarknad2/",
+                "dateInfo": "Fredag 27 november kl 12–16, lördag 28 november kl 10–16 och söndag 29 november kl 10–16, 2026",
+                "note": "Öppet redan på fredagen för den som vill undvika köerna på helgen."
+              },
+              {
+                "name": "Julmarknad i Trälogen, Steninge Slottsby",
+                "type": "free",
+                "price": "Ej bekräftat – fråga på plats eller kontakta jul@steningeslottsby.se",
+                "desc": "I Trälogen på Steninge Slottsby, strax utanför Märsta, ställer lokala hantverkare och matproducenter ut sina alster under två helger i advent. Utbudet beskrivs av arrangören själv som hantverk, ätbart och \"annat som hör julen till\" – ett bra mellanstopp för julklappsshopping eller mat till julbordet. Steninge Slottsby har även egna butiker och caféer runt omkring, så det går lätt att kombinera besöket med annat ärende.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": true,
+                "area": "Märsta, Sigtuna kommun",
+                "link": "https://steningeslottsby.se/",
+                "dateInfo": "Lördag–söndag 28–29 november och lördag–söndag 5–6 december 2026, kl 11–16 alla dagar",
+                "note": "Pris/inträde är inte uttryckligen bekräftat – fråga på plats eller kontakta jul@steningeslottsby.se."
+              },
+              {
+                "name": "Julmarknad på Överby Gård",
+                "type": "free",
+                "price": "Ej bekräftat, troligen fritt tillträde",
+                "desc": "Överby Gårds konstcentrum i Sollentuna bjuder på en konsthantverksmarknad där medlemmarna i Överbygruppen visar och säljer sitt eget skapande tillsammans med ett mindre antal inbjudna konsthantverkare. Här hittar man hantverk i olika material – ett alternativ för den som vill ge en personlig julklapp istället för något massproducerat. Marknaden sträcker sig över två adventshelger.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Sollentuna",
+                "link": "https://overbygard.se/program/",
+                "dateInfo": "Lördag–söndag 28–29 november och lördag–söndag 5–6 december 2026 (exakta öppettider ej bekräftade)",
+                "note": "Öppettiderna för julmarknaden specifikt är inte bekräftade – dubbelkolla på Överby Gårds sida."
+              },
+              {
+                "name": "Sigtuna Julmarknad",
+                "type": "free",
+                "price": "Fri entré",
+                "desc": "Sigtunas julmarknad har anor sedan 1950-talet och fyller Stora Torget och Stora gatan i den medeltida stadskärnan varje söndag i advent. Utöver klassisk torghandel med hantverkare som säljer handgjort i trä och keramik, handtryckta textilier och smycken bjuds det på julmusik, luciatåg och bokloppis. Marknaden går fyra söndagar i rad, så man kan välja det datum som passar familjen bäst.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Sigtuna",
+                "link": "https://www.sigtuna.se/kultur-och-fritid/turistinformation-besok/julmarknad-i-sigtuna-stad.html",
+                "dateInfo": "Söndagarna 29 november, 6, 13 och 20 december 2026, kl 11–16 alla dagar",
+                "note": "Fyra separata söndagar – välj det datum som passar er bäst."
+              },
+              {
+                "name": "Julmarknad i Täby Park",
+                "type": "free",
+                "price": "Troligen fritt tillträde",
+                "desc": "I det nya bostadsområdet Täby Park arrangerar Täby Park Exploatering en julmarknad med fokus på lokalproducerat och hantverk. Marknaden hålls vid Läktartorget och i de gamla stallbåsen, med mat och dryck att äta på plats eller ta hem samt julpynt och presenter. Ett bra tips för familjer som redan är ute och utforskar Täbys nya stadsdel.",
+                "ageMin": 0,
+                "ageMax": 99,
+                "indoor": false,
+                "area": "Täby",
+                "link": "https://taby-park.se/julmarknad/",
+                "dateInfo": "Lördag 5 december 2026, kl 11–15",
+                "note": "En sekundärkälla nämnde istället 6 december, men den officiella sidan bekräftar konsekvent lördag 5 december."
               }
             ],
             "faq": [],
             "published": "2026-10-30",
-            "updated": "2026-10-30",
+            "updated": "2026-11-09",
             "cardType": "activity",
             "flatList": true
           },
