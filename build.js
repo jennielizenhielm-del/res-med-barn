@@ -1252,8 +1252,8 @@ function buildStadsGuider() {
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
-${regionNav}
 ${media(g.img, g.emoji, 'page-hero', 1400)}
+${regionNav}
 ${g.flatList ? `
 <div class="activity-grid">
   ${g.venues.map(cardFn).join('')}
