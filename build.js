@@ -1301,11 +1301,15 @@ ${faqHtml(m.faq)}`;
   write('artiklar/index.html', page('/artiklar/', m, '/artiklar/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
 }
 
-function productCardHtml(p) {
+// featured: sätts när kortet är ensamt i sin grid (en enda produktrekommendation) — då
+// används ett bredare, mer "ombord"-känt kort istället för det smala grid-kortet som annars
+// blir halvtomt och tappar kraft när det bara är ett enda alternativ.
+function productCardHtml(p, featured) {
   return `
-    <div class="product-mini-card">
+    <div class="product-mini-card${featured ? ' product-mini-card--featured' : ''}">
       ${p.img ? `<div class="product-mini-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-mini-img').remove()"></div>` : ''}
       <div class="product-mini-body">
+        ${featured ? `<span class="product-mini-kicker">${icon('⭐')} Vårt tips</span>` : ''}
         <h3>${esc(p.name)}</h3>
         ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
         <p class="product-mini-note">${esc(p.note)}</p>
@@ -1379,7 +1383,7 @@ ${media(a.img, a.emoji, 'page-hero', 1400)}
   <ul class="section-list">${s.list.map(x => `<li>${escLinks(x)}</li>`).join('')}</ul>` : ''}${s.products && s.products.length ? `
   <div class="section-products">
     <p class="ad-disclosure">${icon('📢')} Inlägget innehåller reklam genom annonslänkar för ${esc(s.products.map(p => p.store).filter((v,i,arr)=>v&&arr.indexOf(v)===i).join(', '))}.</p>
-    <div class="product-mini-grid">${s.products.map(productCardHtml).join('')}</div>
+    <div class="product-mini-grid">${s.products.map(p => productCardHtml(p, s.products.length === 1)).join('')}</div>
   </div>` : ''}`).join('\n')}
 </article>
 ${a.quicktips ? `
@@ -1392,7 +1396,7 @@ ${a.products && a.products.length ? `
   <h2>Produkter som kan hjälpa</h2>
   ${disclosure}
   <div class="product-mini-grid">
-    ${a.products.map(productCardHtml).join('')}
+    ${a.products.map(p => productCardHtml(p, a.products.length === 1)).join('')}
   </div>
 </div>` : ''}
 ${faqHtml(a.faq)}
