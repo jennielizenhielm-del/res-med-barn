@@ -238,6 +238,45 @@ h1 {
   font-weight: 600;
   letter-spacing: -0.01em;
   margin: clamp(2.5rem, 5vw, 3.5rem) 0 1.25rem;
+  scroll-margin-top: 84px;
+}
+
+/* ---- REGION-NAV (hoppknappar till områden på guide-sidor, t.ex. julmarknader) ---- */
+.region-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0 0.5rem;
+}
+.region-nav a {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+.region-nav a:hover,
+.region-nav a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
+@media (max-width: 600px) {
+  .region-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .region-nav::-webkit-scrollbar { display: none; }
+  .region-nav a { flex-shrink: 0; }
 }
 
 /* ---- ARTICLE ---- */
@@ -254,6 +293,44 @@ h1 {
   color: var(--text-secondary);
   max-width: 680px;
   margin-bottom: 1rem;
+}
+.article ul.section-list {
+  max-width: 680px;
+  margin: 0.5rem 0 1.5rem;
+  padding: 1.3rem 1.5rem 1.3rem 1.4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  background: var(--bg-alt);
+  border-radius: var(--radius-lg);
+}
+.article ul.section-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  font-size: 0.97rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.article ul.section-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent);
+}
+.ad-disclosure {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  opacity: 0.85;
+  margin: 0.75rem 0 0;
+}
+.product-recs .ad-disclosure {
+  margin: -0.25rem 0 1rem;
 }
 .article a { color: var(--accent); }
 .contact-mail { font-size: 1.05rem; margin-top: 1.5rem; }
