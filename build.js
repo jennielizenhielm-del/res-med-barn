@@ -1219,11 +1219,15 @@ function buildStadsGuider() {
           '@type': 'ListItem', position: i + 1, name: v.name
         }))
       };
-      const areas = (g.areaOrder && g.areaOrder.length) ? g.areaOrder : [...new Set(g.venues.map(v => v.area))];
+      // Gruppering sker på v.region om satt (bredare geografisk kategori, t.ex. "Norra Stockholm"),
+      // annars faller den tillbaka på v.area (den specifika platsen/stadsdelen) som tidigare — bakåtkompatibelt
+      // för guider som inte har region-fältet. v.area visas fortfarande på det enskilda kortet oavsett.
+      const groupKey = v => v.region || v.area;
+      const areas = (g.areaOrder && g.areaOrder.length) ? g.areaOrder : [...new Set(g.venues.map(groupKey))];
       const others = (s.guider || []).filter(x => x.guideSlug !== g.guideSlug);
       // g.cardType === 'activity' reuses activityCard() (price/ålder/datum/familyCost/note) instead of
       // venueCard() (måltider/ring-innan) — för guider som inte är restaurang/café-typ, t.ex. julmarknader.
-      // g.flatList hoppar över area-grupperingen (en H2 per unikt v.area) och renderar allt i ett enda grid —
+      // g.flatList hoppar över area-grupperingen (en H2 per unik grupp) och renderar allt i ett enda grid —
       // relevant när varje "ställe" ändå har ett eget unikt område och grupperingen bara skulle ge en rubrik per kort.
       const cardFn = g.cardType === 'activity' ? activityCard : venueCard;
       const inner = `
@@ -1238,7 +1242,7 @@ ${g.flatList ? `
 <div class="activity-grid">
   ${g.venues.map(cardFn).join('')}
 </div>` : areas.map(area => {
-  const inArea = g.venues.filter(v => v.area === area);
+  const inArea = g.venues.filter(v => groupKey(v) === area);
   if (!inArea.length) return '';
   return `
 <h2 class="section-title">${esc(area)}</h2>

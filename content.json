@@ -5188,7 +5188,8 @@
             "h2": "Så har vi valt ut hotellen",
             "text": "Vi har bara tagit med hotell som går att boka direkt via Solresor eller Nazar, Sveriges All Inclusive-specialist, så att ni kan boka resan direkt härifrån istället för att behöva söka vidare själva. Vi har prioriterat hotell som själva marknadsförs som familjevänliga (barnklubb, barnpool eller vattenpark) och som har ett bra betyg hos researrangören. Vi har inte bott på hotellen själva denna gång — texterna bygger på researrangörens egen hotellinformation och betygsgenomsnitt, inte vårt eget förstahandsintryck. Fler produkter som kan vara bra att ha med på en All Inclusive-resa med barn hittar du i vår [solkräms-topplista](/topplistor/solkram/) och vår lista med [UV-badkläder](/topplistor/uv-badklader/)."
           }
-        ]
+        ],
+        "paused": true
       }
     ]
   },
@@ -6395,7 +6396,8 @@
                 "area": "Kungsträdgården, Norrmalm",
                 "link": "https://gymnasieskola.stockholm/aktuellt/kalendarium/2026/11/kungstradgardens-julmarknad/",
                 "dateInfo": "Lördag 28 nov 2026, kl 11:00–16:00",
-                "note": "Bara en dag – kan bli väldigt folktätt mitt på dagen"
+                "note": "Bara en dag – kan bli väldigt folktätt mitt på dagen",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Skeppsholmsgårdens julmarknad",
@@ -6408,7 +6410,8 @@
                 "area": "Skeppsholmen",
                 "link": "https://skeppsholmsgarden.se/skeppsholmsgardens-julmarknad-12-13-december-2026/",
                 "dateInfo": "Lör–sön 12–13 dec 2026, kl 11:00–17:00",
-                "note": "Utställare finns både i husen och utomhus på gårdsplanen"
+                "note": "Utställare finns både i husen och utomhus på gårdsplanen",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Julmarknad på Åkeshofs Slott",
@@ -6420,7 +6423,8 @@
                 "indoor": false,
                 "area": "Bromma",
                 "link": "https://www.akeshofsslott.se/erbjudanden/julmarknad/",
-                "dateInfo": "Söndag 29 nov 2026 (1:a advent), kl 11:00–16:00"
+                "dateInfo": "Söndag 29 nov 2026 (1:a advent), kl 11:00–16:00",
+                "region": "Västerort"
               },
               {
                 "name": "Hantverksladans julmarknad",
@@ -6433,7 +6437,8 @@
                 "area": "Hässelby (Riddersvik)",
                 "link": "https://hantverksladanriddersvik.se/",
                 "dateInfo": "Söndag 13 dec 2026, kl 11:00 (sluttid ej bekräftad)",
-                "note": "Kontrollera öppettider och pris på föreningens Facebooksida innan besök"
+                "note": "Kontrollera öppettider och pris på föreningens Facebooksida innan besök",
+                "region": "Västerort"
               },
               {
                 "name": "Advent i Viken",
@@ -6446,7 +6451,8 @@
                 "area": "Hägersten (Vinterviken)",
                 "link": "https://vinterviken.com/event/julmarknad/",
                 "dateInfo": "Söndagar 29 nov, 6, 13 och 20 dec 2026, kl 11:00–15:00 (caféet öppet 09:00–17:00)",
-                "note": "Fyra marknadstillfällen under advent – välj den helg som passar er bäst"
+                "note": "Fyra marknadstillfällen under advent – välj den helg som passar er bäst",
+                "region": "Söderort"
               },
               {
                 "name": "Skansens julmarknad",
@@ -6459,7 +6465,8 @@
                 "area": "Djurgården",
                 "link": "https://julmarknaderna.se/julmarknad-skansens/",
                 "dateInfo": "Fre–sön 27 nov–20 dec 2026 (fre & lör 10:00–17:00, sön 10:00–16:00)",
-                "note": "Redan omnämnd på sajtens Stockholm-jullov-sida, men julmarknaden förtjänar en egen kort beskrivning"
+                "note": "Redan omnämnd på sajtens Stockholm-jullov-sida, men julmarknaden förtjänar en egen kort beskrivning",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Stortorgets Julmarknad",
@@ -6472,7 +6479,8 @@
                 "area": "Gamla stan",
                 "link": "https://www.julmarknad.nu/event/stortorgets-julmarknad-gamla-stan/",
                 "dateInfo": "Lördag 21 nov–onsdag 23 dec 2026, sön–tors kl. 11–18, fre–lör kl. 11–19",
-                "note": "Mycket trängsel på torget helger i december – gå gärna en vardagsförmiddag med barnvagn."
+                "note": "Mycket trängsel på torget helger i december – gå gärna en vardagsförmiddag med barnvagn.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Julmarknad på Farsta gård",
@@ -6485,7 +6493,8 @@
                 "area": "Farsta",
                 "link": "https://farstagard.se/",
                 "dateInfo": "Lördag 21–söndag 22 nov 2026, söndag kl. 11–16 (lördagens öppettider ej bekräftade)",
-                "note": "Litet format jämfört med storstadsmarknaderna – begränsat utbud men också mindre köer."
+                "note": "Litet format jämfört med storstadsmarknaderna – begränsat utbud men också mindre köer.",
+                "region": "Söderort"
               },
               {
                 "name": "Julmarknad på Stora Sköndal",
@@ -6498,7 +6507,8 @@
                 "area": "Stora Sköndal",
                 "link": "https://www.framtidensstoraskondal.se/julmarknad/",
                 "dateInfo": "Lördag 28–söndag 29 nov 2026, kl. 11–16",
-                "note": "Kombinerar inomhus (växthuset) och utomhus (Jultorget) – bra om det är kallt eller blåsigt."
+                "note": "Kombinerar inomhus (växthuset) och utomhus (Jultorget) – bra om det är kallt eller blåsigt.",
+                "region": "Söderort"
               },
               {
                 "name": "Bondens Egen Marknad – julmarknad, Katarina Bangata",
@@ -6511,7 +6521,8 @@
                 "area": "Södermalm",
                 "link": "https://bondensegen.com/stockholm-katarina-bangata/",
                 "dateInfo": "Lördagar 28 nov, 5, 12 och 19 dec 2026, kl. 10–15 (ungefärliga tider enligt höstens marknader)",
-                "note": "Begränsade mängder av varje vara – kom tidigt för bästa urval."
+                "note": "Begränsade mängder av varje vara – kom tidigt för bästa urval.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Eken Julmarknad",
@@ -6524,7 +6535,8 @@
                 "area": "Slakthusområdet",
                 "link": "https://www.ekenmarknad.se/",
                 "dateInfo": "Lör 5–sön 6 dec samt lör 12–sön 13 dec 2026, lördagar kl. 12–17, söndagar kl. 11–16",
-                "note": "Stort och populärt evenemang – räkna med folk och kö till garderoben på lördagar."
+                "note": "Stort och populärt evenemang – räkna med folk och kö till garderoben på lördagar.",
+                "region": "Söderort"
               },
               {
                 "name": "Julmarknad i Gamla Enskede",
@@ -6537,7 +6549,8 @@
                 "area": "Enskede",
                 "link": "https://enskede.net/evenemang/julmarknad-i-gamla-enskede",
                 "dateInfo": "Lördag 5–söndag 6 dec 2026, kl. 11–16",
-                "note": "Hålls oavsett väder – klä barnen varmt, särskilt i vagn."
+                "note": "Hålls oavsett väder – klä barnen varmt, särskilt i vagn.",
+                "region": "Söderort"
               },
               {
                 "name": "Världens julmarknad på Sjöhistoriska museet",
@@ -6550,7 +6563,8 @@
                 "area": "Gärdet",
                 "link": "https://www.sjohistoriska.se/",
                 "dateInfo": "Lördag 28 november 2026, start kl. 10:00",
-                "note": "Marknaden har bytt namn från \"Baltisk julmarknad\" till \"Världens julmarknad\" jämfört med tidigare år."
+                "note": "Marknaden har bytt namn från \"Baltisk julmarknad\" till \"Världens julmarknad\" jämfört med tidigare år.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Wasa Julmarknad",
@@ -6563,7 +6577,8 @@
                 "area": "Odenplan",
                 "link": "https://kanonkulan.se/wasa-julmarknad/",
                 "dateInfo": "Lördagarna 28 november och 5 december 2026, kl. 10:30–16:30",
-                "note": "Jultomten finns på plats kl. 13:30–15:00 båda dagarna."
+                "note": "Jultomten finns på plats kl. 13:30–15:00 båda dagarna.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Julmarknad på Hovstallet",
@@ -6576,7 +6591,8 @@
                 "area": "Östermalm",
                 "link": "https://www.kungligaslotten.se/kalendarium/evenemang/julmarknad-pa-hovstallet.html",
                 "dateInfo": "4–6 december 2026. Fredag kl. 11:00–19:00, lördag kl. 10:00–18:00, söndag kl. 10:00–17:00",
-                "note": "Biljetter köps endast på plats i entrén – inget förköp."
+                "note": "Biljetter köps endast på plats i entrén – inget förköp.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Julmarknad på Nordiska museet",
@@ -6589,7 +6605,8 @@
                 "area": "Djurgården",
                 "link": "https://www.nordiskamuseet.se/evenemang/julmarknad-pa-nordiska-museet/",
                 "dateInfo": "Lördag 5 december 2026, kl. 10:00–16:00",
-                "note": ""
+                "note": "",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Birkagårdens julmarknad",
@@ -6602,7 +6619,8 @@
                 "area": "Vasastan",
                 "link": "https://www.birkagarden.se/evenemang",
                 "dateInfo": "Lördag 5 december 2026, kl. 11:00–15:00",
-                "note": "Birkagården publicerar fullständig info om utställare närmare datumet – kolla deras sida innan besök."
+                "note": "Birkagården publicerar fullständig info om utställare närmare datumet – kolla deras sida innan besök.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Bondens Egen Julmarknad, Tessinparken",
@@ -6615,7 +6633,8 @@
                 "area": "Östermalm",
                 "link": "https://bondensegen.com/stockholm-ostermalm-tessinparken/",
                 "dateInfo": "Lördagarna 5, 12 och 19 december 2026, kl. 10:00–15:00",
-                "note": ""
+                "note": "",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Beckmans julmarknad på Rosendals Trädgård",
@@ -6628,7 +6647,8 @@
                 "area": "Djurgården",
                 "link": "https://www.rosendalstradgard.se/beckmans-julmarknad-6-7-december/",
                 "dateInfo": "5–6 december 2026 (preliminärt datum, ej officiellt publicerat av Rosendals Trädgård ännu)",
-                "note": "Rosendals Trädgårds egen sida hade vid vår senaste koll inte uppdaterats till 2026 års datum – dubbelkolla på deras hemsida innan besök."
+                "note": "Rosendals Trädgårds egen sida hade vid vår senaste koll inte uppdaterats till 2026 års datum – dubbelkolla på deras hemsida innan besök.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Schysst Jul",
@@ -6641,7 +6661,8 @@
                 "area": "Norrmalm",
                 "link": "https://abfstockholm.se/evenemang/schysst-jul-2024/",
                 "dateInfo": "5–6 december 2026, lördag ca kl. 10:00–16:00, söndag ca kl. 10:00–15:00",
-                "note": "Exakta öppettider varierar något mellan källor – kolla ABF Stockholms kalendarium strax innan besök."
+                "note": "Exakta öppettider varierar något mellan källor – kolla ABF Stockholms kalendarium strax innan besök.",
+                "region": "City/Innerstan"
               },
               {
                 "name": "Julmarknad på Färgfabriken",
@@ -6654,7 +6675,8 @@
                 "area": "Lövholmen",
                 "link": "https://fargfabriken.se/sv/pa-gang/julmarknad/",
                 "dateInfo": "5–6 december 2026 (preliminärt datum, ej officiellt publicerat av Färgfabriken ännu), kl. 11:00–17:00",
-                "note": "Färgfabrikens egen sida hade vid vår senaste koll inte uppdaterats till 2026 års datum – dubbelkolla på deras hemsida innan besök."
+                "note": "Färgfabrikens egen sida hade vid vår senaste koll inte uppdaterats till 2026 års datum – dubbelkolla på deras hemsida innan besök.",
+                "region": "Söderort"
               },
               {
                 "name": "Julmarknad på Hesselby slott",
@@ -6667,7 +6689,8 @@
                 "area": "Hässelby",
                 "link": "https://www.hesselbyslott.se/restaurang/julen-2026/",
                 "dateInfo": "21–22 november 2026 (öppettider ej publicerade ännu)",
-                "note": "Öppettider, pris och exakt utbud är inte publicerat av slottet ännu – kolla deras sida eller Facebook strax innan besöket."
+                "note": "Öppettider, pris och exakt utbud är inte publicerat av slottet ännu – kolla deras sida eller Facebook strax innan besöket.",
+                "region": "Västerort"
               },
               {
                 "name": "Sundbybergs centrum julmarknad",
@@ -6680,7 +6703,8 @@
                 "area": "Sundbyberg",
                 "link": "http://www.sundbybergcentrum.se/evenemang/julmarknad-6-december-46478443",
                 "dateInfo": "Preliminärt lördag 5 december 2026 (ej officiellt bekräftat av arrangören ännu)",
-                "note": "Datumet för 2026 var inte bekräftat av arrangören vid vår senaste koll – dubbelkolla på Sundbybergs centrums Facebook-sida innan besök."
+                "note": "Datumet för 2026 var inte bekräftat av arrangören vid vår senaste koll – dubbelkolla på Sundbybergs centrums Facebook-sida innan besök.",
+                "region": "Norra Stockholm"
               },
               {
                 "name": "Nördarnas julmarknad",
@@ -6693,7 +6717,8 @@
                 "area": "Solna",
                 "link": "https://www.nordarnasjulmarknad.se/",
                 "dateInfo": "Preliminärt 5–6 december 2026 (ej bekräftat av arrangören ännu)",
-                "note": "Arrangörens egen sida hade vid vår senaste koll inte uppdaterats till 2026 – bekräfta datum via deras Facebook-event innan besök."
+                "note": "Arrangörens egen sida hade vid vår senaste koll inte uppdaterats till 2026 – bekräfta datum via deras Facebook-event innan besök.",
+                "region": "Norra Stockholm"
               },
               {
                 "name": "Filmstadens julmarknad",
@@ -6706,7 +6731,8 @@
                 "area": "Råsunda, Solna",
                 "link": "https://filmstadenskultur.se/var-verksamhet/evenemang/filmstadens-julmarknad/",
                 "dateInfo": "Söndag 6 december 2026, kl. 12.00–16.00",
-                "note": "Ingen exakt gatuadress anges av arrangören – området ligger vid tunnelbanestationen Näckrosen."
+                "note": "Ingen exakt gatuadress anges av arrangören – området ligger vid tunnelbanestationen Näckrosen.",
+                "region": "Norra Stockholm"
               },
               {
                 "name": "Julmarknad på Kajen (Fabrikören), Nacka Strand",
@@ -6719,7 +6745,8 @@
                 "area": "Nacka Strand",
                 "link": "https://www.kajen.nu/17/77/julmarknad-pa-fabrikoren-kajen-nacka-strand/",
                 "dateInfo": "21–22 november och 12–13 december 2026, kl. 11.00–15.00 båda helgerna",
-                "note": "Helt utomhus vid vattnet – kolla väder och klä barnen varmt."
+                "note": "Helt utomhus vid vattnet – kolla väder och klä barnen varmt.",
+                "region": "Nacka/Värmdö/Lidingö & skärgården"
               },
               {
                 "name": "Julmarknad på Elfviks Gård",
@@ -6732,7 +6759,8 @@
                 "area": "Lidingö",
                 "link": "https://elfviksgard.nu/julmarknad-pa-elfviksgard-2026/",
                 "dateInfo": "Lördag–söndag 28–29 november 2026, kl. 11.00–16.00",
-                "note": "Räkna med en blandning av inomhus och utomhus i gårdsmiljön – ta med kläder för utevistelse."
+                "note": "Räkna med en blandning av inomhus och utomhus i gårdsmiljön – ta med kläder för utevistelse.",
+                "region": "Nacka/Värmdö/Lidingö & skärgården"
               },
               {
                 "name": "Adventsdag på Nyckelviken",
@@ -6745,7 +6773,8 @@
                 "area": "Nacka",
                 "link": "https://vastrasicklao.se/julmarknad-nacka/",
                 "dateInfo": "Söndag 29 november 2026, marknad kl. 11.00–15.00, café öppet till 16.00",
-                "note": "Skyltat från väg 222/Nacka Strand, parkering vid Nyckelviksvägen eller Ektorps skola."
+                "note": "Skyltat från väg 222/Nacka Strand, parkering vid Nyckelviksvägen eller Ektorps skola.",
+                "region": "Nacka/Värmdö/Lidingö & skärgården"
               },
               {
                 "name": "Julmarknad på Artipelag",
@@ -6758,7 +6787,8 @@
                 "area": "Värmdö",
                 "link": "https://artipelag.se/hander-pa-artipelag/julmarknad-pa-artipelag/",
                 "dateInfo": "12–13 december 2026 (öppettider och pris var ej publicerade av Artipelag vid vår senaste koll)",
-                "note": "Öppettider och pris saknades på officiella sidan vid vår senaste koll – kolla igen närmare december innan ni planerar besöket."
+                "note": "Öppettider och pris saknades på officiella sidan vid vår senaste koll – kolla igen närmare december innan ni planerar besöket.",
+                "region": "Nacka/Värmdö/Lidingö & skärgården"
               },
               {
                 "name": "Vaxholms julmarknad",
@@ -6771,7 +6801,8 @@
                 "area": "Vaxholm",
                 "link": "https://www.destinationvaxholm.se/events/vaxholms-julmarknad-2026",
                 "dateInfo": "Lördag 5–söndag 6 december 2026, kl. 11.00–16.00",
-                "note": "Helt utomhus på öppet torg – ta med varma kläder."
+                "note": "Helt utomhus på öppet torg – ta med varma kläder.",
+                "region": "Nacka/Värmdö/Lidingö & skärgården"
               },
               {
                 "name": "Zetas julmarknad",
@@ -6784,7 +6815,8 @@
                 "area": "Segeltorp, Huddinge",
                 "link": "https://zetas.se/pages/event",
                 "dateInfo": "Lördag 21–söndag 22 november 2026 (öppettider ej bekräftade för 2026, ca kl. 10–16 enligt tidigare år)",
-                "note": "Öppettider för 2026 inte bekräftade på zetas.se vid vår senaste koll – räkna med ca kl. 10–16 baserat på tidigare år."
+                "note": "Öppettider för 2026 inte bekräftade på zetas.se vid vår senaste koll – räkna med ca kl. 10–16 baserat på tidigare år.",
+                "region": "Södra länet"
               },
               {
                 "name": "Hågelbyparkens julmarknad",
@@ -6797,7 +6829,8 @@
                 "area": "Botkyrka",
                 "link": "https://hagelby.se/evenemang/julmarknad/",
                 "dateInfo": "Lördag 28–söndag 29 november 2026, kl. 11.00–15.00",
-                "note": "Officiella sidan skriver \"Mer info kommer!\" – dubbelkolla utställarlista/aktiviteter närmare marknadsdagen."
+                "note": "Officiella sidan skriver \"Mer info kommer!\" – dubbelkolla utställarlista/aktiviteter närmare marknadsdagen.",
+                "region": "Södra länet"
               },
               {
                 "name": "Prinsvillans julmarknad",
@@ -6810,7 +6843,8 @@
                 "area": "Tyresö",
                 "link": "https://prinsvillan.se/julmarknad-2026/",
                 "dateInfo": "Lördag 28–söndag 29 november 2026, kl. 10.00–16.00. Mässa i Tyresö kyrka söndag kl. 11.00",
-                "note": "Begränsad parkering på plats – räkna med att ta buss 875 eller samåka."
+                "note": "Begränsad parkering på plats – räkna med att ta buss 875 eller samåka.",
+                "region": "Södra länet"
               },
               {
                 "name": "Smådalarö Gårds adventsmarknad",
@@ -6823,7 +6857,8 @@
                 "area": "Dalarö",
                 "link": "https://www.smadalarogard.se/hotellet/hander-pa-hotellet/adventmarknad-2025",
                 "dateInfo": "Söndag 29 november 2026, kl. 11.00–15.00",
-                "note": "Flera av tilläggsaktiviteterna (glöggprovning, ljudhealing, yoga) måste bokas i förväg via receptionen och kostar extra utöver den fria marknaden."
+                "note": "Flera av tilläggsaktiviteterna (glöggprovning, ljudhealing, yoga) måste bokas i förväg via receptionen och kostar extra utöver den fria marknaden.",
+                "region": "Södra länet"
               },
               {
                 "name": "Dalarö Julmarknad (vid Tullhuset)",
@@ -6836,7 +6871,8 @@
                 "area": "Dalarö",
                 "link": "https://www.dalaro.se/files/Dalaroguiden/dalaroguidenqr.pdf",
                 "dateInfo": "Lördag 5 december 2026, kl. 10.00–15.00",
-                "note": "Marknaden pågår bara lördagen (en dag) – planera besöket därefter."
+                "note": "Marknaden pågår bara lördagen (en dag) – planera besöket därefter.",
+                "region": "Södra länet"
               },
               {
                 "name": "Torekällbergets julmarknad (Julstök på Berget)",
@@ -6849,7 +6885,8 @@
                 "area": "Södertälje",
                 "link": "https://www.sodertalje.se/kultur-och-fritid/torekallberget/",
                 "dateInfo": "Lördag 5–söndag 6 december 2026, kl. 11.00–16.00. Luciatåg söndag kl. 16.00",
-                "note": "Stora delar av museiområdet är utomhus och kan vara kallt och blåsigt – klä barnen varmt."
+                "note": "Stora delar av museiområdet är utomhus och kan vara kallt och blåsigt – klä barnen varmt.",
+                "region": "Södra länet"
               },
               {
                 "name": "Nynäshamns julmarknad (Fiskehamnen)",
@@ -6862,7 +6899,8 @@
                 "area": "Nynäshamn",
                 "link": "https://www.nynashamnscentrum.se/julmarknad.html",
                 "dateInfo": "Lördag 5–söndag 6 december 2026, kl. 11.00–16.00 (ponnyridning kl. 11.00–15.00)",
-                "note": "Ponnyridningen kostar 30 kr/tur; övrigt på marknaden är gratis."
+                "note": "Ponnyridningen kostar 30 kr/tur; övrigt på marknaden är gratis.",
+                "region": "Södra länet"
               },
               {
                 "name": "Sagolik Julmarknad på Wira Bruk",
@@ -6875,7 +6913,8 @@
                 "area": "Österåker",
                 "link": "https://www.wirabruk.se/sagolik-julmarknad2/",
                 "dateInfo": "Fredag 27 november kl 12–16, lördag 28 november kl 10–16 och söndag 29 november kl 10–16, 2026",
-                "note": "Öppet redan på fredagen för den som vill undvika köerna på helgen."
+                "note": "Öppet redan på fredagen för den som vill undvika köerna på helgen.",
+                "region": "Nacka/Värmdö/Lidingö & skärgården"
               },
               {
                 "name": "Julmarknad i Trälogen, Steninge Slottsby",
@@ -6888,7 +6927,8 @@
                 "area": "Märsta, Sigtuna kommun",
                 "link": "https://steningeslottsby.se/",
                 "dateInfo": "Lördag–söndag 28–29 november och lördag–söndag 5–6 december 2026, kl 11–16 alla dagar",
-                "note": "Pris/inträde är inte uttryckligen bekräftat – fråga på plats eller kontakta jul@steningeslottsby.se."
+                "note": "Pris/inträde är inte uttryckligen bekräftat – fråga på plats eller kontakta jul@steningeslottsby.se.",
+                "region": "Norra Stockholm"
               },
               {
                 "name": "Julmarknad på Överby Gård",
@@ -6901,7 +6941,8 @@
                 "area": "Sollentuna",
                 "link": "https://overbygard.se/program/",
                 "dateInfo": "Lördag–söndag 28–29 november och lördag–söndag 5–6 december 2026 (exakta öppettider ej bekräftade)",
-                "note": "Öppettiderna för julmarknaden specifikt är inte bekräftade – dubbelkolla på Överby Gårds sida."
+                "note": "Öppettiderna för julmarknaden specifikt är inte bekräftade – dubbelkolla på Överby Gårds sida.",
+                "region": "Norra Stockholm"
               },
               {
                 "name": "Sigtuna Julmarknad",
@@ -6914,7 +6955,8 @@
                 "area": "Sigtuna",
                 "link": "https://www.sigtuna.se/kultur-och-fritid/turistinformation-besok/julmarknad-i-sigtuna-stad.html",
                 "dateInfo": "Söndagarna 29 november, 6, 13 och 20 december 2026, kl 11–16 alla dagar",
-                "note": "Fyra separata söndagar – välj det datum som passar er bäst."
+                "note": "Fyra separata söndagar – välj det datum som passar er bäst.",
+                "region": "Norra Stockholm"
               },
               {
                 "name": "Julmarknad i Täby Park",
@@ -6927,14 +6969,22 @@
                 "area": "Täby",
                 "link": "https://taby-park.se/julmarknad/",
                 "dateInfo": "Lördag 5 december 2026, kl 11–15",
-                "note": "En sekundärkälla nämnde istället 6 december, men den officiella sidan bekräftar konsekvent lördag 5 december."
+                "note": "En sekundärkälla nämnde istället 6 december, men den officiella sidan bekräftar konsekvent lördag 5 december.",
+                "region": "Norra Stockholm"
               }
             ],
             "faq": [],
             "published": "2026-10-30",
-            "updated": "2026-11-09",
+            "updated": "2026-11-10",
             "cardType": "activity",
-            "flatList": true
+            "areaOrder": [
+              "City/Innerstan",
+              "Söderort",
+              "Västerort",
+              "Norra Stockholm",
+              "Nacka/Värmdö/Lidingö & skärgården",
+              "Södra länet"
+            ]
           },
           {
             "guideSlug": "lekplatser",
@@ -10690,6 +10740,107 @@
           }
         ],
         "img": "photo-1785224928043-113fac5b7e51"
+      },
+      {
+        "slug": "reseforsakring-barn",
+        "name": "Reseförsäkring för barnfamiljer",
+        "emoji": "🛡️",
+        "img": "/reseforsakring-flygplan-barn.jpg",
+        "cardText": "Ingår försäkring i paketresan? Vad hemförsäkringen och kortet täcker – och vad som gäller om någon blir sjuk precis innan avresa.",
+        "title": "Reseförsäkring för barnfamiljer – vad som gäller och vad som ingår | Res med Barn",
+        "description": "Behöver man egen reseförsäkring till charterresan? Så funkar hemförsäkringens reseskydd, kortförsäkring och avbeställningsskydd om någon i familjen blir sjuk precis innan avresa.",
+        "h1": "Reseförsäkring för barnfamiljer – vad som faktiskt gäller",
+        "kicker": "Innan ni bokar",
+        "intro": [
+          "En vanlig missuppfattning är att researrangören tar hand om allt om något går snett. Det gör de inte – en paketresa ger er vissa rättigheter om arrangören går i konkurs eller om resan ställs in (den så kallade resegarantin), men den täcker varken sjukdom, olyckor eller att ett barn vaknar med feber morgonen ni ska åka. Det är en helt annan sorts skydd.",
+          "Här går vi igenom vad som faktiskt gäller: om reseförsäkring ingår när ni bokar charter, vad hemförsäkringen täcker på resan, vad kortets reseförsäkring kräver, och vad som händer om någon i familjen blir sjuk – till exempel vinterkräksjuka – precis innan avresa."
+        ],
+        "sections": [
+          {
+            "h2": "Ingår reseförsäkring när man bokar en charterresa?",
+            "text": "Nej, inte automatiskt. Det som följer med en paketresa enligt lag är resegarantin (en ekonomisk säkerhet om researrangören går i konkurs) och vissa rättigheter enligt paketreselagen, till exempel ångerrätt vid stora prisändringar. Det är inte samma sak som en reseförsäkring – ingetdera täcker sjukvårdskostnader, hemtransport vid sjukdom eller att ni behöver avboka för att någon blivit sjuk. Många researrangörer, bland annat Ving, säljer ett separat avbeställningsskydd som tillval (några hundra kronor per person) – men det är just ett tillval, inte något som ingår, och vanligtvis måste alla i sällskapet teckna det för att villkoren ska gälla fullt ut."
+          },
+          {
+            "h2": "Vad täcker hemförsäkringens reseskydd?",
+            "text": "De flesta svenska hemförsäkringar har ett inbyggt reseskydd, ofta med 45 dagars täckning per resa som branschnorm – men det varierar mellan bolag, så dubbelkolla villkoren om ni ska vara borta länge. Det brukar täcka akut sjuk- och tandvård utomlands, hemtransport när det är medicinskt nödvändigt, ett visst katastrofskydd (kräver oftast att UD avråder från resan), ansvars- och rättsskydd samt ersättning vid försenat eller skadat bagage. Det som ofta INTE ingår i hemförsäkringens reseskydd:",
+            "list": [
+              "Avbeställningsskydd – brukar bara finnas i hemförsäkringens högsta skyddsnivå, inte grundnivån",
+              "Riskfyllda aktiviteter, till exempel vissa äventyrssporter",
+              "Att missa ett flyg på grund av egen försening (till skillnad från om flygbolaget eller researrangören orsakat förseningen)"
+            ]
+          },
+          {
+            "h2": "Vad täcker reseförsäkring via kredit- eller bankkort?",
+            "text": "De flesta svenska kort med reseförsäkring kräver att en viss andel av resans kostnad betalas med just det kortet för att försäkringen ska gälla – till exempel kräver ICA Banken minst 75 procent av resan på sina bank-, kredit- och barnkort, medan Swedbank och Nordea kräver mer än 50 procent. Vad som räknas som \"resans kostnad\" är sällan tydligt definierat i korthållarnas egna villkor, men i praktiken räknas hela paketet – flyg, boende och eventuell transfer tillsammans – inte bara en del av det. Betalar ni till exempel hotellet med kortet men flyget med en annan betalmetod räknas bara hotellkostnaden in i andelen, vilket lätt kan knuffa er under gränsen. Säkraste sättet att vara säker på att försäkringen gäller är att betala hela resan med samma kort. Kortförsäkringen är tänkt som ett komplement till hemförsäkringen snarare än en ersättning – hos till exempel ICA Banken täcker den uttryckligen INTE vårdkostnader om ni blir sjuka på resan, utan det är hemförsäkringen eller en egen reseförsäkring som behöver stå för det. Läs igenom exakt vad ert eget kort kräver och täcker innan ni litar på det som enda skydd."
+          },
+          {
+            "h2": "Avbeställningsskydd om någon blir sjuk precis innan avresa – till exempel vinterkräksjuka",
+            "text": "De flesta avbeställningsskydd – oavsett om de kommer via kort, hemförsäkring eller en egen reseförsäkring – kräver ett läkarintyg som visar att det handlar om akut sjukdom, och det gäller normalt inte bara er själva utan även nära anhöriga. ICA Bankens kortförsäkring är ett konkret exempel: den räknar uttryckligen in make/maka/sambo, barn, syskon och föräldrar som \"nära anhörig\" vars akuta sjukdom kan utlösa avbeställningsskyddet, med ersättning på upp till 75 000–100 000 kr per familj beroende på kort. Exakt var gränsen går mellan \"tillräckligt akut\" och för milt för att räknas är sällan tydligt formulerad i villkoren – en vanlig förkylning brukar inte räcka för ersättning, men var gränsen går för något som vinterkräksjuka varierar mellan bolag. Så här går ni tillväga om det händer:",
+            "list": [
+              "Ring 1177 så fort symptomen kommer. Många vårdcentraler vill av smittskäl inte ta emot den som är akut magsjuk på plats, men kan ändå göra en journalanteckning som sedan fungerar som läkarintyg",
+              "Var tydlig med att ni behöver intyget för en avbeställning – be att det antecknas i journalen samma dag symptomen börjar, inte några dagar senare",
+              "Anmäl till försäkringsbolaget så nära avresan som möjligt – ju längre ni väntar med anmälan, desto större risk att ersättningen blir lägre eller nekas",
+              "Spara kvitton, bokningsbekräftelse och all kommunikation med vården och försäkringsbolaget"
+            ]
+          },
+          {
+            "h2": "Vad ingår i en komplett, fristående reseförsäkring?",
+            "text": "Utöver det grundläggande sjuk- och olycksfallsskyddet brukar en mer komplett reseförsäkring även innehålla hemtransport/SOS-larm, ansvarsskydd (ofta upp till flera miljoner kronor), rättsskydd, bagageförsäkring, självriskskydd mot bilens/hemförsäkringens självrisk, samt ersättning vid avbruten resa eller förstörda semesterdagar. Om ni redan har bra skydd via hemförsäkring och kort kan en fristående försäkring ändå vara värd att överväga för längre resor, om ni vill ha högre takbelopp, eller om ni reser med någon ni inte är folkbokförd tillsammans med (då kan hemförsäkringens skydd vara mer begränsat)."
+          },
+          {
+            "h2": "Särskilt att tänka på med barn",
+            "text": "Se till att alla i familjen har sitt eget EU-kort – även barnen, oavsett ålder. Det är gratis, beställs hos Försäkringskassan och ger tillgång till offentlig vård till samma kostnad som landets egna invånare inom EU/EES, men täcker varken hemtransport eller privat vård. Lägg till barnen som medförsäkrade i hemförsäkringen om de inte redan är det. Ta med mediciner i originalförpackning med apoteksetikett i handbagaget, och packa gärna en kopia av vaccinationskortet – det svenska vaccinationsschemat skiljer sig ibland från andra länders, så prata med BVC om ni är osäkra på vad som gäller er resa."
+          },
+          {
+            "h2": "Varför Europeiska ERV passar barnfamiljer",
+            "text": "Vi rekommenderar Europeiska ERV (ERGO Försäkring) för den som vill komplettera hemförsäkringen med en egen reseförsäkring. De är en av Sveriges största aktörer inom reseförsäkring och försäkrar över 1,2 miljoner resenärer om året. Det som gör dem ett bra val specifikt för barnfamiljer:",
+            "list": [
+              "Ingen åldersgräns för medförsäkrade barn – den som tecknar försäkringen måste vara 18 år, men barn kan vara medförsäkrade oavsett ålder",
+              "Barn omfattas på samma villkor som vuxna, inte en nedbantad barnversion av skyddet",
+              "\"Ny resa\"-skyddet gäller hela familjen – blir ni eller ett barn sängliggande mer än halva resan (på resor upp till 30 dagar) kan ni få en ny resa istället för bara pengarna tillbaka",
+              "Sjukdom och olycksfall som tillägg täcker akut sjukdom i upp till 60 dagar och olycksfall i upp till 3 år efter hemkomst – bra om ni reser längre än hemförsäkringens vanliga 45-dagarsgräns",
+              "Rättsskydd (100 000 kr), ansvarsskydd (upp till 10 miljoner kr) och eftersöknings-/räddningsskydd (100 000 kr per person) ingår redan i grundskyddet Bas",
+              "Går att teckna Bas eller Plus beroende på hur mycket skydd ni vill ha – Plus lägger bland annat till reseavbrott, ersättning för förstörda semesterdagar och invaliditets-/dödsfallsersättning"
+            ]
+          }
+        ],
+        "quicktipsTitle": "Snabbtips innan ni bokar",
+        "quicktips": [
+          "Kolla om er hemförsäkring har reseskydd kvar för alla resdagar – många gäller bara upp till 45 dagar",
+          "Betala minst halva resan med ett kort som har reseförsäkring, om ni vill kunna använda den",
+          "Skaffa EU-kort till alla i familjen, inklusive barnen – gratis via Försäkringskassan",
+          "Läs vad som krävs för avbeställningsskydd INNAN ni bokar, inte efter att någon blivit sjuk",
+          "Lägg till barnen som medförsäkrade i hemförsäkringen om de inte redan är det",
+          "Fundera på en fristående reseförsäkring för längre resor eller om ni reser med någon ni inte är folkbokförd med"
+        ],
+        "faq": [
+          {
+            "q": "Behöver vi teckna egen reseförsäkring om vi bokar en charterresa?",
+            "a": "Ja, oftast. Paketresan i sig ger er bara ekonomiskt skydd om arrangören går i konkurs (resegaranti) – den täcker inte sjukdom, olycksfall eller att behöva avboka. Kolla vad er hemförsäkring eller ert kort redan täcker innan ni eventuellt köper till mer."
+          },
+          {
+            "q": "Vad krävs för att få pengarna tillbaka om ett barn blir sjukt precis innan avresa?",
+            "a": "De flesta bolag kräver ett läkarintyg som visar att sjukdomen är akut och att resan avråds, utfärdat så nära avresan som möjligt. Exakt var gränsen går för vad som räknas som tillräckligt allvarligt varierar mellan bolag, så kontakta försäkringsbolaget direkt om det händer."
+          },
+          {
+            "q": "Räcker EU-kortet som reseförsäkring inom EU?",
+            "a": "Nej. EU-kortet ger bara tillgång till offentlig vård till samma kostnad som landets egna invånare – det täcker varken hemtransport, privat vård eller ambulansflyg. Se det som ett komplement till en vanlig reseförsäkring, inte en ersättning."
+          },
+          {
+            "q": "Hur länge gäller hemförsäkringens reseskydd?",
+            "a": "Branschnormen brukar anges som 45 dagar per resa, men det varierar mellan bolag – vissa har kortare eller längre gränser. Dubbelkolla era egna villkor om ni ska vara borta en längre period."
+          }
+        ],
+        "published": "2026-11-09",
+        "updated": "2026-11-10",
+        "products": [
+          {
+            "name": "Reseförsäkring via Europeiska ERV",
+            "store": "Europeiska ERV",
+            "note": "Reseförsäkringar anpassade efter resans längd och typ – bas, plus, backpacker, student eller avbeställningsskydd, från en av Sveriges största aktörer inom reseförsäkring.",
+            "url": "https://adtr.co/yvzqh6"
+          }
+        ]
       }
     ]
   }
