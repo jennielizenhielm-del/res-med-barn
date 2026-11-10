@@ -1488,7 +1488,7 @@
           {
             "name": "Bugaboo Fox 5 Renew",
             "badge": "Testvinnare",
-            "price": "12 999 kr",
+            "price": "12 199 kr",
             "text": "Bugaboo Fox 5 Renew är varumärkets mer hållbara version av Fox 5 — tygerna (sufflett, sittdel, liggdel) är gjorda av återvunnen polyester, delar av chassit i återvunnet aluminium, och den vattenavvisande behandlingen är PFAS-fri. Enligt Bugaboo sänker det koldioxidavtrycket med omkring 30 procent jämfört med tidigare Fox-modeller. Under ytan är det samma allterräng-fokuserade vagn som Fox 5: punkteringsfria hjul, justerbar fjädring, enhandsfällning och en rymlig sitt- och liggdel — nu med en omdesignad liggdel med extra förvaringsficka och en ny andningsaktiv madrass (PureBreeze).",
             "pros": [
               "Återvunna material och PFAS-fri behandling — ca 30% lägre koldioxidavtryck enligt Bugaboo",
@@ -1526,7 +1526,7 @@
           {
             "name": "Britax Smile 5Z",
             "badge": "Bäst i test",
-            "price": "Från ca 8 495 kr (som duo ca 11 000–12 000 kr)",
+            "price": "Från ca 9 199 kr (som duo ca 11 000–12 000 kr)",
             "text": "Smalast i jämförelsen (57 cm) och utsedd till bäst i test av flera oberoende testare. Vändbar sittdel med fullt liggläge, punkteringsfria hjul, central fjädring för mjuk körning, och en stor varukorg åtkomlig från flera håll.",
             "pros": [
               "Utsedd till bäst i test av flera oberoende källor",
@@ -1545,7 +1545,7 @@
           {
             "name": "Thule Urban Glide 3",
             "badge": "Bästa aktiva",
-            "price": "Från ca 9 799 kr",
+            "price": "7 295 kr",
             "text": "För er som springer, vandrar eller bara vägrar låta vagnen bestämma rutten. Trehjuling med luftdäck som äter skogsstigar till frukost. Funkar utmärkt som vardagsvagn också, även om den tar plats i hallen. Löparfamiljens självklara val.",
             "pros": [
               "Överlägsen i terräng och joggingtempo",
@@ -1780,7 +1780,7 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-10-28"
+        "updated": "2026-11-10"
       },
       {
         "slug": "resevagnar",
@@ -1798,7 +1798,7 @@
           {
             "name": "Stokke YOYO³",
             "badge": "Bäst i test",
-            "price": "Från 3 295 kr",
+            "price": "2 995 kr (kampanjpris)",
             "text": "Originalet som fortfarande är kungen. Viks med en hand till äkta handbagagemått (52×44×18 cm), väger 6,2 kg och rullar förvånansvärt bra för sina små hjul. Hela flygplatsvärlden är byggd runt den här vagnen, och det märks. Dyr, men andrahandsvärdet är absurt bra.",
             "pros": [
               "Godkänd som handbagage hos de flesta bolag",
@@ -1818,7 +1818,7 @@
           {
             "name": "Bugaboo Butterfly 2",
             "badge": "Bästa komfort",
-            "price": "Från ca 5 495 kr",
+            "price": "4 399 kr (kampanjpris, Black Month t.o.m. 30/11)",
             "text": "Den resevagn som känns mest som en riktig vagn. Rymligare sits, större korg och bättre fjädring än allt annat i kabinformat. Fäller med en hand, står själv hopfälld. Om barnet ska sova långa middagsluror i vagnen på semestern är det här valet.",
             "pros": [
               "Bästa sitt- och sovkomforten i klassen",
@@ -1878,7 +1878,7 @@
           {
             "name": "Ergobaby Metro+",
             "badge": "Bästa budget",
-            "price": "Från ca 3 999 kr",
+            "price": "2 995 kr (kampanjpris)",
             "text": "Mest vagn för minst pengar. Vadderad sits som barn somnar i, äkta liggläge och hjul som klarar kullersten. Packmåttet är större än rivalerna – den åker oftare i lastrum än kabin – men för priset av en Libelle får ni komfort som Butterfly. Räknehemläxa: gör den.",
             "pros": [
               "Överlägset pris/prestanda",
@@ -1931,7 +1931,7 @@
         ],
         "handbagageNote": "Alla vagnar i listan uppfyller IATA:s rekommenderade maxmått för handbagage (56 × 45 × 25 cm), men flygbolag kan ha egna, striktare regler — kontrollera alltid med ditt flygbolag innan avresa.",
         "published": "2026-09-23",
-        "updated": "2026-10-28"
+        "updated": "2026-11-10"
       },
       {
         "slug": "bilbarnstol",
@@ -2017,7 +2017,7 @@
           {
             "name": "Britax Römer Dualfix 5Z",
             "badge": "Mest prisvärd",
-            "price": "Från ca 3 495 kr",
+            "price": "3 225 kr (prismatchad)",
             "text": "360°-roterbar bakåtvänd stol som täcker hela spannet från nyfödd till fyra år (61–105 cm) i samma sits. Integrerat sidokrockskydd (SICT) och flera vilolägen. Utsedd till mest prisvärda i flera oberoende jämförelser.",
             "pros": [
               "Täcker nyfödd till 4 år i samma stol — inget stolbyte",
@@ -2105,7 +2105,7 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-10-28"
+        "updated": "2026-11-10"
       },
       {
         "slug": "bilbarnstol/framatvand",
@@ -4720,7 +4720,7 @@
           {
             "name": "Nordbjörn Avalanche Vinterjacka",
             "badge": "Bästa budget",
-            "price": "Från 349 kr",
+            "price": "Från 199 kr (pris beroende på färg)",
             "text": "Budgetalternativet i jämförelsen, med vattenpelare på 5 000 mm och märkt vattentät, i 100 % polyester. Tillräckligt för vanlig vardagslek i snö, men inte lika tåligt vid långa stunder i blöt snö som de dyrare jackorna.",
             "pros": [
               "Billigast i jämförelsen tillsammans med Zen",
@@ -4737,7 +4737,7 @@
           {
             "name": "Didriksons Talvi Vinterjacka",
             "badge": "Bäst i test",
-            "price": "Från 649 kr",
+            "price": "Från 509 kr (pris beroende på färg)",
             "text": "Vann en oberoende jämförelse som bäst i test. Vattenpelare på 6 000 mm och andningsförmåga på 4 000 g/m²/24h, varmt vadderad i polyester — en bra balans mellan vattentäthet och pris som gör den till ett bra förstaval för de allra flesta.",
             "pros": [
               "Utsedd till bäst i test i en oberoende jämförelse",
@@ -4772,7 +4772,7 @@
           {
             "name": "Reima Raisio Vinterjacka",
             "badge": "Premiumval",
-            "price": "Från 974 kr",
+            "price": "Från 689 kr (pris beroende på färg)",
             "text": "Dyrast men också det mest premium alternativet i jämförelsen, från det finska varumärket Reima som är känt för sin ReimaTec-membranteknik. Heltejpade sömmar håller tätt i blöt snö, vilket gör den till ett tryggt val för de kallaste och blötaste vinterdagarna.",
             "pros": [
               "ReimaTec-membran från ett varumärke känt för hög vattentäthet och andningsförmåga",
@@ -4809,7 +4809,7 @@
           }
         ],
         "published": "2026-10-29",
-        "updated": "2026-10-29",
+        "updated": "2026-11-10",
         "img": "photo-1512701229568-30fd3924fd79"
       },
       {
