@@ -826,7 +826,8 @@ const TOPPLISTOR_RELATED = {
   vinterjacka: ['vinteroverall', 'vinterskor', 'fodrat-regnstall'],
   vattenflaska: ['tillbehor', 'akpase', 'reseunderhallning'],
   reseunderhallning: ['tillbehor', 'akpase', 'vagnar'],
-  solkram: ['uv-badklader', 'vattenflaska', 'akpase']
+  solkram: ['uv-badklader', 'vattenflaska', 'akpase'],
+  'all-inclusive-hotell': ['solkram', 'uv-badklader', 'reseunderhallning']
 };
 
 function buildTopplistor() {
@@ -895,15 +896,18 @@ ${faqHtml(hub.faq)}`;
         '@type': 'ListItem', position: i + 1, name: p.name
       }))
     };
+    const topplistaDisclosure = topplistaDisclosureHtml(l);
     const inner = `
 <header class="page-header">
   ${bc.html}
   <p class="kicker">${icon(l.emoji)} Uppdaterad ${svDate(l.updated)}</p>
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
+  ${topplistaDisclosure}
 </header>
 ${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect, l.imgPos)}
 ${l.handbagageNote ? `<div class="handbagage-note">${icon('✈️')} <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
+${topplistaDisclosure}
 <div class="products">
   ${l.products.map((p, i) => `
   <article class="product-card${p.img ? '' : ' no-img'}">
@@ -1290,22 +1294,71 @@ function productCardHtml(p) {
     </div>`;
 }
 
+function adStoreNames(a) {
+  const names = new Set();
+  (a.products || []).forEach(p => p.store && names.add(p.store));
+  (a.sections || []).forEach(s => (s.products || []).forEach(p => p.store && names.add(p.store)));
+  return Array.from(names);
+}
+function adDisclosureHtml(a) {
+  const stores = adStoreNames(a);
+  if (!stores.length) return '';
+  return `<p class="ad-disclosure">${icon('📢')} Inlägget innehåller reklam genom annonslänkar för ${esc(stores.join(', '))}.</p>`;
+}
+
+// Topplistor: produkter har buyStore/buyUrl (inte store/url) — priceRunnerUrl räknas inte
+// som annonslänk (PriceRunner tjänar vi inget på, bara jämförelse).
+function topplistaAdStores(l) {
+  const names = new Set();
+  (l.products || []).forEach(p => p.buyUrl && p.buyStore && names.add(p.buyStore));
+  return Array.from(names);
+}
+function topplistaDisclosureHtml(l) {
+  const stores = topplistaAdStores(l);
+  if (!stores.length) return '';
+  return `<p class="ad-disclosure">${icon('📢')} Inlägget innehåller reklam genom annonslänkar för ${esc(stores.join(', '))}.</p>`;
+}
+
+// Resmål: bokningsknappar via Sembo (adtr.co-länkar, oavsett om de ligger i semboUrl,
+// bookingUrl eller altUrl — bekräftat att alla adtr.co-länkar på DESTINATIONS-arrayen
+// hör till Sembo-rollouten) eller Nazar (nazar.se/visit.nazar.se). Övriga bookingUrl/altUrl
+// är direktlänkar till officiella sajter (Legoland, Liseberg, Gröna Lund, etc.) — inte
+// annonslänkar via Adtraction/TradeDoubler, räknas inte in här.
+function resmalAdStores(d) {
+  const names = new Set();
+  [d.semboUrl, d.bookingUrl, d.altUrl].forEach(u => {
+    if (!u) return;
+    if (/adtr\.co/i.test(u)) names.add('Sembo');
+    else if (/nazar\.se/i.test(u)) names.add('Nazar');
+  });
+  return Array.from(names);
+}
+function resmalDisclosureHtml(d) {
+  const stores = resmalAdStores(d);
+  if (!stores.length) return '';
+  return `<p class="ad-disclosure">${icon('📢')} Inlägget innehåller reklam genom annonslänkar för ${esc(stores.join(', '))}.</p>`;
+}
+
 function buildArtiklar() {
   for (const a of C.artiklar.list) {
     const url = `/artiklar/${a.slug}/`;
     const bc = breadcrumbs([['Hem', '/'], ['Artiklar', '/artiklar/'], [a.name, null]]);
     const others = C.artiklar.list.filter(x => x.slug !== a.slug);
+    const disclosure = adDisclosureHtml(a);
     const inner = `
 <header class="page-header">
   ${bc.html}
   <p class="kicker">${icon(a.emoji)} ${esc(a.kicker || '')} · Uppdaterad ${svDate(a.updated)}</p>
   <h1>${esc(a.h1)}</h1>
   <div class="page-intro">${paras(a.intro)}</div>
+  ${disclosure}
 </header>
 ${media(a.img, a.emoji, 'page-hero', 1400)}
 <article class="article">
-  ${a.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>${s.products && s.products.length ? `
+  ${a.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>${s.list && s.list.length ? `
+  <ul class="section-list">${s.list.map(x => `<li>${escLinks(x)}</li>`).join('')}</ul>` : ''}${s.products && s.products.length ? `
   <div class="section-products">
+    <p class="ad-disclosure">${icon('📢')} Inlägget innehåller reklam genom annonslänkar för ${esc(s.products.map(p => p.store).filter((v,i,arr)=>v&&arr.indexOf(v)===i).join(', '))}.</p>
     <div class="product-mini-grid">${s.products.map(productCardHtml).join('')}</div>
   </div>` : ''}`).join('\n')}
 </article>
@@ -1317,6 +1370,7 @@ ${a.quicktips ? `
 ${a.products && a.products.length ? `
 <div class="product-recs">
   <h2>Produkter som kan hjälpa</h2>
+  ${disclosure}
   <div class="product-mini-grid">
     ${a.products.map(productCardHtml).join('')}
   </div>
@@ -1635,6 +1689,8 @@ function buildResmal() {
     };
     if (d.bookingUrl) schema.url = d.bookingUrl;
 
+    const resmalDisclosure = resmalDisclosureHtml(d);
+
     const meta = {
       title: `${d.name} med barn | Res med Barn`,
       description: d.desc.length > 150 ? d.desc.slice(0, 147) + '…' : d.desc,
@@ -1655,6 +1711,7 @@ function buildResmal() {
 </div>
 <div class="detail-body">
   ${bc.html}
+  ${resmalDisclosure}
   <div class="detail-facts">
     <div class="fact"><div class="f-label">Passar åldrar</div><div class="f-value">${esc(d.age)}</div></div>
     <div class="fact"><div class="f-label">Bästa säsong</div><div class="f-value">${esc(d.season)}</div></div>
@@ -1682,6 +1739,7 @@ function buildResmal() {
     <p>${esc(d.prisinfo)}</p>
     <p class="prisinfo-note">Tips: ICA, Coop och Hyresgästföreningen ger ofta roterande medlemsrabatter på svenska parker och museer — kolla era medlemsförmåner innan besöket, det kan sänka priset rejält.</p>
   </div>` : ''}
+  ${resmalDisclosure}
   <div class="detail-actions">
     ${d.semboUrl ? `<a class="btn btn-primary" href="${esc(d.semboUrl)}" target="_blank" rel="sponsored noopener">${icon('✈️')} Boka resa via Sembo →</a>` : ''}
     ${d.bookingUrl ? `<a class="btn ${d.semboUrl ? 'btn-ghost' : 'btn-primary'}" href="${esc(d.bookingUrl)}" target="_blank" rel="sponsored noopener">${d.semboUrl ? 'Fler alternativ' : 'Boka / Läs mer'} →</a>` : ''}
@@ -1769,6 +1827,8 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY
   fs.copyFileSync(path.join(ROOT, 'static', 'vapiano-barnmeny.jpg'), path.join(DIST, 'vapiano-barnmeny.jpg'));
   console.log('  ✓ vapiano-barnmeny.jpg');
   fs.copyFileSync(path.join(ROOT, 'static', 'bodybuddy-sveavagen.jpg'), path.join(DIST, 'bodybuddy-sveavagen.jpg'));
+  fs.copyFileSync(path.join(ROOT, 'static', 'reseforsakring-flygplan-barn.jpg'), path.join(DIST, 'reseforsakring-flygplan-barn.jpg'));
+  console.log('  ✓ reseforsakring-flygplan-barn.jpg');
   console.log('  ✓ bodybuddy-sveavagen.jpg');
   for (const f of ['krubbans-lekplats-esso.jpg', 'krubbans-lekplats-tegeltorn.jpg', 'humlegardens-lekplats.jpg', 'olaus-petris-lekplats.jpg', 'olaus-petri-skolgard.jpg', 'lekplatsen-plockepinn.jpg']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
