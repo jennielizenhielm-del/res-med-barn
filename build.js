@@ -372,6 +372,14 @@ function media(img, emoji, cls, w, aspect, pos) {
 }
 
 
+// slugifyArea: gör om ett områdesnamn (t.ex. "Nacka/Värmdö/Lidingö & skärgården") till en
+// url-säker ankar-id-sträng, för hoppknapparna högst upp på guide-sidor med flera områden.
+function slugifyArea(s) {
+  return s.toLowerCase()
+    .replace(/å/g, 'a').replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/é/g, 'e')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
 /* ---------- FAQ ---------- */
 function faqHtml(faq) {
   if (!faq || !faq.length) return '';
@@ -1230,6 +1238,13 @@ function buildStadsGuider() {
       // g.flatList hoppar över area-grupperingen (en H2 per unik grupp) och renderar allt i ett enda grid —
       // relevant när varje "ställe" ändå har ett eget unikt område och grupperingen bara skulle ge en rubrik per kort.
       const cardFn = g.cardType === 'activity' ? activityCard : venueCard;
+      // region-nav: hoppknappar till varje områdesrubrik, bara när guiden faktiskt är
+      // uppdelad i fler än ett område — annars är det bara brus på en redan kort sida.
+      const showRegionNav = !g.flatList && areas.filter(a => g.venues.some(v => groupKey(v) === a)).length > 1;
+      const regionNav = showRegionNav ? `
+<nav class="region-nav" aria-label="Hoppa till område">
+  ${areas.filter(a => g.venues.some(v => groupKey(v) === a)).map(a => `<a href="#${slugifyArea(a)}">${esc(a)}</a>`).join('\n  ')}
+</nav>` : '';
       const inner = `
 <header class="page-header">
   ${bc.html}
@@ -1237,6 +1252,7 @@ function buildStadsGuider() {
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
+${regionNav}
 ${media(g.img, g.emoji, 'page-hero', 1400)}
 ${g.flatList ? `
 <div class="activity-grid">
@@ -1245,7 +1261,7 @@ ${g.flatList ? `
   const inArea = g.venues.filter(v => groupKey(v) === area);
   if (!inArea.length) return '';
   return `
-<h2 class="section-title">${esc(area)}</h2>
+<h2 class="section-title" id="${slugifyArea(area)}">${esc(area)}</h2>
 <div class="activity-grid">
   ${inArea.map(cardFn).join('')}
 </div>`;
