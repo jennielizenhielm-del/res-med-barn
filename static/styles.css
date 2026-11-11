@@ -519,12 +519,45 @@ h1 {
   line-height: 1.28;
   letter-spacing: -0.005em;
 }
-.product-mini-price {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-  margin-bottom: -0.1rem;
+.product-mini-pricebox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.product-mini-priceline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.1rem 0.5rem;
+}
+.product-mini-pricebox .product-mini-price {
+  margin: 0;
+  max-width: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--sand);
+}
+.product-mini-pricebox .product-mini-pricewas {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.product-mini-pricewas s { text-decoration-thickness: 1px; }
+.product-mini-pricebox .product-mini-pricetag {
+  background: var(--accent-light);
+  color: var(--on-accent-light);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+}
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 .product-mini-note {
   font-size: 0.86rem;
@@ -601,7 +634,9 @@ h1 {
 .section-products .product-mini-img { padding: 0.85rem; }
 .section-products .product-mini-body { padding: 0.1rem 0.9rem 0.9rem; gap: 0.35rem; }
 .section-products .product-mini-card h3 { font-size: 0.95rem; }
-.section-products .product-mini-price { font-size: 0.86rem; }
+.section-products .product-mini-pricebox .product-mini-price { font-size: 0.88rem; }
+.section-products .product-mini-pricebox .product-mini-pricewas { font-size: 0.78rem; }
+.section-products .product-mini-pricebox .product-mini-pricetag { font-size: 0.68rem; }
 .section-products .product-mini-note { font-size: 0.78rem; }
 .section-products .btn-compare { margin-top: 0.5rem; padding: 0.6rem 0.8rem; font-size: 0.8rem; color: #FFFFFF; }
 
