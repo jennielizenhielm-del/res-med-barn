@@ -10887,30 +10887,42 @@
               {
                 "name": "Baby Brezza Formula Pro Advanced vällingmaskin",
                 "store": "Babysam",
-                "note": "2 799 kr till och med 30/11 enligt Babysam – butikens rek. pris är 3 499 kr och tidigare pris 3 149 kr, så rabatten är störst mot rek. pris. Blandar 60–300 ml i steg om 30 ml med tre temperaturinställningar och är BPA-fri. Tål inte diskmaskin.",
+                "note": "Vällingmaskin med 60–300 ml i 30 ml-steg och tre temperaturer. BPA-fri, men tål inte diskmaskin. Kampanjpriset gäller enligt Babysam till och med 30/11 (tidigare pris 3 149 kr).",
                 "url": "https://adtr.co/c1rcnt",
-                "img": "https://cdn.babysam.se/81fbbfa1-7e03-4280-afe0-5e715b2e48da/productfeedproductbig/1230000046015_1_20250917180200.webp"
+                "img": "https://cdn.babysam.se/81fbbfa1-7e03-4280-afe0-5e715b2e48da/productfeedproductbig/1230000046015_1_20250917180200.webp",
+                "price": "2 799 kr",
+                "priceWas": "3 499 kr",
+                "priceTag": "-20 % · t.o.m. 30/11"
               },
               {
                 "name": "Nordbjörn Polar Vinterkängor",
                 "store": "Jollyroom",
-                "note": "199 kr medlemspris mot tidigare 399 kr (-50 %) när vi kollade. Vattentäta vinterkängor med kardborrestängning i storlek 22–31. Priset gäller färgen Navy.",
+                "note": "Vattentäta vinterkängor i marinblått med kardborre, stl 22–31. Priset gäller som medlemspris hos Jollyroom.",
                 "url": "https://adtr.co/lz42vy",
-                "img": "https://www.jollyroom.se/storage/BC05463C6CE64A0B8C7961A51BDC970AF9396A87E81B1D5F2415E6672FF406B9/20f2de79c76b40f8b9d96c862a5043bd/jpg/media/1e9bbc32c35e4470b667816b39fd6531/1972445_119155-35-4190_2.jpg"
+                "img": "https://www.jollyroom.se/storage/BC05463C6CE64A0B8C7961A51BDC970AF9396A87E81B1D5F2415E6672FF406B9/20f2de79c76b40f8b9d96c862a5043bd/jpg/media/1e9bbc32c35e4470b667816b39fd6531/1972445_119155-35-4190_2.jpg",
+                "price": "199 kr",
+                "priceWas": "399 kr",
+                "priceTag": "-50 %"
               },
               {
                 "name": "Tommee Tippee Twist & Click blöjhink",
                 "store": "Babysam",
-                "note": "119 kr mot rek. pris 339 kr. Rymmer 28 blöjor och har en förmonterad refill som räcker upp till en månad (beroende på storlek). Passar bara Tommee Tippees egna refills, inte Sangenic. Få kvar på nätet när vi kollade.",
+                "note": "Blöjhink för 28 blöjor, en refill räcker ungefär en månad. Fungerar bara med Tommee Tippee-refills (inte Sangenic). Få kvar på nätet.",
                 "url": "https://adtr.co/frbrif",
-                "img": "https://cdn.babysam.se/24117236-fb4c-402d-ad7d-37db8a5b3532/productfeedproductbig/31085100102.webp"
+                "img": "https://cdn.babysam.se/24117236-fb4c-402d-ad7d-37db8a5b3532/productfeedproductbig/31085100102.webp",
+                "price": "119 kr",
+                "priceWas": "339 kr",
+                "priceTag": "-65 %"
               },
               {
                 "name": "NG Baby spjälskydd 2 delar, linne med volang",
                 "store": "Baby V",
-                "note": "40 % med koden NGbaby på ordinarie 499 kr, alltså ca 299 kr (butiken visar inget reducerat pris på produktsidan, så kolla summan i kassan). Linne med återvunnen polyesterfyllning, långsida 170 × 20 cm och kortsida 90 × 20 cm.",
+                "note": "40 % rabatt med koden NGbaby. Butiken visar inget reducerat pris på produktsidan, så kontrollera summan i kassan.",
                 "url": "https://adtr.co/jdjybe",
-                "img": "https://02.cdn37.se/epl/images/2.355204/ng-baby-spjalskydd-2-delar-linne-med-volang-dusty-pink.jpeg"
+                "img": "https://02.cdn37.se/epl/images/2.355204/ng-baby-spjalskydd-2-delar-linne-med-volang-dusty-pink.jpeg",
+                "price": "ca 299 kr",
+                "priceWas": "499 kr",
+                "priceTag": "Kod: NGbaby"
               }
             ]
           }

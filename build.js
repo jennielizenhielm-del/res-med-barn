@@ -1311,7 +1311,13 @@ function productCardHtml(p, featured) {
       <div class="product-mini-body">
         ${featured ? `<span class="product-mini-kicker">${icon('⭐')} Vårt tips</span>` : ''}
         <h3>${esc(p.name)}</h3>
-        ${p.price ? `<p class="product-mini-price">${esc(p.price)}</p>` : ''}
+        ${p.price ? `<div class="product-mini-pricebox">
+          <div class="product-mini-priceline">
+            <p class="product-mini-price">${esc(p.price)}</p>
+            ${p.priceWas ? `<p class="product-mini-pricewas"><span class="visually-hidden">Tidigare pris </span><s>${esc(p.priceWas)}</s></p>` : ''}
+          </div>
+          ${p.priceTag ? `<span class="product-mini-pricetag">${esc(p.priceTag)}</span>` : ''}
+        </div>` : ''}
         <p class="product-mini-note">${esc(p.note)}</p>
         <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.store)} →</a>
       </div>
