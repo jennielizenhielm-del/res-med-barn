@@ -116,7 +116,7 @@
       "updated": "2026-09-23"
     },
     "verktyg": {
-      "title": "Verktyg för familjeresan – packlista, kalkylatorer | Res med Barn",
+      "title": "Packlista och verktyg för familjeresan | Res med Barn",
       "description": "Alla våra gratis verktyg för barnfamiljer på resa samlade på ett ställe: smart packlista, bränslekalkylator och solkrämskalkylator.",
       "h1": "Verktyg för er resa",
       "intro": [
@@ -517,7 +517,7 @@
     },
     "bebisar/buss": {
       "cardText": "Långfärd eller stadsbuss i vardagen — säkerhet, kostnad för barnvagn och praktiska tips för båda.",
-      "title": "Åka buss med barnvagn & bebis – långfärd och stadsbuss | Res med Barn",
+      "title": "Åka buss med barnvagn & bebis | Res med Barn",
       "description": "Buss med bebis och barnvagn — så funkar det på både långfärdsbussen och stadsbussen i vardagen. Säkerhet, kostnad och praktiska tips.",
       "h1": "Åka buss med bebis och barnvagn",
       "intro": [
@@ -4434,7 +4434,7 @@
         "name": "Vinteroverall",
         "cardText": "Varma, vattentäta vinteroveraller för barn — vattenpelare, andningsförmåga och pris jämförda.",
         "title": "Vinteroverall barn bäst i test 2026 | Res med Barn",
-        "description": "Vinteroverall för barn bäst i test 2026 — fem vinteroveraller jämförda på vattentäthet, andningsförmåga och pris. Didriksons, Isbjörn of Sweden, Nordbjörn och fler.",
+        "description": "Vinteroverall för barn bäst i test 2026 – fem vinteroveraller jämförda på vattentäthet, andningsförmåga och pris. Didriksons, Isbjörn, Nordbjörn m.fl.",
         "h1": "Vinteroverall för barn bäst i test 2026",
         "intro": [
           "En bra vinteroverall är skillnaden mellan glada snölekar och en förkyld unge på väg hem. Vi har jämfört fem populära vinteroveraller för barn på vattentäthet (vattenpelare), andningsförmåga och hur mycket de kostar, baserat på oberoende tester och återförsäljarnas egna uppgifter."
@@ -4566,7 +4566,7 @@
         "name": "Fodrat regnställ",
         "cardText": "Fodrade regnställ för barn — ett varmt och smidigt alternativ till vinteroverall i milda vintrar.",
         "title": "Fodrat regnställ barn bäst i test 2026 | Res med Barn",
-        "description": "Fodrat regnställ för barn bäst i test 2026 — fem fodrade regnställ jämförda på vattentäthet, värme och pris. Didriksons, Petite Chérie, Nordbjörn och Lindberg.",
+        "description": "Fodrat regnställ för barn bäst i test 2026 – fem regnställ jämförda på vattentäthet, värme och pris. Didriksons, Petite Chérie, Nordbjörn och Lindberg.",
         "h1": "Fodrat regnställ för barn bäst i test 2026",
         "intro": [
           "Vi använder själva fodrat regnställ som vinterplagg i vår egen familj, inte bara som en höstprodukt — i mildare vinterväder (runt noll och uppåt) fungerar det ofta bättre än en tjockt vadderad vinteroverall, som lätt blir för varm. Vi har jämfört fem fodrade regnställ på vattentäthet (vattenpelare), fodertjocklek och pris, baserat på oberoende tester och återförsäljarnas egna uppgifter.",
@@ -4938,7 +4938,7 @@
         "name": "Solkräm barn",
         "cardText": "Solkräm och solskydd för barn och bebis jämförda på skydd, kladdighet och pris — en oberoende testvinnare och familjens egen favorit.",
         "title": "Solkräm barn bäst i test 2026 | Res med Barn",
-        "description": "Solkräm för barn bäst i test 2026 — fem solskydd för barn och bebis jämförda på UVA/UVB-skydd, kladdighet och pris. La Roche-Posay, EVY, Eucerin, CeraVe och ACO.",
+        "description": "Solkräm för barn bäst i test 2026 – fem solskydd för barn och bebis jämförda på UVA/UVB-skydd, kladdighet och pris. La Roche-Posay, EVY, Eucerin m.fl.",
         "h1": "Solkräm för barn bäst i test 2026",
         "intro": [
           "En bra solkräm för barn ska ge brett skydd mot både UVB- och UVA-strålar, kännas skön mot känslig hud och helst inte kladda ner badkläder och händer. Vi har jämfört fem solskydd för barn och bebisar — från en oberoende testvinnare till familjens egen favorit — på skydd, konsistens och pris."
@@ -5501,7 +5501,7 @@
             "dateStart": "2026-12-21",
             "dateEnd": "2027-01-10",
             "week": "52–1",
-            "title": "Jullov i Stockholm 2026/2027 — tips & aktiviteter | Res med Barn",
+            "title": "Jullov i Stockholm 2026/2027 – tips | Res med Barn",
             "description": "Jullovet i Stockholm 2026/2027 är 21 december–10 januari (v.52–1). Våra bästa tips på julmarknad, skridskor och aktiviteter för barnfamiljer under lovet.",
             "h1": "Jullov i Stockholm 2026/2027 — vad ni kan göra",
             "intro": [
@@ -5626,8 +5626,8 @@
             "guideSlug": "barnvagnsvanliga-restauranger",
             "guideName": "Barnvagnsvänliga restauranger",
             "emoji": "🍽️",
-            "title": "Barnvänliga restauranger i Stockholm — 25 barnvagnsvänliga ställen | Res med Barn",
-            "description": "25 barnvänliga och barnvagnsvänliga restauranger i Stockholms innerstad, uppdelat per stadsdel — var det är gott om plats, var du bör ringa innan och vad de serverar.",
+            "title": "25 barnvänliga restauranger i Stockholm | Res med Barn",
+            "description": "25 barnvänliga och barnvagnsvänliga restauranger i Stockholms innerstad, per stadsdel – var det finns plats, var du bör ringa först och vad de serverar.",
             "h1": "Barnvagnsvänliga restauranger i Stockholms innerstad",
             "intro": [
               "Letar du efter en barnvänlig restaurang i Stockholm där även barnvagnen får plats? Här är ett urval ställen i Stockholms innerstad som fungerar bra med barnvagn, uppdelade per stadsdel.",
@@ -6018,7 +6018,7 @@
             "guideSlug": "barnvagnsvanliga-cafeer",
             "guideName": "Barnvagnsvänliga caféer",
             "emoji": "☕",
-            "title": "Barnvagnsvänliga caféer i Stockholm — 23 ställen | Res med Barn",
+            "title": "23 barnvagnsvänliga caféer i Stockholm | Res med Barn",
             "description": "23 barnvagnsvänliga caféer i Stockholms innerstad, uppdelat per stadsdel — frukost, fika eller lunch, och var det faktiskt är gott om plats för barnvagnen.",
             "h1": "Barnvagnsvänliga caféer i Stockholms innerstad",
             "intro": [
@@ -6375,7 +6375,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Stockholm 2026 — bästa julmarknaderna i hela regionen för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Stockholm 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Stockholm och hela Stockholmsregionen 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Stockholm med barn 2026",
             "intro": [
@@ -7367,7 +7367,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Göteborg 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Göteborg 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Göteborg 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Göteborg med barn 2026",
             "intro": [
@@ -7650,7 +7650,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Malmö 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Malmö 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Malmö 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Malmö med barn 2026",
             "intro": [
@@ -7917,7 +7917,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Uppsala 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Uppsala 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Uppsala 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Uppsala med barn 2026",
             "intro": [
@@ -8200,7 +8200,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Umeå 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Umeå 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Umeå 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Umeå med barn 2026",
             "intro": [
@@ -8468,7 +8468,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Västerås 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Västerås 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Västerås 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Västerås med barn 2026",
             "intro": [
@@ -8758,7 +8758,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Linköping 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Linköping 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Linköping 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Linköping med barn 2026",
             "intro": [
@@ -8937,7 +8937,7 @@
             "dateEnd": "2026-10-30",
             "week": 44,
             "dateLabel": "26–30 oktober 2026",
-            "title": "Höstlov i Helsingborg 2026 — tips & aktiviteter | Res med Barn",
+            "title": "Höstlov i Helsingborg 2026 – tips | Res med Barn",
             "description": "Höstlovet i Helsingborg 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — Kärnan, Tropikariet och Dunkers — för barnfamiljer under lovveckan.",
             "h1": "Höstlov i Helsingborg 2026 — vad ni kan göra",
             "intro": [
@@ -9015,7 +9015,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Helsingborg 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Helsingborg 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Helsingborg 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Helsingborg med barn 2026",
             "intro": [
@@ -9196,8 +9196,8 @@
             "dateEnd": "2026-10-30",
             "week": 44,
             "dateLabel": "26–30 oktober 2026",
-            "title": "Höstlov i Norrköping 2026 — tips & aktiviteter | Res med Barn",
-            "description": "Höstlovet i Norrköping 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — badhus, vetenskapscenter och studsmattepark — för barnfamiljer under lovveckan.",
+            "title": "Höstlov i Norrköping 2026 – tips | Res med Barn",
+            "description": "Höstlovet i Norrköping 2026 är 26–30 oktober (v.44). Våra bästa inomhustips – badhus, vetenskapscenter och studsmattepark – för barnfamiljer.",
             "h1": "Höstlov i Norrköping 2026 — vad ni kan göra",
             "intro": [
               "Höstlovet i Norrköping 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
@@ -9273,7 +9273,7 @@
             "guideSlug": "julmarknader",
             "guideName": "Julmarknader",
             "emoji": "🎄",
-            "title": "Julmarknader i Norrköping 2026 — bästa julmarknaderna för barnfamiljer | Res med Barn",
+            "title": "Julmarknader i Norrköping 2026 med barn | Res med Barn",
             "description": "De bästa julmarknaderna i Norrköping 2026 för barnfamiljer — datum, priser och vad som passar för barn, samlat på ett ställe.",
             "h1": "Julmarknader i Norrköping med barn 2026",
             "intro": [
@@ -10747,8 +10747,8 @@
         "emoji": "🛡️",
         "img": "/reseforsakring-flygplan-barn.jpg",
         "cardText": "Ingår försäkring i paketresan? Vad hemförsäkringen och kortet täcker – och vad som gäller om någon blir sjuk precis innan avresa.",
-        "title": "Reseförsäkring för barnfamiljer – vad som gäller och vad som ingår | Res med Barn",
-        "description": "Behöver man egen reseförsäkring till charterresan? Så funkar hemförsäkringens reseskydd, kortförsäkring och avbeställningsskydd om någon i familjen blir sjuk precis innan avresa.",
+        "title": "Reseförsäkring barn – vad gäller? | Res med Barn",
+        "description": "Behöver man egen reseförsäkring till charterresan? Så funkar hemförsäkringens reseskydd, kortförsäkring och avbeställningsskydd vid sjukdom före avresa.",
         "h1": "Reseförsäkring för barnfamiljer – vad som faktiskt gäller",
         "kicker": "Innan ni bokar",
         "intro": [
@@ -10958,5 +10958,162 @@
         "img": "photo-1667409702771-14213044ccc7"
       }
     ]
+  },
+  "countryHubs": {
+    "Grekland": {
+      "description": "Kreta, Rhodos eller Korfu med barn? Jämför flygtid, säsong och ålder, och se vilken grekisk ö som passar just er familj bäst.",
+      "intro": [
+        "Kreta, Rhodos och Korfu har samma säsong i våra guider (maj–oktober), samma prisnivå (€€) och flygtider på 3–4 timmar från Sverige. Skillnaden är vad ön är bra på: Kreta har de mest spektakulära stränderna men kräver hyrbil, Rhodos samlar strand och vattenland kring ett par familjeorter, och Korfu är den grönaste och svalaste.",
+        "Här hjälper vi dig välja ö innan du går in på de enskilda guiderna med stränder, orter, aktiviteter och praktiska tips."
+      ],
+      "sections": [
+        {
+          "h2": "Vilken grekisk ö passar er familj?",
+          "text": "Alla tre fungerar för småbarn, men de passar olika typer av semester:",
+          "list": [
+            "[Kreta](/resmal/grekland/kreta/) är för er som vill ha de allra bästa stränderna och kan tänka er att hyra bil. Grunda, kristallklara vikar som Elafonissi och Falassarna ligger utspridda över ön och bussarna går sällan. Kreta har högst familjebetyg av de tre (4,8).",
+            "[Rhodos](/resmal/grekland/rhodos/) är för er som vill ha både strand och vattenland nära. Bor ni i Faliraki eller Kolymbia har ni långgrunda stränder och vattenpark i närheten, och den medeltida gamla staden går att utforska till fots.",
+            "[Korfu](/resmal/grekland/korfu/) är för er som vill ha mer natur och grönska. Olivlundar, venetianska gränder i Korfu stad och vattenparken Aqualand Corfu gör ön varierad, och grönskan gör den svalare än många andra grekiska öar. Hyr bil ett par dagar för att se inlandet."
+          ]
+        },
+        {
+          "h2": "Ålder och flygtid",
+          "text": "Kreta är den ö vi rekommenderar från 0 år (upp till 12), medan Rhodos och Korfu passar 1–14 år, så de rymmer lite äldre barn med mer aptit på vattenpark och sevärdheter. Flygtiden är kortast till Korfu (ca 3 timmar), följt av Rhodos (ca 3,5) och Kreta (ca 4)."
+        },
+        {
+          "h2": "Bra att veta innan ni bokar",
+          "text": "Det finns saker att ha koll på på alla tre öarna: strömmar och stränder utan badvakt (se Kreta och Korfu) samt risken för skogsbränder under heta, torra somrar (se Rhodos). Läs avsnittet \"Bra att veta\" på varje ös sida innan ni bokar, och packa [solkräm](/topplistor/solkram/) och [UV-badkläder](/topplistor/uv-badklader/) till barnen."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vilken grekisk ö är bäst för barn?",
+          "a": "Det beror på familjen. Kreta har högst betyg i våra guider (4,8) och de bästa stränderna men kräver hyrbil. Rhodos är enklast om ni vill ha strand och vattenland nära varandra (Faliraki och Kolymbia). Korfu är grönast och svalast. Se jämförelsen ovan."
+        },
+        {
+          "q": "När på året ska man åka till Grekland med barn?",
+          "a": "Alla tre öarna har säsong från maj till oktober i våra guider. Högsommaren är hetast, och på Rhodos kan skogsbränder blossa upp under heta, torra somrar, så tänk på det när ni väljer vecka."
+        },
+        {
+          "q": "Hur lång är flygresan till Kreta, Rhodos och Korfu?",
+          "a": "Ungefär 3 timmar till Korfu, 3,5 timmar till Rhodos och 4 timmar till Kreta från Sverige."
+        }
+      ]
+    },
+    "Spanien": {
+      "description": "Mallorca, Costa Brava, Barcelona eller Kanarieöarna med barn? Jämför flygtid, säsong, budget och ålder och hitta rätt spanskt resmål.",
+      "intro": [
+        "Spanien är egentligen sju olika resor: sommarsol vid Medelhavet (Mallorca, Costa Brava, Costa Blanca), stadssemester i Barcelona och vintersol på Kanarieöarna (Gran Canaria, Teneriffa, Fuerteventura). Flygtiden skiljer sig också: ca 2,5 timmar till Costa Brava, ca 3,5 timmar till Mallorca, Barcelona och Costa Blanca och ca 5,5 timmar till Kanarieöarna.",
+        "Börja med att bestämma när ni ska åka och hur lång flygresa ni orkar, så blir valet av resmål enklare."
+      ],
+      "sections": [
+        {
+          "h2": "Sommar eller vintersol?",
+          "text": "Kanarieöarna är högsäsong oktober–april och fungerar året runt, medan Medelhavsorterna har sin säsong ungefär april/maj–oktober.",
+          "list": [
+            "Sommar: [Mallorca](/resmal/spanien/mallorca/) (norra delen är familjedelen, undvik Magaluf), [Costa Brava](/resmal/spanien/costa-brava/) (närmast, ca 2,5 timmar, med Lloret de Mar och mindre vikar som Tossa de Mar) och [Costa Blanca](/resmal/spanien/costa-blanca/) (Benidorm med långgrund strand, Terra Mítica, Aqualandia och Mundomar).",
+            "Vintersol: [Gran Canaria](/resmal/spanien/gran-canaria/) (södra delen har mest sol), [Teneriffa](/resmal/spanien/teneriffa/) (Siam Park och linbanan upp mot Teide) och [Fuerteventura](/resmal/spanien/fuerteventura/) (mil av vit sand men blåsigare, välj skyddade vikar som La Concha med småbarn).",
+            "Stad: [Barcelona](/resmal/spanien/barcelona/) passar bäst april–juni och september–oktober, när det inte är för hett. Gaudí, Park Güell och stranden Barceloneta gör staden lätt att varva med strand."
+          ]
+        },
+        {
+          "h2": "Ålder och budget",
+          "text": "Mallorca och Gran Canaria rekommenderar vi redan från 0 år, Costa Blanca, Fuerteventura och Costa Brava från 1–2 år, Teneriffa från 2 år och Barcelona från 3 år. Costa Blanca är det mest prisvänliga alternativet (€ i vår skala), övriga ligger på €€. Priser varierar kraftigt med säsong och boendetyp, så jämför alltid aktuella priser innan ni bokar."
+        },
+        {
+          "h2": "Bra att veta innan ni bokar",
+          "text": "Vanliga saker att ha koll på i Spanien är maneter (Mallorca, Costa Blanca, Costa Brava), starka havsströmmar och röd flagga, extrem hetta och UV-strålning samt skogsbränder under torra somrar. I Barcelona är fickstölder på turiststråk det vanligaste. Ta med [solkräm](/topplistor/solkram/) och [UV-badkläder](/topplistor/uv-badklader/) och läs avsnittet \"Bra att veta\" på varje resmåls sida."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vilket spanskt resmål är bäst för småbarn?",
+          "a": "I våra guider rekommenderas Mallorca och Gran Canaria redan från 0 år. På Mallorca är norra delen (Alcúdia och Pollença) familjedelen, och på Gran Canaria har södra delen mest sol och minst regn."
+        },
+        {
+          "q": "Vart i Spanien kan man åka med barn på vintern?",
+          "a": "Till Kanarieöarna (Gran Canaria, Teneriffa och Fuerteventura) med högsäsong oktober–april. Flygtiden är ca 5,5 timmar. Fuerteventura blåser mer än de andra två, så välj skyddade vikar om ni har småbarn som ska bada."
+        },
+        {
+          "q": "Vilket spanskt resmål är billigast för barnfamiljer?",
+          "a": "Costa Blanca är det mest prisvänliga i vår lista (€), övriga ligger på €€. Skalan är grov och priserna varierar med säsong och boende."
+        }
+      ]
+    },
+    "Frankrike": {
+      "description": "Disneyland Paris, Franska Rivieran eller Korsika med barn? Tre helt olika resor. Jämför ålder, säsong, budget och flygtid här.",
+      "intro": [
+        "Frankrike är tre mycket olika familjeresor: nöjesparken Disneyland Paris, elegant strandliv på Franska Rivieran och naturupplevelser på Korsika. Gemensamt är att alla tre rekommenderas från 3 års ålder i våra guider, och att flygtiden är 2,5–3 timmar.",
+        "Här jämför vi dem så att du ser vilken som passar er innan du läser guiderna."
+      ],
+      "sections": [
+        {
+          "h2": "Tre olika resor",
+          "text": "Välj efter vad ni vill göra med barnen:",
+          "list": [
+            "[Disneyland Paris](/resmal/frankrike/disneyland-paris/) för 3–12 år. Bäst mars–juni och september. Köhoppning kostar extra: Premier Access kostar upp till ca 15 euro per person och attraktion, så välj två–tre åk.",
+            "[Franska Rivieran](/resmal/frankrike/franska-rivieran/) för 3–16 år. Maj–september. Spårvagnen i Nice gör bilfria dagar möjliga. Stränderna är av småsten, så ta med badskor.",
+            "[Korsika](/resmal/frankrike/korsika/) för 3–15 år. Juni–september. Kristallklart vatten, bergsbyar och mindre turisttätt. Hyr bil, kollektivtrafiken är gles."
+          ]
+        },
+        {
+          "h2": "Budget och flygtid",
+          "text": "Disneyland Paris och Franska Rivieran ligger på €€€ i vår skala, Korsika på €€. Flygtiden är ca 2,5 timmar till Paris och ca 3 timmar till både Rivieran och Korsika. Priset till Disneyland varierar kraftigt med datum och förbokning, så kolla aktuellt pris på officiella sidan."
+        },
+        {
+          "h2": "Bra att veta",
+          "text": "På Korsika är risken för skogsbränder hög under torra sommarmånader, och myndigheter stänger ibland naturområden. Läs avsnittet \"Bra att veta\" på varje resmåls sida, och packa [solkräm](/topplistor/solkram/) till barnen."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vilken ålder passar Disneyland Paris för?",
+          "a": "I våra guider rekommenderas parken för barn 3–12 år. Äldre barn lockas av Avengers Campus och Star Wars, och hotellgäster får tillgång till Extra Magic Time."
+        },
+        {
+          "q": "Är Franska Rivieran barnvänligt?",
+          "a": "Ja, från 3 år enligt våra guider. Spårvagnen i Nice gör det enkelt att klara sig utan bil, men stränderna är stenstränder så barnen behöver badskor. Basera er i Nice snarare än Cannes för bättre kollektivtrafik och billigare restauranger."
+        },
+        {
+          "q": "Behöver man hyra bil på Korsika?",
+          "a": "Ja, vi rekommenderar det. Kollektivtrafiken är gles och de finaste vikarna kräver egna hjul."
+        }
+      ]
+    },
+    "Thailand": {
+      "description": "Phuket, Koh Lanta, Koh Samui, Ao Nang eller andra öar med barn? Jämför flygtid, säsong och vilken ö som passar er familj bäst.",
+      "intro": [
+        "Thailand med barn är en lång resa: från Sverige räknar ni med 11–18 timmar beroende på ö, och för flera av dem kommer ytterligare transfer med färja, minibuss eller inrikesflyg. Säsongen är i de flesta fall november–mars, men Koh Samui ligger på andra sidan landet med en annan säsongsrytm (december–april, bäst februari–mars).",
+        "Därför handlar valet av ö till stor del om hur lång resa ni orkar och hur mycket service ni vill ha på plats."
+      ],
+      "sections": [
+        {
+          "h2": "Hur lång är resan?",
+          "text": "Kortast är [Phuket](/resmal/thailand/phuket/) (ca 11 timmar), följt av [Ao Nang](/resmal/thailand/ao-nang/) i Krabi (ca 12) och [Koh Lanta](/resmal/thailand/koh-lanta/) (ca 13). [Koh Samui](/resmal/thailand/koh-samui/) tar 14–17 timmar och har ingen direktflyg från Sverige, [Koh Chang](/resmal/thailand/koh-chang/) 15–18 timmar med bilfärja sista biten och [Koh Lipe](/resmal/thailand/koh-lipe/) 16–18 timmar med flyg, minibuss och båt. Ett tips från våra guider är att ta nattflyget så att barnen sover bort en stor del av resan."
+        },
+        {
+          "h2": "Livlig eller lugn ö?",
+          "text": "Phuket har störst utbud, men välj Bangtao eller Kata framför Patong om ni har småbarn. Koh Lanta är den lugnaste familjeön, utan fullmånefester. Ao Nang har kalkstensklippor vid Railay och billigare båtturer än Phuket. Koh Samui blandar lugna stränder som Maenam och Lamai med livliga Chaweng. Koh Chang är mer djungel och nationalpark med enklare infrastruktur, och Koh Lipe är en liten bilfri ö (4–14 år) där resan dit är det tuffaste."
+        },
+        {
+          "h2": "Bra att veta innan ni bokar",
+          "text": "På flera av öarna kan sjukvården vara begränsad (Koh Lanta, Koh Lipe, Koh Chang och Ao Nang), så läs vår guide om [reseförsäkring för barn](/artiklar/reseforsakring-barn/) innan ni bokar. Mopedtrafik, boxmaneter och starka strömmar är återkommande risker. Packa [solkräm](/topplistor/solkram/) och [UV-badkläder](/topplistor/uv-badklader/) till barnen."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Vilken thailändsk ö är bäst för barn?",
+          "a": "Koh Lanta är den lugnaste familjeön, Phuket har mest utbud (välj Bangtao eller Kata med småbarn) och Phuket har den kortaste resan, ca 11 timmar. Koh Samui ger en blandning av lugna och livliga stränder."
+        },
+        {
+          "q": "När är bästa tiden att åka till Thailand med barn?",
+          "a": "Phuket, Koh Lanta, Ao Nang och Koh Chang har säsong november–mars i våra guider. Koh Samui ligger på andra sidan med säsong december–april och är bäst februari–mars."
+        },
+        {
+          "q": "Hur lång är flygresan till Thailand?",
+          "a": "Ca 11 timmar till Phuket, 12 till Ao Nang och 13 till Koh Lanta. Till Koh Samui, Koh Chang och Koh Lipe räknar ni med 14–18 timmar eftersom de kräver inrikesflyg, färja eller båt. Nattflyg hjälper barnen att sova bort en del av resan."
+        }
+      ]
+    }
   }
 }

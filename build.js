@@ -1584,10 +1584,13 @@ function buildResmalCountryHubs() {
     if (!inCountry.length) continue;
     const url = `/resmal/${slug}/`;
     const bc = breadcrumbs([['Hem', '/'], ['Resmål', '/resmal/'], [country, null]]);
+    const hub = (C.countryHubs || {})[country]; // valfritt redaktionellt innehåll (intro, jämförelse, sektioner, FAQ)
     const meta = {
       title: `${country} med barn — ${inCountry.length} resmål | Res med Barn`,
-      description: `Våra ${inCountry.length} resmål i ${country} för barnfamiljer, samlade på ett ställe — ${inCountry.map(d => d.name).join(', ')}.`,
-      updated: COUNTRY_DATE, published: COUNTRY_DATE
+      description: hub && hub.description
+        ? hub.description
+        : `Våra ${inCountry.length} resmål i ${country} för barnfamiljer, samlade på ett ställe — ${inCountry.map(d => d.name).join(', ')}.`,
+      updated: hub ? (hub.updated || '2026-11-12') : COUNTRY_DATE, published: COUNTRY_DATE
     };
     const itemList = {
       '@context': 'https://schema.org', '@type': 'ItemList',
@@ -1599,7 +1602,7 @@ function buildResmalCountryHubs() {
 <header class="page-header">
   ${bc.html}
   <h1>${COUNTRY_FLAGS[country] || ''} ${esc(country)} med barn</h1>
-  <div class="page-intro"><p>Våra ${inCountry.length} resmål i ${esc(country)} — handplockade och testade med barn.</p></div>
+  <div class="page-intro">${hub && hub.intro ? paras(hub.intro) : `<p>Våra ${inCountry.length} resmål i ${esc(country)} — handplockade och testade med barn.</p>`}</div>
 </header>
 <div class="activity-grid resmal-grid">
   ${inCountry.map(d => `
@@ -1616,8 +1619,19 @@ function buildResmalCountryHubs() {
     </div>
   </a>`).join('')}
 </div>
+${hub ? `
+<h2 class="section-title">Jämför resmålen i ${esc(country)}</h2>
+<div class="table-scroll"><table class="data-table hub-compare">
+  <thead><tr><th>Resmål</th><th>Ålder</th><th>Säsong</th><th>Budget</th><th>Flygtid</th></tr></thead>
+  <tbody>${inCountry.map(d => `<tr><td><a href="${resmalUrl(d)}">${esc(d.name)}</a></td><td>${esc(d.age)}</td><td>${esc(d.season)}</td><td>${esc(d.budget)}</td><td>${esc(d.flight)}</td></tr>`).join('')}</tbody>
+</table></div>
+<article class="article">
+  ${(hub.sections || []).map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>${s.list && s.list.length ? `
+  <ul class="section-list">${s.list.map(x => `<li>${escLinks(x)}</li>`).join('')}</ul>` : ''}`).join('\n')}
+</article>
+${faqHtml(hub.faq)}` : ''}
 <p><a href="/resmal/">← Alla resmål i alla länder</a></p>`;
-    write(`resmal/${slug}/index.html`, page(url, meta, '/resmal/', inner, [bc.jsonld, itemList]));
+    write(`resmal/${slug}/index.html`, page(url, meta, '/resmal/', inner, [bc.jsonld, itemList].concat(hub && hub.faq ? [faqLd(hub.faq)] : [])));
   }
   console.log(`  ✓ ${Object.keys(NESTED_COUNTRIES).length} landshubbar genererade`);
 }
