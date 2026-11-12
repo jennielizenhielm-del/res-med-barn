@@ -959,7 +959,7 @@ ${authorByline()}
       return `<h2>${esc(s.h2)}</h2>\n${s.intro ? `<p class="table-intro">${esc(s.intro)}</p>\n` : ''}<div class="status-grid">${cardsHtml}</div>${s.note ? `\n<p class="table-note">${esc(s.note)}</p>` : ''}`;
     }
     if (s.table) {
-      const tableHtml = `<table class="data-table"><thead><tr>${s.table.headers.map((h, i) => `<th${i > 0 ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(row => `<tr>${row.map((cell, i) => `<td${i > 0 ? ' class="num"' : ''}>${cell === true ? '<span class="check-yes">✓</span>' : cell === false ? '<span class="check-no">–</span>' : esc(String(cell))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+      const tableHtml = `<table class="data-table"><thead><tr>${s.table.headers.map((h, i) => `<th${i > 0 && !(s.table.leftCols || []).includes(i) ? ' class="num"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(row => `<tr>${row.map((cell, i) => `<td${i > 0 && !(s.table.leftCols || []).includes(i) ? ' class="num"' : ''}>${cell === true ? '<span class="check-yes">✓</span>' : cell === false ? '<span class="check-no">–</span>' : esc(String(cell))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
       return `<h2>${esc(s.h2)}</h2>\n${s.intro ? `<p class="table-intro">${esc(s.intro)}</p>\n` : ''}${tableHtml}${s.note ? `\n<p class="table-note">${esc(s.note)}</p>` : ''}`;
     }
     return `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>`;

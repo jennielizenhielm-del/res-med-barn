@@ -2114,10 +2114,11 @@
         "img": "photo-1633111046443-13a0c30033ea",
         "cardText": "Fem bälteskuddar/framåtvända stolar för barn som vuxit ur den bakåtvända stolen.",
         "title": "Framåtvänd bilbarnstol bäst i test 2026 | Res med Barn",
-        "description": "Framåtvänd bilbarnstol och bälteskudde bäst i test 2026 — fem alternativ för barn ca 3,5–12 år, från budget till premium.",
-        "h1": "Framåtvänd bilbarnstol / bälteskudde — bäst i test 2026",
+        "description": "Framåtvänd bilbarnstol 2026: fem bältesstolar och bälteskuddar för barn ca 3,5–12 år med pris, för- och nackdelar, och när det är dags att byta.",
+        "h1": "Framåtvänd bilbarnstol och bälteskudde – bäst i test 2026",
         "intro": [
-          "När barnet vuxit ur den bakåtvända stolen (oftast runt 4–5 år) är det dags för en bälteskudde/framåtvänd bilbarnstol. Vi har valt fem alternativ för olika budgetar och behov."
+          "Med framåtvänd bilbarnstol menar de flesta en bältesstol eller bälteskudde: barnet sitter vänt framåt och bilens eget bälte håller fast barnet. Här jämför vi fem stolar för barn ungefär 3,5–12 år, från budget till premium, med aktuella priser samt för- och nackdelar.",
+          "Byt inte för tidigt. Transportstyrelsen rekommenderar att barn åker bakåtvänt så länge som möjligt, normalt till cirka fyra–fem år, och Trafikverket skriver minst fyra–fem år, gärna längre. Byt först när barnet vuxit ur den bakåtvända stolens längd- eller viktgräns."
         ],
         "products": [
           {
@@ -2216,15 +2217,98 @@
             "img": "https://www.jollyroom.se/storage/20FEFAF2D4ADA9983BF488FCB5F3864B88535FCA1908895D281EEC469266C6AC/c29f4795a23a4a55b32a64df242a21c3/jpg/media/419126a56d58426f8117adf80f93a905/522003961-SOLXI-FIX-PURBLA-3606_1.jpg"
           }
         ],
-        "sections": [],
+        "sections": [
+          {
+            "h2": "De fem stolarna sida vid sida",
+            "intro": "Alla fem är för barn som vuxit ur den bakåtvända stolen.",
+            "table": {
+              "headers": [
+                "Stol",
+                "Utmärker sig med",
+                "Pris"
+              ],
+              "rows": [
+                [
+                  "Britax Römer Kidfix M i-Size",
+                  "Bästa bältesstol",
+                  "Från ca 1 695 kr"
+                ],
+                [
+                  "BeSafe Flex FIX 2",
+                  "Bästa premium",
+                  "Från ca 2 895 kr"
+                ],
+                [
+                  "Maxi-Cosi RodiFix Pro 2 i-Size",
+                  "Bästa budget",
+                  "Från ca 1 889 kr"
+                ],
+                [
+                  "Cybex Solution T i-Fix",
+                  "Bredast justerbar",
+                  "Från ca 1 995 kr"
+                ],
+                [
+                  "Cybex Solution X i-Fix",
+                  "Instegsnivå i Cybex-serien",
+                  "Från ca 2 499 kr"
+                ]
+              ],
+              "leftCols": [
+                1
+              ]
+            },
+            "note": "Priserna är riktpriser och varierar mellan butiker och kampanjer. Kolla alltid aktuellt pris i butiken."
+          },
+          {
+            "h2": "När ska man byta till framåtvänd bilbarnstol?",
+            "text": "Rekommendationen i Sverige är att barn ska sitta bakåtvända så länge som möjligt, normalt till cirka fyra–fem år (enligt [Transportstyrelsen](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/sa-skyddar-du-barnen---regler-och-tips/) och [Trafikverket](https://www.trafikverket.se/resa-och-trafik/trafiksakerhet/sakerhet-pa-vag/sakerhet-i-bil/barn-i-bil/)). Det avgörande är inte barnets ålder eller vad jämnåriga gör, utan när barnet vuxit ur den bakåtvända stolens längd- eller viktgräns. Har ni inte kommit dit än hittar ni våra favoriter bland de [bakåtvända bilbarnstolarna](/topplistor/bilbarnstol/bakatvand/)."
+          },
+          {
+            "h2": "Vad säger lagen om barn i bil?",
+            "text": "Barn under 135 cm ska använda en särskild skyddsanordning: babyskydd, bilbarnstol, bältesstol eller bälteskudde. Barn som sitter i ett sådant skydd ska inte sitta på en plats med aktiv krockkudde förrän de är 140 cm. Enligt Transportstyrelsen får sedan 1 september 2024 endast stolar enligt ECE R129 (i-Size) säljas i butik, men äldre stolar enligt R44 får fortfarande användas. Se [Transportstyrelsens regler](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/sa-skyddar-du-barnen---regler-och-tips/) för de exakta villkoren, bland annat undantagen vid korta, tillfälliga transporter."
+          },
+          {
+            "h2": "Bältesstol eller bälteskudde – vad är skillnaden?",
+            "text": "En bältesstol har ryggstöd och bältesstyrning, vilket ofta passar kortare barn, längre bilresor och barn som somnar i bilen. En bälteskudde lyfter bara upp barnet och kan räcka när barnet är större och sitter rakt. Oavsett val ska skyddet lyfta barnet så att höftbältet ligger mot höften och axelbältet över axeln (enligt [Trafikverket](https://www.trafikverket.se/resa-och-trafik/trafiksakerhet/sakerhet-pa-vag/sakerhet-i-bil/barn-i-bil/)). Isofix är inget krav för alla stolar: på alla bältesstolar är det bilens eget bälte som håller barnet, och isofix gör stolen stabilare i bilen."
+          },
+          {
+            "h2": "Hur vet jag när barnet kan sluta med bältesstolen?",
+            "text": "Lagkravet gäller till 135 cm, men Transportstyrelsen rekommenderar att barnet använder skydd ända till 10–12 år och att ni provar i bilen och följer stolens vikt- och längdgränser. Ett bra test: sitter barnet rakt mot ryggstödet utan att glida, ligger höftbältet över höfter och lår (inte över magen) och diagonalbältet över axel och bröstkorg, även när barnet somnar? Annars behöver barnet fortfarande sitta i stolen."
+          },
+          {
+            "h2": "Så har vi valt ut stolarna",
+            "text": "Vi har utgått från oberoende tester där sådana finns (till exempel Stiftung Warentest, som gav Britax Römer Kidfix M i-Size betyget GOD 2,0 i juni 2022), tillverkarnas uppgifter och vår egen erfarenhet – Maxi-Cosi RodiFix Pro 2 har vi själva i familjen. Vi kraschtestar inte stolarna själva. Vi har prioriterat sidokrockskydd, justerbarhet när barnet växer, pris och hur mycket plats stolen tar i baksätet. Reser ni utomlands finns mer i vår guide om [bilbarnstol utomlands](/artiklar/bilbarnstol-utomlands/)."
+          }
+        ],
         "faq": [
           {
             "q": "Vid vilken ålder ska man byta till framåtvänd bilbarnstol?",
-            "a": "Svenska rekommendationer (NTF m.fl.) säger bakåtvänt så länge som möjligt, gärna till 4–5 års ålder eller tills barnet är för stort för den bakåtvända stolen enligt tillverkarens gränser — vad som än inträffar sist."
+            "a": "Svenska rekommendationer (Transportstyrelsen och Trafikverket) säger bakåtvänt så länge som möjligt, normalt till cirka 4–5 års ålder, och byte först när barnet vuxit ur den bakåtvända stolens längd- eller viktgräns."
+          },
+          {
+            "q": "Vilken framåtvänd bilbarnstol är bäst i test?",
+            "a": "I vår jämförelse är Britax Römer Kidfix M i-Size bästa bältesstol (betyget GOD 2,0 hos Stiftung Warentest, juni 2022), BeSafe Flex FIX 2 bästa premium och Maxi-Cosi RodiFix Pro 2 bästa budget. Cybex Solution T i-Fix är bredast justerbar."
+          },
+          {
+            "q": "Vad är skillnaden mellan bältesstol och bälteskudde?",
+            "a": "En bältesstol har ryggstöd och bältesstyrning, medan en bälteskudde bara höjer upp barnet. Båda ska se till att höftbältet ligger mot höften och axelbältet över axeln. Bältesstol passar ofta kortare barn och längre resor."
+          },
+          {
+            "q": "Hur länge ska barn sitta i bältesstol eller bälteskudde?",
+            "a": "Lagkravet gäller barn under 135 cm, men Transportstyrelsen rekommenderar skydd ända till 10–12 år. Provsitt i bilen och följ stolens vikt- och längdgränser."
+          },
+          {
+            "q": "Får barn sitta fram i bilen?",
+            "a": "Barn som sitter i ett särskilt skydd ska inte sitta på en plats med aktiv krockkudde förrän de är 140 cm, enligt Transportstyrelsen och Trafikverket."
+          },
+          {
+            "q": "Måste man ha isofix till en bältesstol?",
+            "a": "Nej, inte på alla stolar. Bilens eget bälte håller alltid barnet, och isofix gör stolen stabilare i bilen. Cybex Solution X i-Fix kan till exempel användas helt utan isofix om bilen saknar fästen."
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-10-28"
+        "updated": "2026-11-12"
       },
       {
         "slug": "babyskydd",
