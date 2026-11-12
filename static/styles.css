@@ -1803,3 +1803,11 @@ h1 {
 .letter-send-status { max-width: 680px; margin: 0 auto 1.5rem; text-align: center; font-size: 0.85rem; min-height: 1.2em; }
 .letter-send-status.ok { color: var(--primary); }
 .letter-send-status.err { color: var(--sand); }
+
+/* ---- LANDSHUBBAR: jämförelsetabell ---- */
+.table-scroll { overflow-x: auto; max-width: 100%; margin: 0 0 1.5rem; }
+.hub-compare { max-width: 860px; margin: 0; }
+.hub-compare th, .hub-compare td { text-align: left; }
+.hub-compare td a { color: var(--text); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--border); }
+.hub-compare td a:hover { border-bottom-color: var(--accent); }
+@media (max-width: 640px) { .hub-compare { min-width: 520px; } }
