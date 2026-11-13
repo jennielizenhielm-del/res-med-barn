@@ -142,6 +142,54 @@
       ],
       "published": "2026-10-03",
       "updated": "2026-10-03"
+    },
+    "cookies": {
+      "title": "Cookies och integritet | Res med Barn",
+      "description": "Så använder Res med Barn cookies: vad vi mäter med Google Analytics och Google Ads, vad affiliate-länkar innebär och hur du ändrar ditt val.",
+      "h1": "Cookies och integritet",
+      "body": [
+        "Här förklarar vi vilka cookies och liknande tekniker som används på Res med Barn, varför vi använder dem och hur du ändrar ditt val. Statistik- och annonscookies används bara om du tackar ja i cookie-bannern."
+      ],
+      "sections": [
+        {
+          "h2": "Nödvändig lagring",
+          "paragraphs": [
+            "Vi sparar ditt val i cookie-bannern i webbläsarens lokala lagring, så att bannern inte visas på varje sida. Det är nödvändigt för att sajten ska komma ihåg ditt val och kräver inget samtycke."
+          ]
+        },
+        {
+          "h2": "Statistik: Google Analytics",
+          "paragraphs": [
+            "Om du accepterar använder vi Google Analytics (GA4) för att förstå hur sajten används: vilka sidor som läses och vilka länkar som klickas. Vi använder det för att förbättra innehållet. Om du väljer \"Endast nödvändiga\" mäts inget av detta."
+          ]
+        },
+        {
+          "h2": "Annonsmätning: Google Ads",
+          "paragraphs": [
+            "Om du accepterar kan Google mäta om ett besök kom från en annons som vi köpt, och om du sedan klickade vidare på en köplänk. Det hjälper oss att se om annonserna är värda sin kostnad. Google kan behandla uppgifter även utanför EU/EES, se Googles villkor."
+          ]
+        },
+        {
+          "h2": "Affiliate-länkar",
+          "paragraphs": [
+            "Många länkar på sajten går till butiker och tjänster via annonsnätverk som Adtraction och TradeDoubler. När du klickar öppnas partnerns sajt, och partnern och nätverket sätter egna cookies för att kunna räkna provision till oss. Det styrs av deras egna villkor och integritetspolicys, inte av vår."
+          ]
+        },
+        {
+          "h2": "Ändra eller dra tillbaka ditt val",
+          "paragraphs": [
+            "Klicka på \"Cookie-inställningar\" längst ner på sidan för att göra om ditt val. Redan sparade cookies kan du ta bort i din webbläsares inställningar."
+          ]
+        },
+        {
+          "h2": "Dina rättigheter",
+          "paragraphs": [
+            "Du har rätt att begära tillgång till, rättelse eller radering av dina personuppgifter och att invända mot behandling. Kontakta oss på kontakt@resmedbarn.se. Du kan också vända dig till Integritetsskyddsmyndigheten (IMY) om du har klagomål."
+          ]
+        }
+      ],
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "transports": [

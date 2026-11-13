@@ -225,6 +225,12 @@ function head(meta, url) {
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  // Consent Mode v2: allt är nekat som standard tills besökaren väljer i cookie-bannern
+  // (se footer()). Ett tidigare "Acceptera alla"-val läses tillbaka direkt, så att
+  // taggarna får rätt samtycke redan vid första sidvisningen.
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+  gtag('set', 'ads_data_redaction', true);
+  try { if (localStorage.getItem('rmb_cookie_consent') === 'all') { gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' }); } } catch (err) {}
   gtag('js', new Date());
   gtag('config', 'G-8F9VYNYZRM');
   gtag('config', 'AW-18385738907');
@@ -324,14 +330,50 @@ function footer() {
       <a href="/artiklar/">${icon('📝')} Alla artiklar</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
+      <a href="/cookies/">Cookies och integritet</a>
     </div>
   </div>
   <div class="footer-bottom">
     <span>&copy; 2024–${new Date().getFullYear()} ${esc(C.site.name)}</span>
     <span>Gjord med ${icon('❤️')} för barnfamiljer i Sverige</span>
     <span>Innehåller annonslänkar från Adtraction och TradeDoubler</span>
+    <span><button type="button" class="cookie-settings-link" data-cookie-settings>Cookie-inställningar</button></span>
   </div>
 </footer>
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <div class="cookie-banner-text">
+    <strong>Cookies</strong>
+    <p>Vi använder cookies från Google för att mäta besök (Analytics) och se hur våra annonser presterar (Ads). Det sker bara om du tackar ja. Läs mer i vår <a href="/cookies/">cookiepolicy</a>.</p>
+  </div>
+  <div class="cookie-banner-actions">
+    <button type="button" class="cookie-btn" data-consent="necessary">Endast nödvändiga</button>
+    <button type="button" class="cookie-btn" data-consent="all">Acceptera alla</button>
+  </div>
+</div>
+<script>
+(function () {
+  var KEY = 'rmb_cookie_consent';
+  var el = document.getElementById('cookie-banner');
+  if (!el) return;
+  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function apply(v) {
+    var g = v === 'all' ? 'granted' : 'denied';
+    if (typeof gtag === 'function') gtag('consent', 'update', { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g });
+  }
+  function show() { el.hidden = false; }
+  if (!get()) show();
+  el.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-consent]');
+    if (!b) return;
+    var v = b.getAttribute('data-consent');
+    save(v); apply(v); el.hidden = true;
+  });
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('[data-cookie-settings]')) { e.preventDefault(); show(); }
+  });
+})();
+</script>
 </body>
 </html>`;
 }
@@ -1814,7 +1856,7 @@ function buildResmal() {
 
 /* ---------- OM OSS / KONTAKT ---------- */
 function buildSimplePages() {
-  for (const slug of ['om-oss', 'kontakt']) {
+  for (const slug of ['om-oss', 'kontakt', 'cookies']) {
     const m = C.pages[slug];
     const url = `/${slug}/`;
     const bc = breadcrumbs([['Hem', '/'], [m.h1, null]]);
@@ -1825,15 +1867,16 @@ function buildSimplePages() {
 </header>
 <article class="article page-intro">
   ${paras(m.body)}
+  ${(m.sections || []).map(x => `<h2>${esc(x.h2)}</h2>${paras(x.paragraphs)}`).join('')}
   ${slug === 'kontakt' ? `<p class="contact-mail">${icon('📧')} <a href="mailto:${esc(m.email)}">${esc(m.email)}</a></p>` : ''}
 </article>`;
-    write(`${slug}/index.html`, page(url, m, url, inner, bc.jsonld, slug === 'om-oss' ? 'AboutPage' : 'ContactPage'));
+    write(`${slug}/index.html`, page(url, m, url, inner, bc.jsonld, slug === 'om-oss' ? 'AboutPage' : slug === 'kontakt' ? 'ContactPage' : 'WebPage'));
   }
 }
 
 /* ---------- SITEMAP / ROBOTS / STATIC ---------- */
 function buildMeta(destinations) {
-  const urls = ['/', '/guider/', '/topplistor/', '/om-oss/', '/kontakt/'];
+  const urls = ['/', '/guider/', '/topplistor/', '/om-oss/', '/kontakt/', '/cookies/'];
   for (const a of C.ages) {
     urls.push(`/guider/${a.slug}/`);
     for (const t of C.transports) urls.push(`/guider/${a.slug}/${t.slug}/`);
