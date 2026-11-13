@@ -517,8 +517,8 @@
     },
     "bebisar/buss": {
       "cardText": "Långfärd eller stadsbuss i vardagen — säkerhet, kostnad för barnvagn och praktiska tips för båda.",
-      "title": "Åka buss med barnvagn & bebis | Res med Barn",
-      "description": "Buss med bebis och barnvagn — så funkar det på både långfärdsbussen och stadsbussen i vardagen. Säkerhet, kostnad och praktiska tips.",
+      "title": "Åka buss med bebis och barnvagn – tips | Res med Barn",
+      "description": "Åka buss med bebis eller spädbarn och barnvagn: så funkar det på långfärdsbussen och stadsbussen. Säkerhet, vad barnvagn kostar och praktiska tips.",
       "h1": "Åka buss med bebis och barnvagn",
       "intro": [
         "Buss med bebis handlar om två ganska olika saker: den enstaka längre resan med långfärdsbuss, och den betydligt vanligare vardagsturen med stadsbussen och barnvagnen. Reglerna, säkerheten och till och med kostnaden skiljer sig åt mellan de två — här går vi igenom båda.",
@@ -586,6 +586,14 @@
         {
           "q": "Hur byter man blöja på en bussresa?",
           "a": "Helst vid pauserna – busstoaletter är trånga och saknar oftast skötbord. Byt direkt före avgång, packa en vikbar skötmatta och gör större byten vid rastställena var annan till var tredje timme."
+        },
+        {
+          "q": "Hur åker man buss med barnvagn?",
+          "a": "På stadsbussar går ni ombord där det finns plats för vagn (i många städer genom mittdörren), ställer vagnen i det avsedda vagnutrymmet, bromsar den och spänner fast den med bussens remmar, helst i hörnet där den står stabilast. Barnet sitter kvar i vagnen med vagnens egen sele fastspänd. På långfärdsbussar fälls vagnen ihop och åker i lastutrymmet."
+        },
+        {
+          "q": "Kan man åka buss med spädbarn?",
+          "a": "Ja. På långfärdsbussar åker spädbarnet tryggast i bärsele mot din kropp, med ditt bälte under selen, och vissa bussbolag tillåter babyskydd på egen sittplats om du bokat en, så fråga vid bokningen. På stadsbussar stannar barnet i vagnen."
         }
       ],
       "published": "2026-09-23",
@@ -1787,9 +1795,9 @@
         "name": "Resevagnar",
         "emoji": "👶",
         "cardText": "Vagnarna som får plats i handbagaget och överlever en hel semester. Bäst i test 2026.",
-        "title": "Bästa resevagnen 2026 – bäst i test | Res med Barn",
-        "description": "Fem resevagnar som får plats i handbagaget och tål en hel semester. Bäst i test 2026 – med vikt, mått och ärliga minus för varje vagn.",
-        "h1": "Bästa resevagnen 2026",
+        "title": "Bästa resevagnen 2026 – handbagage och test | Res med Barn",
+        "description": "Bästa resevagnen 2026: fem resevagnar bäst i test som får plats som handbagage, med hopfällda mått, pris och ärliga minus för varje vagn.",
+        "h1": "Bästa resevagnen 2026 – resevagn som handbagage",
         "intro": [
           "Resevagnen är det bästa köp en resande barnfamilj gör. En vagn som viks ihop till handbagageformat betyder: ingen väntan vid gaten, inget trasigt chassi från lastrummet och full rörlighet på resmålet.",
           "Vi har vikt, mätt och framför allt rest med årets modeller. Här är fem som håller – inklusive vilka som faktiskt klarar handbagagemåtten och vilka som bara nästan gör det."
@@ -1898,6 +1906,54 @@
         ],
         "sections": [
           {
+            "h2": "Resevagn som handbagage – måtten sida vid sida",
+            "intro": "Hopfällda mått för våra fem resevagnar, så ni ser vilka som får plats som handbagage hos de flesta flygbolag.",
+            "table": {
+              "headers": [
+                "Resevagn",
+                "Hopfälld (L × B × H)",
+                "Utmärker sig med",
+                "Pris"
+              ],
+              "leftCols": [
+                2
+              ],
+              "rows": [
+                [
+                  "Stokke YOYO³",
+                  "52 × 44 × 18 cm",
+                  "Bäst i test",
+                  "2 995 kr (kampanjpris)"
+                ],
+                [
+                  "Bugaboo Butterfly 2",
+                  "55,5 × 44,8 × 24,5 cm",
+                  "Bästa komfort",
+                  "4 399 kr (kampanjpris, Black Month t.o.m. 30/11)"
+                ],
+                [
+                  "Cybex Libelle",
+                  "48 × 32 × 20 cm",
+                  "Mest kompakt",
+                  "Från 2 639 kr"
+                ],
+                [
+                  "Joolz Aer2",
+                  "54 × 45 × 23 cm",
+                  "Bästa premium",
+                  "Från ca 3 995 kr"
+                ],
+                [
+                  "Ergobaby Metro+",
+                  "55 × 44 × 25 cm",
+                  "Bästa budget",
+                  "2 995 kr (kampanjpris)"
+                ]
+              ]
+            },
+            "note": "Måtten är uppgifter från tillverkare och butiker. Varje flygbolag bestämmer själv sina handbagagemått, så kolla ert bolags regler innan avresa."
+          },
+          {
             "h2": "Resevagn som handbagage – så funkar reglerna",
             "text": "Standardmåttet för handbagage är runt 55×40×23 cm, men varje flygbolag bestämmer själv – och lågprisbolagen mäter. YOYO³ och Libelle klarar nästan alla bolag, Butterfly och Aer+ de flesta. Säkraste draget: kolla ert bolags mått innan köp, och ha en plan B – de flesta bolag låter er lämna vagnen vid gaten utan extra kostnad, vilket är nästan lika smidigt."
           },
@@ -1927,11 +1983,19 @@
           {
             "q": "Tål resevagnar kullersten och grus?",
             "a": "Bättre än ryktet. Små hjul märks på riktigt grov kullersten, men moderna resevagnar med fjädring – Butterfly, Aer+ – rullar förvånansvärt bra i europeiska stadskärnor. För skogsstigar och strand är det fel verktyg; där vinner bärsele."
+          },
+          {
+            "q": "Vilken resevagn är bäst som handbagage?",
+            "a": "Cybex Libelle är mest kompakt hopfälld (48 × 32 × 20 cm), följd av Stokke YOYO³ (52 × 44 × 18 cm) och Joolz Aer2 (54 × 45 × 23 cm). Bugaboo Butterfly 2 (55,5 × 44,8 × 24,5 cm) och Ergobaby Metro+ (55 × 44 × 25 cm) ligger nära IATA:s maxgräns. Kolla alltid ert flygbolags regler."
+          },
+          {
+            "q": "Vad är skillnaden mellan resevagn och paraplyvagn?",
+            "a": "Båda är lätta och hopfällbara. En resevagn är byggd för att vikas till ett litet paket som går som handbagage på flyget, medan en klassisk paraplyvagn oftast vikas långt och smalt. Resevagnarna i vår lista har dessutom ofta fjädring och bättre komfort än en enkel paraplyvagn."
           }
         ],
         "handbagageNote": "Alla vagnar i listan uppfyller IATA:s rekommenderade maxmått för handbagage (56 × 45 × 25 cm), men flygbolag kan ha egna, striktare regler — kontrollera alltid med ditt flygbolag innan avresa.",
         "published": "2026-09-23",
-        "updated": "2026-11-10"
+        "updated": "2026-11-13"
       },
       {
         "slug": "bilbarnstol",
@@ -1969,10 +2033,11 @@
         "img": "photo-1730577776817-4166006be437",
         "cardText": "Fem stolar vi litar på för bakåtvänt åkande så länge som möjligt.",
         "title": "Bakåtvänd bilbarnstol bäst i test 2026 | Res med Barn",
-        "description": "Bakåtvänd bilbarnstol bäst i test 2026 — fyra stolar för bebisar och småbarn, utvalda för bakåtvänt åkande så länge som möjligt.",
+        "description": "Bakåtvänd bilbarnstol bäst i test 2026: fem stolar för bebisar och småbarn med pris, för- och nackdelar, och hur länge barnet bör sitta bakåtvänt.",
         "h1": "Bakåtvänd bilbarnstol — bäst i test 2026",
         "intro": [
-          "Den svenska linjen är tydlig: bakåtvänt så länge som möjligt, helst till fyra–fem års ålder. Alla stolar här följer den principen."
+          "Svenska rekommendationer är tydliga: barn ska sitta bakåtvända så länge som möjligt, normalt till cirka fyra–fem år enligt Transportstyrelsen och minst fyra–fem år, gärna längre, enligt Trafikverket. Här jämför vi fem bakåtvända bilbarnstolar för bebisar och småbarn, med aktuella priser samt för- och nackdelar.",
+          "Byt först till framåtvänd stol när barnet vuxit ur den bakåtvända stolens längd- eller viktgräns, inte för att jämnåriga börjat åka framåtvända. När det är dags hittar ni våra favoriter bland de [framåtvända bilbarnstolarna](/topplistor/bilbarnstol/framatvand/)."
         ],
         "products": [
           {
@@ -2074,8 +2139,50 @@
         ],
         "sections": [
           {
+            "h2": "De fem stolarna sida vid sida",
+            "intro": "Alla fem är bakåtvända stolar för bebisar och småbarn.",
+            "table": {
+              "headers": [
+                "Stol",
+                "Utmärker sig med",
+                "Pris"
+              ],
+              "leftCols": [
+                1
+              ],
+              "rows": [
+                [
+                  "Axkid Minikid 4 Pro",
+                  "Bäst i test",
+                  "Från ca 3 799 kr"
+                ],
+                [
+                  "Axkid One 3",
+                  "Premiumvalet",
+                  "Från ca 6 399 kr"
+                ],
+                [
+                  "Britax Römer Dualfix 5Z",
+                  "Mest prisvärd",
+                  "3 225 kr (prismatchad)"
+                ],
+                [
+                  "Maxi-Cosi Emerald 360 S",
+                  "Längst användningstid",
+                  "Från ca 3 395 kr"
+                ],
+                [
+                  "Cybex Sirona T i-Size Plus",
+                  "Bäst premium/sidoskydd",
+                  "Från ca 3 795 kr"
+                ]
+              ]
+            },
+            "note": "Priserna är riktpriser och varierar mellan butiker och kampanjer. Kolla alltid aktuellt pris i butiken."
+          },
+          {
             "h2": "Bakåtvänd eller framåtvänd – det korta svaret",
-            "text": "Bakåtvänt, så länge det bara går. Vid en frontalkrock tar en bakåtvänd stol upp krafterna över hela ryggen i stället för i barnets nacke – skillnaden i skaderisk är inte marginell, den är flerfaldig. Svenska experter rekommenderar bakåtvänt till minst fyra år. Vänd inte stolen för att barnet 'verkar trång' – justera benutrymmet, byt stol om det behövs, men behåll riktningen."
+            "text": "Bakåtvänt, så länge det bara går. Vid en frontalkrock tar en bakåtvänd stol upp krafterna över hela ryggen i stället för i barnets nacke – därför är rekommendationen om bakåtvänt så tydlig. Transportstyrelsen och Trafikverket rekommenderar bakåtvänt till cirka fyra–fem år. Vänd inte stolen för att barnet 'verkar trång' – justera benutrymmet, byt stol om det behövs, men behåll riktningen."
           },
           {
             "h2": "Stolen på semesterresan",
@@ -2083,11 +2190,15 @@
           },
           {
             "h2": "Framåtvänd bilbarnstol – när är det egentligen dags?",
-            "text": "Kort svar: senare än de flesta tror. Svensk rekommendation är bakåtvänt till minst fyra år, gärna längre – stolar som Axkid Minikid rymmer barn till 125 centimeter, vilket ofta betyder sex–sju års ålder. Skälet att vända tidigare är nästan alltid att barnet 'ser trångt ut', men barn sitter utmärkt med benen i skräddarställning, och benutrymme är inget säkerhetsproblem. Nackens hållfasthet är det. När barnet väl vuxit ur bakåtvänt på riktigt går flytten till bältesstol, inte till en framåtvänd selestol som mellansteg."
+            "text": "Kort svar: senare än de flesta tror. Svensk rekommendation är bakåtvänt till cirka fyra–fem år, gärna längre – stolar som Axkid Minikid rymmer barn till 125 centimeter, vilket ofta betyder sex–sju års ålder. Skälet att vända tidigare är nästan alltid att barnet 'ser trångt ut', men barn sitter utmärkt med benen i skräddarställning, och benutrymme är inget säkerhetsproblem. Nackens hållfasthet är det. När barnet väl vuxit ur bakåtvänt på riktigt går flytten till bältesstol, inte till en framåtvänd selestol som mellansteg."
           },
           {
             "h2": "Bakåtvänd bilbarnstol – därför är den säkrare",
-            "text": "Fysiken är enkel: vid en frontalkrock – den vanligaste allvarliga krocktypen – kastas kroppen framåt. Sitter barnet bakåtvänt fångas rörelsen upp av hela ryggen mot stolens skal; sitter det framåtvänt hålls kroppen av selen medan huvudet fortsätter framåt, och all kraft hamnar i nacken. Små barn har stora huvuden och svaga nackar – proportionellt väger en tvåårings huvud dubbelt så mycket som ditt. Det är därför bakåtvänt räknas som omkring fem gånger säkrare för småbarn, och därför Sverige legat före resten av Europa i decennier."
+            "text": "Fysiken är enkel: vid en frontalkrock – den vanligaste allvarliga krocktypen – kastas kroppen framåt. Sitter barnet bakåtvänt fångas rörelsen upp av hela ryggen mot stolens skal; sitter det framåtvänt hålls kroppen av selen medan huvudet fortsätter framåt, och all kraft hamnar i nacken. Små barn har proportionellt stora huvuden och en nacke som ännu inte är fullt utvecklad, och det är därför myndigheterna rekommenderar bakåtvänt så länge som möjligt."
+          },
+          {
+            "h2": "Vad säger lagen om bilbarnstol?",
+            "text": "Barn under 135 cm ska använda en särskild skyddsanordning: babyskydd, bilbarnstol, bältesstol eller bälteskudde. Transportstyrelsen och Trafikverket rekommenderar att barnet sitter bakåtvänt så länge som möjligt. Sedan 1 september 2024 får endast stolar enligt ECE R129 (i-Size) säljas i butik, men äldre stolar enligt R44 får fortfarande användas. Se [Transportstyrelsens regler](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/sa-skyddar-du-barnen---regler-och-tips/) och [Trafikverkets råd](https://www.trafikverket.se/resa-och-trafik/trafiksakerhet/sakerhet-pa-vag/sakerhet-i-bil/barn-i-bil/) för detaljerna."
           }
         ],
         "faq": [
@@ -2102,10 +2213,22 @@
           {
             "q": "Kan man köpa bilbarnstol begagnat?",
             "a": "Avrådes om du inte vet stolens historia. En stol som varit med i en krock kan ha osynliga skador, och plast åldras – de flesta tillverkare anger cirka tio års livslängd. Köp hellre en billigare stol ny än en premiumstol med okänt förflutet."
+          },
+          {
+            "q": "Vilken bakåtvänd bilbarnstol är bäst i test?",
+            "a": "I vår jämförelse är Axkid Minikid 4 Pro bäst i test (godkänd i Svenska Plustestet), Axkid One 3 är premiumvalet med isofix, Britax Römer Dualfix 5Z är mest prisvärd och Maxi-Cosi Emerald 360 S har längst användningstid."
+          },
+          {
+            "q": "Är det ett lagkrav att åka bakåtvänt?",
+            "a": "Lagen kräver att barn under 135 cm använder en särskild skyddsanordning. Att åka bakåtvänt så länge som möjligt, normalt till cirka 4–5 år, är en rekommendation från Transportstyrelsen och Trafikverket."
+          },
+          {
+            "q": "Vad är en roterbar bilbarnstol?",
+            "a": "En stol med 360°-rotation kan vridas mot dörren så att barnet lyfts i och ur lättare, och vrids sedan tillbaka i åkriktningen. Dualfix 5Z, Emerald 360 S och Sirona T i-Size Plus i vår lista är roterbara."
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-11-10"
+        "updated": "2026-11-12"
       },
       {
         "slug": "bilbarnstol/framatvand",
@@ -2299,16 +2422,28 @@
             "a": "Lagkravet gäller barn under 135 cm, men Transportstyrelsen rekommenderar skydd ända till 10–12 år. Provsitt i bilen och följ stolens vikt- och längdgränser."
           },
           {
-            "q": "Får barn sitta fram i bilen?",
-            "a": "Barn som sitter i ett särskilt skydd ska inte sitta på en plats med aktiv krockkudde förrän de är 140 cm, enligt Transportstyrelsen och Trafikverket."
+            "q": "Får barn sitta fram i bilen med framåtvänd bilbarnstol?",
+            "a": "Barn som sitter i ett särskilt skydd, som en bältesstol eller bälteskudde, ska inte sitta på en plats med aktiv krockkudde (airbag) förrän de är 140 cm, enligt Transportstyrelsen och Trafikverket. Framsätet är alltså inte rätt plats för de flesta barn i bältesstol."
           },
           {
             "q": "Måste man ha isofix till en bältesstol?",
             "a": "Nej, inte på alla stolar. Bilens eget bälte håller alltid barnet, och isofix gör stolen stabilare i bilen. Cybex Solution X i-Fix kan till exempel användas helt utan isofix om bilen saknar fästen."
+          },
+          {
+            "q": "Kan ett 3- eller 4-årigt barn sitta framåtvänt?",
+            "a": "Svenska rekommendationer är att barn åker bakåtvänt så länge som möjligt, normalt till cirka 4–5 år. Ett barn på 3 eller 4 år bör därför normalt sitta kvar bakåtvänt, och byter först när det vuxit ur den bakåtvända stolens längd- eller viktgräns. Se vår lista över bakåtvända bilbarnstolar."
+          },
+          {
+            "q": "Finns det framåtvänd bilbarnstol med 5-punktsbälte?",
+            "a": "Våra fem är bältesstolar och bälteskuddar där bilens eget bälte håller barnet, inte stolar med inbyggt fempunktsbälte (sele). Listan fokuserar på de stolar barnet normalt byter till efter den bakåtvända stolen."
+          },
+          {
+            "q": "Vad är skillnaden mellan bakåtvänd och framåtvänd bilbarnstol?",
+            "a": "Bakåtvända stolar används först och rekommenderas så länge som möjligt, normalt till cirka 4–5 år. Därefter byter barnet till en framåtvänd bältesstol eller bälteskudde där bilens bälte håller barnet. Se våra bakåtvända bilbarnstolar för stolarna före bytet."
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-11-12"
+        "updated": "2026-11-13"
       },
       {
         "slug": "babyskydd",
@@ -2316,11 +2451,12 @@
         "emoji": "🍼",
         "img": "photo-1619719287848-883c8f26efbc",
         "cardText": "Fem babyskydd som fungerar från nyfödd, jämförda på vikt, montering och pris.",
-        "title": "Babyskydd bäst i test 2026 | Res med Barn",
-        "description": "Babyskydd bäst i test 2026 — fem alternativ för nyfödda och spädbarn, jämförda på vikt, montering, pris och kompatibilitet med barnvagn.",
-        "h1": "Babyskydd — bäst i test 2026",
+        "title": "Bästa babyskyddet 2026 – bäst i test | Res med Barn",
+        "description": "Bästa babyskyddet 2026: fem babyskydd bäst i test för nyfödda, jämförda på vikt, montering, pris och vagnkompatibilitet. Så väljer du babyskydd.",
+        "h1": "Bästa babyskyddet 2026 – babyskydd bäst i test",
         "intro": [
-          "Babyskyddet är det första bilstolssteget, för nyfödda upp till ungefär ett år (beroende på modell och barnets storlek). Till skillnad från de större bakåtvända stolarna är babyskydd bärbara och klickar ofta direkt på barnvagnen — praktiskt för de första, sömniga månaderna."
+          "Babyskyddet är det första bilbarnstolssteget, för nyfödda och spädbarn upp till ungefär ett år beroende på modell och barnets storlek. Det är bakåtvänt, bärbart och klickar ofta direkt på barnvagnen — praktiskt för de första, sömniga månaderna. Här jämför vi fem babyskydd bäst i test: det bästa, det populäraste, det mest komfortabla, det mest flexibla och det billigaste, med aktuella priser samt för- och nackdelar.",
+          "Har ni redan ett babyskydd och undrar vad som kommer sedan hittar ni våra favoriter bland de [bakåtvända bilbarnstolarna](/topplistor/bilbarnstol/bakatvand/)."
         ],
         "products": [
           {
@@ -2419,15 +2555,94 @@
             "img": "https://cdn.babysam.se/31205420-4153-4026-a8c2-8da1c5c015e8/productdetailzoom/02_BABY-SAFE_CORE_MidnightGrey_02_Handle2023_72dpi_2000x2000.jpg"
           }
         ],
-        "sections": [],
+        "sections": [
+          {
+            "h2": "De fem babyskydden sida vid sida",
+            "intro": "Alla fem är bakåtvända babyskydd för nyfödda och spädbarn.",
+            "table": {
+              "headers": [
+                "Babyskydd",
+                "Utmärker sig med",
+                "Pris"
+              ],
+              "leftCols": [
+                1
+              ],
+              "rows": [
+                [
+                  "Cybex Cloud T i-Size",
+                  "Plant liggläge på vagnen, 4,9 kg",
+                  "Från ca 2 585 kr"
+                ],
+                [
+                  "Maxi-Cosi Pebble 360 Pro 2",
+                  "Sveriges mest använda, SlideTech och 360°-rotation",
+                  "Från ca 2 639 kr"
+                ],
+                [
+                  "Doona i",
+                  "Blir barnvagn med inbyggda hjul",
+                  "Från ca 5 595 kr"
+                ],
+                [
+                  "Maxi-Cosi CabrioFix i-Size",
+                  "Testat starkt, bas medföljer",
+                  "Från ca 2 695 kr"
+                ],
+                [
+                  "Britax Römer Baby-Safe Core",
+                  "Lägst pris, fungerar utan bas",
+                  "Från ca 1 449 kr"
+                ]
+              ]
+            },
+            "note": "Priserna är riktpriser och varierar mellan butiker och kampanjer. Kolla alltid aktuellt pris i butiken."
+          },
+          {
+            "h2": "Så väljer du babyskydd",
+            "text": "Börja med säkerhet och oberoende tester, och fortsätt sedan med det som avgör vardagen. Vikten spelar roll eftersom du bär skyddet mycket: Cybex Cloud T väger 4,9 kg, medan basen till Maxi-Cosi Pebble 360 Pro 2 väger 8,6 kg utöver själva skyddet. Fundera också på om du vill ha en bas i bilen. Baby-Safe Core fungerar med bilens bälte eller en tillköpt isofixbas, medan Pebble 360 Pro 2 kräver Maxi-Cosis egen bas för full funktion, och till Cloud T köps basen separat. Sist: passar skyddet er barnvagn?"
+          },
+          {
+            "h2": "Passar babyskyddet min barnvagn?",
+            "text": "Ett babyskydd klickas på vagnen med adapter eller följer med i ett resesystem. Cybex Cloud T klickar på de flesta vagnchassin, och Maxi-Cosi Pebble 360 Pro 2 har bred kompatibilitet med Maxi-Cosis egna vagnsystem. Ett babyskydd och en vagn från olika märken kan kräva en separat adapter, som ofta säljs för sig. Kolla därför vagnstillverkarens kompatibilitetslista innan ni köper, särskilt om skyddet och vagnen kommer från olika märken."
+          },
+          {
+            "h2": "Babyskydd eller bakåtvänd bilbarnstol från födseln?",
+            "text": "Ett babyskydd är bärbart och passar på vagnen, men barnet växer ur det efter några månader till ungefär ett år. Vissa bakåtvända bilbarnstolar kan i stället användas från nyfödd till fyra år, till exempel Britax Römer Dualfix 5Z (61–105 cm), men de är inte bärbara. Båda är bakåtvända, vilket Transportstyrelsen och Trafikverket rekommenderar så länge som möjligt. Se våra [bakåtvända bilbarnstolar](/topplistor/bilbarnstol/bakatvand/) för jämförelsen."
+          },
+          {
+            "h2": "Vad säger lagen om babyskydd?",
+            "text": "Barn under 135 cm ska använda en särskild skyddsanordning i bilen, och ett babyskydd är en sådan. Barn som sitter i ett särskilt skydd, som ett babyskydd, ska inte sitta på en plats med aktiv krockkudde förrän de är 140 cm. Sedan 1 september 2024 får endast stolar enligt ECE R129 (i-Size) säljas i butik, men äldre stolar enligt R44 får fortfarande användas. Se [Transportstyrelsens regler](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/sa-skyddar-du-barnen---regler-och-tips/) och [Trafikverkets råd](https://www.trafikverket.se/resa-och-trafik/trafiksakerhet/sakerhet-pa-vag/sakerhet-i-bil/barn-i-bil/) för detaljerna."
+          }
+        ],
         "faq": [
           {
             "q": "Hur länge kan man använda ett babyskydd?",
             "a": "De flesta babyskydd är godkända upp till ca 75–87 cm eller 13 kg beroende på modell, vilket för de flesta barn motsvarar ungefär 12–18 månader. När barnet börjar sitta bra själv eller närmar sig gränsen är det dags att gå vidare till en bakåtvänd bilbarnstol."
+          },
+          {
+            "q": "Vilket babyskydd är bäst i test?",
+            "a": "I vår jämförelse är Maxi-Cosi CabrioFix i-Size bäst i test och Cybex Cloud T i-Size bästa babyskydd tack vare det plana ligget på vagnen. Maxi-Cosi Pebble 360 Pro 2 är populärast i Sverige, Britax Römer Baby-Safe Core bästa budgetvalet och Doona i bästa 2-i-1."
+          },
+          {
+            "q": "Behöver man en bas till babyskyddet?",
+            "a": "Inte alltid. Britax Römer Baby-Safe Core fungerar både med bilens bälte och med tillköpt isofixbas. Maxi-Cosi Pebble 360 Pro 2 kräver Maxi-Cosis egen bas för full funktion, till Cybex Cloud T köps basen separat, och till Maxi-Cosi CabrioFix i-Size medföljer en bas."
+          },
+          {
+            "q": "Hur mycket väger ett babyskydd?",
+            "a": "Cybex Cloud T väger 4,9 kg. Basen till Maxi-Cosi Pebble 360 Pro 2 väger 8,6 kg utöver själva skyddet. Vikten varierar mellan modeller, och tillverkarens siffra gäller oftast skyddet utan tillbehör, så provbär gärna i butiken innan du köper."
+          },
+          {
+            "q": "Passar babyskyddet min barnvagn?",
+            "a": "Det beror på kombinationen. Babyskydd klickas på vagnen med adapter eller i ett resesystem, och skydd och vagn från olika märken kan kräva en separat adapter. Kolla vagnstillverkarens kompatibilitetslista innan köp."
+          },
+          {
+            "q": "Kan en nyfödd åka i babyskydd?",
+            "a": "Ja, babyskydd är gjorda för nyfödda och spädbarn och är bakåtvända. Barn under 135 cm ska enligt lag använda en särskild skyddsanordning i bilen, och barn i ett särskilt skydd ska inte sitta på en plats med aktiv krockkudde förrän de är 140 cm."
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-10-28"
+        "updated": "2026-11-13"
       },
       {
         "slug": "tillbehor",
@@ -4133,10 +4348,11 @@
         "name": "Vinterskor",
         "cardText": "Varma, vattentäta vinterskor och kängor för barn — isolering och vattentäthet jämförda.",
         "title": "Vinterskor barn bäst i test 2026 | Res med Barn",
-        "description": "Vinterskor bäst i test 2026 — fem vinterskor för barn jämförda på värme, vattentäthet och passform. Viking, Tretorn, Kavat och fler.",
+        "description": "Vinterskor för barn bäst i test 2026: fem vinterkängor och fodrade stövlar jämförda på värme, vattentäthet och passform, med pris.",
         "h1": "Vinterskor för barn bäst i test 2026",
         "intro": [
-          "Kalla, blöta vintrar ställer höga krav på barnens skor. Vi har jämfört fem populära vinterskor på värmeisolering, vattentäthet och hur väl de håller fötterna torra genom hela säsongen."
+          "Kalla, blöta vintrar ställer höga krav på barnens skor. Här är fem vinterskor för barn bäst i test: vinterkängor och fodrade stövlar som vi jämfört på värmeisolering, vattentäthet och hur väl de håller fötterna torra genom hela säsongen, med aktuella priser samt för- och nackdelar.",
+          "Är du ute efter bästa vinterskor för barn eller vattentäta skor som funkar redan på hösten? Längre ner förklarar vi vad vattentäta vinterskor är bra för och när en fodrad känga eller stövel passar bäst."
         ],
         "products": [
           {
@@ -4242,6 +4458,63 @@
         ],
         "sections": [
           {
+            "h2": "De fem vinterskorna sida vid sida",
+            "intro": "Fem vinterskor för barn: fyra vinterkängor och ett par fodrade gummistövlar.",
+            "table": {
+              "headers": [
+                "Vintersko",
+                "Typ",
+                "Utmärker sig med",
+                "Pris"
+              ],
+              "leftCols": [
+                1,
+                2
+              ],
+              "rows": [
+                [
+                  "Ecco Snow Mountain WP 1V",
+                  "Vinterkänga",
+                  "Bäst i test hos Test.se (8,7/10)",
+                  "Från ca 900–1 100 kr"
+                ],
+                [
+                  "Nordbjörn Snowfall 2.0",
+                  "Vinterkänga",
+                  "Tvåa hos Test.se (7,5/10), lågt pris",
+                  "429 kr"
+                ],
+                [
+                  "Viking Ultra Fodrade Gummistövlar",
+                  "Fodrad gummistövel",
+                  "Varma ner till -20 grader, bred läst",
+                  "Från ca 415–649 kr"
+                ],
+                [
+                  "Viking Equip Glitter Warm WP 2V",
+                  "Vinterkänga",
+                  "Glittrig design, pull on",
+                  "699 kr (kampanjpris)"
+                ],
+                [
+                  "Color Kids Vinterkängor Toadstool",
+                  "Vinterkänga",
+                  "Fluorfri behandling, högt skaft",
+                  "1049 kr (kampanjpris)"
+                ]
+              ]
+            },
+            "note": "Priserna är riktpriser och varierar mellan butiker och kampanjer. Kolla alltid aktuellt pris i butiken."
+          },
+          {
+            "h2": "Så väljer du vinterskor till barn",
+            "text": "Tre saker avgör mest. Värmen kommer från foder och passform, så välj ett foder som passar de temperaturer ni har, och köp inte skor som är så trånga att tjocka strumpor inte får plats. Vattentätheten är lika viktig, och här skiljer sig testerna: Ecco Snow Mountain WP 1V fick högst betyg i Test.se:s jämförelse på vattentäthet, värmeisolering, andningsförmåga och torkförmåga. Sist spelar det roll hur lätt skon går att få på och av, där kardborre, dragsko och pull on-modeller ger olika resultat för små barn."
+          },
+          {
+            "h2": "Vattentäta skor till barn – även på hösten",
+            "text": "Vattentäta skor är inte bara en fråga för mitt i vintern. När hösten och senhösten bjuder på regn och slask håller en vattentät känga eller fodrad stövel fötterna torra, men tänk på att fodrade modeller kan bli varma när det är milt. Skor med membran som Gore-Tex är ett alternativ om ni vill ha andningsförmåga, och själva membranet behöver inte impregneras, bara ytmaterialet runt det (se vår FAQ nedan)."
+          },
+          {
             "h2": "Hur mycket ska man tänka på storlek vid köp av vinterskor?",
             "text": "Räkna med tjocka strumpor och lämna lite extra tårum (ca 12–15 mm) för god blodcirkulation och värme. För trånga vinterskor kyler faktiskt fötterna snabbare, eftersom blodcirkulationen försämras."
           }
@@ -4262,11 +4535,27 @@
           {
             "q": "Behöver Gore-Tex-skor impregneras?",
             "a": "Själva Gore-Tex-membranet är vattentätt och behöver inte impregneras. Men ytmaterialet runt membranet — tyget eller lädret utanpå — har en separat vattenavstötande ytbehandling (DWR) som nöts bort med tiden och efter tvätt. När den behandlingen slits bort suger ytmaterialet åt sig vatten, vilket gör skon tyngre och försämrar andningsförmågan, även om membranet under fortfarande håller tätt. Därför är det bra att impregnera ytmaterialet ett par gånger per säsong med en impregnering avsedd för Gore-Tex/membranskor."
+          },
+          {
+            "q": "Vilka vinterskor är bäst i test för barn?",
+            "a": "I vår lista är Ecco Snow Mountain WP 1V bäst i test (8,7 av 10 hos Test.se) och Nordbjörn Snowfall 2.0 ett bra andraval (7,5 av 10). Viking Ultra Fodrade Gummistövlar är utsedda till bäst i test av både Testjakt.se (2023) och Test.se (2025) i kategorin fodrade gummistövlar."
+          },
+          {
+            "q": "Vilka vinterskor är varmast för barn?",
+            "a": "Av våra fem anger Viking Ultra Fodrade Gummistövlar att de håller fötterna varma ner till -20 grader tack vare ett fluffigt ullmixfoder. Värmen beror också på passformen, så välj en storlek som ger plats för tjocka strumpor utan att skon blir för trång."
+          },
+          {
+            "q": "Hur mycket kostar vinterskor till barn?",
+            "a": "I vår lista ligger priserna mellan ca 415 kr (Viking Ultra Fodrade Gummistövlar) och ca 1 049 kr (Color Kids Vinterkängor Toadstool). Nordbjörn Snowfall 2.0 kostar 429 kr, medan Ecco Snow Mountain WP 1V kostar från ca 900–1 100 kr. Priserna varierar mellan butiker och kampanjer."
+          },
+          {
+            "q": "Går det att använda vinterskor på hösten?",
+            "a": "Ja, vattentäta vinterskor fungerar bra under senhösten när det är blött och kallt. Vid milt väder kan fodrade modeller bli för varma, och då är en vattentät känga utan tjockt foder ofta ett bättre val."
           }
         ],
         "img": "photo-1547105114-5ab20c2a12ac",
         "published": "2026-09-23",
-        "updated": "2026-10-24",
+        "updated": "2026-11-13",
         "imgPos": "center 85%"
       },
       {
@@ -5715,7 +6004,8 @@
             "h1": "Barnvagnsvänliga restauranger i Stockholms innerstad",
             "intro": [
               "Letar du efter en barnvänlig restaurang i Stockholm där även barnvagnen får plats? Här är ett urval ställen i Stockholms innerstad som fungerar bra med barnvagn, uppdelade per stadsdel.",
-              "Några av ställena är stora och rymliga rakt av. Andra är mindre men ändå värda listan — där rekommenderar vi att ringa innan för att säkra ett bra bord, vilket vi har flaggat för varje sådant ställe."
+              "Några av ställena är stora och rymliga rakt av. Andra är mindre men ändå värda listan — där rekommenderar vi att ringa innan för att säkra ett bra bord, vilket vi har flaggat för varje sådant ställe.",
+              "Varje ställe visar vilka måltider det serverar (frukost, lunch, middag eller brunch), och i texten framgår var det finns skötbord, barnmeny eller barnrum. Letar du efter en restaurang för barn i en viss stadsdel är listan uppdelad på Södermalm, Östermalm, Norrmalm, Kungsholmen, Vasastan, Djurgården och Gamla stan."
             ],
             "areaOrder": [
               "Södermalm",
@@ -6095,18 +6385,45 @@
               }
             ],
             "published": "2026-10-12",
-            "updated": "2026-10-29",
-            "img": "photo-1667388969250-1c7220bf3f37"
+            "updated": "2026-11-13",
+            "img": "photo-1667388969250-1c7220bf3f37",
+            "faq": [
+              {
+                "q": "Vilka restauranger i Stockholm har barnmeny?",
+                "a": "Vapiano på Sturegatan har barnmeny för 79 kr, kaninpizza eller en pastavariant, med festis inkluderad. Kolla alltid med restaurangen innan ni åker, eftersom menyer och priser ändras."
+              },
+              {
+                "q": "Vilka restauranger i Stockholm har skötbord?",
+                "a": "Restaurangen på Moderna Museet har skötbord, barnvagnsparkering och lånevagnar enligt museets egna uppgifter, och Scandwich har skötbord och uteservering. Fotografiska har dessutom 20+ barnstolar enligt recensioner."
+              },
+              {
+                "q": "Vilka restauranger har lekhörna eller barnrum?",
+                "a": "Boketto på Blique by Nobis i Vasastan har ett barnrum med leksaker och pyssel och serverar frukost, lunch och helgbrunch. Vill ni ha ett renodlat lekcafé finns Fika & Fun Playcafe i Vasastan i vår kafélista."
+              },
+              {
+                "q": "Var kan man äta brunch med barn i Stockholm?",
+                "a": "Flera restauranger i listan serverar brunch, bland annat Non Solo Bar, Broms, Brasserie Astoria, Artilleriet, Griffins Steakhouse, Boketto, Blique by Nobis, BodyBuddy Sveavägen. Vissa kör brunch bara på helger, så kolla varje ställes öppettider."
+              },
+              {
+                "q": "Behöver man ringa i förväg för att få plats med barnvagn?",
+                "a": "På vissa ställen är det en bra idé. Riche, Glashuset, Broms, Restaurang Hantverket och Brasserie Balzac har vi markerat med att ringa innan för att säkra ett bra bord, och Hantverket ber på sin hemsida att man meddelar barnvagn vid bokning."
+              },
+              {
+                "q": "Vilka barnvänliga restauranger finns på Södermalm, Östermalm och Kungsholmen?",
+                "a": "På Södermalm finns Urban Deli och Fotografiska, på Kungsholmen Stella Pizza och Mormors Pastabageri, och på Östermalm bland annat Riche, Broms, Brasserie Astoria, Grodan, Artilleriet och Koh Phangan. Hela listan är uppdelad per stadsdel."
+              }
+            ]
           },
           {
             "guideSlug": "barnvagnsvanliga-cafeer",
             "guideName": "Barnvagnsvänliga caféer",
             "emoji": "☕",
             "title": "23 barnvagnsvänliga caféer i Stockholm | Res med Barn",
-            "description": "23 barnvagnsvänliga caféer i Stockholms innerstad, uppdelat per stadsdel — frukost, fika eller lunch, och var det faktiskt är gott om plats för barnvagnen.",
+            "description": "23 barnvagnsvänliga och barnvänliga caféer i Stockholms innerstad per stadsdel — frukost, fika, brunch eller lunch, plus ett lekcafé med skötrum.",
             "h1": "Barnvagnsvänliga caféer i Stockholms innerstad",
             "intro": [
-              "23 caféer i Stockholms innerstad där barnvagnen får plats, uppdelade per stadsdel. Några är klassiska konditorier, andra renodlade lekcaféer — vi har markerat vad varje ställe faktiskt serverar så du vet om det är läge för frukost, fika eller en enklare lunch."
+              "23 caféer i Stockholms innerstad där barnvagnen får plats, uppdelade per stadsdel. Några är klassiska konditorier, andra renodlade lekcaféer — vi har markerat vad varje ställe faktiskt serverar så du vet om det är läge för frukost, fika eller en enklare lunch.",
+              "Letar du efter ett barnvänligt café, en barnvänlig brunch eller ett lekcafé? Listan innehåller allt från klassiska konditorier till ett renodlat lekcafé med både lugn och aktiv lekyta, och vi har markerat var det finns skötbord eller skötrum."
             ],
             "areaOrder": [
               "Norrmalm",
@@ -6452,8 +6769,30 @@
               }
             ],
             "published": "2026-10-12",
-            "updated": "2026-10-28",
-            "img": "photo-1699559510594-12624b72312c"
+            "updated": "2026-11-13",
+            "img": "photo-1699559510594-12624b72312c",
+            "faq": [
+              {
+                "q": "Finns det lekcafé i Stockholm?",
+                "a": "Ja, i vår lista finns Fika & Fun Playcafe i Vasastan, ett lekcafé med både lugn och aktiv lekyta samt skötrum för blöjbyte och amning. Det serverar frukost, lunch, tidig middag och fika."
+              },
+              {
+                "q": "Var kan man äta brunch med barn i Stockholm?",
+                "a": "Flera caféer i listan serverar brunch, bland annat Gretas, Pom & Flora, Saturnus, Daily's Café & Bistro, Bullar & Bröd, Paulinas kök & kakeri, Vurma. Pom & Flora serverar frukost hela dagen. Vissa kör brunch bara på helger, så kolla öppettiderna."
+              },
+              {
+                "q": "Vilka caféer i Stockholm har skötbord?",
+                "a": "Art Bakery på Norrmalm har stora toaletter med skötbord, och Fika & Fun Playcafe i Vasastan har skötrum för blöjbyte och amning. Kolla alltid med caféet innan ni åker."
+              },
+              {
+                "q": "Vilka caféer är bäst med barnvagn i Stockholm?",
+                "a": "Gott om plats för barnvagn har bland annat Art Bakery, Mr. Cake på Östermalm (mer utrymme än Regeringsgatan-läget), Paulinas kök & kakeri på Södermalm, Sundbergs Konditori i Gamla stan och Gast Café i Vasastan, där det stod flera barnvagnar inne samtidigt utan att det kändes trångt."
+              },
+              {
+                "q": "Går det att äta lunch med barnvagn på ett café i Stockholm?",
+                "a": "Ja, många caféer i listan serverar lunch, bland annat Vete-Katten, Café Pascal, Art Bakery, Wilmer Kaffebar och Paulinas kök & kakeri. Listan visar vilka måltider varje ställe serverar."
+              }
+            ]
           },
           {
             "guideSlug": "julmarknader",
@@ -7444,6 +7783,85 @@
             "published": "2026-10-07",
             "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Göteborg 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Göteborg 2026/2027 är preliminärt 21 december–10 januari. Tips på Liseberg, Universeum och pulkabackar för barnfamiljer under lovet.",
+            "h1": "Jullov i Göteborg 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Göteborg 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "I Göteborg är Liseberg öppet både före jul och mellan nyår och 10 januari, och Universeum håller öppet även på julafton. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 1,
+                "ageMax": 12,
+                "name": "Jul på Liseberg och Vinter i Kaninlandet",
+                "type": "paid",
+                "price": "Se aktuellt pris på liseberg.se",
+                "indoor": false,
+                "area": "Korsvägen",
+                "dateInfo": "14 nov–30 dec samt 31 dec–10 jan",
+                "link": "https://www.liseberg.se/",
+                "desc": "Jul i Lisebergsparken pågår 14 november–30 december 2026 med julmarknad, Tomtebyn och Kaninlandet. Därefter öppnar Vinter i Kaninlandet 31 december 2026–10 januari 2027 med karuseller, kaninteater, skridskodisco och ett kaninfyrverkeri vid nyår — resten av parken är då stängd. Kolla liseberg.se för öppettider och priser, särskilt kring helgdagarna."
+              },
+              {
+                "ageMin": 2,
+                "ageMax": 16,
+                "name": "Universeum",
+                "type": "paid",
+                "price": "Se aktuellt pris på universeum.se",
+                "indoor": true,
+                "area": "Korsvägen",
+                "link": "https://www.universeum.se/",
+                "desc": "Universeum är öppet alla dagar året om, även på julafton (10–15) och juldagen (10–18). Jullovet bjuder på Wisdome-shower, kemiexperiment och rymdutställningen Rymdresan, allt inomhus. Öppettider för övriga helgdagar och nyårsafton hittar ni på universeum.se."
+              },
+              {
+                "ageMin": 1,
+                "ageMax": 16,
+                "name": "Världskulturmuseet",
+                "type": "free",
+                "price": "Fri entré för barn och unga under 19 år",
+                "indoor": true,
+                "area": "Södra vägen",
+                "link": "https://www.varldskulturmuseet.se/",
+                "desc": "Ett av goteborg.com:s inomhustips för jullovet, med fri entré för barn och unga under 19 år. Kolla museets egen sida för aktuella utställningar, barnaktiviteter och öppettider under jul- och nyårsdagarna."
+              },
+              {
+                "ageMin": 2,
+                "ageMax": 14,
+                "name": "Pulka i Slottsskogen och Delsjön",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": false,
+                "area": "Slottsskogen / Delsjön",
+                "link": "https://www.goteborg.com/guider/jullov-i-goteborg",
+                "desc": "Göteborg & Co pekar ut Bragebacken i Slottsskogen och Brudarebacken vid Delsjön som pulkabackar. Det förutsätter förstås att det faktiskt har snöat — kolla vädret och ta med pulkan först då."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Göteborg 2026/2027?",
+                "a": "Jullovet i Göteborg 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Är Liseberg öppet under jullovet?",
+                "a": "Ja, men i två omgångar. Jul på Liseberg pågår 14 november–30 december 2026, och 31 december 2026–10 januari 2027 öppnar Vinter i Kaninlandet med karuseller, kaninteater, skridskodisco och kaninfyrverkeri vid nyår. Resten av parken är stängd då. Kolla liseberg.se för exakta öppettider."
+              },
+              {
+                "q": "Vad är öppet på julafton i Göteborg?",
+                "a": "Universeum är öppet på julafton kl 10–15 och på juldagen kl 10–18, och Nordstan håller öppet på julafton kl 10–14, enligt Göteborg & Co. Flera restauranger i centrum har också öppet 23–25 december. Kolla alltid respektive webbplats för aktuella tider."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "guider": [
@@ -7727,6 +8145,81 @@
             "published": "2026-10-07",
             "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Malmö 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Malmö 2026/2027 är preliminärt 21 december–10 januari. Tips på museer, Hylliebadet och Folkets Park för barnfamiljer under lovet.",
+            "h1": "Jullov i Malmö 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Malmö 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "Malmö är en bra stad för jullov med barn eftersom museerna har fri entré för barn och badhusen är varma, även när vädret inte är det. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 3,
+                "ageMax": 16,
+                "name": "Malmö Museer (Malmöhus slott)",
+                "type": "paid",
+                "price": "100 kr vuxen, gratis under 19 år (2026)",
+                "indoor": true,
+                "area": "Skeppsbron",
+                "link": "https://malmo.se/museum",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 200 kr — barn och unga under 19 år gratis",
+                "desc": "Bra regnalternativ med Naturmuseets dinosaurieutställning Skånska dinosaurier och andra jättegamla djur, Akvariet och Båtlekrummet för de yngsta. Barn och unga upp till 19 år har fri entré, vuxna betalar 100 kr för kombibiljett till alla husen. Kolla öppettider för jul och nyår på malmo.se/museum."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 17,
+                "name": "Hylliebadet",
+                "type": "paid",
+                "price": "120/55/30 kr (gratis 0–3 år)",
+                "indoor": true,
+                "area": "Hyllie",
+                "link": "https://malmo.se/Uppleva-och-gora/Bada-och-simma/Hylliebadet/Familjebad--vattenlek/Lovaktiviteter/Hostlov.html",
+                "desc": "Lekbassängen Simmet, ett 3-meters hopptorn och en vattenhinderbana ger variation för både de minsta och de som vill busa loss. Hylliebadet brukar ordna särskilda lovaktiviteter — kolla badets egen sida för jullovsprogram och julhelgens öppettider innan ni åker."
+              },
+              {
+                "ageMin": 1,
+                "ageMax": 3,
+                "name": "Museets stora konst för de små",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": true,
+                "area": "Moderna Museet Malmö",
+                "link": "https://malmo.se/museum",
+                "desc": "Drop-in konstverkstad för barn 1–3 år och deras vuxna, normalt varje tisdag kl 14–16.30 i Verkstan utan föranmälan, med två konstpedagoger på plats. Fri entré för barn och en medföljande vuxen. Kolla att verkstaden går under lovveckorna."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Vinter i Folkets Park",
+                "type": "free",
+                "price": "Se malmo.se för program och priser",
+                "indoor": false,
+                "area": "Möllevången",
+                "link": "https://malmo.se/Folkets-Park/Material/Vinter-i-Folkets-Park.html",
+                "desc": "Malmö stad öppnade vintersäsongen Vinterland i Folkets Park med skridskobana och ljusinstallationer även vintern 2025. Programmet för 2026/27 hade vi inte kunnat bekräfta när vi skrev det här, så kolla malmo.se för aktuella datum, öppettider och priser."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Malmö 2026/2027?",
+                "a": "Jullovet i Malmö 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Vad kan man göra inomhus med barn i Malmö på jullovet?",
+                "a": "Malmö Museer (Malmöhus slott) har fri entré för barn och unga under 19 år, Hylliebadet har lekbassäng, hopptorn och vattenhinderbana, och Moderna Museet Malmö ordnar konstverkstad för 1–3-åringar. Kolla öppettider för jul och nyår innan ni åker."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "guider": [
@@ -7994,6 +8487,108 @@
             "published": "2026-10-09",
             "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Uppsala 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Uppsala 2026/2027 är preliminärt 21 december–10 januari. Tips på pulka, skridskor, museer och badhus för barnfamiljer under lovet.",
+            "h1": "Jullov i Uppsala 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Uppsala 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "Uppsala har både inomhusalternativ som museer och äventyrsbad och, om snön kommer, pulkabackar och skridskoåkning nära centrum. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 4,
+                "ageMax": 17,
+                "name": "Evolutionsmuseet",
+                "type": "paid",
+                "price": "70 kr vuxen, gratis för barn",
+                "indoor": true,
+                "area": "Norbyvägen",
+                "link": "https://www.uu.se/evolutionsmuseet/",
+                "familyCost": "Familj (2 vuxna + 2 barn): 140 kr — barn går alltid gratis",
+                "desc": "Uppsala universitets naturhistoriska museum med Nordens största samling av äkta dinosaurieskelett, plus utställningar om mineraler, fossil och människans utveckling. Biljetten gäller båda husen, och barn och unga upp till 17 år går alltid in gratis. Kolla öppettider för helgdagarna på uu.se/evolutionsmuseet."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 12,
+                "name": "Biotopia",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": true,
+                "area": "Centrala Uppsala, vid slottet",
+                "link": "https://biotopia.nu/",
+                "desc": "Naturmuseum med levande miljöer över Upplands natur — skärgård, fågelsjö, vinterland och skog — fyllda med ljud, ljus och dofter som visar djuren på nära håll. Fri entré, mitt i centrala Uppsala vid slottet."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Fyrishovs Äventyrsbad",
+                "type": "paid",
+                "price": "75–95 kr barn, 95–115 kr vuxen (beroende på dag)",
+                "indoor": true,
+                "area": "Fyrislund",
+                "link": "https://fyrishov.se/bad/aventyrsbad/",
+                "familyCost": "Familj (2 vuxna + 2 barn), lovpris: ca 420 kr",
+                "desc": "Äventyrsbad med två rutschkanor (en interaktiv med ljud, ljus och poängräkning), jetströmkanal, vattenfall, en liten grotta och lekvatten för de minsta i 30-gradigt vatten. Bassängdjupet går från 30 cm till 1,2 m. På helger och skollov gäller de högre dagspriserna."
+              },
+              {
+                "ageMin": 1,
+                "ageMax": 16,
+                "name": "Turbo Sport & Adventure Zone",
+                "type": "paid",
+                "price": "219–239 kr (4+ år), 99–119 kr (1–3 år)",
+                "indoor": true,
+                "area": "Gränbystaden",
+                "link": "https://turbosportzone.se/",
+                "desc": "Studsmattepark med 51 studsmattor, dunk zone, stuntzon, parkourbana och Ninja Warrior-bana, plus en 60 kvm lekyta för de allra minsta (0–3 år). Studsmattestrumpor är obligatoriska för alla, även vuxna, 49 kr paret om ni saknar egna. Barn under 10 år måste ha en vuxen med sig hela besöket."
+              },
+              {
+                "ageMin": 2,
+                "ageMax": 14,
+                "name": "Pulka i Slottsbacken, Hammarskog och Sunnerstagropen",
+                "type": "free",
+                "price": "Gratis (café och uthyrning kan kosta)",
+                "indoor": false,
+                "area": "Slottsbacken / Hammarskog / Sunnersta",
+                "link": "https://destinationuppsala.se/en/guides-inspiration/winter-holiday-activities-in-uppsala-with-children/",
+                "desc": "Destination Uppsala nämner Slottsbacken under slottet, pulkabacken framför herrgården i Hammarskogs naturreservat och Sunnerstagropen vid Uppsala Alpina Center ca 8 km söder om centrum, där det finns café och grillplatser. Allt förutsätter snö."
+              },
+              {
+                "ageMin": 3,
+                "ageMax": 16,
+                "name": "Skridskor i ishall eller på natur-is",
+                "type": "paid",
+                "price": "Se respektive arena",
+                "indoor": true,
+                "area": "Relitahallen, Gordon Nice Ice Arena m.fl.",
+                "link": "https://destinationuppsala.se/en/guides-inspiration/winter-holiday-activities-in-uppsala-with-children/",
+                "desc": "Publik skridskoåkning ordnas i ishallarna Relitahallen (Gränby), Gordon Nice Ice Arena (Valsätra) och Thorséns Ice Hall (Björklinge). Utomhus, om isen håller, finns bland annat Studenternas och rensade sjöbanor vid Fjällnora och Hammarskog — kolla respektive arenas schema och isläge innan ni åker."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Uppsala 2026/2027?",
+                "a": "Jullovet i Uppsala 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Vad finns att göra inomhus med barn i Uppsala på jullovet?",
+                "a": "Evolutionsmuseet (gratis för barn), Biotopia (gratis), Fyrishovs Äventyrsbad och Turbo Sport & Adventure Zone är de inomhusalternativ vi har samlat. Kolla öppettider för jul och nyår innan ni åker."
+              },
+              {
+                "q": "Går det att åka skridskor i Uppsala på jullovet?",
+                "a": "Ja, i ishallarna Relitahallen, Gordon Nice Ice Arena och Thorséns Ice Hall finns publik skridskoåkning. Utomhusisar, som på Studenternas eller rensade sjöbanor, beror på vädret — följ respektive arenas kanaler för isläget."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "guider": [
@@ -8275,6 +8870,82 @@
             "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026",
             "img": "photo-1636555269230-74ff8f069e5b"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Umeå 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Umeå 2026/2027 är preliminärt 21 december–10 januari. Tips på Curiosum, Navet, Leo's Lekland och museer för barnfamiljer under lovet.",
+            "h1": "Jullov i Umeå 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Umeå 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "I Umeå ligger fokus på inomhusalternativ som vetenskapscentret Curiosum, badet Navet och Västerbottens museum, som alla fungerar oavsett väder. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 3,
+                "ageMax": 16,
+                "name": "Curiosum",
+                "type": "paid",
+                "price": "120 kr vuxen (helger/skollov), gratis för barn och ungdom 0–19 år",
+                "indoor": true,
+                "area": "Umeå centrum",
+                "link": "https://www.curiosum.umu.se/en/",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 240 kr — barn och ungdom 0–19 år alltid gratis",
+                "desc": "Vetenskapscentret erbjuder kupolbiografen Wisdome Umeå, robotprogrammering, labbexperiment och ett Makerspace att bygga i. Barn och ungdomar upp till 19 år har alltid fri entré, medan vuxna betalar 120 kr på helger och skollov. Barn under 13 år måste ha en vuxen med sig, max fyra barn per vuxen."
+              },
+              {
+                "ageMin": 1,
+                "ageMax": 16,
+                "name": "Navet",
+                "type": "paid",
+                "price": "145 kr vuxen, 100 kr barn 2–17 år (bad)",
+                "indoor": true,
+                "area": "Umeå centrum",
+                "link": "https://navet.umea.se/english/",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 490 kr",
+                "desc": "Äventyrsbadet har två rutschkanor — på den längre, Aqua Smash, kan man tävla i ett ljud- och ljusstyrt poängspel på väg ner — samt strömkanal, klättervägg ovanför vattnet, vågmaskin och den varma Pluppbassängen med egen minirutschkana för de minsta. Det är 7-årsgräns för att åka rutschkanorna."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 10,
+                "name": "Leo's Lekland Umeå",
+                "type": "paid",
+                "price": "Under 1 år fri entré, 1-åring halva barnpriset, barn 2–17 år varierande pris",
+                "indoor": true,
+                "area": "Ersboda",
+                "link": "https://www.leoslekland.se/en/our-playcenters/umea",
+                "desc": "Inomhuslekland med arton lekstationer: bollhav, trampoliner, Parkour, Spider Tower, Volcano Climb och fem rutschkanor, plus Mini World — en egen lekyta för barn under fem år. Priset för barn 2–17 år varierar efter dag och efterfrågan, så kolla aktuellt pris vid bokning."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Västerbottens museum",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": true,
+                "area": "Gammlia",
+                "link": "https://www.vbm.se/en",
+                "desc": "Permanenta utställningar om Västerbottens historia, bland annat skidutställningen med Kalvträskskidan — ett av världens äldsta skidfynd — samt Fiske- och sjöfartsmuseet och samiska föremål, allt inomhus och gratis."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Umeå 2026/2027?",
+                "a": "Jullovet i Umeå 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Vad kostar det att besöka Curiosum under jullovet?",
+                "a": "Barn och ungdomar 0–19 år har alltid fri entré. Vuxna betalar 120 kr på helger och skollov, och barn under 13 år måste ha en vuxen med sig."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "img": "photo-1681803843401-67d808538e98",
@@ -8544,6 +9215,92 @@
             "updated": "2026-10-29",
             "dateLabel": "26–30 oktober 2026",
             "img": "photo-1576227058206-2e98638d2228"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Västerås 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Västerås 2026/2027 är preliminärt 21 december–10 januari. Tips på Kokpunkten, museer och Prison Island för barnfamiljer under lovet.",
+            "h1": "Jullov i Västerås 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Västerås 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "Västerås har två gratismuseer i samma hus, ett äventyrsbad i ett gammalt kraftverk och en isbana i city som enligt arrangören invigs i samband med julmarknaden. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Kokpunkten Actionbad",
+                "type": "paid",
+                "price": "Från 149 kr/person (pris varierar med ankomsttid)",
+                "indoor": true,
+                "area": "Öster Mälarstrand, vid hamnen",
+                "link": "https://kokpunkten.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): från ca 596 kr (149 kr/person)",
+                "desc": "Äventyrsbad i ett gammalt ångkraftverk med VR-rutschbana där man åker ner med VR-headset på, tävlingsbanan SM-rutschbana (rekordet är 10,23 sekunder) samt lekarna The Wall och Double Racer. Kolla öppettider och bokning för julhelgen på kokpunkten.se."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Västerås konstmuseum",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": true,
+                "area": "Centrum, Karlsgatan 2",
+                "link": "https://vasteraskonstmuseum.se/",
+                "desc": "Konstmuseum med fri entré, centralt på Karlsgatan 2, med ett konstlabb för barn. Kolla museets sida för jullovets program och helgdagarnas öppettider."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Västmanlands läns museum",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": true,
+                "area": "Centrum, Karlsgatan 2",
+                "link": "https://vastmanlandslansmuseum.se/",
+                "desc": "Länsmuseum med fri entré, i samma hus som konstmuseet på Karlsgatan 2. Det gör det enkelt att kombinera två museer en kall lovdag. Kolla museets sida för jullovets program."
+              },
+              {
+                "ageMin": 8,
+                "ageMax": 16,
+                "name": "Prison Island Västerås",
+                "type": "paid",
+                "price": "Barn 8–17 år 120–220 kr, vuxen 180–320 kr (beroende på längd)",
+                "indoor": true,
+                "area": "Centrum, Kopparbergsvägen 13",
+                "link": "https://prisonislandvasteras.se/en/",
+                "desc": "Lagbaserat äventyr i fängelsemiljö med 31 olika celler att knäcka inom en tidsgräns på ca 1,5–5 minuter var. Rekommenderas från 8 år; barn upp till 7 år går in gratis med en betalande vuxen. Räkna med minst två timmar för att hinna med alla celler första gången."
+              },
+              {
+                "ageMin": 3,
+                "ageMax": 16,
+                "name": "Isbana i city",
+                "type": "paid",
+                "price": "Se vasterascity.com för pris och öppettider",
+                "indoor": false,
+                "area": "Västerås centrum",
+                "link": "https://vasterascity.com/julmarknad-2026/",
+                "desc": "Västerås Citysamverkan skriver att julmarknaden 22 november är startskottet för vinterbelysningen och invigningen av isbanan i city. Vi har inte kunnat bekräfta öppettider eller avgifter för jullovet, så kolla vasterascity.com innan ni åker."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Västerås 2026/2027?",
+                "a": "Jullovet i Västerås 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Vilka museer är gratis i Västerås?",
+                "a": "Västerås konstmuseum och Västmanlands läns museum har fri entré och ligger i samma hus på Karlsgatan 2 i centrum."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "img": "photo-1613404040238-49587344a9b4",
@@ -8834,6 +9591,84 @@
             "updated": "2026-10-29",
             "img": "photo-1508694396858-5a25e4301594",
             "totalCost": "Gör ni alla fyra under lovveckan landar det på ca 1 570 kr för en familj på två vuxna och två barn (3–11 år) — de flesta väljer förstås bara ett par av ställena."
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Linköping 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Linköping 2026/2027 är preliminärt 21 december–10 januari. Tips på Flygvapenmuseum, Tinnerbäcksbadet och JumpYard för barnfamiljer.",
+            "h1": "Jullov i Linköping 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Linköping 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "Linköpings julmarknad i Gamla Linköping är över innan lovet börjar, men stadens museer, badhus och studsmatteparker fungerar fint som lovtips. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Flygvapenmuseum",
+                "type": "paid",
+                "price": "120 kr vuxen (sep–maj), gratis för barn och unga under 18",
+                "indoor": true,
+                "area": "Malmslätt",
+                "link": "https://flygvapenmuseum.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): 240 kr — barn och unga under 18 går gratis",
+                "desc": "Interaktivt flygmuseum med science centret Flyglabbet: bygg en egen virtuell flygmaskin, sitt i jaktplanet Draken och testa flygsimulatorer för både JAS 39 Gripen E och SK 60. Vissa stationer kan vara högljudda, men hörselproppar finns att hämta i receptionen."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Östergötlands museum",
+                "type": "paid",
+                "price": "130 kr vuxen, gratis för barn och unga under 18",
+                "indoor": true,
+                "area": "Raoul Wallenbergs plats",
+                "link": "https://ostergotlandsmuseum.se/",
+                "familyCost": "Familj (2 vuxna + 2 barn): 260 kr — barn och unga under 18 går gratis",
+                "desc": "Länsmuseum med lek- och upptäckaryta för barn (Viljans värld) och kreativa Atélje Rut. Utställningarna byts över tid, så kolla museets sida för vad som visas och vilka program som går under jullovet."
+              },
+              {
+                "ageMin": 3,
+                "ageMax": 16,
+                "name": "JumpYard Linköping",
+                "type": "paid",
+                "price": "Från 199 kr/timme, familjebiljett från 599 kr för 4",
+                "indoor": true,
+                "area": "Norra Svedengatan 13",
+                "link": "https://jumpyard.se/linkoping/intrade/",
+                "familyCost": "Familjebiljett 599 kr för 4 personer (betala för 3)",
+                "desc": "Studsmattepark med foam pit, Jump Tower, Mini Ninja-bana för de minsta (från 3 år), Clip'n Climb-klättervägg och reaktionsspelet Cardio Wall. Zipline-attraktionen SkyRider kostar extra och ingår inte i entrépriset."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Tinnerbäcksbadet",
+                "type": "paid",
+                "price": "Barn 3–11 år 85 kr, ungdom 12–17 år 100 kr, vuxen 150 kr (lovpris)",
+                "indoor": true,
+                "area": "Tinnerbäck",
+                "link": "https://www.medley.se/tinnerbacksbadet/priser/",
+                "familyCost": "Familj (2 vuxna + 2 barn 3–11 år): ca 470 kr (lovpris)",
+                "desc": "Äventyrsbad med tre rutschkanor, vågbassäng, strömkanal, bubbelpool och en egen uppvärmd del (32°C) för de minsta. Familjebadets öppettider kan variera under lov och helgdagar, så dubbelkolla Medleys bassängschema innan ni åker."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Linköping 2026/2027?",
+                "a": "Jullovet i Linköping 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Är Gamla Linköpings julmarknad öppen på jullovet?",
+                "a": "Nej, marknaden körs 28–29 november och 5–6 december 2026, alltså före jullovet. Se vår guide till julmarknader i Linköping för detaljer."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "img": "photo-1652459002555-bef7e22211da",
@@ -9091,6 +9926,93 @@
             "published": "2026-10-21",
             "updated": "2026-10-29",
             "img": "photo-1642290172761-a919a8627734"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Helsingborg 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Helsingborg 2026/2027 är preliminärt 21 december–10 januari. Tips på Tropikariet, Kärnan, Dunkers och isbanan på Sundstorget.",
+            "h1": "Jullov i Helsingborg 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Helsingborg 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "Helsingborg har sina viktigaste lovtips samlade i centrum: Tropikariet, Kärnan och Dunkers Kulturhus, plus stadens vinterljus och isbana på Sundstorget. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Tropikariet",
+                "type": "paid",
+                "price": "Från ca 225 kr",
+                "indoor": true,
+                "area": "Hävertgatan 21",
+                "link": "https://book.visithelsingborg.com/en/adventure/1418-entryticket-to-tropikariet-in-helsingborg",
+                "desc": "Inomhuszoo med krokodiler, ormar, flyghundar, apor och skorpioner från hela världen — helt vädersäkert och perfekt en kall lovdag. Djurmöten och orm- och krokodilklappning kostar extra och bokas separat. Kolla öppettider för jul och nyår innan ni åker."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Dunkers Kulturhus",
+                "type": "paid",
+                "price": "Från ca 120 kr",
+                "indoor": true,
+                "area": "Helsingborgs hamn",
+                "link": "https://book.engelholm.com/en/adventure/851-entrance-to-dunker-s-culture-house-in-helsingborg",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 240 kr — barn och unga upp till 18 år gratis",
+                "desc": "Permanenta utställningen Om Helsingborg tar barnen 10 000 år bakåt i stadens historia med AR och 3D-animationer. Fri entré för barn och unga upp till 18 år."
+              },
+              {
+                "ageMin": 4,
+                "ageMax": 16,
+                "name": "Kärnan",
+                "type": "paid",
+                "price": "Från ca 100 kr",
+                "indoor": true,
+                "area": "Helsingborgs centrum",
+                "link": "https://book.visithelsingborg.com/en/adventure/882-karnan-in-helsingborg",
+                "familyCost": "Familj (2 vuxna + 2 barn): ca 200 kr — barn och unga upp till 18 år gratis",
+                "desc": "Historiskt 700 år gammalt vakttorn mitt i centrum, med branta trappor upp till en utsiktsplattform med vid vy över Öresund och Helsingör. Barn och unga upp till 18 år har fri entré. Drop-in-tiderna är begränsade utanför högsäsong, så kolla öppettider och ev. förbokning inför just er dag."
+              },
+              {
+                "ageMin": 3,
+                "ageMax": 16,
+                "name": "Isbanan på Sundstorget",
+                "type": "paid",
+                "price": "Se helsingborg.se för pris och uthyrning",
+                "indoor": false,
+                "area": "Sundstorget",
+                "link": "https://helsingborg.se/",
+                "desc": "Helsingborgs stad öppnade isbanan på Sundstorget vid julskyltningen 1 december 2024 och höll den öppen dygnet runt till och med 23 februari; Helsingborgs Hockey Club Ungdom hyrde ut skridskor och hjälmar vissa tider. Upplägget för 2026/27 hade vi inte kunnat bekräfta, så kolla helsingborg.se."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Vinterljus i centrum",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": false,
+                "area": "Stortorget / Gustav Adolfs torg",
+                "link": "https://helsingborg.se/",
+                "desc": "Staden pryds med vinterljus som i fjol tändes helt till första advent, med stora ljusträd på Stortorget och Gustav Adolfs torg. Ljuset släcks i omvänd ordning från Tjugondag Knut, och de sista träden lyste till slutet av februari. En enkel och gratis kvällspromenad med barnen — kolla helsingborg.se för årets schema."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Helsingborg 2026/2027?",
+                "a": "Jullovet i Helsingborg 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Finns det en isbana i Helsingborg på jullovet?",
+                "a": "Helsingborg har haft en isbana på Sundstorget som öppnat vid julskyltningen i början av december och hållits öppen över jul och nyår. Kolla helsingborg.se för 2026/27 års öppettider, priser och när skridskor kan hyras."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "img": "photo-1578331401636-b1cccece71e1",
@@ -9349,6 +10271,83 @@
             "published": "2026-10-21",
             "updated": "2026-10-29",
             "img": "photo-1652459002369-654b7fefe6a3"
+          },
+          {
+            "lovSlug": "jullov",
+            "lovName": "Jullov",
+            "emoji": "🎄",
+            "dateStart": "2026-12-21",
+            "dateEnd": "2027-01-10",
+            "week": "52–1",
+            "title": "Jullov i Norrköping 2026/2027 – tips | Res med Barn",
+            "description": "Jullovet i Norrköping 2026/2027 är preliminärt 21 december–10 januari. Tips på Centralbadet, Arbetets museum, Visualiseringscenter C och mer.",
+            "h1": "Jullov i Norrköping 2026/2027 — vad ni kan göra",
+            "intro": [
+              "Jullovet i Norrköping 2026/2027 sträcker sig preliminärt från måndag 21 december till söndag 10 januari (vecka 52–1) — exakta datum kan skilja sig någon dag mellan skolor, så dubbelkolla gärna med ert eget barns skola.",
+              "Norrköping har flera gratisalternativ inomhus, som Arbetets museum och utställningarna på Visualiseringscenter C, plus Centralbadet och Jumpyard för en aktivare dag. De flesta julmarknader hinner avslutas innan lovet börjar, så här har vi samlat sådant som fungerar under själva lovdagarna. Öppettider kring jul, nyår och trettondagen avviker ofta, så kolla alltid arrangörens egen sida innan ni åker."
+            ],
+            "tips": [
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Arbetets museum",
+                "type": "free",
+                "price": "Gratis",
+                "indoor": true,
+                "area": "Laxholmen",
+                "link": "https://www.arbetetsmuseum.se/?p=353",
+                "desc": "Gratis entré, med drop-in-pyssel i Kreativa verkstan och en egen lekhörna, Lilla Arbetets, för barn upp till 6 år. Barnen kan lösa uppdrag som Bamses källspanare eller Museideckarna, hämtade i receptionen. Bron Holmbron norr om museet byggs om till våren 2027, så vissa gångvägar kan vara avstängda. Kolla öppettider för jul och nyår."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 16,
+                "name": "Visualiseringscenter C",
+                "type": "paid",
+                "price": "Fri entré till utställningarna; kupolshow (WISDOME) 120 kr vuxen, 80 kr barn 4–17 år, gratis 0–3 år",
+                "indoor": true,
+                "area": "Kungsgatan 54",
+                "link": "https://visualiseringscenter.se/en/wisdome/",
+                "familyCost": "Kupolshow, familj (2 vuxna + 2 barn): ca 400 kr — övriga utställningar alltid gratis",
+                "desc": "Gratis entré till alla utställningar i huset, men kupolshowerna i WISDOME kostar extra. Kolla visualiseringscenter.se för jullovets visningar och om bokning krävs."
+              },
+              {
+                "ageMin": 0,
+                "ageMax": 17,
+                "name": "Centralbadet",
+                "type": "paid",
+                "price": "Vuxen 115 kr, barn 3–17 år 70 kr, familjebiljett 300 kr",
+                "indoor": true,
+                "area": "Badhusgatan 4",
+                "link": "https://www.medley.se/centralbadet/priser/",
+                "familyCost": "Familjebiljett: 300 kr",
+                "desc": "Fyra inomhusbassänger: 25-metersbassängen, multibassängen, äventyrsbadet med klättervägg och en egen barnpool för de minsta. På helger och lov brukar sjöodjuret Flodis dyka upp och busa med badgästerna. Familjebiljett för 2 vuxna + 2 barn kostar 300 kr. Dubbelkolla öppettider för helgdagarna."
+              },
+              {
+                "ageMin": 3,
+                "ageMax": 16,
+                "name": "Jumpyard Norrköping",
+                "type": "paid",
+                "price": "Från 140 kr/60 min, familjebiljett från 420 kr",
+                "indoor": true,
+                "area": "Lundatorpsvägen 3",
+                "link": "https://jumpyard.se/norrkoping/priser/",
+                "familyCost": "Familjebiljett: från 420 kr",
+                "desc": "Studsmattepark med foam pit, Clip'n Climb-klättervägg och reaktionsspelet Cardio Wall som ingår i entrén, plus Mini Ninja-bana från 3 år. Höghöjdsbanan (40 kr) och zipline-attraktionen SkyRider (30 kr/åk, minst 110 cm) kostar extra."
+              }
+            ],
+            "faq": [
+              {
+                "q": "Vilka veckor är jullovet i Norrköping 2026/2027?",
+                "a": "Jullovet i Norrköping 2026/2027 är preliminärt 21 december–10 januari, vecka 52 till vecka 1. Datumen kan skilja sig någon dag mellan olika skolor och kommuner, så kolla med ert eget barns skola."
+              },
+              {
+                "q": "Vilka gratisaktiviteter finns i Norrköping med barn?",
+                "a": "Arbetets museum har fri entré, och Visualiseringscenter C har gratis utställningar (kupolshowerna kostar extra). Kolla öppettider för jul och nyår innan ni åker."
+              }
+            ],
+            "published": "2026-11-12",
+            "updated": "2026-11-12",
+            "dateLabel": "21 december 2026 – 10 januari 2027"
           }
         ],
         "img": "photo-1637425792927-34bd20864549",

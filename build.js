@@ -1272,7 +1272,7 @@ ${faqHtml(g.faq)}
   <a href="/stader/${s.slug}/">${icon(s.emoji)} Alla aktiviteter i ${esc(s.name)} →</a>
   ${others.map(x => `<a href="/stader/${s.slug}/${x.guideSlug}/">${icon(x.emoji)} ${esc(x.guideName)}</a>`).join('\n  ')}
 </div>`;
-      write(`stader/${s.slug}/${g.guideSlug}/index.html`, page(url, meta, '/stader/', inner, [bc.jsonld, itemList], 'Article'));
+      write(`stader/${s.slug}/${g.guideSlug}/index.html`, page(url, meta, '/stader/', inner, g.faq ? [bc.jsonld, itemList, faqLd(g.faq)] : [bc.jsonld, itemList], 'Article'));
     }
   }
 }
