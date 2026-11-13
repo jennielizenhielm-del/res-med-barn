@@ -1474,12 +1474,40 @@
       .reveal { opacity: 1; transform: none; transition: none; }
       .detail { transition: none; }
     }
+
+/* ---- COOKIE-BANNER (samtycke) ---- */
+.cookie-banner {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1.5rem;
+  padding: 1rem max(1rem, env(safe-area-inset-right)) calc(1rem + env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
+  background: var(--bg-alt); color: var(--text); border-top: 1px solid var(--border);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+}
+.cookie-banner[hidden] { display: none !important; }
+.cookie-banner-text { flex: 1 1 22rem; min-width: 0; font-size: 0.9rem; line-height: 1.5; }
+.cookie-banner-text p { margin: 0.2rem 0 0; }
+.cookie-banner-text a { color: var(--accent); text-decoration: underline; }
+.cookie-banner-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 0 0 auto; }
+.cookie-btn {
+  font: inherit; font-size: 0.9rem; font-weight: 600; cursor: pointer;
+  padding: 0.6rem 1.1rem; border-radius: var(--radius, 8px);
+  background: var(--bg); color: var(--text); border: 1px solid var(--text);
+}
+.cookie-btn:hover { border-color: var(--accent); color: var(--accent); }
+.cookie-btn:focus-visible, .cookie-settings-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cookie-settings-link { font: inherit; background: none; border: 0; padding: 0; color: inherit; text-decoration: underline; cursor: pointer; }
+@media (max-width: 640px) { .cookie-banner-actions { width: 100%; } .cookie-btn { flex: 1 1 0; } }
+
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8F9VYNYZRM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Consent Mode v2: allt nekat som standard tills besökaren väljer i cookie-bannern.
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+    gtag('set', 'ads_data_redaction', true);
+    try { if (localStorage.getItem('rmb_cookie_consent') === 'all') { gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' }); } } catch (err) {}
     gtag('js', new Date());
     gtag('config', 'G-8F9VYNYZRM');
     gtag('config', 'AW-18385738907');
@@ -1791,14 +1819,51 @@
       <a href="/artiklar/"><svg class="ico ico-doc" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg> Alla artiklar</a>
       <a href="/om-oss/">Om oss</a>
       <a href="/kontakt/">Kontakt</a>
+      <a href="/cookies/">Cookies och integritet</a>
     </div>
   </div>
   <div class="footer-bottom">
     <span>&copy; 2024–2026 Res med Barn</span>
     <span>Gjord med <svg class="ico ico-heart" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z"/></svg> för barnfamiljer i Sverige</span>
     <span>Innehåller annonslänkar från Adtraction och TradeDoubler</span>
+    <span><button type="button" class="cookie-settings-link" data-cookie-settings>Cookie-inställningar</button></span>
   </div>
 </footer>
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <div class="cookie-banner-text">
+    <strong>Cookies</strong>
+    <p>Vi använder cookies från Google för att mäta besök (Analytics) och se hur våra annonser presterar (Ads). Det sker bara om du tackar ja. Läs mer i vår <a href="/cookies/">cookiepolicy</a>.</p>
+  </div>
+  <div class="cookie-banner-actions">
+    <button type="button" class="cookie-btn" data-consent="necessary">Endast nödvändiga</button>
+    <button type="button" class="cookie-btn" data-consent="all">Acceptera alla</button>
+  </div>
+</div>
+<script>
+(function () {
+  var KEY = 'rmb_cookie_consent';
+  var el = document.getElementById('cookie-banner');
+  if (!el) return;
+  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function apply(v) {
+    var g = v === 'all' ? 'granted' : 'denied';
+    if (typeof gtag === 'function') gtag('consent', 'update', { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g });
+  }
+  function show() { el.hidden = false; }
+  if (!get()) show();
+  el.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-consent]');
+    if (!b) return;
+    var v = b.getAttribute('data-consent');
+    save(v); apply(v); el.hidden = true;
+  });
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('[data-cookie-settings]')) { e.preventDefault(); show(); }
+  });
+})();
+</script>
+
 
 <!-- DETAIL VIEW -->
 <div class="detail" id="detailView" role="dialog" aria-modal="true" aria-label="Resmålsguide">
