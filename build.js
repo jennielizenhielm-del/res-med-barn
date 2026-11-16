@@ -35,7 +35,22 @@ const svDate = iso => {
 // speglar verkliga per-sidesdatum i stället för ett enda globalt byggdatum.
 const URL_DATES = {};
 // Author-identitet (pseudonym) som återanvänds i strukturerad data på varje sida.
-const personLd = () => ({ '@type': 'Person', name: C.site.author.name, description: C.site.author.bio });
+const personLd = () => ({ '@type': 'Person', name: C.site.author.name, description: C.site.author.bio, url: `${DOMAIN}/om-oss/` });
+// Organization-schema för Article.publisher — Google rekommenderar ett publisher-fält
+// skilt från author (author = pseudonymen som skrivit texten, publisher = sajten).
+const publisherLd = () => ({ '@type': 'Organization', name: C.site.name, url: `${DOMAIN}/`, logo: { '@type': 'ImageObject', url: `${DOMAIN}/logo.png` } });
+// Löser en meta.img (Unsplash-foto-id, egen /static/-fil eller redan absolut URL) till en
+// absolut bild-URL för strukturerad data/og:image. Faller alltid tillbaka till den egna
+// logotypen istället för att gissa ett nytt Unsplash-foto-id (se ways-of-working: foto-id:n
+// måste verifieras genom att faktiskt öppna sidan, aldrig gissas fram).
+function resolveImg(img, w) {
+  if (!img) return { url: `${DOMAIN}/logo.png`, w: null, h: null };
+  if (/^https?:\/\//.test(img)) return { url: img, w: null, h: null };
+  if (img.startsWith('/')) return { url: `${DOMAIN}${img}`, w: null, h: null };
+  const base = img.startsWith('premium_photo-') ? 'plus' : 'images';
+  const h = Math.round(w * 9 / 16);
+  return { url: `https://${base}.unsplash.com/${img}?q=80&w=${w}&h=${h}&fit=crop&auto=format`, w, h };
+}
 // Bygger dateModified/datePublished/author-schema för en sida. type styr
 // schema.org-typen (Article för redaktionellt innehåll, annars WebPage/etc).
 function pageLd(meta, url, updated, published, type) {
@@ -48,7 +63,11 @@ function pageLd(meta, url, updated, published, type) {
     dateModified: updated,
     author: personLd()
   };
-  if (t === 'Article') ld.headline = meta.h1 || meta.title;
+  if (t === 'Article') {
+    ld.headline = meta.h1 || meta.title;
+    ld.image = resolveImg(meta.img, 1200).url;
+    ld.publisher = publisherLd();
+  }
   return ld;
 }
 
@@ -197,6 +216,7 @@ const warnLen = (page, field, value, max) => {
 function head(meta, url) {
   warnLen(url, 'meta title', meta.title, 60);
   warnLen(url, 'meta description', meta.description, 155);
+  const og = resolveImg(meta.img, 1200);
   return `<!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -209,11 +229,19 @@ function head(meta, url) {
 <meta property="og:title" content="${esc(meta.title)}">
 <meta property="og:description" content="${esc(meta.description)}">
 <meta property="og:url" content="${DOMAIN}${url}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="${meta.ogType || 'website'}">
+<meta property="og:image" content="${og.url}">
+${og.w ? `<meta property="og:image:width" content="${og.w}">\n<meta property="og:image:height" content="${og.h}">` : ''}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(meta.title)}">
+<meta name="twitter:description" content="${esc(meta.description)}">
+<meta name="twitter:image" content="${og.url}">
 <meta property="og:site_name" content="${esc(C.site.name)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Archivo:wght@300;400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/styles.css">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -287,7 +315,7 @@ function nav(active) {
     </li>`;
   return `
 <nav class="nav" aria-label="Huvudmeny">
-  <a href="/" class="nav-brand"><img src="/logo.png" alt="Res med Barn" class="nav-logo">Res med <span>Barn</span></a>
+  <a href="/" class="nav-brand"><img src="/logo.png" alt="Res med Barn" class="nav-logo" loading="eager">Res med <span>Barn</span></a>
   <ul class="nav-links">
     ${before.map(li).join('\n    ')}
     ${dropdownLi}
@@ -305,24 +333,24 @@ function footer() {
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-about">
-      <img src="/logo.png" alt="Res med Barn" style="height: 90px; width: auto; margin-bottom: 0.75rem; display: block;">
-      <h3>Res med <span>Barn</span></h3>
+      <img src="/logo.png" alt="Res med Barn" loading="lazy" style="height: 90px; width: auto; margin-bottom: 0.75rem; display: block;">
+      <p class="footer-brand">Res med <span>Barn</span></p>
       <p>${esc(C.site.footerText)}</p>
     </div>
     <div class="footer-col">
-      <h4>Guider</h4>
+      <p class="footer-col-label">Guider</p>
       ${C.ages.map(a => `<a href="/guider/${a.slug}/">${icon(a.emoji)} ${esc(a.name)}</a>`).join('\n      ')}
     </div>
     <div class="footer-col">
-      <h4>Topplistor</h4>
+      <p class="footer-col-label">Topplistor</p>
       ${C.topplistor.lists.filter(l => !l.paused).map(l => `<a href="/topplistor/${l.slug}/">${esc(l.name)}</a>`).join('\n      ')}
     </div>
     <div class="footer-col">
-      <h4>Städer</h4>
+      <p class="footer-col-label">Städer</p>
       ${C.stader.cities.map(s => `<a href="/stader/${s.slug}/">${icon(s.emoji)} ${esc(s.name)}</a>`).join('\n      ')}
     </div>
     <div class="footer-col">
-      <h4>Om sajten</h4>
+      <p class="footer-col-label">Om sajten</p>
       <a href="/packlista/">Smart packlista</a>
       <a href="/foraldramedgivande/">Föräldramedgivande</a>
       <a href="/verktyg/">${icon('🧰')} Alla verktyg</a>
@@ -403,13 +431,20 @@ const IMG = (id, w) => `https://${id.startsWith('premium_photo-') ? 'plus' : 'im
 // Unsplash-URL byggs. aspect (valfri) sätter en egen
 // aspect-ratio på hero-boxen istället för CSS-standarden, för bilder som
 // inte passar det vanliga 21:9-formatet.
-function media(img, emoji, cls, w, aspect, pos) {
+function media(img, emoji, cls, w, aspect, pos, alt) {
   if (!img) return '';
   const src = img.startsWith('/') || /^https?:\/\//.test(img) ? img : IMG(img, w);
   const style = aspect ? ` style="aspect-ratio:${aspect}"` : '';
   const imgStyle = pos ? ` style="object-position:${esc(pos)}"` : '';
+  // page-hero (sidans egen hero, ovanför vikningen) ska laddas eagerly med hög
+  // prioritet och ett riktigt alt-attribut (bildsök + LCP) — hub-media (korten i
+  // rutnäten under) förblir lazy, de syns sällan direkt vid sidladdning.
+  const isHero = cls === 'page-hero';
+  const [rw, rh] = (aspect || (isHero ? '21/9' : '16/9')).split('/').map(Number);
+  const h = Math.round(w * rh / rw);
+  const loadAttrs = isHero ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return `<div class="card-media ${cls}" data-emoji="${emoji || '🌍'}"${style}>
-    <img src="${src}" alt="" loading="lazy"${imgStyle} onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+    <img src="${src}" alt="${esc(alt || '')}" width="${w}" height="${h}" ${loadAttrs}${imgStyle} onerror="this.parentElement.classList.add('img-fallback');this.remove();">
   </div>`;
 }
 
@@ -574,7 +609,7 @@ function page(url, meta, active, inner, extraJsonld, ldType) {
   URL_DATES[url] = updated;
   const ld = extraJsonld ? (Array.isArray(extraJsonld) ? extraJsonld.slice() : [extraJsonld]) : [];
   ld.push(pageLd(meta, url, updated, published, ldType));
-  meta = { ...meta, jsonld: ld };
+  meta = { ...meta, jsonld: ld, ogType: ldType === 'Article' ? 'article' : 'website' };
   // Topplistor lägger själva in authorByline() längre ner på sidan (efter
   // sista produkten, inte i headern — Jennie ville ha mindre "bloggkänsla"
   // för besökare som kommer från annonser och vill se produkterna direkt).
@@ -591,7 +626,7 @@ const IMG_CARD = id => `https://${id.startsWith('premium_photo-') ? 'plus' : 'im
 const HEART_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path class="heart-path" d="M12 21s-7.5-4.9-9.8-9.2C.7 8.9 2.2 5.4 5.5 4.6c2-.5 4 .3 5.2 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.5 5.2-2 3.3.8 4.8 4.3 3.3 7.2C18.1 16.1 12 21 12 21z"/></svg>`;
 function cardMediaSSR(d) {
   return `<div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
-    <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+    <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" width="700" height="240" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
   </div>`;
 }
 function featCardSSR(d) {
@@ -617,7 +652,7 @@ function destCardSSR(d) {
   return `
     <a class="dest-card reveal visible" data-cat="${d.cat}" href="${resmalUrl(d)}" onclick="return handleCardClick(event, '${resmalSlug(d)}')">
       <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
-        <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+        <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" width="400" height="185" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
         <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
         <span class="rating-badge">${icon('⭐')} ${String(d.rating).replace('.', ',')}</span>
       </div>
@@ -646,7 +681,7 @@ function destCardSSR(d) {
 function recentCardSSR(item) {
   return `
   <a class="hub-card has-media" href="${item.url}">
-    ${media(item.img, item.emoji, 'hub-media', 640)}
+    ${media(item.img, item.emoji, 'hub-media', 640, null, null, item.title)}
     <span class="hub-emoji">${icon(item.emoji || '🆕')}</span>
     <h2>${esc(item.title)}</h2>
     <p>${esc(item.summary || '')}</p>
@@ -715,11 +750,19 @@ function buildHome() {
     .replace('<!--LATEST_GRID_PLACEHOLDER-->', latest.map(recentCardSSR).join(''))
     .replace('<!--DEST_GRID_PLACEHOLDER-->', DESTINATIONS.map(destCardSSR).join(''))
     .replace('<!--DEST_COUNT_PLACEHOLDER-->', String(DESTINATIONS.length))
-    .replace('</head>', `<link rel="canonical" href="${DOMAIN}/">
+    .replace('</head>', (() => {
+      const homeOg = resolveImg(featured[0] && featured[0].img, 1200);
+      return `<link rel="canonical" href="${DOMAIN}/">
 <meta property="og:title" content="${esc(m.title)}">
 <meta property="og:description" content="${esc(m.description)}">
 <meta property="og:url" content="${DOMAIN}/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="${homeOg.url}">
+${homeOg.w ? `<meta property="og:image:width" content="${homeOg.w}">\n<meta property="og:image:height" content="${homeOg.h}">` : ''}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(m.title)}">
+<meta name="twitter:description" content="${esc(m.description)}">
+<meta name="twitter:image" content="${homeOg.url}">
 <script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org', '@type': 'WebSite',
       name: C.site.name, url: DOMAIN + '/',
@@ -727,13 +770,22 @@ function buildHome() {
       author: personLd()
     })}</script>
 ${m.faq ? `<script type="application/ld+json">${JSON.stringify(faqLd(m.faq))}</script>` : ''}
-</head>`);
+</head>`;
+    })());
   write('index.html', html);
 }
 
 /* ---------- GUIDER HUB ---------- */
+// Hub-sidornas eget "updated"-datum i content.json frystes vid lanseringen (2026-09-23)
+// och rördes aldrig sen, trots att barnsidorna (ages/guides/listor/städer) uppdateras
+// löpande — SEO-auditen 2026-11-13 flaggade att lastmod stod still. Räknar istället ut
+// det dynamiskt som det senaste av barnens egna updated-datum, varje gång sajten byggs.
+const maxDate = (...dates) => dates.filter(Boolean).sort().slice(-1)[0];
+
 function buildGuiderHub() {
   const m = C.pages.guider;
+  const childDates = [...C.ages.map(a => a.updated), ...Object.values(C.guides).map(g => g.updated)];
+  const metaHub = { ...m, updated: maxDate(m.updated, ...childDates) };
   const bc = breadcrumbs([['Hem', '/'], ['Guider', null]]);
   const inner = `
 <header class="page-header">
@@ -744,7 +796,7 @@ function buildGuiderHub() {
 <div class="card-grid">
   ${C.ages.map(a => `
   <a class="hub-card has-media" href="/guider/${a.slug}/">
-    ${media(a.img, a.emoji, 'hub-media', 640)}
+    ${media(a.img, a.emoji, 'hub-media', 640, null, null, a.name)}
     <span class="hub-emoji">${icon(a.emoji)}</span>
     <h2>${esc(a.name)}</h2>
     <p class="hub-age">${esc(a.ageRange)}</p>
@@ -753,7 +805,7 @@ function buildGuiderHub() {
   </a>`).join('')}
 </div>
 ${faqHtml(m.faq)}`;
-  write('guider/index.html', page('/guider/', m, '/guider/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
+  write('guider/index.html', page('/guider/', metaHub, '/guider/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
 }
 
 /* ---------- AGE HUBS ---------- */
@@ -768,12 +820,12 @@ function buildAgeHubs() {
   <h1>${esc(a.h1)}</h1>
   <div class="page-intro">${paras(a.intro)}</div>
 </header>
-${media(a.img, a.emoji, 'page-hero', 1400)}
+${media(a.img, a.emoji, 'page-hero', 1400, null, null, a.h1)}
 <h2 class="section-title">Välj färdsätt</h2>
 <div class="card-grid transport-grid">
   ${C.transports.map(t => `
   <a class="hub-card has-media" href="/guider/${a.slug}/${t.slug}/">
-    ${media(C.guides[a.slug + '/' + t.slug].img, t.emoji, 'hub-media', 640)}
+    ${media(C.guides[a.slug + '/' + t.slug].img, t.emoji, 'hub-media', 640, null, null, `${a.name} – ${t.name || t.slug}`)}
     <span class="hub-emoji">${icon(t.emoji)}</span>
     <h3>${esc(t.name)}</h3>
     <p>${esc(C.guides[a.slug + '/' + t.slug].cardText)}</p>
@@ -812,7 +864,7 @@ function buildGuides() {
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
-${media(g.img, t.emoji, 'page-hero', 1400)}
+${media(g.img, t.emoji, 'page-hero', 1400, null, null, g.h1)}
 <article class="article">
   ${g.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>`).join('\n')}
 </article>
@@ -876,12 +928,13 @@ const TOPPLISTOR_RELATED = {
   vinterjacka: ['vinteroverall', 'vinterskor', 'fodrat-regnstall'],
   vattenflaska: ['tillbehor', 'akpase', 'reseunderhallning'],
   reseunderhallning: ['tillbehor', 'akpase', 'vagnar'],
-  solkram: ['uv-badklader', 'vattenflaska', 'akpase'],
+  solkram: ['uv-badklader', 'reseunderhallning', 'akpase'],
   'all-inclusive-hotell': ['solkram', 'uv-badklader', 'reseunderhallning']
 };
 
 function buildTopplistor() {
   const hub = C.pages.topplistor;
+  const hubMeta = { ...hub, updated: maxDate(hub.updated, ...C.topplistor.lists.filter(l => !l.paused).map(l => l.updated)) };
   const bcHub = breadcrumbs([['Hem', '/'], ['Topplistor', null]]);
   const hubInner = `
 <header class="page-header">
@@ -892,7 +945,7 @@ function buildTopplistor() {
 <div class="card-grid">
   ${C.topplistor.lists.filter(l => !l.subPages && !l.paused).sort((a, b) => (b.updated || '').localeCompare(a.updated || '')).map(l => `
   <a class="hub-card has-media" href="/topplistor/${l.slug}/">
-    ${media(l.img, l.emoji, 'hub-media', 640)}
+    ${media(l.img, l.emoji, 'hub-media', 640, null, null, l.name)}
     <span class="hub-emoji">${icon(l.emoji)}</span>
     <h2>${esc(l.name)}</h2>
     <p>${esc(l.cardText)}</p>
@@ -900,7 +953,7 @@ function buildTopplistor() {
   </a>`).join('')}
 </div>
 ${faqHtml(hub.faq)}`;
-  write('topplistor/index.html', page('/topplistor/', hub, '/topplistor/', hubInner, hub.faq ? [bcHub.jsonld, faqLd(hub.faq)] : bcHub.jsonld));
+  write('topplistor/index.html', page('/topplistor/', hubMeta, '/topplistor/', hubInner, hub.faq ? [bcHub.jsonld, faqLd(hub.faq)] : bcHub.jsonld));
 
   for (const l of C.topplistor.lists) {
     if (l.paused) continue; // Pausad lista — bygg inte sidan, visa ingen kort/länk
@@ -919,7 +972,7 @@ ${faqHtml(hub.faq)}`;
     const target = C.topplistor.lists.find(t => t.slug === sp.slug);
     return `
   <a class="hub-card has-media" href="/topplistor/${sp.slug}/">
-    ${media(target ? target.img : l.img, sp.emoji, 'hub-media', 640)}
+    ${media(target ? target.img : l.img, sp.emoji, 'hub-media', 640, null, null, target ? target.name : sp.label)}
     <span class="hub-emoji">${icon(sp.emoji)}</span>
     <h2>${esc(sp.label)}</h2>
     <p>${esc(sp.desc)}</p>
@@ -931,7 +984,10 @@ ${faqHtml(hub.faq)}`;
 <div class="related-links">
   ${(TOPPLISTOR_RELATED[l.slug] || []).map(slug => {
     const x = C.topplistor.lists.find(t => t.slug === slug);
-    return x ? `<a href="/topplistor/${x.slug}/">${icon(x.emoji)} ${esc(x.h1)}</a>` : '';
+    // x.paused: pausade listor (t.ex. vattenflaska) byggs aldrig till en egen sida
+    // (se buildTopplistor()/footer()), så en länk hit utan detta villkor blir en
+    // riktig 404 — måste filtreras bort här också (SEO-auditen 2026-11-13).
+    return x && !x.paused ? `<a href="/topplistor/${x.slug}/">${icon(x.emoji)} ${esc(x.h1)}</a>` : '';
   }).join('\n  ')}
   <a href="/topplistor/" class="related-links-all">Alla topplistor →</a>
 </div>`;
@@ -955,14 +1011,14 @@ ${faqHtml(hub.faq)}`;
   <div class="page-intro">${paras(l.intro)}</div>
   ${topplistaDisclosure}
 </header>
-${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect, l.imgPos)}
+${media(l.img, l.emoji, 'page-hero', 1400, l.heroAspect, l.imgPos, l.h1)}
 ${l.handbagageNote ? `<div class="handbagage-note">${icon('✈️')} <strong>Handbagage på flyget:</strong> ${esc(l.handbagageNote)}</div>` : ''}
 ${topplistaDisclosure}
 <div class="products">
   ${l.products.map((p, i) => `
   <article class="product-card${p.img ? '' : ' no-img'}">
     <div class="product-rank">${i + 1}</div>
-    ${p.img ? `<div class="product-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-img').remove();this.closest('.product-card').classList.add('no-img')"></div>` : ''}
+    ${p.img ? `<div class="product-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" width="300" height="300" loading="lazy" onerror="this.closest('.product-img').remove();this.closest('.product-card').classList.add('no-img')"></div>` : ''}
     <div class="product-body">
       <div class="product-top">
         <h2>${esc(p.name)}</h2>
@@ -1012,7 +1068,10 @@ ${faqHtml(l.faq)}
 <div class="related-links">
   ${(TOPPLISTOR_RELATED[l.slug] || []).map(slug => {
     const x = C.topplistor.lists.find(t => t.slug === slug);
-    return x ? `<a href="/topplistor/${x.slug}/">${icon(x.emoji)} ${esc(x.h1)}</a>` : '';
+    // x.paused: pausade listor (t.ex. vattenflaska) byggs aldrig till en egen sida
+    // (se buildTopplistor()/footer()), så en länk hit utan detta villkor blir en
+    // riktig 404 — måste filtreras bort här också (SEO-auditen 2026-11-13).
+    return x && !x.paused ? `<a href="/topplistor/${x.slug}/">${icon(x.emoji)} ${esc(x.h1)}</a>` : '';
   }).join('\n  ')}
   <a href="/topplistor/" class="related-links-all">Alla topplistor →</a>
 </div>`;
@@ -1048,7 +1107,13 @@ function activityCard(act) {
 
 function buildStaderHub() {
   const m = C.pages.stader;
+  const cityChildDates = C.stader.cities.flatMap(s => [s.updated, ...(s.lov || []).map(l => l.updated), ...(s.guider || []).map(g => g.updated)]);
+  const metaHub = { ...m, updated: maxDate(m.updated, ...cityChildDates) };
   const bc = breadcrumbs([['Hem', '/'], ['Städer', null]]);
+  // Julmarknadssidorna hade bara en enda intern länk var (från sin egen stadssida) —
+  // en samlad genväg här på hub-sidan ger dem ett andra, oberoende inlänk-ställe
+  // (SEO-auditen 2026-11-13, se även korslänkningen mellan städerna i buildStadsGuider()).
+  const julCities = C.stader.cities.filter(s => (s.guider || []).some(g => g.guideSlug === 'julmarknader'));
   const inner = `
 <header class="page-header">
   ${bc.html}
@@ -1058,15 +1123,20 @@ function buildStaderHub() {
 <div class="card-grid">
   ${C.stader.cities.map(s => `
   <a class="hub-card has-media" href="/stader/${s.slug}/">
-    ${media(s.img, s.emoji, 'hub-media', 640)}
+    ${media(s.img, s.emoji, 'hub-media', 640, null, null, s.name)}
     <span class="hub-emoji">${icon(s.emoji)}</span>
     <h2>${esc(s.name)}</h2>
     <p>${esc(s.cardText)}</p>
     <span class="hub-link">Till stadsguiden →</span>
   </a>`).join('')}
 </div>
+${julCities.length ? `
+<h2 class="section-title">${icon('🎄')} Julmarknader just nu</h2>
+<div class="related-links">
+  ${julCities.map(s => `<a href="/stader/${s.slug}/julmarknader/">${icon(s.emoji)} ${esc(s.name)}</a>`).join('\n  ')}
+</div>` : ''}
 ${faqHtml(m.faq)}`;
-  write('stader/index.html', page('/stader/', m, '/stader/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
+  write('stader/index.html', page('/stader/', metaHub, '/stader/', inner, m.faq ? [bc.jsonld, faqLd(m.faq)] : bc.jsonld));
 }
 
 function buildStader() {
@@ -1086,7 +1156,7 @@ function buildStader() {
   <h1>${esc(s.h1)}</h1>
   <div class="page-intro">${paras(s.intro)}</div>
 </header>
-${media(s.img, s.emoji, 'page-hero', 1400, null, s.imgPos)}
+${media(s.img, s.emoji, 'page-hero', 1400, null, s.imgPos, s.h1)}
 
 ${(s.lov || []).map(l => `
 <a class="lov-cta" href="/stader/${s.slug}/${l.lovSlug}/">
@@ -1110,6 +1180,7 @@ ${(s.guider || []).length ? `<div class="guide-cta-row">
   </a>`).join('\n')}
 </div>` : ''}
 
+<h2 class="section-title">Aktiviteter i ${esc(s.name)}</h2>
 <div class="stader-filters" role="group" aria-label="Filtrera aktiviteter">
   <div class="filter-group">
     <span class="filter-label">Pris</span>
@@ -1195,7 +1266,7 @@ function buildLovSidor() {
     for (const l of (s.lov || [])) {
       const url = `/stader/${s.slug}/${l.lovSlug}/`;
       const bc = breadcrumbs([['Hem', '/'], ['Städer', '/stader/'], [s.name, `/stader/${s.slug}/`], [l.lovName, null]]);
-      const meta = { title: l.title, description: l.description, h1: l.h1, updated: l.updated, published: l.published };
+      const meta = { title: l.title, description: l.description, h1: l.h1, img: l.img || s.img, updated: l.updated, published: l.published };
       const itemList = {
         '@context': 'https://schema.org', '@type': 'ItemList',
         name: `${l.lovName} i ${s.name}`, itemListElement: l.tips.map((a, i) => ({
@@ -1210,7 +1281,8 @@ function buildLovSidor() {
   <h1>${esc(l.h1)}</h1>
   <div class="page-intro">${paras(l.intro)}</div>
 </header>
-${media(l.img, l.emoji, 'page-hero', 1400, null, l.imgPos)}
+${media(l.img, l.emoji, 'page-hero', 1400, null, l.imgPos, l.h1)}
+<h2 class="section-title">${esc(l.lovName)}stips</h2>
 <div class="activity-grid">
   ${l.tips.map(activityCard).join('')}
 </div>
@@ -1244,7 +1316,7 @@ function venueCard(v) {
   ].filter(Boolean);
   return `
   <article class="activity-card">
-    ${v.img ? `<div class="venue-media">${v.favorite ? `<span class="venue-visited-badge">${icon('🧡')} Favorit hos oss</span>` : ''}<img src="${esc(v.img)}" alt="${esc(v.name)}" loading="lazy"></div>` : ''}
+    ${v.img ? `<div class="venue-media">${v.favorite ? `<span class="venue-visited-badge">${icon('🧡')} Favorit hos oss</span>` : ''}<img src="${esc(v.img)}" alt="${esc(v.name)}" width="400" height="300" loading="lazy"></div>` : ''}
     <div class="activity-top">
       <h3>${esc(v.name)}</h3>
       ${(v.favorite && !v.img) ? `<span class="activity-badge activity-badge-favorite">${icon('🧡')} Favorit hos oss</span>` : ''}
@@ -1262,7 +1334,7 @@ function buildStadsGuider() {
     for (const g of (s.guider || [])) {
       const url = `/stader/${s.slug}/${g.guideSlug}/`;
       const bc = breadcrumbs([['Hem', '/'], ['Städer', '/stader/'], [s.name, `/stader/${s.slug}/`], [g.guideName, null]]);
-      const meta = { title: g.title, description: g.description, h1: g.h1, updated: g.updated, published: g.published };
+      const meta = { title: g.title, description: g.description, h1: g.h1, img: g.img || s.img, updated: g.updated, published: g.published };
       const itemList = {
         '@context': 'https://schema.org', '@type': 'ItemList',
         name: `${g.guideName} i ${s.name}`, itemListElement: g.venues.map((v, i) => ({
@@ -1275,6 +1347,15 @@ function buildStadsGuider() {
       const groupKey = v => v.region || v.area;
       const areas = (g.areaOrder && g.areaOrder.length) ? g.areaOrder : [...new Set(g.venues.map(groupKey))];
       const others = (s.guider || []).filter(x => x.guideSlug !== g.guideSlug);
+      // Samma guidetyp i andra städer (t.ex. julmarknader finns i alla 9 städer) —
+      // tidigare länkade bara varje stads egen sida HIT, sidorna länkade aldrig till
+      // varandra (SEO-auditen 2026-11-13 flaggade att 8/9 julmarknadssidor bara hade
+      // en enda intern länk, från sin egen stadssida). Generellt för alla guideSlug
+      // som förekommer i fler än en stad, inte hårdkodat till julmarknader.
+      const sameTypeElsewhere = C.stader.cities
+        .filter(c2 => c2.slug !== s.slug)
+        .map(c2 => ({ city: c2, guide: (c2.guider || []).find(x => x.guideSlug === g.guideSlug) }))
+        .filter(x => x.guide);
       // g.cardType === 'activity' reuses activityCard() (price/ålder/datum/familyCost/note) instead of
       // venueCard() (måltider/ring-innan) — för guider som inte är restaurang/café-typ, t.ex. julmarknader.
       // g.flatList hoppar över area-grupperingen (en H2 per unik grupp) och renderar allt i ett enda grid —
@@ -1294,9 +1375,10 @@ function buildStadsGuider() {
   <h1>${esc(g.h1)}</h1>
   <div class="page-intro">${paras(g.intro)}</div>
 </header>
-${media(g.img, g.emoji, 'page-hero', 1400)}
+${media(g.img, g.emoji, 'page-hero', 1400, null, null, g.h1)}
 ${regionNav}
 ${g.flatList ? `
+<h2 class="section-title">${esc(g.guideName)}</h2>
 <div class="activity-grid">
   ${g.venues.map(cardFn).join('')}
 </div>` : areas.map(area => {
@@ -1313,7 +1395,12 @@ ${faqHtml(g.faq)}
 <div class="related-links">
   <a href="/stader/${s.slug}/">${icon(s.emoji)} Alla aktiviteter i ${esc(s.name)} →</a>
   ${others.map(x => `<a href="/stader/${s.slug}/${x.guideSlug}/">${icon(x.emoji)} ${esc(x.guideName)}</a>`).join('\n  ')}
-</div>`;
+</div>
+${sameTypeElsewhere.length ? `
+<h2 class="section-title">${esc(g.guideName)} i andra städer</h2>
+<div class="related-links">
+  ${sameTypeElsewhere.map(x => `<a href="/stader/${x.city.slug}/${g.guideSlug}/">${icon(x.city.emoji)} ${esc(x.city.name)}</a>`).join('\n  ')}
+</div>` : ''}`;
       write(`stader/${s.slug}/${g.guideSlug}/index.html`, page(url, meta, '/stader/', inner, g.faq ? [bc.jsonld, itemList, faqLd(g.faq)] : [bc.jsonld, itemList], 'Article'));
     }
   }
@@ -1332,7 +1419,7 @@ function buildArtiklarHub() {
 <div class="card-grid">
   ${C.artiklar.list.map(a => `
   <a class="hub-card has-media" href="/artiklar/${a.slug}/">
-    ${media(a.img, a.emoji, 'hub-media', 640)}
+    ${media(a.img, a.emoji, 'hub-media', 640, null, null, a.name)}
     <span class="hub-emoji">${icon(a.emoji)}</span>
     <h2>${esc(a.name)}</h2>
     <p>${esc(a.cardText)}</p>
@@ -1349,7 +1436,7 @@ ${faqHtml(m.faq)}`;
 function productCardHtml(p, featured) {
   return `
     <div class="product-mini-card${featured ? ' product-mini-card--featured' : ''}">
-      ${p.img ? `<div class="product-mini-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.closest('.product-mini-img').remove()"></div>` : ''}
+      ${p.img ? `<div class="product-mini-img"><img src="${esc(p.img)}" alt="${esc(p.name)}" width="200" height="200" loading="lazy" onerror="this.closest('.product-mini-img').remove()"></div>` : ''}
       <div class="product-mini-body">
         ${featured ? `<span class="product-mini-kicker">${icon('⭐')} Vårt tips</span>` : ''}
         <h3>${esc(p.name)}</h3>
@@ -1425,7 +1512,7 @@ function buildArtiklar() {
   <div class="page-intro">${paras(a.intro)}</div>
   ${disclosure}
 </header>
-${media(a.img, a.emoji, 'page-hero', 1400)}
+${media(a.img, a.emoji, 'page-hero', 1400, null, null, a.h1)}
 <article class="article">
   ${a.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>${s.list && s.list.length ? `
   <ul class="section-list">${s.list.map(x => `<li>${escLinks(x)}</li>`).join('')}</ul>` : ''}${s.products && s.products.length ? `
@@ -1509,9 +1596,10 @@ const RESMAL_CATS = [
 function buildResmalHub() {
   const DESTINATIONS = loadDestinations();
   const bc = breadcrumbs([['Hem', '/'], ['Resmål', null]]);
+  const exampleNames = [...DESTINATIONS].sort((a, b) => a.name.localeCompare(b.name, 'sv'));
   const meta = {
-    title: 'Resmål för barnfamiljer — 50 st, filtrerbara | Res med Barn',
-    description: 'Alla våra 54 resmål för barnfamiljer på ett ställe — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från Kreta till Rovaniemi.',
+    title: `Resmål för barnfamiljer — ${DESTINATIONS.length} st, filtrerbara | Res med Barn`,
+    description: `Alla våra ${DESTINATIONS.length} resmål för barnfamiljer — filtrera på kategori, ålder och budget. Handplockade och testade med barn, från ${exampleNames[0].name} till ${exampleNames[exampleNames.length - 1].name}.`,
     updated: '2026-09-30', published: '2026-09-23'
   };
   const itemList = {
@@ -1527,6 +1615,7 @@ function buildResmalHub() {
   <div class="page-intro"><p>Alla våra ${DESTINATIONS.length} resmål på ett ställe. Filtrera på kategori nedan, eller sök på namn eller land.</p></div>
 </header>
 
+<h2 class="section-title">Alla resmål</h2>
 <div class="stader-filters" role="group" aria-label="Filtrera resmål">
   <div class="filter-group">
     <span class="filter-label">Kategori</span>
@@ -1546,7 +1635,7 @@ function buildResmalHub() {
   ${DESTINATIONS.map(d => `
   <a class="resmal-card" data-cat="${d.cat}" data-name="${esc(d.name)}" data-search="${esc((d.name + ' ' + d.country).toLowerCase())}" href="${resmalUrl(d)}">
     <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
-      <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+      <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" width="400" height="170" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
       <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
       <span class="rating-badge">${icon('⭐')} ${String(d.rating).replace('.', ',')}</span>
     </div>
@@ -1632,6 +1721,7 @@ function buildResmalCountryHubs() {
       description: hub && hub.description
         ? hub.description
         : `Våra ${inCountry.length} resmål i ${country} för barnfamiljer, samlade på ett ställe — ${inCountry.map(d => d.name).join(', ')}.`,
+      img: inCountry[0].img,
       updated: hub ? (hub.updated || '2026-11-12') : COUNTRY_DATE, published: COUNTRY_DATE
     };
     const itemList = {
@@ -1646,11 +1736,12 @@ function buildResmalCountryHubs() {
   <h1>${COUNTRY_FLAGS[country] || ''} ${esc(country)} med barn</h1>
   <div class="page-intro">${hub && hub.intro ? paras(hub.intro) : `<p>Våra ${inCountry.length} resmål i ${esc(country)} — handplockade och testade med barn.</p>`}</div>
 </header>
+<h2 class="section-title">Resmål i ${esc(country)}</h2>
 <div class="activity-grid resmal-grid">
   ${inCountry.map(d => `
   <a class="resmal-card" data-cat="${d.cat}" href="${resmalUrl(d)}">
     <div class="card-media" data-cat="${d.cat}" data-emoji="${d.emoji}">
-      <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+      <img src="${IMG_CARD(d.img)}" alt="${esc(d.name)}" width="400" height="170" loading="lazy" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
       <span class="dest-cat-chip" data-cat="${d.cat}">${esc(d.catLabel)}</span>
       <span class="rating-badge">${icon('⭐')} ${String(d.rating).replace('.', ',')}</span>
     </div>
@@ -1710,7 +1801,7 @@ function subPlaces(title, items) {
   ${items.map(it => `
   <div class="subplace">${it.img ? `
     <div class="subplace-media" data-emoji="📍">
-      <img src="https://images.unsplash.com/${it.img}?q=80&w=900&auto=format&fit=crop" alt="${esc(it.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+      <img src="https://images.unsplash.com/${it.img}?q=80&w=900&auto=format&fit=crop" alt="${esc(it.name)}" width="380" height="285" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
     </div>` : ''}
     <div class="subplace-body">
       <h3>${esc(it.name)}${it.area ? ` <span class="subplace-area">— ${esc(it.area)}</span>` : ''}</h3>
@@ -1771,14 +1862,24 @@ function buildResmal() {
       name: d.name,
       description: d.desc,
       image: IMG_RESMAL(d.img),
-      address: { '@type': 'PostalAddress', addressCountry: d.country }
+      address: { '@type': 'PostalAddress', addressCountry: d.country },
+      url: DOMAIN + url
     };
-    if (d.bookingUrl) schema.url = d.bookingUrl;
 
     const resmalDisclosure = resmalDisclosureHtml(d);
 
+    // Kortaste resmålsnamnen (Kreta/Korfu/Tokyo m.fl.) gav en title under 30 tecken
+    // med standardmallen — lägger till ett ortsnamn när det händer, istället för att
+    // byta mall för alla 57 (vilket gör långa museinamn > 60 tecken istället, se
+    // audit). Svenska attraktioner har ett sammansatt country-fält ("Stockholm,
+    // Sverige") — tar bara första delen före kommat så det inte blir för långt.
+    const baseTitlePart = `${d.name} med barn`;
+    const shortPlace = d.country.split(',')[0];
+    const longTitle = `${baseTitlePart} — ${shortPlace} | Res med Barn`;
     const meta = {
-      title: `${d.name} med barn | Res med Barn`,
+      title: baseTitlePart.length < 30 && longTitle.length <= 60 ? longTitle : `${baseTitlePart} | Res med Barn`,
+      h1: d.name,
+      img: d.img,
       description: d.desc.length > 150 ? d.desc.slice(0, 147) + '…' : d.desc,
       updated: d.updated, published: d.published
     };
@@ -1786,7 +1887,7 @@ function buildResmal() {
     const inner = `
 <div class="detail-hero">
   <div class="card-media" data-emoji="${d.emoji}">
-    <img src="${IMG_RESMAL(d.img)}" alt="${esc(d.name)}" loading="eager" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+    <img src="${IMG_RESMAL(d.img)}" alt="${esc(d.name)}" width="1600" height="400" loading="eager" fetchpriority="high" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
   </div>
   <a href="/resmal/" class="detail-back">← Alla resmål</a>
   <div class="detail-title-wrap">
@@ -1838,10 +1939,10 @@ function buildResmal() {
     ${similar.map(x => `
     <a class="similar-card" href="${resmalUrl(x)}">
       <div class="card-media" data-emoji="${x.emoji}">
-        <img src="${IMG_RESMAL(x.img)}" alt="${esc(x.name)}" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
+        <img src="${IMG_RESMAL(x.img)}" alt="${esc(x.name)}" width="300" height="110" loading="lazy" onerror="this.parentElement.classList.add('img-fallback');this.remove();">
       </div>
       <div class="sim-body">
-        <h4>${esc(x.name)}</h4>
+        <h3>${esc(x.name)}</h3>
         <p class="sim-country">${esc(x.country)} · ${esc(x.budget)}</p>
       </div>
     </a>`).join('')}
@@ -1904,7 +2005,7 @@ function buildMeta(destinations) {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY}</lastmod></url>`).join('\n')}
 </urlset>`);
-  write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${DOMAIN}/sitemap.xml`);
+  write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /content.json\n\nSitemap: ${DOMAIN}/sitemap.xml`);
   fs.copyFileSync(path.join(ROOT, 'static', 'styles.css'), path.join(DIST, 'styles.css'));
   console.log('  ✓ styles.css');
   fs.copyFileSync(path.join(ROOT, 'static', 'logo.png'), path.join(DIST, 'logo.png'));
