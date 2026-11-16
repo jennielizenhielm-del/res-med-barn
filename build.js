@@ -315,7 +315,7 @@ function nav(active) {
     </li>`;
   return `
 <nav class="nav" aria-label="Huvudmeny">
-  <a href="/" class="nav-brand"><img src="/logo.png" alt="Res med Barn" class="nav-logo" loading="eager">Res med <span>Barn</span></a>
+  <a href="/" class="nav-brand"><img src="/logo.png" alt="Res med Barn" class="nav-logo" width="88" height="34" loading="eager">Res med <span>Barn</span></a>
   <ul class="nav-links">
     ${before.map(li).join('\n    ')}
     ${dropdownLi}
@@ -333,7 +333,7 @@ function footer() {
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-about">
-      <img src="/logo.png" alt="Res med Barn" loading="lazy" style="height: 90px; width: auto; margin-bottom: 0.75rem; display: block;">
+      <img src="/logo.png" alt="Res med Barn" width="88" height="34" loading="lazy" style="height: 90px; width: auto; margin-bottom: 0.75rem; display: block;">
       <p class="footer-brand">Res med <span>Barn</span></p>
       <p>${esc(C.site.footerText)}</p>
     </div>
