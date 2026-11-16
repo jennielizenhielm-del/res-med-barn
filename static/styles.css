@@ -1091,15 +1091,15 @@ h1 {
   grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
   gap: 2.5rem;
 }
-.footer-about h3 {
+.footer-about .footer-brand {
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
-.footer-about h3 span { color: var(--accent); }
+.footer-about .footer-brand span { color: var(--accent); }
 .footer-about p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; }
-.footer-col h4 {
+.footer-col .footer-col-label {
   font-size: 0.82rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1516,7 +1516,7 @@ h1 {
 .similar-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--text-muted); }
 .similar-card .card-media { height: 110px; }
 .similar-card .sim-body { padding: 0.8rem 0.95rem; }
-.similar-card h4 { font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--text); }
+.similar-card h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--text); }
 .similar-card .sim-country { font-size: 0.76rem; color: var(--text-muted); }
 
 /* ---- RESMÅL-HUBB (/resmal/) ---- */
