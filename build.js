@@ -1915,6 +1915,7 @@ function buildResmal() {
     <div class="t-label">Förälder till förälder</div>
     <p>${esc(d.tip)}</p>
   </div>
+  ${faqHtml(d.faq)}
   ${d.cat === 'beach' ? `<p class="packlist-solkram-cta">${icon('☀️')} Ska ni sola mycket på ${esc(d.name)}? Räkna ut hur mycket solkräm ni behöver packa med <a href="/solkramskalkylator/">solkrämskalkylatorn →</a></p>` : ''}
   ${d.cat !== 'museums' ? `<p class="packlist-solkram-cta">${icon('🧳')} Packa rätt för resan till ${esc(d.name)} — prova vår anpassade <a href="/packlista/">packlista →</a></p>` : ''}
   ${d.country === 'Thailand' ? `<p class="packlist-solkram-cta">${icon('🚗')} Ska ni åka taxi, transfer eller tuk-tuk med barn på ${esc(d.name)}? Läs vår guide om <a href="/artiklar/bilbarnstol-utomlands/">bilbarnstol och babyskydd på resan →</a></p>` : ''}
@@ -1949,7 +1950,7 @@ function buildResmal() {
   </div>` : ''}
 </div>`;
 
-    write(`resmal/${slug}/index.html`, page(url, meta, null, inner, [bc.jsonld, schema], 'Article'));
+    write(`resmal/${slug}/index.html`, page(url, meta, null, inner, d.faq ? [bc.jsonld, schema, faqLd(d.faq)] : [bc.jsonld, schema], 'Article'));
   }
   console.log(`  ✓ ${DESTINATIONS.length} resmål-sidor genererade`);
   return DESTINATIONS;

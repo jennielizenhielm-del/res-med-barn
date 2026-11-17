@@ -701,10 +701,14 @@
         {
           "q": "Kan babyskyddet stå i framsätet?",
           "a": "Bara om krockkudden på passagerarplatsen är avstängd – en aktiv airbag framför ett bakåtvänt babyskydd är livsfarlig. Säkrast står babyskyddet i baksätet, gärna med en spegel så du ser bebisen från förarplatsen."
+        },
+        {
+          "q": "Hur länge får en bebis sitta i babyskydd?",
+          "a": "Max en timme i sträck är den allmänna rekommendationen, oavsett hur gammal bebisen är — en längre sammanhängande tid i det halvliggande läget kan påverka andningen. Planera bilresan med riktiga pauser varje timme där bebisen får ligga plant utanför skyddet, snarare än att köra långa sträckor i ett sträck."
         }
       ],
       "published": "2026-09-23",
-      "updated": "2026-09-28"
+      "updated": "2026-11-17"
     },
     "smabarn/flyg": {
       "cardText": "Eget säte eller knä? Och hur överlever man fyra timmar med en tvååring? Guiden.",
@@ -1119,10 +1123,14 @@
         {
           "q": "Finns det wifi på tågen?",
           "a": "På de flesta snabbtåg och fjärrtåg ja, med varierande kvalitet. Räkna inte med att strömma – ladda ner filmer och spellistor i förväg, och se uppkopplingen som bonus snarare än plan."
+        },
+        {
+          "q": "Finns det billigare sätt att resa med tåg för familjer?",
+          "a": "Ja — Interrail är ofta familjens bästa reserabatt: barn under 12 reser gratis tillsammans med en betalande vuxen (upp till två barn per vuxen), så hela passet kan kosta mindre än en enda flygbiljett i högsäsong. Lägg till platsreservationer på snabbtåg (några tior till några hundralappar per sträcka) och jämför totalpriset med flygets bagage- och transferkostnader — tåget vinner ofta."
         }
       ],
       "published": "2026-09-23",
-      "updated": "2026-09-28"
+      "updated": "2026-11-17"
     },
     "barn/buss": {
       "cardText": "Långfärdsbuss funkar utmärkt nu – och plånboken älskar den. Så blir resan bekväm.",
@@ -2039,11 +2047,15 @@
           {
             "q": "Vad är skillnaden mellan resevagn och paraplyvagn?",
             "a": "Båda är lätta och hopfällbara. En resevagn är byggd för att vikas till ett litet paket som går som handbagage på flyget, medan en klassisk paraplyvagn oftast vikas långt och smalt. Resevagnarna i vår lista har dessutom ofta fjädring och bättre komfort än en enkel paraplyvagn."
+          },
+          {
+            "q": "Vilka är de mest rekommenderade resevagnarna i Sverige?",
+            "a": "I vår jämförelse är Stokke YOYO³ och Cybex Libelle de mest kompakta som handbagage, Joolz Aer2 och Bugaboo Butterfly 2 rullar bäst på ojämnt underlag som kullersten, och Ergobaby Metro+ är ett prisvärt mellanalternativ. Alla fem är vanliga rekommendationer bland svenska föräldrar som reser mycket med barn."
           }
         ],
         "handbagageNote": "Alla vagnar i listan uppfyller IATA:s rekommenderade maxmått för handbagage (56 × 45 × 25 cm), men flygbolag kan ha egna, striktare regler — kontrollera alltid med ditt flygbolag innan avresa.",
         "published": "2026-09-23",
-        "updated": "2026-11-13"
+        "updated": "2026-11-17"
       },
       {
         "slug": "bilbarnstol",
@@ -2488,10 +2500,14 @@
           {
             "q": "Vad är skillnaden mellan bakåtvänd och framåtvänd bilbarnstol?",
             "a": "Bakåtvända stolar används först och rekommenderas så länge som möjligt, normalt till cirka 4–5 år. Därefter byter barnet till en framåtvänd bältesstol eller bälteskudde där bilens bälte håller barnet. Se våra bakåtvända bilbarnstolar för stolarna före bytet."
+          },
+          {
+            "q": "BeSafe Flex Fix 2 eller Britax Kidfix Pro — vilken är bäst?",
+            "a": "Den modell vi själva jämfört är Britax Römer Kidfix M i-Size (inte exakt samma modell som \"Kidfix Pro\"), som är vår testvinnare bland bältesstolar med betyget GOD (2,0) hos Stiftung Warentest, juni 2022. BeSafe Flex FIX 2 är vårt premiumval i samma jämförelse — Kidfix M i-Size har det bredare testunderlaget bakom sig, medan Flex FIX 2 har en mer påkostad konstruktion och extra sidokrockskydd."
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-11-13"
+        "updated": "2026-11-17"
       },
       {
         "slug": "babyskydd",
@@ -3088,10 +3104,14 @@
           {
             "q": "Är det säkert att använda en åkpåse i bilbarnstolen?",
             "a": "Ja, förutsatt att åkpåsen är specifikt utformad för bilbarnstol med öppningar som gör att selen ligger tätt och direkt mot kroppen, utan tjockt material i vägen — det är skillnaden mellan en bilbarnstols-anpassad åkpåse och en vanlig vagn-åkpåse. Kontrollera alltid bilbarnstolens egen manual, eftersom vissa tillverkare har specifika rekommendationer om vad som får användas tillsammans med stolen."
+          },
+          {
+            "q": "Vilka åkpåsar är bäst för en nyfödd på hösten?",
+            "a": "Voksi Åkpåse Move är framtagen just för nyfödda i bilbarnstol och krocktestad tillsammans med BeSafes bilbarnstolar vid bakåtvänd montering, med en dragkedja som går att öppna helt om det blir för varmt — en bra balans för höstväder som växlar mellan kallt och milt. I vagnen är Elodie Details eller Petite Chérie varma utan att bli så heltäckande som en äkta lammskinnsåkpåse, som passar bättre vid decembers minusgrader än höstens mellanläge."
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-10-15",
+        "updated": "2026-11-17",
         "heroAspect": "4/3"
       },
       {
@@ -4408,7 +4428,7 @@
           {
             "name": "Ecco Snow Mountain WP 1V",
             "badge": "Bäst i test",
-            "price": "Från ca 900–1 100 kr",
+            "price": "Just nu! Pris från 699 kr (brukar kosta ca 1 000 kr)",
             "text": "Utsedd till bäst i test av Test.se med totalbetyget 8,7 av 10 — högsta betyg i jämförelsen på både vattentäthet, värmeisolering, andningsförmåga och torkförmåga. Kardborreband och dragsko längst upp på skaftet ger stabil passform, och innersulan går enkelt att ta ur för torkning.",
             "pros": [
               "Högst betyg i Test.se:s jämförelse (8,7/10) på alla mätpunkter",
@@ -4605,7 +4625,7 @@
         ],
         "img": "photo-1547105114-5ab20c2a12ac",
         "published": "2026-09-23",
-        "updated": "2026-11-13",
+        "updated": "2026-11-17",
         "imgPos": "center 85%"
       },
       {
@@ -5602,10 +5622,18 @@
           {
             "q": "Hur bokar jag en resa till något av hotellen?",
             "a": "Alla fem hotell bokas som paketresa (flyg + hotell) direkt via Solresor eller Nazar, via knapparna ovan. Priserna varierar dagligen beroende på avresedatum, flygplats och hur långt i förväg ni bokar — se alltid aktuellt pris på bokningssidan innan ni bestämmer er."
+          },
+          {
+            "q": "All inclusive Turkiet med tonåringar — vad passar?",
+            "a": "Land of Legends Kingdom i Belek är vårt tydligaste tips för äldre barn och tonåringar — ni bor inne i nöjesparken själv, med obegränsad entré till åkattraktioner, vattenland och shower under hela vistelsen. Det är också det dyraste alternativet i vår jämförelse, så väg in budgeten."
+          },
+          {
+            "q": "Kan man resa till Turkiet med barn under 2 år all inclusive?",
+            "a": "Ja, Turkiet är ett av de enklare all inclusive-målen med små barn tack vare den korta flygtiden (ca 4 timmar) och enkla buffématen. Fråga alltid hotellet om spjälsäng i förväg, och kolla om poolerna har en tydlig, grundare barndel — det varierar mellan våra fem hotell och är värt att dubbelkolla direkt med hotellet eller arrangören innan bokning."
           }
         ],
         "published": "2026-11-07",
-        "updated": "2026-11-07",
+        "updated": "2026-11-17",
         "sections": [
           {
             "h2": "Så har vi valt ut hotellen",
@@ -6435,7 +6463,7 @@
               }
             ],
             "published": "2026-10-12",
-            "updated": "2026-11-13",
+            "updated": "2026-11-17",
             "img": "photo-1667388969250-1c7220bf3f37",
             "faq": [
               {
@@ -6461,6 +6489,10 @@
               {
                 "q": "Vilka barnvänliga restauranger finns på Södermalm, Östermalm och Kungsholmen?",
                 "a": "På Södermalm finns Urban Deli och Fotografiska, på Kungsholmen Stella Pizza och Mormors Pastabageri, och på Östermalm bland annat Riche, Broms, Brasserie Astoria, Grodan, Artilleriet och Koh Phangan. Hela listan är uppdelad per stadsdel."
+              },
+              {
+                "q": "Vilka restauranger i Stockholm har barnstolar och plats för barnvagn?",
+                "a": "Fotografiska på Södermalm har enligt recensioner över 20 barnstolar och stora salar, och restaurangen på Moderna Museet på Skeppsholmen har enligt museets egna uppgifter skötbord, barnvagnsparkering och till och med lånevagnar. Leta generellt efter ställen med stora, öppna ytor i gatunivå snarare än trånga källarlokaler, och ring gärna innan för att säkra ett bord där vagnen inte står i vägen."
               }
             ]
           },
@@ -8456,10 +8488,14 @@
           {
             "q": "Vilka aktiviteter i Uppsala är helt gratis?",
             "a": "Pelleparken, Gamla Uppsala högar, Biotopia och Fjällnora friluftsområde (själva entrén) kostar inget. Bra start för en billig familjedag i Uppsala."
+          },
+          {
+            "q": "Vad kan man göra i Uppsala med barn?",
+            "a": "Pelleparken (lekplatsen med Pelle Svanslös-tema) och Gamla Uppsala högar är gratis och bra för en första dag, medan Fyrishovs Äventyrsbad, Evolutionsmuseet och den gamla ångloksbanan Lennakatten passar som betalda inslag resten av vistelsen. Biotopia vid slottet är gratis och Turbo Sport & Adventure Zone i Gränbystaden ett alternativ för regniga dagar."
           }
         ],
         "published": "2026-10-03",
-        "updated": "2026-10-15",
+        "updated": "2026-11-17",
         "lov": [
           {
             "lovSlug": "hostlov",
@@ -11962,10 +11998,14 @@
           {
             "q": "Hur länge gäller hemförsäkringens reseskydd?",
             "a": "Branschnormen brukar anges som 45 dagar per resa, men det varierar mellan bolag – vissa har kortare eller längre gränser. Dubbelkolla era egna villkor om ni ska vara borta en längre period."
+          },
+          {
+            "q": "Vad täcker en reseförsäkring som resegarantin inte gör?",
+            "a": "Resegarantin (resegarantilagen) skyddar bara pengarna ni redan betalat om researrangören går i konkurs eller ställer in resan — den täcker inte sjukdom, olycksfall, försenat bagage eller hemtransport. En reseförsäkring, eller hemförsäkringens reseskydd, är det som kliver in om någon i familjen blir akut sjuk eller skadad på resan. EU-kortet ger bara tillgång till offentlig vård inom EU/EES på samma villkor som lokala invånare, inte privat vård eller en dyr hemtransport, som till exempel ett ambulansflyg kan kosta uppemot 500 000 kronor."
           }
         ],
         "published": "2026-11-09",
-        "updated": "2026-11-10",
+        "updated": "2026-11-17",
         "products": [
           {
             "name": "Reseförsäkring via Europeiska ERV",
@@ -12170,8 +12210,13 @@
         {
           "q": "Vilket spanskt resmål är billigast för barnfamiljer?",
           "a": "Costa Blanca är det mest prisvänliga i vår lista (€), övriga ligger på €€. Skalan är grov och priserna varierar med säsong och boende."
+        },
+        {
+          "q": "Rekommendera de bästa destinationerna i Spanien för en familjesemester.",
+          "a": "Det beror på när ni vill åka: för sommarsol är Mallorcas norra del (undvik Magaluf), Costa Brava (närmast Sverige, ca 2,5 timmar flyg) och Costa Blanca (Benidorm med långgrund strand, Terra Mítica och Aqualandia) våra förstahandsval. För vintersol är Gran Canarias södra del, Teneriffa (Siam Park) och Fuerteventura (skyddade vikar som La Concha) bäst, eftersom de fungerar året runt."
         }
-      ]
+      ],
+      "updated": "2026-11-17"
     },
     "Frankrike": {
       "description": "Disneyland Paris, Franska Rivieran eller Korsika med barn? Tre helt olika resor. Jämför ålder, säsong, budget och flygtid här.",
