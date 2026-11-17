@@ -3580,8 +3580,9 @@
           {
             "name": "BIBS Colour Latex",
             "badge": "Bäst i test",
-            "price": "Från ca 90 kr",
+            "price": "Från ca 60 kr",
             "text": "Stilren napp med mjuk naturgummidel och skonsam sköld. Finns i storlekar för både nyfödda och äldre spädbarn.",
+            "img": "https://media.meds.se/meds/images/maxx-27396106-g-2021-03-31-135150941/550/550/fill/c/bibs-colour-nappar-iron-baby-blue-strl-3-18-manader-2-pack.png",
             "pros": [
               "Mjukt, naturligt latexmaterial",
               "Skonsam sköld med god luftcirkulation",
@@ -3592,32 +3593,33 @@
               "Dyrare än enklare basmodeller"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/bibs-colour-latex.html",
-            "buyUrl": "https://adtr.co/ozetuz",
+            "buyUrl": "https://adtr.co/nzmlrj",
             "buyStore": "Meds"
           },
           {
-            "name": "MAM Original Napp",
-            "badge": "Bäst allround",
-            "price": "Från ca 80 kr",
-            "text": "Genomtänkt modell med hög acceptans bland barn, bra luftflöde i skölden och medföljande steriliseringsbox.",
+            "name": "MAM Air Silicone Pink 16-36 mån, 2-pack",
+            "badge": "Lätt & ventilerad",
+            "price": "Ca 68 kr (2-pack, ca 34 kr/st)",
+            "text": "MAM:s lättare silikonvariant med tunn, ventilerad sköld — skonsam mot huden kring munnen. Säljs i 2-pack i storleken 16–36 månader, för det äldre spädbarnet/den lilla toddlern.",
+            "img": "https://media.meds.se/meds/images/image-png-2024-11-06-082653195/800/800/fill/c/7392855153127-mam-air-silicone-pink-16-36m-png.png",
             "pros": [
-              "Hög acceptans bland de flesta barn",
-              "Medföljande steriliseringsbox",
-              "Bra luftflöde, mindre risk för hudirritation"
+              "Lätt och tunn sköld, skonsam mot ansiktet",
+              "Silikon håller längre och är enklare att hålla rent än latex",
+              "Säljs i 2-pack — bra att ha en reserv"
             ],
             "cons": [
-              "Skölden kan kännas något stor för de minsta",
-              "Finns i färre färgvarianter än BIBS"
+              "Bara en storlek/åldersgrupp (16–36 mån) per förpackning",
+              "Begränsat färgutbud i just den här storleken"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/mam-original-napp.html",
-            "buyUrl": "https://adtr.co/m4jx8k",
+            "buyUrl": "https://adtr.co/76dklv",
             "buyStore": "Meds"
           },
           {
-            "name": "Nanobébé Flexy Napp",
+            "name": "Nanobébé Flexy Napp, 2-pack",
             "badge": "Bäst för små ansikten",
-            "price": "Från ca 85 kr",
-            "text": "Mjuk och följsam napp som ligger nära ansiktet, utvecklad särskilt för nyfödda och riktigt små spädbarn.",
+            "price": "Ca 75 kr (2-pack, ca 37,50 kr/st)",
+            "text": "Mjuk och följsam napp som ligger nära ansiktet, utvecklad särskilt för nyfödda och riktigt små spädbarn. Säljs i 2-pack.",
+            "img": "https://media.meds.se/meds/images/image-jpeg-2025-10-27-103444273/550/550/fill/c/ean-7290019558378-nanobebeflexysilikonnappljusbla0-3man-jpg.jpg",
             "pros": [
               "Ligger skönt nära ansiktet",
               "Mjukt, följsamt material",
@@ -3625,46 +3627,46 @@
             ],
             "cons": [
               "Mindre lämplig som enda napp för äldre barn",
-              "Något dyrare än standardnappar"
+              "Något dyrare per styck än basmodeller"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nanobebe-flexy-napp.html",
-            "buyUrl": "https://adtr.co/1bf3uj",
+            "buyUrl": "https://adtr.co/gvp54i",
             "buyStore": "Meds"
           },
           {
-            "name": "NUK Perfect Match Air Night",
-            "badge": "Lyser i mörkret",
-            "price": "Från ca 72 kr (2-pack)",
-            "text": "Självlysande napp med extra stora ventilationshål i skölden för bättre luftflöde och mindre risk för hudirritation. Formen är ortodontiskt utformad och skölden är hjärtformad för att passa under näsan. Kommer med en mikrovågssäker förvarings- och steriliseringsbox.",
+            "name": "NUK First Choice Silicone 18-36M, Monkey/Kangaroo 2-pack",
+            "badge": "Prisvärt 2-pack",
+            "price": "Ca 60 kr (2-pack, ca 30 kr/st)",
+            "text": "NUK:s basmodell i silikon för den äldre babyn/toddlern, med lekfulla mönster (apa/känguru) i tvåpack.",
+            "img": "https://media.meds.se/meds/images/image-jpeg-2026-03-25-123519189/550/550/fill/c/4008600447542-jpg.jpg",
             "pros": [
-              "Lyser i mörkret — enkel att hitta nattetid utan att tända lampan",
-              "Ventilerad sköld minskar hudirritation och dregglisar",
-              "Medföljande box fungerar både som förvaring och mikrosterilisering"
+              "Bra pris per napp i tvåpacket",
+              "Silikon, enkelt att hålla rent",
+              "Glada mönster många barn gillar"
             ],
             "cons": [
-              "Färre färg-/mönstervarianter än BIBS",
-              "Mindre känt varumärke i Sverige jämfört med BIBS/MAM"
+              "Bara en storlek (18–36 mån) per förpackning",
+              "Enklare modell utan extra ventilation"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/nuk-perfect-match-air-night.html",
-            "buyUrl": "https://adtr.co/gx0qtn",
+            "buyUrl": "https://adtr.co/upnjqx",
             "buyStore": "Meds"
           },
           {
-            "name": "Philips Avent Ultra Soft",
-            "badge": "Bäst för känslig hud",
-            "price": "Från ca 75 kr",
-            "text": "Mjuk sköld som följer ansiktets form bättre och minskar tryck mot huden — bra val för barn med känslig hy.",
+            "name": "Philips Avent Ultra Air Napp Röd & Lila 18 mån+, 2-pack",
+            "badge": "Lätt & ventilerad",
+            "price": "Ca 67 kr (2-pack, ca 33,50 kr/st)",
+            "text": "Avents lättare silikonvariant med tunn, ventilerad sköld — ett alternativ till de tyngre basmodellerna för den äldre babyn, i rött och lila, säljs i tvåpack.",
+            "img": "https://media.meds.se/meds/images/image-png-2025-09-26-190116371/550/550/fill/c/8720689043090-1-png.png",
             "pros": [
-              "Skonsam mot känslig hud",
-              "Följsam sköld minskar tryckmärken",
-              "Välkänt, pålitligt varumärke"
+              "Lätt, ventilerad sköld",
+              "Välkänt varumärke",
+              "Säljs i tvåpack"
             ],
             "cons": [
-              "Något mjukare material kan slitas snabbare",
-              "Finns i begränsat färgutbud"
+              "Endast en åldersgrupp (18 mån+) i denna variant",
+              "Begränsat färgutbud jämfört med BIBS"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-ultra-soft.html",
-            "buyUrl": "https://adtr.co/hkobvs",
+            "buyUrl": "https://adtr.co/1kc8l6",
             "buyStore": "Meds"
           }
         ],
@@ -3675,7 +3677,7 @@
           },
           {
             "h2": "Tips: nappar som lyser i mörkret",
-            "text": "Ett smart litet trick för nattmatningarna — flera nappar har en självlysande sköld. BIBS GLOW-serie behöver hållas mot en lampa i 5–10 sekunder innan läggdags och lyser sedan i över 8 timmar, medan NUK Perfect Match Air Night (se listan ovan) laddas på samma sätt men har extra ventilation i skölden också. Perfekt när ni famlar i mörkret klockan tre på natten och slipper leta efter den nedfallna nappen i sängen."
+            "text": "Ett smart litet trick för nattmatningarna — vissa nappar, som BIBS GLOW-serie, har en självlysande sköld. Den behöver hållas mot en lampa i 5–10 sekunder innan läggdags och lyser sedan i över 8 timmar. Perfekt när ni famlar i mörkret klockan tre på natten och slipper leta efter den nedfallna nappen i sängen."
           }
         ],
         "faq": [
@@ -3686,7 +3688,7 @@
         ],
         "img": "photo-1546860371-d98b524581cf",
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-11-17"
       },
       {
         "slug": "brostpump",
