@@ -74,6 +74,18 @@ function pageLd(meta, url, updated, published, type) {
 /* ---------- helpers ---------- */
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+// Plockar ut ett numeriskt kronvärde ur en pris-sträng ("2 039 kr", "Från 299 kr") för
+// data-value på köpknappar — ett pris-baserat proxyvärde för Google Ads-konverteringen
+// (inte exakt provision, se areas/google-ads-campaign.md) istället för det tidigare
+// hårdkodade 1,0 kr-värdet på varje klick oavsett produkt.
+const priceValue = s => {
+  if (!s) return null;
+  const m = String(s).replace(/\s| /g, '').match(/[\d.,]+/);
+  if (!m) return null;
+  const n = parseFloat(m[0].replace(/\.(?=\d{3})/g, '').replace(',', '.'));
+  return isNaN(n) || n <= 0 ? null : n;
+};
+
 // --- Custom line-icon set (replaces emoji site-wide). Falls back to the raw
 // emoji character for anything not in the map, so nothing silently disappears. ---
 const ICON_MAP = {
@@ -272,15 +284,21 @@ ${og.w ? `<meta property="og:image:width" content="${og.w}">\n<meta property="og
     if (!a) return;
     var dest = '';
     try { dest = new URL(a.href, location.href).hostname; } catch (err) {}
+    // data-value = produktens pris (proxyvärde, inte exakt provision) när knappen har
+    // ett känt pris — annars faller vi tillbaka på 1,0 kr som tidigare (t.ex. Sembo/Nazar-
+    // bokningsknappar på resmål, som inte har ett produktpris att utgå från).
+    var val = parseFloat(a.dataset.value);
+    if (!val || isNaN(val)) val = 1.0;
     gtag('event', 'cta_click', {
       cta_label: (a.textContent || '').trim(),
       cta_destination: a.href,
       cta_domain: dest,
-      page_path: location.pathname
+      page_path: location.pathname,
+      value: val
     });
     gtag('event', 'conversion', {
       'send_to': 'AW-18385738907/vdVDCMrMreAcEJu5gL9E',
-      'value': 1.0,
+      'value': val,
       'currency': 'SEK'
     });
   });
@@ -1035,7 +1053,7 @@ ${topplistaDisclosure}
         <ul class="cons">${p.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
       </div>
       ${p.buyUrl
-        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.buyStore || 'butik')} →</a>`
+        ? `<a class="btn-compare" href="${esc(p.buyUrl)}" target="_blank" rel="sponsored noopener"${priceValue(p.price) ? ` data-value="${priceValue(p.price)}"` : ''}>${icon('🛒')} Köp hos ${esc(p.buyStore || 'butik')} →</a>`
         : (p.priceRunnerUrl ? `<a class="btn-compare" href="${esc(p.priceRunnerUrl)}" target="_blank" rel="sponsored noopener">Jämför pris hos PriceRunner →</a>` : '')}
     </div>
   </article>`).join('')}
@@ -1051,7 +1069,7 @@ ${topplistaDisclosure}
       <h3>${esc(a.name)}</h3>
       <p class="accessory-price">${esc(a.price)}</p>
       <p>${esc(a.text)}</p>
-      ${a.buyUrl ? `<a class="btn-compare" href="${esc(a.buyUrl)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(a.buyStore || 'butik')} →</a>` : ''}
+      ${a.buyUrl ? `<a class="btn-compare" href="${esc(a.buyUrl)}" target="_blank" rel="sponsored noopener"${priceValue(a.price) ? ` data-value="${priceValue(a.price)}"` : ''}>${icon('🛒')} Köp hos ${esc(a.buyStore || 'butik')} →</a>` : ''}
     </div>
   </article>`).join('')}
 </div>` : ''}
@@ -1465,7 +1483,7 @@ function productCardHtml(p, featured) {
           ${p.priceTag ? `<span class="product-mini-pricetag">${esc(p.priceTag)}</span>` : ''}
         </div>` : ''}
         <p class="product-mini-note">${esc(p.note)}</p>
-        <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(p.store)} →</a>
+        <a class="btn-compare" href="${esc(p.url)}" target="_blank" rel="sponsored noopener"${priceValue(p.price) ? ` data-value="${priceValue(p.price)}"` : ''}>${icon('🛒')} Köp hos ${esc(p.store)} →</a>
       </div>
     </div>`;
 }
