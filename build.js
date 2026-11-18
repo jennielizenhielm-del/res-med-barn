@@ -929,7 +929,8 @@ const TOPPLISTOR_RELATED = {
   vattenflaska: ['tillbehor', 'akpase', 'reseunderhallning'],
   reseunderhallning: ['tillbehor', 'akpase', 'vagnar'],
   solkram: ['uv-badklader', 'reseunderhallning', 'akpase'],
-  'all-inclusive-hotell': ['solkram', 'uv-badklader', 'reseunderhallning']
+  'all-inclusive-hotell': ['solkram', 'uv-badklader', 'reseunderhallning'],
+  matstol: ['nappflaska', 'vattenflaska', 'tillbehor']
 };
 
 function buildTopplistor() {
@@ -1038,6 +1039,21 @@ ${topplistaDisclosure}
     </div>
   </article>`).join('')}
 </div>
+${l.accessories ? `
+<h2 class="section-title">Tillbehör värt att komplettera med</h2>
+${topplistaDisclosure}
+<div class="accessories">
+  ${l.accessories.map(a => `
+  <article class="accessory-card${a.img ? '' : ' no-img'}">
+    ${a.img ? `<div class="accessory-img"><img src="${esc(a.img)}" alt="${esc(a.name)}" width="200" height="200" loading="lazy" onerror="this.closest('.accessory-img').remove();this.closest('.accessory-card').classList.add('no-img')"></div>` : ''}
+    <div class="accessory-body">
+      <h3>${esc(a.name)}</h3>
+      <p class="accessory-price">${esc(a.price)}</p>
+      <p>${esc(a.text)}</p>
+      ${a.buyUrl ? `<a class="btn-compare" href="${esc(a.buyUrl)}" target="_blank" rel="sponsored noopener">${icon('🛒')} Köp hos ${esc(a.buyStore || 'butik')} →</a>` : ''}
+    </div>
+  </article>`).join('')}
+</div>` : ''}
 ${authorByline()}
 <article class="article">
   ${l.sections.map(s => {
@@ -1470,6 +1486,7 @@ function adDisclosureHtml(a) {
 function topplistaAdStores(l) {
   const names = new Set();
   (l.products || []).forEach(p => p.buyUrl && p.buyStore && names.add(p.buyStore));
+  (l.accessories || []).forEach(a => a.buyUrl && a.buyStore && names.add(a.buyStore));
   return Array.from(names);
 }
 function topplistaDisclosureHtml(l) {

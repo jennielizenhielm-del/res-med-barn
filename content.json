@@ -5641,6 +5641,159 @@
           }
         ],
         "paused": true
+      },
+      {
+        "slug": "matstol",
+        "emoji": "🪑",
+        "name": "Matstol",
+        "cardText": "Matstolar för barn jämförda på pris, lätthet att hålla rena och hur länge de håller — från budget till Stokke-klassiker.",
+        "title": "Matstol barn bäst i test 2026 | Res med Barn",
+        "description": "Matstol för barn bäst i test 2026 — fem matstolar jämförda på pris, städvänlighet och hur länge de håller. Stokke, KAOS Klapp och fler.",
+        "h1": "Matstol för barn — bäst i test 2026",
+        "intro": [
+          "En matstol används varje dag i flera år, så det är värt att välja med omsorg — både för plånboken och för den som faktiskt ska våttorka den efter varje måltid. Vi har jämfört fem matstolar som finns hos våra butikspartners, med fokus på pris, hur lätta de är att hålla rena och hur länge de håller för pengarna.",
+          "Material spelar stor roll för städningen: matstolar i hård plast eller återvunnen plast går snabbast att torka av, medan trästolar med textilklädda dynor behöver en extra tvättomgång ibland."
+        ],
+        "products": [
+          {
+            "name": "Stokke Tripp Trapp, Bok Warm Brown",
+            "badge": "Bäst i test",
+            "price": "2 039 kr",
+            "text": "Den självklara klassikern och test.se:s bäst i test — en matstol i massivt bokträ som växer med barnet från bebis till vuxen, med rätt tillbehör. Högt andrahandsvärde gör att den sällan känns som en engångskostnad.",
+            "pros": [
+              "Växer med barnet hela vägen till vuxen ålder (med babyset/bricka som tillbehör)",
+              "Håller i generationer — ofta god andrahandsmarknad",
+              "Klassisk design i massivt trä"
+            ],
+            "cons": [
+              "Kräver ett separat babyset för att användas av riktigt små bebisar",
+              "Dyrare i grundutförande än plastalternativen i jämförelsen"
+            ],
+            "buyStore": "Babysam",
+            "buyUrl": "https://adtr.co/5pimzb",
+            "img": "https://cdn.babysam.se/4d82414d-fba0-47ac-b3dd-fd7e011e1439/productfeedproductbig/378908.webp"
+          },
+          {
+            "name": "KAOS Klapp Matstol i Återvunnen Plast, Svart",
+            "badge": "Lättast att hålla ren",
+            "price": "1 899 kr",
+            "text": "Gjord i återvunnen plast utan textilklädda delar, så hela stolen går att torka av direkt efter maten — inget tyg att ta loss och tvätta. Fälls också ihop smalt för förvaring, vilket passar trånga kök.",
+            "pros": [
+              "Inga tygdelar — hela stolen går att våttorka direkt",
+              "Fälls ihop smalt för förvaring",
+              "Gjord av återvunnen plast"
+            ],
+            "cons": [
+              "Mindre \"möbelkänsla\" än Tripp Trapp i massivt trä",
+              "Något dyrare än budgetalternativen i jämförelsen"
+            ],
+            "buyStore": "Babysam",
+            "buyUrl": "https://adtr.co/hc6mr1",
+            "img": "https://cdn.babysam.se/57770535-09bc-4cad-9311-7bd8a03d3fa7/productfeedproductbig/1_KLAPP-RECYCLED-CHARCOAL-BLACK.webp"
+          },
+          {
+            "name": "Stokke Steps, inkl. Babyset, White/Natural",
+            "badge": "Prisvärt Stokke-alternativ",
+            "price": "1 799 kr",
+            "text": "Enklare konstruktion än Tripp Trapp men samma varumärke och samma löfte om kvalitet, och kommer redan med babyset för nyfödda inkluderat i priset — ingen extra tillbehörskostnad för att komma igång direkt från start.",
+            "pros": [
+              "Babyset för nyfödda ingår redan i priset",
+              "Samma varumärke/kvalitetsnivå som Tripp Trapp till lägre pris",
+              "Enkel att hålla ren tack vare färre delar"
+            ],
+            "cons": [
+              "Inte samma modulära tillbehörsutbud som Tripp Trapp på sikt",
+              "Mindre känd modell, så andrahandsvärdet är svårare att bedöma"
+            ],
+            "buyStore": "Babysam",
+            "buyUrl": "https://adtr.co/4eg3js",
+            "img": "https://cdn.babysam.se/e549b61e-2e8b-4dab-9cd9-1427a139d9e8/productfeedproductbig/StepsHighChair_Natural_Seat-BS_Tray-White_Pos1.webp"
+          },
+          {
+            "name": "BeKids Matstol 2-i-1, Beige",
+            "badge": "Bästa 2-i-1",
+            "price": "899 kr",
+            "text": "Växer från låg matstol för de minsta till hög matstol för barnet som sitter vid bordet med resten av familjen — ett prisvärt mellanting för den som vill ha en stol som håller flera år utan Stokke-prislappen.",
+            "pros": [
+              "Fungerar både som låg och hög matstol i samma produkt",
+              "Prisvärd jämfört med varumärkesalternativen",
+              "Enkla ytor som går snabbt att torka av"
+            ],
+            "cons": [
+              "Eget varumärke utan långt track record",
+              "Inte samma andrahandsvärde som Stokke-modellerna"
+            ],
+            "buyStore": "Babysam",
+            "buyUrl": "https://adtr.co/laeyi9",
+            "img": "https://cdn.babysam.se/2a2ed52f-c9c2-4e4d-bb99-05d0788a32ed/productfeedproductbig/BeKids_2-i-1-h%C3%B8jstol---beige.webp"
+          },
+          {
+            "name": "Beemoo CARE Eat Matstol, Truffle Beige",
+            "badge": "Billigast",
+            "price": "399 kr (medlemspris)",
+            "text": "Jollyrooms eget varumärke och billigast i jämförelsen — bra som en andra matstol hos mor- och farföräldrar, eller för den som vill komma igång utan att lägga en större summa på en matstol direkt.",
+            "pros": [
+              "Klart billigast i jämförelsen",
+              "Enkla ytor i plast, snabb att torka av"
+            ],
+            "cons": [
+              "Enklare material och finish än premiumalternativen",
+              "Färre funktioner och tillbehör att bygga vidare med"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/ocmzpq",
+            "img": "https://www.jollyroom.se/storage/4CF0F7094AA42EDB4BABE6060A0F16420D1AD2A2BE6DF3380127B442ECE00AB6/a541b73f34f34aa1abe9954f791a7a2f/jpg/media/e311bbec9c59427eb1e56208737fb1ac/BM-H205-TRUFFLEBEIGE-1895_5.jpg"
+          }
+        ],
+        "accessories": [
+          {
+            "name": "Stokke Tripp Trapp Babyset², Warm Brown",
+            "price": "539 kr",
+            "text": "Gör att nyfödda kan sitta i Tripp Trapp redan från start istället för att vänta tills barnet växt till sig — det vanligaste tillbehöret till stolen.",
+            "buyStore": "Babysam",
+            "buyUrl": "https://adtr.co/gf6n2f",
+            "img": "https://cdn.babysam.se/1f368736-b508-49ad-b193-f0885fcc87e6/productfeedproductbig/TrippTrapp_OakWarmBrown_BS_CLOSE_Black_1-5_eCom.webp"
+          },
+          {
+            "name": "KAOS Klapp Jr. Sele & Dynset",
+            "price": "899 kr",
+            "text": "Sele och sittdyna till KAOS Klapp, finns i flera färger — bra komplement om ni vill ha extra stöd och lite mer sittkomfort till barnet.",
+            "buyStore": "Babysam",
+            "buyUrl": "https://adtr.co/yulclh",
+            "img": "https://cdn.babysam.se/b857e158-fd4a-40b0-8019-b466d0cc0364/productfeedproductbig/1_KLAPP_JrHarness_Cushion_DesertSand.webp"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Trä eller plast — vilket är lättast att hålla rent?",
+            "text": "En matstol i hård eller återvunnen plast, som KAOS Klapp och Beemoo CARE Eat, går snabbast att hålla ren: hela stolen går att våttorka direkt efter maten, utan tygdelar att ta loss. En trästol som Tripp Trapp eller Stokke Steps är tåligare över tid och har högre andrahandsvärde, men sittdynan/textilsetet behöver tvättas separat med jämna mellanrum. Många väljer en kombination — trästol med avtagbar, tvättbar dyna — för att få båda fördelarna."
+          },
+          {
+            "h2": "Behövs ett babyset för en nyfödd?",
+            "text": "Ja, om matstolen inte redan har en inkluderad nyföddsinsats. Tripp Trapp säljs utan babyset som grundutförande, så det tillbehöret behövs för att bebisen ska sitta säkert och stabilt innan hen kan sitta själv utan stöd. Stokke Steps i vår jämförelse har babyset inkluderat i priset från start, vilket gör den enklare att komma igång med direkt."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vilka matstolar är lättast att hålla rena?",
+            "a": "Matstolar i hård eller återvunnen plast utan textilklädda delar är enklast — som KAOS Klapp i återvunnen plast och Beemoo CARE Eat i vår jämförelse. Hela stolen går att torka av direkt efter maten. Trästolar som Tripp Trapp och Stokke Steps är tåligare på sikt, men sittdynan behöver en egen tvättomgång ibland."
+          },
+          {
+            "q": "Vid vilken ålder kan barnet sitta i en matstol?",
+            "a": "Från ungefär 6 månader, när barnet kan sitta upprätt med stöd för huvud och nacke på egen hand — det sammanfaller vanligtvis med att man börjar introducera fast föda. Innan det klarar barnet inte att sitta säkert i en vanlig matstol, även med sele."
+          },
+          {
+            "q": "Vilken säkerhetsstandard ska en matstol uppfylla?",
+            "a": "Leta efter CE-märkning och att stolen uppfyller den europeiska standarden EN 14988 för barnmatstolar, som bland annat ställer krav på stabilitet och säkra låsmekanismer. Alla matstolar i vår jämförelse säljs av etablerade butiker och varumärken som uppger att de uppfyller detta."
+          },
+          {
+            "q": "Behöver vi tillbehör till matstolen?",
+            "a": "Det beror på stolen och barnets ålder. Ska en nyfödd sitta i Tripp Trapp behövs ett babyset, medan Stokke Steps i vår jämförelse redan har det inkluderat. En sele eller ett dynset, som till KAOS Klapp, är inte nödvändigt men ger extra stöd och sittkomfort om barnet behöver det."
+          }
+        ],
+        "published": "2026-11-18",
+        "updated": "2026-11-18",
+        "img": "photo-1760267973986-5370a55550f4"
       }
     ]
   },
