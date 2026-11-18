@@ -5651,7 +5651,7 @@
         "description": "Matstol för barn bäst i test 2026 — fem matstolar jämförda på pris, städvänlighet och hur länge de håller. Stokke, KAOS Klapp och fler.",
         "h1": "Matstol för barn — bäst i test 2026",
         "intro": [
-          "En matstol används varje dag i flera år, så det är värt att välja med omsorg — både för plånboken och för den som faktiskt ska våttorka den efter varje måltid. Vi har jämfört fem matstolar som finns hos våra butikspartners, med fokus på pris, hur lätta de är att hålla rena och hur länge de håller för pengarna.",
+          "En matstol, eller barnmatstol som den också kallas, används varje dag i flera år, så det är värt att välja med omsorg — både för plånboken och för den som faktiskt ska våttorka den efter varje måltid. Vi har jämfört fem barnmatstolar som finns hos våra butikspartners, med fokus på pris, hur lätta de är att hålla rena och hur länge de håller för pengarna.",
           "Material spelar stor roll för städningen: matstolar i hård plast eller återvunnen plast går snabbast att torka av, medan trästolar med textilklädda dynor behöver en extra tvättomgång ibland."
         ],
         "products": [
@@ -5779,8 +5779,8 @@
             "a": "Matstolar i hård eller återvunnen plast utan textilklädda delar är enklast — som KAOS Klapp i återvunnen plast och Beemoo CARE Eat i vår jämförelse. Hela stolen går att torka av direkt efter maten. Trästolar som Tripp Trapp och Stokke Steps är tåligare på sikt, men sittdynan behöver en egen tvättomgång ibland."
           },
           {
-            "q": "Vid vilken ålder kan barnet sitta i en matstol?",
-            "a": "Från ungefär 6 månader, när barnet kan sitta upprätt med stöd för huvud och nacke på egen hand — det sammanfaller vanligtvis med att man börjar introducera fast föda. Innan det klarar barnet inte att sitta säkert i en vanlig matstol, även med sele."
+            "q": "När kan bebis sitta i matstol?",
+            "a": "Från ungefär 6 månader, när bebisen kan sitta upprätt med stöd för huvud och nacke på egen hand — det sammanfaller vanligtvis med att man börjar introducera fast föda. Innan det klarar bebisen inte att sitta säkert i en vanlig matstol, även med sele."
           },
           {
             "q": "Vilken säkerhetsstandard ska en matstol uppfylla?",
@@ -12282,6 +12282,76 @@
         "published": "2026-11-11",
         "updated": "2026-11-11",
         "img": "photo-1667409702771-14213044ccc7"
+      },
+      {
+        "slug": "dagsomn-pa-resan",
+        "name": "Dagsömn på resan",
+        "emoji": "😴",
+        "img": "photo-1564172420073-e553c280b6f7",
+        "cardText": "När slutar barn sova på dagen – och hur håller ni ihop sömnen när ni är på resande fot?",
+        "title": "När slutar barn sova på dagen? | Res med Barn",
+        "description": "När slutar barn sova på dagen, och hur påverkar det en resa? Åldrar, tecken på att tupplurerna är på väg bort, och konkreta tips för sömnen på resan.",
+        "h1": "När slutar barn sova på dagen – och hur funkar det på resan?",
+        "kicker": "Sömn hemma och på resan",
+        "intro": [
+          "Dagsömnen styr mer av en semester med barn än man tänker på i planeringsstadiet — vilken tid utflykten kan börja, om lunchen blir lugn eller kaotisk, och hur kvällen går. Och den frågan som dyker upp förr eller senare: när slutar barnet egentligen sova på dagen, och vad gör vi med resplanen när det händer mitt i en bokad resa?",
+          "Här går vi igenom vad sömnforskningen säger om åldrarna, hur ni känner igen att tuppluren är på väg bort, och konkreta sätt att hålla ihop sömnen på resan istället för att låta den styra er."
+        ],
+        "sections": [
+          {
+            "h2": "När slutar barn sova på dagen?",
+            "text": "Spridningen är stor redan från 3-årsåldern. En sammanställning av flera studier (en metaanalys från 2020) visar att omkring en tredjedel av barnen har slutat sova middag vid 3 år, drygt hälften vid 4 år, 8 av 10 vid 4,5 år och nästan alla vid 5,5 år. Det finns alltså ingen tydlig brytpunkt — bara en lång period där det är precis lika normalt att sova på dagen som att inte göra det. Värt att veta för oss i Europa: samma forskning pekar på att europeiska barn generellt slutar sova på dagen tidigare än barn i till exempel Nordamerika, Australien och Asien, många redan mellan 2 och 3 år. Ett barn som slutar vid 2,5–3 år ligger alltså inte utanför det vanliga här, även om en del amerikanska källor målar upp en senare bild. Övergången från två tupplurer till en sker för de allra flesta redan mellan 18 och 24 månaders ålder."
+          },
+          {
+            "h2": "Tecken på att dagsömnen är på väg bort",
+            "text": "Barnet har svårt att somna vid den vanliga tupplurstiden utan att vara trött eller gnällig, sover gott på natten och är piggt och på gott humör även de dagar tupplurarna uteblir. Ett barn som istället blir överilat trött och tjafsigt på kvällen, eller kämpar för att hålla sig vaket mitt på dagen trots en bra natt, är oftast inte redo än — då är nästa steg att korta tupplurens längd innan man tar bort den helt."
+          },
+          {
+            "h2": "Så påverkar det researrangemanget",
+            "text": "Ett barn som fortfarande behöver sin tupplur gör sig bäst med utflykter förlagda till förmiddagen, en lugn stund efter lunch på hotellrummet eller i vagnen, och sen ett nytt pass under eftermiddagen. Har barnet precis lämnat tupplurerna bakom sig är det värt att bygga in en lugnare stund mitt på dagen ändå — en stilla stund med bok eller lek fungerar som ersättning, även utan sömn, och gör hela eftermiddagen och kvällen lättare."
+          },
+          {
+            "h2": "Hemtid eller lokal tid — vilket sovschema ska gälla på resan?",
+            "text": "En sömnforskare vid Rockefeller University ger en enkel tumregel: för kortare resor (upp till en vecka) och mindre tidsskillnader, håll kvar barnets hemtid istället för att ställa om — en 19-läggning blir 22 på den nya platsen, men ljus och ljud hålls nedtonat som om det fortfarande var kväll hemma. För längre resor eller större tidsskillnader lönar det sig att börja flytta rutinen gradvis innan avresan, ungefär 30 minuter per dag (vaknatid, tupplur, läggtid och måltider i samma takt), snarare än att ta hela skillnaden på en gång. Westward resor (till exempel till USA) brukar vara lättare att ställa om efter än resor österut."
+          },
+          {
+            "h2": "Återskapa sovmiljön, oavsett var ni sover",
+            "text": "Samma signaler som hemma gör mest för att barnet ska somna snabbt även på ett främmande hotellrum: mörkt, tyst och några igenkännbara saker. Vi har alltid med muslinfiltar på resan — de fungerar som enkel mörkläggning för fönster eller resesäng och tar ingen plats i väskan, samtidigt som de också funkar som filt, solskydd i vagnen eller amningsskydd om det behövs. En bärbar vit brus-maskin eller app och barnets eget gosedjur gör samma jobb som hemma. Har ni en babymonitor med er går det också att lägga barnet och själva få en stund för sig, till exempel middag på balkongen, utan att behöva sitta och lyssna efter varje ljud."
+          },
+          {
+            "h2": "Om dagsömnen helt uteblir en dag",
+            "text": "Det är inte hela världen. Ett enda napplöst dygn brukar gå att hantera med en tidigare kväll och en lugnare eftermiddag, utan att det sätter hela resan i gungning. Krockar sömnen med jetlag också — nytt tidszon plus utebliven tupplur samtidigt — har vi gått igenom det mer i detalj i vår [jetlag-guide](/artiklar/jetlag-med-barn/)."
+          }
+        ],
+        "quicktipsTitle": "Snabbtips för dagsömnen på resan",
+        "quicktips": [
+          "Förlägg utflykter till förmiddagen om barnet fortfarande tupplurar",
+          "Kortare resa/mindre tidsskillnad: håll kvar hemtiden istället för att ställa om",
+          "Längre resa: flytta rutinen ca 30 min/dag innan avresan istället för allt på en gång",
+          "Ta med mörkläggning (t.ex. muslinfilt), vitt brus och gosedjuret för igenkänning",
+          "Byt ut tupplurstiden mot en lugn stund med bok/lek när sömnen är på väg bort",
+          "Ett enda napplöst dygn kräver bara en tidigare kväll, inte en omplanerad resa"
+        ],
+        "faq": [
+          {
+            "q": "När slutar barn sova på dagen?",
+            "a": "Det varierar mycket. En metaanalys av flera studier från 2020 visar att ungefär en tredjedel av barnen har slutat sova middag vid 3 år, drygt hälften vid 4 år, och nästan alla vid 5,5 år — en lång period utan tydlig brytpunkt, snarare än en bestämd ålder. Europeiska barn tenderar dessutom att sluta tidigare än barn i till exempel Nordamerika, många redan mellan 2 och 3 år, så ett barn som slutar vid 2,5–3 år ligger inom det vanliga. Övergången från två tupplurer till en sker betydligt tidigare, oftast mellan 18 och 24 månader."
+          },
+          {
+            "q": "Hur vet jag att mitt barn är redo att sluta sova middag?",
+            "a": "Vanliga tecken är att barnet har svårt att somna vid tupplurstiden utan att vara gnälligt eller trött, sover bra på natten, och är piggt och på gott humör även dagar utan tupplur. Blir barnet istället överilat trött eller tjafsigt på kvällen, eller kämpar för att hålla sig vaket trots en bra natt, är det oftast bättre att korta tuppluren än att ta bort den helt."
+          },
+          {
+            "q": "Ska vi hålla barnets vanliga sovschema på resan, eller anpassa efter resmålet?",
+            "a": "Beror på hur lång resan är och hur stor tidsskillnaden är. Vid kortare resor och mindre tidsskillnader är det enklast att hålla kvar barnets hemtid rakt av. Vid längre resor eller större tidsskillnader lönar det sig att flytta rutinen gradvis, cirka 30 minuter per dag, redan innan avresan, istället för att ställa om allt på en gång när ni landar."
+          },
+          {
+            "q": "Vad gör vi om barnet missar sin tupplur på resan?",
+            "a": "Ett enskilt napplöst dygn går oftast bra att hantera med en lite tidigare kväll och en lugnare eftermiddag — det är inte värt att stressa över eller lägga om hela resplanen för. Blir det ett mönster över flera dagar är det mer värt att bygga in en lugn stund mitt på dagen i schemat, även utan att barnet faktiskt somnar."
+          }
+        ],
+        "published": "2026-11-18",
+        "updated": "2026-11-18"
       }
     ]
   },
