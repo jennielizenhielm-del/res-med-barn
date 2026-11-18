@@ -930,7 +930,8 @@ const TOPPLISTOR_RELATED = {
   reseunderhallning: ['tillbehor', 'akpase', 'vagnar'],
   solkram: ['uv-badklader', 'reseunderhallning', 'akpase'],
   'all-inclusive-hotell': ['solkram', 'uv-badklader', 'reseunderhallning'],
-  matstol: ['nappflaska', 'vattenflaska', 'tillbehor']
+  matstol: ['nappflaska', 'vattenflaska', 'tillbehor'],
+  sovpase: ['babymonitor', 'klassiska-babynest', 'sleep-carrier']
 };
 
 function buildTopplistor() {

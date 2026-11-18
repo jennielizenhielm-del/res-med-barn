@@ -5794,6 +5794,173 @@
         "published": "2026-11-18",
         "updated": "2026-11-18",
         "img": "photo-1760267973986-5370a55550f4"
+      },
+      {
+        "slug": "sovpase",
+        "emoji": "🛌",
+        "name": "Sovpåse",
+        "cardText": "Sovpåsar för bebis och barn jämförda, med en egen TOG-guide så du vet exakt vilken som passar ert sovrum — från ärmlös bomull till varm merinoull.",
+        "title": "Sovpåse bebis bäst i test 2026 | Res med Barn",
+        "description": "Sovpåse för bebis och barn bäst i test 2026 — fem sovpåsar jämförda, plus en TOG-guide: vilken TOG passar vilken rumstemperatur. Najell, Ergobaby och fler.",
+        "h1": "Sovpåse för bebis och barn — bäst i test 2026",
+        "intro": [
+          "En sovpåse gör att man slipper ha en lös filt i sängen eller vagnen — något som ligger i linje med 1177:s råd om att hålla kuddar, filtar och andra föremål borta från barnets ansikte under sömnen. Vi har jämfört fem sovpåsar som finns hos våra butikspartners, i olika storlekar och material, från nyfödd upp till toddleråldern.",
+          "Det som gör sovpåsar förvirrande är TOG-märkningen — en skala för hur varmt plagget isolerar. Vi reder ut vad den betyder längre ner på sidan, med en egen tabell för vilken TOG som passar vilken rumstemperatur."
+        ],
+        "products": [
+          {
+            "name": "Najell Sovpåse 0-6 mån, Leopard Beige",
+            "badge": "Ärmlös basmodell",
+            "price": "549 kr",
+            "text": "En enkel, ärmlös sovpåse för de första månaderna, i mjukt och andningsbart tyg. Tillverkaren anger inget TOG-värde, så den fungerar bäst som en normalvarm basmodell snarare än för extrema temperaturer.",
+            "pros": [
+              "Lätt och ärmlös — enkelt att klä på ett nyfött barn",
+              "Sidodragkedja för enkla blöjbyten"
+            ],
+            "cons": [
+              "Inget angivet TOG-värde, svårt att jämföra exakt värmenivå",
+              "Bara en storlek (0-6 mån)"
+            ],
+            "buyStore": "Babysam",
+            "buyUrl": "https://adtr.co/b4ps4m",
+            "img": "https://cdn.babysam.se/f96d742b-5587-4be5-83ba-ea48f4e6efcc/productfeedproductbig/Pro_Capture_One_0022.webp"
+          },
+          {
+            "name": "Ergobaby Classic Sovpåse 0-6 mån, TOG 1.0, Sheep",
+            "badge": "Tydlig TOG-märkning",
+            "price": "299 kr",
+            "text": "Billigast i jämförelsen och från ett av de mer etablerade globala babymärkena. TOG 1,0 gör den bäst vid normal rumstemperatur, ungefär 20–24°C (se TOG-guiden nedan) — alltså vår, höst och uppvärmda svenska sovrum större delen av året.",
+            "pros": [
+              "Lägst pris i jämförelsen",
+              "TOG-värdet är tydligt angivet, så det går att matcha mot rummets temperatur"
+            ],
+            "cons": [
+              "TOG 1,0 räcker inte för ett kallare sovrum vintertid"
+            ],
+            "buyStore": "Bonti",
+            "buyUrl": "https://adtr.co/4j2qyk",
+            "img": "http://bonti.se/bilder/artiklar/ERBASLBASHEEP1.jpg?m=1768564764"
+          },
+          {
+            "name": "Done By Deer Tiny Farm Sovpåse 8-18 mån, TOG 1.0, Sand",
+            "badge": "Växer med barnet",
+            "price": "312 kr",
+            "text": "Täcker en äldre åldersgrupp än de flesta andra i jämförelsen, från 8 månader upp till 1,5 år — bra när bebisstorleken är vuxen ur. Samma TOG 1,0 som Ergobaby ovan, alltså bäst vid normal rumstemperatur.",
+            "pros": [
+              "Täcker en längre period (8–18 mån) än flera konkurrenter",
+              "TOG-värdet angivet"
+            ],
+            "cons": [
+              "Passar inte nyfödda — för stor för de första månaderna"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/lru1yu",
+            "img": "https://www.jollyroom.se/storage/8D765F5901274F385A3F812DBE69F9EF2A17C0FA4BDA3CF066F0D32482EA5276/e5e78859b91b48a5b01dd50eee98ab33/jpg/media/fcd1d3ae314740fd97190f2dfa394a0c/2553239-2173_1.jpg"
+          },
+          {
+            "name": "Jollein Sovpåse Jersey 90 cm, On The Go",
+            "badge": "Bäst för resan",
+            "price": "249 kr",
+            "text": "I 100 % bomullsjersey och med måtten 90 x 47 cm — ett lättpackat, luftigt alternativ som funkar bra både hemma och i resesängen på semestern. Tillverkaren anger inget TOG-värde, men bomullsjersey är ett lättare material som passar bäst i varmare rum.",
+            "pros": [
+              "Lättpackad och luftig — bra att ha med på resan",
+              "Lägst pris i jämförelsen"
+            ],
+            "cons": [
+              "Inget angivet TOG-värde",
+              "Bomullsjersey är tunnare — inte den varmaste i jämförelsen"
+            ],
+            "buyStore": "Jollyroom",
+            "buyUrl": "https://adtr.co/b5tw9u",
+            "img": "https://www.jollyroom.se/storage/F8F3498CA54F6983B9258A3E2AD1DB74B02F49945C9D628DCF16757E311044D1/ac90c9550eef4dbab1850978a17e36a5/jpg/media/c4ac3bdd63f3435bb95ee18159f9d28c/048-516-68075-2430_1.jpg"
+          },
+          {
+            "name": "Voksi Sovpåse Ull, stl 62-68, Soft Grape",
+            "badge": "Varmast — ren merinoull",
+            "price": "999 kr",
+            "text": "I 100 % merinoull, OEKO-TEX-certifierad, för storlek 62-68 (ca 2-6 månader). Ull andas och håller värmen naturligt bättre än bomull, vilket gör den till det varmaste alternativet i jämförelsen — och dyrast.",
+            "pros": [
+              "Ren merinoull — naturligt temperaturreglerande och andningsbar",
+              "OEKO-TEX-certifierad"
+            ],
+            "cons": [
+              "Dyrast i jämförelsen, nästan dubbla priset mot flera andra",
+              "Smalare storleksspann (62–68 cm) än flera konkurrenter"
+            ],
+            "buyStore": "Baby V",
+            "buyUrl": "https://adtr.co/leghyz",
+            "img": "https://02.cdn37.se/epl/images/2.327825/voksi-sovpase-ull-stl-62-68-soft-grape.jpeg"
+          }
+        ],
+        "sections": [
+          {
+            "h2": "Varför sovpåse istället för filt?",
+            "text": "1177:s råd mot plötslig spädbarnsdöd är bland annat att hålla kuddar, lösa filtar och andra föremål borta från barnets ansikte under sömnen, och att barnet inte ska bli för varmt. En sovpåse är ett sätt att möta det rådet utan en lös filt i sängen eller vagnen — barnet har ett jämnt lager isolering som inte kan glida upp över ansiktet, oavsett hur mycket det rör sig."
+          },
+          {
+            "h2": "TOG-guide — vilken TOG passar vilken rumstemperatur?",
+            "table": {
+              "intro": "Siffrorna är en vanlig branschkonvention snarare än en oberoende standard, och kan variera någon enstaka grad mellan märken — men de källor vi jämförde (Aden + Anais, Snuz, Love to Dream) är rörande överens, särskilt kring TOG 2,5.",
+              "headers": [
+                "TOG",
+                "Rumstemperatur",
+                "Passar till"
+              ],
+              "leftCols": [
+                1,
+                2
+              ],
+              "rows": [
+                [
+                  "0,2–0,5",
+                  "24°C och uppåt",
+                  "Varmt rum eller sommar"
+                ],
+                [
+                  "1,0",
+                  "ca 20–24°C",
+                  "Normal rumstemperatur, vår/höst"
+                ],
+                [
+                  "2,5",
+                  "ca 16–20°C",
+                  "Helårsbruk i ett normaltempererat sovrum"
+                ],
+                [
+                  "3,5",
+                  "Under 16°C",
+                  "Kallt rum eller vinter utan extra värme"
+                ]
+              ],
+              "note": "Av de fem sovpåsarna ovan anger bara Ergobaby och Done By Deer ett TOG-värde (båda TOG 1,0) — alltså bäst vid normal rumstemperatur snarare än ett extra kallt sovrum. Najell, Jollein och Voksi anger inget TOG-värde; välj då efter material istället (ull värmer mest, bomullsjersey minst)."
+            }
+          },
+          {
+            "h2": "Så väljer du rätt storlek",
+            "text": "De flesta sovpåsar anges i månader eller i centimeter, inte i vanliga klädstorlekar — mät barnets längd och jämför med sovpåsens eget storleksmått snarare än att gå på ålder rakt av, särskilt om barnet är längre eller kortare än genomsnittet."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Vilken sovpåse passar en nyfödd bebis?",
+            "a": "De flesta sovpåsar för nyfödda börjar vid storlek 0-6 månader, som Najell och Ergobaby Classic i vår jämförelse. Välj en ärmlös modell med sidodragkedja för enkla blöjbyten de första månaderna, och kolla TOG-värdet mot rummets temperatur om det är angivet."
+          },
+          {
+            "q": "Vad betyder TOG på en sovpåse?",
+            "a": "TOG (Thermal Overall Grade) är ett mått på hur varmt plagget isolerar — ju högre TOG, desto varmare sovpåse. Det är ingen officiell standard utan en branschkonvention som varierar lite mellan märken, men TOG 1,0 passar generellt normal rumstemperatur (ca 20–24°C) och TOG 2,5 ett lite svalare rum (ca 16–20°C) — se vår TOG-tabell ovan för hela skalan."
+          },
+          {
+            "q": "Sovpåse bebis eller sovpåse barn — är det någon skillnad?",
+            "a": "Skillnaden ligger mest i storlek och funktioner. Sovpåsar för bebis är oftast ärmlösa med sidodragkedja för blöjbyten, medan sovpåsar för äldre barn kan ha ärmar och en längre passform i takt med att barnet växer — som Done By Deer i vår jämförelse, som täcker 8–18 månader."
+          },
+          {
+            "q": "Är sovpåse säkrare än filt för bebisar?",
+            "a": "1177:s råd mot plötslig spädbarnsdöd är bland annat att hålla lösa filtar, kuddar och andra föremål borta från barnets ansikte under sömnen. En sovpåse är ett sätt att möta det rådet utan en lös filt i sängen, eftersom den inte kan glida upp över ansiktet oavsett hur barnet rör sig. Se också till att barnet inte blir för varmt — det är också en del av 1177:s rekommendation."
+          }
+        ],
+        "published": "2026-11-18",
+        "updated": "2026-11-18",
+        "img": "photo-1528948587461-06aa206c1cd4"
       }
     ]
   },
