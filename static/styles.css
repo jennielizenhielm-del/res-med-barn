@@ -842,7 +842,35 @@ h1 {
   transition: background var(--transition);
 }
 .btn-compare:hover { background: var(--accent-hover); }
+.accessories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.accessory-card {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem;
+}
+.accessory-card.no-img { grid-template-columns: 1fr; }
+.accessory-img {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: transparent;
+}
+.accessory-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.accessory-body h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.15rem; }
+.accessory-price { font-size: 0.85rem; font-weight: 600; color: var(--sand); margin: 0 0 0.4rem; }
+.accessory-body > p:not(.accessory-price) { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 0.75rem; }
+.accessory-body .btn-compare { margin-top: 0; padding: 0.55rem 1.1rem; font-size: 0.82rem; }
 @media (max-width: 600px) {
+  .accessories { grid-template-columns: 1fr; }
   /* Bild och rangnummer flyter i textflödet (riktiga CSS-floats) istället för
      fasta rutnätskolumner. Allt — titel, badge, pris, ingress, plus/minus-listan
      — är vanligt radbrytande innehåll som packar sig runt bilden ända tills
