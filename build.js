@@ -1193,7 +1193,7 @@ function buildStader() {
 </header>
 ${media(s.img, s.emoji, 'page-hero', 1400, null, s.imgPos, s.h1)}
 
-${(s.lov || []).map(l => `
+${(s.lov || []).filter(l => l.lovName !== 'Höstlov').map(l => `
 <a class="lov-cta" href="/stader/${s.slug}/${l.lovSlug}/">
   <span class="lov-cta-emoji">${icon(l.emoji)}</span>
   <span class="lov-cta-text">

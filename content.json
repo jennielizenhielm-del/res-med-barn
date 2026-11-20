@@ -6117,14 +6117,14 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "title": "Höstlov i Stockholm 2026 — tips & aktiviteter | Res med Barn",
-            "description": "Höstlovet i Stockholm 2026 är 26–30 oktober (vecka 44). Våra bästa tips på museer och aktiviteter för barnfamiljer under lovveckan.",
-            "h1": "Höstlov i Stockholm 2026 — vad ni kan göra",
+            "title": "Höstlov i Stockholm 2027 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Stockholm 2027 är 1–5 november (vecka 44). Våra bästa tips på museer och aktiviteter för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Stockholm 2027 — vad ni kan göra",
             "intro": [
-              "Höstlovet i Stockholm 2026 är 26–30 oktober (vecka 44) — en vecka med kortare dagar och ofta ostadigt väder, vilket gör den till ett bra tillfälle att beta av stadens museer istället för att vänta på sommaren.",
+              "Höstlovet i Stockholm 2027 är 1–5 november (vecka 44) — en vecka med kortare dagar och ofta ostadigt väder, vilket gör den till ett bra tillfälle att beta av stadens museer istället för att vänta på sommaren.",
               "Nedan har vi samlat de aktiviteter som passar extra bra just under höstlovsveckan, både gratis och betalda."
             ],
             "tips": [
@@ -6253,8 +6253,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Stockholm 2026?",
-                "a": "Höstlovet i Stockholm 2026 är vecka 44, måndag 26 till fredag 30 oktober."
+                "q": "Vilken vecka är höstlovet i Stockholm 2027?",
+                "a": "Höstlovet i Stockholm 2027 är vecka 44, måndag 1 till fredag 5 november."
               },
               {
                 "q": "Är Nordiska museet gratis på höstlovet?",
@@ -6262,8 +6262,8 @@
               }
             ],
             "published": "2026-10-07",
-            "updated": "2026-10-29",
-            "dateLabel": "26–30 oktober 2026"
+            "updated": "2026-11-20",
+            "dateLabel": "1–5 november 2027"
           },
           {
             "lovSlug": "jullov",
@@ -7499,8 +7499,8 @@
                 "indoor": false,
                 "area": "Lövholmen",
                 "link": "https://fargfabriken.se/sv/pa-gang/julmarknad/",
-                "dateInfo": "5–6 december 2026 (preliminärt datum, ej officiellt publicerat av Färgfabriken ännu), kl. 11:00–17:00",
-                "note": "Färgfabrikens egen sida hade vid vår senaste koll inte uppdaterats till 2026 års datum – dubbelkolla på deras hemsida innan besök.",
+                "dateInfo": "5–6 december 2026 (bekräftat av Färgfabriken), exakta öppettider ej publicerade ännu – räkna med ca kl. 11–17 som tidigare år",
+                "note": "Datumet är nu bekräftat på Färgfabrikens egen sida. Dubbelkolla gärna öppettider strax innan besök, de var inte publicerade vid vår senaste koll.",
                 "region": "Söderort"
               },
               {
@@ -7534,15 +7534,15 @@
               {
                 "name": "Nördarnas julmarknad",
                 "type": "paid",
-                "price": "50 kr/dag för vuxna, barn 0–6 år gratis, sista timmen varje dag gratis (pris ej omdaterat till 2026)",
-                "desc": "Nördarnas julmarknad i Solnahallen är en marknad för alla som gillar sci-fi, fantasy, brädspel, rollspel och cosplay – här säljer konstnärer, speldesigner, författare, smycketillverkare och keramiker sina alster, och second hand-nördgrejer är också välkomna. Marknaden arrangeras av Uniting Geeks och lockar besökare i cosplay, inklusive en \"cosplay-Lucia\"-procession. Det är en inomhusmarknad i Solnahallen, vilket gör den väderoberoende. Barn under 6 år går alltid in gratis, och sista timmen varje dag är fri entré för alla.",
+                "price": "75 kr/dag för vuxna (bekräftat 2026-pris, upp från 50 kr föregående år), barn 0–6 år gratis, sista timmen varje dag gratis",
+                "desc": "Nördarnas julmarknad i Solnahallen är en marknad för alla som gillar sci-fi, fantasy, brädspel, rollspel och cosplay – här säljer konstnärer, speldesigner, författare, smycketillverkare och keramiker sina alster, och second hand-nördgrejer är också välkomna. Marknaden arrangeras av Uniting Geeks och lockar besökare i cosplay, inklusive en \"cosplay-Lucia\"-procession som går kl. 12:00 och 14:30 båda dagarna. Det är en inomhusmarknad i Solnahallen, vilket gör den väderoberoende. Barn under 6 år går alltid in gratis, och sista timmen varje dag är fri entré för alla.",
                 "ageMin": 0,
                 "ageMax": 99,
                 "indoor": true,
                 "area": "Solna",
                 "link": "https://www.nordarnasjulmarknad.se/",
-                "dateInfo": "Preliminärt 5–6 december 2026 (ej bekräftat av arrangören ännu)",
-                "note": "Arrangörens egen sida hade vid vår senaste koll inte uppdaterats till 2026 – bekräfta datum via deras Facebook-event innan besök.",
+                "dateInfo": "5–6 december 2026 (bekräftat), kl. 11:00–16:00",
+                "note": "Datum, pris och öppettider är nu bekräftade direkt på arrangörens egen sida.",
                 "region": "Norra Stockholm"
               },
               {
@@ -7800,7 +7800,7 @@
             ],
             "faq": [],
             "published": "2026-10-30",
-            "updated": "2026-11-10",
+            "updated": "2026-11-20",
             "cardType": "activity",
             "areaOrder": [
               "City/Innerstan",
@@ -8113,14 +8113,14 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "title": "Höstlov Göteborg 2026 — Halloween & pyssel | Res med Barn",
-            "description": "Höstlovet i Göteborg 2026 är 26–30 oktober (vecka 44). Halloween på Liseberg och Universeum, Día de Muertos och svampvandring för barnfamiljer.",
-            "h1": "Höstlov i Göteborg 2026 — Halloween, museer och höstpyssel",
+            "title": "Höstlov Göteborg 2027 — Halloween & pyssel | Res med Barn",
+            "description": "Höstlovet i Göteborg 2027 är 1–5 november (vecka 44). Halloween på Liseberg och Universeum, Día de Muertos och svampvandring för barnfamiljer.",
+            "h1": "Höstlov i Göteborg 2027 — Halloween, museer och höstpyssel",
             "intro": [
-              "Höstlovet i Göteborg 2026 är 26–30 oktober (vecka 44) — samma vecka som Stockholm och Malmö i år.",
+              "Höstlovet i Göteborg 2027 är 1–5 november (vecka 44) — samma vecka som Stockholm och Malmö i år.",
               "Göteborg satsar stort på Halloween-tema i oktober, så lovveckan har gott om säsongsaktiviteter utöver stadens vanliga barnutbud."
             ],
             "tips": [
@@ -8174,8 +8174,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Göteborg 2026?",
-                "a": "Höstlovet i Göteborg 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som Stockholm och Malmö i år."
+                "q": "Vilken vecka är höstlovet i Göteborg 2027?",
+                "a": "Höstlovet i Göteborg 2027 är vecka 44, måndag 1 till fredag 5 november — samma vecka som Stockholm och Malmö i år."
               },
               {
                 "q": "Hur länge pågår Halloween på Liseberg och Universeum?",
@@ -8183,8 +8183,8 @@
               }
             ],
             "published": "2026-10-07",
-            "updated": "2026-10-29",
-            "dateLabel": "26–30 oktober 2026"
+            "updated": "2026-11-20",
+            "dateLabel": "1–5 november 2027"
           },
           {
             "lovSlug": "jullov",
@@ -8474,14 +8474,14 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "title": "Höstlov i Malmö 2026 — Skräckveckan & badhus | Res med Barn",
-            "description": "Höstlovet i Malmö 2026 är 26–30 oktober (vecka 44). Skräckveckan i Folkets Park, Hylliebadets lovprogram och fler tips för barnfamiljer.",
-            "h1": "Höstlov i Malmö 2026 — spökrysligt, bad och pyssel",
+            "title": "Höstlov i Malmö 2027 — Skräckveckan & badhus | Res med Barn",
+            "description": "Höstlovet i Malmö 2027 är 1–5 november (vecka 44). Skräckveckan i Folkets Park, Hylliebadets lovprogram och fler tips för barnfamiljer.",
+            "h1": "Höstlov i Malmö 2027 — spökrysligt, bad och pyssel",
             "intro": [
-              "Höstlovet i Malmö 2026 är 26–30 oktober (vecka 44) — samma vecka som Stockholm och Göteborg i år.",
+              "Höstlovet i Malmö 2027 är 1–5 november (vecka 44) — samma vecka som Stockholm och Göteborg i år.",
               "Malmö har två återkommande höstlovsdragare: Skräckveckan i Folkets Park och Hylliebadets lovprogram, plus stadens museer som bra regnalternativ."
             ],
             "tips": [
@@ -8536,8 +8536,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Malmö 2026?",
-                "a": "Höstlovet i Malmö 2026 är vecka 44, måndag 26 till fredag 30 oktober."
+                "q": "Vilken vecka är höstlovet i Malmö 2027?",
+                "a": "Höstlovet i Malmö 2027 är vecka 44, måndag 1 till fredag 5 november."
               },
               {
                 "q": "Kostar Skräckveckan i Folkets Park något?",
@@ -8545,8 +8545,8 @@
               }
             ],
             "published": "2026-10-07",
-            "updated": "2026-10-29",
-            "dateLabel": "26–30 oktober 2026"
+            "updated": "2026-11-20",
+            "dateLabel": "1–5 november 2027"
           },
           {
             "lovSlug": "jullov",
@@ -8821,14 +8821,14 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "title": "Höstlov i Uppsala 2026 — tips & aktiviteter | Res med Barn",
-            "description": "Höstlovet i Uppsala 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — museer och äventyrsbad — för barnfamiljer under lovveckan.",
-            "h1": "Höstlov i Uppsala 2026 — vad ni kan göra",
+            "title": "Höstlov i Uppsala 2027 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Uppsala 2027 är 1–5 november (vecka 44). Våra bästa inomhustips — museer och äventyrsbad — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Uppsala 2027 — vad ni kan göra",
             "intro": [
-              "Höstlovet i Uppsala 2026 är 26–30 oktober (vecka 44) — samma vecka som Stockholm, Göteborg och Malmö i år. Kortare dagar och ostadigt väder gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter istället för att vänta på bättre väder.",
+              "Höstlovet i Uppsala 2027 är 1–5 november (vecka 44) — samma vecka som Stockholm, Göteborg och Malmö i år. Kortare dagar och ostadigt väder gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter istället för att vänta på bättre väder.",
               "Nedan har vi samlat Uppsalas bästa inomhusalternativ för lovveckan, med riktiga priser så ni kan planera i förväg."
             ],
             "tips": [
@@ -8882,8 +8882,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Uppsala 2026?",
-                "a": "Höstlovet i Uppsala 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som Stockholm, Göteborg och Malmö i år."
+                "q": "Vilken vecka är höstlovet i Uppsala 2027?",
+                "a": "Höstlovet i Uppsala 2027 är vecka 44, måndag 1 till fredag 5 november — samma vecka som Stockholm, Göteborg och Malmö i år."
               },
               {
                 "q": "Är Evolutionsmuseet gratis för barn på höstlovet?",
@@ -8891,8 +8891,8 @@
               }
             ],
             "published": "2026-10-09",
-            "updated": "2026-10-29",
-            "dateLabel": "26–30 oktober 2026"
+            "updated": "2026-11-20",
+            "dateLabel": "1–5 november 2027"
           },
           {
             "lovSlug": "jullov",
@@ -9204,14 +9204,14 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "title": "Höstlov i Umeå 2026 — tips & aktiviteter | Res med Barn",
-            "description": "Höstlovet i Umeå 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — vetenskapscenter, museer och badhus — för barnfamiljer under lovveckan.",
-            "h1": "Höstlov i Umeå 2026 — vad ni kan göra",
+            "title": "Höstlov i Umeå 2027 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Umeå 2027 är 1–5 november (vecka 44). Våra bästa inomhustips — vetenskapscenter, museer och badhus — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Umeå 2027 — vad ni kan göra",
             "intro": [
-              "Höstlovet i Umeå 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare och mörkare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Höstlovet i Umeå 2027 är 1–5 november (vecka 44) — samma vecka som övriga Sverige i år. Kallare och mörkare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
               "Nedan har vi samlat Umeås bästa inomhusalternativ för lovveckan."
             ],
             "tips": [
@@ -9264,8 +9264,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Umeå 2026?",
-                "a": "Höstlovet i Umeå 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som övriga Sverige i år."
+                "q": "Vilken vecka är höstlovet i Umeå 2027?",
+                "a": "Höstlovet i Umeå 2027 är vecka 44, måndag 1 till fredag 5 november — samma vecka som övriga Sverige i år. (Umeå kommun har vid vår senaste koll ännu inte offentliggjort läsårstiderna för 2027/2028 — vecka 44 är samma vecka som övriga landet och mycket sannolikt, men inte officiellt bekräftat än.)"
               },
               {
                 "q": "Är Curiosum gratis för barn på höstlovet?",
@@ -9273,8 +9273,8 @@
               }
             ],
             "published": "2026-10-15",
-            "updated": "2026-10-29",
-            "dateLabel": "26–30 oktober 2026",
+            "updated": "2026-11-20",
+            "dateLabel": "1–5 november 2027",
             "img": "photo-1636555269230-74ff8f069e5b"
           },
           {
@@ -9550,14 +9550,14 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "title": "Höstlov i Västerås 2026 — tips & aktiviteter | Res med Barn",
-            "description": "Höstlovet i Västerås 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — actionbad och museer — för barnfamiljer under lovveckan.",
-            "h1": "Höstlov i Västerås 2026 — vad ni kan göra",
+            "title": "Höstlov i Västerås 2027 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Västerås 2027 är 1–5 november (vecka 44). Våra bästa inomhustips — actionbad och museer — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Västerås 2027 — vad ni kan göra",
             "intro": [
-              "Höstlovet i Västerås 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Höstlovet i Västerås 2027 är 1–5 november (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
               "Nedan har vi samlat Västerås bästa inomhusalternativ för lovveckan."
             ],
             "tips": [
@@ -9609,8 +9609,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Västerås 2026?",
-                "a": "Höstlovet i Västerås 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som övriga Sverige i år."
+                "q": "Vilken vecka är höstlovet i Västerås 2027?",
+                "a": "Höstlovet i Västerås 2027 är vecka 44, måndag 1 till fredag 5 november — samma vecka som övriga Sverige i år."
               },
               {
                 "q": "Är Västerås konstmuseum gratis för barn på höstlovet?",
@@ -9618,8 +9618,8 @@
               }
             ],
             "published": "2026-10-15",
-            "updated": "2026-10-29",
-            "dateLabel": "26–30 oktober 2026",
+            "updated": "2026-11-20",
+            "dateLabel": "1–5 november 2027",
             "img": "photo-1576227058206-2e98638d2228"
           },
           {
@@ -9916,15 +9916,15 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "dateLabel": "26–30 oktober 2026",
-            "title": "Höstlov i Linköping 2026 — tips & aktiviteter | Res med Barn",
-            "description": "Höstlovet i Linköping 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — flygmuseum, studsmattepark och badhus — för barnfamiljer under lovveckan.",
-            "h1": "Höstlov i Linköping 2026 — vad ni kan göra",
+            "dateLabel": "1–5 november 2027",
+            "title": "Höstlov i Linköping 2027 — tips & aktiviteter | Res med Barn",
+            "description": "Höstlovet i Linköping 2027 är 1–5 november (vecka 44). Våra bästa inomhustips — flygmuseum, studsmattepark och badhus — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Linköping 2027 — vad ni kan göra",
             "intro": [
-              "Höstlovet i Linköping 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Höstlovet i Linköping 2027 är 1–5 november (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
               "Alla fyra tips nedan är inomhusaktiviteter, så hela listan fungerar oavsett väder — bra att veta eftersom slutet av oktober ofta bjuder på regn i Linköping.",
               "Nedan har vi samlat Linköpings bästa inomhusalternativ för lovveckan, med riktiga priser och en kostnadsexempel för en familj på fyra."
             ],
@@ -9981,8 +9981,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Linköping 2026?",
-                "a": "Höstlovet i Linköping 2026 är vecka 44, måndag 26 till fredag 30 oktober — samma vecka som övriga Sverige i år."
+                "q": "Vilken vecka är höstlovet i Linköping 2027?",
+                "a": "Höstlovet i Linköping 2027 är vecka 44, måndag 1 till fredag 5 november — samma vecka som övriga Sverige i år."
               },
               {
                 "q": "Är JumpYard bra för yngre barn på höstlovet?",
@@ -9994,7 +9994,7 @@
               }
             ],
             "published": "2026-10-21",
-            "updated": "2026-10-29",
+            "updated": "2026-11-20",
             "img": "photo-1508694396858-5a25e4301594",
             "totalCost": "Gör ni alla fyra under lovveckan landar det på ca 1 570 kr för en familj på två vuxna och två barn (3–11 år) — de flesta väljer förstås bara ett par av ställena."
           },
@@ -10258,15 +10258,15 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "dateLabel": "26–30 oktober 2026",
-            "title": "Höstlov i Helsingborg 2026 – tips | Res med Barn",
-            "description": "Höstlovet i Helsingborg 2026 är 26–30 oktober (vecka 44). Våra bästa inomhustips — Kärnan, Tropikariet och Dunkers — för barnfamiljer under lovveckan.",
-            "h1": "Höstlov i Helsingborg 2026 — vad ni kan göra",
+            "dateLabel": "1–5 november 2027",
+            "title": "Höstlov i Helsingborg 2027 – tips | Res med Barn",
+            "description": "Höstlovet i Helsingborg 2027 är 1–5 november (vecka 44). Våra bästa inomhustips — Kärnan, Tropikariet och Dunkers — för barnfamiljer under lovveckan.",
+            "h1": "Höstlov i Helsingborg 2027 — vad ni kan göra",
             "intro": [
-              "Höstlovet i Helsingborg 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Höstlovet i Helsingborg 2027 är 1–5 november (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
               "Nedan har vi samlat Helsingborgs bästa inomhusalternativ för lovveckan."
             ],
             "tips": [
@@ -10321,8 +10321,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Helsingborg 2026?",
-                "a": "Höstlovet i Helsingborg 2026 är vecka 44, måndag 26 till fredag 30 oktober."
+                "q": "Vilken vecka är höstlovet i Helsingborg 2027?",
+                "a": "Höstlovet i Helsingborg 2027 är vecka 44, måndag 1 till fredag 5 november."
               },
               {
                 "q": "Är Tropikariet ett bra regndagstips?",
@@ -10330,7 +10330,7 @@
               }
             ],
             "published": "2026-10-21",
-            "updated": "2026-10-29",
+            "updated": "2026-11-20",
             "img": "photo-1642290172761-a919a8627734"
           },
           {
@@ -10604,15 +10604,15 @@
             "lovSlug": "hostlov",
             "lovName": "Höstlov",
             "emoji": "🍂",
-            "dateStart": "2026-10-26",
-            "dateEnd": "2026-10-30",
+            "dateStart": "2027-11-01",
+            "dateEnd": "2027-11-05",
             "week": 44,
-            "dateLabel": "26–30 oktober 2026",
-            "title": "Höstlov i Norrköping 2026 – tips | Res med Barn",
-            "description": "Höstlovet i Norrköping 2026 är 26–30 oktober (v.44). Våra bästa inomhustips – badhus, vetenskapscenter och studsmattepark – för barnfamiljer.",
-            "h1": "Höstlov i Norrköping 2026 — vad ni kan göra",
+            "dateLabel": "1–5 november 2027",
+            "title": "Höstlov i Norrköping 2027 – tips | Res med Barn",
+            "description": "Höstlovet i Norrköping 2027 är 1–5 november (v.44). Våra bästa inomhustips – badhus, vetenskapscenter och studsmattepark – för barnfamiljer.",
+            "h1": "Höstlov i Norrköping 2027 — vad ni kan göra",
             "intro": [
-              "Höstlovet i Norrköping 2026 är 26–30 oktober (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
+              "Höstlovet i Norrköping 2027 är 1–5 november (vecka 44) — samma vecka som övriga Sverige i år. Kallare dagar gör lovveckan till ett bra tillfälle att välja inomhusaktiviteter.",
               "Nedan har vi samlat Norrköpings bästa inomhusalternativ för lovveckan."
             ],
             "tips": [
@@ -10666,8 +10666,8 @@
             ],
             "faq": [
               {
-                "q": "Vilken vecka är höstlovet i Norrköping 2026?",
-                "a": "Höstlovet i Norrköping 2026 är vecka 44, måndag 26 till fredag 30 oktober, för kommunens grund- och gymnasieskolor."
+                "q": "Vilken vecka är höstlovet i Norrköping 2027?",
+                "a": "Höstlovet i Norrköping 2027 är vecka 44, måndag 1 till fredag 5 november, för kommunens grund- och gymnasieskolor."
               },
               {
                 "q": "Är Visualiseringscenter C gratis på höstlovet?",
@@ -10675,7 +10675,7 @@
               }
             ],
             "published": "2026-10-21",
-            "updated": "2026-10-29",
+            "updated": "2026-11-20",
             "img": "photo-1652459002369-654b7fefe6a3"
           },
           {
