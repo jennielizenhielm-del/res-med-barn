@@ -1548,7 +1548,7 @@ function buildArtiklar() {
   <div class="page-intro">${paras(a.intro)}</div>
   ${disclosure}
 </header>
-${media(a.img, a.emoji, 'page-hero', 1400, null, null, a.h1)}
+${media(a.img, a.emoji, 'page-hero', 1400, a.heroAspect || null, a.imgPos || null, a.h1)}
 <article class="article">
   ${a.sections.map(s => `<h2>${esc(s.h2)}</h2>\n<p>${escLinks(s.text)}</p>${s.list && s.list.length ? `
   <ul class="section-list">${s.list.map(x => `<li>${escLinks(x)}</li>`).join('')}</ul>` : ''}${s.products && s.products.length ? `
@@ -2055,6 +2055,8 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY
   fs.copyFileSync(path.join(ROOT, 'static', 'reseforsakring-flygplan-barn.jpg'), path.join(DIST, 'reseforsakring-flygplan-barn.jpg'));
   console.log('  ✓ reseforsakring-flygplan-barn.jpg');
   console.log('  ✓ bodybuddy-sveavagen.jpg');
+  fs.copyFileSync(path.join(ROOT, 'static', 'resa-med-barn-familj-spanien.jpg'), path.join(DIST, 'resa-med-barn-familj-spanien.jpg'));
+  console.log('  ✓ resa-med-barn-familj-spanien.jpg');
   for (const f of ['krubbans-lekplats-esso.jpg', 'krubbans-lekplats-tegeltorn.jpg', 'humlegardens-lekplats.jpg', 'olaus-petris-lekplats.jpg', 'olaus-petri-skolgard.jpg', 'lekplatsen-plockepinn.jpg']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
   }

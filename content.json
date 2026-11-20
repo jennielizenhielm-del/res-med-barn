@@ -4452,7 +4452,7 @@
           {
             "name": "Nordbjörn Snowfall 2.0",
             "badge": "Bra andraval",
-            "price": "429 kr",
+            "price": "Från 379 kr",
             "text": "Kom på andra plats i Test.se:s jämförelse (7,5/10) — bra vattentäthet och torkar snabbt, men andas något sämre än testvinnaren. Högt skaft och robust yttersula med bra grepp, samt justerbart kardborreband för enkel på- och avtagning.",
             "pros": [
               "Stark tvåa i Test.se:s oberoende jämförelse",
@@ -4464,14 +4464,14 @@
               "Färre färgval än vissa konkurrenter"
             ],
             "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-snowfall.html",
-            "buyUrl": "https://adtr.co/k472ek",
+            "buyUrl": "https://adtr.co/bt2y0u",
             "buyStore": "Jollyroom",
-            "img": "https://www.jollyroom.se/storage/8B9803A0D7E40655FE931FE5805B24135B594D58A4C3920C8B13FF91376AB542/44d783e1e8e04f9ca9518a38d73758a7/jpg/media/b1e6449b31944ed88607ee061db537dc/119264-2015-4300_1.jpg"
+            "img": "https://www.jollyroom.se/storage/DA19C5924557BF39CC6675E31466031FFE580CF3E39D753C26899C1864DE3512/76d1f63139e04f0fb0c5c2799fd8ffc1/jpg/media/472585a7bc464841bb60e2bcb2cc570d/119264-2017-4300_1.jpg"
           },
           {
             "name": "Viking Ultra Fodrade Gummistövlar",
             "badge": "Bästa budget",
-            "price": "Från ca 415–649 kr",
+            "price": "Från 399 kr",
             "text": "Fodrade gummistövlar med fluffigt ullmixfoder som håller fötterna varma ner till -20 grader. Bred läst ger extra utrymme för små tår och gör dem enkla att få på, även för de allra minsta. Utsedd till bäst i test av både Testjakt.se (2023) och Test.se (2025) i kategorin fodrade gummistövlar.",
             "pros": [
               "Dubbelt bäst-i-test — både Testjakt.se och Test.se",
@@ -4625,7 +4625,7 @@
         ],
         "img": "photo-1547105114-5ab20c2a12ac",
         "published": "2026-09-23",
-        "updated": "2026-11-17",
+        "updated": "2026-11-20",
         "imgPos": "center 85%"
       },
       {
@@ -12519,6 +12519,92 @@
         ],
         "published": "2026-11-18",
         "updated": "2026-11-18"
+      },
+      {
+        "slug": "resa-med-barn",
+        "name": "Resa med barn – den kompletta guiden",
+        "emoji": "🗺️",
+        "img": "/resa-med-barn-familj-spanien.jpg",
+        "cardText": "Allt ni behöver tänka på innan en resa med barn – transportsätt, dokument, packning och vad som faktiskt händer på plats.",
+        "title": "Resa med barn – komplett guide inför resan | Res med Barn",
+        "description": "Planerar ni en resa med barn? Allt samlat här – transportsätt efter ålder, medgivandebrev, packning och det vi lärt oss den hårda vägen.",
+        "h1": "Resa med barn – allt ni behöver tänka på",
+        "kicker": "Börja här",
+        "intro": [
+          "Att resa med barn är inte svårare än att resa utan — men det är annorlunda, och det lönar sig att veta vad som skiljer sig innan ni bokar. Den här guiden samlar det vi själva lärt oss och länkar vidare till sajtens djupare guider för varje del, så ni slipper leta.",
+          "Oavsett om ni ska flyga, ta tåget, köra bil eller åka buss, och oavsett om barnen är bebisar eller tonåringar, finns det en genväg för er längre ner på sidan."
+        ],
+        "sections": [
+          {
+            "h2": "Välj rätt förberedelser utifrån barnens ålder och transportsätt",
+            "text": "Logistiken ser helt olika ut beroende på hur gamla barnen är och hur ni ska ta er dit. En bebis har andra behov på ett flygplan än en tonåring har på ett nattåg. Vi har byggt en egen guide för varje kombination av ålder och transportsätt:",
+            "list": [
+              "✈️ **Flyg**: [bebisar](/guider/bebisar/flyg/) · [småbarn](/guider/smabarn/flyg/) · [barn 4–12 år](/guider/barn/flyg/) · [tonåringar](/guider/tonaringar/flyg/)",
+              "🚆 **Tåg**: [bebisar](/guider/bebisar/tag/) · [småbarn](/guider/smabarn/tag/) · [barn 4–12 år](/guider/barn/tag/) · [tonåringar](/guider/tonaringar/tag/)",
+              "🚗 **Bil**: [bebisar](/guider/bebisar/bil/) · [småbarn](/guider/smabarn/bil/) · [barn 4–12 år](/guider/barn/bil/) · [tonåringar](/guider/tonaringar/bil/)",
+              "🚌 **Buss**: [bebisar](/guider/bebisar/buss/) · [småbarn](/guider/smabarn/buss/) · [barn 4–12 år](/guider/barn/buss/) · [tonåringar](/guider/tonaringar/buss/)"
+            ]
+          },
+          {
+            "h2": "Dokument och försäkring innan ni åker",
+            "text": "Två saker är lätta att glömma bort helt tills någon frågar efter dem vid gränsen eller något går snett. Reser bara en förälder med barnen (eller far- eller morföräldrar utan föräldrarna) bör ni ha ett [medgivandebrev](/foraldramedgivande/) med er — vi har en [gratis generator](/medgivandebrev/) där allt stannar i er egen webbläsare. Och en paketresa täcker inte sjukdom eller olycksfall automatiskt, bara en ekonomisk resegaranti — vår [guide till reseförsäkring för barnfamiljer](/artiklar/reseforsakring-barn/) går igenom vad hemförsäkring, kort och eventuellt tillägg faktiskt täcker."
+          },
+          {
+            "h2": "Packa smart — fyra saker vi lärt oss den hårda vägen",
+            "text": "Vår [interaktiva packlista](/packlista/) anpassar sig efter ålder, resmål och transportsätt och är det snabbaste sättet att få en komplett lista. Men några saker står inte i någon generisk packlista, utan är sånt vi själva fått lära oss genom att göra fel:",
+            "list": [
+              "Ha med era egna favoritblöjor om ni inte vet vad som går att köpa på plats i rimlig prisklass. Vi gjorde själva misstaget i Spanien att inte ha med — de som fanns att köpa i vanlig priskategori läckte, och \"klassen över\" kostade orimligt mycket.",
+              "Samma sak med småbarnsmat: skönt att ha några extra burkar eller klämmisar som backup om barnet är kinkigt eller inte vill äta den lokala maten. Men fastna inte i burkträsket — små barn klarar ofta mer vanlig mat på plats än man tror.",
+              "En babymonitor gör att ni kan lägga barnet och själva få lite egentid, till exempel middag på balkongen eller baren, utan att oroa er för att inte höra om något händer.",
+              "Muslinfiltar är guld — bra som mörkläggning för sovmiljön på resan, och användbara till det mesta annat också."
+            ]
+          },
+          {
+            "h2": "Bilbarnstol och babyskydd på resmålet",
+            "text": "Ska ni hyra bil, åka taxi eller tuk-tuk på resmålet gäller olika regler i olika länder, och långt ifrån alla hyrbilsfirmor eller taxibolag har barnstolar som håller svensk standard. Vår [guide till bilbarnstol och babyskydd på resan utomlands](/artiklar/bilbarnstol-utomlands/) går igenom flygbolagens regler, CARES-sele som alternativ och vad som gäller i några vanliga resmål."
+          },
+          {
+            "h2": "Hålla barnen sysselsatta, sova och hantera jetlag",
+            "text": "Den faktiska restiden är ofta det barnen (och föräldrarna) oroar sig mest för. Vi har tre guider som täcker var sin bit: [fördriva tiden på resan](/artiklar/fordriva-tiden-pa-resan/) för själva transportsträckan, [jetlag med barn och bebis](/artiklar/jetlag-med-barn/) för tidszonsbyten, och [när slutar barn sova på dagen](/artiklar/dagsomn-pa-resan/) om dagsömnen krockar med resplanerna."
+          },
+          {
+            "h2": "Sånt ni kommer sakna — och sånt som faktiskt blir lättare",
+            "text": "De flesta föräldrar blir förvånade över vad de faktiskt saknar från hemmet, och vad som visar sig vara ett icke-problem. Vi samlade det i en egen artikel: [vad ni kommer sakna med barnens resor](/artiklar/vad-ni-kommer-sakna/)."
+          }
+        ],
+        "quicktipsTitle": "Snabb checklista innan ni åker",
+        "quicktips": [
+          "Medgivandebrev klart minst en vecka innan, särskilt om bara en förälder reser med barnen",
+          "Kolla vad er hemförsäkring eller kort redan täcker innan ni köper till en reseförsäkring",
+          "Packa ett extra ombyte till barnen i handbagaget, inte bara i det incheckade",
+          "Ha med egna blöjor eller favoritmat om ni inte vet vad som finns att köpa på plats",
+          "Ladda ner något offline till den som tröttnar i säkerhetskön eller vid gaten"
+        ],
+        "faq": [
+          {
+            "q": "Vilket transportsätt är enklast att resa med små barn?",
+            "a": "Tåg brukar vara skonsammast för de minsta — ni slipper säkerhetskontroll, kan gå och röra på er under resan och ofta finns skötbord ombord. Flyg är snabbast men kräver mer planering kring tryckutjämning och bagage. Se våra ålders- och transportspecifika guider för detaljer kring just er kombination."
+          },
+          {
+            "q": "Behöver vi medgivandebrev om bara en förälder reser med barnen?",
+            "a": "Det finns inget lagkrav i Sverige, men flera länders gränskontroller och en del flygbolag kan efterfråga ett intyg från den hemmavarande föräldern, särskilt om efternamnen skiljer sig åt. Det är enkelt och gratis att ordna i förväg, så vi rekommenderar det alltid när bara en förälder reser — se vår guide och gratis brevgenerator."
+          },
+          {
+            "q": "Hur långt i förväg bör man börja planera en resa med barn?",
+            "a": "För en charterresa eller flygresa utomlands brukar 1–3 månader räcka för det praktiska (medgivandebrev, försäkring, packning). Vill ni ha bra priser eller specifika datum under skollov är det klokt att boka själva resan tidigare, gärna så fort datumen för lovet är satta."
+          },
+          {
+            "q": "Är det värt att betala extra för plats till barnvagnen eller mer bagage?",
+            "a": "Om ni ändå ska ha med barnvagn är det oftast billigare att boka in den i förväg än att betala en straffavgift vid incheckning, och ni slipper förhandla i disken med ett tröttkört barn bredvid er. Jämför alltid mot vad som redan ingår i er biljettklass innan ni köper till."
+          },
+          {
+            "q": "Vad är viktigast att packa som man lätt glömmer?",
+            "a": "Ett extra ombyte till barnen i handbagaget (inte bara det incheckade), egna favoritblöjor eller -mat om ni inte vet vad som finns på plats, och något för mörkläggning om sovmiljön på resmålet skiljer sig mycket från hemma. Vår interaktiva packlista anpassar resten efter ålder och resmål."
+          }
+        ],
+        "published": "2026-11-20",
+        "updated": "2026-11-20",
+        "heroAspect": "2/1"
       }
     ]
   },
