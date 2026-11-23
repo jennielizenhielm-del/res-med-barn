@@ -4296,69 +4296,16 @@
       {
         "slug": "regnstall",
         "emoji": "☔",
-        "name": "Regnställ",
-        "cardText": "Fodrade och ofodrade regnställ för barn — vattenpelare, sömmar och passform jämförda.",
-        "title": "Regnställ barn bäst i test 2026 | Res med Barn",
-        "description": "Regnställ bäst i test 2026 — fem regnställ för barn jämförda på vattentäthet, foder och passform. Didriksons, Nordbjørn och fler.",
-        "h1": "Regnställ för barn bäst i test 2026",
+        "name": "Ofodrat regnställ",
+        "cardText": "Ofodrade regnställ för barn — ett vattentätt skal att ha utanpå vanliga kläder i mildare väder.",
+        "title": "Ofodrat regnställ barn bäst i test 2026 | Res med Barn",
+        "description": "Ofodrat regnställ för barn bäst i test 2026 – fem regnställ jämförda på vattentäthet och pris. CeLaVi, Liewood, MarMar med fler.",
+        "h1": "Ofodrat regnställ för barn bäst i test 2026",
         "intro": [
-          "Ett regnställ finns i två varianter: fodrat (med värmande fleecefoder, för kyligare höst- och vårdagar) eller ofodrat (bara ett vattentätt skal, för mildare väder över vanliga kläder). Vi har jämfört fem populära regnställ — tre fodrade, två ofodrade — på vattenpelare, foder och praktiska detaljer, tydligt märkta så ni ser direkt vilken typ det är."
+          "Ett ofodrat regnställ är bara ett vattentätt skal, tänkt att bäras utanpå vanliga kläder — perfekt för mildare väder, lek i vattenpölar eller som ett extra lager ovanpå varmare kläder på kyligare dagar. Vi har jämfört fem ofodrade regnställ på vattenpelare, sömmar och praktiska detaljer, baserat på återförsäljarnas egna uppgifter.",
+          "Letar ni efter ett varmare alternativ att använda som eget vinterplagg snarare än ett skal? Se vår jämförelse av fodrat regnställ för barn."
         ],
         "products": [
-          {
-            "name": "Didriksons Boardman Fodrat Regnställ",
-            "badge": "Bäst i test (fodrat)",
-            "price": "Från ca 699–799 kr",
-            "text": "Tåligt fodrat regnställ med hög vattenpelare, svetsade sömmar och fleecefodrad galon. Den nedersta decimetern av jackan är medvetet ofodrad, så att vatten inte kan krypa in och blöta ner fodret om barnet sätter sig i en djup pöl.",
-            "pros": [
-              "Genomtänkt design — ofodrad nederkant förhindrar att fodret blir blött",
-              "Justerbara höga byxor med kardborrefästen över axlarna",
-              "Slittåligt, håller flera säsonger"
-            ],
-            "cons": [
-              "Ett av de dyrare alternativen i jämförelsen",
-              "Tål inte torktumling"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/didriksons-boardman-fodrat-regnstall.html",
-            "buyUrl": "https://adtr.co/o47oy4",
-            "buyStore": "Jollyroom"
-          },
-          {
-            "name": "Nordbjørn Skagen Fodrat Regnställ",
-            "badge": "Bästa budget (fodrat)",
-            "price": "Från ca 599–699 kr",
-            "text": "Funktionellt fodrat regnställ med svetsade sömmar, mjukt fleecefoder och avtagbar huva. Justerbara hängslen och elastiska fothällor ger en bra passform, och reflexdetaljer ökar synligheten i mörker. Utsedd till Bästa Budgetval av Bäst-i-test.se.",
-            "pros": [
-              "Utsedd till bästa budgetval av Bäst-i-test.se",
-              "Avtagbar huva och elastiska fothällor",
-              "Vattenpelare 8000 mm — klarar rejält regn"
-            ],
-            "cons": [
-              "Färre detaljer (fickor, justerbar huva) än dyrare alternativ",
-              "Enklare finish än premiummodellerna"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/nordbjorn-skagen-fodrat-regnstall.html",
-            "buyUrl": "https://adtr.co/6snxcg",
-            "buyStore": "Jollyroom"
-          },
-          {
-            "name": "Mikk-Line Regnkläder Med Fleece",
-            "badge": "Bäst i test (fodrat)",
-            "price": "Från ca 530–650 kr",
-            "text": "Fodrat med mjukt teddyfleece i huvuddelen, med undantag för jackans ärmar och byxornas nederdel där ett tunnare, slätvävt foder används istället — smart lösning som minskar risken att bli genomblöt vid fötterna. Breda, justerbara hängslen med klickspännen och resårmudd runt midjan. Tillverkat i återvunnen polyester/PU, Oeko-Tex 100-certifierat.",
-            "pros": [
-              "Smart tvådelad fodring — tjockare fleece där det behövs, tunnare vid utsatta partier",
-              "Justerbara hängslen med klickspännen, enkelt att ta på/av",
-              "Återvunnet material, Oeko-Tex-certifierat"
-            ],
-            "cons": [
-              "Från och med storlek 110 (ca 5 år) saknas hängslena, bara resårmudd kvar",
-              "Något dyrare än de enklaste budgetalternativen"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/mikk-line-regnklader-med-fleece.html",
-            "buyUrl": "https://adtr.co/rsetz6",
-            "buyStore": "Babysam"
-          },
           {
             "name": "Nordbjörn Båtlandet Regnställ",
             "badge": "Bäst helhet (ofodrat)",
@@ -4378,22 +4325,76 @@
             "buyStore": "Jollyroom"
           },
           {
-            "name": "MarMar Copenhagen Oddy Regnset",
-            "badge": "Snyggast design (ofodrat)",
-            "price": "Pris varierar — kontrollera hos återförsäljare",
-            "text": "Danskdesignat ofodrat regnset för de minsta, med justerbara hängslen och resår i sidorna för bästa passform. Avtagbar huva, ficka fram på jackan, och stängs med dragkedja och tryckknappar. Oeko-Tex Standard 100-certifierat.",
+            "name": "Liewood Pedia Regnställ, Sweetshearts/Pale Tuscany",
+            "badge": "Högst vattenpelare (ofodrat)",
+            "price": "599 kr (medlemspris, rek. pris 1 180 kr)",
+            "text": "Vindtätt och andningsbart regnställ i softshellkvalitet av 100 % återvunnen polyester, med vattenpelare på hela 20 000 mm — högst i den här jämförelsen. Tejpade sömmar, avtagbar huva, justerbara fothällor och elastisk midja med knappar för justering, plus reflexdetaljer för bättre synlighet i mörker.",
             "pros": [
-              "Stilren dansk design, snyggare mönster än de flesta konkurrenter",
-              "Avtagbar huva och ficka fram — praktiska detaljer",
-              "Oeko-Tex-certifierat"
+              "Vattenpelare 20 000 mm — högst i jämförelsen",
+              "Vindtät, andningsbar softshell i 100 % återvunnen polyester",
+              "Tejpade sömmar och reflexdetaljer för säkerhet i mörker"
             ],
             "cons": [
-              "Ofodrat — behöver kompletteras med varmare lager under kyligare dagar",
-              "Mindre etablerat i Sverige, svårare att jämföra recensioner"
+              "Ofodrad softshell — inget värmande skikt för kallare dagar",
+              "Finns just nu bara i storlekarna 104, 110 och 116"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/marmar-copenhagen-oddy-regnset.html",
-            "buyUrl": "https://adtr.co/9puc4v",
-            "buyStore": "Babysam"
+            "buyUrl": "https://adtr.co/dfv6pv",
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/2CC69790F233C8B381E1027BF3E38BA40EA667298257B0E3A34F84C9A64ED52E/c5256e6b05f348a186eebed073d5f9c4/jpg/media/254963ba4a464b9ebad504fc28ff0ac0/LW19909-2620-3133_1.jpg"
+          },
+          {
+            "name": "CeLaVi Regnställ Basic, Dark Navy",
+            "badge": "Budgetvalet (ofodrat)",
+            "price": "559 kr",
+            "text": "Enkelt och prisvärt ofodrat regnställ i polyester/polyuretan, med vattenpelare på 5 000 mm — precis vid gränsen för vad som räknas som fullgott vattentätt för vardagsbruk. Tejpade sömmar och inga invändiga sömmar i benen minskar risken för skavsår. Byxorna har justerbara, avtagbara elastiska band samt avtagbara gummiband under fötterna, och 3M-reflexer syns bra i mörker.",
+            "pros": [
+              "Billigast i jämförelsen",
+              "Tejpade sömmar och inga invändiga bensömmar minskar skavsår",
+              "3M-reflexer för bättre synlighet i mörker"
+            ],
+            "cons": [
+              "Vattenpelare 5 000 mm — lägst i jämförelsen, klarar vardagsregn men inte lika kraftigt väder som de andra",
+              "Skuren som pojkmodell, och ingen huva anges på produktsidan"
+            ],
+            "buyUrl": "https://adtr.co/qge9ou",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/e8b3346a-02bf-439c-ad7e-1cf960d93cc2/productdetailproduct/1145_778.jpg"
+          },
+          {
+            "name": "MarMar Copenhagen Oddy Regnset, Blue Stripes",
+            "badge": "Snyggast design (ofodrat)",
+            "price": "979 kr",
+            "text": "Danskdesignat regnset (jacka + byxor) med matchande mönster, vattenpelare 8 000 mm och svetsade sömmar. Fleecefoder vid ärmlinningar och i fickorna ger lite extra komfort trots att helheten räknas som ofodrad. Avtagbar huva, justerbara axelremmar på byxorna, justerbara silikonremmar under fötterna och YKK-certifierade dragkedjor. Oeko-Tex-certifierat.",
+            "pros": [
+              "Stilren dansk design med matchande detaljer mellan jacka och byxor",
+              "Fleecefoder vid ärmar och fickor ger lite extra komfort trots att den är ofodrad",
+              "YKK-dragkedjor och Oeko-Tex-certifierad"
+            ],
+            "cons": [
+              "Bara delvis fleecefodrad (ärmar/fickor) — komplettera med varmare lager under kyligare dagar",
+              "Begränsat lager hos återförsäljaren vid vår senaste kontroll"
+            ],
+            "buyUrl": "https://adtr.co/b42qrv",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/2b8cfc5d-3897-4a2e-acf1-17a8d57578e1/productfeedproductbig/263-680-20-1853.webp"
+          },
+          {
+            "name": "Lil'Atelier Ladry Pad Regnset, Zephyr",
+            "badge": "Premiumvalet (ofodrat)",
+            "price": "1 199,95 kr",
+            "text": "Regnset (jacka + byxor) med genomgående mönster, vattenpelare 10 000 mm och svetsade sömmar för helt vattentätt skydd. Avtagbar huva, elastiska manschetter, dragkedja med tryckknappar, och avtagbara, justerbara fotremmar i slitstarkt gummi som håller byxorna på plats.",
+            "pros": [
+              "Vattenpelare 10 000 mm och svetsade sömmar ger fullt vattentätt skydd",
+              "Avtagbara, justerbara fotremmar i slitstarkt gummi",
+              "Genomgående mönster och lekfull design"
+            ],
+            "cons": [
+              "Klart dyrast i jämförelsen",
+              "Materialet anges bara som \"polyester\" — inget om eventuellt foder eller membran"
+            ],
+            "buyUrl": "https://adtr.co/5kheet",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/5eb308c9-e992-4f57-83a6-14fb16491f57/productdetailproduct/Lil%E2%80%99-Atelier_Autumnwinter_5113829_13255470.jpg"
           }
         ],
         "sections": [
@@ -4404,13 +4405,17 @@
         ],
         "faq": [
           {
-            "q": "Fodrat eller ofodrat regnställ — vad ska jag välja?",
-            "a": "Fodrat regnställ fungerar som ett eget plagg och passar bra på hösten och i mildare vinterväder. Ofodrat regnställ är tänkt att bäras utanpå varmare kläder och ger dig mer flexibilitet att anpassa efter temperaturen."
+            "q": "Vilken vattenpelare behöver ett ofodrat regnställ ha?",
+            "a": "Minst 5 000 mm rekommenderas för vardagsbruk som lek i duggregn och fuktigt gräs. Ska regnställer klara stillasittande lek i vattenpölar eller rejält regn bör vattenpelaren vara minst 8 000 mm — fyra av de fem modellerna i den här jämförelsen ligger på 8 000 mm eller högre."
+          },
+          {
+            "q": "Kan man ha ofodrat regnställ på vintern?",
+            "a": "Ja, om barnet har varma kläder under. Ett ofodrat regnställ fungerar som ett vattentätt skal ovanpå till exempel en fleecetröja eller mjukisbyxor, och ger mer frihet att anpassa värmen efter vädret än ett fast fodrat plagg. Vid stadig kyla kan ett fodrat regnställ eller en vinteroverall vara ett varmare alternativ."
           }
         ],
         "img": "photo-1477511350923-3986459bdee1",
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-11-23"
       },
       {
         "slug": "vinterskor",
