@@ -2057,6 +2057,8 @@ ${urls.map(u => `  <url><loc>${DOMAIN}${u}</loc><lastmod>${URL_DATES[u] || TODAY
   console.log('  ✓ bodybuddy-sveavagen.jpg');
   fs.copyFileSync(path.join(ROOT, 'static', 'resa-med-barn-familj-spanien.jpg'), path.join(DIST, 'resa-med-barn-familj-spanien.jpg'));
   console.log('  ✓ resa-med-barn-familj-spanien.jpg');
+  fs.copyFileSync(path.join(ROOT, 'static', 'babyskydd-doona-familjen.jpg'), path.join(DIST, 'babyskydd-doona-familjen.jpg'));
+  console.log('  ✓ babyskydd-doona-familjen.jpg');
   for (const f of ['krubbans-lekplats-esso.jpg', 'krubbans-lekplats-tegeltorn.jpg', 'humlegardens-lekplats.jpg', 'olaus-petris-lekplats.jpg', 'olaus-petri-skolgard.jpg', 'lekplatsen-plockepinn.jpg']) {
     fs.copyFileSync(path.join(ROOT, 'static', f), path.join(DIST, f));
   }
