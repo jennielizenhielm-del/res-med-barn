@@ -3724,7 +3724,7 @@
           {
             "name": "Medela Swing Maxi",
             "badge": "Bäst i test",
-            "price": "Från ca 2 023 kr",
+            "price": "1 575 kr",
             "text": "Elektrisk dubbelpump med nio förprogrammerade inställningar och tvåstegsteknologi som efterliknar barnets naturliga sugmönster.",
             "pros": [
               "Dubbelpumpning halverar tiden",
@@ -3735,12 +3735,14 @@
               "Skrymmande att ta med på resa",
               "Fler delar att hålla rena"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/medela-swing-maxi.html"
+            "buyUrl": "https://adtr.co/307hci",
+            "buyStore": "Meds",
+            "img": "https://media.meds.se/meds/images/maxx-27406044-g-2021-06-23-102145379/800/800/fill/c/medela-swing-maxi-dubbelbrostpump.jpg"
           },
           {
             "name": "Elvie Stride",
             "badge": "Bäst handsfree",
-            "price": "Från ca 3 200 kr",
+            "price": "1 399 kr",
             "text": "Lättviktig, handsfree-anpassad pump som placeras diskret i BH:n. Justerbar sugkraft och tystlåten drift.",
             "pros": [
               "Handsfree, fungerar under kläder",
@@ -3751,28 +3753,32 @@
               "Hög prislapp",
               "Kräver viss inpassning för rätt position"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/elvie-stride.html"
+            "buyUrl": "https://adtr.co/bxa2fr",
+            "buyStore": "Bonti",
+            "img": "http://bonti.se/bilder/artiklar/ELVIEB01-01-EU.jpg?m=1662539911"
           },
           {
-            "name": "Elvie Curve",
+            "name": "Bebeconfort Bröstpump Manuell",
             "badge": "Bäst manuell",
-            "price": "Från ca 900 kr",
-            "text": "Manuell, motorfri pump som vilar diskret innanför BH:n. Ingen laddning eller bruksanvisning behövs — funkar via backventil.",
+            "price": "399 kr",
+            "text": "Manuell pump med mjuk silikonkopp som formar sig efter bröstet. Två lägen — ett snabbare stimuleringsläge och ett långsammare, kraftfullare uppsamlingsläge — plus ett justeringssystem för att ställa in sugstyrkan efter egen känsla.",
             "pros": [
-              "Ingen laddning eller montering av motor krävs",
-              "Väldigt diskret och tyst",
-              "Kompakt att ta med"
+              "Mjuk silikonkopp för ökad komfort",
+              "Justerbar sugstyrka i två lägen",
+              "Mycket lågt pris, bra som förstaköp eller reserv"
             ],
             "cons": [
-              "Ger mindre volym per pass än elektriska modeller",
-              "Kräver visst tryck manuellt"
+              "Kräver handkraft, tröttar armen vid längre pass",
+              "Bara enkelpump"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/elvie-curve.html"
+            "buyUrl": "https://adtr.co/i3r4kw",
+            "buyStore": "Baby V",
+            "img": "https://02.cdn37.se/epl/images/2.359751/bebeconfort-brostpump-manuell.jpeg"
           },
           {
             "name": "Medela Harmony",
             "badge": "Bästa budget",
-            "price": "Från ca 400 kr",
+            "price": "255 kr",
             "text": "Omtyckt manuell pump med tvåfasteknologi, enkel att montera och rengöra. Bra förstaköp eller reservpump.",
             "pros": [
               "Prisvärd",
@@ -3783,23 +3789,27 @@
               "Kräver handkraft, tröttar armen vid längre pass",
               "Bara enkelpump"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/medela-harmony.html"
+            "buyUrl": "https://adtr.co/wmtphm",
+            "buyStore": "Meds",
+            "img": "https://media.meds.se/meds/images/image-jpeg-2023-06-02-120833363/800/800/fill/c/7612367073523-jpg.jpg"
           },
           {
-            "name": "Philips Avent Wearable",
-            "badge": "Bäst prisvärd handsfree",
-            "price": "Från ca 1 800 kr",
-            "text": "Handsfree elektrisk pump till lägre pris än premiumalternativen, med modernt och genomtänkt intryck.",
+            "name": "MAM 2in1 Bröstpump, Elektrisk/Manuell",
+            "badge": "Bäst 2-i-1 (el & manuell)",
+            "price": "1 232 kr",
+            "text": "Pump som går att använda både elektriskt och manuellt — växlar mellan lägena i två enkla steg. Tyst motor med stimulerings- och uppsamlingsläge, nio styrkenivåer i vardera läge, och laddningsbart batteri så du klarar dig utan sladd. I lådan ingår två Easy Start-nappflaskor (130 ml och 160 ml) med förvaringslock.",
             "pros": [
-              "Handsfree till lägre pris än Elvie",
-              "Modernt, kompakt format",
-              "Fungerar diskret under kläder"
+              "Fungerar både elektriskt och manuellt i samma pump",
+              "Tyst motor med 9 styrkenivåer per läge",
+              "Laddningsbart batteri, ingen sladd krävs"
             ],
             "cons": [
-              "Något kortare batteritid än dyrare modeller",
-              "Färre app-funktioner"
+              "Fler delar att hålla reda på jämfört med en ren elektrisk pump",
+              "Inte handsfree"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-wearable.html"
+            "buyUrl": "https://adtr.co/1ihc5t",
+            "buyStore": "Meds",
+            "img": "https://media.meds.se/meds/images/maxx-777436-g-2021-01-21-104948056/800/800/fill/c/mam-2-in-1-electric-manual-breast-pump.jpg"
           }
         ],
         "sections": [
@@ -3820,7 +3830,7 @@
         ],
         "img": "photo-1542386247-eb6355c537c1",
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-11-24"
       },
       {
         "slug": "nappflaska",
@@ -3954,90 +3964,101 @@
         ],
         "products": [
           {
-            "name": "Philips Avent DECT SCD503",
-            "badge": "Bäst i test (ljud)",
-            "price": "Från ca 900 kr",
-            "text": "Sluten DECT-signal som går direkt mellan enheterna, inte via internet — ingen WiFi-risk. Räckvidd upp till 330 meter och 24 timmars batteritid i sparläge.",
+            "name": "Owlet Dream Duo, Bedtime Blue",
+            "badge": "Bäst i test",
+            "price": "3 059 kr (medlemspris, rek. pris 4 499 kr)",
+            "text": "Komplett system med både kamera och en bärbar sensor (Dream Sock) som mäter barnets puls och syresättning under sömnen. Ultra HD 2K-kamera med mörkerseende och tvåvägskommunikation, plus avläsning av rumstemperatur och luftfuktighet — allt samlat i Owlets app.",
             "pros": [
-              "Säker DECT-signal, ingen internetrisk",
-              "Lång räckvidd (330 m)",
-              "Mycket bra batteritid"
+              "Mäter puls och syresättning via Dream Sock",
+              "Skarp 2K-video med mörkerseende",
+              "Varnar vid avvikande puls eller låg syrenivå"
             ],
             "cons": [
-              "Ingen videofunktion",
-              "Färre extrafunktioner än premiummodeller"
+              "Högst pris i listan",
+              "WiFi-baserad, kräver stabilt hemnätverk",
+              "Fler delar (sock och kamera) att hålla laddade"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/philips-avent-dect-scd503.html"
+            "buyUrl": "https://adtr.co/ywjrmz",
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/D068CE41938CE84D47BA0F98F1B55F9110A6EE2DBE6196B8C7C1C7E07EF190AA/9dc054ea0faa41758a53b6fdb623ee1a/jpg/media/101c8f19bf084b51b7dc06d4f4243c36/PSR3-NWBIN-2463_1.jpg"
           },
           {
-            "name": "Motorola VM75",
-            "badge": "Bäst med video",
-            "price": "Från ca 1 399 kr",
-            "text": "Videobabyvakt med tydlig färgdisplay, 300 meters räckvidd och tvåvägskommunikation. Bästsäljare med brett funktionsutbud.",
+            "name": "Philips Avent Connected Baby Monitor, med kamera",
+            "badge": "Bäst kamera & app",
+            "price": "2 939 kr (prisanpassat, rek. pris 3 489 kr)",
+            "text": "Full HD-kamera med mörkerseende och digital zoom, upp till 400 meters räckvidd hemma och obegränsad räckvidd via appen Baby Monitor+. Har tvåvägskommunikation, mäter rumstemperatur och har inbyggd nattlampa och vaggvisor.",
             "pros": [
-              "Tydlig färgdisplay på föräldraenheten",
-              "Tvåvägskommunikation",
-              "Kan läsa av rummets temperatur"
+              "Full HD-video med mörkerseende och zoom",
+              "Fungerar via app var du än befinner dig",
+              "Rumstermometer och nattlampa inbyggt"
             ],
             "cons": [
-              "Kräver laddning oftare än ren ljudmonitor",
-              "Dyrare än ljudmodeller"
+              "Kräver WiFi och app för full funktion",
+              "Dyrare än rena skärmmodeller"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/motorola-vm75.html"
+            "buyUrl": "https://adtr.co/mp919i",
+            "buyStore": "Babysam",
+            "img": "https://cdn.babysam.se/de3effb8-b819-443a-aca3-5ca88859b2d6/productfeedproductbig/1.webp"
           },
           {
-            "name": "Motorola AM24",
+            "name": "Miniland Babymonitor Digimonitor 3.5 Plus",
+            "badge": "Bäst med egen skärm",
+            "price": "1 995 kr",
+            "text": "Videomonitor med egen 3,5-tums skärm som fungerar helt utan WiFi eller app. Räckvidd upp till 240 meter, mörkerseende, tvåvägskommunikation och stöd för upp till fyra kameror samtidigt — bra lösning för flera rum eller syskon.",
+            "pros": [
+              "Dedikerad skärm, ingen app eller WiFi krävs",
+              "Lång räckvidd (240 m)",
+              "Stöder upp till 4 kameror samtidigt"
+            ],
+            "cons": [
+              "Kameran drivs med sladd, inte batteri",
+              "Ingen fjärråtkomst utanför räckvidden"
+            ],
+            "buyUrl": "https://adtr.co/wzola5",
+            "buyStore": "Baby V",
+            "img": "https://02.cdn37.se/epl/images/2.358257/miniland-babymonitor-digimonitor-35-plus.jpeg"
+          },
+          {
+            "name": "Lionelo Babyline Smart Babyvakt, Black",
             "badge": "Bästa budget",
-            "price": "Från ca 519 kr",
-            "text": "Enkel, prisvärd ljudbabyvakt med DECT-teknik och räckvidd upp till 300 meter. Varnar vid lågt batteri eller tappad anslutning.",
+            "price": "749 kr (medlemspris, ord. pris 999 kr)",
+            "text": "Appstyrd WiFi-babyvakt med obegränsad räckvidd, tvåvägskommunikation och sensor för temperatur och luftfuktighet. Nattläge ger sikt upp till 10 meter, och du kan spara inspelningar på SD-kort via Lionelos app.",
             "pros": [
-              "Lågt pris",
-              "Säker DECT-signal",
-              "Enkel att använda"
+              "Prisvärd för att vara en video-/appmonitor",
+              "Obegränsad räckvidd via WiFi",
+              "Temperatur- och fuktsensor samt SD-kortinspelning"
             ],
             "cons": [
-              "Ingen video eller tvåvägskommunikation",
-              "Färre extrafunktioner"
+              "Kräver WiFi och app",
+              "Nattseende begränsat till 10 meter"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/motorola-am24.html"
+            "buyUrl": "https://adtr.co/t1vi9x",
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/990C2671FE6B146911E1695BB5EF2155BFA0F7E398CAC90313B027A4CDE9FF8C/6af5086ac2c44169ab76ed377338c4d8/jpg/media/b4ed58e92aee47b99aeec166d83faa7e/LOCBABYLINESMART-Black-4235_1.jpg"
           },
           {
-            "name": "Owlet Dream Sock",
-            "badge": "Bäst premiumövervakning",
-            "price": "Från ca 1 800 kr",
-            "text": "Smart sensor som mäter puls och syresättning via en liten sock, kopplad till app. Ger extra trygghet utöver ljud och bild.",
+            "name": "Motorola PIP1200 Babyvakt Video",
+            "badge": "Enklast — skärm utan app",
+            "price": "749 kr (medlemspris, ord. pris 999 kr)",
+            "text": "Traditionell videomonitor med 2,8-tums skärm, digital zoom och infrarött mörkerseende. Fungerar med egen skärm direkt ur lådan utan app eller WiFi, och har tvåvägskommunikation samt avläsning av rumstemperatur.",
             "pros": [
-              "Mäter puls och syresättning",
-              "Appstyrd med notiser",
-              "Bra komplement till vanlig monitor"
+              "Enkel att sätta igång, ingen app krävs",
+              "Infrarött mörkerseende och digital zoom",
+              "Laddningsbart batteri i föräldraenheten"
             ],
             "cons": [
-              "WiFi-baserad, kräver stabilt nätverk",
-              "Dyrare än traditionella babyvakter"
+              "Mindre skärm (2,8 tum) än Miniland",
+              "Ingen fjärråtkomst via app"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/owlet-dream-sock.html"
-          },
-          {
-            "name": "Motorola PIP1710 Connect",
-            "badge": "Premiumval",
-            "price": "Från ca 2 989 kr",
-            "text": "Avancerad videomonitor med appkoppling så flera vårdnadshavare kan se barnet samtidigt, oavsett var de befinner sig.",
-            "pros": [
-              "Flera personer kan följa via app samtidigt",
-              "Hög videokvalitet",
-              "Fjärrstyrd kameravinkel och zoom"
-            ],
-            "cons": [
-              "Högt pris",
-              "WiFi-baserad, kräver säkert nätverk"
-            ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/motorola-pip1710-connect.html"
+            "buyUrl": "https://adtr.co/55fxv7",
+            "buyStore": "Jollyroom",
+            "img": "https://www.jollyroom.se/storage/5BE9440CF85652C4957999CD9B2459B53021D8A248677E12D2998B66A1B8DEB2/2cd060ea5ea647a089858c430f090bf8/jpg/media/63a69bf96bd44e99ba04b0e7c6c72ba2/760322-PIP1200-Video-2540_1.jpg"
           }
         ],
         "sections": [
           {
-            "h2": "DECT eller WiFi-baserad babyvakt?",
-            "text": "En DECT-baserad monitor skickar en krypterad direktsignal mellan enheterna utan att gå via internet, vilket gör den svårare att hacka. WiFi-baserade modeller ger mer flexibilitet (t.ex. fjärråtkomst via app) men kräver att du håller firmware uppdaterad och använder starka lösenord."
+            "h2": "Skärm eller app — vilken typ av babyvakt passar dig?",
+            "text": "En babyvakt med egen skärm (som Miniland och Motorola PIP1200 här) fungerar direkt ur lådan utan WiFi eller app — enkelt och fungerar oavsett hemmanätverk, men räckvidden är begränsad till signalen mellan enheterna. En appstyrd WiFi-babyvakt (som Philips Avent Connected, Owlet Dream Duo och Lionelo) ger dig tillgång var du än är, och ofta fler funktioner som pulsmätning eller flera samtidiga användare — men kräver ett stabilt hemnätverk och att du håller appen och lösenordet uppdaterat."
           },
           {
             "h2": "Tips: använd VOX-läget på natten",
@@ -4047,12 +4068,12 @@
         "faq": [
           {
             "q": "Behöver jag video eller räcker ljud?",
-            "a": "Räcker det med att höra när barnet vaknar eller är oroligt kan en ren ljudmonitor räcka gott och väl, och är oftast billigare med bättre batteritid. Vill du kunna se hur barnet sover eller rör sig ger video mer trygghet, särskilt när barnet börjar klättra i sängen."
+            "a": "Räcker det med att höra när barnet vaknar eller är oroligt klarar man sig oftast med en ren ljudmonitor, som brukar vara billigare och ha bättre batteritid. Alla modeller i den här listan har video, vilket ger extra trygghet när barnet börjar klättra i sängen eller sover i ett annat rum — men om du bara vill ha ljud finns enklare och billigare ljudmonitorer att välja bland också."
           }
         ],
         "img": "photo-1742233105502-6d0e8d5dac2b",
         "published": "2026-09-23",
-        "updated": "2026-09-23"
+        "updated": "2026-11-24"
       },
       {
         "slug": "barsjal",
