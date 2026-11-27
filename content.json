@@ -2523,23 +2523,22 @@
         ],
         "products": [
           {
-            "name": "Cybex Cloud T i-Size",
+            "name": "Cybex Cloud T i-Size Plus, Sepia Black",
             "badge": "Bästa babyskydd",
-            "price": "Från ca 2 429 kr",
-            "text": "Babyskyddet med det avgörande extra: helt plant liggläge utanför bilen. Det betyder att en sovande bebis kan rulla vidare på vagnen i planläge i stället för hopsjunken – viktigt för andning och nacke. Klickar på de flesta vagnchassin och har utmärkta krockvärden.",
+            "price": "2 756 kr",
+            "text": "Babyskyddet med det avgörande extra: helt plant liggläge utanför bilen. Det betyder att en sovande bebis kan rulla vidare på vagnen i planläge i stället för hopsjunken – viktigt för andning och nacke. Plus-varianten har kraftigare, melerade tyger än standardmodellen. Klickar på de flesta vagnchassin, har Cybex L.S.P.-sidokollisionsskydd (upp till 25 % lägre krockkrafter) och är godkänd enligt UN R129/03 (i-Size).",
             "pros": [
               "Plant liggläge på vagnen – unikt viktigt",
-              "Lätt att bära (4,9 kg)",
-              "Passar som resesystem på de flesta vagnar"
+              "Kraftigare, melerade Plus-tyger än standardmodellen",
+              "L.S.P.-sidokollisionsskydd, godkänd enligt i-Size (UN R129/03)"
             ],
             "cons": [
               "Dyrare än standardbabyskydd",
-              "Basen köps separat"
+              "Basen (Bas T) köps separat"
             ],
-            "priceRunnerUrl": "https://www.pricerunner.se/sp/cybex-cloud-t-i-size.html",
-            "buyUrl": "https://adtr.co/0z1sjb",
-            "buyStore": "Jollyroom",
-            "img": "https://cdn.babysam.se/150a4912-9249-48cd-b19e-33a20a8b0120/productfeedproductbig/cyb_23_eu_y045_cloudt_sebl_187b7928d9848770.webp"
+            "buyUrl": "https://adtr.co/05wdu3",
+            "buyStore": "Bonti",
+            "img": "http://bonti.se/bilder/artiklar/523000232.jpg?m=1688458664"
           },
           {
             "name": "Maxi-Cosi Pebble 360, Essential Black",
@@ -2563,7 +2562,7 @@
           {
             "name": "Doona i",
             "badge": "Bäst 2-i-1",
-            "price": "Från ca 5 595 kr",
+            "price": "4 695 kr",
             "text": "Babyskydd med inbyggda hjul som fälls ut med en knapptryckning — förvandlas direkt till en rullbar barnvagn utan att barnet behöver flyttas. Praktiskt för resor och för föräldrar som vill slippa ett extra vagnsystem helt. Vi har själva haft och älskat den här i familjen — priset är högre, men att den agerar vagn också gör den smidig som tusan.",
             "pros": [
               "Blir barnvagn på sekunder — inget separat vagnsystem behövs",
@@ -2633,9 +2632,9 @@
               ],
               "rows": [
                 [
-                  "Cybex Cloud T i-Size",
+                  "Cybex Cloud T i-Size Plus, Sepia Black",
                   "Plant liggläge på vagnen, 4,9 kg",
-                  "Från ca 2 429 kr"
+                  "2 756 kr"
                 ],
                 [
                   "Maxi-Cosi Pebble 360, Essential Black",
@@ -2645,7 +2644,7 @@
                 [
                   "Doona i",
                   "Blir barnvagn med inbyggda hjul",
-                  "Från ca 5 595 kr"
+                  "4 695 kr"
                 ],
                 [
                   "Maxi-Cosi CabrioFix i-Size",
@@ -2685,7 +2684,7 @@
           },
           {
             "q": "Vilket babyskydd är bäst i test?",
-            "a": "I vår jämförelse är Maxi-Cosi CabrioFix i-Size bäst i test och Cybex Cloud T i-Size bästa babyskydd tack vare det plana ligget på vagnen. Maxi-Cosi Pebble 360 är populärast i Sverige, Britax Römer Baby-Safe Core bästa budgetvalet och Doona i bästa 2-i-1."
+            "a": "I vår jämförelse är Maxi-Cosi CabrioFix i-Size bäst i test och Cybex Cloud T i-Size Plus bästa babyskydd tack vare det plana ligget på vagnen. Maxi-Cosi Pebble 360 är populärast i Sverige, Britax Römer Baby-Safe Core bästa budgetvalet och Doona i bästa 2-i-1."
           },
           {
             "q": "Behöver man en bas till babyskyddet?",
@@ -2705,7 +2704,7 @@
           }
         ],
         "published": "2026-09-23",
-        "updated": "2026-11-23"
+        "updated": "2026-11-27"
       },
       {
         "slug": "tillbehor",
@@ -4930,7 +4929,7 @@
           {
             "name": "Wheat Ludo Gummivinteroverall, Reflective Jacquard",
             "badge": "2-i-1: regn & vinter",
-            "price": "1 899 kr",
+            "price": "1 329 kr (Black Friday)",
             "text": "En hybrid mellan regnoverall och vinteroverall i reflekterande jacquard-mönster som ökar synligheten i mörker. Vattenpelare på 9 000 mm, GRS-certifierad återvunnen polyester, tejpade sömmar, avtagbar huva och elastiska muddar.",
             "pros": [
               "Reflekterande jacquard-mönster ökar synligheten i mörker",
@@ -4984,7 +4983,7 @@
           {
             "name": "Name It Snow10 Vinteroverall",
             "badge": "Bäst med fickor",
-            "price": "Från ca 1 100 kr",
+            "price": "769 kr (Black Friday)",
             "text": "Vattenpelare på 10 000 mm med tejpade sömmar och membran, isolering och ytterskal i 100 % återvunnen polyester. Avtagbar luva med löstagbar fuskpälskant, två framfickor (ovanligt bland vinteroveraller), elastiska och justerbara benslut samt reflexdetaljer.",
             "pros": [
               "10 000 mm vattenpelare med tejpade sömmar och membran",
@@ -5025,7 +5024,7 @@
           }
         ],
         "published": "2026-10-24",
-        "updated": "2026-11-26",
+        "updated": "2026-11-27",
         "img": "photo-1699516781997-21beee06a67f"
       },
       {
